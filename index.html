@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Radar</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d1117;
+      --bg-card:   #161b22;
+      --bg-input:  #0d1117;
+      --bg-hover:  #1c2128;
+      --border:    #30363d;
+      --border-s:  #21262d;
+      --text:      #e6edf3;
+      --text-2:    #8b949e;
+      --text-3:    #6e7681;
+      --blue:      #388bfd;
+      --blue-h:    #58a6ff;
+      --green:     #3fb950;
+      --yellow:    #d29922;
+      --yellow-h:  #e3b341;
+      --radius:    8px;
+    }
+
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg); color: var(--text);
+      font-size: 14px; line-height: 1.5;
+    }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    .header {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      padding: 0 20px; height: 52px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .header-left { display: flex; align-items: center; gap: 12px; }
+    .logo {
+      width: 28px; height: 28px;
+      background: linear-gradient(135deg, #388bfd, #8b5cf6);
+      border-radius: 6px; display: flex; align-items: center;
+      justify-content: center; font-size: 14px; flex-shrink: 0;
+    }
+    .header-title { font-size: 15px; font-weight: 600; }
+    .header-sub   { font-size: 12px; color: var(--text-3); margin-left: 4px; }
+    .header-right { display: flex; align-items: center; gap: 8px; }
+    .badge {
+      background: var(--bg-hover); border: 1px solid var(--border);
+      border-radius: 20px; padding: 2px 10px; font-size: 11px; color: var(--text-2);
+    }
+    .badge.new { border-color: #3fb95066; color: var(--green); }
+    .btn-icon {
+      background: var(--bg-hover); border: 1px solid var(--border);
+      color: var(--text-2); padding: 5px 9px; border-radius: var(--radius);
+      font-size: 13px; cursor: pointer; transition: all .15s;
+    }
+    .btn-icon:hover { border-color: var(--blue); color: var(--text); }
+
+    /* ── Layout ──────────────────────────────────────────────── */
+    .layout { display: flex; height: calc(100vh - 52px); }
+
+    /* ── Sidebar ─────────────────────────────────────────────── */
+    .sidebar {
+      width: 252px; flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      overflow-y: auto; padding: 16px 14px;
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .sb-label {
+      font-size: 11px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: .07em; color: var(--text-3); margin-bottom: 8px;
+    }
+    .search-wrap { position: relative; }
+    .search-icon {
+      position: absolute; left: 9px; top: 50%; transform: translateY(-50%);
+      color: var(--text-3); font-size: 13px; pointer-events: none;
+    }
+    .search-input {
+      width: 100%; background: var(--bg-input); border: 1px solid var(--border);
+      border-radius: var(--radius); color: var(--text);
+      padding: 7px 10px 7px 28px; font-size: 13px; outline: none;
+      transition: border-color .15s;
+    }
+    .search-input::placeholder { color: var(--text-3); }
+    .search-input:focus { border-color: var(--blue); }
+
+    .view-tabs {
+      display: flex; background: var(--bg-input);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 3px; gap: 2px;
+    }
+    .view-tab {
+      flex: 1; text-align: center; padding: 5px 4px; font-size: 12px;
+      border-radius: 5px; cursor: pointer; color: var(--text-2);
+      user-select: none; transition: all .15s;
+    }
+    .view-tab.active { background: var(--blue); color: #fff; }
+    .view-tab:not(.active):hover { background: var(--bg-hover); }
+
+    .section-list { display: flex; flex-direction: column; gap: 4px; }
+    .section-row {
+      display: flex; align-items: center; gap: 8px;
+      padding: 5px 7px; border-radius: 6px;
+      cursor: pointer; user-select: none; transition: background .1s;
+    }
+    .section-row:hover { background: var(--bg-hover); }
+    .section-row input { display: none; }
+    .section-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; opacity: .35; transition: opacity .15s; }
+    .section-row.on .section-dot { opacity: 1; }
+    .section-name { flex: 1; font-size: 12px; color: var(--text-3); transition: color .15s; }
+    .section-row.on .section-name { color: var(--text); }
+    .section-n { font-size: 11px; color: var(--text-3); min-width: 18px; text-align: right; }
+
+    .slider-row { display: flex; align-items: center; gap: 10px; }
+    input[type="range"] { flex: 1; accent-color: var(--blue); cursor: pointer; }
+    .slider-val { font-size: 12px; font-weight: 600; color: var(--text-2); min-width: 28px; text-align: right; }
+
+    .toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+    .toggle-lbl { font-size: 12px; color: var(--text-2); }
+    .toggle { position: relative; display: inline-block; width: 34px; height: 20px; }
+    .toggle input { opacity: 0; width: 0; height: 0; }
+    .toggle-track {
+      position: absolute; inset: 0; background: var(--border);
+      border-radius: 20px; transition: background .2s; cursor: pointer;
+    }
+    .toggle-track::before {
+      content: ""; position: absolute; width: 14px; height: 14px;
+      border-radius: 50%; background: #fff; left: 3px; top: 3px; transition: transform .2s;
+    }
+    .toggle input:checked + .toggle-track { background: var(--blue); }
+    .toggle input:checked + .toggle-track::before { transform: translateX(14px); }
+
+    .pill-row { display: flex; gap: 4px; flex-wrap: wrap; }
+    .pill {
+      padding: 3px 10px; font-size: 11px; border-radius: 20px;
+      cursor: pointer; background: var(--bg-input); border: 1px solid var(--border);
+      color: var(--text-2); user-select: none; transition: all .15s;
+    }
+    .pill:hover { border-color: var(--blue); color: var(--text); }
+    .pill.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+    .stats-box {
+      background: var(--bg-hover); border: 1px solid var(--border-s);
+      border-radius: var(--radius); padding: 10px 12px;
+      font-size: 12px; color: var(--text-3); text-align: center; line-height: 1.9;
+    }
+    .stats-box strong { color: var(--text-2); }
+
+    /* ── Main ────────────────────────────────────────────────── */
+    .main { flex: 1; overflow-y: auto; padding: 16px 20px; }
+    .sort-bar {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 14px; font-size: 12px; color: var(--text-3);
+    }
+    .sort-btn {
+      background: none; border: 1px solid var(--border);
+      color: var(--text-2); padding: 4px 10px;
+      border-radius: 20px; font-size: 12px; cursor: pointer; transition: all .15s;
+    }
+    .sort-btn.active { border-color: var(--blue); color: var(--blue); }
+    .sort-btn:hover:not(.active) { border-color: var(--text-3); }
+
+    .papers { display: flex; flex-direction: column; gap: 10px; }
+
+    /* ── Card ────────────────────────────────────────────────── */
+    .card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 10px; padding: 15px 16px; transition: border-color .15s;
+    }
+    .card:hover { border-color: #388bfd44; }
+    .card.read    { opacity: .5; }
+    .card.starred { border-left: 3px solid var(--yellow); }
+
+    .card-top { display: flex; align-items: flex-start; gap: 9px; margin-bottom: 7px; }
+    .star-btn {
+      background: none; border: none; cursor: pointer; font-size: 17px;
+      color: var(--text-3); padding: 0; line-height: 1; margin-top: 1px;
+      flex-shrink: 0; transition: color .1s;
+    }
+    .star-btn:hover, .star-btn.on { color: var(--yellow); }
+    .card-title {
+      flex: 1; font-size: 14px; font-weight: 600; color: var(--text);
+      text-decoration: none; line-height: 1.4;
+    }
+    .card-title:hover { color: var(--blue-h); }
+    .card-meta {
+      font-size: 12px; color: var(--text-3); margin-bottom: 9px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+    }
+    .sep { color: var(--border); }
+    .arxiv-link {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px; color: var(--blue); text-decoration: none;
+    }
+    .arxiv-link:hover { text-decoration: underline; }
+
+    .card-tags {
+      display: flex; flex-wrap: wrap; align-items: center;
+      gap: 6px; margin-bottom: 10px;
+    }
+    .tag {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 9px; border-radius: 20px; font-size: 11px;
+      font-weight: 500; border: 1px solid;
+    }
+    .tag-code { background: #23863620; border-color: #2ea04380; color: var(--green); }
+    .score-wrap { display: flex; align-items: center; gap: 6px; margin-left: auto; flex-shrink: 0; }
+    .score-bar { width: 56px; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+    .score-fill { height: 100%; border-radius: 2px; }
+    .score-num { font-size: 12px; font-weight: 700; min-width: 24px; text-align: right; }
+
+    .card-abstract {
+      font-size: 13px; color: var(--text-2); line-height: 1.55;
+      margin-bottom: 11px;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .card-abstract.expanded { display: block; -webkit-line-clamp: unset; }
+
+    /* card bottom: rating + actions */
+    .card-bottom {
+      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+      padding-top: 10px; border-top: 1px solid var(--border-s);
+    }
+    .user-stars { display: flex; align-items: center; gap: 1px; }
+    .star-r {
+      font-size: 15px; cursor: pointer; color: var(--border);
+      line-height: 1; transition: color .1s; user-select: none; padding: 0 1px;
+    }
+    .star-r.on    { color: var(--yellow); }
+    .star-r:hover { color: var(--yellow-h); }
+    .rating-label { font-size: 11px; color: var(--text-3); margin-left: 5px; min-width: 52px; }
+
+    .card-actions { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+    .btn-sm {
+      background: var(--bg-input); border: 1px solid var(--border);
+      color: var(--text-2); padding: 4px 10px;
+      border-radius: 5px; font-size: 12px; cursor: pointer;
+      text-decoration: none; display: inline-block;
+      transition: all .12s; user-select: none;
+    }
+    .btn-sm:hover       { border-color: var(--blue); color: var(--text); }
+    .btn-sm.active      { background: #388bfd22; border-color: var(--blue); color: var(--blue); }
+    .btn-sm.read-active { background: #3fb95022; border-color: #3fb95066; color: var(--green); }
+
+    /* notes */
+    .card-notes { margin-top: 10px; }
+    .notes-preview {
+      font-size: 12px; color: var(--text-3); font-style: italic;
+      cursor: pointer; padding: 3px 0;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .notes-preview:hover { color: var(--text-2); }
+    .notes-textarea {
+      width: 100%; background: var(--bg);
+      border: 1px solid var(--border); border-radius: 6px;
+      color: var(--text); font-size: 13px; line-height: 1.5;
+      padding: 8px 10px; resize: vertical; min-height: 60px;
+      outline: none; font-family: inherit; transition: border-color .15s;
+    }
+    .notes-textarea:focus { border-color: var(--blue); }
+    .notes-textarea::placeholder { color: var(--text-3); }
+
+    /* empty / loading */
+    .empty { text-align: center; padding: 64px 24px; color: var(--text-3); }
+    .empty-icon { font-size: 48px; margin-bottom: 14px; }
+    .empty h2 { font-size: 18px; color: var(--text-2); margin-bottom: 8px; }
+    .empty p { font-size: 13px; line-height: 1.7; max-width: 420px; margin: 0 auto; }
+    .empty code {
+      font-family: monospace; background: var(--bg-hover);
+      padding: 1px 5px; border-radius: 3px; font-size: 12px;
+    }
+    .loading { text-align: center; padding: 48px; color: var(--text-3); font-size: 13px; }
+
+    /* ── Backup modal ────────────────────────────────────────── */
+    .modal-overlay {
+      position: fixed; inset: 0; background: #00000088;
+      display: none; align-items: center; justify-content: center; z-index: 200;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 24px; width: 420px; max-width: 95vw;
+    }
+    .modal h2 { font-size: 16px; margin-bottom: 6px; }
+    .modal-desc { font-size: 12px; color: var(--text-2); margin-bottom: 20px; line-height: 1.6; }
+    .modal-actions { display: flex; flex-direction: column; gap: 10px; }
+    .btn-action {
+      background: var(--bg-hover); border: 1px solid var(--border);
+      color: var(--text); padding: 10px 14px; border-radius: 8px;
+      font-size: 13px; cursor: pointer; text-align: left; transition: all .15s;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .btn-action:hover { border-color: var(--blue); }
+    .btn-action-icon { font-size: 18px; flex-shrink: 0; }
+    .btn-action-text strong { display: block; margin-bottom: 2px; }
+    .btn-action-text span { font-size: 11px; color: var(--text-3); }
+    .modal-close {
+      margin-top: 16px; text-align: right;
+    }
+    .btn-secondary {
+      background: none; border: 1px solid var(--border);
+      color: var(--text-2); padding: 7px 14px; border-radius: 6px;
+      font-size: 13px; cursor: pointer;
+    }
+    .btn-secondary:hover { color: var(--text); }
+
+    /* ── Scrollbar ───────────────────────────────────────────── */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-left">
+    <div class="logo">⬡</div>
+    <span class="header-title">Research Radar</span>
+    <span class="header-sub">3D &amp; Robotics ML</span>
+  </div>
+  <div class="header-right">
+    <span id="badge-new" class="badge new" style="display:none"></span>
+    <span id="badge-total" class="badge">— papers</span>
+    <button class="btn-icon" onclick="loadPapers()" title="Refresh">↻</button>
+    <button class="btn-icon" onclick="openBackup()" title="Backup notes">⬇</button>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div>
+      <div class="sb-label">Search</div>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="search" class="search-input" type="text" placeholder="title, author, keyword…" />
+      </div>
+    </div>
+
+    <div>
+      <div class="sb-label">View</div>
+      <div class="view-tabs">
+        <div class="view-tab active" data-view="all">All</div>
+        <div class="view-tab" data-view="unread">Unread</div>
+        <div class="view-tab" data-view="starred">Starred</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="sb-label">Pipeline Section</div>
+      <div class="section-list" id="section-list"></div>
+    </div>
+
+    <div>
+      <div class="sb-label">Min Auto-Score</div>
+      <div class="slider-row">
+        <input type="range" id="min-score" min="0" max="80" value="10" step="5" />
+        <span class="slider-val" id="min-score-val">10</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="sb-label">Min Usefulness Rating</div>
+      <div class="slider-row">
+        <input type="range" id="min-stars" min="0" max="5" value="0" step="1" />
+        <span class="slider-val" id="min-stars-val">any</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="sb-label">Filters</div>
+      <div class="toggle-row">
+        <span class="toggle-lbl">⚡ Has code / weights</span>
+        <label class="toggle"><input type="checkbox" id="has-code" /><span class="toggle-track"></span></label>
+      </div>
+      <div class="toggle-row">
+        <span class="toggle-lbl">📝 Has my notes</span>
+        <label class="toggle"><input type="checkbox" id="has-notes" /><span class="toggle-track"></span></label>
+      </div>
+    </div>
+
+    <div>
+      <div class="sb-label">Time Range</div>
+      <div class="pill-row">
+        <span class="pill active" data-days="7">7d</span>
+        <span class="pill" data-days="14">14d</span>
+        <span class="pill" data-days="30">30d</span>
+        <span class="pill" data-days="9999">All</span>
+      </div>
+    </div>
+
+    <div class="stats-box">
+      <strong id="vis-count">—</strong> shown<br>
+      <span id="total-sb">—</span> in library<br>
+      <span id="annotated-sb">—</span> annotated
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="sort-bar">
+      Sort by:
+      <button class="sort-btn active" data-sort="score">Relevance</button>
+      <button class="sort-btn" data-sort="date">Date</button>
+      <button class="sort-btn" data-sort="stars">My Rating</button>
+    </div>
+    <div class="papers" id="papers"><div class="loading">Loading…</div></div>
+  </main>
+</div>
+
+<!-- ── Backup modal ─────────────────────────────────────── -->
+<div class="modal-overlay" id="backup-overlay" onclick="maybeCloseBackup(event)">
+  <div class="modal">
+    <h2>⬇ Notes &amp; Ratings Backup</h2>
+    <p class="modal-desc">
+      Your notes, ratings, and read status are saved automatically in this browser.
+      Use these to back up or restore them — useful if you clear your browser data or
+      want to move to a different device.
+    </p>
+    <div class="modal-actions">
+      <button class="btn-action" onclick="exportAnnotations()">
+        <span class="btn-action-icon">📤</span>
+        <div class="btn-action-text">
+          <strong>Export</strong>
+          <span>Download your notes and ratings as a JSON file</span>
+        </div>
+      </button>
+      <button class="btn-action" onclick="document.getElementById('import-file').click()">
+        <span class="btn-action-icon">📥</span>
+        <div class="btn-action-text">
+          <strong>Import</strong>
+          <span>Restore from a previously exported file (merges with current)</span>
+        </div>
+      </button>
+      <input type="file" id="import-file" accept=".json" style="display:none" onchange="importAnnotations(event)" />
+    </div>
+    <div class="modal-close">
+      <button class="btn-secondary" onclick="closeBackup()">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════
+   SECTIONS
+═══════════════════════════════════════════════════════════ */
+const SECTIONS = [
+  { id: "3B_articulation",  label: "3B · Articulation & Joints", color: "#EF4444" },
+  { id: "3A_scene_layout",  label: "3A · Scene Layout",          color: "#3B82F6" },
+  { id: "sim_ready",        label: "Sim-Ready / Robotics",       color: "#06B6D4" },
+  { id: "2_3d_gen",         label: "2 · 3D Generators",          color: "#10B981" },
+  { id: "1_foundations",    label: "1 · Foundations",            color: "#8B5CF6" },
+  { id: "4B_texturing",     label: "4B · Texturing & Materials", color: "#F59E0B" },
+  { id: "4A_topology",      label: "4A · Clean Topology",        color: "#F97316" },
+  { id: "4C_uv",            label: "4C · UV Unwrapping",         color: "#EC4899" },
+];
+
+const STAR_LABELS = ["", "Low", "Relevant", "Useful", "Important", "Must-read"];
+
+/* ═══════════════════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════════════════ */
+let allPapers = [];
+let sortMode  = "score";
+
+// annotations: { [paper_id]: { notes, stars, read, starred } }
+let annotations = {};
+
+const ui = {
+  search: "", view: "all", sections: new Set(),
+  minScore: 10, minStars: 0, hasCode: false, hasNotes: false, days: 7,
+};
+
+/* ═══════════════════════════════════════════════════════════
+   ANNOTATIONS — auto-save to localStorage
+═══════════════════════════════════════════════════════════ */
+function getA(id) {
+  return annotations[id] || { notes: "", stars: 0, read: false, starred: false };
+}
+
+function setA(id, updates) {
+  annotations[id] = { ...getA(id), ...updates };
+  // Prune blank entries to keep storage lean
+  const a = annotations[id];
+  if (!a.notes && !a.stars && !a.read && !a.starred) delete annotations[id];
+  localStorage.setItem("rr_ann", JSON.stringify(annotations));
+  render();
+}
+
+function loadAnnotations() {
+  try {
+    const raw = localStorage.getItem("rr_ann");
+    if (raw) { annotations = JSON.parse(raw); return; }
+    // Migrate legacy separate keys
+    const read    = JSON.parse(localStorage.getItem("rr_read")    || "[]");
+    const starred = JSON.parse(localStorage.getItem("rr_starred") || "[]");
+    read.forEach(id    => setA(id, { read: true    }));
+    starred.forEach(id => setA(id, { starred: true }));
+  } catch (_) {}
+}
+
+/* ═══════════════════════════════════════════════════════════
+   EXPORT / IMPORT
+═══════════════════════════════════════════════════════════ */
+function exportAnnotations() {
+  const payload = { exported: new Date().toISOString(), annotations };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `radar-notes-${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+}
+
+function importAnnotations(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const data = JSON.parse(ev.target.result);
+      const imported = data.annotations || data; // support both formats
+      annotations = { ...annotations, ...imported };
+      localStorage.setItem("rr_ann", JSON.stringify(annotations));
+      closeBackup();
+      render();
+    } catch (_) { alert("Could not parse file."); }
+  };
+  reader.readAsText(file);
+  e.target.value = "";
+}
+
+function openBackup() {
+  document.getElementById("backup-overlay").classList.add("open");
+}
+function closeBackup() {
+  document.getElementById("backup-overlay").classList.remove("open");
+}
+function maybeCloseBackup(e) {
+  if (e.target === document.getElementById("backup-overlay")) closeBackup();
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LOAD PAPERS
+═══════════════════════════════════════════════════════════ */
+async function loadPapers() {
+  document.getElementById("papers").innerHTML = `<div class="loading">Loading papers…</div>`;
+  try {
+    const r = await fetch("data/papers.json?" + Date.now());
+    const data = await r.json();
+    allPapers = data.papers || [];
+    document.getElementById("badge-total").textContent = allPapers.length + " papers";
+    const newBadge = document.getElementById("badge-new");
+    if (data.new_this_run) {
+      newBadge.textContent = "+" + data.new_this_run + " new";
+      newBadge.style.display = "";
+    } else {
+      newBadge.style.display = "none";
+    }
+    buildSidebar();
+    render();
+  } catch (_) {
+    document.getElementById("papers").innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">🛰️</div>
+        <h2>No data yet</h2>
+        <p>
+          Push this repo to GitHub as a public repo, then:<br><br>
+          1. <strong>Settings → Pages → Source:</strong> Deploy from branch → <code>main</code> → <code>/ (root)</code><br>
+          2. <strong>Actions → Fetch Research Papers → Run workflow</strong><br><br>
+          Papers will appear here after the first run (~1 min).
+          The workflow then runs automatically every day.
+        </p>
+      </div>`;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FILTER + SORT
+═══════════════════════════════════════════════════════════ */
+function getFiltered() {
+  const cutoff = new Date(Date.now() - ui.days * 864e5);
+  return allPapers.filter(p => {
+    if (ui.days < 9999 && new Date(p.published) < cutoff) return false;
+    if (p.relevance_score < ui.minScore) return false;
+    if (ui.hasCode && !p.has_code) return false;
+    if (ui.sections.size > 0) {
+      if (!(p.sections||[]).some(s => ui.sections.has(s.id))) return false;
+    }
+    const a = getA(p.id);
+    if (ui.view === "unread"  &&  a.read)    return false;
+    if (ui.view === "starred" && !a.starred) return false;
+    if (ui.minStars > 0 && a.stars < ui.minStars) return false;
+    if (ui.hasNotes && !a.notes) return false;
+    if (ui.search) {
+      const q = ui.search.toLowerCase();
+      if (!`${p.title} ${(p.authors||[]).join(" ")} ${p.abstract}`.toLowerCase().includes(q))
+        return false;
+    }
+    return true;
+  }).sort((a, b) => {
+    if (sortMode === "date")  return new Date(b.published) - new Date(a.published);
+    if (sortMode === "stars") return getA(b.id).stars - getA(a.id).stars;
+    return b.relevance_score - a.relevance_score;
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RENDER
+═══════════════════════════════════════════════════════════ */
+function render() {
+  const list = getFiltered();
+  document.getElementById("vis-count").textContent    = list.length;
+  document.getElementById("total-sb").textContent     = allPapers.length;
+  document.getElementById("annotated-sb").textContent =
+    Object.keys(annotations).length + " annotated";
+  updateSectionCounts();
+
+  const el = document.getElementById("papers");
+  if (!list.length) {
+    el.innerHTML = `<div class="empty"><div class="empty-icon">🔍</div>
+      <h2>No matching papers</h2>
+      <p>Try relaxing the filters or lowering the minimum score.</p></div>`;
+    return;
+  }
+  el.innerHTML = list.map(cardHTML).join("");
+  el.querySelectorAll("[data-act]").forEach(n => n.addEventListener("click", onCardAction));
+  el.querySelectorAll(".star-r").forEach(n => n.addEventListener("click", onStarClick));
+  el.querySelectorAll(".notes-textarea").forEach(ta => ta.addEventListener("input", onNoteInput));
+  el.querySelectorAll(".notes-preview").forEach(n => n.addEventListener("click", onNotePreviewClick));
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CARD HTML
+═══════════════════════════════════════════════════════════ */
+function cardHTML(p) {
+  const a = getA(p.id);
+  const authorStr = (p.authors||[]).length > 3
+    ? `${p.authors.slice(0,3).join(", ")} +${p.authors.length-3}`
+    : (p.authors||[]).join(", ");
+
+  const tagsHtml = (p.sections||[]).slice(0,3).map(s =>
+    `<span class="tag" style="background:${s.color}18;border-color:${s.color}50;color:${s.color}">${s.label}</span>`
+  ).join("") + (p.has_code ? `<span class="tag tag-code">⚡ code</span>` : "");
+
+  const sc = Math.min(p.relevance_score, 100);
+  const scColor = sc > 65 ? "#3fb950" : sc > 40 ? "#d29922" : "#388bfd";
+
+  const starsHtml = [1,2,3,4,5].map(n =>
+    `<span class="star-r${n <= a.stars ? " on" : ""}" data-id="${p.id}" data-val="${n}">★</span>`
+  ).join("");
+
+  // Notes: show preview if exists, otherwise nothing (📝 button opens it)
+  let notesSection = "";
+  if (a.notes) {
+    const preview = a.notes.length > 90 ? a.notes.slice(0,90) + "…" : a.notes;
+    notesSection = `<div class="card-notes">
+      <div class="notes-preview" data-id="${p.id}">📝 ${esc(preview)}</div>
+      <textarea class="notes-textarea" data-id="${p.id}" style="display:none">${esc(a.notes)}</textarea>
+    </div>`;
+  }
+
+  return `
+<div class="card${a.read?" read":""}${a.starred?" starred":""}" data-id="${p.id}">
+  <div class="card-top">
+    <button class="star-btn${a.starred?" on":""}" data-act="star" data-id="${p.id}" title="Star">${a.starred?"★":"☆"}</button>
+    <a class="card-title" href="${p.arxiv_url}" target="_blank" rel="noopener">${esc(p.title)}</a>
+  </div>
+  <div class="card-meta">
+    <span>${esc(authorStr)}</span><span class="sep">·</span>
+    <a class="arxiv-link" href="${p.arxiv_url}" target="_blank" rel="noopener">arxiv:${p.id}</a>
+    <span class="sep">·</span><span>${relDate(p.published)}</span>
+  </div>
+  <div class="card-tags">
+    ${tagsHtml}
+    <div class="score-wrap">
+      <div class="score-bar"><div class="score-fill" style="width:${sc}%;background:${scColor}"></div></div>
+      <span class="score-num" style="color:${scColor}" title="Auto relevance score">${sc}</span>
+    </div>
+  </div>
+  <div class="card-abstract" id="abs-${p.id}">${esc(p.abstract)}</div>
+  <div class="card-bottom">
+    <div class="user-stars">
+      ${starsHtml}
+      <span class="rating-label">${a.stars ? STAR_LABELS[a.stars] : ""}</span>
+    </div>
+    <div class="card-actions">
+      <span class="btn-sm" data-act="expand" data-id="${p.id}">expand</span>
+      <span class="btn-sm" data-act="note"   data-id="${p.id}" title="Add note">📝</span>
+      <span class="btn-sm${a.read?" read-active":""}" data-act="read" data-id="${p.id}">${a.read?"✓ read":"mark read"}</span>
+      <a class="btn-sm" href="${p.arxiv_url}" target="_blank" rel="noopener">arxiv ↗</a>
+    </div>
+  </div>
+  ${notesSection}
+</div>`;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CARD EVENTS
+═══════════════════════════════════════════════════════════ */
+function onCardAction(e) {
+  const { act, id } = e.currentTarget.dataset;
+  const a = getA(id);
+
+  if (act === "star") {
+    setA(id, { starred: !a.starred });
+  } else if (act === "read") {
+    setA(id, { read: !a.read });
+  } else if (act === "expand") {
+    const abs = document.getElementById("abs-" + id);
+    abs.classList.toggle("expanded");
+    e.currentTarget.textContent = abs.classList.contains("expanded") ? "collapse" : "expand";
+  } else if (act === "note") {
+    const card = e.currentTarget.closest(".card");
+    let notesDiv = card.querySelector(".card-notes");
+    if (!notesDiv) {
+      // Create notes area for first time
+      notesDiv = document.createElement("div");
+      notesDiv.className = "card-notes";
+      notesDiv.innerHTML =
+        `<textarea class="notes-textarea" data-id="${id}" placeholder="Quick thoughts about this paper…"></textarea>`;
+      card.appendChild(notesDiv);
+      const ta = notesDiv.querySelector("textarea");
+      ta.addEventListener("input", onNoteInput);
+      ta.focus();
+    } else {
+      // Toggle existing area
+      const ta      = notesDiv.querySelector("textarea");
+      const preview = notesDiv.querySelector(".notes-preview");
+      if (ta) {
+        const show = ta.style.display === "none";
+        ta.style.display      = show ? "" : "none";
+        if (preview) preview.style.display = show ? "none" : "";
+        if (show) ta.focus();
+      }
+    }
+  }
+}
+
+function onStarClick(e) {
+  const { id, val } = e.currentTarget.dataset;
+  const cur = getA(id).stars;
+  // Click same star again → clear rating
+  setA(id, { stars: cur === +val ? 0 : +val });
+}
+
+const noteTimers = {};
+function onNoteInput(e) {
+  const id = e.target.dataset.id;
+  clearTimeout(noteTimers[id]);
+  noteTimers[id] = setTimeout(() => setA(id, { notes: e.target.value }), 700);
+}
+
+function onNotePreviewClick(e) {
+  const card = e.currentTarget.closest(".card");
+  const ta   = card.querySelector("textarea");
+  if (ta) {
+    e.currentTarget.style.display = "none";
+    ta.style.display = "";
+    ta.focus();
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SIDEBAR
+═══════════════════════════════════════════════════════════ */
+function buildSidebar() {
+  const list = document.getElementById("section-list");
+  list.innerHTML = SECTIONS.map(s => `
+    <label class="section-row${ui.sections.has(s.id)?" on":""}" data-sid="${s.id}">
+      <input type="checkbox" value="${s.id}" ${ui.sections.has(s.id)?"checked":""} />
+      <span class="section-dot" style="background:${s.color}"></span>
+      <span class="section-name">${s.label}</span>
+      <span class="section-n" id="sn-${s.id}">0</span>
+    </label>`).join("");
+  list.querySelectorAll("input[type=checkbox]").forEach(cb => {
+    cb.addEventListener("change", e => {
+      e.target.checked ? ui.sections.add(e.target.value) : ui.sections.delete(e.target.value);
+      e.target.closest(".section-row").classList.toggle("on", e.target.checked);
+      render();
+    });
+  });
+}
+
+function updateSectionCounts() {
+  const counts = {};
+  allPapers.forEach(p => (p.sections||[]).forEach(s => counts[s.id] = (counts[s.id]||0)+1));
+  SECTIONS.forEach(s => {
+    const el = document.getElementById("sn-" + s.id);
+    if (el) el.textContent = counts[s.id] || 0;
+  });
+}
+
+/* ═══════════════════════════════════════════════════════════
+   CONTROLS
+═══════════════════════════════════════════════════════════ */
+document.getElementById("search").addEventListener("input", e => {
+  ui.search = e.target.value.trim(); render();
+});
+document.querySelectorAll(".view-tab").forEach(t => t.addEventListener("click", e => {
+  document.querySelectorAll(".view-tab").forEach(x => x.classList.remove("active"));
+  e.target.classList.add("active");
+  ui.view = e.target.dataset.view; render();
+}));
+document.getElementById("min-score").addEventListener("input", e => {
+  ui.minScore = +e.target.value;
+  document.getElementById("min-score-val").textContent = ui.minScore; render();
+});
+const starLabels = ["any","★","★★","★★★","★★★★","★★★★★"];
+document.getElementById("min-stars").addEventListener("input", e => {
+  ui.minStars = +e.target.value;
+  document.getElementById("min-stars-val").textContent = starLabels[ui.minStars]; render();
+});
+document.getElementById("has-code").addEventListener("change", e => {
+  ui.hasCode = e.target.checked; render();
+});
+document.getElementById("has-notes").addEventListener("change", e => {
+  ui.hasNotes = e.target.checked; render();
+});
+document.querySelectorAll(".pill").forEach(p => p.addEventListener("click", e => {
+  document.querySelectorAll(".pill").forEach(x => x.classList.remove("active"));
+  e.target.classList.add("active");
+  ui.days = +e.target.dataset.days; render();
+}));
+document.querySelectorAll(".sort-btn").forEach(b => b.addEventListener("click", e => {
+  document.querySelectorAll(".sort-btn").forEach(x => x.classList.remove("active"));
+  e.target.classList.add("active");
+  sortMode = e.target.dataset.sort; render();
+}));
+
+/* ═══════════════════════════════════════════════════════════
+   HELPERS
+═══════════════════════════════════════════════════════════ */
+function esc(s) {
+  return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function relDate(iso) {
+  const d = Math.floor((Date.now() - new Date(iso)) / 864e5);
+  return d === 0 ? "today" : d === 1 ? "yesterday" : `${d}d ago`;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BOOT
+═══════════════════════════════════════════════════════════ */
+loadAnnotations();
+buildSidebar();
+loadPapers();
+</script>
+</body>
+</html>
