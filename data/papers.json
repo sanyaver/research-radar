@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-07T10:28:42.086188+00:00",
-  "total": 94,
-  "new_this_run": 33,
+  "last_updated": "2026-07-08T09:29:05.112692+00:00",
+  "total": 102,
+  "new_this_run": 8,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -691,6 +691,38 @@
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
     },
     {
+      "id": "2607.05869v1",
+      "title": "GraspIT: A Dataset Bridging the Sim-to-Real gap and back for Validated Grasping SE(3) Pose Generation",
+      "abstract": "Robust robotic grasping of novel objects requires datasets that simultaneously provide photorealistic RGB-D observations, physically validated grasp quality annotations, and a principled bridge between simulation and the real world, which existing datasets lack to provide jointly. \\textbf{GraspIT} addresses this gap: tabletop scenes in NVIDIA Isaac Sim are annotated via a four-stage physical slip-test on parallel Franka Panda instances, producing trajectory-reachability checks and continuous quality scores beyond force-closure.Of ${\\sim}$2.3M candidates, 83% pass as \\emph{good} ($s{\\geq}0.50$); the 17% that passed force-closure but failed the slip-test provide graded hard negatives. A Real$\\…",
+      "authors": [
+        "Paul Koch. Adem Karakurt",
+        "André Sers"
+      ],
+      "published": "2026-07-07T06:00:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.05869v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -815,6 +847,31 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
+    },
+    {
+      "id": "2607.06337v1",
+      "title": "OrchardBench: A Physically-Grounded, GPU-Parallel Apple-Orchard Simulation Benchmark for Agricultural Robotics",
+      "abstract": "Robotic tree-fruit harvesting is a flagship problem for agricultural automation, but progress is bottlenecked by the cost and irreproducibility of field experiments: an orchard is available only weeks a year, every tree is different, and a control error can permanently damage the crop or the plant. The tree models used in graphics and agronomy are geometrically detailed but physically inert, while the GPU-parallel simulators used in robot learning contain no plausible trees. We present OrchardBench, a physically-grounded, GPU-parallel simulation of apple-orchard trees on the Newton engine. Each tree is grown by a stochastic L-system and instantiated as a fully articulated body: branches are …",
+      "authors": [
+        "Humphrey Munn"
+      ],
+      "published": "2026-07-07T14:34:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.06337v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -1074,6 +1131,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
+    },
+    {
+      "id": "2607.05966v1",
+      "title": "Imagined Rollouts are Kinematic, Not Dynamic: A Diagnosis of Long-Horizon World-Model Failure",
+      "abstract": "Long-horizon failure in world models is conventionally attributed to compounding error, a generic framing that does not distinguish what kind of error compounds. We propose a kinematic-vs-dynamic reframing: world models tend to imagine kinematically rather than dynamically. We operationalize this as the imagined Kinematic-Consistency Error, a per-step diagnostic that measures how far a rollout departs from a closed-form kinematic null, paired with a perturbation protocol that tests whether iKCE responds when physical conditions cross a regime boundary. We instantiate the diagnostic on a released DreamerV3 checkpoint trained on DMC walker-walk, where imagined iKCE runs roughly two orders of m…",
+      "authors": [
+        "Finn Rasmus Schäfer",
+        "Korbinian Moller",
+        "Yuan Gao",
+        "Christian Oefinger",
+        "Sebastian Schmidt",
+        "Johannes Betz"
+      ],
+      "published": "2026-07-07T08:02:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.05966v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -2085,6 +2171,102 @@
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
     },
     {
+      "id": "2607.06516v1",
+      "title": "Point as Skeleton: Accumulated Point Cloud Enhanced Autoregressive Generation for Closed-Loop Autonomous Driving Simulation",
+      "abstract": "Evaluating end-to-end autonomous driving (E2E-AD) remains challenging, as existing driving simulation methods often trade off closed-loop interactivity (e.g., CARLA) and real-world visual fidelity (e.g., nuScenes). We present \\textbf{\\emph{Point as Skeleton}}, a generative sensor simulation framework for state-updated autoregressive driving video generation, in which an autoregressive generator synthesizes visual observations from step-wise updated ego states, actor states, scene maps, and point-cloud skeleton conditions. To support closed-loop rollout, we introduce Reset-and-Roll, which adapts rolling diffusion inference to simulation by preventing future-conditioned latent states from bein…",
+      "authors": [
+        "Songbur Wong",
+        "Xiaosong Jia",
+        "Junqi You",
+        "Bo Zhang",
+        "Pei Xu",
+        "Renqiu Xia"
+      ],
+      "published": "2026-07-07T17:20:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.06516v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
+    },
+    {
+      "id": "2607.05598v1",
+      "title": "SSA-3DGS: Unsupervised Removal of Screen-Space Artifacts for 3D Gaussian Splatting",
+      "abstract": "Novel View Synthesis (NVS) methods, such as 3D Gaussian Splatting (3DGS), rely heavily on the assumption of clean, multi-view consistent, posed input images. Real-world captures can violate this assumption due to screen-space artifacts-static occlusions fixed to the 2D image plane rather than to the 3D world. Common examples include physical sensor defects, environmental obstructions (such as rain or mud on the lens enclosure), capture obstructions (such as a thumb over the camera sensor or a dashboard visible in dashcam footage), and digital overlays (such as watermarks or UI elements). When present, they are erroneously baked into the 3D geometry as \"floaters\" or near-camera artifacts, deg…",
+      "authors": [
+        "Kristof Overdulve",
+        "Lode Jorissen",
+        "Nick Michiels"
+      ],
+      "published": "2026-07-06T19:51:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.05598v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
+    },
+    {
+      "id": "2607.05522v1",
+      "title": "Rendering-Aware Bayesian 3D Gaussian Splatting with Native Uncertainty and Adaptive Complexity Control",
+      "abstract": "3D Gaussian splatting (3DGS) is a strong representation for real-time novel-view synthesis, but its standard training pipeline relies on point estimates and hand-tuned heuristics, providing no native uncertainty or principled complexity control. This is most limiting under sparse views or fixed acquisition budgets, where a model must identify weakly supported geometry and select informative views. We introduce a rendering-aware Bayesian 3DGS framework that tracks Gaussian geometry with a Normal-Inverse-Wishart posterior over means and covariances using renderer-derived surrogate summaries. An optional Dirichlet-process extension adds a probabilistic component-usage signal, and the training s…",
+      "authors": [
+        "Gaoxiang Jia",
+        "Vikram Appia",
+        "Junzhou Huang",
+        "Xinlei Wang"
+      ],
+      "published": "2026-07-06T18:01:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.05522v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -2889,6 +3071,63 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
+    },
+    {
+      "id": "2607.06281v1",
+      "title": "Straight-Path Flow Matching for Incomplete Multi-View Clustering",
+      "abstract": "Incomplete Multi-View Clustering addresses the problem of clustering multi-modal data when certain views are missing. Recent end-to-end generative approaches leverage diffusion models to recover missing views via stochastic noise-to-data trajectories. While expressive, such mechanisms are not explicitly designed for clustering, as they initialize from cluster-agnostic noise and rely on stochastic denoising dynamics. In this work, we revisit probability path design in end-to-end generative IMVC. We introduce a flow-matching framework with a linear interpolation path between paired view representations, that replaces diffusion with probability flows between observed and missing views. We provi…",
+      "authors": [
+        "Yiteng Yuan",
+        "Junyan Wang",
+        "Zheyuan Liu",
+        "Hong Jia",
+        "Lei Fan",
+        "Zhulin Tao"
+      ],
+      "published": "2026-07-07T13:47:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.06281v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
+    },
+    {
+      "id": "2607.05667v1",
+      "title": "Clustered Codebook Quantization for 2D Gaussian-based Image Compression",
+      "abstract": "Gaussian-based image representations effectively model image content using compact parametric primitives while preserving high visual fidelity, yet storing a large number of floating-point parameters per primitive degrades rate-distortion efficiency at higher fidelity targets. To improve the rate-distortion performance in Gaussian representation, we present our Cluster-Guided Vector Quantization (CGVQ), a Gaussian primitive based image compression method. Our key idea is to partition Gaussian parameters further into homogeneous groups prior to quantization, enabling higher compression efficiency and accurate parameter reconstruction. In practice, our extensive experiments show that CGVQ decr…",
+      "authors": [
+        "Runze Cheng",
+        "Yicheng Zhan",
+        "Josef Spjut",
+        "Kaan Akşit"
+      ],
+      "published": "2026-07-06T22:16:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.05667v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-08T09:29:05.112692+00:00"
     }
   ]
 }
