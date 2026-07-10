@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-09T10:27:51.373169+00:00",
-  "total": 115,
-  "new_this_run": 13,
+  "last_updated": "2026-07-10T10:26:27.327846+00:00",
+  "total": 123,
+  "new_this_run": 8,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -210,6 +210,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-04T09:26:42.184742+00:00"
+    },
+    {
+      "id": "2607.07880v1",
+      "title": "GIRAF: Towards Generalizable Human Interactions with Articulated Objects",
+      "abstract": "Synthesizing realistic full-body human interactions with articulated objects is a fundamental challenge for embodied AI and graphics, with applications in robotics training and virtual agents. Existing models remain limited: some focus on simple activities with static objects, while others restrict attention to hand-only manipulation. This leaves open the problem of generating coordinated full-body motion that approaches, manipulates, and moves articulated objects in a realistic and generalizable way. The key difficulty lies in reasoning jointly about locomotion, fine-grained contact, and object articulation. Models must capture subtle hand-object correspondences that transfer across object …",
+      "authors": [
+        "Xiaohan Zhang",
+        "Sebastian Starke",
+        "Alexander Winkler",
+        "Federica Bogo",
+        "Samir Aroudj",
+        "Yuting Ye"
+      ],
+      "published": "2026-07-08T19:30:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.07880v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
     },
     {
       "id": "2606.31993v1",
@@ -511,6 +540,33 @@
       "first_seen": "2026-07-09T10:27:51.373169+00:00"
     },
     {
+      "id": "2607.08025v1",
+      "title": "PGD-NO: A Neural Operator with Precomputed Geometry Decomposition for 3D Million-scale Physics Simulations",
+      "abstract": "While neural PDE solvers have demonstrated significant potential for accelerating engineering simulations, existing architectures remain constrained by high memory consumption and the single node bottleneck, where the maximum processable mesh resolution is strictly limited by the VRAM of a single compute unit. To address these challenges, we propose PGD-NO, a neural operator with Precomputed Geometry Decomposition, that relocates the computational overhead of geometric encoding to a deterministic pre-computation phase. By utilizing an iterative geometry decomposition algorithm to extract geometry tokens, our model decouples feature extraction from solution querying. This architecture enables…",
+      "authors": [
+        "Weiheng Zhong",
+        "Jing Bi",
+        "Victor Oancea",
+        "Hadi Meidani"
+      ],
+      "published": "2026-07-09T01:03:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.08025v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 90
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
+    },
+    {
       "id": "2607.00417v1",
       "title": "EO-VGGT: Orbital Ray-Conditioned 3D Foundation Models for Satellite Multi-View Reconstruction",
       "abstract": "In the era of satellite constellations, multi-view optical satellite imagery is pivotal for Earth Observation (EO) and high-quality Digital Surface Model (DSM) reconstruction. Although feed-forward 3D foundation models have transformed computer vision, their deployment in satellite remote sensing is inherently constrained by the structural discrepancy between implicit perspective assumptions and explicit orbital pushbroom geometry. This geometric incongruity is further compounded by pronounced view-set heterogeneity. We present EO-VGGT, a framework that adapts a frozen perspective-driven model to orbital observations via explicit physical geometry embedding.First, the Geometry-Correlation Co…",
@@ -751,6 +807,36 @@
       "first_seen": "2026-07-09T10:27:51.373169+00:00"
     },
     {
+      "id": "2607.08016v1",
+      "title": "LightCrafter: PBR-Conditioned Video Diffusion Refinement for Controllable and Consistent Relighting",
+      "abstract": "Video relighting requires balancing long-form temporal consistency with a physically grounded understanding of light transport, which depends on accurate estimation of intrinsic scene properties such as materials, geometry, and illumination. Existing methods follow two paradigms: (1) reconstruct a video's photometric properties via inverse rendering and relight them to a target illumination via forward rendering, using physically-based rendering (PBR) or a neural renderer; these suffer from noisy reconstructions and struggle with hard-to-model effects such as global illumination. (2) Frame the task as generative video-to-video translation conditioned on relighting targets (a target environme…",
+      "authors": [
+        "Zixin Guo",
+        "Yehonathan Litman",
+        "Yifeng He",
+        "John Miller",
+        "Chuhan Chen",
+        "Deva Ramanan"
+      ],
+      "published": "2026-07-09T00:44:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.08016v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 66
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
+    },
+    {
       "id": "2606.31101v1",
       "title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
       "abstract": "Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. Sim-to-real learning is attractive because it can replace expensive real robot demonstrations with scalable synthetic data, yet world-action models have not previously been shown to transfer from simulation to real robotic manipulation. We study whether a world-action model can be trained from synthetic priors and deployed zero-shot in the real world. To this end, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization and generate demonstrations using the AnyTask motion planning pipeline. We evaluat…",
@@ -931,6 +1017,33 @@
       "first_seen": "2026-07-08T09:29:05.112692+00:00"
     },
     {
+      "id": "2607.08098v1",
+      "title": "EVIS: A Physics-Grounded Event Camera Plugin for NVIDIA Isaac Sim",
+      "abstract": "Event cameras offer microsecond temporal resolution, low latency, and high dynamic range, making them attractive for robotics. However, labeled event-camera data for a specific robot and scene is scarce and expensive to collect, which slows the development of event-based perception and control. We present EVIS: a physics-grounded event camera plugin for NVIDIA Isaac Sim that generates high-rate, fully labeled event streams directly inside a physics simulator. The plugin implements a faithful log-intensity contrast event model with per-pixel asynchronous reference updates; it migrates from a normal RGB camera with few changes and integrates into any Isaac Sim / Isaac Lab scene, inheriting the…",
+      "authors": [
+        "Linli Shi",
+        "Ruijun Zhang",
+        "Ziyun Wang"
+      ],
+      "published": "2026-07-09T04:13:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.08098v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -1109,6 +1222,42 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-09T10:27:51.373169+00:00"
+    },
+    {
+      "id": "2607.08398v1",
+      "title": "HoloTetSphere: Unified TetSphere Mesh Reconstruction for Physical Simulations",
+      "abstract": "Standard pipelines for physics-ready 3D reconstruction rely on a decoupled two-stage paradigm: extracting surface geometry followed by an error-prone tetrahedralization process. While recent Lagrangian methods like TetSphere Splatting attempt to bypass this by directly optimizing volumetric primitives, their homeomorphic constraints prevent topology-adaptive optimization. Consequently, they produce disjoint tetrahedra rather than a single connected mesh, rendering the structures unsuitable for further physical simulations. To address this, we propose a topology-adaptive framework for holistic tetrahedral mesh reconstruction through end-to-end topological and geometric optimization. First, by…",
+      "authors": [
+        "YaQiao Dai",
+        "Renjiao Yi",
+        "Zhirui Gao",
+        "Wei Chen",
+        "Kai Xu",
+        "Chenyang Zhu"
+      ],
+      "published": "2026-07-09T12:21:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.08398v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -2656,6 +2805,33 @@
       "first_seen": "2026-07-09T10:27:51.373169+00:00"
     },
     {
+      "id": "2607.07905v1",
+      "title": "3D Reconstruction of deciduous Trees using low-cost UAV- and Crane-based Photogrammetry for Monitoring Shoot Elongation across entire Canopies",
+      "abstract": "Tree growth determines how much CO2 is sequestered from the atmosphere and temporarily stored in woody biomass. At the same time tree growth is affected by increasing temperatures, more frequent drought periods, late frosts and other extreme events associated with climate change. While continuous measurements of radial (secondary) tree growth using dendrometers are well established, monitoring of shoot elongation (primary growth) has largely been neglected because suitable measurement techniques are lacking. As a result, the effects of climate change on primary tree growth remain insufficiently understood. This work aims at reconstructing native deciduous trees in 3D as a basis for measuring…",
+      "authors": [
+        "Stephan Nebiker",
+        "Micha Tschanz",
+        "Nando Amport",
+        "Frederik Baumgarten"
+      ],
+      "published": "2026-07-08T20:39:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.07905v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -2876,6 +3052,40 @@
       ],
       "has_code": true,
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
+    },
+    {
+      "id": "2607.08250v1",
+      "title": "On the Design of Mixture-of-Experts for Dynamic Gaussian Splatting",
+      "abstract": "Dynamic scene reconstruction remains challenging due to the heterogeneous and spatially varying nature of real-world motion. Although recent 3D Gaussian Splatting methods have introduced diverse deformation formulations for dynamic novel view synthesis, each method typically relies on a single deformation model within its representation, which limits robustness across diverse dynamic scenarios. In this work, we study a fundamental problem-multi-deformation modeling for dynamic 3D Gaussian representations-under two distinct integration constraints that differ in when and how multiple deformation experts interact during training. From a Mixture-of-Experts (MoE) perspective, we view multi-defor…",
+      "authors": [
+        "In-Hwan Jin",
+        "Hyeongju Mun",
+        "Joonsoo Kim",
+        "Kugjin Yun",
+        "Kyeongbo Kong"
+      ],
+      "published": "2026-07-09T08:54:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.08250v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -3299,6 +3509,36 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-09T10:27:51.373169+00:00"
+    },
+    {
+      "id": "2607.08392v1",
+      "title": "Joint Discrete-Continuous Flow Matching for Open-Vocabulary Inverse Design of Multilayer Optical Coatings",
+      "abstract": "Amortized neural inverse design typically remains closed-world: component choices are fixed vocabulary tokens, coordinate grids are frozen at training time, and continuous variables are discretized into sequence tokens. Multilayer optical coatings are an industrially important instance, coupling material sequence, layer thickness and wavelength-dependent response. We present IrisFlow, a query-based, open-vocabulary flow-matching framework instantiated in coatings: the target reflectance/transmittance spectrum, wavelength grid, candidate-material optical constants and layer count are supplied at query time. Candidate materials enter as wavelength-aware optical tokens rather than learned ident…",
+      "authors": [
+        "Zhiyi Li",
+        "Yuheng Jin",
+        "Yidan Huang",
+        "Nan Chen",
+        "Hongyan Fu",
+        "Yikun Bu"
+      ],
+      "published": "2026-07-09T12:17:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.08392v1",
+      "categories": [
+        "physics.optics",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-10T10:26:27.327846+00:00"
     },
     {
       "id": "2606.31680v1",
