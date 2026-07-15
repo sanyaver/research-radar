@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-14T09:08:16.558309+00:00",
-  "total": 153,
-  "new_this_run": 23,
+  "last_updated": "2026-07-15T09:12:25.815529+00:00",
+  "total": 167,
+  "new_this_run": 14,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -3375,6 +3375,195 @@
       "first_seen": "2026-07-14T09:08:16.558309+00:00"
     },
     {
+      "id": "2607.13028v1",
+      "title": "TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale",
+      "abstract": "Training robust autonomous driving agents requires a simulator that is fast enough for reinforcement learning at scale, realistic enough to ground behavior in real-world map structure, and diverse enough to cover the safety-critical long tail that logged data rarely contains. We present TerraZero, a procedural driving simulator and self-play training stack. A configurable C engine runs simulation on the CPU and policy inference on the GPU over a zero-copy path, sustaining 1.3M agent-steps per second on a single server-grade GPU, far faster than existing object-level simulators, while keeping fidelity lighter single-agent systems omit: heterogeneous agents, multiple dynamics models, and full …",
+      "authors": [
+        "Zhouchonghao Wu",
+        "Akshay Rangesh",
+        "Weixin Li",
+        "Wei-Jer Chang",
+        "Zachary Lee",
+        "Tim Wang"
+      ],
+      "published": "2026-07-14T17:59:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13028v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.13010v1",
+      "title": "DermDepth: Toward Monocular Metric Scale 3D Reconstruction Models for Dermatology",
+      "abstract": "Dermatological practice routinely involves measuring and tracking lesion size, morphology and texture, as critical components of wound or skin cancer screening, monitoring and diagnosis. To accomplish this task, practitioners often image the skin surface with commonly available off-the-shelf camera sensors. This has led to an overwhelming research focus on 2D methods while these objectives naturally benefit from 3D information. In this paper, we demonstrate that dense monocular 3D reconstructions, metric scale measurements and rich surface normal texture estimates are achievable for both dermoscopic and macroscopic cases without the need for additional hardware or multiple captures. We prese…",
+      "authors": [
+        "Héctor Carrión",
+        "Narges Norouzi"
+      ],
+      "published": "2026-07-14T17:51:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13010v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12785v1",
+      "title": "ExtraGS: Enhancing Endoscopic View Extrapolation via Diffusion-Guided 3D Gaussian Splatting",
+      "abstract": "Robot-assisted minimally invasive surgery (MIS) critically depends on reliable endoscopic perception for navigation and safety. However, conventional endoscopes provide only a limited field of view, leaving large portions of surrounding anatomy unobserved. Recent neural rendering approaches, such as Neural Radiance Fields and 3D Gaussian Splatting, enable novel view synthesis from endoscopic videos, but their reliance on sparse observations often leads to severe artifacts when extrapolating beyond the training trajectory.In this work, we propose ExtraGS, a framework for enhancing endoscopic view extrapolation via diffusion-guided 3D Gaussian Splatting. Starting from an initial reconstruction…",
+      "authors": [
+        "Cheng-Tai Hsieh",
+        "Jiwei Shan",
+        "Han Fang",
+        "Jianshu Hu",
+        "Tao Ni",
+        "Lijun Han"
+      ],
+      "published": "2026-07-14T14:00:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12785v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 35
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12379v1",
+      "title": "SeamGen: Artist-Aligned UV Seam Generation via Graph Flow Matching",
+      "abstract": "UV seam placement is a critical yet labor-intensive step in 3D content creation, requiring artists to balance chart shape, seam concealment, and alignment with semantic and geometric features. Existing automatic methods are primarily based on per-object optimization, relying on handcrafted objectives to avoid distortion or on proxies from pretrained models to inject semantic information. However, these strategies are not always well aligned with seams used in industrial production pipelines, often resulting in layouts that deviate from artist-preferred seam patterns and practical production requirements. To address these limitations, we propose SeamGen, a generative model for UV seam generat…",
+      "authors": [
+        "Hao Xu",
+        "Yuqing Zhang",
+        "Yiqian Wu",
+        "Xueqi Ma",
+        "Ding Liang",
+        "Yan-Pei Cao"
+      ],
+      "published": "2026-07-14T05:52:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12379v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "4C_uv",
+          "label": "4C · UV Unwrapping",
+          "color": "#EC4899",
+          "score": 8
+        },
+        {
+          "id": "4A_topology",
+          "label": "4A · Clean Topology",
+          "color": "#F97316",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12271v1",
+      "title": "A hybrid analytical-PINN model for subsurface simulation of geothermal heat exchangers in heterogeneous underground",
+      "abstract": "In this paper, a parametric physics-informed neural network for solving the heterogeneous soil thermal problem with borehole heat exchangers (BHEs) as singular sources is developed. There are three novel features in the present framework; namely, (i) the singularity is naturally removed by using analytical line source models; (ii) using the explicit formulation for gradient thermal conductivity enables physics-informed learning of the parametrization featuring the conductivity; (iii) the learned correction is utilized as an efficient universal corrector via superposition principles. We first introduce the decomposition of the temperature change and transform the approximation of the entire h…",
+      "authors": [
+        "Moke Rao",
+        "Thomas Hamacher",
+        "Smajil Halilovic"
+      ],
+      "published": "2026-07-14T02:17:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12271v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.11985v1",
+      "title": "VQCSim: When Does Compile-Once Statevector Simulation Beat Generic Quantum Frameworks?",
+      "abstract": "Hybrid quantum-classical machine learning workflows repeatedly evaluate many small parametrized circuits during training and model exploration. In this regime, framework dispatch and orchestration overhead often dominate runtime. Prior simulators accelerate execution but leave open the question of when compile-once specialization is the right choice for static variational circuits. We answer this question with VQCSim, a compile-once, PyTorch-native statevector execution path with native autograd. In a systematic MQT Bench study, VQCSim compiles all tested static circuits and provides 87.7% end-to-end semantic validation. Across a five-GPU evaluation set, VQCSim delivers pooled median speedup…",
+      "authors": [
+        "Anton Firc",
+        "Martin Perešíni",
+        "Vojtěch Mrázek",
+        "Kamil Malinka",
+        "Vojtěch Staněk",
+        "Zbyněk Lička"
+      ],
+      "published": "2026-07-13T13:42:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.11985v1",
+      "categories": [
+        "quant-ph",
+        "cs.ET",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -3787,6 +3976,97 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-14T09:08:16.558309+00:00"
+    },
+    {
+      "id": "2607.12495v1",
+      "title": "RealSkin: Spatio-Spectral Partial Neural Adjoint Maps for Image-to-3D Attribute Transfer",
+      "abstract": "Creating photorealistic 3D assets requires bridging the appearance gap between real-world observations and synthetic models. A promising approach is to transfer visual attributes from real images onto synthetic 3D surfaces. Traditional methods struggle with resolution mismatch and the inherent discreteness of point correspondences. In contrast, resolution-robust functional maps enable smooth attribute propagation but rely on near-isometry assumptions and topological consistency. To address these limitations, we propose RealSkin, a self-supervised framework that performs correspondence optimization in a learned spectral domain, guided by spatial correspondences. We first introduce a spatial-g…",
+      "authors": [
+        "Jing Li",
+        "Yawei Luo",
+        "Xiangze Meng",
+        "Ying Li",
+        "Tieru Wu",
+        "Rui Ma"
+      ],
+      "published": "2026-07-14T08:27:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12495v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12362v1",
+      "title": "Implicit 4D Gaussian Splatting for Fast Motion with Large Inter-Frame Displacements",
+      "abstract": "Recent 4D Gaussian Splatting (4DGS) methods often fail under fast motion with large inter-frame displacements, where Gaussian attributes are poorly learned during training, and fast-moving objects are often lost from the reconstruction. In this work, we introduce Spatiotemporal Position Implicit Network for 4DGS, coined SPIN-4DGS, which learns Gaussian attributes from explicitly collected spatiotemporal positions rather than modeling temporal displacements, thereby enabling more faithful splatting under fast motions with large inter-frame displacements. To avoid the heavy memory overhead of explicitly optimizing attributes across all spatiotemporal positions, we instead predict them with a l…",
+      "authors": [
+        "Seung-gyeom Kim",
+        "Areum Kim",
+        "Yongjae Yoo",
+        "Sukmin Yun"
+      ],
+      "published": "2026-07-14T05:33:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12362v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12000v1",
+      "title": "MetaView: Monocular Novel View Synthesis with Scale-Aware Implicit Geometry Priors",
+      "abstract": "Current visual generation models are capable of producing high-quality content, yet they lack a coherent perception of the spatial structure. Existing generative novel view synthesis methods typically introduce explicit geometry priors, which enforce spatial consistency but inherently restrict generalization in large view changes. In contrast, recent interactive generative methods favor implicit scene modeling, offering greater flexibility at the cost of precise camera control and geometry consistency. In this paper, we propose MetaView, a diffusion-based monocular novel view synthesis framework that enables rendering under large view changes from a single image. Our key insight is to combin…",
+      "authors": [
+        "Yufei Cai",
+        "Xuesong Niu",
+        "Hao Lu",
+        "Kun Gai",
+        "Kai Wu",
+        "Guosheng Lin"
+      ],
+      "published": "2026-07-13T17:51:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12000v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -4389,6 +4669,62 @@
       "first_seen": "2026-07-14T09:08:16.558309+00:00"
     },
     {
+      "id": "2607.12753v1",
+      "title": "RFMSR: Residual Flow Matching for Image Super-Resolution",
+      "abstract": "Image super-resolution (ISR) has witnessed remarkable progress with diffusion models and flow matching. The dominant text-to-image (T2I) based approaches leverage large-scale foundation models as generative priors, achieving impressive perceptual quality but at the cost of massive model sizes and prohibitive training expenses. Recent flow-matching-based vision-only approaches have made significant strides; however, they adopt standard flow formulations that transport from a pure Gaussian prior to the data distribution, discarding the rich structural information already present in the low-quality (LQ) input. Furthermore, existing single-step acceleration techniques often forfeit the model's m…",
+      "authors": [
+        "Shuwei Huang",
+        "Tianyao Luo",
+        "Jicheng Liu",
+        "Daizong Liu",
+        "Pan Zhou"
+      ],
+      "published": "2026-07-14T13:19:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12753v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12404v1",
+      "title": "Contrastive-Augmented Flow Matching for Style-Content Disentanglement",
+      "abstract": "Learning representations that separate content and style is crucial for controllable generation and compositional generalization. However, diffusion and flow-based models trained primarily with generative objectives often produce entangled or misaligned factors. To address this gap, we introduce Contrastive Augmented Flow Matching (CAtFM), a framework that integrates contrastive regularization into an invertible flow matching formulation to promote structured content-style representations. Rather than constraining intermediate latents or velocity fields, we apply contrastive supervision to predicted endpoints during training, enforcing semantic consistency across transported distributions wh…",
+      "authors": [
+        "Yusong Li",
+        "Pingchuan Ma",
+        "Ming Gui",
+        "Vincent Tao Hu",
+        "Björn Ommer"
+      ],
+      "published": "2026-07-14T06:23:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12404v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -4691,6 +5027,89 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-14T09:08:16.558309+00:00"
+    },
+    {
+      "id": "2607.13022v1",
+      "title": "A Shortcut to Statistically Steady-State Turbulence with Flow Matching",
+      "abstract": "Many nonlinear physical systems exhibit an initial transient phase in which perturbations grow before nonlinear interactions lead to a statistically steady state. While this saturated regime is of primary interest, direct numerical simulations must resolve the full transient dynamics before reaching it, incurring significant computational cost. In Computational Fluid Dynamics, reduced-order approaches such as Large Eddy Simulation mitigate computational cost by modeling small-scale dynamics, enabling tractable approximations of turbulent flows. In contrast, for systems such as gyrokinetics, comparably effective closures for the full dynamics are not generally available, and high-fidelity sim…",
+      "authors": [
+        "Gianluca Galletti",
+        "Gerald Gutenbrunner",
+        "William Hornsby",
+        "Lorenzo Zanisi",
+        "Naomi Carey",
+        "Stanislas Pamela"
+      ],
+      "published": "2026-07-14T17:58:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13022v1",
+      "categories": [
+        "physics.plasm-ph",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12616v1",
+      "title": "The Geometry of Memorization: Finite-Time Spectral Sensitivity as a Diagnostic for Flow Matching Models",
+      "abstract": "Continuous-time generative frameworks construct probability paths between base and target domains by optimizing time-dependent velocity fields. While theoretical targets favor straight trajectories, empirical networks develop complex path deformations. This paper presents the Finite-Time Spectral Sensitivity (FTSS) g(t), a gradient-free, forward-pass metric that exposes flow geometry by tracking the root-mean-square singular value of the state-transition matrix. Serving as a continuous proxy for stable rank, g(t) reveals a distinct geometric pathology under data scarcity: while generalizing models maintain stable effective dimensions, overfitting causes a spectral collapse. We leverage this …",
+      "authors": [
+        "Shuchan Wang"
+      ],
+      "published": "2026-07-14T10:55:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12616v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.12539v1",
+      "title": "DiTailed: Ensuring Visual Object Consistency in Text-Image-to-Image Flow Matching Models",
+      "abstract": "Despite remarkable progress in text-guided image editing, generative models frequently fail to preserve visual object consistency, defined as the preservation of a subject's key attributes throughout the editing process. We address this limitation through three contributions. First, we introduce ABO-Edit, a dataset specifically designed to study object consistency, comprising over 12,000 triplets of source images, editing prompts, and high-quality target images rendered from artist-designed 3D assets, with multi-view coverage and human-verified quality control. Second, we uncover an overlooked property of image-editing rectified flow models: the conditioning embedding space, not directly sup…",
+      "authors": [
+        "Francesco Taioli",
+        "Daniel Coelho",
+        "Iaroslav Melekhov",
+        "Roberto Alcover-Couso",
+        "Jose Miguel Grande Saiz",
+        "Virginia Fernandez Arguedas"
+      ],
+      "published": "2026-07-14T09:09:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12539v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-15T09:12:25.815529+00:00"
     }
   ]
 }
