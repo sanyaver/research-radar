@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-15T09:12:25.815529+00:00",
-  "total": 167,
-  "new_this_run": 14,
+  "last_updated": "2026-07-16T09:18:58.615167+00:00",
+  "total": 180,
+  "new_this_run": 13,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -239,6 +239,34 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-10T10:26:27.327846+00:00"
+    },
+    {
+      "id": "2607.13539v1",
+      "title": "ThinkBLOX: 3D Indoor Scene Generation with Progressive Reasoning",
+      "abstract": "While traditional graphics methods often synthesize 3D indoor scenes autoregressively or hierarchically, recent vision-language model (VLM)-based generators predominantly adopt a one-shot paradigm where the full layout is planned at once. This one-shot approach often requires global re-optimization or complete reconstruction during interactive editing (e.g., inserting or moving objects) and can lead to physically or semantically poorly organized arrangements. To address these challenges, we propose ThinkBLOX, a VLM-based progressive reasoning framework that iteratively designs and refines 3D scenes. ThinkBLOX treats layout generation as a state-conditioned, step-by-step reasoningand-action p…",
+      "authors": [
+        "Yuan Xiao",
+        "Can Wang",
+        "Xiangyu Kong",
+        "Jing Liao"
+      ],
+      "published": "2026-07-15T07:42:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13539v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
     },
     {
       "id": "2606.31993v1",
@@ -902,6 +930,36 @@
       "first_seen": "2026-07-10T10:26:27.327846+00:00"
     },
     {
+      "id": "2607.13449v1",
+      "title": "DreamSat-Pose: Spacecraft Pose Estimation from Single-View 3D Reconstructions and Learned 2D-3D Feature Matching",
+      "abstract": "6-DoF pose estimation is a critical task in autonomous rendezvous and proximity operations. In the case of an unknown target, this task becomes challenging as it shall be paired with the reconstruction of the target shape model. In this article, we propose a novel framework for single-shot shape and pose estimation of unknown spacecraft objects. Given a single image, we first reconstruct a 3D shape model of the target, then estimate the relative six-degrees-of-freedom pose by learning dense 2D-3D correspondences. The image features are extracted using a frozen DINOv3 vision transformer, while the geometric features are computed from the reconstructed point cloud using a trainable dynamic gra…",
+      "authors": [
+        "Josiane Uwumukiza",
+        "Jocelyn Zhao",
+        "Giovanni Lavezzi",
+        "Giacomo Battaglia",
+        "Paolo Panicucci",
+        "Minduli C. Wijayatunga"
+      ],
+      "published": "2026-07-15T05:12:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13449v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 70
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
       "id": "2606.31101v1",
       "title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
       "abstract": "Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. Sim-to-real learning is attractive because it can replace expensive real robot demonstrations with scalable synthetic data, yet world-action models have not previously been shown to transfer from simulation to real robotic manipulation. We study whether a world-action model can be trained from synthetic priors and deployed zero-shot in the real world. To this end, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization and generate demonstrations using the AnyTask motion planning pipeline. We evaluat…",
@@ -1137,6 +1195,68 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-14T09:08:16.558309+00:00"
+    },
+    {
+      "id": "2607.13524v1",
+      "title": "COLMAR: Cooperative View Policy Learning for Multi-Agent Active 3D Reconstruction",
+      "abstract": "Active 3D reconstruction requires selecting informative viewpoints under limited sensing budgets. In multi-agent settings, coordination inefficiencies such as redundant observations and spatial clustering can significantly reduce reconstruction quality. We present COLMAR, a cooperative view policy learning framework for multi-agent active 3D reconstruction. COLMAR formulates viewpoint allocation as a shared policy optimization over map-centric observations and introduces a reconstruction-aware objective that promotes overlap-aware coverage, team-level discovery, and collision-safe exploration. Dense feedback derived from incremental reconstruction updates aligns exploration behavior with dow…",
+      "authors": [
+        "Phu Pham",
+        "Damon Conover",
+        "Aniket Bera"
+      ],
+      "published": "2026-07-15T07:24:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13524v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 56
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.13468v1",
+      "title": "HIVE-3D: Hierarchical Voxel Enhancement for High-Quality 3D Scene Generation",
+      "abstract": "Recently, a line of works can generate impressive 3D objects from a single image, but they are limited by restricted representation resolution, making them unsuitable for 3D scene generation. In this work, we introduce HIVE-3D, a novel method for high-quality 3D scene generation based on hierarchical voxel enhancement framework. Specifically, given a single scene image as input, we first produce a coarse initial scene, then introduce image segmentation and attention-based retrieval to align 2D image components with 3D scene components. Subsequently, we organize these scene relations into a hierarchical component tree, where nodes closer to the leaves denote finer-grained components. Finally,…",
+      "authors": [
+        "Bin Zang",
+        "Wenting Zheng",
+        "Xiaoliang Luo",
+        "Zhiyuan Fang",
+        "Shi Li",
+        "Lvchun Wang"
+      ],
+      "published": "2026-07-15T05:56:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13468v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -1416,6 +1536,83 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-13T10:31:49.865371+00:00"
+    },
+    {
+      "id": "2607.13586v1",
+      "title": "UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets",
+      "abstract": "Physically grounded 3D assets are increasingly important for embodied AI and robotic simulation. However, most existing 3D assets lack unified physical semantics, including articulation semantics and intrinsic physical properties, required for realistic interaction. Current approaches either treat these semantics independently or rely on canonicalized object structures, limiting robustness across heterogeneous 3D assets. We present UniPhys, a scalable framework for automatically transforming raw 3D assets into simulation-ready assets with unified physical semantics. Based on UniPhys, we construct UniPhys-40K, a large-scale physically grounded dataset, together with UniPhys-Bench, a carefully…",
+      "authors": [
+        "Xian Li",
+        "Rong Wei",
+        "Lujie Yang",
+        "Haolin Huang",
+        "Junyuan Fang",
+        "Siliang Tang"
+      ],
+      "published": "2026-07-15T08:27:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13586v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 10
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.13451v1",
+      "title": "Learning Physics-Guided Residual Dynamics for Deformable Object Simulation",
+      "abstract": "Simulating deformable objects is essential for a wide range of robotic manipulation applications, yet accurately predicting their dynamics remains challenging. We propose Physics-Guided Residual Dynamics (PGRD), a hybrid simulation framework that combines the advantages of physics-based and learning-based approaches. Specifically, PGRD combines an optimizable spring-mass simulator as a backbone with a learned neural network that predicts residual corrections to the physics-based predictions. We adopt a velocity-based formulation to ensure stable simulation and a sliding-window transformer architecture to capture temporal dependencies. We show that PGRD produces more accurate results than bot…",
+      "authors": [
+        "Shivansh Patel",
+        "Kaifeng Zhang",
+        "Sanjay Pokkali",
+        "Svetlana Lazebnik",
+        "Yunzhu Li"
+      ],
+      "published": "2026-07-15T05:15:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13451v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -1918,6 +2115,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-14T09:08:16.558309+00:00"
+    },
+    {
+      "id": "2607.13656v1",
+      "title": "FreeLit: Paired-Free Indoor Relighting via Physics-Guided Diffusion",
+      "abstract": "Image-based indoor scene relighting remains challenging due to the complex interplay between cluttered geometry and local illumination, requiring precise modeling of light position, color, and intensity. Existing data-driven methods implicitly learn this relationship via paired multi-illumination datasets. Nevertheless, this data is costly and fails to scale, which is essential for accurate light-source-level control. Conversely, inverse-rendering methods reduce the data dependency by incorporating physical priors; however, they lack the robustness of intrinsic estimation in challenging conditions. In this paper, we present FreeLit, a paired-free framework for controllable indoor relighting …",
+      "authors": [
+        "Chi-En Yen",
+        "Duy-Khanh Ngo",
+        "Wen-Wei Tang",
+        "Huu-Phu Do",
+        "Wen-Hsiao Peng",
+        "Ching-Chun Huang"
+      ],
+      "published": "2026-07-15T10:03:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13656v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -3564,6 +3796,92 @@
       "first_seen": "2026-07-15T09:12:25.815529+00:00"
     },
     {
+      "id": "2607.13365v1",
+      "title": "DiffGI: Differentiable Geometry Images for High-Fidelity Thin-Shell 3D Generation",
+      "abstract": "Existing 3D generative models predominantly rely on implicit volumetric representations, which enforce watertight topology and struggle to represent thin-shell and non-manifold geometries such as garments. Geometry image-based approaches offer a surface-centric alternative, but existing methods rely on discrete binary occupancy maps whose resolution-dependent boundary encoding causes staircase artifacts and information loss upon downsampling, while surface reconstruction remains a non-differentiable post-processing step disconnected from the learning pipeline. To address this, we propose Differentiable Geometry Image (DiffGI), an end-to-end 3D-to-2D mapping framework that seamlessly integrat…",
+      "authors": [
+        "Eungjune Shim",
+        "Hansol Lee",
+        "Eunjung Ju"
+      ],
+      "published": "2026-07-15T01:00:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13365v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.13010v2",
+      "title": "DermDepth: Toward Monocular Metric Scale 3D Reconstruction Models for Dermatology",
+      "abstract": "Dermatological practice routinely involves measuring and tracking lesion size, morphology and texture, as critical components of wound or skin cancer screening, monitoring and diagnosis. To accomplish this task, practitioners often image the skin surface with commonly available off-the-shelf camera sensors. This has led to an overwhelming research focus on 2D methods while these objectives naturally benefit from 3D information. In this paper, we demonstrate that dense monocular 3D reconstructions, metric scale measurements and rich surface normal texture estimates are achievable for both dermoscopic and macroscopic cases without the need for additional hardware or multiple captures. We prese…",
+      "authors": [
+        "Héctor Carrión",
+        "Narges Norouzi"
+      ],
+      "published": "2026-07-14T17:51:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13010v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.12785v2",
+      "title": "ExtraGS: Enhancing Endoscopic View Extrapolation via Diffusion-Guided 3D Gaussian Splatting",
+      "abstract": "Robot-assisted minimally invasive surgery (MIS) critically depends on reliable endoscopic perception for navigation and safety. However, conventional endoscopes provide only a limited field of view, leaving large portions of the surrounding anatomy unobserved. Recent neural rendering approaches, such as Neural Radiance Fields and 3D Gaussian Splatting, enable novel view synthesis from endoscopic videos, but their reliance on sparse observations often leads to severe artifacts when extrapolating beyond the training trajectory. In this work, we propose ExtraGS, a framework for enhancing endoscopic view extrapolation through diffusion-guided 3D Gaussian Splatting. Starting from an initial recon…",
+      "authors": [
+        "Cheng-Tai Hsieh",
+        "Jiwei Shan",
+        "Han Fang",
+        "Jianshu Hu",
+        "Tao Ni",
+        "Lijun Han"
+      ],
+      "published": "2026-07-14T14:00:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.12785v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 35
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -4725,6 +5043,67 @@
       "first_seen": "2026-07-15T09:12:25.815529+00:00"
     },
     {
+      "id": "2607.13841v1",
+      "title": "Heavy-Tailed Flow Matching via Random Clocks",
+      "abstract": "Heavy-tailed data arise in many domains where rare events carry disproportionate importance, such as imbalanced image datasets, financial returns, and weather extremes. Standard diffusion and flow-matching models typically begin from Gaussian noise or Gaussian source distributions, which yield tractable training targets but provide a poor inductive match for heavy-tailed data. We propose Heavy-Tailed Flow Matching via Random Clocks (HTFM), a framework that portrays heavy-tailed sources as mixtures of clock-conditioned Gaussian sources. Conditioning on a given clock path, the source distribution and flow are Gaussian; marginalizing over the clock gives a Gaussian scale mixture covering Gaussi…",
+      "authors": [
+        "Zhouhao Yang",
+        "Yezhen Wang",
+        "Kenji Kawaguchi",
+        "Vladimir Braverman",
+        "Haoyang Cao"
+      ],
+      "published": "2026-07-15T13:48:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13841v1",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.13682v1",
+      "title": "Calibrated Closed-Form Uncertainty for Radiative Gaussian Splatting in Sparse-View CT",
+      "abstract": "Radiative Gaussian splatting has made sparse-view CT reconstruction fast, but existing methods output point estimates with no notion of where the reconstruction can be trusted. We exploit a property of transmissive X-ray imaging that RGB splatting cannot claim -- projection and voxelization are strictly linear in the per-Gaussian densities -- to equip radiative Gaussians with a variational density posterior whose predictive variance propagates in closed form, exactly, in a single forward pass, in both volume space ($σ^2(x)=\\sum_i g_i(x)^2 s_i^2$) and projection space ($\\mathrm{Var}[I_p]=\\sum_i w_{i,p}^2 s_i^2$). We present the first systematic calibration study for Gaussian-splatting CT (Spe…",
+      "authors": [
+        "Chulin Zhao",
+        "Yiran Xu",
+        "Shu Liu"
+      ],
+      "published": "2026-07-15T10:25:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13682v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -5110,6 +5489,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.13563v1",
+      "title": "Nexus: Native Mesh Generation with Diffusion",
+      "abstract": "Generating high-quality triangle meshes is essential for film, gaming, and interactive 3D applications. Mainstream methods rely on mesh serialization and autoregressive processes, which stuggles in effective inference and is sensitive to error accumulation. In this paper, we present Nexus, a diffusion method that achieves holistic mesh generation via decoupled vertex and topology generation. First, we view mesh vertices as sparse voxels organized as an octree and adopt a diffusion model to generate the vertices in a coarse-to-fine manner. Second, for topology modeling, we propose Spacetime Interval, as an extension of Spacetime Distance to encode arbitrary edge and face topology into continu…",
+      "authors": [
+        "Hanxiao Wang",
+        "Ying-Tian Liu",
+        "Yuan-Chen Guo",
+        "Qi-Yuan Feng",
+        "Zi-Xin Zou",
+        "Ding Liang"
+      ],
+      "published": "2026-07-15T08:04:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.13563v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "4A_topology",
+          "label": "4A · Clean Topology",
+          "color": "#F97316",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-16T09:18:58.615167+00:00"
     }
   ]
 }
