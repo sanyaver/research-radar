@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-16T09:18:58.615167+00:00",
-  "total": 180,
-  "new_this_run": 13,
+  "last_updated": "2026-07-17T09:13:13.011991+00:00",
+  "total": 192,
+  "new_this_run": 12,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -1259,6 +1259,49 @@
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
     },
     {
+      "id": "2607.14203v1",
+      "title": "Instant NuRec: Feed-Forward 3D Gaussian Reconstruction for Driving Scene Simulation",
+      "abstract": "3D simulation platforms are critical for autonomous driving because they enable end-to-end policy evaluation, thereby reducing development costs and improving safety. In recent years, neural simulation has become predominant, with methods such as NuRec playing a central role; however, these methods remain relatively slow and typically require per-scene tuning. In this work, we present Instant NuRec, a feed-forward neural reconstruction model that turns a short multi-view driving log into a fully simulatable 3D Gaussian Splatting (3DGS) world in a single forward pass. The model accepts multi-view input from a calibrated camera rig and emits a layered output consisting of static and dynamic 3D…",
+      "authors": [
+        "NVIDIA",
+        ":",
+        "Jiahui Huang",
+        "Jiawei Ren",
+        "Michal Tyszkiewicz",
+        "Bjoern Haefner"
+      ],
+      "published": "2026-07-15T17:50:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14203v1",
+      "categories": [
+        "cs.GR",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -2150,6 +2193,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.14842v1",
+      "title": "KineFuse: Kinematic-Aware Haptic Fusion for In-Hand Occluded-Object Pose Tracking",
+      "abstract": "Dexterous in-hand manipulation requires continuous 6D pose tracking, yet the manipulating fingers inevitably occlude the object from the camera. We study how to structure the sparse haptic signals already available on multi-fingered hands, including proprioception, proximal force/torque, and binary contact, to complement a pretrained visual pose tracker under occlusion. We propose a kinematic-aware finger-level encoder and systematically compare it against four alternative designs through three levels of evaluation: per-frame refinement, sequential open-loop tracking, and closed-loop manipulation. Our experiments reveal that (i) per-frame evaluation cannot distinguish encoder quality, while …",
+      "authors": [
+        "Chanyoung Ahn",
+        "Jaesung Lee",
+        "Sungwoo Park",
+        "Donghyun Hwang"
+      ],
+      "published": "2026-07-16T11:07:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14842v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -3882,6 +3952,67 @@
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
     },
     {
+      "id": "2607.15211v1",
+      "title": "MAGiSt3R: Multi-Agent Feed-forward 3D Reconstruction from Monocular RGB Videos",
+      "abstract": "This paper presents MAGiSt3R, a multi-agent 3D reconstruction framework performing reconstruction and camera tracking for monocular RGB videos at almost 10 FPS. MAGiSt3R relies on a feed-forward model from the 3R family to process RGB videos and regress local point maps, and on a merging model, MAGMA, that combines local maps at both intra-agent and inter-agent levels to obtain the final global point map. Furthermore, MAGiSt3R performs pose graph optimization to mitigate cumulative camera drift occurring along the feed-forward pipeline. We evaluate MAGiSt3R on both synthetic and real-world datasets, demonstrating its superior reconstruction and camera tracking accuracy compared to state-of-t…",
+      "authors": [
+        "Ziren Gong",
+        "Xiaohan Li",
+        "Fabio Tosi",
+        "Ninghui Xu",
+        "Stefano Mattoccia",
+        "Jianfei Cai"
+      ],
+      "published": "2026-07-16T17:12:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15211v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.14513v1",
+      "title": "Compression of 3D Gaussian Splatting Data Using GPU-friendly Graphics Texture Coding",
+      "abstract": "Techniques for modeling 3D scenes from image collections, such as 3D Gaussian Splatting (3DGS), are capable of generating high-quality novel views by leveraging graphics primitives with view-dependent appearance. In 3DGS, spherical harmonic (SH) are employed to model view-dependent color, resulting in a large number of SH coefficients per primitive and large memory requirements. While compression approaches have been proposed to mitigate this problem, they do not exploit the capabilities of modern Graphics Processing Units (GPUs) for parallel decoding and rendering. In this paper, we propose a method for compressing SH color coefficients using texture compression schemes specifically designe…",
+      "authors": [
+        "Amir Said",
+        "Randall Rauwendaal"
+      ],
+      "published": "2026-07-16T03:10:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14513v1",
+      "categories": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -4385,6 +4516,70 @@
       ],
       "has_code": true,
       "first_seen": "2026-07-15T09:12:25.815529+00:00"
+    },
+    {
+      "id": "2607.15271v1",
+      "title": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
+      "abstract": "Online novel view synthesis from multi-view streaming videos faces a fundamental trade-off: maintaining a persistent, long-horizon memory to reconstruct temporarily occluded regions while operating under strict real-time constraints. While Test-Time Training (TTT) offers a powerful memory mechanism, standard models mandate gradient-based memory updates at every frame to adapt to the changing motion in dynamic scenes. The computational cost of heavy memory updates precludes real-time application and can lead to instability over long contexts. Given that memory updates are more demanding than memory application and video content is largely redundant, we propose to decouple the frequencies of t…",
+      "authors": [
+        "Baback Elmieh",
+        "Lynn Tsai",
+        "Zeman Li",
+        "Srinivas Kaza",
+        "Tiancheng Sun",
+        "Gabor Csapo"
+      ],
+      "published": "2026-07-16T17:58:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15271v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.14990v1",
+      "title": "JADE-GS: Joint Alternating Deblurring Guided by Events in 3D Gaussian Splatting",
+      "abstract": "When a camera moves fast during exposure, blur destroys the intra-exposure motion a 3D model needs to recover the sharp scene, while event cameras capture exactly this signal at microsecond resolution. Turning them into reliable 3D supervision faces two obstacles. First, the two restoration priors fail in opposite ways: physics-based event-integration priors preserve edges but accumulate drift; learned networks recover texture but distort boundaries. Second, existing pipelines run in one direction only, so raw event noise or the biases of fixed 2D pseudo-labels pass uncorrected into the geometry. JADE-GS addresses both: a pixel-adaptive routing gate fuses the complementary priors, and the re…",
+      "authors": [
+        "Haoyu Fu",
+        "Jiafeng Huang",
+        "Yuchen Wang",
+        "Shengjie Zhao"
+      ],
+      "published": "2026-07-16T13:40:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14990v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -5104,6 +5299,106 @@
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
     },
     {
+      "id": "2607.14997v1",
+      "title": "AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight",
+      "abstract": "Language-conditioned quadrotor flight requires a policy to ground semantic goals, anticipate the visual consequences of ego-motion, and output control references that remain smooth and dynamically executable under rapidly changing first-person views. Existing aerial vision-language navigation and vision-language-action methods commonly use discrete actions, high-level waypoints, or instantaneous velocity commands, which provide limited supervision about how flight actions change future observations. We present AeroAct, an action-centered world-action model (WAM) for quadrotor navigation. To the best of our knowledge, AeroAct is the first WAM instantiated and demonstrated for real-world aeria…",
+      "authors": [
+        "Xinhong Zhang",
+        "Qiyuan Zhu",
+        "Yubo Huang",
+        "Haolin Chen",
+        "Runqing Wang",
+        "Yuhao Mo"
+      ],
+      "published": "2026-07-16T13:46:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14997v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.14652v1",
+      "title": "Trajectory-Aware Flow Matching for Topology Optimisation",
+      "abstract": "Topology optimisation (TO) often requires repeated finite element analysis and sensitivity-based material updates, which can be costly when multiple candidate designs are needed under varying physical and design conditions. Generative TO offers a route to rapid design exploration, but existing models may rely on adversarial training, long reverse-diffusion sampling, or external guidance to maintain structural feasibility and physical consistency. This study develops a flow matching-based topology optimisation (FMTO) framework for conditional topology generation. Linear FMTO is first formulated as an endpoint-based baseline by interpolating between a Gaussian source field and the BESO referen…",
+      "authors": [
+        "Shusheng Xiao",
+        "Jinshuai Bai",
+        "Hyogu Jeong",
+        "Yunfei Xi",
+        "Yilin Gui",
+        "YuanTong Gu"
+      ],
+      "published": "2026-07-16T07:21:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14652v1",
+      "categories": [
+        "cs.LG",
+        "math.NA"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.14424v1",
+      "title": "ConFlow: Constraints-Guided Learning with Flow Matching for Motion Generation",
+      "abstract": "In recent years Flow Matching has become a prominent method for generative modeling robot motion generation. In its generic form Flow Matching is an ODE-based neural sampler that is trained by regressing empirical flow fields associated with motion samples as data. However, in robot motion generation we often have additional constraints that might not be present in the collected data. The majority of current approaches train the flow on the available data and use inference-time guidance to enforce task-specific constraints. To address this mismatch, we propose \\textbf{ConFlow}, a constraint-guided flow matching framework that incorporates constraint information directly into the training obj…",
+      "authors": [
+        "Nutan Chen",
+        "Jianxiang Feng",
+        "Marvin Alles",
+        "Botond Cseke"
+      ],
+      "published": "2026-07-15T23:27:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14424v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -5518,6 +5813,90 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.14725v1",
+      "title": "BridgeFlow: Fast and Robust SE(2)-Equivariant Motion Planning with Flow Matching",
+      "abstract": "In robotic motion planning, equivariance to rigid body transformations is crucial for robust spatial generalization. However, current learning-based planners face a critical dilemma: they either lack inherent equivariance, treating transformed tasks as novel scenarios, or enforce it via computationally expensive specialized architectures that bottleneck real-time inference. To break this trade-off, we propose BridgeFlow, a fast and strictly SE(2)-equivariant generative motion planning framework. Rather than relying on heavy equivariant networks, BridgeFlow achieves exact spatial equivariance via a lightweight task-centric canonicalization module, enabling generalization using standard archit…",
+      "authors": [
+        "Xinzhe Zhou",
+        "Xuyang Wang",
+        "Xiaoming Duan",
+        "Jianping He"
+      ],
+      "published": "2026-07-16T08:53:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14725v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.14698v1",
+      "title": "Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color",
+      "abstract": "Vision-Language-Action (VLA) models have emerged as a powerful paradigm for general-purpose robot manipulation; however, their transition to real-world environments reveals vulnerabilities to minor environmental perturbations. We propose FLARE, an optimized physical spotlight attack framework that exploits these vulnerabilities via targeted illuminations, dropping baseline task success rates to zero without any access to model internals. While adversarial training is the standard countermeasure, we identify a critical and previously underestimated defensive pitfall: naive data augmentations incorrectly condition VLA models to discard color as noise, collapsing their visual perception into a …",
+      "authors": [
+        "Marino Watanabe",
+        "Takami Sato",
+        "Kentaro Yoshioka"
+      ],
+      "published": "2026-07-16T08:01:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14698v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.14635v1",
+      "title": "Action QFormer: Structured Representation Shaping under Action Supervision in Vision-Language-Action Models",
+      "abstract": "Action supervision in vision-language-action (VLA) models is often treated as a downstream objective for learning action prediction. In this paper, we study it instead as a force that shapes inherited multimodal representations. We show that this shaping has a dual effect: it is necessary for forming action-compatible representations, but when action supervision is applied too directly to the inherited multimodal pathway, it can also destabilize representations that support language-side processing and object grounding. To address this tension, we introduce Action QFormer, a query-based action-facing interface that uses instruction-conditioned queries to reorganize inherited multimodal infor…",
+      "authors": [
+        "Yufeng Ji",
+        "Wenhao Tang",
+        "Haoyi Niu",
+        "Koushil Sreenath",
+        "Yi Wu",
+        "Zhongyu Li"
+      ],
+      "published": "2026-07-16T06:59:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.14635v1",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-17T09:13:13.011991+00:00"
     }
   ]
 }
