@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-19T09:08:06.314748+00:00",
-  "total": 192,
-  "new_this_run": 0,
+  "last_updated": "2026-07-20T10:16:50.043309+00:00",
+  "total": 202,
+  "new_this_run": 10,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -1656,6 +1656,31 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.15642v1",
+      "title": "Difference-Based Relational Learning for Zero-Shot Object-Goal Visual Navigation With Direct Sim-to-Real Transfer",
+      "abstract": "End-to-end deep reinforcement learning (DRL) for zero-shot object-goal visual navigation remains challenged by the sim-to-real gap, particularly variations in object appearance and restricted camera field-of-view (FoV). This letter proposes a Temporal Difference-Relational Network (T-DRN) for robust zero-shot sim-to-real transfer. T-DRN combines a Siamese difference-based feature extractor, which computes relational difference between the target and observed objects to produce domain-independent representations, with a dual-frame temporal buffer that preserves short-term object continuity under narrow FoV. Extensive experiments in AI2-THOR demonstrate that T-DRN improves zero-shot generaliza…",
+      "authors": [
+        "Guolei Qi",
+        "Feitian Zhang"
+      ],
+      "published": "2026-07-17T05:35:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15642v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -4013,6 +4038,210 @@
       "first_seen": "2026-07-17T09:13:13.011991+00:00"
     },
     {
+      "id": "2607.16128v1",
+      "title": "Toward Semantic Communication for Real-time Mobile 3D Reconstruction",
+      "abstract": "Real-time mobile 3D reconstruction is fundamental to many emerging applications such as autonomous navigation and digital twin construction, where a moving platform continuously captures an image stream and transmit to a computing server for scene understanding. Unlike offline reconstruction, camera poses and scene geometry are estimated on-the-fly during acquisition, making multi-view consistency a real-time requirement and rendering geometric estimation highly sensitive to communication-induced distortions. Semantic communication (SemCom) transmits compact semantic information, offering a promising way to preserve task-critical data over unreliable links. However, existing designs are opti…",
+      "authors": [
+        "Fangzhou Zhao",
+        "Yao Sun",
+        "Xuesong Liu",
+        "Runze Cheng",
+        "Shang Kai",
+        "Yi Sun"
+      ],
+      "published": "2026-07-17T17:07:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16128v1",
+      "categories": [
+        "cs.CV",
+        "cs.MA",
+        "cs.MM"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.16123v1",
+      "title": "BayesContact: Uncertain Pose Estimation via Visuo-Tactile Proposals and Simulation-based Inference",
+      "abstract": "Contact-rich manipulation requires pose estimates that are often more accurate than what depth-only sensing provides. Existing methods, relying on vision and contact, employ costly offline training procedures that need to be retrained for new environments and geometries. We propose BayesContact, a Simulation-Based Inference framework for visuo-tactile pose estimation in peg-in-hole insertion. BayesContact maintains a particle belief over object pose and fuses depth observations with force/torque-derived contact evidence. We employ simulation based forward models to approximate these observation likelihoods. For each pose hypothesis, a renderer predicts depth measurements and a physics simula…",
+      "authors": [
+        "Aditya Kamireddypalli",
+        "Matias Mattamala",
+        "Joao Moura",
+        "Russell Buchanan",
+        "Sethu Vijayakumar",
+        "Subramanian Ramamoorthy"
+      ],
+      "published": "2026-07-17T17:00:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16123v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.15935v1",
+      "title": "Learning Reach-Avoid Task with Reinforcement Learning: Vectorized Simulation and Benchmark",
+      "abstract": "Deep reinforcement learning (DRL) has a longstanding tradition in addressing the reach-avoid task problem, especially for controlling robotic arms. While this task serves as a baseline environment within the research community, the ability of DRL to effectively learn the each-avoid task in complex and realistic scenarios beyond simplified and restricted tabletop settings remains uncertain. In this paper, we present, for the first time, a comprehensive benchmark for the reachavoid task that accurately captures real-world complexities without simplifications. We demonstrate a diverse range of settings for robotic arm reach-avoid task, which can be used for evaluating DRL research. We achieved …",
+      "authors": [
+        "Jonas Weihing",
+        "Shahram Eivazi"
+      ],
+      "published": "2026-07-17T13:18:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15935v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.15727v1",
+      "title": "Event3R: Asynchronous-to-Global 3D Reconstruction from Event Camera via Spatial-Temporal Feature Aggregation",
+      "abstract": "Robust 3D reconstruction is essential for robotics and embodied perception. Recent feed-forward approaches such as DUSt3R have demonstrated impressive progress in dense 3D reconstruction from RGB images, achieving global geometric consistency and strong generalization. However, extending such dense 3D reconstruction to event cameras remains challenging due to their asynchronous, sparse, and highly dynamic nature, as well as the lack of large-scale, well-labeled datasets. In this work, we introduce Event3R, a feed-forward framework that directly maps asynchronous event streams to globally consistent 3D point clouds. Event3R represents incoming events as spatial-temporal voxels, enabling time-…",
+      "authors": [
+        "Jian Huang",
+        "Haotian Shen",
+        "Xinhao Lou",
+        "Chengrui Dong",
+        "Wenpu Li",
+        "Peidong Liu"
+      ],
+      "published": "2026-07-17T08:04:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15727v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.15656v1",
+      "title": "Learning a System-Level Surrogate for Hydraulic Excavators: A Simulation-to-Real LSTM Approach",
+      "abstract": "Developing autonomous hydraulic excavators is constrained by limited access to physical machines and the high cost of real-world experimentation. This paper proposes a simulation-to-real framework for learning a system-level digital surrogate using Long Short-Term Memory (LSTM) networks. Instead of modeling internal dynamics, the excavator is treated as an input-output operator, and the surrogate is trained to reproduce its closed-loop behavior under identical control inputs. The approach is first validated in a MuJoCo simulation environment and then transferred to a real excavator. To address measurement inconsistencies in real-world data, a consistency-aware state estimation method based o…",
+      "authors": [
+        "Shuai Wang",
+        "Shen Wang",
+        "Qiang Wang",
+        "Muguo Du",
+        "Donghai Shi",
+        "Chenyu Wang"
+      ],
+      "published": "2026-07-17T06:04:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15656v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.15536v1",
+      "title": "E3DGS: Unified Geometric-Photometric Equivariance for 3D Gaussian Splatting via Color-as-Geometry Embedding",
+      "abstract": "3D Gaussian Splatting (3DGS) captures scenes by coupling explicit geometry (position, covariance) with view-dependent photometry (Spherical Harmonics). However, building $\\mathrm{SE}(3)$-equivariant architectures on these primitives presents a fundamental representation bottleneck. Color has been treated as a signal rather than a geometric entity, making it nontrivial to unify symmetry across geometry and appearance as the camera frame changes. While translations are handled by relative coordinates, rotations act heterogeneously across attributes: $μ\\mapsto Rμ$, $Σ\\mapsto RΣR^\\top$, and $f_\\ell\\mapsto D^\\ell(R)f_\\ell$. This mismatch complicates strict equivariance, leading existing methods t…",
+      "authors": [
+        "Chankyo Kim",
+        "Maani Ghaffari"
+      ],
+      "published": "2026-07-17T01:12:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15536v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.15527v1",
+      "title": "Physics-aware Masked Diffusion-based Flood Simulation for Urban Fisheye Disaster Detection",
+      "abstract": "Physical simulations that predict the behavior of urban disasters, such as climate-related flooding, play a crucial role in disaster prevention and the development of anomaly detection models. However, the severe shortage of flood data in real-world environments, combined with the inherent distortions of fisheye lens images, which are used for urban surveillance, has made high-precision simulations challenging. To address this, we propose a new physical simulation system PhysFlood that leverages Diffusion Models to synthesize realistic floods from just a single image captured by a fisheye lens. Our system not only enables simulation from a single image, but also features the ability to freel…",
+      "authors": [
+        "Sodtavilan Odonchimed",
+        "Tsogt Enkhbayar",
+        "Oyunzul Munkhtamga",
+        "Munkhjargal Gochoo"
+      ],
+      "published": "2026-07-17T00:26:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15527v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -5397,6 +5626,66 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.16144v1",
+      "title": "Learning Standard Model structure from LHC data with Riemannian flow matching",
+      "abstract": "In this work we demonstrate that a single transformer-based generative model can capture Standard Model structure spanning five decades of invariant mass, from the sub-GeV regime to the TeV continuum, a range that no single Monte Carlo sample covers. To achieve this we design \\textsc{ShellFlow}, a Riemannian conditional flow matching model that, given the recorded event composition, generates each particle on its on-shell manifold. Its only physics priors are the on-shell condition and the invariant-mass formula. The model is trained on $\\sim 10^{9}$ real $pp$ collision events from the ATLAS Open Data 13~TeV release and told nothing else. From a single training run, the model learns to repro…",
+      "authors": [
+        "Midori Kato",
+        "Kevin A. Urquía-Calderón",
+        "Inar Timiryasov",
+        "Oleg Ruchayskiy"
+      ],
+      "published": "2026-07-17T17:23:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16144v1",
+      "categories": [
+        "hep-ph",
+        "cs.LG",
+        "hep-ex"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.15542v1",
+      "title": "ImprovedVBGS: Real-time Continual Variational Bayes Gaussian Splatting",
+      "abstract": "On-the-fly reconstruction is a key requirement for many applications in robotics and autonomous navigation. Variational Bayes Gaussian Splatting (VBGS) enables continual learning without replay buffers using Coordinate Ascent Variational Inference (CAVI), but its per-frame iterations over all observed points make it too slow for real-time use with strict memory and latency requirements. We present ImprovedVBGS, an accelerated framework for on-the-fly continual reconstruction. This is achieved primarily through (i) spatially truncated variational inference, and (ii) improved reassignment that uses forwarding, truncation and eliminates wasteful dynamic recompilation. On the NeRF synthetic data…",
+      "authors": [
+        "Damani Mguni-Coker"
+      ],
+      "published": "2026-07-17T01:24:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.15542v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-20T10:16:50.043309+00:00"
     },
     {
       "id": "2606.31680v1",
