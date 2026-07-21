@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-20T10:16:50.043309+00:00",
-  "total": 202,
-  "new_this_run": 10,
+  "last_updated": "2026-07-21T09:31:27.435122+00:00",
+  "total": 223,
+  "new_this_run": 21,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -103,6 +103,31 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
+    },
+    {
+      "id": "2607.18135v1",
+      "title": "Isaac Sim-to-Real: Reinforcement Learning based Locomotion for Quadrupeds",
+      "abstract": "Learning-based approaches to locomotion have risen in popularity in recent years, showing the capability for complex legged locomotion and whole-body control. Reinforcement learning (RL), the primary learning-based approach for locomotion, often utilizes a high-performance simulation tool, providing a controlled and efficient training and development environment. However, policies that perform well in simulation frequently encounter unexpected challenges when deployed on a physical system, known as the sim-to-real gap. This work presents a robust RL locomotion framework capable of whole-body control. The proposed RL framework utilizes Nvidia's new set of simulation tools, Isaac Sim, and its …",
+      "authors": [
+        "Jordan Dowdy",
+        "Jean Chagas Vaz"
+      ],
+      "published": "2026-07-20T16:27:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18135v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 22,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 117
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
     },
     {
       "id": "2606.30608v2",
@@ -267,6 +292,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.17132v1",
+      "title": "BoxTwin: Learning Elastoplastic Articulated Object Dynamics from Videos",
+      "abstract": "Digital twins enable robots to anticipate and adapt to physical interactions, but existing models struggle with elastoplastic articulated objects (EAOs) that exhibit nonlinear elasticity, plastic yielding, and damage accumulation. We present BoxTwin, an interactive digital twin framework that learns the full dynamics of EAOs from videos. Our pipeline reconstructs the scene, identifies a physics aware constitutive model for each EAO. Experiments on manual folding and dual arm manipulation of EAOs show that BoxTwin accurately tracks joint trajectories and reproduces post contact plastic behavior over long horizons. By integrating video driven reconstruction with elastoplastic damage modeling, …",
+      "authors": [
+        "Heng Zhang",
+        "Gehan Zheng",
+        "Kaifeng Zhang",
+        "Jay Song",
+        "Shivansh Patel",
+        "Sonny Hu"
+      ],
+      "published": "2026-07-19T08:37:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17132v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
     },
     {
       "id": "2606.31993v1",
@@ -534,6 +588,37 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-13T10:31:49.865371+00:00"
+    },
+    {
+      "id": "2607.17042v1",
+      "title": "Articulated Humanoid Head for a Robot Receptionist Capable of Natural Human Interaction",
+      "abstract": "Humanoid robots have become increasingly popular in applications such as social interaction, education, and service roles, which drives the need for more natural and efficient human-robot interactions. However, currently available humanoid heads often face limitations, including high costs, mechanical complexity, and limited adaptability across diverse environments. To address these challenges, we present an articulated humanoid robot head designed for a receptionist role, integrating a mechanical structure with 21 degrees of freedom (DoF), including mechanisms for the mouth, eyes, eyebrows, and neck, and covered with realistic silicone skin to achieve a human-like appearance and expression.…",
+      "authors": [
+        "Tharusha Fonseka",
+        "Charuka Bandara",
+        "Moshintha Hewavitharana",
+        "Melisa Arukgoda",
+        "Wageesha N. Manamperi",
+        "Udaya S. K. Perera Miriya Thanthrige"
+      ],
+      "published": "2026-07-19T03:18:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17042v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "eess.IV"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
     },
     {
       "id": "2607.03819v1",
@@ -1302,6 +1387,34 @@
       "first_seen": "2026-07-17T09:13:13.011991+00:00"
     },
     {
+      "id": "2607.16506v1",
+      "title": "Foresight Residual RL for Long-Horizon Robot Manipulation with Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) policies offer strong general-purpose manipulation priors, but often fail on tight-tolerance, contact-rich assembly due to long-horizon credit assignment and subtask coupling: a state that is geometrically successful for the current skill can be brittle for downstream skills. We show this failure mode in residual reinforcement learning (RL) over a frozen VLA base policy: constant sparse success rewards improve each subtask in isolation yet yield little or no gain when skills are chained, because terminal state quality is uncontrolled. We propose Foresight Residual RL, which optimizes handoff quality by augmenting each subtask's sparse success reward with an offli…",
+      "authors": [
+        "Yuhan Liu",
+        "Xinyu Zhang",
+        "Litao Liu",
+        "Abdeslam Boularias"
+      ],
+      "published": "2026-07-17T21:00:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16506v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -1681,6 +1794,60 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-20T10:16:50.043309+00:00"
+    },
+    {
+      "id": "2607.18210v1",
+      "title": "Optimization of sim-to-real transfer in the humanoid robot NICO",
+      "abstract": "Robotic grasping requires accurate coordination between visual perception, object localization, inverse kinematics, and hand control. However, when movements planned in simulation are executed on a physical robot, the sim-to-real gap can cause small positioning errors that prevent successful grasping. In our previous work, we introduced a low-cost haptic calibration method that improved 2D reaching accuracy of the humanoid robot NICO. In this paper, we extend this approach from reaching to tabletop object grasping by adding YOLO-based object and hand detection, stereo vision-based localization using the robot's built-in low-resolution fisheye cameras, and task-specific corrections for grasp …",
+      "authors": [
+        "Juraj Gavura",
+        "Igor Farkaš"
+      ],
+      "published": "2026-07-20T17:45:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18210v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.17651v1",
+      "title": "HCPG-Flow:Hierarchical Contact-Progress Guidance for Flow-Policy Robot Manipulation",
+      "abstract": "Flow policies can represent multimodal action distributions for robot manipulation, yet a robot must execute one action at each control step. When several proposals are sampled, critic-based ranking makes data collection depend on value estimates over candidate actions that may be weakly represented in replay. We introduce HCPG-Flow, an analytic rollout-time selector that augments SAC-Flow with hierarchical, object-centric contact-progress guidance while preserving its actor and critic objectives. HCPG switches from end-effector approach to task progress after contact, scores each proposal by the first-order reduction of a task-relevant distance, standardizes scores within the candidate set,…",
+      "authors": [
+        "Guanghu Xie",
+        "Mingxu Li",
+        "Shuo Zhang",
+        "Yonglong Zhang",
+        "Yifan Yang",
+        "Yang Liu"
+      ],
+      "published": "2026-07-20T08:04:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17651v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -2245,6 +2412,68 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.16838v1",
+      "title": "TopoGS: Planar Reconstruction via Topology-aware 3D Gaussian Splatting",
+      "abstract": "Extracting structured, parametric 3D representations from raw images remains a fundamental challenge in computer vision and graphics. While recent advancements in the 3D Gaussian Splatting (3DGS) pipeline integrate planar primitives to yield compact and editable geometry, these approaches typically treat planes as isolated, discrete sets. This lack of topological connectivity hinders robust geometric reasoning, leading to fragmented reconstructions and misaligned boundaries that fall short of the precision for rigorous spatial analysis and professional design workflows. To address this, we introduce TopoGS, the first 3DGS framework to explicitly integrate both planar and topological constrai…",
+      "authors": [
+        "Shanshan Pan",
+        "Jiale Chen",
+        "Yilin Liu",
+        "Hui Huang"
+      ],
+      "published": "2026-07-18T14:27:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16838v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.16758v1",
+      "title": "Hybrid Machine Learning for Articulation Angle Estimation of Truck-Semitrailer Combinations",
+      "abstract": "Accurate articulation angle estimation of trucks with trailers is critical for autonomous driving and advanced driver assistance system (ADAS). Existing methods either require manual initialization, additional sensors, or prior knowledge and signals from trailers, or they lack real-world validation, limiting practical deployment. This paper presents multiple learning-based models to directly estimate articulation angles from visual and kinematic inputs, eliminating the need for dedicated driving maneuvers for initialization, bounding box annotations, trailer-mounted sensor signals, or prior knowledge of trailer parameters. Two learning-based models are integrated with a kinematic model withi…",
+      "authors": [
+        "Qixuan Zhang",
+        "Jonas Boettcher",
+        "Simon F. G. Ehlers",
+        "Marvin Stuede"
+      ],
+      "published": "2026-07-18T10:48:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16758v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -4242,6 +4471,266 @@
       "first_seen": "2026-07-20T10:16:50.043309+00:00"
     },
     {
+      "id": "2607.18154v1",
+      "title": "World Translation: Minimizing Sim-to-Real Gap with Backward Dynamics Extraction and Unpaired Domain Translation",
+      "abstract": "The gap between simulation and reality remains a fundamental challenge in deploying simulation-trained robotic policies in the real world. Real-to-sim methods narrow this gap from the real side, learning transition dynamics from real data to build a more realistic digital world. Learned dynamics models are their dominant instance. Such methods, however, face a partial observability problem: the same observation may branch to different transitions due to unobservable factors. Existing methods assume these factors can be recovered from observation history. However, this may fail whenever observation history is uninformative, such as a sudden contact event with no prior warning. To address this…",
+      "authors": [
+        "Xinchen Yao",
+        "Leixin Chang",
+        "Hua Chen"
+      ],
+      "published": "2026-07-20T16:52:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18154v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.18067v1",
+      "title": "QIRF Quantum-Inspired Non-Orthogonal Function-Space Compression for 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) achieves high-quality real-time rendering by representing a scene with a large collection of anisotropic Gaussian primitives. However, complex scenes often require millions of Gaussians, resulting in substantial storage and rendering costs. Existing compression methods mainly reduce redundancy through primitive-wise pruning, attribute quantization, clustering, or neural coding, while redundancy caused by strongly overlapping and non-orthogonal Gaussian basis functions remains largely unexplored. We present QIRF, a quantum-inspired non-orthogonal function-space compression method for 3D Gaussian Splatting. QIRF models neighboring Gaussian primitives as a local non…",
+      "authors": [
+        "Shizeng Jiang",
+        "Hao Zhang",
+        "Xuerui Ma",
+        "Ying Hu",
+        "Tao Zhang"
+      ],
+      "published": "2026-07-20T15:34:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18067v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.18004v1",
+      "title": "PAMD: Structured Adaptive Distances for Bisimulation Representations in Visual Reinforcement Learning",
+      "abstract": "Many visual reinforcement learning (RL) algorithms learn representations by matching latent distances to a behavioral distance induced by reward and transition similarity. In practice, the choice of the latent distance can strongly affect performance: using a fixed, pre-specified global norms (e.g., $\\ell_p$ norms or other hand-designed metrics) may be overly restrictive to capture the behavioral distance. In contrast, unconstrained pairwise distances may admit degenerate solutions that drive the metric loss down without improving the representation. To address this gap, we introduce **PAMD: Pairwise Adaptive Mahalanobis Distance**, which parameterizes a positive-definite, pair-conditioned m…",
+      "authors": [
+        "Daegyeong Roh",
+        "Juho Bae",
+        "Han-Lim Choi"
+      ],
+      "published": "2026-07-20T14:36:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18004v1",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.17965v1",
+      "title": "Exploration Matters for Escaping the Blur Trap in 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) employs Gaussian primitives for explicit scene representation, facilitating real-time, high-fidelity reconstruction and novel view synthesis of complex scenes. However, the explicit modeling inherent in 3DGS introduces a gradient bias during optimization, rendering its non-convex optimization process highly susceptible to convergence toward local suboptimal solutions. This constitutes a fundamental limitation in 3DGS optimization, which we term the Blur Trap. To address this limitation, we integrate simple explicit exploration into the 3DGS optimization framework. First, through rigorous mathematical analysis of the 3DGS optimization formulation, we identify the …",
+      "authors": [
+        "Chengbo Wang",
+        "Guozheng Ma",
+        "Jinhong Wu",
+        "Tie Ji",
+        "Yizhen Lao"
+      ],
+      "published": "2026-07-20T14:05:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17965v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.17725v1",
+      "title": "Fast VEM Fluid Simulation",
+      "abstract": "The intricate motion arising from fluid--boundary interactions is visually compelling, yet notoriously difficult and computationally expensive to simulate in the presence of complex boundaries. Accurately resolving boundary geometry requires body-fitted grids constructed via cut-cell methods, which often leads to poorly conditioned linear systems in the pressure projection stage and, consequently, prohibitive computational cost. We present FastVEM, an efficient boundary-conforming fluid simulation framework that enables high-fidelity flow--boundary interaction at substantially reduced cost. Computational efficiency is achieved through a coordinated, top-down design spanning numerical discret…",
+      "authors": [
+        "Runze Zhang",
+        "Bo Ren"
+      ],
+      "published": "2026-07-20T09:14:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17725v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.17540v1",
+      "title": "Program Synthesis for Simulation-Based Inference: Joint Model Selection and Parameter Estimation",
+      "abstract": "Neural simulation-based inference enables parameter estimation for complex models, but typically requires the user to specify a simulator encoding a fixed model structure. We present a framework for joint model selection and parameter estimation that combines large language models for program synthesis with neural simulation-based inference. Given a natural language description of the system and data under investigation, an LLM proposes candidate simulator programs which are iteratively refined via feedback-driven mutation and evaluated using neural density estimation. The approach enables simulation-based inference over a pool of models, not just parameters within a fixed model. On benchmar…",
+      "authors": [
+        "Siddharth Mishra-Sharma"
+      ],
+      "published": "2026-07-20T04:33:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17540v1",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.16920v1",
+      "title": "A BIM-enabled, Agent-based Discrete-event Simulation Platform for Robotic Studies: A Method based on Graph Theory",
+      "abstract": "Indoor robots are increasingly employed for facility management tasks such as cleaning and inspection. These applications primarily rely on navigation and can be effectively supported by predefined routes or perception-driven Simultaneous Localization and Mapping (SLAM) techniques. However, more complex tasks, such as locating and repairing leaking pipes, require not only navigation but also access to building information, including the location, geometry, material, and operational attributes of components. Existing navigation approaches provide only limited environmental understanding and cannot readily supply such information. In contrast, Building Information Modeling (BIM) contains rich …",
+      "authors": [
+        "Ping Xu",
+        "Xinghua Gao"
+      ],
+      "published": "2026-07-18T18:25:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16920v1",
+      "categories": [
+        "cs.RO",
+        "cs.SE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.16624v1",
+      "title": "SPARE-GS: Structural Parsimony and Resource Efficiency for 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) achieves high-fidelity novel view synthesis in real-time; however its training efficiency and representation compactness are hindered by excessive primitive proliferation. To address this challenge, we formulate the structural evolution of 3DGS as a global budget-constrained optimization problem and derive an optimality condition, which requires the marginal utility of structural resources to be balanced across spatial regions under a finite primitive budget. Based on this formulation, we propose SPARE-GS, a general plug-and-play framework that dynamically aligns the distribution of 3D Gaussian primitives with regional representational demand. SPARE-GS estimates …",
+      "authors": [
+        "Zhang Chen",
+        "Shuai Wan",
+        "Fuzheng Yang",
+        "Jiazhi Xia",
+        "Weiyao Lin",
+        "Junhui Hou"
+      ],
+      "published": "2026-07-18T03:55:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16624v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.16428v1",
+      "title": "Back to the museum: Investigation of the acceptance of Android Andrea with and without emotion simulation in a museum",
+      "abstract": "For a second time, the android robot Andrea was set up at a public museum in Germany for six consecutive days to have conversations with visitors, fully autonomously. Building on previously gathered qualitative results, the robot was now capable of engaging in multi-lingual conversation with the visitors about the museum context. The robot was prepared with context information about the museum in general and its surrounding exhibits this time. The robot featured a slightly artificial sounding voice that was previously evaluated as congruent with its gender-ambiguous but very humanlike design. Three experimental conditions were implemented, in which either (1) the robot simulated no emotions,…",
+      "authors": [
+        "Marcel Heisler",
+        "Christian Becker-Asano"
+      ],
+      "published": "2026-07-17T18:22:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16428v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -4809,6 +5298,69 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.17833v1",
+      "title": "Consistent Feature Transport for Image Relighting",
+      "abstract": "Image relighting modifies illumination while preserving non-lighting content such as identity and geometry. Existing diffusion-based methods often suffer from unstable illumination changes or inconsistent content preservation under complex lighting, as they lack an explicit mechanism to learn feature transformations between images. We reformulate relighting as an illumination feature transport problem and introduce Consistent Feature Transport (CFT), a training principle that explicitly enforces illumination-consistent transport between source and target image distributions. Built upon rectified flow, CFT jointly models noise-to-image generation and illumination-consistent source-to-target t…",
+      "authors": [
+        "Bohan Zhang",
+        "Huanwei Liang",
+        "Yuhan He",
+        "Hongteng Xu",
+        "Quxiao Chao",
+        "Luoqi Liu"
+      ],
+      "published": "2026-07-20T11:25:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17833v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.17803v1",
+      "title": "FF-ProCams: Feed-Forward Gaussian Splatting for Projector-Camera System",
+      "abstract": "Projector-camera (ProCams) systems achieve active scene perception and controllable appearance manipulation via structured illumination, serving as a core infrastructure for spatial augmented reality, projection mapping, and surface reflectance acquisition. Existing inverse-rendering methods for ProCams deliver high-fidelity results but rely on time-consuming per-scene optimization, while mainstream feed-forward 3D reconstruction models produce baked appearance that cannot adapt to spatially varying projector illumination. To resolve this accuracy-efficiency trade-off, we propose FF-ProCams, a Feed-Forward 3D Gaussian inverse-rendering framework for ProCams. A hybrid Mamba2-Transformer encod…",
+      "authors": [
+        "Ziyao Wang",
+        "Yuqi Li",
+        "Wenxing Zheng",
+        "Jiaying Chen",
+        "Chong Wang"
+      ],
+      "published": "2026-07-20T10:42:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.17803v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -5688,6 +6240,41 @@
       "first_seen": "2026-07-20T10:16:50.043309+00:00"
     },
     {
+      "id": "2607.16805v1",
+      "title": "Scene-SAM3D: Multi-View Scene Asset Generation Without Fine-Tuning",
+      "abstract": "High-quality 3D scene assets are critical for embodied applications such as robotic manipulation, navigation, and simulation. Despite their strong object priors, recent single-image 3D generation models such as SAM3D remain insufficient for real-world scenes, where severe occlusions, redundant observations, and cross-view inconsistencies make reliable scene generation challenging. We introduce Scene-SAM3D, a training-free framework that extends SAM3D from single-view object generation to calibrated multi-view scene asset generation. Scene-SAM3D selects a compact set of complementary views, reducing observation redundancy while providing additional evidence for regions occluded in individual …",
+      "authors": [
+        "Yuqi Zhang",
+        "Yadan Luo",
+        "Xiangyu Sun",
+        "Fengyi Zhang",
+        "Zi Huang",
+        "Xin Tan"
+      ],
+      "published": "2026-07-18T12:51:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16805v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 20
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -6186,6 +6773,32 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-17T09:13:13.011991+00:00"
+    },
+    {
+      "id": "2607.16894v1",
+      "title": "TVGL-CFM:Generating and Forecasting Time-Varying Trajectories of Dynamic Networks with Conditional Flow Matching",
+      "abstract": "Many complex systems such as brain networks, financial markets, and gene-regulatory circuits are described not by a fixed graph but by one that changes over time. A standard way to summarise such structure at each instant is the sparse precision (inverse-covariance) matrix, and the time-varying graphical lasso (TVGL) turns a multivariate signal into a smooth chain of these matrices. We introduce TVGL-CFM, a single model that learns the distribution of such chains and can both generate new, realistic time-varying network trajectories for a given class and forecast how an observed trajectory will continue. Each precision matrix lives on a curved space of positive-definite matrices, but a log-E…",
+      "authors": [
+        "Om Roy",
+        "Yashar Moshfeghi",
+        "Keith Malcolm Smith"
+      ],
+      "published": "2026-07-18T17:29:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.16894v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-21T09:31:27.435122+00:00"
     }
   ]
 }
