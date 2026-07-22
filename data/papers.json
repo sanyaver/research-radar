@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-21T09:31:27.435122+00:00",
-  "total": 223,
-  "new_this_run": 21,
+  "last_updated": "2026-07-22T09:30:17.409992+00:00",
+  "total": 227,
+  "new_this_run": 4,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -878,6 +878,32 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-09T10:27:51.373169+00:00"
+    },
+    {
+      "id": "2607.18630v1",
+      "title": "Seeing Before Generating: Object Perception Enhances Single-View 3D Reconstruction",
+      "abstract": "The relationship between object perception and reconstruction is well established in human vision, yet remains underexplored in computer vision. In this paper, we demonstrate that learnt object perception can significantly enhance 3D reconstruction. Focusing on the challenging task of single-view 3D object reconstruction, we propose a method that leverages perceptual signals extracted from pretrained perception models capturing semantic and geometric information to drive the reconstruction of an object from its single image. Our approach is model-agnostic and can be integrated into various reconstruction methods in a plug-and-play manner. Experiments with two state-of-the-art single-view 3D …",
+      "authors": [
+        "Y Huynh",
+        "Duc Thanh Nguyen",
+        "Mohamed Abdelrazek"
+      ],
+      "published": "2026-07-21T01:55:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18630v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 77
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-22T09:30:17.409992+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -1848,6 +1874,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.19120v1",
+      "title": "Latent Riemannian Flow Matching for Geometry-Grounded 3D Foundation Models",
+      "abstract": "Geometric foundation models, such as the Visual Geometry Grounded Transformer (VGGT), provide strong 3D priors from unposed images. However, such models operate purely in a feed-forward, deterministic regime, \\ie~they cannot generate plausible geometry beyond what the input views directly support. Generative models for 3D scenes, on the other hand, must rely on strong geometric priors to produce coherent outputs from sparse inputs. We bridge these two paradigms by performing flow matching directly in VGGT's latent space, leveraging its learned 3D priors without committing to any explicit downstream representation such as Gaussians, meshes, or video-VAE latents. This requires respecting the l…",
+      "authors": [
+        "Lisa Weijler",
+        "Irene Ballester",
+        "Guofeng Mei",
+        "Tolga Birdal",
+        "Pedro Hermosilla"
+      ],
+      "published": "2026-07-21T14:06:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.19120v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 35
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-22T09:30:17.409992+00:00"
+    },
+    {
+      "id": "2607.18586v1",
+      "title": "Bridging the Sim-to-Real Gap under Real-Time Constraints in Autonomous Racing",
+      "abstract": "Autonomous racing exposes the sim-to-real gap under extreme operating conditions characterized by high speed, tight stability margins, and stringent real-time constraints. Although simulation is indispensable for development, controllers that perform well in simulation often degrade abruptly on physical platforms due to interacting effects of dynamics mismatch, estimation delay, and execution-layer latency. This paper frames sim-to-real transfer in autonomous racing as a full-stack, real-time systems problem. We introduce a structured three-layer perspective (Physical/Cyber/Execution) to analyze how mismatches propagate and amplify through closed-loop feedback. We present diagnostic metrics …",
+      "authors": [
+        "Hossein Maghsoumi",
+        "Yaser P. Fallah"
+      ],
+      "published": "2026-07-20T23:45:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18586v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-22T09:30:17.409992+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -4729,6 +4820,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.18801v1",
+      "title": "ZeroSplat: Generalized Referring Segmentation in 3D Gaussian Splatting",
+      "abstract": "Recent advancements in 3D Gaussian Splatting (3DGS) have enabled language-guided scene understanding. However, existing Referring 3D Gaussian Splatting (R3DGS) methods are fundamentally restricted to single-target queries. To reflect the ambiguity of real-world instructions, we introduce the Generalized Referring 3D Gaussian Splatting Segmentation (GR3DGS) task, which requires dynamically segmenting an arbitrary number of targets (0, 1, or $N$). To facilitate comprehensive evaluation of this new task, we construct two new benchmarks: GR-LERF and GR-ScanNet. Crucially, existing R3DGS paradigms exhibit fundamental technical bottlenecks that severely limit their performance on the GR3DGS task: …",
+      "authors": [
+        "Jiayu Ding",
+        "Meilu Song",
+        "Xiaoyi Zhang",
+        "Hongbo Jin",
+        "Yichen Jin",
+        "Xiangtian Si"
+      ],
+      "published": "2026-07-21T07:27:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.18801v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-22T09:30:17.409992+00:00"
     },
     {
       "id": "2606.31556v1",
