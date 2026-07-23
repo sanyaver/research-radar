@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-22T09:30:17.409992+00:00",
-  "total": 227,
-  "new_this_run": 4,
+  "last_updated": "2026-07-23T09:27:59.455586+00:00",
+  "total": 234,
+  "new_this_run": 7,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -115,7 +115,8 @@
       "published": "2026-07-20T16:27:56Z",
       "arxiv_url": "https://arxiv.org/abs/2607.18135v1",
       "categories": [
-        "cs.RO"
+        "cs.RO",
+        "cs.LG"
       ],
       "relevance_score": 22,
       "sections": [
@@ -1441,6 +1442,42 @@
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
     },
     {
+      "id": "2607.19695v1",
+      "title": "NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation",
+      "abstract": "Robots deployed in delivery, campus, and emergency-response settings often need to navigate from buildings to streets within a single continuous episode. Existing benchmarks usually evaluate indoor and outdoor navigation separately, and many abstract away robot execution, leaving exit finding, boundary traversal, adaptation, and kinodynamic failures underexplored. We introduce NavVerse, a physics-enabled benchmark for indoor-to-outdoor embodied navigation. NavVerse contains 100 indoor scenes, 50 urban outdoor scenes, and 50 indoor-to-outdoor scenes, and 10,000 episodes spanning Object Navigation, Vision-and-Language Navigation, and Place Navigation tasks, where agents search for semantic poi…",
+      "authors": [
+        "Junzhe Wu",
+        "Yue Hu",
+        "Zeyu Han",
+        "Po-Hsun Chang",
+        "Yinan Dong",
+        "Behrad Rabiei"
+      ],
+      "published": "2026-07-22T02:53:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.19695v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-23T09:27:59.455586+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -2565,6 +2602,70 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.20417v1",
+      "title": "ATSplat: Compact Feed-forward 3D Gaussian Splatting with Adaptive Token Expansion",
+      "abstract": "3D Gaussian Splatting (3DGS) achieves high-quality novel-view synthesis by optimizing freely placed primitives in 3D and adaptively densifying them in under-reconstructed regions. However, this scene-adaptive capacity allocation is largely lost in existing feed-forward 3DGS methods, which commonly regress Gaussians at input pixels and lift them along camera rays. Such pixel-aligned formulations make the number and placement of primitives depend on image resolution and input viewpoints rather than scene complexity, resulting in dense and often redundant Gaussian sets. We present ATSplat, a feed-forward 3DGS framework that restores the adaptive allocation capability of 3DGS optimization throug…",
+      "authors": [
+        "Cho In",
+        "Jeonghwan Cho",
+        "Mijin Yoo",
+        "Gim Hee Lee",
+        "Seon Joo Kim"
+      ],
+      "published": "2026-07-22T17:54:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.20417v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-23T09:27:59.455586+00:00"
+    },
+    {
+      "id": "2607.19876v1",
+      "title": "KineBench: Benchmarking Embodied World Models via IDM-Free Kinematic Grounding",
+      "abstract": "Evaluating the physical consistency of embodied world models(EWMs) is a critical open challenge. While closed-loop evaluation via simulator rollouts offers a more faithful assessment of physical plausibility than open-loop alternatives, existing frameworks almost exclusively rely on Inverse Dynamics Models(IDMs) for action extraction. Due to the intricate mapping from 2D pixel space to 3D kinematic space, the learned IDMs can be brittle to data outside their training distribution, resulting in unreliable action extraction from the generated videos with novel objects and scenarios. This creates an unavoidable attribution ambiguity between world model inaccuracies and extractor errors. To redu…",
+      "authors": [
+        "Zeyu Liu",
+        "Zhangzhe Zhu",
+        "Yang Zhang",
+        "Chenyou Fan",
+        "Chenjia Bai",
+        "Xuelong Li"
+      ],
+      "published": "2026-07-22T08:04:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.19876v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-23T09:27:59.455586+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -4857,6 +4958,71 @@
       "first_seen": "2026-07-22T09:30:17.409992+00:00"
     },
     {
+      "id": "2607.20325v1",
+      "title": "MR-Compare: A Mixed-Reality Framework for Spatially Grounded Visual Comparison of 3D Gaussian Splatting and Mesh Reconstructions with the Physical Environment",
+      "abstract": "We introduce MR-Compare, a mixed reality framework for spatially grounded visual comparison between 3D Gaussian splatting and mesh reconstructions with live video see-through (VST). Implemented on a PC-tethered Meta Quest~3, it combines a two-stage registration pipeline with a 3D Slider for cross-media comparison. We evaluated five representative desktop and mobile reconstruction workflows through a real-world benchmark with an exploratory user study ($n=30$) in two static indoor rooms. MR-Compare achieved centimetre-level translation error across all workflows. The two desktop 3DGS workflows showed the strongest overall pattern, with 3DGS-MCMC yielding the lowest registration error and stro…",
+      "authors": [
+        "Changrui Zhu",
+        "Ernst Kruijff",
+        "Pengju Zhang",
+        "Simon Julier"
+      ],
+      "published": "2026-07-22T16:11:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.20325v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-23T09:27:59.455586+00:00"
+    },
+    {
+      "id": "2607.19777v1",
+      "title": "Look Before You Edit: Attention-Guided Camera Placement and Multi-View Alignment for 3D Gaussian Splatting Editing",
+      "abstract": "Text-driven 3D scene editing with 3D Gaussian Splatting (3DGS) typically applies a 2D diffusion editor to views rendered from fixed training cameras, limiting both the spatial coverage of edits and the user's freedom to target specific objects in complex scenes. We present LB-Edit, a framework that addresses two coupled problems: where to place editing cameras for localized edits, and how to make per-view edits agree with one another so that the 3D scene remains consistent after fine-tuning. First, Attention-Guided Editing Camera Placement (ACP) probes the diffusion model's self- and cross-attention at multiple candidate camera distances to find where attention is well-contained in the regio…",
+      "authors": [
+        "Jaeyeon Park",
+        "Taeho Kang",
+        "Youngki Lee"
+      ],
+      "published": "2026-07-22T05:51:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.19777v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-23T09:27:59.455586+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -5487,6 +5653,41 @@
       ],
       "has_code": true,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.19986v1",
+      "title": "STEREOFLOW: Progressive Stereo Matching with StereoDiT and Transition Flow Matching",
+      "abstract": "Stereo matching is a fundamental task in 3D reconstruction. Despite remarkable advances, the prevailing paradigms formulate stereo matching as a deterministic regression problem, collapsing the multimodal distribution modeling into a single-point estimation. This formulation suffers from a regression-to-mean bias, frequently struggling with ambiguous regions. In contrast, we introduce a prior-guided generative framework that integrates deterministic matching regression and generative distribution modeling within a complementary formulation. Built upon this formulation, we introduce StereoFlow through three key components: (i) a two-stage progressive cascade matching network that progressivel…",
+      "authors": [
+        "Hao Wang",
+        "Haoran Geng",
+        "Xiaotong Yang",
+        "Jing Tang",
+        "Songlin Wei",
+        "Linlong Lang"
+      ],
+      "published": "2026-07-22T10:19:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.19986v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-23T09:27:59.455586+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -6925,6 +7126,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.20061v1",
+      "title": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
+      "abstract": "Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, their chain-of-thought (CoT) reasoning often operates in abstract spatial latents that are difficult to supervise and weakly aligned with explicit image-space detections. To address this, we introduce ReferTrack, a referring-then-tracking paradigm that grounds EVT using a single forward-facing camera. Our model first selects the target from an indexed set of bounding boxes, then decodes tracking waypoints conditioned on this image-grounded…",
+      "authors": [
+        "Hanjing Ye",
+        "Tianle Zeng",
+        "Jiazhao Zhang",
+        "Shaoan Wang",
+        "Zibo Zhang",
+        "Weisi Situ"
+      ],
+      "published": "2026-07-22T12:05:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.20061v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-23T09:27:59.455586+00:00"
     }
   ]
 }
