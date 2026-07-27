@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-26T09:18:54.339780+00:00",
-  "total": 242,
-  "new_this_run": 0,
+  "last_updated": "2026-07-27T10:47:57.826456+00:00",
+  "total": 251,
+  "new_this_run": 9,
   "papers": [
     {
       "id": "2607.03891v1",
@@ -969,6 +969,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-24T09:24:16.675318+00:00"
+    },
+    {
+      "id": "2607.21448v2",
+      "title": "GrainGS: Gradient-Decoupled Gaussian Splatting for Efficient Dynamic Novel View Synthesis",
+      "abstract": "Dynamic scene reconstruction with 3D Gaussian Splatting requires a balance between fine-grained motion modeling, structural stability, and compact representation. Existing per-primitive methods provide flexible local deformation but often suffer from redundant primitive growth, while anchor-based methods improve spatial regularity at the cost of suppressing locally varying motion. To address these issues, we present GrainGS, a dynamic Gaussian framework that combines a hierarchical anchor scaffold with per-Gaussian deformation. A static warm-up stage first establishes a time-invariant canonical representation from observations across all timestamps. During joint training, a stop-gradient ope…",
+      "authors": [
+        "Jiahao He",
+        "Yihua Shao",
+        "Zhengkai Zhao",
+        "Pan Gao",
+        "Fei Ma",
+        "Jingcai Guo"
+      ],
+      "published": "2026-07-23T15:52:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.21448v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -2099,6 +2134,126 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-24T09:24:16.675318+00:00"
+    },
+    {
+      "id": "2607.22530v1",
+      "title": "ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation",
+      "abstract": "Contact-rich robot manipulation requires physical interaction cues that are often invisible to cameras, making tactile sensing essential for robust control. However, scaling visuo-tactile robot learning remains difficult because real tactile interaction data are expensive to collect, hardware-dependent, and limited in task and scene diversity. We present ViTacWorld, an action-conditioned visuo-tactile world model for scalable contact-rich robot manipulation. ViTacWorld leverages public real tactile datasets and a constructed simulation environment to scale visuo-tactile-action data, exploiting the fact that tactile signals are directly grounded in physical contact and can exhibit a smaller s…",
+      "authors": [
+        "Yunao Huang",
+        "Shiyu Sang",
+        "Haotao Lu",
+        "Suting Ni",
+        "Shijie Wu",
+        "Ziyang Guo"
+      ],
+      "published": "2026-07-24T17:59:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22530v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
+    },
+    {
+      "id": "2607.22147v1",
+      "title": "Visual Relocalization from Sparse Views in Aliased and Low-Texture Environments via Novel View Synthesis",
+      "abstract": "Visual localization becomes extremely challenging in planetary-like terrains characterized by low texture, perceptual aliasing, harsh illumination, and sparse, weakly overlapping viewpoints induced by forward rover motion and unconstrained driving directions. Under these conditions, state-of-the-art image-to-image and image-to-map matching pipelines suffer significant performance degradation. In this work, we propose a visual relocalization method that departs from classical correspondence-based pipelines by directly estimating camera poses against a differentiable map representation built with 3D Gaussian Splatting (3DGS). Our key contribution is a geometry-aware training strategy that comb…",
+      "authors": [
+        "Maria Peribañez",
+        "Javier Civera",
+        "Rudolph Triebel",
+        "Riccardo Giubilato"
+      ],
+      "published": "2026-07-24T09:46:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22147v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
+    },
+    {
+      "id": "2607.21675v1",
+      "title": "Hash-QNeRF: Multiresolution Hash Encoding for Quantum Neural Radiance Fields",
+      "abstract": "Neural Radiance Fields (NeRF) have revolutionized novel view synthesis, yet their classical implementations remain computationally intensive for high-fidelity rendering. QNeRF recently demonstrated the feasibility of training NeRF on gate-based quantum computers by combining amplitude embedding, parameterized quantum circuits (PQCs), parity-based measurements, and volumetric rendering. However, QNeRF relies on classical sinusoidal positional encoding for spatial coordinates, which scales poorly with scene complexity and resolution. In this work, we replace the sinusoidal positional encoding for spatial coordinates with the multiresolution hash encoding from Instant-NGP while keeping the view…",
+      "authors": [
+        "Digonto Biswas",
+        "Tana Ballove",
+        "Anjan Bandyopadhyay",
+        "Sutanu Mangal",
+        "Arun Kumar Pati"
+      ],
+      "published": "2026-07-23T10:44:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.21675v1",
+      "categories": [
+        "quant-ph",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 55
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
+    },
+    {
+      "id": "2607.21049v2",
+      "title": "GuidedAttention: Interpretable and Correctable Visual Attention for OOD-Robust Robot Manipulation via Imitation Learning",
+      "abstract": "End-to-end visuomotor policies provide little opportunity for humans to understand or correct the policy's visual attention. We propose GuidedAttention, a visuomotor imitation learning framework that introduces interpretable and correctable visual attention as an explicit intermediate representation. Task-relevant attention keypoints are predicted from camera images and condition a diffusion-based action policy. Users can inspect and optionally correct selected keypoints once at rollout initialization, after which the corrected attention is automatically propagated throughout execution by a tracking module. Experiments in simulation and the real world demonstrate that GuidedAttention consist…",
+      "authors": [
+        "Masaki Murooka",
+        "Ryoichi Nakajo",
+        "Keisuke Shirai",
+        "Tomohiro Motoda",
+        "Hanbit Oh",
+        "Ryo Hanai"
+      ],
+      "published": "2026-07-23T08:33:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.21049v2",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -5205,6 +5360,120 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-24T09:24:16.675318+00:00"
+    },
+    {
+      "id": "2607.22434v1",
+      "title": "Robot Learning to Communicate through Projected Visual Abstractions",
+      "abstract": "Humans routinely communicate through abstractions of their bodies, including shadows, silhouettes, and reflections. Yet robots remain largely confined to expressing themselves through their physical morphology. Enabling robots to communicate through such projected visual abstractions requires reasoning not only about bodily motion but also about how that motion is transformed into an external representation perceived by an observer. Among these abstractions, shadows provide a particularly compelling example because they emerge directly from the robot's embodiment while remaining visually distinct from the body itself. Here, we present a robotic system capable of dynamic shadow expression usi…",
+      "authors": [
+        "Danyang Yan",
+        "Boyuan Wang",
+        "Jiaxun Liu",
+        "Boyuan Chen"
+      ],
+      "published": "2026-07-24T15:52:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22434v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
+    },
+    {
+      "id": "2607.22103v1",
+      "title": "Curly Hair Simulation using Curly Finite Elements",
+      "abstract": "Realistic simulation of curly hair is challenging due to the tight coupling between macroscopic strand deformation and high-frequency geometric details such as waves and helices. In this paper, we propose a curly hair model that decomposes each strand into curly elements, consisting of a rod-base configuration and an analytically defined high-frequency wrinkles represented by planar waves or volumetric helices, with deformation governed primarily by bending for wavy hair and twisting for spiral hair. A curvature-energy splitting scheme separates stretching, buckling, and bending contributions, and efficient energy approximations improve numerical robustness and reduce computational cost with…",
+      "authors": [
+        "Xinming Pei",
+        "Zhendong Wang",
+        "Lei Lan",
+        "Weiwei Xu",
+        "Yin Yang",
+        "Huamin Wang"
+      ],
+      "published": "2026-07-24T08:55:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22103v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
+    },
+    {
+      "id": "2607.21843v1",
+      "title": "Simulation-Based Empirical Bayes",
+      "abstract": "Empirical Bayes (EB) performs simultaneous inference across many related latent variables. Classical EB assumes that the likelihood p(x | z) is tractable. In many scientific applications, however, the likelihood is available only through a simulator. This paper develops EB for such implicit likelihoods. We introduce simulation-based empirical Bayes (SBEB), which connects nonparametric EB to simulation-based inference (SBI). SBEB computes EB estimates without an explicit density by using the observed data, simulator samples, and an amortized inference network. SBEB iteratively refines the fitted EB prior toward the population prior. With several scientific simulators and real-world data, we d…",
+      "authors": [
+        "Xinwei Shen",
+        "Diana Cai",
+        "Cheng Zhang",
+        "David M. Blei"
+      ],
+      "published": "2026-07-23T22:12:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.21843v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
+    },
+    {
+      "id": "2607.21702v1",
+      "title": "An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning",
+      "abstract": "Simulation-based inference (SBI) with machine learning is an increasingly important tool for solving inverse problems in science and engineering, including parameter inference and the inversion of detector effects. We provide an overview of the Bayesian and frequentist statistical frameworks, describe how machine-learning-based SBI methods, such as neural posterior estimation and neural likelihood estimation, can be used for parameter estimation within these frameworks, and show that the same methods can also be applied to Empirical Bayes or unfolding tasks. We also discuss how to validate inference results and the limitations of SBI with machine learning.",
+      "authors": [
+        "Maximilian Dax",
+        "Theo Heimel",
+        "Gilles Louppe"
+      ],
+      "published": "2026-07-23T18:00:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.21702v1",
+      "categories": [
+        "cs.LG",
+        "astro-ph.CO",
+        "astro-ph.GA",
+        "hep-ex"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-27T10:47:57.826456+00:00"
     },
     {
       "id": "2606.31556v1",
