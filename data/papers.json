@@ -1,8 +1,37 @@
 {
-  "last_updated": "2026-07-27T10:47:57.826456+00:00",
-  "total": 251,
-  "new_this_run": 9,
+  "last_updated": "2026-07-28T09:38:42.453803+00:00",
+  "total": 272,
+  "new_this_run": 21,
   "papers": [
+    {
+      "id": "2607.24493v1",
+      "title": "KAI: A Kinematic-Aware Interface for Data-Efficient Articulated Object Manipulation",
+      "abstract": "Articulated object manipulation requires an understanding of kinematic structure that is difficult and costly to learn from robot demonstrations alone. We introduce the Kinematic-Aware Articulation Interface (KAI), a structured intermediate representation that captures the kinematic structure of articulated objects. By embedding interpretable geometric and kinematic priors into policy learning, KAI provides a strong inductive bias aligned with the underlying structure of articulated motion. This design effectively improves sample efficiency, with gains particularly pronounced in low-data regimes: across six simulation tasks, our method achieves an average success rate of 82.9%, matching or s…",
+      "authors": [
+        "Yaping Li",
+        "Zhaxizhuoma",
+        "Qiaojun Yu",
+        "Jia Zeng",
+        "Dahua Lin",
+        "Jiangmiao Pang"
+      ],
+      "published": "2026-07-27T14:29:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24493v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 27,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 160
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
     {
       "id": "2607.03891v1",
       "title": "BAT3R: Bootstrapping Articulated 3D Reconstruction from 2D Image Collections",
@@ -322,6 +351,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2607.23657v1",
+      "title": "GRAPE: Graduated Routing for Articulated Portrait mesh Estimation",
+      "abstract": "Articulated portrait mesh estimation is fundamental to 3D understanding, avatar generation, and immersive interaction. Existing approaches primarily rely on 3D Morphable Models (3DMMs). However, face-centric models suffer from the \"floating head\" assumption, conflating head pose with global rotation due to the lack of neck kinematics. Conversely, body-centric models lack high-fidelity facial expression capabilities. Furthermore, current methods struggle to disentangle jaw articulation from expression blendshapes, often over-relying on expressions for mouth opening. These limitations make monocular portrait recovery difficult across representation, supervision, and anatomical parameter estima…",
+      "authors": [
+        "Yunfei Liu",
+        "Lijian Lin",
+        "Ye Zhu",
+        "Yu Li"
+      ],
+      "published": "2026-07-26T13:46:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23657v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
     },
     {
       "id": "2606.31993v1",
@@ -1607,6 +1663,82 @@
       "first_seen": "2026-07-24T09:24:16.675318+00:00"
     },
     {
+      "id": "2607.22890v1",
+      "title": "Meshless Domain Randomization via Explicit Parameter Perturbation of 3D Gaussian Splatting",
+      "abstract": "Domain Randomization (DR) is a standard technique for closing the Sim-to-Real gap, yet traditional DR pipelines rely on classical computer graphics rendering driven by polygon meshes. For complex organic subjects, such as insect specimens, extracting and rendering textured meshes is challenging. To address this issue, we propose a meshless DR framework that operates on the parameter space of 3D Gaussian Splatting (3DGS). Our method employs two independent perturbation pipelines to synthesize randomized training datasets. First, a Photometric DR pipeline alters the baked illumination and color balance by modulating the Spherical Harmonics (SH) coefficients. Second, a Procedural DR pipeline is…",
+      "authors": [
+        "Felipe Nunes Carbone de Carvalho",
+        "Joyce de Morais Souza",
+        "Alan de Aguiar",
+        "Charles Morphy D. Santos",
+        "João Paulo Gois"
+      ],
+      "published": "2026-07-24T20:01:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22890v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.22858v1",
+      "title": "A Replay-Constrained Simulation Framework for Personalization of Powered Knee--Ankle Prosthesis Controllers",
+      "abstract": "Personalization of impedance controllers for powered prosthetic legs is critical to accommodating individual gait biomechanics but remains challenging. Existing methods rely on time-intensive human-in-the-loop exploration and/or constrain optimization to low-dimensional, single-joint parameter subspaces. Sim-to-real transfer has enabled high-dimensional locomotion control for legged robots, but in assistive device control the human partner remains un-modelable. We present a replay-constrained simulation framework: a MuJoCo-based simulator reproduces prosthetic knee-ankle dynamics while replaying recorded hip kinematics and feedback-based ground reaction forces from individual walking data, b…",
+      "authors": [
+        "Duong Le",
+        "Ryan Posh",
+        "Shihao Cheng",
+        "Maani Ghaffari",
+        "Robert D. Gregg"
+      ],
+      "published": "2026-07-24T18:59:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22858v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        },
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -2254,6 +2386,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-27T10:47:57.826456+00:00"
+    },
+    {
+      "id": "2607.24079v1",
+      "title": "Effective Parameters, Real Behavior: Renormalization for Robotics -- From Infinite Electron Mass to Sim-to-Real Gap",
+      "abstract": "Bridging the sim-to-real gap is a central problem in robotics, and the prevailing approach is to build increasingly accurate simulators. Here, we propose another approach based on renormalization: using effective, resolution-dependent parameters to absorb details omitted by the simulator and reproduce real behavior. These parameters may differ from measured physical values because they compensate for what the simulator leaves out. We demonstrate this mechanism analytically for proportional--derivative (PD) control at finite simulation frequency, where proportional feedback changes the effective derivative gain and derivative feedback changes the effective inertia. We then interpret dynamic r…",
+      "authors": [
+        "Youran Sun",
+        "Jiaxuan Guo",
+        "Xingyu Ren",
+        "Chugang Yi",
+        "Haizhao Yang"
+      ],
+      "published": "2026-07-27T07:20:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24079v1",
+      "categories": [
+        "cs.RO",
+        "hep-th"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -2973,6 +3134,142 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-24T09:24:16.675318+00:00"
+    },
+    {
+      "id": "2607.24403v1",
+      "title": "GenSplatCodec: Feed-Forward Gaussian Splatting Compression via One-Step Diffusion",
+      "abstract": "Feed-forward 3D Gaussian Splatting (3DGS) enables scalable scene reconstruction without per-scene optimization, yet produces dense Gaussians that are costly to store and transmit. Existing feed-forward Gaussian compression methods formulate decoding as deterministic representation recovery, which becomes inadequate at low bitrates when high-frequency textures and view-dependent appearance are discarded. Although generative models offer a promising alternative, using them as standalone post-processing decouples generation from the transmitted scene structure, thereby compromising cross-view consistency. To address these limitations, we propose GenSplatCodec, a unified feed-forward Gaussian co…",
+      "authors": [
+        "Qiang Hu",
+        "Zhenlong Wu",
+        "Lei Huang",
+        "Zihan Zheng",
+        "Xiaoyun Zhang",
+        "Wenjun Zhang"
+      ],
+      "published": "2026-07-27T13:20:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24403v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.24298v1",
+      "title": "UMI3D: Robust 3D Generation on Unconstrained Multi-Image Inputs via Simultaneous Focus Cross-Attention Routing",
+      "abstract": "Recent 3D foundation models can generate high-quality assets from a single image, but degrade markedly on unconstrained multi-image inputs, often producing distorted geometry, over-smoothed textures, and chaotic colors. We argue that this failure stems not from limited model capacity, but from a mismatch between single-image cross-attention and the multi-image setting: existing models lack a principled way to decide which image each 3D voxel should trust at each denoising step. Revisiting recent single-image 3D foundation models, we show that explicitly routing each voxel to its most informative image is sufficient to unlock strong performance on inconsistent multi-image inputs. Based on thi…",
+      "authors": [
+        "Zefan Qu",
+        "Zhenwei Wang",
+        "Gerhard Petrus Hancke",
+        "Rynson W. H. Lau"
+      ],
+      "published": "2026-07-27T11:44:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24298v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.23491v1",
+      "title": "PlanCraft: Sketch, Refine, and Furnish for Architect-Inspired Progressive 3D Residential Scene Generation",
+      "abstract": "Two structural insights have been overlooked in automated residential floor plan generation. First, design is inherently progressive. Architects begin with rough strokes and refine them over time, whereas existing methods typically require their conditioning representation to be fully specified before generation, a fundamental mismatch with how design actually works. Second, the 2D floor plan is not an optional intermediate but an irreplaceable spatial contract. Once room boundaries, doors, and windows are fixed, furnishing reduces from open-ended spatial reasoning to bounded constraint satisfaction. Bypassing this contract, as existing 3D systems do by delegating layout to language models, …",
+      "authors": [
+        "Pengyu Zeng",
+        "Yuqin Dai",
+        "Jun Yin",
+        "Ziyang Han",
+        "Ng Cheuk Hei",
+        "Jing Zhong"
+      ],
+      "published": "2026-07-26T06:35:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23491v1",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.22997v1",
+      "title": "Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline",
+      "abstract": "Physical AI -- the integration of large vision-language-action (VLA) models with embodied agents that act in the real world -- has emerged as the next major frontier for AI, echoed by industry leaders such as Jensen Huang (``the next big thing is Physical AI, AI with a body,'' GTC Paris, June 2025) and Dr. Lisa Su (`we're entering the world of Physical AI ... this is where AI enters the real world,' CES 2026). This paper presents an end-to-end, fully AMD-accelerated technology stack for embodied manipulation, spanning data-center training silicon, Radeon PRO simulation/rendering GPUs, and Ryzen AI edge compute, unified by the open ROCm software stack. We demonstrate that training and deployi…",
+      "authors": [
+        "Qing Yang",
+        "Xun Wang",
+        "Ziguan Wang",
+        "Zhenjiang Li",
+        "Hongqiang Wang",
+        "Dongdong Weng"
+      ],
+      "published": "2026-07-25T02:23:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22997v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -5476,6 +5773,186 @@
       "first_seen": "2026-07-27T10:47:57.826456+00:00"
     },
     {
+      "id": "2607.24509v1",
+      "title": "A Smooth Explicit Elastoplastic--Damage Update for Graphics Simulation",
+      "abstract": "History-dependent solids require material updates that preserve irreversible deformation and progressive degradation during loading, unloading, and reloading. We present a compact, vectorizable elastoplastic-damage update for explicit graphics simulation, designed for smooth activation and closed-form evaluation rather than exact yield-surface enforcement. A softplus function generates a candidate equivalent plastic strain, a maximum-history projection enforces irreversibility, and a deviatoric plastic-strain tensor retains the residual direction. An exponential scalar degradation variable is driven by the stored history. The active and frozen branches are evaluated analytically from one res…",
+      "authors": [
+        "Yu Ren",
+        "Shuangjiu Xiao",
+        "Deli Dong"
+      ],
+      "published": "2026-07-27T14:49:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24509v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.24233v1",
+      "title": "Quality-Adaptive Multi-UAV 3D Reconstruction with Sparse Workload Redistribution",
+      "abstract": "3D reconstruction of unknown environments is a key application in robotics but is severely limited by the computational and energy capabilities of current aerial platforms. Deploying multiple UAVs and providing efficient and scalable path planning strategies are common approaches, but effective online coordination among UAVs remains a significant challenge. To address this problem, we propose a quality-adaptive decentralized decision-making strategy to build a 3D map with user-defined degrees of fidelity. The approach integrates a quality-oriented criterion based on TSDF confidence into view generation and information gain estimation to produce viewpoints consistent with the desired fidelity…",
+      "authors": [
+        "Benjamin Sportich",
+        "Kenza Boubakri",
+        "Olivier Simonin",
+        "Alessandro Renzaglia"
+      ],
+      "published": "2026-07-27T10:10:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24233v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.23469v1",
+      "title": "When Every Simulation Counts: Value-Based Reinforcement Learning for Accelerated Photonics Inverse Design",
+      "abstract": "Photonic-crystal surface-emitting lasers (PCSELs) can combine high-power operation with narrow-divergence surface emission, but optimizing coupled parameters requires costly full-wave simulations. Deep Q-network (DQN) optimization can reuse simulated transitions to guide edits, yet which value-learning mechanisms remain reliable under tight simulation budgets is unknown. We address this gap by comparing baseline DQN and six value-based variants for a seven-variable PCSEL design under a shared objective, simulator, 83-call budget, and four matched initializations. Beyond endpoints, we analyze sample efficiency, policy behavior, and physical response to separate learning gains from favorable s…",
+      "authors": [
+        "Longying Wen",
+        "Feiyang Wu",
+        "Jinglin Yu",
+        "Chongxian Yuan",
+        "Renjie Li",
+        "Zhaoyu Zhang"
+      ],
+      "published": "2026-07-26T05:50:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23469v1",
+      "categories": [
+        "physics.optics",
+        "cs.AI",
+        "cs.LG",
+        "physics.app-ph"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.23293v1",
+      "title": "PathRIR: Physics-Guided Acoustic Path Selection and Late-Tail Compensation for Fast Room Impulse Response Simulation",
+      "abstract": "Image-source-method (ISM)-based room impulse response (RIR) simulation is a useful and physically interpretable tool for acoustic scene modeling, but full-order ISM becomes computationally expensive as the reflection order and room complexity increase. We propose a physics-guided framework for fast RIR simulation that preserves the geometric structure of ISM while learning to retain only acoustically important image-source paths during online traversal. To recover energy removed by pruning, the proposed PathRIR uses a lightweight compensation multilayer perceptron to predict the missing late-tail energy envelope and generate a compensation tail whose energy follows that envelope. Experiments…",
+      "authors": [
+        "Shaoheng Xu",
+        "Chunyi Sun",
+        "Jihui Zhang",
+        "Amy Bastine",
+        "Prasanga N. Samarasinghe",
+        "Thushara D. Abhayapala"
+      ],
+      "published": "2026-07-25T17:05:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23293v1",
+      "categories": [
+        "eess.AS",
+        "cs.LG",
+        "cs.SD"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.22973v1",
+      "title": "mmSimPrior: Learning Simulation Priors for Data-Efficient Real-World Generalizable Radar-Based Human Motion Reconstruction",
+      "abstract": "Millimeter-wave (mmWave) radar offers privacy-preserving and lighting-robust sensing for human motion reconstruction, but learning models that generalize across real deployments require diverse paired radar-motion data that are costly to collect. Simulation provides scalable supervision, yet models trained on clean synthetic signals transfer poorly because of multipath, clutter, response statistics, and resolution degradation. We present mmSimPrior, a simulation-pretrained framework that factorizes transferable knowledge into signal, motion, and radar-to-motion mapping priors. A multi-modal signal encoder is pretrained with a physics-informed domain-randomization curriculum that emulates pro…",
+      "authors": [
+        "Cheng Guo",
+        "Qiming Cao",
+        "Shengkai Xu",
+        "Haoyu Xie",
+        "Kaixiang Su",
+        "Pu Wang"
+      ],
+      "published": "2026-07-25T00:56:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22973v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.22956v1",
+      "title": "3D Gaussian Splatting for Scientific Particle Data Compression and Rendering",
+      "abstract": "Large-scale particle simulations produce hundreds of millions of particles, straining storage, transfer, and interactive visualization. Existing lossy compressors such as SZ3 operate in data space and provide no guarantees on downstream visualization fidelity. We propose ParticleGS, a visualization-aware framework based on 3D Gaussian Splatting (3DGS) that learns a compact representation directly optimized for rendered image quality, combining (1) a multi-stage, multi-orbit training pipeline, (2) VizMapper, a lightweight network that adapts a single trained model to user-specified visualization parameters at inference time, and (3) spatial block training with KD-tree decomposition and global…",
+      "authors": [
+        "Bo Jiang",
+        "Youyuan Liu",
+        "Taolue Yang",
+        "Sheng Di",
+        "Sian Jin"
+      ],
+      "published": "2026-07-24T23:46:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.22956v1",
+      "categories": [
+        "cs.GR",
+        "cs.DC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -6141,6 +6618,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-23T09:27:59.455586+00:00"
+    },
+    {
+      "id": "2607.24436v1",
+      "title": "MSVS-VAE: Multi-Scale Anchored VecSet for High-Fidelity 3D Reconstruction",
+      "abstract": "High-fidelity 3D generative modeling increasingly relies on the latent diffusion paradigm, where the reconstruction quality of the underlying 3D VAE becomes a primary bottleneck. Existing approaches largely follow two paradigms: sparse voxel-based representations achieve strong reconstruction quality but incur significant memory and computational overhead, while set-based representations are compact and continuous yet typically lag in fidelity due to latent sparsity and excessive global smoothness. We propose MSVS-VAE, a hierarchical set-based VAE that closes this fidelity gap without sacrificing compactness. Our key idea is to progressively densify anchored VecSet latents via hierarchical p…",
+      "authors": [
+        "Dehao Hao",
+        "Kaiyi Zhang",
+        "Tanghui Jia",
+        "Xiangjun Gao",
+        "Dongyu Yan",
+        "Weikai Chen"
+      ],
+      "published": "2026-07-27T13:45:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24436v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -7081,6 +7587,122 @@
       "first_seen": "2026-07-24T09:24:16.675318+00:00"
     },
     {
+      "id": "2607.24538v1",
+      "title": "NEO: NeRF It Once, Edit It Many Times for Continuous Object Manipulation",
+      "abstract": "In this paper, we present NEO, a unified framework providing language-guided NeRF editing for robotic manipulation. Our paper introduces (i) a language-guided object removal that combines neural field resampling with multiview-consistent progressive inpainting, (ii) a direct NeRF weight editing method utilizing knowledge distillation, composing original and edited NeRFs via a teacher-student model, enabling coherent modeling of future scene states before a robot executes an action, and (iii) the first benchmark (NEO-Dataset) for quantitatively evaluating NeRF scene editing methods suitable for robot manipulation. We show that our approach outperforms state-of-the-art baselines in scene editi…",
+      "authors": [
+        "Mikołaj Zieliński",
+        "David Hall",
+        "Dominik Belter",
+        "Peyman Moghadam"
+      ],
+      "published": "2026-07-27T15:16:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.24538v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.23946v1",
+      "title": "Joint Flow Matching for Generator-Consistent Classification",
+      "abstract": "We introduce Joint Flow Matching (JFM), a training framework for continuous normalising flows over multiple variables. Standard flow matching transports variables from noise to data simultaneously, offering no natural mechanism for forward and reverse conditional inference from a shared joint model. JFM resolves this by assigning opposite roles to each variable at the temporal endpoints. We prove that JFM produces a consistent joint distribution where that forward or reverse integration are conditionals of the same joint. We explore this consistency in the context of joint classification and generation as the basis for interpretability in discriminative-generative models. We validate JFM on …",
+      "authors": [
+        "Hayden McAlister",
+        "Lech Szymanski"
+      ],
+      "published": "2026-07-27T02:45:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23946v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.23758v1",
+      "title": "RoadVGGT: Road-Structure-Aware Feed-Forward Road Surface Reconstruction",
+      "abstract": "Large-scale road surface reconstruction supports high-definition mapping, autonomous-driving perception, annotation, and simulation. Existing road-specialized optimization methods can produce high-quality road representations, but they typically require per-scene training and scene-dependent coverage design around the driving trajectory, limiting scalable reconstruction over newly collected roads. To address these limitations, we introduce RoadVGGT, a road-structure-aware feed-forward framework that reconstructs compact Gaussian road surfaces without test-time per-scene optimization. RoadVGGT uses a geometric foundation model to exploit multi-view images together with provided pose and depth…",
+      "authors": [
+        "Han Jiao",
+        "Chen Liu",
+        "Jiakai Sun",
+        "Zhanjie Zhang",
+        "Mengyuan Yang",
+        "Yimeng Li"
+      ],
+      "published": "2026-07-26T17:09:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23758v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.23615v1",
+      "title": "Restoration Flow Matching-Based Channel Refinement and Equalization Correction for MIMO Semantic Communications",
+      "abstract": "In multiple-input multiple-output (MIMO) semantic communication, imperfect channel state information (CSI) and equalization mismatch can seriously degrade semantic reconstruction quality. To address this issue, we propose a unified restoration flow matching (RFM)-based framework for channel refinement and equalization correction. Specifically, the channel RFM (CRFM) module is developed to refine the coarse channel, thereby improving channel estimation accuracy. Based on the refined channel, the developed semantic RFM (SRFM) module is employed to correct the residual distortions in the post-equalization latent space. The key idea is to formulate the two cascaded inverse problems of channel es…",
+      "authors": [
+        "Wenkai Liu",
+        "Nan Ma",
+        "Jianqiao Chen",
+        "Xiaodong Xu",
+        "Meixia Tao",
+        "Ping Zhang"
+      ],
+      "published": "2026-07-26T11:39:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23615v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -7670,6 +8292,42 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-24T09:24:16.675318+00:00"
+    },
+    {
+      "id": "2607.23784v1",
+      "title": "A Few Words Go a Long Way: Language Guided Robot Policy Synthesis",
+      "abstract": "While vision-language-action models have demonstrated impressive zero-shot manipulation capabilities, they remain fundamentally black box policies that are difficult to interpret, adapt, or correct when they inevitably fail. In this work, we propose ARCHITECT, a framework that treats robot policy acquisition as an interactive program synthesis task. ARCHITECT leverages the reasoning capabilities of LLM coding agents to synthesize modular robot programs that utilize a suite of perception and control tools. Unlike end-to-end models where distribution shift leads to unpredictable, cascading failures, our modular architecture allows users to isolate failures and localize feedback at the level of…",
+      "authors": [
+        "Daphne Chen",
+        "Archit Ritesh Jain",
+        "Eric Goossen",
+        "Emma Romig",
+        "Michael Murray",
+        "Nick Walker"
+      ],
+      "published": "2026-07-26T18:00:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.23784v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-28T09:38:42.453803+00:00"
     }
   ]
 }
