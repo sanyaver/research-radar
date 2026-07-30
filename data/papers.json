@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-29T09:40:55.803514+00:00",
-  "total": 283,
-  "new_this_run": 11,
+  "last_updated": "2026-07-30T09:33:44.888592+00:00",
+  "total": 297,
+  "new_this_run": 14,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -31,6 +31,48 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.26889v1",
+      "title": "StructureGS: Structure-aware Gaussian Splatting for Articulated Object Reconstruction",
+      "abstract": "Reconstructing articulated objects with multiple movable parts is essential for understanding object structure and enabling physical interaction. However, this reconstruction task poses significant challenges due to the entanglement of geometry, appearance, and motion parameters during optimization. Existing methods rely primarily on photometric supervision, which commonly fails to disentangle these interdependent components, resulting in poor part decomposition with blurred boundaries and geometric artifacts. To address this limitation, we introduce StructureGS, a reconstruction framework for articulated objects that integrates structure-aware guidance into 3D Gaussian Splatting. Our approa…",
+      "authors": [
+        "Gahye Lee",
+        "Gyoonseo Kim",
+        "Wonjong Jang",
+        "Jooeun Son",
+        "Seungyong Lee"
+      ],
+      "published": "2026-07-29T13:18:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26889v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 27,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 130
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
       "id": "2607.03891v1",
@@ -1062,6 +1104,39 @@
       "first_seen": "2026-07-27T10:47:57.826456+00:00"
     },
     {
+      "id": "2607.26578v1",
+      "title": "3DGBGS: 3D Granular Ball Gaussian Splatting for Compact Novel View Synthesis",
+      "abstract": "Three-dimensional Gaussian Splatting (3DGS) enables high-quality real-time novel-view synthesis through explicit Gaussian primitives and differentiable rasterization. 3DGS and Granular Ball Computing (GBC), proposed in 2019, share a natural compatibility in adaptive representation. The efficiency of 3DGS partly stems from a coarse-to-fine and on-demand refinement process that draws on the generation principle of GBC. This connection motivates us to further introduce adaptive granular ball organization into anchor-based 3DGS. Existing anchor-based methods typically construct anchors from sparse SfM point clouds through fixed voxelization, which cannot adequately adapt to spatially non-uniform…",
+      "authors": [
+        "Meng Yang",
+        "Shuyin Xia",
+        "Dawei Dai",
+        "YiWang"
+      ],
+      "published": "2026-07-29T07:57:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26578v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
       "id": "2606.30352v1",
       "title": "FastPano3D: Feed-Forward Indoor Panoramic 3D Reconstruction from a Single Image",
       "abstract": "Recent advances in 3D scene reconstruction have highlighted the intricate trade-offs among rendering quality, inference efficiency, and data dependency. To address the challenge of rapidly reconstructing detailed 3D indoor scenes from minimal input, we introduce FastPano3D, an end-to-end framework that directly generates renderable 3D Gaussian representations from a single panoramic image. Unlike perspective-based methods, panoramic images inherently suffer from equirectangular projection distortions and spatially non-uniform feature distributions, making direct feed-forward Gaussian generation particularly challenging. In contrast to existing Gaussian Splatting based methods that rely on mu…",
@@ -1225,6 +1300,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-16T09:18:58.615167+00:00"
+    },
+    {
+      "id": "2607.26513v1",
+      "title": "Explicit Kinematic Guidance from Analytic Concepts for Vision-Language-Action Models",
+      "abstract": "Current Vision-Language-Action (VLA) models rely mainly on 2D inputs, neglecting the rich object structural information and commonsense knowledge inherent in the 3D physical world. This deficiency restricts their spatial awareness and adaptability for complex, high-precision manipulation. To bridge this crucial gap, we construct a Concept Expert module for VLA to build executable Analytic Concepts that represent objects as explicit, programmatic blueprints. Our mechanism operates in two synergistic phases: First, prior to VLA inference, the Concept Expert leverages 3D information from Vision Foundation Models (VFMs) to estimate the initial kinematic and structural parameters. Second, through…",
+      "authors": [
+        "Mingyang Sun",
+        "Jiude Wei",
+        "Xiujian Liang",
+        "Qichen He",
+        "Donglin Wang",
+        "Cewu Lu"
+      ],
+      "published": "2026-07-29T06:24:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26513v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
       "id": "2606.31101v1",
@@ -1778,6 +1888,112 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-29T09:40:55.803514+00:00"
+    },
+    {
+      "id": "2607.26807v1",
+      "title": "Route by Kinematics, Act by Observation: Kinematics-Supervised Expert Routing in MoE-Augmented VLA",
+      "abstract": "While MoE augments VLA via expert specialization, router suffers from ineffective expert routing owing to the kinematic heterogeneity of actions across manipulation tasks and, even worse, the unavailability of the kinematic signals at inference time. In this work, we first observe that most semantically distinct manipulation tasks reduce to multiple kinematic archetypes. Motivated by this finding, we propose Kinematics-supervised explicit routing (KinRT), a new paradigm that shifts from implicit, observation-driven expert routing to explicit, kinematics-guided expert dispatching. Specifically, we perform kinematic clustering on action trajectories into multiple kinematically coherent groups,…",
+      "authors": [
+        "Tianhang Yang",
+        "Yanze Zheng",
+        "Junjie Wang",
+        "Wei-Bin Kou",
+        "Ruotong Li",
+        "Yujiu Yang"
+      ],
+      "published": "2026-07-29T11:48:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26807v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.26646v1",
+      "title": "Genie Sim PanoWorld: An Infinite Indoor 3D World Generation Pipeline via Panoramic Scene Modeling and Simulation",
+      "abstract": "We address the problem of reconstructing a high-fidelity, freely navigable 3D scene from a single $360^\\circ$ panorama, without per-scene optimization or multi-view capture. Existing methods either lack metric trajectory control, which hinders reliable downstream 3D reconstruction, or struggle with large disocclusions under long-range camera motion while requiring high-end multi-GPU servers.We present Genie Sim PanoWorld, a two-stage feed-forward pipeline that bridges generation and reconstruction via an explicit, trajectory-controllable panoramic video. A NavMesh-planned $\\mathrm{SE}(3)$ roaming trajectory is injected into a latent video diffusion model through dense geometry-warped conditi…",
+      "authors": [
+        "Yongxin Su",
+        "Linjie Hou",
+        "Feng Wang",
+        "Jialin Tang",
+        "Zhijun Li",
+        "Qian Wang"
+      ],
+      "published": "2026-07-29T09:08:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26646v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.26645v1",
+      "title": "FPSGen: Flexible Point Cloud Scene Generation with BEV-Supported Transport Flows",
+      "abstract": "Existing point-based generative methods for outdoor scenes primarily focus on LiDAR-conditioned completion. During training, noisy point clouds are constructed by perturbing complete ground-truth scenes, whereas during inference, they are initialized by adding noise to duplicated partial scans. This train-inference mismatch inherits the sparsity and visibility bias of partial scans, leading to sparse distant regions and incomplete geometry in occluded areas. Moreover, the reliance on partial scans restricts generation when LiDAR observations are unavailable or replaced by layout cues. We present FPSGen, a flexible framework that constructs point sources independently of partial scans. FPSGen…",
+      "authors": [
+        "Wenzhe He",
+        "Meng Wang",
+        "JiaWei Qian",
+        "Jinfeng Xu",
+        "Ying Liu",
+        "Ruihui Li"
+      ],
+      "published": "2026-07-29T09:06:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26645v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -2485,6 +2701,102 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-29T09:40:55.803514+00:00"
+    },
+    {
+      "id": "2607.26985v1",
+      "title": "SymmGrid: Super-Scaling On-Robot Learning with Parallelized Symmetries and Egocentric-Exocentric Visual Perception",
+      "abstract": "Deep reinforcement policy learning directly in physical robots (on-robot learning) remains bottlenecked by slow wall-clock training times. We present SymmGrid, a trajectory level augmentation framework inspired by parallelized symmetries that super-scales group transformations to significantly accelerate on-robot learning in both egocentric and exocentric visual setups. We model a Markov Decision Process (MDP) under a symmetry tree, in which state-action pairs have admissible parallelized invariant transformations that yield a geometric grid structure. The state is modelled with ego- or exocentric images and proprioception information. The latter require special treatment, in the form of hom…",
+      "authors": [
+        "Gabe Everett",
+        "Brice Gunter",
+        "Ryan Vander Stelt",
+        "Cleiver Ruiz-Martinez",
+        "Blake Hull",
+        "Juan Rojas"
+      ],
+      "published": "2026-07-29T14:41:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26985v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.26914v1",
+      "title": "BioVLN: A Simulation Platform for Visual Language Navigation in Biomedical Laboratories",
+      "abstract": "Biomedical laboratory robots must navigate to instruments before performing experimental procedures. Existing embodied navigation platforms are designed for household environments and treat a target as an object center or an arbitrary nearby position. This representation is inadequate for laboratory instruments, which must be approached from their operating side while maintaining safe clearance from surrounding equipment. We introduce BioVLN, a simulation platform for developing and evaluating visual-language navigation agents in biomedical laboratories. BioVLN represents each instrument with three regions: its physical body, a surrounding clearance region, and an operation area in front of …",
+      "authors": [
+        "Zhe Liu",
+        "Quan Lu",
+        "Zhaohui Du",
+        "Zhe Wang",
+        "Huanbo Jin",
+        "Jiaming Gu"
+      ],
+      "published": "2026-07-29T13:44:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26914v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.26315v1",
+      "title": "MoMo: Dial Motion Mode in Robot Manipulation with Spatiotemporal Action Tokenization",
+      "abstract": "To operate effectively across diverse contexts, robots must not only perform manipulation tasks accurately but also adapt how their actions unfold to the task, object, and interaction setting. We ask whether this execution-level variation can be learned as a reusable behavioral factor shared across tasks. We present \\textbf{MoMo}, a two-stage imitation-learning framework consisting of a spatiotemporal action tokenizer and a behavior-cloning transformer that takes task and a continuous motion-mode condition as inputs. Across six real-robot manipulation tasks, varying this condition produces steady, dynamic, and intermediate behaviors that human raters can distinguish and that differ in joint …",
+      "authors": [
+        "Yuhan Hu",
+        "Hugues Thomas",
+        "Peide Huang",
+        "Mouli Sivapurapu",
+        "Benoit Landry",
+        "Arto Kivila"
+      ],
+      "published": "2026-07-28T22:25:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26315v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -3367,6 +3679,98 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-29T09:40:55.803514+00:00"
+    },
+    {
+      "id": "2607.26733v1",
+      "title": "Online Handwriting Trajectory Reconstruction from Kinematic Sensors using Temporal Convolutional Network",
+      "abstract": "Handwriting with digital pens is a common way to facilitate human-computer interaction through the use of Online Handwriting (OH) trajectory reconstruction. In this work, we focus on a digital pen equipped with sensors from which one wants to reconstruct the OH trajectory. Such a pen allows to write on any surface and to get the digital trace, which can help learning to write, by writing on paper, and can be useful for many other applications such as collaborative meetings, etc. In this paper, we introduce a novel processing pipeline that maps the sensor signals of the pen to the corresponding OH trajectory. Notably, in order to tackle the difference of sampling rates between the pen and the…",
+      "authors": [
+        "Wassim Swaileh",
+        "Florent Imbert",
+        "Yann Soullard",
+        "Romain Tavenard",
+        "Eric Anquetil"
+      ],
+      "published": "2026-07-29T10:23:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26733v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.26595v1",
+      "title": "SpatialQ: Understanding 3D Gaussian Splatting Scene Quality via Visual-based MLLM",
+      "abstract": "3D Gaussian Splatting (3DGS) has emerged as an effective representation for novel view synthesis and 3D scene reconstruction, creating an increasing demand for reliable quality assessment. Unlike conventional image quality assessment (IQA), the quality of a 3DGS scene depends not only on the perceptual fidelity of rendered views, but also on scene-level factors such as spatial structure and cross-view consistency. Existing IQA methods are limited by their reliance on 2D perceptual cues, whereas general multimodal large language models (MLLMs) are not designed for stable quality regression and may produce unreliable judgments. To address these limitations, a multimodal quality assessment fram…",
+      "authors": [
+        "Jingxuan Su",
+        "Shenglin Wang",
+        "Tiesong Zhao",
+        "Ge Li",
+        "Wei Gao"
+      ],
+      "published": "2026-07-29T08:14:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26595v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 35
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.26442v1",
+      "title": "Global Exponential Stabilization of the Kinematic Bicycle Model of a Car in Polar Coordinates",
+      "abstract": "At parking speeds, the kinematic bicycle is the prevailing model for car-like vehicles. Yet, despite its wide use, stabilizing feedback laws for this system are scarce in the literature, and existing designs often do not reproduce realistic parking maneuvers. This limitation is inherent to the Cartesian coordinates, where Brockett's condition rules out smooth static feedback stabilization. We bypass this obstruction by transforming the system into polar coordinates together with additional range-normalized coordinates that encode the geometry of human-like parking maneuvers. In the transformed coordinates, the dynamics take a strict-feedback form, enabling a nonconventional backstepping desi…",
+      "authors": [
+        "Velimir Todorovski",
+        "Kwang Hak Kim",
+        "Alessandro Astolfi",
+        "Miroslav Krstic"
+      ],
+      "published": "2026-07-29T03:40:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26442v1",
+      "categories": [
+        "eess.SY",
+        "cs.RO",
+        "math.OC"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -6220,6 +6624,67 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-29T09:40:55.803514+00:00"
+    },
+    {
+      "id": "2607.26525v1",
+      "title": "AtlasLC: Fast Codec-Ready Compression of Object-Centric 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis with real-time rendering, but deploying compressed object-centric 3DGS in XR requires more than image-space rate-distortion. In practical XR asset pipelines, reusable objects are repeatedly packaged, transmitted, decoded, and instantiated, making asset-preparation cost, codec compatibility, decoding latency, and preservation of depth and silhouette cues first-class concerns. Existing 3DGS compression methods are largely developed for scene-scale captures and often rely on heavy layout generation or aggressive global pruning, assumptions that transfer poorly to semantically concentrated foreground objects. We present Atl…",
+      "authors": [
+        "ByungHyun Kim",
+        "Jinwoo Jeon",
+        "Woontack Woo"
+      ],
+      "published": "2026-07-29T06:43:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26525v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.26234v1",
+      "title": "Spline-Based Boundary Representations for Sparse View Reconstruction and Simulation Using Isogeometric Analysis",
+      "abstract": "Image-based reconstruction aims to recover three-dimensional geometry from images. Recent advances have enabled the recovery of visually detailed models, yet their representations are not well-suited for numerical simulation. Simulation frameworks typically require explicit, watertight, and smooth geometries to ensure numerical robustness and accuracy, properties that surfaces extracted from image-based reconstructions lack. We propose FORGE-SIM, a method to directly reconstruct a multi-patch B-spline boundary representation from sparse posed RGB images without manual intervention. By optimizing the spline representation itself, our approach produces compact, smooth, and watertight geometrie…",
+      "authors": [
+        "Davor Dobrota",
+        "Vsevolod Skorokhodov",
+        "Chenghao Xu",
+        "Olga Fink",
+        "Malcolm Mielle"
+      ],
+      "published": "2026-07-28T20:14:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.26234v1",
+      "categories": [
+        "cs.CV",
+        "cs.CE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
       "id": "2606.31556v1",
