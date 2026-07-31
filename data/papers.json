@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-30T09:33:44.888592+00:00",
-  "total": 297,
-  "new_this_run": 14,
+  "last_updated": "2026-07-31T09:48:52.781582+00:00",
+  "total": 302,
+  "new_this_run": 5,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -174,6 +174,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-07T10:28:42.086188+00:00"
+    },
+    {
+      "id": "2607.27749v1",
+      "title": "Articulated Object Reconstruction from Rest-State Observation",
+      "abstract": "Building interactive digital twins requires recovering both 3D geometry and the kinematic structures that govern how objects articulate. Yet existing methods for articulated object reconstruction require explicitly observable motion from multiple articulation states. We introduce a rest-state formulation that reconstructs articulated objects from a single closed configuration, an inherently ill-posed setting where geometry, semantics, and motion priors compensate for the absence of motion cues. Our framework adopts an explicit mesh as an intermediate representation for cross-model verification and fusion, reconciling noisy outputs from vision-language and segmentation models into spatially c…",
+      "authors": [
+        "Daeun Lee",
+        "Jaeah Lee",
+        "Woosung Kim",
+        "Haebeom Jung",
+        "Jaesik Park"
+      ],
+      "published": "2026-07-30T06:42:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.27749v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 23,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 130
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-31T09:48:52.781582+00:00"
     },
     {
       "id": "2607.18135v1",
@@ -6687,6 +6716,32 @@
       "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
+      "id": "2607.27494v1",
+      "title": "Simulation of Surgical Suturing Using Position-Based Dynamics and the Material Point Method for Robot Reinforcement Learning",
+      "abstract": "Recent advances in robotics research have created a strong demand for high-performance simulators. Surgical robotics simulation faces unique challenges due to the need to model diverse objects, such as rigid instruments, soft tissue, and fluids. While many studies simulate sutures or soft tissue independently, only a few have considered the complete soft-tissue suturing scenario, including the contact between sutures and deformable tissue during suture insertion. Building on previous work, this paper presents a novel suturing simulation environment using sutures modelled by position-based dynamics (PBD) and soft bodies modelled by the material point method (MPM) while considering two-way con…",
+      "authors": [
+        "Tleukhan Mussin",
+        "Yafei Ou",
+        "Mahdi Tavakoli"
+      ],
+      "published": "2026-07-29T22:20:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.27494v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-31T09:48:52.781582+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -7381,6 +7436,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.28132v1",
+      "title": "Convolutional Neural Shading for High-Quality 3D Reconstruction from Multi-View Images",
+      "abstract": "We propose a convolutional neural shading (CNS), a novel pipeline to reconstruct high-quality 3D shapes from multi-view images. Several recent studies have used neural radiance fields and other neural differentiable rendering methods to understand 3D geometry. However, these approaches rely on single-point geometric information, such as positions and normals of the surface, leading to a lack of detailed local geometry. Our approach addresses the inherent limitations of single-point information by leveraging a neural shader to capture variations even in dark and textureless regions with a convolutional neural shader, resulting in far more accurate geometry predictions. Additionally, our metho…",
+      "authors": [
+        "Juheon Hwang",
+        "Taewan Kim",
+        "Heeseok Oh",
+        "Jiwoo Kang"
+      ],
+      "published": "2026-07-30T12:41:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.28132v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-31T09:48:52.781582+00:00"
+    },
+    {
+      "id": "2607.27549v1",
+      "title": "Cross-Embodiment Transfer via Behavior-Aligned Representations",
+      "abstract": "Recent progress in large-scale imitation learning for robot manipulation has been driven by leveraging datasets across a wide range of robot embodiments. However, achieving significant cross-embodiment transfer is often still challenging. In this work, we study the role of using behavior-aligned representations (e.g., object bounding boxes, language motions, end-effector traces of robot motion) in vision-language-action (VLA) models to promote cross-embodiment transfer. We hypothesize that by possessing invariances across embodiments while being predictive of robot actions, these representations can help unify large-scale cross-embodiment data to enhance transfer. To assess our hypothesis, w…",
+      "authors": [
+        "Ajay Sridhar",
+        "Jensen Gao",
+        "Jonathan Yang",
+        "Jean Mercat",
+        "Suneel Belkhale",
+        "Dorsa Sadigh"
+      ],
+      "published": "2026-07-30T00:49:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.27549v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 36
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-31T09:48:52.781582+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -9121,6 +9241,32 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-29T09:40:55.803514+00:00"
+    },
+    {
+      "id": "2607.27825v1",
+      "title": "Endo-NeRF++: Uncertainty-Aware Neural Rendering with Multi-Resolution Hash Encoding for Dynamic Surgical Scene Reconstruction",
+      "abstract": "Reconstructing dynamic surgical scenes is crucial for robot-assisted minimally invasive surgery; however, it continues to be difficult because of tissue deformation, occlusions, specular reflections, and restricted viewpoints. In this study, we introduce Endo-NeRF++, a neural rendering framework that accounts for uncertainty in the reconstruction of dynamic surgical scenes. Expanding on EndoNeRF, the suggested approach incorporates multi-resolution hash-grid encoding, temporal feature merging, and uncertainty-informed adaptive sampling to enhance reconstruction accuracy and temporal coherence in deformable endoscopic scenes.The multi-resolution hash-grid representation within the framework e…",
+      "authors": [
+        "Gousia Habib",
+        "Laura Ruotsalainen"
+      ],
+      "published": "2026-07-30T08:03:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.27825v1",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-07-31T09:48:52.781582+00:00"
     }
   ]
 }
