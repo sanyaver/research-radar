@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-02T09:12:49.332562+00:00",
-  "total": 302,
-  "new_this_run": 0,
+  "last_updated": "2026-08-03T10:48:31.664539+00:00",
+  "total": 312,
+  "new_this_run": 10,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -2023,6 +2023,31 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2607.29302v1",
+      "title": "BWM: A Low-Cost High-Fidelity World Simulator for Robot Learning",
+      "abstract": "Reliable robot learning requires a world simulator that can predict action consequences before execution on physical hardware, including risky and failure-prone outcomes. Existing physics simulators require substantial asset construction and calibration and still face a sim-to-real gap, while video generators often lack precise control over their responses to fine-grained robot actions. In this paper, we present the Boundless World Model (BWM), an open-source, low-cost, high-fidelity world simulator for robot manipulation. BWM is an action-conditioned world model that combines initial-environment guidance, dynamic visual history, and temporally aligned robot-action conditioning for stateful …",
+      "authors": [
+        "BWM Team"
+      ],
+      "published": "2026-07-31T11:18:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29302v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -6742,6 +6767,156 @@
       "first_seen": "2026-07-31T09:48:52.781582+00:00"
     },
     {
+      "id": "2607.29633v1",
+      "title": "OASIS: Occlusion-aware Single-image Hand Avatar Reconstruction via 3D Gaussian Splatting",
+      "abstract": "Single-image 3D hand avatar reconstruction is fundamentally ill-posed and particularly challenging due to limited visual evidence under severe self-occlusion and the complex pose-dependent deformation of highly articulated hands. Existing methods predominantly rely on implicit NeRF-style representations, whose volumetric fitting is computationally expensive and often struggles to preserve fine-grained hand details. In this work, we present OASIS, a tailored 3D Gaussian Splatting framework for single-image hand avatar reconstruction. To faithfully encode sparse image-specific appearance cues in single-view reconstruction, we construct geometry-aligned visual evidence tokens by explicitly alig…",
+      "authors": [
+        "Zhisheng Han",
+        "Shiyao Wu",
+        "Jiayan Qiu",
+        "Yakun Ju",
+        "Lu Liu",
+        "Le Zhang"
+      ],
+      "published": "2026-07-31T17:09:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29633v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2607.29456v1",
+      "title": "Analytical and Bootstrap Confidence Intervals of Double Machine Learning: Simulation studies and an application to rural-urban difference in obesity prevalence",
+      "abstract": "Double Machine Learning (DML) is a popular approach for treatment effect estimation in various settings, which allows a wide range of flexible machine learning methods to be used for nuisance parameter estimation while preserving valid inference. In practice, however, applied researchers must choose among many machine learning algorithms for nuisance models, and the impact of this choice on the variance estimation of DML is not well characterized. We conduct a comprehensive simulation study to compare the coverage probability of DML confidence intervals across different machine learning algorithms. In this study, we compare (1) analytical confidence intervals derived by DML theory versus (2)…",
+      "authors": [
+        "Haozheng Xu",
+        "Siyuan Ma",
+        "Qingyan Xiang"
+      ],
+      "published": "2026-07-31T14:22:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29456v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2607.29389v1",
+      "title": "Simulation Code Generation for Fluid Systems using Large Language Models: Benchmarking Models and Prompting Strategies",
+      "abstract": "Large language models (LLMs) have demonstrated a strong ability to generate syntactically correct code from natural-language specifications. In this study, we explore how LLMs can be harnessed to automatically translate a neutral graph representation of fluid system models into executable code for two widely adopted simulation environments: the Python library WNTR and the Modelica Standard Library. We conduct a systematic comparison of ten state-of-the-art LLMs and six prompting strategies that differ in the contextual information supplied (e.g., code or documentation). For each configuration we assess the generated code using a suite of software-quality metrics and we validate the functiona…",
+      "authors": [
+        "Jan Marius Stürmer",
+        "Jascha Knack",
+        "Tobias Koch",
+        "Andreas Weinmann"
+      ],
+      "published": "2026-07-31T13:09:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29389v1",
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2607.29158v1",
+      "title": "Implicit Machine Learning Force Fields Accelerate Molecular Dynamics Simulations",
+      "abstract": "We introduce implicit machine learning force fields (I-MLFFs), which replace explicit stacks of neural network layers with self-consistent fixed-point equations. In molecular simulations, this formulation enables intermediate representations to be reused across successive timesteps, thereby warm-starting force evaluation. The resulting models effectively combine the computational footprint of a shallow, single-layer MLFF with the representational capacity and accuracy of a deep neural network. Our approach unlocks architecture-agnostic efficiency gains that are inaccessible when force prediction and trajectory integration are considered separately. We demonstrate this across three major clas…",
+      "authors": [
+        "Johannes Maeß",
+        "Leon Werner",
+        "J. Thorben Frank",
+        "Winfried Ripken",
+        "Martin Michajlow",
+        "Joshua Futterer"
+      ],
+      "published": "2026-07-31T08:38:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29158v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2607.29037v1",
+      "title": "GO-PRE: Goal-Oriented Next-Best-View Selection via Predictive Rendering Entropy for Active 3D Reconstruction",
+      "abstract": "Active 3D reconstruction relies on active view selection to maximize reconstruction fidelity under limited capture budgets. However, most existing methods rely on surrogate signals such as parameter uncertainty or geometric heuristics, but these signals are often misaligned with the ultimate goal: the fidelity of rendered predictions. We propose GO-PRE, a goal-oriented next-best-view selection framework that explicitly targets information gain in the prediction space. Specifically, we formulate the objective as maximizing the reduction of the average marginal predictive entropy over a user-specified target view manifold. GO-PRE supports interactive goal specification and yields an efficient …",
+      "authors": [
+        "Yan Song",
+        "Zhihao Li",
+        "Chenglong Li",
+        "Li He",
+        "Yan Wang",
+        "Wenqiang Zhang"
+      ],
+      "published": "2026-07-31T05:29:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29037v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -8555,6 +8730,120 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-28T09:38:42.453803+00:00"
+    },
+    {
+      "id": "2607.29569v1",
+      "title": "Safe Vision Language Action Models via Barrier Enhanced Flow Matching",
+      "abstract": "This article presents a modular inference framework that integrates Flow Matching generative models with formal Control Barrier Function (CBF) safety guarantees. Unlike existing methods that apply external safety filters to a model's final output, our approach modifies the Flow Matching denoising process within the model to inherently generate safe trajectories. By employing a smooth Log-Sum-Exponential aggregate barrier, we enforce safety over entire action chunks. This aggregate barrier ensures a minimal increase in computational overhead and does not alter the semantic intent of the model. We show that, within the proposed framework, the 2-Wasserstein distance between the generated distri…",
+      "authors": [
+        "Kasra Sinaei",
+        "Hung-Chieh Wu",
+        "Donald Ebeigbe"
+      ],
+      "published": "2026-07-31T15:56:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29569v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2607.29284v1",
+      "title": "FillGS: Filling Observation Gaps in 4D Gaussian Splatting via Viewpoint-Time Selection and Generative Refinement",
+      "abstract": "4D Gaussian Splatting (4DGS) can render dynamic scenes photorealistically. However, with limited viewpoint coverage, some spatiotemporal regions remain sparsely observed, leading to artifacts, particularly in scenes with large motion. Existing approaches leveraging generative models rely on heuristic virtual-viewpoint selection before refining rendered views. As a result, they cannot actively explore such sparsely observed regions. To address this issue, we propose a pipeline that actively selects spatiotemporal virtual viewpoints to improve 4DGS reconstruction. Our method selects virtual viewpoints for generative enhancement based on the rendering sensitivity and motion-aware observation de…",
+      "authors": [
+        "Takashi Otonari",
+        "Toshihiko Yamasaki"
+      ],
+      "published": "2026-07-31T10:57:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.29284v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2607.28759v1",
+      "title": "SCMA: Structure-Conditioned and Metal-Aware Flow Matching for CT Metal Artifact Reduction",
+      "abstract": "In X-ray CT, metallic objects cause beam hardening, photon starvation, and scattering, leading to projection inconsistency, streaks, dark bands, and structural distortions that compromise clinical diagnosis and quantitative analysis. Existing metal artifact reduction (MAR) methods remain limited: optimization-based methods may leave residual artifacts or blur structures, regression networks may generalize poorly across scenarios, and generative models without sample-specific structural guidance and physical constraints may produce anatomically inconsistent structures. Flow Matching learns a continuous-time velocity field that deterministically transports a source distribution to a target dis…",
+      "authors": [
+        "Heran Wang",
+        "Jianing Sun",
+        "Xu Jiang",
+        "Genwei Ma",
+        "Xing Zhao",
+        "Jigang Duan"
+      ],
+      "published": "2026-07-30T18:26:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.28759v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2607.28698v1",
+      "title": "Flow Matching with Missing Data",
+      "abstract": "Flow matching assumes fully observed training data, which many real-world applications rarely provide. We propose Missing-Data Flow Matching, which treats the missing coordinates of training samples as latent variables and averages the flow matching loss over the values they could take. We first prove the correction is exact rather than approximate. Under missing completely at random with true completions, the incomplete-data objective equals the complete-data objective, so missingness changes nothing about what flow matching learns and the entire difficulty relocates to the completion model. Our finite-sample analysis then answers design questions that the algorithm leaves open, and the ans…",
+      "authors": [
+        "Fairoz Nower Khan",
+        "Nabuat Zaman Nahim",
+        "Peizhong Ju"
+      ],
+      "published": "2026-07-30T10:37:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2607.28698v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-03T10:48:31.664539+00:00"
     },
     {
       "id": "2606.31680v1",
