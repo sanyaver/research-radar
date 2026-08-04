@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-03T10:48:31.664539+00:00",
-  "total": 312,
-  "new_this_run": 10,
+  "last_updated": "2026-08-04T09:40:53.614317+00:00",
+  "total": 334,
+  "new_this_run": 22,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -909,6 +909,41 @@
       "first_seen": "2026-07-02T10:12:55.873161+00:00"
     },
     {
+      "id": "2608.02145v1",
+      "title": "UniqueSplat: View-conditioned 3D Gaussian Splatting for Generalizable 3D Reconstruction",
+      "abstract": "In this paper, we propose UniqueSplat, a view-conditioned feed-forward 3D Gaussian Splatting model to reconstruct customized 3D radiance fields for each view query. Existing feed-forward methods such as pixelSplat and MVSplat aim to generate fixed Gaussians across all views of each scene by minimizing the error between rendered views and ground-truth images. However, such fixed Gaussians generally render images from all views and lack the ability to adapt to specific viewpoints, as they do not incorporate target view information when predicting Gaussians. To address this, our UniqueSplat learns the view-conditioned information as a prior and incorporates this knowledge into network parameter…",
+      "authors": [
+        "Haixu Song",
+        "Xiaoke Yang",
+        "Shengjun Zhang",
+        "Jiwen Lu",
+        "Yueqi Duan"
+      ],
+      "published": "2026-08-03T12:31:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.02145v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
       "id": "2607.05252v1",
       "title": "FUSE: FK-Steered Multi-Modal Flow Matching for Efficient Simulation-Based Posterior Estimation",
       "abstract": "Simulation-Based Inference (SBI) is critical for scientific discovery, with generative models offering a promising path toward efficient inference. However, existing methods struggle with effective multimodal modeling. They often rely on brute-force fusion strategies that ignore the structural disparities between parameters and observations, thus limiting estimation fidelity. In this work, we introduce FUSE (Feynman-Kac steered mUlti-modal flow matching for efficient Simulation-based posterior Estimation). Unlike prior work, FUSE employs a dual-track architecture that preserves the distinct features of multimodal inputs while facilitating dynamic interaction. Additionally, we propose an FK-s…",
@@ -1166,6 +1201,42 @@
       "first_seen": "2026-07-30T09:33:44.888592+00:00"
     },
     {
+      "id": "2608.01958v1",
+      "title": "FAST-GS: Frequency Aware Space-time Gaussian Splatting for Photorealistic Dynamic Novel View Synthesis",
+      "abstract": "4D Gaussian Splatting (4DGS) excels in dynamic 3D reconstruction and real-time novel view synthesis via efficient 4D Gaussian representations and parallelizable rendering. However, existing 4DGS approaches rely on a single polynomial to model motion, which limits performance in complex dynamic scenes where high-frequency motion components are prevalent, and fails to ensure long-term stability due to cumulative trajectory drift. To address these issues, we propose a Fourier Motion Modeling module: this paradigm decomposes motion into frequency-based sinusoidal components, capturing both low-frequency global trajectories and high-frequency local details to model complex motion patterns accurat…",
+      "authors": [
+        "Zhengyang Zhang",
+        "Ziyu Lu",
+        "PengCheng Li",
+        "Hongbo Duan",
+        "Yi Liu",
+        "Pengting Luo"
+      ],
+      "published": "2026-08-03T09:27:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01958v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
       "id": "2606.30352v1",
       "title": "FastPano3D: Feed-Forward Indoor Panoramic 3D Reconstruction from a Single Image",
       "abstract": "Recent advances in 3D scene reconstruction have highlighted the intricate trade-offs among rendering quality, inference efficiency, and data dependency. To address the challenge of rapidly reconstructing detailed 3D indoor scenes from minimal input, we introduce FastPano3D, an end-to-end framework that directly generates renderable 3D Gaussian representations from a single panoramic image. Unlike perspective-based methods, panoramic images inherently suffer from equirectangular projection distortions and spatially non-uniform feature distributions, making direct feed-forward Gaussian generation particularly challenging. In contrast to existing Gaussian Splatting based methods that rely on mu…",
@@ -1364,6 +1435,43 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2608.01825v1",
+      "title": "PartMat: Material-Aware 3D Part Decomposition with a Single Global Latent",
+      "abstract": "Part-level 3D generation has recently attracted increasing attention for producing structured and editable 3D assets. However, existing methods typically decompose objects according to functional semantics rather than the editable material boundaries (e.g., fabric, wood, metal) required in practical 3D applications such as interior design. Additionally, current methods often generate parts independently, causing computational costs to scale linearly with the part count. To address these limitations, we present PartMat, an efficient material-aware 3D part decomposition pipeline that represents multi-part geometry with a single global latent. Given a reference image and a single whole-object g…",
+      "authors": [
+        "Guangming Fu",
+        "Jin Song",
+        "Yiyun Fei",
+        "Guoqiu Li",
+        "Ruigao Yang",
+        "Jianan Jiang"
+      ],
+      "published": "2026-08-03T07:32:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01825v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
       "id": "2606.31101v1",
@@ -2048,6 +2156,81 @@
       ],
       "has_code": true,
       "first_seen": "2026-08-03T10:48:31.664539+00:00"
+    },
+    {
+      "id": "2608.01761v1",
+      "title": "DecoupleGS: Interactive 3D Gaussian Splatting for End-to-End Autonomous Driving Testing",
+      "abstract": "End-to-end (E2E) autonomous driving algorithms require rigorous closed-loop validation in simulation environments offering high visual fidelity, strong interactivity, and real-time performance. Existing approaches, from game engines to static neural rendering, inherently trade off these requirements and struggle with the dynamic scene composition essential for E2E testing. To bridge this gap, we propose a novel decoupled 3D Gaussian Splatting (3DGS) framework tailored for large-scale E2E evaluation. We fundamentally decompose scenes into a high-fidelity static background and manipulable dynamic agents using an object-centric canonical representation. To resolve resulting representational con…",
+      "authors": [
+        "Siying Li",
+        "Ying Ni",
+        "Jie Sun",
+        "Jian Sun",
+        "Haotian Shi"
+      ],
+      "published": "2026-08-03T06:32:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01761v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        },
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 6
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01015v1",
+      "title": "KING: Embodiment-Aware Kinematic Graph Neural Network for Unified Motion Representation of Legged and Wheeled Robots",
+      "abstract": "Kinematic models provide reliable motion constraints for odometry estimation in featureless environments, where exteroceptive sensing degrades and IMU integration drifts. Learning-based kinematic models can achieve more accurate odometry estimation than model-based methods by capturing nonlinear effects; however, most existing learning-based models are trained on a single embodiment and generalize poorly to new embodiments. This generalization is difficult because the meanings and structures of proprioceptive measurements vary across embodiments, including the number of joints and ground-contact elements (e.g., wheels, feet). To address this challenge, we propose KING, a Graph Neural Network…",
+      "authors": [
+        "Taku Okawara",
+        "Aoki Takanose",
+        "Kenji Koide",
+        "Shuji Oishi",
+        "Masashi Yokozuka"
+      ],
+      "published": "2026-08-02T05:42:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01015v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -2851,6 +3034,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2608.01697v1",
+      "title": "Bridging the Sim-to-Real Gap in Parallel-Link Leg Mechanisms via Simulator-Side Dynamics Normalization",
+      "abstract": "This paper addresses the sim-to-real gap in dynamics arising when a parallel-link mechanism is represented by a serial-tree surrogate in simulation. Conventional Jacobian-based state and torque mappings preserve consistency with the kinematic and virtual-work relations but do not account for the coordinate-induced redistribution of actuator inertia and damping and the linkage inertia omitted during serial-tree reduction. To address this gap, Simulator-Side System Normalization (S3N) is proposed to normalize the serial-tree simulator's effective dynamics while preserving its tree topology. S3N-Act incorporates actuator inertia and damping into the serial-coordinate dynamics through coordinate…",
+      "authors": [
+        "Jinsong Hong",
+        "Jangho Kim",
+        "Jihwan Lee",
+        "Donghyun Kim",
+        "Sehoon Oh"
+      ],
+      "published": "2026-08-03T04:49:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01697v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -3825,6 +4037,161 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-30T09:33:44.888592+00:00"
+    },
+    {
+      "id": "2608.02191v1",
+      "title": "DerainSplat: Feed-Forward Clean 3D Gaussian Splatting from Sparse Rainy Views",
+      "abstract": "Although image deraining has advanced substantially, existing methods mainly focus on 2D image restoration. As spatial intelligence applications such as embodied AI and autonomous driving continue to emerge, reconstructing clean 3D scenes from sparse rainy views in a feed-forward manner becomes increasingly important. Existing feed-forward 3D Gaussian Splatting (3DGS) methods often assume clean inputs and collapse under rainy conditions. To this end, we present \\textbf{\\textit{DerainSplat}}, a feed-forward framework that reconstructs clean 3D scenes from only a few rainy views. To support this task, we build a large-scale multi-view derain dataset through a four-stage synthesis pipeline that…",
+      "authors": [
+        "Fuzhen Jiang",
+        "Changyue Shi",
+        "Chuxiao Yang",
+        "Xinyuan Hu",
+        "Wenjie Ye",
+        "Minghao Chen"
+      ],
+      "published": "2026-08-03T13:15:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.02191v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01659v1",
+      "title": "StreamSplat: Streaming Feed-Forward 3D Gaussian Splatting",
+      "abstract": "Feed-forward 3D Gaussian Splatting enables efficient novel-view synthesis without per-scene optimization, but most existing methods assume a fixed set of context views and process them jointly. This limits their applicability to online scenarios where calibrated views arrive sequentially and the scene must be updated causally. We present \\emph{StreamSplat}, a streaming feed-forward 3DGS framework that incrementally maintains a persistent geometry-grounded scene state and decodes it into renderable 3D Gaussians after each input chunk. StreamSplat centers on a \\textbf{Voxel-Aligned Causal Cache (VACC)}, which stores historical 3D tokens in a memory-bounded voxel structure so that memory grows …",
+      "authors": [
+        "Changhao Song",
+        "Yuxuan Wang",
+        "Qibiao Li",
+        "Youcheng Cai",
+        "Ligang Liu"
+      ],
+      "published": "2026-08-03T03:48:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01659v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01058v1",
+      "title": "Extended KAFR: A kinematic-adaptive paradigm for the efficient analysis of surgical video",
+      "abstract": "Artificial Intelligence is increasingly applied to surgical video analysis for phase segmentation, skill assessment, and workflow optimization. A key challenge is the length of surgical recordings, often one to several hours, creating substantial computational burden. We previously developed Kinematics-Adaptive Frame Recognition (KAFR) for robotic surgery, showing that tracking tool motion effectively identifies informative frames while filtering redundant content. However, laparoscopic surgery introduces additional challenges: manual camera control causes frequent motion artifacts, and image quality is generally lower than robotic systems. This study evaluates whether KAFR generalizes to la…",
+      "authors": [
+        "Huu Phong Nguyen",
+        "Shekhar Madhav Khairnar",
+        "Ganesh Sankaranarayanan"
+      ],
+      "published": "2026-08-02T07:48:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01058v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.00950v1",
+      "title": "Swimm3R: Splatting with Medium-aware SfM for Underwater 3D Reconstruction",
+      "abstract": "We propose Swimm3R, a unified framework that combines medium-aware structure-from-motion (SfM) with Underwater Beta Splatting to address scattering- and attenuation-induced failures in underwater 3D reconstruction. Swimm3R distills in-air geometric priors into a feed-forward backbone and uses a physics head to regress underwater image-formation parameters, camera poses, and restored point clouds. Additionally, we introduce Underwater Beta Splatting, which extends Gaussian splatting with Beta primitives and scattering-aware geometric gradients for stable underwater geometry representation. We further establish the Barbados underwater video dataset to demonstrate the effectiveness of our metho…",
+      "authors": [
+        "Minseong Kweon",
+        "Junaed Sattar"
+      ],
+      "published": "2026-08-02T03:01:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.00950v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO",
+        "eess.IV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.00931v1",
+      "title": "Stipple: Real-Time Incremental Gaussian Splatting with Visual-Inertial Tracking",
+      "abstract": "3D Gaussian Splatting (3DGS) provides efficient rendering of photo-realistic scenes, but its heavy preprocessing and training steps make it a poor fit for applications that require real-time reconstruction in robotics or XR. This capability is important since it allows immediate feedback and interaction with new environments. Visual-inertial odometry (VIO) and simultaneous localization and mapping (VI-SLAM) systems, on the other hand, specifically target these real-time applications, which makes them a good choice for integration with 3DGS. We propose a new method that tracks and reconstructs simultaneously in real-time by leveraging an efficient visual-inertial tracking system based on Basa…",
+      "authors": [
+        "Kilian Northoff",
+        "Mateo de Mayo",
+        "Daniel Cremers"
+      ],
+      "published": "2026-08-02T02:17:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.00931v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -6917,6 +7284,100 @@
       "first_seen": "2026-08-03T10:48:31.664539+00:00"
     },
     {
+      "id": "2608.01348v1",
+      "title": "Prompt-Driven Simulation with Feature Perturbation for Cross-Domain Few-Shot Object Detection",
+      "abstract": "Data augmentation, which simulates diverse visual variations to expand the source distribution and induce synthetic domain shifts, is a simple yet effective strategy for mitigating severe domain shifts and limited labeled target data in cross-domain few-shot object detection (CD-FSOD). Existing approaches rely on conventional data augmentation, such as Color-Jitter, Mosaic, and background-centric adaptation (e.g., Domain-RAG), which are limited in modeling complex domain shifts and often lead to suboptimal performance. In this paper, we propose PSP-FSOD, a principled framework that integrates prompt-driven domain simulation with feature perturbation regularization to improve generalization i…",
+      "authors": [
+        "Linhai Zhuo",
+        "Junxi Cai",
+        "Tianwen Qian",
+        "Qingping Zheng",
+        "Yang Liu"
+      ],
+      "published": "2026-08-02T16:11:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01348v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01178v1",
+      "title": "DynActiveGS: Active Gaussian Splatting for Dynamic Scene Reconstruction",
+      "abstract": "We present DynActiveGS, a dynamic-aware active reconstruction framework based on 3D Gaussian Splatting (3DGS) for autonomous exploration in dynamic environments. The framework incrementally reconstructs a 3D Gaussian scene representation while suppressing motion-corrupted observations through online uncertainty prediction and uncertainty-weighted Gaussian optimization. A key component of DynActiveGS is the explicit decomposition of uncertainty into structural uncertainty and motion-induced uncertainty, which enables the system to distinguish under-reconstructed static regions from dynamically unreliable areas. Based on these uncertainty fields, DynActiveGS performs dynamic-aware viewpoint se…",
+      "authors": [
+        "Hongbo Duan",
+        "Pengting Luo",
+        "Chengzhi Zhao",
+        "Yuanhao Chiang",
+        "Fangming Liu",
+        "Xueqian Wang"
+      ],
+      "published": "2026-08-02T11:57:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01178v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01024v1",
+      "title": "Stress-Relief Annealing: Polynomial-Time Simulation-Free Layout Optimization for Automated Warehouses",
+      "abstract": "We study the problem of optimizing physical layouts for automated warehouses, where hundreds to thousands of robots are coordinated to transport packages. Previous works have shown that optimizing the warehouse layout (e.g., the physical location of the storage shelves) significantly improves throughput. However, state-of-the-art layout optimization approaches are based on evolutionary optimization methods, which treat the entire warehouse as a black box and rely on random mutation to search for high-quality layouts. While the optimization outcomes are promising, these methods require a massive number of simulations to evaluate candidate solutions, making them sample-inefficient. In this pap…",
+      "authors": [
+        "Xiangjie Luo",
+        "Yulun Zhang",
+        "Miyuki Koshimura",
+        "Makoto Yokoo",
+        "Jiaoyang Li"
+      ],
+      "published": "2026-08-02T05:59:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01024v1",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -7676,6 +8137,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-31T09:48:52.781582+00:00"
+    },
+    {
+      "id": "2608.01771v1",
+      "title": "LiveLight: Real-time Streaming Video Relighting with Interactive Control",
+      "abstract": "We present LiveLight, the first diffusion-based framework for real-time streaming video relighting with interactive 3D lighting control. Achieving this is non-trivial, as it requires overcoming three critical challenges: effectively injecting dynamic 3D lighting into a diffusion model, maintaining high-fidelity generation under an extremely low NFE (Number of Function Evaluations) budget for real-time speed, and facilitating continuous streaming for interactive control. To address these pain points, we propose three key designs. First, for accurate lighting injection, we propose a lightweight adapter that feeds Multi-Plane Light Irradiance (MPLI) conditions-depth-aware irradiance maps encodi…",
+      "authors": [
+        "Yue Ma",
+        "Jiangming Wang",
+        "Yucheng Wang",
+        "Xilai Wang",
+        "Zhiyuan Li",
+        "Xinyu Wang"
+      ],
+      "published": "2026-08-03T06:45:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01771v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -8846,6 +9336,169 @@
       "first_seen": "2026-08-03T10:48:31.664539+00:00"
     },
     {
+      "id": "2608.02437v1",
+      "title": "InfiniSplat: Implicit Gaussian Decoding for Large-Baseline Monocular View Synthesis",
+      "abstract": "Single-image feed-forward 3D Gaussian Splatting (3DGS) aims to directly generate a renderable 3D scene representation from one input image, avoiding the cost of multi-view capture and per-scene optimization. However, existing methods are often constrained by a pixel-aligned representation, where Gaussians are predicted from fixed image-grid locations. Such pixel-aligned primitives can produce promising nearby-view renderings, but they remain weakly coupled to underlying scene surfaces and struggle to preserve coherent structures under large viewpoint shifts. We present InfiniSplat, a feed-forward single-image 3DGS framework that moves from a pixel-aligned representation toward a surface-alig…",
+      "authors": [
+        "Jiawei Wang",
+        "Hao Yu",
+        "Yongzhen Hu",
+        "Xinyi Yang",
+        "Tao Ni",
+        "Xin Zhan"
+      ],
+      "published": "2026-08-03T16:17:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.02437v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 28
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01588v1",
+      "title": "D^2-4DGS: Dual-Depth Guided Sparse-Camera 4D Gaussian Splatting",
+      "abstract": "Dynamic 4D Gaussian Splatting has emerged as an efficient representation for dynamic novel view synthesis through explicit scene modeling and real-time rendering. However, existing methods typically require dense multi-view videos for sufficient geometric constraints, making capture expensive and limiting sparse-camera deployment. Reducing input views lowers acquisition cost but weakens geometry supervision, often causing missing structures and floating Gaussians. Depth priors provide geometric cues, yet no single source offers both dense coverage and reliable geometry. Monocular depth provides dense structure but is scale-ambiguous and locally biased, whereas multi-view geometric depth prov…",
+      "authors": [
+        "Jijian Zhao"
+      ],
+      "published": "2026-08-03T01:46:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01588v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01492v1",
+      "title": "GaussianSelector: Lightweight Human-Guided Object Selection in 3D Gaussian Splatting with Graph Optimization",
+      "abstract": "Selecting a complete 3D object from a reconstructed scene with minimal user effort is essential for practical scene editing and embodied interaction. Existing 3DGS-based methods either retrain the Gaussian representation to embed per-object labels, or build dense multi-view SAM observations, both requiring heavy computation and dense viewpoint coverage that is rarely available in practice. We present GaussianSelector, a training-free framework for interactive 3D object selection from sparse views and sparse scribble guidance. Operating directly on native Gaussian primitives, we coarsen dense Gaussians into geometrically coherent superpoints and construct a continuity-weighted graph using app…",
+      "authors": [
+        "Baihan Yang",
+        "Tiexin Li",
+        "Yuheng Liu",
+        "Xin Lin",
+        "Xinke Li",
+        "Xiaohui Xie"
+      ],
+      "published": "2026-08-02T20:51:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01492v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01186v1",
+      "title": "QuerySplat: Decoupling Geometry and Appearance Representations in 3DGS Prediction",
+      "abstract": "While feed-forward 3D Gaussian Splatting (3DGS) enables efficient 3D reconstruction, achieving high-fidelity rendering remains challenging. Existing pixel-aligned approaches suffer from spatial inflexibility and massive structural redundancy, whereas query-based methods lack 3D priors and entangle geometry with appearance, yielding blurry, pose-dependent results. To overcome these deficiencies, we propose \\textbf{QuerySplat}, a feed-forward 3DGS framework driven by geometric priors and explicit appearance decoupling. Specifically, we design a dual-branch query-based decoder: the geometry branch leverages a pretrained Vision Geometric Model for spatial understanding, which intrinsically endow…",
+      "authors": [
+        "Yinglong Li",
+        "Donghui Shen",
+        "Xiaoyu Zhang",
+        "Zhichao Ye",
+        "Hongyu Wu",
+        "Aimin Hao"
+      ],
+      "published": "2026-08-02T12:12:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01186v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 28
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.00978v1",
+      "title": "One-Sided Quantile Coupling for Flow Matching",
+      "abstract": "Flow Matching trains continuous-time generative models by regressing the velocity field of a probability path between a simple source distribution and a target data distribution. The coupling that pairs source and target samples strongly affects optimization and sample quality, but structured couplings typically rely on mini-batch transport or assignment procedures whose cost grows at least quadratically in batch size. We propose Quantile Coupling Flow Matching (QC-FM), a lightweight one-sided coupling: rather than matching two pre-sampled batches, it samples only the data batch and constructs each paired source directly. Data ranks projected along a small number of random orthogonal directi…",
+      "authors": [
+        "Jin-Young Kim",
+        "So-Yoon Cho",
+        "Hyun-Gyoon Kim"
+      ],
+      "published": "2026-08-02T04:03:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.00978v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -9556,6 +10209,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-31T09:48:52.781582+00:00"
+    },
+    {
+      "id": "2608.02580v1",
+      "title": "Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data",
+      "abstract": "Learning generalizable robot manipulation policies requires large-scale and diverse demonstration data. Egocentric human manipulation videos offer rich scene and task diversity, and prior work has shown that retargeting and rendering such videos into robot-format data can yield effective per-task policies at small scale. However, whether this approach can provide pretraining benefits for vision-language-action models at scale remains unexplored. We present \\textbf{Ego2Robot}, a scalable pipeline that converts egocentric human manipulation videos into robot training data through action retargeting, robot-arm visual synthesis, and multi-level quality curation. Ego2Robot supports both curated d…",
+      "authors": [
+        "Ye Wang",
+        "Pei Lin",
+        "Xiong-Hui Chen",
+        "Haoqi Yuan",
+        "Zhixuan Liang",
+        "Yiyang Huang"
+      ],
+      "published": "2026-08-03T17:52:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.02580v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.01990v1",
+      "title": "SPARE: Structural Parameter-Free Affinity Regularization for Flow Matching",
+      "abstract": "Denoising diffusion transformers achieve strong generation quality but converge slowly during training. Regularizing their internal representations has emerged as an effective accelerator, yet existing methods split into two families with complementary costs. Target-based methods strengthen representations by aligning them to external features, which requires an external encoder and a learnable projection head to bridge feature spaces. Target-free methods hold no reference at all, and can only repel the model's own features across samples or layers, discarding whatever structure the data contains. Prior work suggests that spatial structure, rather than global semantics, drives the gains of a…",
+      "authors": [
+        "Zong-Wei Hong",
+        "Jinglun Li",
+        "Shen Zhang",
+        "Yuhan Liu",
+        "Linze Li",
+        "Yao Tang"
+      ],
+      "published": "2026-08-03T09:50:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.01990v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-04T09:40:53.614317+00:00"
     }
   ]
 }
