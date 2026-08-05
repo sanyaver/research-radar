@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-04T09:40:53.614317+00:00",
-  "total": 334,
-  "new_this_run": 22,
+  "last_updated": "2026-08-05T09:40:17.805306+00:00",
+  "total": 342,
+  "new_this_run": 8,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -451,6 +451,35 @@
       "first_seen": "2026-07-28T09:38:42.453803+00:00"
     },
     {
+      "id": "2608.03158v1",
+      "title": "Surface Keypoint Representation for Multi-Object and Articulated Human-Object Interaction Generation",
+      "abstract": "Daily activities require humans to coordinate whole-body motion with the motion of surrounding objects. Despite recent progress in human-object interaction (HOI) generation, most existing methods assume interactions with a single rigid object and do not extend well to scenarios involving a variable number of objects or articulated objects with diverse joint mechanisms. We propose surface keypoint trajectories as an object motion representation: for each rigid component, whether a standalone object or one part of an articulated assembly, we track a small set of non-collinear surface points over time. This representation handles multi-object coordination and diverse articulation mechanisms dir…",
+      "authors": [
+        "Xiaogang Peng",
+        "Zeyu Han",
+        "Zichong Meng",
+        "Yiming Xie",
+        "Jihua Zhu",
+        "Gang Hua"
+      ],
+      "published": "2026-08-04T05:47:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.03158v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
+    },
+    {
       "id": "2606.31993v1",
       "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
       "abstract": "While robotic manipulation capabilities have advanced rapidly, physical safety remains a major barrier to deploying household robots: task success is insufficient if the robot damages itself or its surroundings. Simulation offers a harm-free alternative to costly and dangerous real-world training and evaluation, yet existing simulators lack general mechanisms to detect, quantify, and represent damage. To address this gap, we introduce OOPSIEVERSE, a unified simulation framework and benchmark for damage-aware household manipulation. OOPSIEVERSE provides damage as an explicit, physically-grounded, and taskagnostic signal by converting sources such as contact forces, temperature changes, and li…",
@@ -747,6 +776,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2608.03064v1",
+      "title": "Global Graph-Validated Optimization for VLM-based 3D Indoor Scene Generation",
+      "abstract": "We study open-vocabulary 3D indoor layout generation, which synthesizes diverse and physically plausible scenes from unlabeled 3D assets using free-form language instructions. Recent methods leverage large language models (LLMs) and vision-language models (VLMs) to generate structured scenes from text. However, most model inter-asset relations implicitly or rely on local pairwise constraints and local optimization. These formulations are poorly aligned with the global, highly non-convex layout space, often yielding locally plausible yet globally inconsistent or physically infeasible scenes. We address this problem with a graph-based intermediate representation that separates semantic coheren…",
+      "authors": [
+        "Jialu Huang",
+        "Yingxuan You",
+        "Fei Wang",
+        "Zheng Dang"
+      ],
+      "published": "2026-08-04T03:24:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.03064v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
     },
     {
       "id": "2607.03819v1",
@@ -3063,6 +3119,67 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.03117v1",
+      "title": "Simulation-free and finite-time diffusion model",
+      "abstract": "The performance of generative diffusion models is determined by the choice of the reference diffusion process connecting the empirical and prior distributions. Conventional approaches typically trade off simulation-free training against finite-time generation. We propose a framework for designing the reference process that achieves both simultaneously. The key idea is to prescribe tractable time-dependent conditional distributions and then construct the reference process realizing them as its marginals. This framework reveals that score matching is not fundamental to diffusion-model training but instead emerges naturally through reversal of the reference process. We further show that conditi…",
+      "authors": [
+        "Kentaro Kaba",
+        "Masayuki Ohzeki",
+        "Yuki Sughiyama"
+      ],
+      "published": "2026-08-04T04:39:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.03117v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
+    },
+    {
+      "id": "2608.02711v1",
+      "title": "Hunyuan3D-Buffalo 1.0: A Unified Multimodal Model for Scalable 3D Generation, Understanding, and Editing",
+      "abstract": "Recent advances in image generation have demonstrated the potential of unified multimodal models that integrate understanding, generation, and editing. However, unified 3D modeling remains constrained by scarce multimodal data, particularly the lack of large-scale and geometrically consistent editing data. To address this limitation, we propose Hunyuan3D-Buffalo 1.0, a unified framework supporting 3D understanding, text-to-3D generation, instruction-guided 3D editing, and text-grounded part generation within a single architecture. To enable scalable training, we construct an 87M-scale 3D multimodal corpus, comprising 25M understanding samples, 50M text-to-3D pairs, and 12M editing pairs gene…",
+      "authors": [
+        "Junliang Ye",
+        "Kenkun Liu",
+        "Guocun Wang",
+        "Yang Li",
+        "Yansong Qu",
+        "Chunshi Wang"
+      ],
+      "published": "2026-08-03T17:57:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.02711v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 56
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -7378,6 +7495,41 @@
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
+      "id": "2608.03279v1",
+      "title": "3DGSI-Assessor: A Large-Scale Dataset and An LMM-based Method for 3D Gaussian Splatting Image Quality Assessment",
+      "abstract": "3D Gaussian Splatting (3DGS) has become a dominant representation for real-time novel view synthesis (NVS), yet its storage footprint makes compression indispensable for practical deployment. 3DGS training and compression introduce representation-specific distortions such as floating artifacts and surface scattering, which conventional image quality assessment (IQA) metrics fail to capture. Moreover, the independent compression of geometric and color attributes may lead to decoupled dimension-specific distortions that must be diagnosed separately, yet existing metrics report only a single overall score. To address these gaps, we present 3DGS-IEval-15K+, a large-scale, multi-dimensional IQA d…",
+      "authors": [
+        "Yuke Xing",
+        "Jiarui Wang",
+        "William Gordon",
+        "Zhu Li",
+        "Guangtao Zhai",
+        "Yiling Xu"
+      ],
+      "published": "2026-08-04T07:53:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.03279v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -9497,6 +9649,96 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.03379v1",
+      "title": "Residual Flow Matching with Dynamic Cross-Interaction for 3D Multi-Person Motion Prediction",
+      "abstract": "3D multi-person motion prediction requires modeling both individual kinematics and inter-person interactions. While Flow Matching is effective for multi-hypothesis generation to improve prediction accuracy, directly predicting skeletal sequences from pure noise often compromises structural consistency and introduces unreliable cross-agent interactions during early noise-dominated integration steps. To address this, we propose a Prior-Guided Residual Flow Matching framework. First, a Deterministic Coarse Prior (DCP) establishes a kinematic anchor, formulating the generative process as a conditional flow over motion residuals to simplify the generative objective and preserve structural stabili…",
+      "authors": [
+        "Wei Wei",
+        "Yinyuan Zhao",
+        "Ruixuan Yu"
+      ],
+      "published": "2026-08-04T09:28:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.03379v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
+    },
+    {
+      "id": "2608.03227v1",
+      "title": "PFM-HR: Pose Flow Matching for Humanoid Robots",
+      "abstract": "Motion priors improve reinforcement learning for physics-based humanoid tracking, but temporal priors require ordered motion clips, while pose priors provide limited guidance for policy-induced pose transitions. We present Pose Flow Matching for Humanoid Robots (PFM-HR), a reusable flow matching prior trained directly on large scale unordered pose data. PFM-HR introduces the Pose Geometry Score (PGS), which quantifies how joint coordinate changes during rollouts align with the local geometry of pose variation captured by the prior. Using PGS to modulate the tracking reward guides policy exploration toward structured pose changes while keeping the prior frozen across tracking tasks. Experimen…",
+      "authors": [
+        "Yukang Gao",
+        "Yi Gu",
+        "Yangchen Zhou",
+        "Xingyu Chen",
+        "Zhaorui Wang",
+        "Fanghai Zhang"
+      ],
+      "published": "2026-08-04T06:58:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.03227v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
+    },
+    {
+      "id": "2608.02437v2",
+      "title": "InfiniSplat: Implicit Gaussian Decoding for Large-Baseline Monocular View Synthesis",
+      "abstract": "Single-image feed-forward 3D Gaussian Splatting (3DGS) aims to directly generate a renderable 3D scene representation from one input image, avoiding the cost of multi-view capture and per-scene optimization. However, existing methods are often constrained by a pixel-aligned representation, where Gaussians are predicted from fixed image-grid locations. Such pixel-aligned primitives can produce promising nearby-view renderings, but they remain weakly coupled to underlying scene surfaces and struggle to preserve coherent structures under large viewpoint shifts. We present InfiniSplat, a feed-forward single-image 3DGS framework that moves from a pixel-aligned representation toward a surface-alig…",
+      "authors": [
+        "Jiawei Wang",
+        "Hao Yu",
+        "Yongzhen Hu",
+        "Xinyi Yang",
+        "Tao Ni",
+        "Xin Zhan"
+      ],
+      "published": "2026-08-03T16:17:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.02437v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 28
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-05T09:40:17.805306+00:00"
     },
     {
       "id": "2606.31680v1",
