@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-05T09:40:17.805306+00:00",
-  "total": 342,
-  "new_this_run": 8,
+  "last_updated": "2026-08-06T09:42:54.905855+00:00",
+  "total": 353,
+  "new_this_run": 11,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -803,6 +803,53 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-05T09:40:17.805306+00:00"
+    },
+    {
+      "id": "2608.04842v1",
+      "title": "RORA: Realistic Object Reconstruction with Articulation",
+      "abstract": "Replicating real-world environments into simulation by realistic visual representation like NeRF and 3D Gaussian Splatting (3DGS) has emerged as an effective strategy to reduce the sim-to-real gap in robot learning. However, implementing object articulation during the real-to-sim process is still a challenging task. Existing motion tracking or learning based articulation methods shows low success rates on complex kinematic structures having multiple joints. Furthermore, those methods require scan of dynamic motion of objects, which makes reconstruction process much complicated. In this work, we propose the first end-to-end pipeline that reconstructs simulation-ready assets with accurate arti…",
+      "authors": [
+        "Hyesung Lee",
+        "Youngseon Lee",
+        "Kyutae Lee",
+        "Dongjun Lee",
+        "Yongseok Lee"
+      ],
+      "published": "2026-08-05T13:36:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04842v1",
+      "categories": [
+        "cs.RO",
+        "cs.GR"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
     },
     {
       "id": "2607.03819v1",
@@ -2287,6 +2334,36 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.04428v1",
+      "title": "Deltoris: Enabling Real-time VLA Inference in Embodied AI via Bit-level Sparsity and Speculative Inference",
+      "abstract": "Vision-language-action (VLA) models have emerged as a key component in embodied AI. Among existing approaches, diffusion-based VLA models achieve superior motion quality and generalization. However, diffusion-based VLA models are compute-intensive and must run at high control frequency, e.g., 50-200 Hz. Thus, it imposes strict latency and energy constraints on edge devices. In this work, we present Deltoris, an algorithm-hardware co-design framework for efficient diffusion-based VLA inference. First, we exploit the temporal similarity of consecutive inputs and propose a \\textit{temporal-aware bit-sparsity} algorithm that computes only the differences between consecutive inputs, eliminating r…",
+      "authors": [
+        "Zheng Liu",
+        "Zeyu Guo",
+        "Zihan Liu",
+        "Anbang Wu",
+        "Han Zhao",
+        "Fangxin Liu"
+      ],
+      "published": "2026-08-05T04:17:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04428v1",
+      "categories": [
+        "cs.AR",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -4309,6 +4386,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.04127v1",
+      "title": "Teaching Foundation Models to Read mmWave: Pose-Guided Kinematic Representation for Human Behavior Understanding",
+      "abstract": "Large language model agents need to perceive human behavior in physical environments. Millimeter-wave (mmWave) radar provides a privacy-friendly and contactless sensing modality, but radar observations are difficult to align with language. Existing radar-language methods often rely on synthetic data or lack explicit supervision for human body structure and motion. We present mmMind, a radar-language model that uses synchronized 3D pose as training-only supervision. A spatio-temporal radar encoder is pretrained to capture body configuration and motion dynamics, after which the pose head is removed so that inference requires radar alone. The learned radar representations are then aligned with …",
+      "authors": [
+        "Duo Zhang",
+        "Zhehui Yin",
+        "Zhiyun Yao",
+        "Haotong Qin",
+        "Xusheng Zhang",
+        "Hongliu Yang"
+      ],
+      "published": "2026-08-04T18:25:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04127v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -8320,6 +8426,41 @@
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
+      "id": "2608.04560v1",
+      "title": "OutLangSplat: 3D Language Gaussian Splatting for UAV Outdoor Scenes",
+      "abstract": "3D Language Gaussian Splatting embeds open-vocabulary language features into 3D Gaussian Splatting, providing an efficient explicit representation for text-driven 3D scene understanding. However, existing methods are limited to indoor or small-scale scenes, and tend to fail in Unmanned Aerial Vehicle (UAV) outdoor scenes, where severe occlusions and long distance viewpoints often lead to incorrect semantic activations and missing target responses. In this paper, we present OutLangSplat which adapts language Gaussian representations to UAV outdoor scenes by improving feature representation and aggregation reliability. For the feature representation, a 2D-3D dual-branch representation with reg…",
+      "authors": [
+        "Xia Yan",
+        "He Wu",
+        "Yanghui Xu",
+        "Zizhao Wu",
+        "Jiazhou Chen"
+      ],
+      "published": "2026-08-05T07:54:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04560v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
       "id": "2606.32036v1",
       "title": "PointSplat: Compact Gaussian Splatting via Human-Centric Prediction",
       "abstract": "Producing 3D human representations from input views on the fly is essential for immersive live streaming systems, where representation compactness is as critical as high fidelity given limited computational power and transmission bandwidth. Although recent feed-forward reconstruction methods achieve impressive quality through the view-centric prediction of 3D representations, they repeatedly encode the same subject content across multiple views, leading to significant inter-view redundancy. Our key insight is to perform predictions directly in 3D space, enabling the network to learn and produce a highly compact representation. To this end, we propose PointSplat, a novel human-centric approac…",
@@ -9741,6 +9882,95 @@
       "first_seen": "2026-08-05T09:40:17.805306+00:00"
     },
     {
+      "id": "2608.04581v1",
+      "title": "ACA-GS: Adaptive-Capacity Anchored Gaussian Splatting for Compact Dynamic Radiance Fields",
+      "abstract": "Recent advances in 4D Gaussian Splatting (4DGS) enable high-fidelity, real-time spatiotemporal rendering, but expose a fundamental trade-off between motion expressiveness and storage efficiency. While anchor-based designs achieve compactness through anchor-level parameter sharing, their rigid uniform parametrization enforces fixed Neural Gaussian counts and feature budgets per anchor. Consequently, insufficient fidelity is addressed by excessive anchor density, rather than lightweight, targeted increases in Neural Gaussian count or feature capacity, resulting in memory waste. To overcome this rigidity, we introduce an adaptive-capacity anchor-based framework that dynamically allocates the re…",
+      "authors": [
+        "Seunghyeon Song",
+        "Joo Chan Lee",
+        "Chanung Park",
+        "Jun Young Jeong",
+        "Minseo Lee",
+        "Eunbyung Park"
+      ],
+      "published": "2026-08-05T08:47:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04581v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
+      "id": "2608.04531v1",
+      "title": "Discretization and Statistical Consistency of Functional Flow Matching",
+      "abstract": "Functional flow matching is posed on distributions of functions but implemented from finitely many coefficients or point values. Under scattered or adaptive refinement, the resulting conditioning sigma-algebras need not be nested, so martingale convergence does not justify the sensor limit. We prove strong $L^2$ convergence of finite conditional velocity targets for every strongly consistent sequence of finite-rank reconstructions, with quantitative bounds for orthogonal projections and a point-sensor extension through a regularity space. For learned flows, coupling directly to a population superposition path yields an end-to-end Wasserstein bound without assuming uniqueness of the populatio…",
+      "authors": [
+        "Lennon J. Shikhman"
+      ],
+      "published": "2026-08-05T07:05:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04531v1",
+      "categories": [
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
+      "id": "2608.04142v1",
+      "title": "InvFlowFD: Reference-Free and Background-Set-Free Perceptual Music Quality Metric with Flow Matching Inversion",
+      "abstract": "Existing reference-free methods for evaluating music perceptual quality alleviate the need for paired noisy-clean data, but they still rely on a background set, which is used to compute aggregated statistics of clean audio samples. In this work, we propose a novel approach that eliminates this requirement, achieving background-set-free and reference-free quality estimation using only a pre-trained Flow Matching backbone. We demonstrate that unconditional Flow Matching inversion via simple Euler integration is sufficient to detect various artificial distortions and accurately rank music generation models against human perceptual judgments. We introduce InvFlowFD, which performs flow inversion…",
+      "authors": [
+        "Alon Ziv",
+        "Harel Pogoda",
+        "Yossi Adi"
+      ],
+      "published": "2026-08-04T18:50:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04142v1",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -10516,6 +10746,120 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
+    },
+    {
+      "id": "2608.05042v1",
+      "title": "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation",
+      "abstract": "Leveraging pre-trained vision-language models (VLMs) to construct vision-language-action (VLA) models has emerged as a promising paradigm for 3D robot manipulation. However, existing 3D VLA methods remain data-hungry, exhibit limited generalization under distribution shifts, and lack explicit memory of past observations. These limitations hinder their application to data-scarce, open-world, and memory-dependent manipulation scenarios. Our previous work, BridgeVLA, improves data efficiency and generalization by preserving the input--output alignment of a pre-trained VLM during 3D action learning: raw point clouds are projected into multi-view images, and intermediate heatmaps are predicted be…",
+      "authors": [
+        "Peiyan Li",
+        "Yuze Zhu",
+        "Yixiang Chen",
+        "Qisen Ma",
+        "Yuan Xu",
+        "Jiabing Yang"
+      ],
+      "published": "2026-08-05T16:54:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.05042v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
+      "id": "2608.04765v1",
+      "title": "Explicit Language Memory for Long-Horizon Planning in Vision-Language-Action Models",
+      "abstract": "Vision-language-action (VLA) models provide a unified paradigm for connecting visual perception, language understanding, and robotic control. However, existing VLA models still face major challenges in long-horizon tasks: sparse expert demonstrations constrain cross-task compositional generalization; the non-Markovian nature of long-horizon tasks makes it difficult for policies conditioned only on current observations to maintain temporal consistency; limited closed-loop error correction allows execution errors to accumulate; and end-to-end action fine-tuning may weaken the high-level semantic representations of vision-language model (VLM) backbones. To address these issues, we propose a hie…",
+      "authors": [
+        "Houze Xu",
+        "Jizhong Li",
+        "Ziyi Ye"
+      ],
+      "published": "2026-08-05T12:32:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04765v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
+      "id": "2608.04557v1",
+      "title": "VoxStruct3D: Structure-Leading Flow Matching for Voxel-Space 3D MRI Synthesis",
+      "abstract": "High-fidelity 3D MRI synthesis requires both globally coherent anatomy and fine-grained voxel-level detail. Although latent diffusion makes volumetric generation tractable, its image autoencoder introduces a reconstruction bottleneck that can limit the fine detail recoverable in the final volume. We present VoxStruct3D, a voxel-space flow-matching framework that directly models full-resolution MRI volumes using a clean-data prediction objective. Its Volumetric Voxel Generator (VVG) combines factorized 3D patch embedding with overlapping upsampling, time-modulated residual refinement, and skip fusion, enabling neighboring tokens to jointly reconstruct shared voxel regions and suppress patch-b…",
+      "authors": [
+        "Fang Li",
+        "Yang Gao",
+        "Shihao Zou",
+        "Weixin Si",
+        "Hongyu Wu",
+        "Qing Xia"
+      ],
+      "published": "2026-08-05T07:51:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04557v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
+      "id": "2608.04050v1",
+      "title": "FM4WiFi: Flow Matching for Multi-AP Coordination in Dense Deployments of Beyond Wi-Fi 8 Networks",
+      "abstract": "Wi-Fi networks are moving beyond random channel access toward tightly coordinated operation across access points (APs), a shift reflected in Wi-Fi 8's multi-AP coordination (MAPC). However, the current MAPC specification restricts cooperation to AP pairs, fundamentally limiting the gains achievable in dense deployments and calling for scalable, network-wide coordination in beyond Wi-Fi 8 systems. We target coordinated spatial reuse (Co-SR), where APs transmit concurrently at reduced power. Effective Co-SR demands joint selection and configuration of AP-station transmissions, yet existing approaches simply do not scale: they rely on heavy signaling, slow convergence, unrealistic assumptions, …",
+      "authors": [
+        "Maksymilian Wojnar",
+        "Krzysztof Rusek",
+        "Katarzyna Kosek-Szott",
+        "Szymon Szott"
+      ],
+      "published": "2026-08-04T09:23:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.04050v1",
+      "categories": [
+        "cs.NI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-06T09:42:54.905855+00:00"
     }
   ]
 }
