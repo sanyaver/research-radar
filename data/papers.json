@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-09T07:56:06.968680+00:00",
-  "total": 373,
-  "new_this_run": 0,
+  "last_updated": "2026-08-10T08:43:06.583873+00:00",
+  "total": 382,
+  "new_this_run": 9,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1607,6 +1607,33 @@
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
+      "id": "2608.06836v1",
+      "title": "GOPI: Generation-Oriented 3D Pose Inference for Furniture Insertion from Single-View RGB-D Indoor Scenes",
+      "abstract": "We study the problem of inserting new furniture into indoor scene images. Under masked single-view 2D image-plane conditioning, however, the physical scale of the inserted furniture relative to the scene cannot be uniquely determined, making physically grounded furniture placement underdetermined from image evidence alone. We therefore reformulate the task as a combination of 3D pose inference and geometry-guided image generation, where estimating a geometrically plausible 3D placement is essential for reliable synthesis. To this end, we propose a two-stage framework. For 3D placement, we introduce GOPI, a generation-oriented 3D pose inference framework that addresses the underdetermined nat…",
+      "authors": [
+        "Ruifeng Zhai",
+        "Renjie Liu",
+        "Guangrun Wang",
+        "Liang Lin"
+      ],
+      "published": "2026-08-07T05:54:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.06836v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 70
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
+    },
+    {
       "id": "2606.31101v1",
       "title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
       "abstract": "Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. Sim-to-real learning is attractive because it can replace expensive real robot demonstrations with scalable synthetic data, yet world-action models have not previously been shown to transfer from simulation to real robotic manipulation. We study whether a world-action model can be trained from synthetic priors and deployed zero-shot in the real world. To this end, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization and generate demonstrations using the AnyTask motion planning pipeline. We evaluat…",
@@ -2394,6 +2421,70 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
+      "id": "2608.07144v1",
+      "title": "InstanceSplat: Instance-Aware Feed-Forward 3D Gaussian Splatting for Scene Understanding",
+      "abstract": "Feed-forward 3D Gaussian Splatting (3DGS) enables efficient and generalizable 3D reconstruction, but current feed-forward 3DGS methods for scene understanding remain largely category-oriented. In contrast, instance-aware 3DGS methods typically rely on per-scene optimization and often decouple reconstruction from instance and semantic learning, limiting reciprocal interactions among them. We present InstanceSplat, a unified feed-forward 3DGS framework for generalizable 3D reconstruction and instance-aware scene understanding from pose-free multi-view images. In a single forward pass, InstanceSplat constructs an instance-aware Gaussian representation that jointly encodes appearance, geometry, …",
+      "authors": [
+        "Minchao Jiang",
+        "Xiaoxuan Ma",
+        "Shunyu Jia",
+        "Haoru Wang",
+        "Zhang Liang",
+        "Wentao Zhu"
+      ],
+      "published": "2026-08-07T12:02:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.07144v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 28
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
+    },
+    {
+      "id": "2608.07005v1",
+      "title": "Real-time Whole-Body Motion Planning for Mobile Manipulators Carrying Arbitrarily Shaped Payloads via Kinematically-Coupled SVSDF",
+      "abstract": "Mobile manipulators are increasingly tasked with transporting large, non-convex payloads through cluttered environments, yet existing planners either oversimplify the payload geometry or fail to handle the kinematic coupling between manipulator links, leading to lost feasible space or stalled optimization. This letter presents a real-time whole-body motion planning framework for mobile manipulators carrying arbitrarily shaped payloads. The front-end employs a chain-decomposed kernel-based collision check that preserves the true geometry of the robot and payload, with compact storage and fast bit-level queries. A mid-end preprocessing stage converts the front-end path into a continuous trajec…",
+      "authors": [
+        "Yisheng Li",
+        "Longji Yin",
+        "Tingrui Zhang",
+        "Ruize Xue",
+        "Haoda Zhu",
+        "Nan Chen"
+      ],
+      "published": "2026-08-07T09:20:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.07005v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -3375,6 +3466,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-07T08:17:28.494119+00:00"
+    },
+    {
+      "id": "2608.06481v1",
+      "title": "LyEvO: Lyapunov-Guided Evolutionary Optimization for Safe and Robust Sim-to-Real Policy Learning",
+      "abstract": "Training controllers that are safe and robust in simulation, and systematically assessing their readiness for real-world deployment, remain key challenges in sim-to-real transfer. To address this, we propose LyEvO, a physics-grounded framework that combines constrained Evolutionary Optimization and Statistical Model Checking (SMC)-based verification with Lyapunov-based stability analysis. Leveraging prior knowledge of the system dynamics, LyEvO uses Lyapunov analysis to compute an initial candidate stability region. An iterative loop then uses operational scenarios drawn from this region to jointly optimize and statistically verify a policy, and subsequently expands the region's boundaries b…",
+      "authors": [
+        "Riccardo Curcio",
+        "Hongpeng Cao",
+        "Marco Caccamo"
+      ],
+      "published": "2026-08-06T18:19:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.06481v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -4560,6 +4680,64 @@
       ],
       "has_code": true,
       "first_seen": "2026-08-07T08:17:28.494119+00:00"
+    },
+    {
+      "id": "2608.07226v1",
+      "title": "Dual-Node NVIDIA DGX Spark over Tailscale: A Remote-Access Testbed for Distributed LLM Training and Cyber-Threat-Intelligence Fine-Tuning",
+      "abstract": "Compact AI systems make local language-model experimentation increasingly accessible, yet practical evidence for multi-node training on desktop-class accelerators remains limited. This report presents a proof-of-concept deployment of distributed NanoChat pretraining across two NVIDIA DGX Spark systems, each with a GB10 Grace Blackwell system-on-chip and 128 GB of unified memory, administered remotely over a Tailscale mesh VPN and connected for training by a dedicated 200 Gb/s QSFP56 direct fiber link. PyTorch torchrun, DDP, and NCCL were configured with one process per node, a depth-20 NanoChat model, a local batch size of 32 per node, and a 2,048-token context, giving a global batch of 131,…",
+      "authors": [
+        "Vasanth Iyer"
+      ],
+      "published": "2026-08-07T13:41:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.07226v1",
+      "categories": [
+        "cs.AR",
+        "cs.LG"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
+    },
+    {
+      "id": "2608.07161v1",
+      "title": "Fluid-DiT: Graph-Free Diffusion Transformers for Fluid Flow Simulations Learning",
+      "abstract": "Simulating complex fluid flows requires capturing full equilibrium distributions rather than just mean trajectories, yet high-fidelity solvers remain computationally prohibitive. Recent advances, such as Diffusion Graph Networks (DGNs), have combined diffusion models with graph neural networks to sample equilibrium states directly from unstructured meshes, enabling distributional accuracy even from short simulations. However, graph-based diffusion approaches suffer from hand-crafted architectural constraints, limited receptive fields in message passing, and costly multi-scale designs, which restrict scalability to larger and more complex domains. We propose Fluid-DiT, a Graph-Free Diffusion …",
+      "authors": [
+        "Shentong Mo",
+        "Guolin Ke"
+      ],
+      "published": "2026-08-07T12:28:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.07161v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CE"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "4A_topology",
+          "label": "4A · Clean Topology",
+          "color": "#F97316",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -8065,6 +8243,31 @@
       "first_seen": "2026-08-07T08:17:28.494119+00:00"
     },
     {
+      "id": "2608.06762v1",
+      "title": "Sub-Quadratic Bisimulation Metrics via Approximate Nearest Neighbors: Coverage-Augmented Guarantees and Computable Two-Sided Certificates",
+      "abstract": "Bisimulation metrics quantify behavioral similarity in Markov decision processes, but their Wasserstein fixed-point operator updates every state pair and incurs quadratic pairwise work. We give a certificate-carrying sub-quadratic method for MDPs with bounded transition support and a useful low-dimensional indexing representation: an approximate-nearest-neighbor index selects the pairs updated by the exact restricted operator, while monotone lower and upper runs enclose the exact metric at every sweep. The main analytical result is a coverage-augmented anytime bound: local index quality alone cannot control global error, because uncovered pairs retain their initialization gap. The limiting e…",
+      "authors": [
+        "Ibne Farabi Shihab",
+        "Joyanta Jyoti Mondal"
+      ],
+      "published": "2026-08-07T03:32:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.06762v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -10486,6 +10689,63 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-07T08:17:28.494119+00:00"
+    },
+    {
+      "id": "2608.07294v1",
+      "title": "FUSE: Feature-Wise Unified Specialization with Cross-Column Exchange for Mixed-Type Tabular Flow Matching",
+      "abstract": "Generating mixed-type tabular data requires jointly modeling diverse feature distributions and their complex cross-column dependencies. Variational flow matching handles distinct endpoints via factorized distributions, yet leaves feature-specific processing and cross-column interactions implicit within a shared backbone. We introduce Feature-wise Unified Specialization with cross-column Exchange (FUSE) to explicitly separate these roles. FUSE applies separate adaptive mixture modules to numerical and categorical features, allowing each feature to combine shared specialized subnetworks, while joint attention preserves information exchange across all columns. We also characterize the excess po…",
+      "authors": [
+        "Suman Cha",
+        "Seongchan Lee",
+        "Dohyun Ko",
+        "Hyunjoong Kim"
+      ],
+      "published": "2026-08-07T14:50:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.07294v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
+    },
+    {
+      "id": "2608.05811v2",
+      "title": "Energy-Guided Flow Matching",
+      "abstract": "Pixel-space generative models bypass lossy latent compression, yet necessitate joint learning of global structure and fine-grained details in a high-dimensional space. Standard flow matching interpolates noise toward a fixed clean-image endpoint, leaving the spectral evolution to be learned implicitly. In this paper, we introduce Energy-Guided Flow Matching(EG-FM) that explicitly models a coarse-to-fine generative trajectory by moving endpoint. Specifically, EG-FM replaces the fixed endpoint with a heat-kernel-filtered endpoint that evolves smoothly from low-frequency image to clean image. The fraction of high-frequency signal in moving endpoint is released by an image-specific energy-guided…",
+      "authors": [
+        "Haoyang Tong",
+        "Yu He",
+        "Fang Li",
+        "Lichen Ma",
+        "Jingling Fu",
+        "Dong Chen"
+      ],
+      "published": "2026-08-06T09:44:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.05811v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-10T08:43:06.583873+00:00"
     },
     {
       "id": "2606.31680v1",
