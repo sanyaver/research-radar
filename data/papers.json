@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-10T08:43:06.583873+00:00",
-  "total": 382,
-  "new_this_run": 9,
+  "last_updated": "2026-08-11T08:11:31.051985+00:00",
+  "total": 397,
+  "new_this_run": 15,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -852,6 +852,33 @@
       "first_seen": "2026-08-06T09:42:54.905855+00:00"
     },
     {
+      "id": "2608.08293v1",
+      "title": "Scalable High-Speed Lateral Control for Single-Body and Articulated Autonomous Vehicles",
+      "abstract": "This paper presents a scalable lateral control framework for robust path tracking of single-body and articulated autonomous vehicles at high speeds. A clothoid-based controller is extended with three key adaptations: 1) an integrated tangential check and Frechet distance method for optimized lookahead and oscillation mitigation; 2) real-time trajectory segment classification for dynamic adjustment of the lookahead search range; and 3) a dual-adaptive, rate-controlled lookahead mechanism responsive to cross-track error and upcoming path geometry. To support different vehicle configurations, the framework also incorporates flexible tracking point selection and curvature-to-steering lookup tabl…",
+      "authors": [
+        "Aashish Shaju",
+        "Steve Southward",
+        "Mehdi Ahmadian"
+      ],
+      "published": "2026-08-08T19:09:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08293v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
       "id": "2607.03819v1",
       "title": "CGGS: Consistency-Augmented Geometric Gaussian Splatting for Ego-centric 3D Scene Generation",
       "abstract": "Challenges remain in ego-centric 3D scene generation due to limited view overlap and the dominant influence of individual perspectives on scene interpretation. These factors hinder the creation of viewpoint-consistent and semantically aligned visual content, as well as the construction of accurate geometric structures. In this paper, we propose CGGS, a text-to-3D framework aiming to enhance 3D-content-awareness and address geometric distortions in ego-centric scene generation. Firstly, the Ego-centric Generator is proposed by fine-tuning a Multi-View Latent Diffusion Model with consistency-augmented loss to generate consistent, high-fidelity 2D content aligned with textual descriptions. Then…",
@@ -974,6 +1001,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-10T10:26:27.327846+00:00"
+    },
+    {
+      "id": "2608.09296v1",
+      "title": "CADEngBench: It Looks Like CAD, but Does It Work? Evaluating Parametric Design, Assembly Reasoning, and Physics Simulation",
+      "abstract": "A CAD model is not engineering-grade merely because it looks correct. It must satisfy design requirements, respond predictably to parameter changes, support controlled edits, match a reference structural response under a declared analysis, and connect to other parts through valid joints. We present CADEngBench, a two-track benchmark for these capabilities. CADEngBench-P evaluates 300 parametric parts, each used for one zero-to-CAD task and one functional-editing task (600 tasks in total), through boundary-representation (B-Rep) validity, engineering and DFM checks, parameter-family perturbations, functional editing, and matched linear-static FEA in CalculiX. CADEngBench-A evaluates 150 body …",
+      "authors": [
+        "Harmanjot Singh",
+        "Abhra Dubey",
+        "Jorge Alejandro Amador Herrera"
+      ],
+      "published": "2026-08-10T08:47:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.09296v1",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 90
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
     },
     {
       "id": "2607.00417v1",
@@ -1368,6 +1424,69 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-07T08:17:28.494119+00:00"
+    },
+    {
+      "id": "2608.09771v1",
+      "title": "SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation",
+      "abstract": "Vision-language-action policies rely on large multimodal backbones to jointly perform perception, language conditioning, and action generation at every control step. Much of this capacity supports open-domain semantics, whereas continuous robot manipulation primarily requires compact representations of observations, actions, and the transitions induced by actions. Pixel-level world models provide another route, but predicting visual details irrelevant to control can be unnecessarily expensive. We propose SLIM (Self-supervised Latent Interaction Model), a compact 0.5B-parameter latent interaction policy. SLIM learns action-grounded predictive latents that capture both action-conditioned futur…",
+      "authors": [
+        "Jingkai Wang",
+        "Zihan Tang",
+        "Gu Zhang",
+        "Mingyu Cao",
+        "Jiapeng Chen",
+        "Jingjiao Zhao"
+      ],
+      "published": "2026-08-10T15:58:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.09771v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 72
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.08132v1",
+      "title": "When Does An Extra View Help? Adapting Single-View 3D Reconstruction with Extra Imagery",
+      "abstract": "Reconstruction of 3D objects from a single image is a challenging research problem in computer vision. The key challenge is the lack of critical information from viewpoints to complete 3D structures. Using an additional view may help to resolve the issue. However, there is no mechanism that can integrate the extra view into the single-view 3D reconstruction principle. We address this challenge by proposing ASV3D, a framework for adapting single-view 3D object reconstruction to test-time data with support from one additional image. We introduce two adaptation strategies: (i) a zero-shot adaptation scheme that leverages the auxiliary image to improve the reconstruction quality of an object wit…",
+      "authors": [
+        "Y Huynh",
+        "Duc Thanh Nguyen",
+        "Thao Minh Le",
+        "Mohamed Abdelrazek"
+      ],
+      "published": "2026-08-08T13:39:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08132v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 77
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -2487,6 +2606,63 @@
       "first_seen": "2026-08-10T08:43:06.583873+00:00"
     },
     {
+      "id": "2608.09762v1",
+      "title": "Efficient Real-World Online Reinforcement Learning for Robot Manipulation via Centralized Training and Critic Decomposition",
+      "abstract": "Real-world online reinforcement learning (RL) provides a promising approach for training robotic manipulation policies directly in the physical world, avoiding the sim-to-real gap and enabling continuous policy refinement through human-in-the-loop interaction. Recent methods have demonstrated sample-efficient learning through human intervention but remain limited to small randomization ranges and encounter challenges with the non-stationarity induced by concurrently training multiple agents. To address these limitations, we introduce a unified framework that combines centralized training with decentralized execution (CTDE) and a Hybrid Reward Architecture (HRA). This enables multiple actors …",
+      "authors": [
+        "Changhao Li",
+        "Yifang Zhang",
+        "Heng Zhang",
+        "Davide Torielli",
+        "Damiano Gasperini",
+        "Arturo Laurenzi"
+      ],
+      "published": "2026-08-10T15:54:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.09762v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.09410v1",
+      "title": "Skills in Weights, Memory in Code: Hybrid Learning for Memory-Dependent Robot Manipulation",
+      "abstract": "Modern vision-language-action (VLA) policies have acquired broad manipulation skills, but typically generate each action chunk from the current observation or a short fixed-length history. However, real-world manipulation is often non-Markovian, requiring robots to retain and reason over task-relevant information from long-horizon interaction histories to determine the next action. To address this challenge, we propose HyMeS, a hybrid learning framework that leverages the reasoning and memory-management capabilities of coding agents to steer a Markovian VLA for memory-dependent manipulation. Specifically, HyMeS learns low-level motor skills through gradient-based imitation learning, while a …",
+      "authors": [
+        "Yunhao Zhao",
+        "Zhenyang Ni",
+        "Haoyang Chen",
+        "Ruohan Zhang",
+        "Qi Zhu"
+      ],
+      "published": "2026-08-10T10:35:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.09410v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -3495,6 +3671,67 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-10T08:43:06.583873+00:00"
+    },
+    {
+      "id": "2608.09110v1",
+      "title": "View-Adaptive Renderer for View-Consistent 2D-to-3D Generation",
+      "abstract": "Reconstructing 3D shapes from a single image remains a fundamental yet challenging problem in computer vision. Traditional monocular 3D generation pipelines typically synthesize multiple views from a single input image before applying Neural Radiance Field (NeRF)-based reconstruction. However, inherent projective ambiguities often produce visual discontinuities across generated viewpoints, leading to inaccuracies in reconstructed 3D models. Current solutions either incur significant additional computational burdens or fail to adequately resolve practical inconsistencies between synthesized views. To address these limitations, we propose a novel viewpoint-adaptive neural rendering framework t…",
+      "authors": [
+        "U-Chae Jun",
+        "Jaeeun Ko",
+        "Jiwoo Kang"
+      ],
+      "published": "2026-08-10T04:28:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.09110v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.08522v1",
+      "title": "EsaacSim: A Multimodal Event Camera Add-on for NVIDIA Isaac Sim",
+      "abstract": "Event-based vision is becoming an increasingly important sensing paradigm for robotics, yet its adoption remains limited by sensor availability and the lack of integrated simulation tools for modern robotics platforms. This paper presents EsaacSim, a multimodal event camera add-on for NVIDIA Isaac Sim that enables online simulation of configurable event cameras with grayscale and Bayer RGGB event generation. The framework supports multiple event camera resolutions and provides synchronized RGB, APS, event, depth, and IMU outputs through native ROS2 interfaces. A motion-guided frame-gap synthesis strategy further increases the effective temporal resolution while preserving compatibility with …",
+      "authors": [
+        "Ignacio Bugueno-Cordova",
+        "Malte Kuhlmann",
+        "Nicolás Navarro-Guerrero",
+        "Miguel Campusano",
+        "Rodrigo Verschae"
+      ],
+      "published": "2026-08-09T06:41:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08522v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -8268,6 +8505,164 @@
       "first_seen": "2026-08-10T08:43:06.583873+00:00"
     },
     {
+      "id": "2608.08999v1",
+      "title": "DeepFreqMark: End-To-End Learnable Frequency-Domain Watermarking with Spherical Attack Simulation for Latent Diffusion Models",
+      "abstract": "The proliferation of AI-generated images produced by Latent Diffusion Models (LDMs) has raised critical concerns regarding copyright infringement and misinformation. Although existing frequency-domain watermarking methods embed handcrafted geometric patterns into the initial latent noise prior to generation, they suffer from limited capacity and rigid pattern designs. We propose DeepFreqMark, an end-to-end learnable frequency-domain watermarking framework that replaces manual pattern engineering with a neural message encoder and decoder. To circumvent the computational bottleneck caused by Denoising Diffusion Implicit Model (DDIM) inversion during training, we introduce a Spherical Linear In…",
+      "authors": [
+        "Chen-Hsiu Huang",
+        "Mario Köppen",
+        "Ja-Ling Wu"
+      ],
+      "published": "2026-08-10T01:36:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08999v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.08659v1",
+      "title": "JSGS: JPEG State-Guided Supervision for 3D Gaussian Splatting from Mixed-Quality Views",
+      "abstract": "Standard 3D Gaussian Splatting (3DGS) assumes that every input image faithfully samples scene radiance. However, mixed-quality JPEG images violate this assumption because compression-induced blocking and ringing artifacts can corrupt updates to Gaussians shared across views. To address this problem, we propose JPEG State-Guided Supervision for 3D Gaussian Splatting from Mixed-Quality Views (JSGS). JSGS uses luminance and chrominance quantization tables stored in each JPEG file to construct a view-specific JPEG observation operator. This operator encodes and decodes each rendered view for domain-matched comparison with the corresponding decoded input image. The luminance quantization table su…",
+      "authors": [
+        "Jinhua Cui",
+        "Anhong Wang",
+        "Kai Hu",
+        "Donghan Bu",
+        "Peihao Li",
+        "Tammam Tillo"
+      ],
+      "published": "2026-08-09T12:05:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08659v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.08588v1",
+      "title": "LazyHMC: Hamiltonian Monte Carlo Simulation for Lazy, Infinite Dimensional Probabilistic Programs",
+      "abstract": "Hamiltonian Monte Carlo (HMC) is a successful generic inference method in probabilistic programming, but in its ordinary formulation it needs gradients and finite-dimensional parameter spaces. In Haskell, lazy evaluation lets probabilistic programs express stochastic processes and other non-parametric Bayesian models over implicit infinite-dimensional spaces. This paper develops new formulations of gradient-based HMC for this infinite-dimensional setting, via lazy evaluation. For automatic differentiation, we provide an analysis based on a new notion of \"piecewise analytic under cylindrical analytic partition\" (PACAP), to show that even if a program is infinite-dimensional and defined lazily…",
+      "authors": [
+        "Maria-Nicoleta Crăciun",
+        "C. -H. Luke Ong",
+        "Tom Schrijvers",
+        "Sam Staton"
+      ],
+      "published": "2026-08-09T09:05:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08588v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "cs.PL",
+        "stat.CO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.08585v1",
+      "title": "EvTrajGS: Accurate and Efficient 3D Gaussian Splatting from Unposed Event Streams",
+      "abstract": "Event cameras, with high temporal resolution, high dynamic range, and asynchronous sensing characteristics, have shown great potential for dense 3D reconstruction. Traditional reconstruction methods based on off-the-shelf pose estimates achieve high efficiency but produce low-fidelity results, as inaccurate pose initialization introduces cumulative reconstruction errors. In contrast, recent SLAM-style methods stabilize joint pose-scene optimization through incremental tracking and mapping, yielding higher reconstruction fidelity at the expense of considerable computational overhead. To address this trade-off, this paper presents EvTrajGS, an accurate and efficient 3D Gaussian Splatting frame…",
+      "authors": [
+        "Zixuan Chen",
+        "Jiakai Zhang",
+        "Junhao Dong",
+        "Guangcong Wang",
+        "Jianhuang Lai",
+        "Yew-Soon Ong"
+      ],
+      "published": "2026-08-09T09:00:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08585v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.08559v1",
+      "title": "Differentiate the Solver, Not the Equation: Reverse-Sweep Adjoints for Block Implicit Simulation",
+      "abstract": "Differentiable simulation is a key component in learning, control, and inverse problems, where gradients through nonlinear implicit solvers are required. Existing approaches either rely on unrolled automatic differentiation, whose memory grows with solver depth, or on equation-level implicit differentiation, which assembles global Jacobians and solves large sparse adjoint systems, discarding the locality of the forward solver -- and differentiating the converged equation rather than the finite computation that actually ran. We propose solver-level differentiation, which differentiates the executed solver itself. When a solver is composed of block implicit updates, its discrete adjoint is obt…",
+      "authors": [
+        "Lei Shu",
+        "Ying Jiang",
+        "Kui Wu",
+        "Yin Yang",
+        "Leonidas Guibas",
+        "Chenfanfu Jiang"
+      ],
+      "published": "2026-08-09T08:03:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08559v1",
+      "categories": [
+        "cs.GR",
+        "cs.LG",
+        "math.NA"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -9091,6 +9486,41 @@
       ],
       "has_code": true,
       "first_seen": "2026-08-06T09:42:54.905855+00:00"
+    },
+    {
+      "id": "2608.08949v1",
+      "title": "EndoMD-SLAM: Endoscopic Gaussian Splatting SLAM under Optical Degradation with Memory and Static-Transient Decomposition",
+      "abstract": "Dense 3D reconstruction is critical for clinical endoscopic navigation and documentation. While Gaussian Splatting SLAM systems show promise in this domain, they fundamentally rely on strict multi-view photometric consistency. In routine procedures, this assumption is severely violated by intermittent optical degradations like moving debris and water flushing. Standard systems erroneously fuse these cameraattached artifacts into the persistent 3D geometry, causing severe tracking drift and irreversible map corruption. To address this limitation, we propose EndoMD-SLAM, a framework designed to maintain stability under optical degradation through specialized tracking and mapping mechanisms. On…",
+      "authors": [
+        "Nuo Chen",
+        "Kangqi Ni",
+        "Lulin Liu",
+        "Joga Ivatury",
+        "Ying Ding",
+        "Farshid Alambeigi"
+      ],
+      "published": "2026-08-09T22:59:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08949v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -11694,6 +12124,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-07T08:17:28.494119+00:00"
+    },
+    {
+      "id": "2608.08135v1",
+      "title": "Compositional Cross-Modality Translation via Whole-Volume Multitask Latent Flow Matching",
+      "abstract": "Cross-modality medical image translation can reduce the burden of multi-modal acquisitions, yet the field remains constrained by two coupled limitations: methods operate on 2D slices or 3D patches rather than whole volumes, and train a separate model for each translation task. Both stem from a single cause, the absence of a sufficiently strong volumetric prior, which forces generative models to learn anatomical appearance and cross-modality mapping simultaneously, an ill-posed problem at the scale of available paired datasets. We propose to decouple these objectives. A large-scale pretrained 3D variational autoencoder provides a compact latent representation of volumetric appearance, reducin…",
+      "authors": [
+        "Daniele Molino",
+        "Alessio Zoboli",
+        "Camillo Maria Caruso",
+        "Valerio Guarrasi",
+        "Paolo Soda"
+      ],
+      "published": "2026-08-08T13:43:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.08135v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-11T08:11:31.051985+00:00"
     }
   ]
 }
