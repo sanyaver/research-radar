@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-12T08:22:14.010401+00:00",
-  "total": 397,
-  "new_this_run": 0,
+  "last_updated": "2026-08-13T08:24:46.305563+00:00",
+  "total": 409,
+  "new_this_run": 12,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1103,6 +1103,47 @@
       "first_seen": "2026-08-04T09:40:53.614317+00:00"
     },
     {
+      "id": "2608.11100v1",
+      "title": "WildFireGS: Physics-Based Wildfire Simulation in Large-Scale Semantics-Enriched Gaussian Splatting Forest Scenes",
+      "abstract": "Climate-driven environmental change is driving an increase in both the frequency and severity of wildfire events, making accurate simulation and prediction critical for effective risk mitigation and landscape management. While recent physics-based wildfire models achieve high realism by explicitly simulating combustion, heat transfer, and fuel dynamics, they remain largely restricted to synthetic environments with complete and idealized knowledge of forest structure, limiting their applicability to real-world environments captured via aerial imagery. To provide a pathway toward real-world wildfire digital twins derived directly from observational data, we present WildFireGS, a physics-based …",
+      "authors": [
+        "Nienke Driessen",
+        "Joris Rijsdijk",
+        "Sören Pirk",
+        "Wojtek Palubicki",
+        "Dominik L. Michels",
+        "Michael Weinmann"
+      ],
+      "published": "2026-08-11T16:08:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.11100v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
       "id": "2607.05252v1",
       "title": "FUSE: FK-Steered Multi-Modal Flow Matching for Efficient Simulation-Based Posterior Estimation",
       "abstract": "Simulation-Based Inference (SBI) is critical for scientific discovery, with generative models offering a promising path toward efficient inference. However, existing methods struggle with effective multimodal modeling. They often rely on brute-force fusion strategies that ignore the structural disparities between parameters and observations, thus limiting estimation fidelity. In this work, we introduce FUSE (Feynman-Kac steered mUlti-modal flow matching for efficient Simulation-based posterior Estimation). Unlike prior work, FUSE employs a dual-track architecture that preserves the distinct features of multimodal inputs while facilitating dynamic interaction. Additionally, we propose an FK-s…",
@@ -1487,6 +1528,53 @@
       ],
       "has_code": true,
       "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.10756v1",
+      "title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting",
+      "abstract": "Embodied mobile manipulation requires language, visual observations, three-dimensional scene structure, and action feasibility to be aligned before execution. We study open-vocabulary target grounding with few-shot manipulation in local household workspaces and present an embodied multimodal grounding framework that integrates active multi-view Semantic 3D Gaussian Splatting (Semantic-3DGS), reachability-aware base positioning, and a diffusion-based vision-language-action policy. A task-driven local Semantic-3DGS serves as a shared interface across active sensing, language-conditioned 3D localization, obstacle-aware scene reasoning, base preparation, and semantic conditioning of the action m…",
+      "authors": [
+        "Huosen Ou",
+        "Dongni Song",
+        "Yuncong Wang",
+        "Tao Zhou",
+        "Yiding Ji"
+      ],
+      "published": "2026-08-11T10:16:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.10756v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -3732,6 +3820,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.11580v1",
+      "title": "RoadWeaver: Large-Scale Lane-Level HD Map Generation from Scratch for Autonomous Driving Simulation",
+      "abstract": "Autonomous driving simulation requires diverse and scalable lane-level HD maps to support long-horizon evaluation across complex road networks. Existing approaches either rely on handcrafted or reconstructed real-world maps, which limits scalability, or generate only local road structures rather than complete HD maps. We present RoadWeaver, a coarse-to-fine framework for from-scratch generation of diverse, large-scale HD maps. RoadWeaver first synthesizes a global road layout, expands it into a connected road network, and then constructs lane-level geometry with topologically consistent lane connectivity. Experimental results show that RoadWeaver achieves a 99.8\\% reachability, a 10.7\\% dead…",
+      "authors": [
+        "Yueyuan Li",
+        "Zexi Chen",
+        "Weijie Xi",
+        "Mingyang Jiang",
+        "Songan Zhang",
+        "Hanyang Zhuang"
+      ],
+      "published": "2026-08-12T02:39:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.11580v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
+      "id": "2608.10780v1",
+      "title": "JEPA-WAM: Stage-Level Joint-Embedding Prediction for World-Action Models in Robot Manipulation",
+      "abstract": "Generalist robot policies aim to map multimodal observations and linguistic task instructions to actions across diverse tasks. However, existing methods typically represent the future as a fixed, short video-action chunk. This short-term future captures local scene evolution for action execution, but it does not explicitly describe the stage-level future that specifies how a task should progress from its current stage to the next. We therefore distinguish two complementary futures for robot manipulation: a short-term physical future to capture local scene evolution and a stage-level semantic future to represent task progress. We introduce JEPA-WAM, which augments a Motus-based World Action M…",
+      "authors": [
+        "Xiao Liu",
+        "Yuguang Yang",
+        "Xi Wang",
+        "Kai Jiang",
+        "Cheng Chi",
+        "Yong Xu"
+      ],
+      "published": "2026-08-11T10:33:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.10780v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -8663,6 +8816,189 @@
       "first_seen": "2026-08-11T08:11:31.051985+00:00"
     },
     {
+      "id": "2608.12179v1",
+      "title": "Map-Det3D: Metric Feed-Forward 3D Reconstruction Prior for Multi-view 3D Object Detection from Streaming Inputs",
+      "abstract": "Metric 3D object detection is a core capability for embodied agents, yet most reliable systems lean on depth sensors, trading away cost, power, and integration simplicity. This motivates monocular 3D detection, which avoids additional constraints, yet it faces a major obstacle: from a single image, depth, and especially absolute scale, are underconstrained. As a result, the prevailing pattern of detecting in 2D and then predicting 3D attributes is often brittle, since modest range errors can dominate 3D localization, and the learned scale prior can fail when cameras, motion, or environments undergo domain shifts. To address this, we propose Map-Det3D, an online multi-view 3D object detection…",
+      "authors": [
+        "Yung-Hsu Yang",
+        "Luigi Piccinelli",
+        "Samuel Rota Bulò",
+        "Sunghwan Hong",
+        "Denis Rozumny",
+        "Johannes Schönberger"
+      ],
+      "published": "2026-08-12T15:33:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.12179v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
+      "id": "2608.11839v1",
+      "title": "Air Quality Station Simulation via LSTM and Attention-Based Modelling",
+      "abstract": "Poor air quality in urban areas is driven by a complex chain of processes and presents a significant public health concern. To better understand and control the mechanisms that determine air quality, cities deploy networks of measurement stations, and launch initiatives for collecting denser data about the concentration of pollutants in the atmosphere. Extracting insights from the stations relies on their reliable and uninterrupted operation. However, hardware is susceptible to faults and black- outs that may result in data unavailability, which affects the overall quality of analyses. In this paper, we present a deep-learning model, called SATADL, which can infer complex relations and outpu…",
+      "authors": [
+        "Alexander Kostadinov",
+        "Petar O. Hristov",
+        "Dessislava Petrova-Antonova"
+      ],
+      "published": "2026-08-12T09:26:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.11839v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
+      "id": "2608.11562v1",
+      "title": "From Synthesis to Removal: Physics-Grounded Reflection Simulation and Diffusion-Based Video Dereflection",
+      "abstract": "Videos captured through glass often contain reflections that degrade visual quality and interfere with downstream vision tasks. Although single-image reflection removal has been extensively studied, video reflection removal remains largely underexplored due to the lack of paired video data, temporally coherent removal models, and dedicated evaluation benchmarks. We present a closed-loop framework that unifies physics-grounded reflection simulation, diffusion-based video dereflection, and benchmark evaluation. Our S2R-Synthesis pipeline generates paired reflected and reflection-free videos by performing physics-grounded augmentation in the structure space and rendering realistic reflected vid…",
+      "authors": [
+        "Zepeng Wang",
+        "Jiagao Hu",
+        "Fuhao Li",
+        "Yuxuan Chen",
+        "Fei Wang",
+        "Daiguo Zhou"
+      ],
+      "published": "2026-08-12T01:59:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.11562v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "eess.IV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
+      "id": "2608.11204v1",
+      "title": "Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning",
+      "abstract": "Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect, while surgical tasks demand precise contact handling, long-horizon reasoning, and bimanual coordination. Endoscopic video is comparatively inexpensive and abundant relative to synchronized video--kinematics trajectories, and a natural way to exploit it is to learn world models of surgical scenes. However, existing surgical world models use video primarily for simulation or policy evaluation, and rarely translate the learned dynamics into closed-loop control. This gap raises …",
+      "authors": [
+        "Wenrui Bao",
+        "Tianyun Jiang",
+        "Zhiben Chen",
+        "Ser-Nam Lim",
+        "Peter D. Peng",
+        "Yuzhang Shang"
+      ],
+      "published": "2026-08-11T17:59:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.11204v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
+      "id": "2608.11150v2",
+      "title": "CausalSplat: Towards Comprehensive Hierarchical Reasoning in 3D Gaussian Splatting",
+      "abstract": "While 3D Gaussian Splatting (3DGS) has advanced open vocabulary scene understanding, existing methods remain confined to explicit queries. They struggle to interpret implicit intents, complex spatial constraints, and commonsense reasoning required for practical embodied interactions. To address this gap, we introduce the task of reasoning 3D Gaussian segmentation and construct two benchmarks, Causal-LERF and Causal-ScanNet. These benchmarks systematically evaluate commonsense, spatial, affordance, and counterfactual reasoning. Evaluations reveal that current state of the art methods perform poorly on these reasoning challenges. Therefore, we propose CausalSplat, a framework that integrates v…",
+      "authors": [
+        "Jiayu Ding",
+        "Meilu Song",
+        "Yun Chen",
+        "Wei Gao",
+        "Ge Li"
+      ],
+      "published": "2026-08-11T17:09:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.11150v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
+      "id": "2608.10938v1",
+      "title": "GS-CPE: Unified 6-Degree-of-Freedom Camera Pose Estimation via 3D Gaussian Splatting",
+      "abstract": "Despite substantial progress in visual localization, from scene coordinate regression to direct camera pose regression, achieving both robust generalization and high accuracy remain challenging. This study introduces GS-CPE (Gaussian Splatting based Camera Pose Estimation), a coarse-to-fine framework for 6-DoF camera pose estimation that unifies geometry-based coarse pose estimation with robust 3D Gaussian Splatting (3DGS) warping based pose refinement. GS-CPE first estimates a coarse pose via retrieval-guided geometric pose estimation on a 3DGS scene representation, then refines it by minimizing a visibility aware masked RGB warping objective in a multi-scale optimization framework, with ad…",
+      "authors": [
+        "Huaiyuan Weng",
+        "Chul Min Yeum",
+        "Su-Min Kang"
+      ],
+      "published": "2026-08-11T14:06:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.10938v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -11178,6 +11514,37 @@
       "first_seen": "2026-08-10T08:43:06.583873+00:00"
     },
     {
+      "id": "2608.10544v1",
+      "title": "Flow Straight to Reality: Perceptually Consistent Flow Matching for Efficient Image Restoration",
+      "abstract": "Image restoration is fundamentally constrained by the tradeoff between distortion and perception: minimizing pixel-wise error yields over-smoothed results, whereas optimizing for perceptual realism often introduces structural deviations. Recent approaches attempt to balance this tradeoff via posterior sampling or multi-stage generative pipelines, yet remain computationally expensive and architecturally complex. To overcome these limitations, we propose PCFlow (Perceptually Consistent Flow Matching), a unified framework that directly parameterizes a continuous transport from degraded observations to clean targets, jointly optimizing distortion and perceptual quality. While its latent consiste…",
+      "authors": [
+        "Sangwoo Jo",
+        "Donggeun Ko",
+        "Jayeon Kang",
+        "Youngsang Kwak",
+        "Jaehwa Kwak",
+        "Sungjoon Choi"
+      ],
+      "published": "2026-08-11T06:37:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.10544v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -12153,6 +12520,35 @@
       ],
       "has_code": true,
       "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.12148v1",
+      "title": "MVFM-3DAD: Multi-view Flow Matching for 3D Anomaly Detection via Density Proxy Estimation",
+      "abstract": "In 3D anomaly detection (3DAD), most existing methods rely on Memory bank retrieval or reconstruction. However, memory-based methods are constrained by the coverage of stored normal features, while reconstruction-based methods may learn identity shortcuts that also reconstruct anomalous inputs well. These limitations motivate a density-oriented approach that evaluates whether a test sample follows the learned normal distribution. To this end, we propose MVFM-3DAD, a flow-based framework that reframes 3DAD as density proxy estimation over the normal data distribution. MVFM-3DAD introduces a Bidirectional Geometric Projector (BGP), whose forward process converts irregular point clouds into str…",
+      "authors": [
+        "Liangwei Li",
+        "Lin Liu",
+        "Jing Zhang",
+        "Xiaohui Du",
+        "Ruqian Hao",
+        "Xinwei Li"
+      ],
+      "published": "2026-08-12T15:10:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.12148v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-13T08:24:46.305563+00:00"
     }
   ]
 }
