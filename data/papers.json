@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-18T07:42:43.442926+00:00",
-  "total": 445,
-  "new_this_run": 19,
+  "last_updated": "2026-08-19T07:42:35.946902+00:00",
+  "total": 457,
+  "new_this_run": 12,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -2944,6 +2944,35 @@
       "first_seen": "2026-08-11T08:11:31.051985+00:00"
     },
     {
+      "id": "2608.17209v1",
+      "title": "Teach and Grow: An Agent-Centered Architecture for General Robot Learning",
+      "abstract": "End-to-end vision-language-action (VLA) and world-action models offer an elegant route to general-purpose robotics, but their reliability is bounded by validated physical coverage. When an unfamiliar object, sensor, embodiment, or contact falls outside that coverage and no validated fallback exists, correcting the failure requires new robot data, a policy update, and regression testing. This recurring burden is the retraining tax. Unlike text, embodied data must often be created by operating machines. We present Teach-and-Grow Learning (TGL), an agent-centered architecture for general robot learning. In its general form, a multimodal agent turns a few successful demonstrations into reusable …",
+      "authors": [
+        "Chang Nie",
+        "Zhe Liu",
+        "Hesheng Wang"
+      ],
+      "published": "2026-08-17T23:45:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17209v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -4261,6 +4290,35 @@
       ],
       "has_code": true,
       "first_seen": "2026-08-18T07:42:43.442926+00:00"
+    },
+    {
+      "id": "2608.17717v1",
+      "title": "CompCPZ: Preserving Multi-Modal Intent in Language-Guided Robot Manipulation",
+      "abstract": "A robot asked to \"place the cup near the red plate or the blue plate\" may reach the centroid between them and appear geometrically successful, while satisfying neither disjunct of the instruction. This silent semantic failure exposes a structural limitation of language-conditioned robot policies: representations that collapse a disjunctive instruction into a single connected set cannot preserve all feasible modes, and planners that commit to one action degrade under run-time mode uncertainty. We address this limitation with CompCPZ, a sound algebraic layer that language-conditioned learning systems wrap to recover multi-modal disjunctive representation, recursively composing per-primitive co…",
+      "authors": [
+        "Zhen Zhang",
+        "Ahmad Hafez",
+        "Peng Xie",
+        "Yanliang Huang",
+        "Wenyuan Wu",
+        "Amr Alanwar"
+      ],
+      "published": "2026-08-18T12:42:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17717v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -9826,6 +9884,216 @@
       "first_seen": "2026-08-18T07:42:43.442926+00:00"
     },
     {
+      "id": "2608.17833v1",
+      "title": "Variational r-Adaptive Cloth Simulation",
+      "abstract": "We present the first r-adaptive method for simulating cloth dynamics and statics with frictional contact in modern cloth pipelines. Thin cloth requires high effective spatial resolution to reproduce wrinkles, folds, buckling, and sharp contact features. However, applying existing variational r-adaptivity to piecewise-linear shells reveals two coupled failure modes. Discretized incremental-potential (IP) optimization can become trapped in poor local minima, yielding suboptimal physical configurations. It can also lower IP artificially by collapsing elements, invalidating the finite-element approximation on which the objective relies. We address both problems with degeneracy-activated quality …",
+      "authors": [
+        "Jiahao Wen",
+        "Zhen Chen",
+        "Jernej Barbič",
+        "Danny M. Kaufman"
+      ],
+      "published": "2026-08-18T14:34:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17833v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.17535v1",
+      "title": "GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward Gaussian Splatting",
+      "abstract": "Simultaneously reconstructing and understanding 3D environments is essential for embodied agents. Toward this goal, feed-forward semantic 3D Gaussian Splatting (3DGS) efficiently constructs semantic scene representations from sparse multi-view observations. However, existing methods lack explicit instance discrimination and mainly support category- or phrase-based semantic queries. To this end, we propose GroupForward, an instance-grouped feed-forward Gaussian splatting model that reconstructs geometry, appearance, instance structure, and semantics from sparse, unposed, and uncalibrated multi-view images. Unlike existing methods that attach high-dimensional semantic features to each Gaussian…",
+      "authors": [
+        "Qijian Tian",
+        "Zimeng Wu",
+        "Xuhong Wang",
+        "Lizhuang Ma",
+        "Xin Tan"
+      ],
+      "published": "2026-08-18T08:55:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17535v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.17447v1",
+      "title": "NGS-Marker: Robust Native Watermarking for 3D Gaussian Splatting",
+      "abstract": "With the rapid development and adoption of 3D Gaussian Splatting (3DGS), the need for effective copyright protection has become increasingly critical. Existing watermarking techniques for 3DGS mainly focus on protecting rendered images via pre-trained decoders, leaving the underlying 3D Gaussian primitives vulnerable to misuse. In particular, they are ineffective against Partial Infringement, where an adversary extracts and reuses only a subset of Gaussians. In this paper, we propose NGS-Marker, a novel native watermarking framework for 3DGS. It integrates a jointly trained watermark injector and message decoder, and employs a gradientbased progressive injection strategy to ensure full-scene…",
+      "authors": [
+        "Hao Qin",
+        "Yukai Sun",
+        "Luyuan Chen",
+        "Mengxu Lu",
+        "Feng Zhang",
+        "Ming Kong"
+      ],
+      "published": "2026-08-18T07:28:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17447v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.17389v1",
+      "title": "GeoWeaver: Accurate Long-Sequence 3D Reconstruction via Hierarchical Geometric Assembly",
+      "abstract": "Long-sequence 3D reconstruction from RGB videos requires both accurate local geometry and globally consistent camera motion. Feed-forward models provide strong depth and pose predictions, but their memory cost prevents joint inference over long sequences. Chunk-wise processing improves scalability, yet independently predicted chunks often exhibit scale drift, pose errors, and point-cloud misalignment. We present GeoWeaver, a unified framework comprising a Geometric Prior Model (GPM) and Test-Time Adaptation (TTA). The GPM predicts chunk-wise depth, confidence, and camera parameters as adjustable geometric priors. TTA then performs sequential initialization, global chunk-level Sim(3) alignmen…",
+      "authors": [
+        "Tinghao Jiang",
+        "Sheng Tang",
+        "Shengzhe Wei",
+        "Juntong Fang",
+        "Weiqi Zhang",
+        "Junsheng Zhou"
+      ],
+      "published": "2026-08-18T05:29:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17389v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.17323v1",
+      "title": "ORPA: Online Residual Policy Adaptation for Robot Manipulation Control with Human Feedback",
+      "abstract": "Robotic manipulation policies trained via imitation learning, such as Action Chunking with Transformers (ACT), can achieve strong performance under ideal conditions but often remain sensitive to small execution errors and distribution shifts. Correcting these failures typically requires dataset aggregation and full-policy retraining, which is computationally expensive and unsuitable for real-time deployment. In this work, we propose Online Residual Policy Adaptation (ORPA), a framework that enables immediate, feedback-driven correction of robot actions without modifying the underlying policy parameters. ORPA augments a pretrained control policy with a lightweight, feedback-conditioned module…",
+      "authors": [
+        "Muhammad A. Muttaqien",
+        "Tomohiro Motoda",
+        "Ryo Hanai",
+        "Yukiyasu Domae"
+      ],
+      "published": "2026-08-18T03:30:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17323v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.17030v1",
+      "title": "Lambda-Hold Control: Human-Like Movement Emerges from a Minimal Task Reward in Predictive Musculoskeletal Simulation",
+      "abstract": "The massive overactuation in the human musculoskeletal system makes it challenging to train musculoskeletal models to generate human-like motion via reinforcement learning, primarily because exploration in the resulting high-dimensional and redundant action space is extremely inefficient. To address this problem, we propose the $λ$-hold controller, inspired by the equilibrium-point (EP) hypothesis, which has been widely supported by extensive evidence from human motor control studies. The policy's control variable is the per-muscle EP threshold length $λ$, from which a stretch-reflex recruitment law computes the muscle excitations automatically. Holding each $λ$ over an interval of the gait …",
+      "authors": [
+        "Jun Hyuk Lee",
+        "Chihyeong Lee",
+        "Jooeun Ahn"
+      ],
+      "published": "2026-08-17T18:28:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17030v1",
+      "categories": [
+        "cs.RO",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.16978v1",
+      "title": "VLCP: Vision Language Control Policy Closed-Loop Code Replanning for Robot Manipulation",
+      "abstract": "Turning a frontier vision-language model into a robot policy usually means fine-tuning it to emit an action representation it never saw in pretraining, which throws away much of the reasoning that made the model worth reaching for. We go the other way and keep the VLM frozen. It writes the policy as a short Python control function, with no demonstrations and no fine-tuning. Writing that code once is open-loop, though. Existing closed-loop methods react at the wrong level: they retry a fixed policy or pick a different subtask, but never rewrite the code that failed. VLCP closes the loop where the failure actually lives, on the control code, within a single episode. Every $K$ steps the VLM re-…",
+      "authors": [
+        "Dhia Naouali",
+        "Minghan Wu",
+        "Claudia Wong",
+        "Abhinav Puthran",
+        "Omar G. Younis"
+      ],
+      "published": "2026-08-17T17:28:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.16978v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -12628,6 +12896,35 @@
       "first_seen": "2026-08-18T07:42:43.442926+00:00"
     },
     {
+      "id": "2608.17695v1",
+      "title": "Magnitude-Direction Decoupling for Fast Video Generation with Flow Matching Models",
+      "abstract": "Flow matching models for video generation achieve impressive performance but suffer from high computational overhead due to iterative denoising. In fact, the original model is not necessary for all denoising steps, allowing some steps to use lightweight alternatives for faster sampling. However, directly using caching or lightweight models can deviate from the original denoising trajectory, resulting in suboptimal performance. Through empirical analysis, we find that lightweight models can robustly capture the magnitude components of the original model's output, while caching provides reliable directional guidance. Building on this insight, we propose the Magnitude-Direction Decoupling (MDD)…",
+      "authors": [
+        "Haonan Xu",
+        "Feiyang Chen",
+        "Songkui Chen",
+        "Hongpeng Pan",
+        "Zhefeng Wang",
+        "Xinyu Duan"
+      ],
+      "published": "2026-08-18T12:12:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17695v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -13661,6 +13958,88 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-18T07:42:43.442926+00:00"
+    },
+    {
+      "id": "2608.17988v1",
+      "title": "GS-Voxel: Fitting-Free Structured Latents for Large-Scale 3DGS Generation",
+      "abstract": "Many scalable latent 3D generators operate on structured tensors, whereas pre-optimized 3D Gaussian Splatting (3DGS) reconstructions are unordered, spatially irregular, and vary widely in primitive count. We present GS-Voxel, a fitting-free structured latent framework, and evaluate it for large-scale aerial 3D Gaussian scene generation. GS-Voxel deterministically converts a compatible pre-optimized 3DGS reconstruction into sparse active voxels without additional per-scene optimization, retaining the sub-voxel positions and rendering attributes of the selected primitives. A GS-specific factorized VAE then separately encodes voxel geometry and local Gaussian attributes into sparse 3D latents w…",
+      "authors": [
+        "Ming Qian",
+        "Zijian Wang",
+        "Minchao Sun",
+        "Jincheng Xiong",
+        "Hang Zhang",
+        "Mu Xu"
+      ],
+      "published": "2026-08-18T16:33:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17988v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.17420v1",
+      "title": "SPVC: Structured and Panoptic Video Fixing for Cross-Dataset Driving Scene Rendering",
+      "abstract": "Driving scene reconstruction and rendering, especially with 3D Gaussian Splatting, has become an important component of autonomous driving simulation. However, rendered views often degrade under extrapolated ego trajectories and scene edits, producing blurry structures, temporal flicker, and foreground-background misalignment. Existing refinement methods are commonly designed for a specific setting, such as image-level novel-view repair or object-editing correction. In this paper, we introduce SPVC, a structured and panoptic video fixing framework for cross-dataset driving scene rendering. The name summarizes four design principles. (1) Structured fixing denotes the use of explicit spatial c…",
+      "authors": [
+        "Gen Li",
+        "Shu Han",
+        "Yun Xi Qiao",
+        "Hua Chen",
+        "Xuyang Dai",
+        "Bohan Li"
+      ],
+      "published": "2026-08-18T06:42:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.17420v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-19T07:42:35.946902+00:00"
     }
   ]
 }
