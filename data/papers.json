@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-20T07:45:59.119520+00:00",
-  "total": 466,
+  "last_updated": "2026-08-21T07:47:59.228490+00:00",
+  "total": 475,
   "new_this_run": 9,
   "papers": [
     {
@@ -1085,6 +1085,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-11T08:11:31.051985+00:00"
+    },
+    {
+      "id": "2608.19567v1",
+      "title": "Block3D: Efficient Text-to-3D Generation via Block-Wise Diffusion",
+      "abstract": "While text-to-3D generation has advanced rapidly, achieving high geometric fidelity at low inference cost remains challenging. Existing text-to-3D methods either decode discrete shape tokens autoregressively or iteratively refine global 3D representations with diffusion or flow models. However, autoregressive decoding is sequential and cannot revise errors, whereas diffusion and flow-matching models repeatedly process the full representation, making high-quality generation increasingly expensive. In this paper, we propose Block3D, a block-wise diffusion framework that partitions the discrete shape-token sequence into contiguous blocks, generates the blocks autoregressively, and jointly denoi…",
+      "authors": [
+        "Bowen Cui",
+        "Weijie Wang",
+        "Zeyu Zhang",
+        "Yefei He",
+        "Mingda Lin",
+        "Haoyu Zhao"
+      ],
+      "published": "2026-08-20T02:12:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.19567v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 91
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
     },
     {
       "id": "2607.00417v1",
@@ -3042,6 +3071,39 @@
       "first_seen": "2026-08-20T07:45:59.119520+00:00"
     },
     {
+      "id": "2608.18388v2",
+      "title": "Depth Anything V4: Dynamic 4D Scene Reconstruction via Riemannian Flow Matching on 4D Gaussian Splatting",
+      "abstract": "We present Depth Anything V4 (DAV4), a framework for dynamic 4D scene reconstruction from monocular video. Our key contribution is the application of Riemannian Flow Matching (RFM) to 4D Gaussian Splatting parameters, defining probability paths directly on non-Euclidean manifolds (scale, rotation, opacity), ensuring all intermediate states are valid. Through controlled experiments, we isolate RFM's contribution from test-time optimization (TTO) and pre-training. A deterministic MLP baseline with the same data, architecture, and TTO achieves F-score 0.762; RFM achieves 0.806 - the +0.044 gain is RFM's isolated contribution. We provide corrected computational cost analysis: pre-training is 360…",
+      "authors": [
+        "Jiaming Fan",
+        "Jian Lu",
+        "Jinling Jia",
+        "Chenbin Zhang"
+      ],
+      "published": "2026-08-18T23:44:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.18388v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 55
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -4390,6 +4452,67 @@
       "first_seen": "2026-08-19T07:42:35.946902+00:00"
     },
     {
+      "id": "2608.19613v1",
+      "title": "What Matters for Latent Actions in Robot Learning",
+      "abstract": "Latent Action Models (LAMs) have emerged as a promising paradigm for enabling robot learning to leverage large-scale unlabeled videos through latent actions that serve as compact surrogates for physical actions. Despite rapid progress, research on LAM remains highly fragmented, with existing methods evaluating different design choices in isolation under inconsistent experimental settings, making it difficult to identify the factors that truly determine downstream robotic manipulation performance. In this work, we present the first comprehensive empirical study of latent action learning for robotic manipulation. We unify representative LAM methods within a common autoencoding framework and sy…",
+      "authors": [
+        "Xizhou Bu",
+        "Qingda Hu",
+        "Lei Zhou",
+        "Lingfeng Zhang",
+        "Yingbo Tang",
+        "Zihao Liu"
+      ],
+      "published": "2026-08-20T03:54:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.19613v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
+      "id": "2608.19425v1",
+      "title": "SCAPE: Scenario-Conditioned Simulation-Augmented Policy Evaluation",
+      "abstract": "Reliable performance evaluation is a central bottleneck for deploying robot-learning policies in real-world conditions. Real-world testing is faithful but costly and difficult to scale, whereas simulation-based testing scales easily but is inevitably biased by the sim-to-real gap. Existing simulation-augmented methods combine limited real-world rollouts with abundant simulation proxies, but focus on performance averaged over initial conditions and deployment settings. Such population-level averages obscure scenario-specific variation and provide limited guidance about when and where a policy can be safely deployed. We propose SCAPE, a scenario-conditioned simulation-augmented policy evaluati…",
+      "authors": [
+        "Dijie Zhu",
+        "Seunghun Oh",
+        "Ruopeng Huang",
+        "Zhiyu Huang",
+        "Jiaqi Ma",
+        "Chen Tang"
+      ],
+      "published": "2026-08-19T20:24:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.19425v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -5688,6 +5811,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-18T07:42:43.442926+00:00"
+    },
+    {
+      "id": "2608.20000v1",
+      "title": "Point-Based 3D Reconstruction from Sparse Views under Known Illumination",
+      "abstract": "Sparse view 3D reconstruction is commonly addressed with neural implicit surfaces or dense point-based representations such as Gaussian splatting. Surface-aware splatting methods improve extracted geometry through oriented primitives and regularization, while RadiosityGS incorporates differentiable light transport through a radiosity inspired finite-element surfel formulation. We propose a differentiable point rendering method based on opacity-bearing beta surfels. An opacity explicit adjoint light transport formulation provides gradients for surfel geometry and appearance parameters, allowing physically based light transport to constrain reconstruction. Across five synthetic objects reconst…",
+      "authors": [
+        "Magnus Kaufmann Gjerde",
+        "Joakim Bruslund Haurum",
+        "Jeppe Revall Frisvad",
+        "Markus Worchel",
+        "J. Andreas Bærentzen",
+        "Thomas B. Moeslund"
+      ],
+      "published": "2026-08-20T13:15:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20000v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -10307,6 +10459,35 @@
       "first_seen": "2026-08-20T07:45:59.119520+00:00"
     },
     {
+      "id": "2608.19574v1",
+      "title": "HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation",
+      "abstract": "World action models jointly predict future visual observations and actions, whereas existing tactile-aware variants typically represent future touch as an image or latent stream without modeling the physical dependencies that organize tactile states hierarchically. We present HiTac-WAM, a hierarchical tactile world action model that forecasts a sequence of future tactile states for each candidate action chunk before execution. The forecast factorizes into contact state, a 3D deformation field, and slip risk, organized as a directed hierarchy in which each downstream stage is conditioned on stop-gradient signals from preceding stages. A directed attention mask allows tactile queries to attend…",
+      "authors": [
+        "Chao Xue",
+        "Chaofan Zhang",
+        "Wenxuan Ma",
+        "Guocai Yao",
+        "Shaowei Cui",
+        "Shuo Wang"
+      ],
+      "published": "2026-08-20T02:28:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.19574v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -13196,6 +13377,89 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.20112v1",
+      "title": "Flow Matching-Based PET Image Reconstruction",
+      "abstract": "Generative models have shown strong potential for positron emission tomography (PET) image reconstruction. Although diffusion model-based reconstruction methods have demonstrated promising performance, they often require many reverse sampling steps with data-consistency updates incorporated into the sampling process. Flow matching offers an attractive alternative because it can directly estimate clean images from intermediate states, allowing data-consistency refinement to be separated from flow propagation. In this work, we proposed flow matching-based PET image reconstruction methods. We first established PET-FlowDPS by incorporating Poisson likelihood guidance with an expectation-maximiza…",
+      "authors": [
+        "Fumio Hashimoto",
+        "Ziqian Huang",
+        "Tatsuya Yokota",
+        "Kuang Gong"
+      ],
+      "published": "2026-08-20T14:42:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20112v1",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "physics.med-ph"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
+      "id": "2608.19965v1",
+      "title": "Flow Matching Meets 3D Curvilinear Structure Segmentation in Medical Imaging",
+      "abstract": "Segmentation of curvilinear anatomical structures in 3D medical images remains challenging due to complex topology, severe class imbalance, weak contrast, and large variations in structure morphology. While deep learning approaches for 3D curvilinear segmentation have been proposed, they are often tailored to specific anatomies or modalities, limiting generalization across clinical settings and leaving room for improvement. Recent generative models have shown the benefits of iterative prediction for structured segmentation tasks, yet diffusion-based methods suffer from computationally expensive sampling, hindering their use on high-resolution 3D volumes. We present 3D-CurvSegFlow, a flow mat…",
+      "authors": [
+        "Sidi Mohamed Sid'El Moctar",
+        "Nicolas Vitry",
+        "Hélène Bouvrais"
+      ],
+      "published": "2026-08-20T12:35:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.19965v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
+      "id": "2608.19801v1",
+      "title": "Unsupervised Anomaly Detection Using Flow Matching on Tabular Data",
+      "abstract": "Financial anomaly detection often relies on large unlabeled transaction logs, where anomalous samples may already be present during training. Such training-set contamination violates the clean-normal data assumption underlying many anomaly detection methods. Although flow matching has demonstrated strong performance in generative modeling, its robustness in unsupervised tabular anomaly detection remains underexplored. In this work, we study flow-matching-based anomaly detection under contaminated training data by comparing Time-Conditioned Contraction Matching (TCCM) with Forest-Flow and evaluating multiple anomaly scoring functions. Our results show that the choice of anomaly score is criti…",
+      "authors": [
+        "Philip Konz",
+        "Tejaswini Medi",
+        "Margret Keuper"
+      ],
+      "published": "2026-08-20T08:56:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.19801v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-21T07:47:59.228490+00:00"
     },
     {
       "id": "2606.31680v1",
