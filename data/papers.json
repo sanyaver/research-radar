@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-23T07:37:23.180262+00:00",
-  "total": 475,
-  "new_this_run": 0,
+  "last_updated": "2026-08-24T08:00:03.611837+00:00",
+  "total": 487,
+  "new_this_run": 12,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -256,6 +256,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-21T09:31:27.435122+00:00"
+    },
+    {
+      "id": "2608.20699v1",
+      "title": "ArtiMo: Agent-Driven Articulated Mesh Animation",
+      "abstract": "Animating articulated 3D meshes via text requires satisfying strict kinematic constraints, modeling causal interactions between parts, and achieving instruction fidelity. Due to the absence of task-specific training data and explicit articulation supervision, existing data-driven mesh animation methods are largely inapplicable to this setting. To address this, we propose ArtiMo, a novel agent-driven framework for text-guided articulated mesh animation. Operating in a zero-shot manner, ArtiMo develops an agentic pipeline powered by Large Language and Vision-Language Models (LLMs/VLMs) to orchestrate motion generation. By synergizing the explicit kinematic constraints of URDF with the agent's …",
+      "authors": [
+        "Chunyu Zou",
+        "Peng Dai",
+        "Yi-Hua Huang",
+        "Ze Yuan",
+        "Jingwei Huang",
+        "Yeming Yao"
+      ],
+      "published": "2026-08-21T03:08:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20699v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 22,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 120
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
     },
     {
       "id": "2606.30608v2",
@@ -1114,6 +1143,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
+      "id": "2608.19567v2",
+      "title": "Block3D: Efficient Text-to-3D Generation via Block-Wise Diffusion",
+      "abstract": "While text-to-3D generation has advanced rapidly, achieving high geometric fidelity at low inference cost remains challenging. Existing text-to-3D methods either decode discrete shape tokens autoregressively or iteratively refine global 3D representations with diffusion or flow models. However, autoregressive decoding is sequential and cannot revise errors, whereas diffusion and flow-matching models repeatedly process the full representation, making high-quality generation increasingly expensive. In this paper, we propose Block3D, a block-wise diffusion framework that partitions the discrete shape-token sequence into contiguous blocks, generates the blocks autoregressively, and jointly denoi…",
+      "authors": [
+        "Bowen Cui",
+        "Weijie Wang",
+        "Zeyu Zhang",
+        "Yefei He",
+        "Mingda Lin",
+        "Haoyu Zhao"
+      ],
+      "published": "2026-08-20T02:12:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.19567v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 91
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
     },
     {
       "id": "2607.00417v1",
@@ -4513,6 +4571,42 @@
       "first_seen": "2026-08-21T07:47:59.228490+00:00"
     },
     {
+      "id": "2608.20448v1",
+      "title": "MultiCube: Compositional 3D Generation With Part-Level Semantic and Spatial Control",
+      "abstract": "Digital 3D objects used in games and animation are often required to be compositional; that is, decomposed into semantically meaningful parts. Recent 3D generation methods can produce high-quality compositional objects conditioned on image or text prompts. Yet, such global conditioning lacks the precise part-level controllability required for professional creative workflows. To address this, we introduce MultiCube, a novel compositional 3D generation method that provides explicit, independent control over both the semantics and spatial arrangement of each part. MultiCube takes as input a global text prompt, a text schema specifying the desired parts, and a spatial layout indicating the bound…",
+      "authors": [
+        "Ava Pun",
+        "Kangle Deng",
+        "Yiheng Zhu",
+        "Jun-Yan Zhu",
+        "Maneesh Agrawala",
+        "Tinghui Zhou"
+      ],
+      "published": "2026-08-20T17:44:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20448v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -5840,6 +5934,94 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
+      "id": "2608.21070v1",
+      "title": "TracingFlow: A Simulation-Free Trajectory Inference Framework Based on Second-Order Dynamics",
+      "abstract": "Inferring continuous system evolution from sparse temporal snapshots is a key challenge in generative modeling and single-cell omics. While Optimal Transport (OT) is popular, existing frameworks are largely restricted to first-order dynamics, assuming memoryless velocity fields. This limits expressiveness, as first-order systems fail to account for regulatory momentum and time-delayed responses inherent in processes like cell differentiation. Here, we introduce TracingFlow, a simulation-free Flow Matching framework generalizing to second-order dynamics. By using neural networks to regress the acceleration field, TracingFlow provides an exact, efficient solution to the Dynamical Optimal Accel…",
+      "authors": [
+        "Yuhao Sun",
+        "Zekun Wu",
+        "Zixun Huang",
+        "Peijie Zhou"
+      ],
+      "published": "2026-08-21T13:11:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21070v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.GN"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.20969v1",
+      "title": "Kinematic Knowledge Maps for Pattern Alignment: Structured Latent Representational Learning in Multimodal Gait Analysis",
+      "abstract": "Multimodal clinical AI is limited by weakly aligned inputs and the absence of domain-specific interpretable representations, particularly when learning from dense video stream, structured time-series, and template-based kinematic text. Here we present ScoliDetect, an explainable framework for adolescent idiopathic scoliosis screening from monocular gait video, built around a kinematic knowledge map (KKM) and complementary template-based kinematic text derived from per-sequence pose statics. KKM is a fixed-index structured representation that encodes gait features across absolute motion, self-skeleton configuration and joint-joint signal correlation, providing anchor-referenced multimodal fus…",
+      "authors": [
+        "Chen Dong",
+        "He Zonglin",
+        "Cheung Kenneth M. C"
+      ],
+      "published": "2026-08-21T10:46:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20969v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.20754v1",
+      "title": "SPARK-SAM: Self-Prompt Adaptation with Response Knowledge for SAM in Infrared Small Target Segmentation",
+      "abstract": "Promptable segmentation models provide a reusable interface, but direct transfer to automatic infrared small-target segmentation (IRSTD) exposes a mismatch between spatial prompts and target-domain mask responses. In a diagnostic using target-covering loose-box prompts deterministically derived from test reference masks, the best official SAM2.1 results are only 4.69%, 1.64%, and 2.28% IoU on NUAA-SIRST, NUDT-SIRST, and IRSTD-1K. We introduce SPARK-SAM (Self-Prompt Adaptation with Response Knowledge for SAM), which learns target-domain response knowledge and conditions the decoder through an image-conditioned joint self-prompt state. Training combines benchmark-mask supervision with reliabil…",
+      "authors": [
+        "Aji Mao",
+        "Zhenming Peng",
+        "Bailin Mu",
+        "Tian Pu"
+      ],
+      "published": "2026-08-21T05:30:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20754v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -10488,6 +10670,119 @@
       "first_seen": "2026-08-21T07:47:59.228490+00:00"
     },
     {
+      "id": "2608.21083v1",
+      "title": "Teaching is a Process: The TOSS Framework for Modeling Human Teaching Decisions in Human-Interactive Robot Learning",
+      "abstract": "Successful Human-Robot Teaching assumes alignment between robot processing needs and human teaching intent. To better understand this alignment, this work seeks to uncover the underlying logic that humans intuitively apply when teaching. Through an exploratory, bottom-up study with N=34, participants observing two distinct robot Reinforcement Learning (RL) scenarios, we analyze 204 intuitive teaching responses across early, middle, and late learning phases. Results reveal that teaching decisions consist of a nuanced, interconnected network of Triggers (situational catalysts), Objectives (subjective teaching targets), Signals (communicative acts), and Strategies (high-level governance) in whi…",
+      "authors": [
+        "Bernhard Hilpert",
+        "Kim Baraka",
+        "Joost Broekens"
+      ],
+      "published": "2026-08-21T13:28:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21083v1",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.20971v1",
+      "title": "Training DeepFilterNet with Accurate Room Acoustic Simulations Improves Single-Channel Speech Enhancement",
+      "abstract": "We investigate how the realism of synthetic room impulse response (RIR) datasets affects the training of DeepFilterNet3 for single-channel speech enhancement. We compare a DNS4 image-source-method (ISM) RIR dataset with a higher-acoustic-fidelity dataset generated using hybrid wave-based and geometrical acoustics simulation. Rather than isolating individual simulation factors, we compare complete RIR generation pipelines while keeping the enhancement model unchanged. Models are evaluated on unseen measured RIRs using objective speech enhancement metrics and downstream automatic speech recognition (ASR). Training with the higher-fidelity dataset consistently yields modest improvements in obje…",
+      "authors": [
+        "Alessia Milo",
+        "Georg Götz",
+        "Steinar Guðjónsson",
+        "Daniel Gert Nielsen",
+        "Jesper Pedersen",
+        "Finnur Pind"
+      ],
+      "published": "2026-08-21T10:50:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20971v1",
+      "categories": [
+        "eess.AS",
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.20904v1",
+      "title": "Scalable Distributed Simulation-Based Testing for Automated Driving Systems",
+      "abstract": "Virtual scenario-based testing is a key enabler for validating automated driving systems (ADS) and intelligent transport systems (ITS). However, executing large-scale test suites involving possibly thousands of scenarios remains labor-intensive and difficult to scale. This paper presents an end-to-end, DevOps-driven framework that automates build, deployment, and distributed execution of CARLA-based scenario tests of an ADS on a lightweight Kubernetes cluster. ROS 2 applications are packaged as standardized Kubernetes Helm charts generated from repository specifications, while entire simulation environments are composed declaratively via dynamic Helmfile manifests. The paper describes how a …",
+      "authors": [
+        "Christian Geller",
+        "Benedikt Haas",
+        "Lutz Eckstein"
+      ],
+      "published": "2026-08-21T09:22:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20904v1",
+      "categories": [
+        "cs.RO",
+        "cs.DB",
+        "cs.SE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.20660v1",
+      "title": "Predicting Resource Efficient Hamiltonian Decomposition for Continuous-Time Quantum Walk Simulations",
+      "abstract": "Simulating a continuous-time quantum walk (CTQW) on a graph in the circuit model of quantum computing requires decomposing its Hamiltonian into terms that can be Trotterized into hardware-native gates. We consider two such decompositions: the standard Pauli decomposition and the recently introduced matching decomposition. Prior work suggests that the matching decomposition uses fewer CX gates on sparse graphs, while the Pauli decomposition uses fewer on denser graphs. Since CX gates dominate error and runtime on current hardware, we train machine learning models to predict, for a given graph, which of the two decompositions produces the smaller CX gate count. We train and evaluate on the com…",
+      "authors": [
+        "Mostafa Atallah",
+        "Rebekah Herrman",
+        "Zain H. Saleem"
+      ],
+      "published": "2026-08-21T01:34:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20660v1",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -13460,6 +13755,58 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-21T07:47:59.228490+00:00"
+    },
+    {
+      "id": "2608.21286v1",
+      "title": "Difficulty-Calibrated Interpolation Paths for Conditional Flow Matching",
+      "abstract": "Conditional Flow Matching trains generative models by regressing a network onto the velocity of a prescribed noise-to-data interpolation path. The interpolation schedule that shapes this path is known to affect convergence and sample quality, yet it is invariably fixed in advance, independent of both the data and the model. We show that the regression difficulty of Conditional Flow Matching varies systematically along the path, and we propose Difficulty-Calibrated Flow Matching, which derives the schedule from the model itself: a short pilot run with the linear path records the per-time loss, and the schedule is set to the quantile function of this difficulty profile, so the trajectory linge…",
+      "authors": [
+        "Airin Akter Tania",
+        "Md Raihan Khan"
+      ],
+      "published": "2026-08-21T16:42:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21286v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.20869v1",
+      "title": "ReCurveflow: A Flow Matching Framework that Learns Curved Reaction Trajectories to Predict Transition State Geometries",
+      "abstract": "Predicting transition states (TS) in chemical reactions is crucial, as they provide insights into reaction mechanisms. Recent work on TS prediction have focused on flow matching supervised on straight linear paths that do not align with actual reaction trajectories. We propose a novel flow matching-based framework ReCurveflow that learns to predict TS geometries supervised on continuously curved reference paths interpolated from a full NEB-derived band of molecular geometries. We also introduce off-path correction, which grants ReCurveflow with the ability to produce corrective velocity fields when engaged off-path geometry states during inference rollout, leading to better resistance agains…",
+      "authors": [
+        "Seungheun Baek",
+        "Mogan Gim",
+        "Jaewoo Kang"
+      ],
+      "published": "2026-08-21T08:38:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.20869v1",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-24T08:00:03.611837+00:00"
     },
     {
       "id": "2606.31680v1",
