@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-24T08:00:03.611837+00:00",
-  "total": 487,
-  "new_this_run": 12,
+  "last_updated": "2026-08-25T07:48:53.618398+00:00",
+  "total": 512,
+  "new_this_run": 25,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -534,6 +534,42 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-05T09:40:17.805306+00:00"
+    },
+    {
+      "id": "2608.22296v1",
+      "title": "TONAV: Task-Oriented Navigation and Action-Velocity Chunk Learning for Articulated Object Quadrupedal Mobile Manipulation",
+      "abstract": "Quadruped mobile manipulation requires two tightly coupled capabilities: reaching manipulation-ready configurations and maintaining stable contact throughout articulated-object interaction. However, existing methods often terminate navigation near the target, leaving a gap between reachability and manipulation readiness, while tracking lag, motion jitter, and contact instability limit continuous interaction. To address these challenges, we present TONAV, a unified framework integrating task-oriented navigation with action-velocity chunk learning. First, we introduce a position-velocity-coupled teleoperation framework that explicitly captures motion dynamics to improve master-follower consist…",
+      "authors": [
+        "Haoran Lin",
+        "Mingyu Yang",
+        "Pengfei Qi",
+        "Kehan Chen",
+        "Qiang Diao",
+        "Liangji Zeng"
+      ],
+      "published": "2026-08-23T08:41:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22296v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
     },
     {
       "id": "2606.31993v1",
@@ -4607,6 +4643,122 @@
       "first_seen": "2026-08-24T08:00:03.611837+00:00"
     },
     {
+      "id": "2608.23075v1",
+      "title": "When a neural surrogate cannot accelerate a solver: runtime share, closed-loop drift, and the economics of uncertainty gating in a stiff coupled simulation",
+      "abstract": "Learned surrogates for expensive inner solver blocks are a widely pursued route to faster multiphysics simulation. We report a controlled, end-to-end negative result and identify three structural barriers, none of them a deficiency of the network we trained. The testbed is the implicit Newton solve coupling energy-dependent neutrino radiation to matter in a general-relativistic radiation-hydrodynamics code, its most expensive physics routine per call. First, per-call cost and share of runtime are different quantities, and only the second bounds acceleration. An exclusive self-time profile puts the target block at 16.9% of critical-rank wall clock, capping any surrogate at ~1.2x by Amdahl's l…",
+      "authors": [
+        "L. Thümmler",
+        "T. Kuroda"
+      ],
+      "published": "2026-08-24T10:29:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23075v1",
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.HE",
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.23040v1",
+      "title": "RoboRacer Arena: Scaling High-Fidelity Autonomous Racing in Isaac Sim",
+      "abstract": "RoboRacer offers a standardized platform for research using 1:10-scale autonomous vehicles, but the variety of available tracks hinders the process of acquiring policies. Although existing occupancy-grid simulators allow for the quick addition of new maps, they fail to include physical contact, while 3D simulators require each circuit to be implemented as a separate asset, thus limiting their scalability. In order to overcome this issue, we have developed RoboRacer Arena, a system that creates 3D racing environments directly from occupancy maps. Our method starts by using a flood fill algorithm to extract the drivable corridors and to identify the track boundaries, which are then used to est…",
+      "authors": [
+        "Mihaela-Larisa Clement",
+        "Agnes Poks",
+        "Ezio Bartocci"
+      ],
+      "published": "2026-08-24T09:44:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23040v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.21928v1",
+      "title": "GuardianBench: A Same-Scene Instruction-Contrastive Benchmark for Latent Contextual Risk in Embodied AI",
+      "abstract": "In embodied AI, safety risk can be latent: a benign instruction and a safe scene become hazardous only when composed. Prior work has advanced embodied safety by varying visual contexts or evaluating execution-time dynamics, but the complementary axis of fixing the scene and varying only the instruction remains underexplored. We introduce GuardianBench, an instruction-contrastive benchmark grounded in international safety standards that isolates this latent contextual risk through 3,024 instruction-scene examples organized as same-scene Safe/Unsafe contrastive pairs across various hazard categories. Benchmarking state-of-the-art vision-language models (VLMs) reveals instruction-insensitive ve…",
+      "authors": [
+        "Zhesheng Zhang",
+        "Jiahao Lu",
+        "Wei Liu",
+        "Cong Pan",
+        "Jianhua Yang",
+        "Yixiang Chen"
+      ],
+      "published": "2026-08-22T11:40:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21928v1",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.21572v1",
+      "title": "Betting for Sim-to-Real Performance Certificates",
+      "abstract": "Consider a typical test of a robot system: one observes a sequence of outcomes concerning some aspect of interest (crash or no crash, tracking error, time to completion), and reports a mean (crash risk, average error, mean time to completion) and, more importantly, an interval guaranteed to contain that mean at a prescribed confidence, referred to as a performance certificate. Given expensive real-world trials, the sample size is therefore small, and the certificate is often loose. Now consider the same procedure, except that before each real outcome is revealed, the operator ``peeks'' at a large bank of simulated results, and places a bet on where the real outcome will land. As the real out…",
+      "authors": [
+        "Yujia Chen",
+        "Bowen Weng"
+      ],
+      "published": "2026-08-21T19:20:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21572v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -6022,6 +6174,140 @@
       ],
       "has_code": true,
       "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.23206v1",
+      "title": "Learning Spherical Occupancy Profiles for Multi-View 3D Reconstruction and Generation",
+      "abstract": "We study spherical occupancy profiles-the ray-wise occupancy probability profiles P(r) = T(r) o(r) distilled from multi-view 3D Gaussian reconstructions-as a unified intermediate representation for both discriminative and generative 3D reconstruction from images. On a 999-object subset of Google Scanned Objects with 48 turntable views each, we train (i) a discriminative per-ray decoder that injects global view-averaged and ray-specific image evidence into a FiLM-conditioned profile head, reaching median soft depth error 0.035 (normalized) on an independent 90-object test split, and (ii) a generative pipeline built on a profile VAE and a latent diffusion model, which supports unconditional sa…",
+      "authors": [
+        "YiHsuan Tsai"
+      ],
+      "published": "2026-08-24T12:56:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23206v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22692v1",
+      "title": "Hybrid Generative-Discriminative Object Placement",
+      "abstract": "As an important operation of image composition, object placement aims to predict the plausible placement (location, scale) for the inserted foreground object. Previous object placement methods can be divided into generative methods and discriminative methods, both of which cannot balance efficiency and effectiveness well. In this work, we propose a semi-generative method in the middle ground between them. In particular, we assign uniformly distributed anchors on the background. Then, we fuse foreground and background features to predict the rationality score for each anchor and predict plausible placement sets for positive anchors. Extensive experiments on the OPA dataset show that our metho…",
+      "authors": [
+        "Siyuan Zhou",
+        "Li Niu"
+      ],
+      "published": "2026-08-24T01:10:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22692v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.21685v1",
+      "title": "In-Situ Reconstruction of the International Space Station Using 3D Gaussian Splatting and Astrobee",
+      "abstract": "This article presents a novel 3D reconstruction and mapping of the interior of the International Space Station (ISS) using 3D Gaussian Splatting (3DGS). Using existing grayscale images from the Astrobee free-flying robot dataset, we construct a full 3D splat of the ISS' Kibō or Japanese Experiment Module (JEM). 3DGS has in recent years shown promise in providing novel view synthesis of scenes captured from many images or videos, this article applies this approach to human spaceflight systems. We compare our 3DGS architecture to existing methods such as Nerfacto and TensoRF and show that reconstruction improves the state-of-the-art in both scene quality and rendering speed. We show that with …",
+      "authors": [
+        "Hudson Kim",
+        "Ryan Soussan",
+        "Brian Coltin",
+        "Jordan Kam"
+      ],
+      "published": "2026-08-21T23:20:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21685v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.21592v1",
+      "title": "Force/Torque-Based Kinematic Adaptation for Robotic Manipulation Tasks",
+      "abstract": "Contact-rich robotic manipulation requires an accurate model of the kinematic relationship between a robot's joints and the task features it senses. This relationship is rarely known exactly: it changes with each tool the robot picks up and shifts, sometimes almost instantaneously, as contact modes change --- especially for multi-fingered hands that make and break contact at points that are not exactly prescribed, as in full-hand grasping. This paper develops an adaptive scheme that estimates that relationship online, using only joint-angle sensing and a wrist-mounted force/torque sensor, with no exteroceptive measurement of the tool tip. We derive a provably stable kinematic update law that…",
+      "authors": [
+        "Carl Glen Henshaw"
+      ],
+      "published": "2026-08-21T19:51:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21592v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.21543v1",
+      "title": "presto: Efficient, Training-free, and Open-world Object Placement via Imaginary Search",
+      "abstract": "Object placement is critical in image composition, requiring spatially and semantically coherent positioning of objects within diverse scenes. Existing approaches typically rely on hand-crafted rules or supervised learning on limited datasets, which restricts their generalization and interpretability, especially in open-world scenarios involving novel objects and scenes. In this work, we reformulate open-world object placement as a heuristic search task guided by reasoning from a Multimodal Large Language Model (MLLM). We introduce \\textsf{presto}, a zero-shot, training-free framework that operates within an imaginary action space to iteratively refine object position and scale. Our coarse-t…",
+      "authors": [
+        "Weixuan Ding",
+        "Shang Liu",
+        "Hanyu Pei",
+        "Zeyan Liu"
+      ],
+      "published": "2026-08-21T18:32:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21543v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -10783,6 +11069,265 @@
       "first_seen": "2026-08-24T08:00:03.611837+00:00"
     },
     {
+      "id": "2608.23070v1",
+      "title": "From Generation to Simulation: How Far Are World Models from Being True Simulators?",
+      "abstract": "With the rapid progress of diffusion models and large-scale video generation, generative world models are increasingly expected to replace traditional simulators, including physics engines, game engines, and reinforcement-learning environments. Yet the remaining distance from generation to simulation lacks a systematic assessment. We present a capability-based study using an external yardstick: eight capabilities of a traditional simulator, namely asset construction, physics engine, interaction, controllability, stability, state feedback, diversity, and evaluation metrics. We trace three main technical routes--latent dynamics, video generation, and joint-embedding prediction--and map exactly…",
+      "authors": [
+        "Tong Wang",
+        "Huan Deng",
+        "Mucheng Yang",
+        "Yang He",
+        "Xiaohui Kuang",
+        "Gang Zhao"
+      ],
+      "published": "2026-08-24T10:16:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23070v1",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22906v1",
+      "title": "AquaFlow: A Monocular Gaussian Splatting SLAM for Underwater Streaming Reconstruction",
+      "abstract": "Recent monocular 3D Gaussian Splatting (3DGS) streaming reconstruction methods have achieved impressive performance by balancing reconstruction quality and efficiency. However, extending these frameworks to underwater scenes remains challenging due to severe visual degradation, such as light attenuation and scattering, which degrades camera pose tracking and distorts scene geometry. To address these challenges, we propose AquaFlow, a monocular Gaussian Splatting streaming reconstruction framework for efficient and high-fidelity underwater reconstruction. Specifically, AquaFlow fine-tunes a 3D vision foundation model on large-scale underwater data for robust pose and pointmap estimation, and …",
+      "authors": [
+        "Yingxiang Xu",
+        "Kerui Ren",
+        "Wenqi Guo",
+        "Changjian Jiang",
+        "Tao Lu",
+        "Linning Xu"
+      ],
+      "published": "2026-08-24T07:39:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22906v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22773v1",
+      "title": "LagrangeGS: Non-Conservative Lagrangian System on Dynamic 3D Gaussian Splatting",
+      "abstract": "Dynamic 3D Gaussian Splatting (3DGS) achieves photorealistic reconstruction of time-varying scenes, and recent physics-aware extensions improve extrapolation by explicitly predicting velocity fields. However, these extensions merely fit vector fields to visual deformations without satisfying Lagrangian mechanics, leading to three major issues: (i) physically inconsistent trajectories, (ii) lack of time-reversibility, and (iii) geometric collapse during long-term extrapolation. In this paper, we propose LagrangeGS, which formulates dynamic 3DGS as a non-conservative Lagrangian system. While this Lagrangian formulation fundamentally solves (i), a direct application of general LNNs to dynamic 3…",
+      "authors": [
+        "Shogo Sato",
+        "Takuhiro Kaneko",
+        "Shoichiro Takeda",
+        "Tomoyasu Shimada",
+        "Riku Inoue",
+        "Kazuhiko Murasaki"
+      ],
+      "published": "2026-08-24T03:51:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22773v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22701v1",
+      "title": "Physics Filtering Favors the Generalization of Robot Learning",
+      "abstract": "Living organisms exhibit extraordinary adaptability to unseen environments through their intrinsic physical structures and lifelong feedback-driven learning. Endowing robots with comparable generalization is critical for reliable operation in the real world. While recent approaches attempt to improve generalization by scaling training data, such strategies remain impractical for robotics, where collecting real-world demonstrations at the scale of large language models is prohibitively costly and slow. Contrary to this reliance on massive datasets, we show that robots can generalize effectively under dynamics uncertainties even with limited training data by leveraging a feedback mechanism, na…",
+      "authors": [
+        "Jindou Jia",
+        "Shixuan Han",
+        "Meng Wang",
+        "Gen Li",
+        "Zihan Yang",
+        "Sicheng Zhou"
+      ],
+      "published": "2026-08-24T01:44:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22701v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22344v1",
+      "title": "Fast and Compact 3D Gaussian Splatting with Polarized Opacity Prior",
+      "abstract": "3D Gaussian Splatting (3DGS) achieves state-of-the-art rendering quality at real-time speeds but suffers from \"model bloat\" - a large number of redundant, low-opacity Gaussians that inflate memory usage and training costs. This inefficiency stems from the standard \"densify-then-prune\" paradigm, which expands the model aggressively before relying on pruning to achieve compactness. To mitigate this problem, we present an efficient training framework that builds an intrinsically compact representation, replacing the conventional densify-then-prune cycle. Our method leverages a synergistic design: an L2 reconstruction loss to provide error-proportional gradients that stabilize optimization, and …",
+      "authors": [
+        "Zi-Ming Wang",
+        "Kai-Wen Duan",
+        "Kowei Huang",
+        "Akihiro Sugimoto",
+        "Shang-Hong Lai"
+      ],
+      "published": "2026-08-23T10:21:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22344v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22074v1",
+      "title": "Cross-Temperature Defect Identification in Atomistic Simulations via Multi-Level Domain Alignment",
+      "abstract": "Identifying atomic defects at elevated temperature is difficult because thermal fluctuations blur the local symmetry that both geometric heuristics and supervised classifiers rely on: trustworthy labels exist in low-temperature reference configurations, while the high-temperature regime where robust analysis matters most is effectively unlabeled. We cast this as a cross-temperature domain-shift problem and align the two domains at three levels: an equivariant denoiser at the input level, cross-temperature contrastive learning at the representation level, and a morphology-aware regularizer that steers predictions toward the compact geometry of physical defect structures. Because no atom-wise …",
+      "authors": [
+        "Yating Fang",
+        "Jungmin Kim",
+        "Qian Qian Zhao",
+        "Pallavi Biswas",
+        "Joshua M. Gonjon",
+        "Ryan B. Sills"
+      ],
+      "published": "2026-08-22T18:35:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22074v1",
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.21849v1",
+      "title": "GaussVid: Sparse-View Gaussian Splatting with 3D-Aware Video Diffusion Priors",
+      "abstract": "3D Gaussian Splatting (3DGS) has achieved remarkable success in novel view synthesis; however, reconstructions under sparse views often exhibit noticeable artifacts. While recent video diffusion models provide strong spatio-temporal priors for 3DGS restoration, directly fine-tuning them for restoration is suboptimal, as they lack awareness of the underlying multi-camera geometry, resulting in multi-view inconsistencies. In this work, we propose a novel 3D-aware video restoration framework designed to enhance the quality of sparse 3DGS reconstruction. Specifically, we construct a large-scale 3DGS video dataset to enable specialized fine-tuning. To bridge the gap between 2D video generation an…",
+      "authors": [
+        "Xinhui Liu",
+        "Can Wang",
+        "Wei Jiang",
+        "Wei Wang",
+        "Dong Xu"
+      ],
+      "published": "2026-08-22T08:47:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21849v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.21700v1",
+      "title": "Scalable quantum simulation of continuous-time generative models via tensor networks",
+      "abstract": "Continuous-time flow and diffusion models are widely used across many application domains, from large-scale deployment in computer vision and protein folding to emerging adoption for modeling language, time series, and quantum states. After training, inferring statistical properties from continuous-time models is costly. Wavefunction flows target this cost by recasting learned transport as unitary evolution, whose final Born distribution approximates the target distribution. This prepares a coherent amplitude encoding (a qsample) that can be post-processed by quantum algorithms offering a quadratic advantage over Monte Carlo sampling. We present the first numerical study of these flows, in w…",
+      "authors": [
+        "Nathan X. Kodama",
+        "L. Andrew Wray",
+        "Sam Cochran",
+        "Chad Rigetti",
+        "Shravan Veerapaneni",
+        "Michael J. Keiser"
+      ],
+      "published": "2026-08-22T00:24:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.21700v1",
+      "categories": [
+        "quant-ph",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -11764,6 +12309,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-20T07:45:59.119520+00:00"
+    },
+    {
+      "id": "2608.23410v1",
+      "title": "Photorealistic Novel View Synthesis of Human Faces using Next-Scale Transformers",
+      "abstract": "Photorealistic novel view synthesis of people remains challenging at high spatial resolutions and across multiple target cameras, where preserving identity, fine appearance details, and geometric coherence is critical. We build on the next-scale autoregressive paradigm and adapt it for human-centric view synthesis by enabling higher image resolutions, multi-view outputs and stronger cross-view consistency in a single forward pass. We train on a synthetic dataset of human faces spanning diverse identities and apparel. Contrary to diffusion models, this paradigm does not need 2D pre-training and, thanks to its next-scale architecture, it benefits from lower-resolution, general-purpose pre-trai…",
+      "authors": [
+        "Federico Stella",
+        "Fei Jiang",
+        "Zhongshi Jiang",
+        "Zohar Barzelay",
+        "Emanuel Garbin",
+        "Amin Jourabloo"
+      ],
+      "published": "2026-08-24T15:55:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23410v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22465v1",
+      "title": "M$^3$ISR: A Multi-Modal Multi-View Benchmark for 3D/4D Gaussian Splatting and Feedforward Compression",
+      "abstract": "High-fidelity free-viewpoint video (FVV) and interactive rendering increasingly rely on explicit Gaussian representations, yet practical deployment remains constrained by representation size, dynamic updates, and computational cost. Existing multi-view video benchmarks provide valuable real-captured content, but they make it difficult to isolate the effects of controlled camera geometry, representation efficiency, and temporal redundancy. We introduce M$^3$ISR, a controlled synthetic benchmark for 3D and 4D Gaussian Splatting (3DGS/4DGS). The benchmark contains 25 scenes from five indoor and outdoor scene groups, two camera/motion configurations, six synchronized 1080p views, and dense groun…",
+      "authors": [
+        "Xinhui Liu",
+        "Lei Liu",
+        "Zhenghao Chen",
+        "Lebin Zhou",
+        "Wei Wang",
+        "Wei Jiang"
+      ],
+      "published": "2026-08-23T15:44:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22465v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -13809,6 +14419,67 @@
       "first_seen": "2026-08-24T08:00:03.611837+00:00"
     },
     {
+      "id": "2608.22888v1",
+      "title": "NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction",
+      "abstract": "Reconstructing photorealistic scenes in unconstrained underwater environments remains challenging due to severe media-induced light scattering and unpredictable dynamic objects. Recent feed-forward visual foundation models have demonstrated remarkable capabilities in generalized novel view synthesis and tracking. However, when directly applied to aquatic videos, optical attenuation and motion interference fatally corrupt their feature aggregation, leading to severe tracking and reconstruction failures. To overcome these limitations, we present NemoSplat, the first feed-forward 4D Gaussian Splatting framework tailored for media-aware dynamic reconstruction directly from uncalibrated marine vi…",
+      "authors": [
+        "Xiaopeng Guo",
+        "Wai Chung Tse",
+        "Yipeng Zhu",
+        "Hanwen Zhang",
+        "Huajian Huang",
+        "Sai-Kit Yeung"
+      ],
+      "published": "2026-08-24T07:20:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22888v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22532v1",
+      "title": "SymmAdapt: Symmetrical Flow Matching for Source-Free Domain Adaptation in Medical Image Segmentation",
+      "abstract": "Domain shift across imaging modalities and acquisition sites remains a significant barrier to the clinical deployment of segmentation models. Source-free unsupervised domain adaptation (SFUDA) addresses this by adapting a pretrained model to an unlabeled target domain without requiring access to sensitive source data. We introduce a novel SFUDA framework built on Symmetrical Flow Matching, a unified generative model that segments an input image and synthesizes a source-like image from a mask within the same learned flow. By initializing inference from a domain-agnostic Gaussian origin, the model preserves structural consistency across domains and grounds predictions in learned anatomy rather…",
+      "authors": [
+        "Tal Grossman",
+        "Noa Cahan",
+        "Hayit Greenspan"
+      ],
+      "published": "2026-08-23T18:09:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22532v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -14924,6 +15595,90 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-19T07:42:35.946902+00:00"
+    },
+    {
+      "id": "2608.23173v1",
+      "title": "BenthicFlow: Generating Extensible Underwater Environments via Flow Matching",
+      "abstract": "Computer vision applications for 3D scene understanding in underwater environments remain challenging due to the lack of high-quality 3D data and the inability of surface-trained models to generalize to underwater scenes. To address this challenge, an emerging trend is to employ generative models to close the data domain gap. However, existing methods assemble large scenes by stitching independently generated tiles post hoc with separately trained models, while demonstrating heterogeneous landscapes only within individual survey sites. We introduce BenthicFlow, a unified framework based on a single conditional flow-matching model that jointly generates aligned textures and depth maps. A Mult…",
+      "authors": [
+        "Joaquín Figueira",
+        "Camile Lendering",
+        "Manfred Gonzalez-Hernandez",
+        "Giacomo D'Amicantonio",
+        "Erkut Akdag",
+        "Egor Bondarev"
+      ],
+      "published": "2026-08-24T12:21:41Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23173v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22990v1",
+      "title": "InstructMove: A Text-Indispensable Benchmark for Instruction-Following Manipulation",
+      "abstract": "Vision-language-action (VLA) models have made general-purpose robot manipulation increasingly plausible by conditioning robot actions on natural-language instructions. A key test of such generality is whether policies actually follow language instructions. Yet many manipulation benchmarks leave this ability underdetermined: the intended object or destination is often visually salient or uniquely feasible, allowing policies to succeed without grounding the instruction. We argue that instruction-following evaluation should be text-indispensable: multiple actions should be visually and physically plausible, while only one should be consistent with the language instruction. We introduce Instruct…",
+      "authors": [
+        "Mengao Zhao",
+        "Ziang Li",
+        "Chaodong Huang",
+        "Mengchen Ma",
+        "Haoyi Jiang",
+        "Yiwei Jin"
+      ],
+      "published": "2026-08-24T08:53:41Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22990v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.22102v1",
+      "title": "Learning Implicit Constitutive Laws for Dynamic 3D Gaussian Splatting from Monocular Videos",
+      "abstract": "We present GCA (Gaussian Constitutive Alignment), a framework for learning implicit constitutive laws from monocular dynamic video of deformable objects represented by 3D Gaussians. Given a static multi-view scan for geometric initialization, our method learns intrinsic physical dynamics solely from a single fixed-viewpoint video of the moving object. Existing implicit methods often suffer from local minima under noisy supervision and lack physical interpretability, while explicit approaches rely on predefined constitutive equations, limiting generalizability and becoming unstable in monocular settings. To address these challenges, our framework unifies LoRA-based adaptation with two key ali…",
+      "authors": [
+        "Xiaoyang Liu",
+        "Kai Han"
+      ],
+      "published": "2026-08-22T20:47:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22102v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-25T07:48:53.618398+00:00"
     }
   ]
 }
