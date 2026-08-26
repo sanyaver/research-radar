@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-25T07:48:53.618398+00:00",
-  "total": 512,
-  "new_this_run": 25,
+  "last_updated": "2026-08-26T07:50:55.438956+00:00",
+  "total": 525,
+  "new_this_run": 13,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1208,6 +1208,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.24199v1",
+      "title": "NVIDIA Cosmos-H-Dreams: Real-Time Generative Physics Simulation for Surgical Robotics",
+      "abstract": "Generative simulation for surgical robotics still lacks real-time interaction. Physical-robot experiments, often involving animal or cadaver labs, are time-consuming, costly, and difficult to reproduce, while classical simulators struggle to capture photorealistic appearance and deformable-tissue dynamics. We address this gap with Cosmos-H-Dreams, an integrated real-time surgical world-model system combining an action-conditioned generative model, a teacher-to-student distillation recipe, and a deployment stack built on the NVIDIA FlashDreams streaming-inference library. Starting from Cosmos-H-Surgical-Simulator, a multi-embodiment action-conditioned surgical video world model fine-tuned on …",
+      "authors": [
+        "Javier Gamazo Tejero",
+        "Lukas Zbinden",
+        "Keyur Sheth",
+        "Raghavendra K M",
+        "Nadim Daher",
+        "Diego Granero Maraña"
+      ],
+      "published": "2026-08-25T08:09:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.24199v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 90
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
     },
     {
       "id": "2607.00417v1",
@@ -4759,6 +4788,77 @@
       "first_seen": "2026-08-25T07:48:53.618398+00:00"
     },
     {
+      "id": "2608.24212v1",
+      "title": "NeoWorld-Pro: Programming Interactive Scenes from Monocular Images for Embodied Simulation",
+      "abstract": "The advancement of Embodied AI necessitates high-quality simulation assets that faithfully mirror the real world. However, transforming raw visual observations into simulation-ready scenes remains challenging due to the lack of physical grounding and scene-level interactivity in current image-to-URDF methods. We propose NeoWorld-Pro, a framework that reformulates monocular scene reconstruction as procedural programming for interactive 3D environments. Leveraging the zero-shot reasoning and code synthesis capabilities of MLLMs, NeoWorld-Pro converts a single RGB image into executable programs specifying object geometry, articulation, and physical properties. A physics-in-the-loop mechanism th…",
+      "authors": [
+        "Yumeng He",
+        "Yichen Song",
+        "Xiaotian Yang",
+        "Weijia Zhang",
+        "Zanwei Zhou",
+        "Junru Gong"
+      ],
+      "published": "2026-08-25T08:19:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.24212v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.24109v1",
+      "title": "ExMesh++: From Multi-View Images to Relightable UV-PBR Mesh Assets via Topology-Adaptive Reconstruction and Decomposition",
+      "abstract": "Multi-view reconstruction extends beyond surface recovery to editable and relightable mesh assets. Such assets require well-formed topology, valid UV parameterization, and explicit PBR material maps. Existing surface reconstruction approaches optimize implicit fields, Gaussian primitives, or other intermediate representations. Converting them into such assets often requires surface extraction and texture baking. Inverse-rendering methods estimate materials and illumination, yet these components often remain tied to neural fields or point-based primitives rather than the final mesh. Joint optimization of geometry, materials, and lighting may also allow these variables to compensate for one an…",
+      "authors": [
+        "Chuanjin Fan",
+        "Lifan Wu",
+        "Wenjie Chang",
+        "Hanzhi Chang",
+        "Wenfei Yang",
+        "Tianzhu Zhang"
+      ],
+      "published": "2026-08-25T06:16:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.24109v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 48
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -6308,6 +6408,30 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.23206v2",
+      "title": "Learning Spherical Occupancy Profiles for Multi-View 3D Reconstruction and Generation",
+      "abstract": "We study spherical occupancy profiles-the ray-wise occupancy probability profiles P(r) = T(r) o(r) distilled from multi-view 3D Gaussian reconstructions-as a unified intermediate representation for both discriminative and generative 3D reconstruction from images. On a 999-object subset of Google Scanned Objects with 48 turntable views each, we train (i) a discriminative per-ray decoder that injects global view-averaged and ray-specific image evidence into a FiLM-conditioned profile head, reaching median soft depth error 0.035 (normalized) on an independent 90-object test split, and (ii) a generative pipeline built on a profile VAE and a latent diffusion model, which supports unconditional sa…",
+      "authors": [
+        "YiHsuan Tsai"
+      ],
+      "published": "2026-08-24T12:56:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23206v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -11328,6 +11452,60 @@
       "first_seen": "2026-08-25T07:48:53.618398+00:00"
     },
     {
+      "id": "2608.24056v1",
+      "title": "PhysicsBench: A Unified Leaderboard for Generative and Predictive Models in Engineering Design and Simulation",
+      "abstract": "Generative and predictive artificial intelligence models are increasingly used to generate geometry and to predict physical fields and scalar quantities in engineering design and simulation. Yet these models are typically evaluated in isolation, on academic datasets at unconstrained scales, with inconsistent metrics and procedures. We present PhysicsBench, a unified benchmark and leaderboard that evaluates generative and predictive models under one standardized procedure. PhysicsBench spans seven generation and prediction tasks across 1D, 2D, and 3D domains and ranks 66 models on nine datasets, comprising industrial-scale CAD/CFD/FEA simulations and public references, expanded into 28 config…",
+      "authors": [
+        "Sang Won Lee",
+        "Hyogu Jeong",
+        "Namwoo Kang"
+      ],
+      "published": "2026-08-25T04:32:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.24056v1",
+      "categories": [
+        "cs.LG",
+        "cs.CE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.23994v1",
+      "title": "Bridging Teacher Expectations and Robot Learning via Coupling Dynamics",
+      "abstract": "Human-robot teaching focuses on enabling nontechnical experts to customize robots according to their needs after deployment. With recent advances in machine learning, human-robot teaching is no longer confined to offline learning where the data gathering step from a human teacher is separated from when the robot learns. Instead, more recent approaches for human-robot teaching focus on coupling human teaching with robot learning. This coupling impacts the structure, timing, and content of the teaching and learning interaction. However, it is currently unclear how such coupling dynamics affect humanrobot teaching effectiveness and human perceptions towards the teaching process. Informed by hum…",
+      "authors": [
+        "Evan Dallas",
+        "Sean Dallas",
+        "Wing-Yue Geoffrey Louie"
+      ],
+      "published": "2026-08-25T02:34:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23994v1",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -12374,6 +12552,43 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.23943v1",
+      "title": "Luce: Relightable Gaussians for 3D Asset Generation",
+      "abstract": "High-fidelity image-to-3D generation requires a 3D representation that captures both geometry and appearance. To support relighting and integration into standard rendering pipelines, the representation should include physically based rendering (PBR) modalities such as albedo, metallic-roughness, and surface normals. We propose Luce, a 3D representation that unifies geometry and PBR materials within a voxelized multimodal Gaussian cloud, using dedicated Gaussian primitives for each modality. A variational autoencoder compresses this representation into a unified material-aware latent space. A rectified-flow transformer generates this latent from a single image, conditioned on multi-layer feat…",
+      "authors": [
+        "Mayank Singh",
+        "Michele Stoppa",
+        "Alvise Memo",
+        "Rui Yu",
+        "Harsha Kalli",
+        "Srimanth Gunturi"
+      ],
+      "published": "2026-08-25T01:03:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23943v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 24
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -14480,6 +14695,152 @@
       "first_seen": "2026-08-25T07:48:53.618398+00:00"
     },
     {
+      "id": "2608.24049v1",
+      "title": "Physics-Integrated Operator Learning via Gaussian Splatting Representations",
+      "abstract": "Neural operators provide efficient surrogates for spatiotemporal PDE systems, but purely data-driven formulations often accumulate substantial errors during long-horizon autoregressive prediction and may fail to exploit available governing-equation structure. Existing approaches incorporate physics primarily through residual-based training objectives or PDE-specific architectural constraints, which can introduce optimization difficulties or limit architectural generality. In this work, we introduce a representation-level approach to physics integration in which a feed-forward Gaussian splatting (FFGS) representation serves as a continuous interface between discretized solution fields and gov…",
+      "authors": [
+        "Jihao Zhang",
+        "Junyi Guo",
+        "Jian-Xun Wang"
+      ],
+      "published": "2026-08-25T04:18:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.24049v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.24026v1",
+      "title": "NeurRAFT: Robot Motion Planning via Anchor-Level Flow Matching with Clearance-Aware Preference Tuning",
+      "abstract": "Recent end-to-end neural motion planners generate trajectories from raw sensor observations, avoiding the privileged geometric models required by classical planners. However, collision-free planning in cluttered environments remains challenging. We present NeurRAFT, a generative planning framework based on anchor-level flow matching and clearance-aware preference tuning. Unlike prior neural planners that model dense waypoint sequences and spend capacity on redundant local details and smoothness, NeurRAFT operates on compact anchor waypoints. We train the planner using a Jacobian-weighted loss that accounts for the task-space impact of each anchor. At inference, the anchors are generated in t…",
+      "authors": [
+        "Sibo Tian",
+        "Chang Liu",
+        "Minghui Zheng",
+        "Xiao Liang"
+      ],
+      "published": "2026-08-25T03:31:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.24026v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.23887v1",
+      "title": "Interpreting Control Latents for System Identification via Conditional Flow Matching",
+      "abstract": "Latent-conditioned adaptive policies can control robots across changing dynamics, but their learned latents remain internal representations of the policy rather than physical models that can be inspected, rolled out, or used by other control modules. This limits closed-loop analysis, diagnosis, and further improvement of a fixed policy. A direct mapping from latent to physical parameters is also under-specified, because multiple systems can induce similar closed-loop behavior. We therefore decode each operational latent into a distribution of quadrotor models using conditional flow matching. The decoded distribution enables two downstream uses without modifying the policy: online predictive …",
+      "authors": [
+        "Dingqi Zhang",
+        "Ruiqi Zhang",
+        "Mark W. Mueller"
+      ],
+      "published": "2026-08-24T22:54:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23887v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.23696v1",
+      "title": "Renormalization Group Flow Matching for Scalable Local Generative Modeling",
+      "abstract": "Despite their remarkable success in modeling complex data, generative models face a fundamental tradeoff. Global approaches can capture full structural coherence but suffer from high computational costs, while local models are efficient but often fail to reproduce long-range correlations and global coherence. The renormalization group (RG) bridges this gap by seamlessly connecting spatial structures across different length scales, retaining quasi-local descriptions at each step while preserving long-range correlations. We introduce renormalization group flow matching (RGFM), a generative framework that systematically structures data generation across different spatial scales. By using an exa…",
+      "authors": [
+        "Kanta Masuki",
+        "Yuto Ashida"
+      ],
+      "published": "2026-08-24T18:00:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.23696v1",
+      "categories": [
+        "cs.LG",
+        "cond-mat.stat-mech"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.22888v2",
+      "title": "NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction",
+      "abstract": "Reconstructing photorealistic scenes in unconstrained underwater environments remains challenging due to severe media-induced light scattering and unpredictable dynamic objects. Recent feed-forward visual foundation models have demonstrated remarkable capabilities in generalized novel view synthesis and tracking. However, when directly applied to aquatic videos, optical attenuation and motion interference fatally corrupt their feature aggregation, leading to severe tracking and reconstruction failures. To overcome these limitations, we present NemoSplat, the first feed-forward 4D Gaussian Splatting framework tailored for media-aware dynamic reconstruction directly from uncalibrated marine vi…",
+      "authors": [
+        "Xiaopeng Guo",
+        "Wai Chung Tse",
+        "Yipeng Zhu",
+        "Hanwen Zhang",
+        "Huajian Huang",
+        "Sai-Kit Yeung"
+      ],
+      "published": "2026-08-24T07:20:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.22888v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -15679,6 +16040,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-25T07:48:53.618398+00:00"
+    },
+    {
+      "id": "2608.24042v1",
+      "title": "Hierarchical Skill Retrieval for Data-Efficient Adaptation of Vision-Language-Action Models",
+      "abstract": "While Vision-Language-Action (VLA) models pretrained on large-scale robot datasets provide a strong foundation for robot manipulation, their performance can degrade when adapted to new tasks with limited task-specific demonstrations. Retrieval offers a practical way to reuse existing demonstrations for data-efficient adaptation, but existing methods often rely on visual similarity, state-action representations, or task-level language matching. These approaches may overlook the hierarchical structure of long-horizon manipulation tasks, where complete task matches are rare but reusable skills are often abundant. To address this challenge, we propose Hierarchical Skill Retrieval (HSR), a retrie…",
+      "authors": [
+        "Haoran Hao",
+        "Shahram Najam Syed",
+        "Jeff Schneider",
+        "Jeffrey Ichnowski"
+      ],
+      "published": "2026-08-25T04:04:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.24042v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-26T07:50:55.438956+00:00"
     }
   ]
 }
