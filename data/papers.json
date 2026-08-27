@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-26T07:50:55.438956+00:00",
-  "total": 525,
-  "new_this_run": 13,
+  "last_updated": "2026-08-27T18:10:28.444038+00:00",
+  "total": 537,
+  "new_this_run": 12,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1237,6 +1237,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.25192v1",
+      "title": "CRESSim-Neo: A Batched GPU Simulation Engine for Surgical Robotics and Robot Learning",
+      "abstract": "We introduce CRESSim-Neo, a batched GPU simulation engine for surgical robotics and robot learning. CRESSim-Neo combines position-based simulation of rigid bodies, deformable tissues, fluids, and strands with batched rendering, surgery-specific sensing, and a GPU-resident data pipeline. The engine supports applications including tissue manipulation, fluid suction, suturing, cable-driven robots, and ultrasound image synthesis. Direct access to physics and rendering buffers enables GPU-resident robot learning and zero-copy PyTorch integration using DLPack. We demonstrate CRESSim-Neo across rigid-body, deformable-body, and fluid simulation tasks, including vision-based and surgical robot-learni…",
+      "authors": [
+        "Yafei Ou",
+        "Ahnaf Naheen",
+        "Tleukhan Mussin",
+        "Hans Jarales",
+        "Melwin Moncy",
+        "Mahdi Tavakoli"
+      ],
+      "published": "2026-08-25T22:17:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25192v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 90
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
     },
     {
       "id": "2607.00417v1",
@@ -3227,6 +3256,37 @@
       "first_seen": "2026-08-21T07:47:59.228490+00:00"
     },
     {
+      "id": "2608.25401v1",
+      "title": "PIVOT: A Multi-Trajectory Dataset and Testbed for Pose, Intrinsics, and Novel Viewpoint Evaluation in Real-World 3D Reconstruction",
+      "abstract": "Neural radiance fields (NeRFs), 3D Gaussian Splatting (3DGS), and related novel-view synthesis methods are commonly evaluated under capture and reconstruction conditions cleaner than those encountered by robots, drones, and autonomous systems. Benchmarks often rely on reconstruction-friendly trajectories, optimized camera poses and intrinsics, and held-out views sampled from trajectories represented during training. These assumptions can obscure performance with measured poses, reusable camera calibration, and structurally different camera paths. We introduce PIVOT (Pose, Intrinsics and Viewpoint Oriented Testbed), a multi-trajectory dataset, processing pipeline, and evaluation framework for…",
+      "authors": [
+        "Mary Raymond"
+      ],
+      "published": "2026-08-26T06:02:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25401v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -4859,6 +4919,36 @@
       "first_seen": "2026-08-26T07:50:55.438956+00:00"
     },
     {
+      "id": "2608.25757v1",
+      "title": "LM-X: Explainable Action Modeling with Progress, Event, and Uncertainty Prediction for Generalist Robot Manipulation",
+      "abstract": "Generalist vision--language--action (VLA) policies learn long-horizon behavior mainly through short-horizon action prediction and reveal little beyond sampled commands. This creates two coupled bottlenecks: a single action target must implicitly absorb task progress, intermediate intent, and local reliability, while these control states remain hidden during execution. Inspired by functional principles of biological sensorimotor control, we introduce LM-X , which organizes prediction across task, event, and motor scales without claiming anatomical correspondence. Three explicitly supervised signals are emitted online and directly condition action generation: return-to-go (RTG) measures visibl…",
+      "authors": [
+        "Jin Lou",
+        "Jingxuan Zhu",
+        "Andong Chen",
+        "Xupeng Wang",
+        "Yuan Xu",
+        "Yuexuan Li"
+      ],
+      "published": "2026-08-26T13:05:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25757v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -6432,6 +6522,65 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.25483v1",
+      "title": "Gaussian Splatting Underwater: A Controlled Cross-Regime Study",
+      "abstract": "The underwater environment is challenging for 3D reconstruction, because particles suspended in the water scatter and diffuse light, turbidity varies, absorption depends on wavelength, and illumination is rarely uniform. Methods based on Gaussian splatting have generally been developed for conditions that allow good image quality, and have primarily been tested on relatively shallow water. This paper examines how well Gaussian splatting performs across publicly available underwater datasets representing different degrees of turbidity, loss of illumination, and colour attenuation, together with an industrial survey. Five systems with public code are run under one protocol, with shared poses, …",
+      "authors": [
+        "Olaya Álvarez-Tuñón",
+        "Stella Graßhof"
+      ],
+      "published": "2026-08-26T07:53:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25483v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.25162v1",
+      "title": "Sequential Object Placement Optimization with Convex Decomposition",
+      "abstract": "Robotic object packing has been a core challenge for robotic deployment in logistics, industry, etc., due to the curse of dimensionality in combinatorial search and the difficulty of dealing with dynamic and contact constraints for irregularly shaped objects. Current heuristic and learning-based methods assume a limited spatial discretization resolution of space, and computation becomes extremely inefficient as discretization accuracy increases. In this work, we eliminate these assumptions by introducing SOPO-CD, a sequential optimization framework that frames object placement as a differentiable nonlinear optimization problem in a decomposed free space. We prove that placing a convex object…",
+      "authors": [
+        "Yuezhe Zhang",
+        "Xiangyu Lyu",
+        "Sohan Rudra",
+        "Davide Tateo",
+        "Georgia Chalvatzaki"
+      ],
+      "published": "2026-08-25T21:19:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25162v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -11506,6 +11655,97 @@
       "first_seen": "2026-08-26T07:50:55.438956+00:00"
     },
     {
+      "id": "2608.25890v1",
+      "title": "Scalable Multi-GPU Simulation of 3D Multicellular Growth with RNN-Based Workload Balancing",
+      "abstract": "Detailed multicellular growth simulations based on subcellular element models (SEMs) can capture complex tissue development, but their element-level interactions impose substantial computational cost. This work presents a scalable multi-GPU framework for 3D multicellular growth simulation that combines GPU acceleration, spatial binning, domain decomposition, and workload-aware partitioning. Cell movement, growth, and division continuously reshape the spatial workload distribution, causing initially balanced partitions to become inefficient over time. To address this, we introduce an RNN-based load-balancing controller that observes recent per-rank execution times and partition states and lea…",
+      "authors": [
+        "Matvey Moisseyev",
+        "Huijing Du",
+        "Dandan Zheng",
+        "Chi Zhang",
+        "Hongfeng Yu"
+      ],
+      "published": "2026-08-26T15:06:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25890v1",
+      "categories": [
+        "cs.DC",
+        "cs.CE",
+        "cs.LG",
+        "math.OC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.25196v1",
+      "title": "Longitudinal Robot Learning from Demonstration with Care Providers in a Home Environment",
+      "abstract": "Learning from demonstration (LfD) methods enable non-expert end users to teach robots novel skills without explicit programming. However most evaluations of the usability of LfD with non-experts has been conducted in controlled laboratory environments with a robotics experimenter present. In this work we identify non-expert end users' key barriers when teaching robots via demonstration without live robotics expert feedback in a home environment. In our human subjects experiment we support the non-expert end users through two forms of demonstrator guidance developed in prior work: pre-training and adaptive feedback. Towards the ecological validity of the evaluation, we conduct this experiment…",
+      "authors": [
+        "Nina Moorman",
+        "Julianna Schalkwyk",
+        "Vriksha Srihari",
+        "Qingyu Xiao",
+        "Kamel Alrashedy",
+        "Hongseok Jeong"
+      ],
+      "published": "2026-08-25T22:21:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25196v1",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.25114v1",
+      "title": "Flower Hub: A Reproducible Benchmarking Platform for Federated Learning in Simulation and Deployment",
+      "abstract": "Federated learning (FL) has emerged as a key approach for training models across decentralized data, yet benchmarking in FL remains difficult to reproduce, compare, and extend. Existing evaluations are often tied to custom infrastructure, released as incomplete research code, and conducted primarily in simulation, which limits portability and practical relevance. We present Flower Hub, a platform for publishing, discovering, and executing decentralized and federated applications. We show how it enables reproducible benchmarking by packaging benchmarks as executable, versioned applications with standardized metadata, pinned dependencies, and explicit evaluation workflows. We instantiate this …",
+      "authors": [
+        "Yan Gao",
+        "Mohammad Naseri",
+        "Javier Fernandez-Marques",
+        "Dimitris Stripelis",
+        "Lorenzo Sani",
+        "Davide Eynard"
+      ],
+      "published": "2026-08-25T20:09:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25114v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -14841,6 +15081,99 @@
       "first_seen": "2026-08-26T07:50:55.438956+00:00"
     },
     {
+      "id": "2608.25956v1",
+      "title": "4DGS-WAM: Bridging Past and Future with an Object-Centric World Action Model based on 4D Gaussian Splatting",
+      "abstract": "Current world action models (WAMs) typically operate on 2D visual data. These models can achieve exceptional visual quality, but they lack explicit spatial structure for individual objects and repeatedly process redundant background content. Although point clouds can represent the world in 3D space, they can be difficult to align and accumulate across viewpoints. In this paper, we leverage an explicit 4D Gaussian Splatting (4DGS) representation that separately models dynamic objects and the static background of a scene. For dynamic objects, we use a policy model to predict future actor actions and a world model to predict transformations of their observed Gaussian splats. The static backgrou…",
+      "authors": [
+        "Yueen Ma",
+        "Zenglin Xu",
+        "Irwin King"
+      ],
+      "published": "2026-08-26T16:16:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25956v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.25472v1",
+      "title": "PAGS: Autofocusing Photoacoustic Tomography via Speed-of-Sound-Adaptive Gaussian Splatting",
+      "abstract": "Photoacoustic computed tomography (PACT) combines optical absorption contrast with acoustic detection for high-resolution deep-tissue imaging. A persistent challenge is that unknown speed-of-sound (SoS) heterogeneity changes acoustic time-of-flight, causing defocusing artifacts when reconstruction assumes a uniform SoS. Existing SoS-adaptive methods either rely on calibrated acoustic priors or optimize dense physical medium models, which becomes expensive and difficult to scale in 3D. We propose PAGS, a differentiable framework for blind autofocusing PACT via speed-of-sound-adaptive Gaussian splatting. PAGS represents the initial pressure field with sparse Gaussian photoacoustic (PA) sources…",
+      "authors": [
+        "Jiarui Ge",
+        "Jintao Ma",
+        "Bangxu Fan",
+        "Jinyan Zhang",
+        "Xiaokang Yang",
+        "Shuai Na"
+      ],
+      "published": "2026-08-26T07:44:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25472v1",
+      "categories": [
+        "cs.CV",
+        "physics.med-ph"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.25138v1",
+      "title": "Drift Variation Autoencoder: Unifying Generation and Representation Learning through Conditional Posterior Flow Matching",
+      "abstract": "Stochastic masking, cropping, or modality removal makes deterministic reconstruction an incomplete target: one observation can admit many clean completions. This work takes the corresponding posterior $P(X\\mid C)$ as the common statistical object for conditional generation and generatively sufficient representation learning. Drift Variation autoencoder trains a masked encoder $Z=E(C)$ and a conditional flow decoder with one clean-prediction Flow Matching loss. The analysis first decomposes the ideal conditional KL into generator approximation and the representation deficiency $I(X;C\\mid Z)$. It then derives orthogonal risk decompositions for conditional Flow Matching. For an affine Gaussian …",
+      "authors": [
+        "Jiarui Cao"
+      ],
+      "published": "2026-08-25T20:38:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25138v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -16069,6 +16402,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.26067v1",
+      "title": "StreamPI: Streaming Multimodal Temporal Modeling for Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) models have demonstrated effectiveness in robot manipulation, yet state-of-the-art models such as pi0.5 operate under a single-frame paradigm, limiting their ability to retain past observations and develop precise spatial perception. In this paper, we propose StreamPI, a streaming multimodal temporal modeling framework that equips single-frame VLA with temporal reasoning capability without introducing any additional parameters. One core design is instruction-anchored temporal modeling. It treats each (visual observation, language instruction) pair as an atomic temporal unit: bidirectional attention within each pair enables cross-modal fusion, while causal attenti…",
+      "authors": [
+        "Zhe Liu",
+        "Jinghua Hou",
+        "Yuxiang Lu",
+        "Zhenya Yang",
+        "Xianzhe Fan",
+        "Junwei Luo"
+      ],
+      "published": "2026-08-26T17:33:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26067v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-27T18:10:28.444038+00:00"
     }
   ]
 }
