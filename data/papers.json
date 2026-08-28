@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-27T18:10:28.444038+00:00",
-  "total": 537,
-  "new_this_run": 12,
+  "last_updated": "2026-08-28T19:20:37.004532+00:00",
+  "total": 553,
+  "new_this_run": 16,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1918,6 +1918,35 @@
       "first_seen": "2026-08-18T07:42:43.442926+00:00"
     },
     {
+      "id": "2608.27079v1",
+      "title": "GRAFT: Grounded and Efficient Online Reinforcement Adaptation for Fine-Grained Robot Manipulation",
+      "abstract": "Pretrained vision-language-action (VLA) policies provide strong priors for robot manipulation, yet adapting them online to fine-grained biomedical tasks remains challenging. Task success often hinges on subtle, view-dependent visual cues, while task-level rewards provide little guidance about which regions matter, making it difficult to learn task-relevant visual grounding from limited real-robot interaction. Online adaptation is further constrained by the computational cost of VLA inference and replay-based updates. We introduce GRAFT (Grounded Reinforcement Adaptation for Fast Task Learning), a framework for efficient online VLA adaptation through grounded perception. GRAFT uses region-lev…",
+      "authors": [
+        "Yibo Qiu",
+        "Haoliang Ye",
+        "Shu'ang Sun",
+        "Zan Huang",
+        "Ronald X Xu",
+        "Mingzhai Sun"
+      ],
+      "published": "2026-08-27T13:04:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.27079v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 72
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
       "id": "2606.30352v1",
       "title": "FastPano3D: Feed-Forward Indoor Panoramic 3D Reconstruction from a Single Image",
       "abstract": "Recent advances in 3D scene reconstruction have highlighted the intricate trade-offs among rendering quality, inference efficiency, and data dependency. To address the challenge of rapidly reconstructing detailed 3D indoor scenes from minimal input, we introduce FastPano3D, an end-to-end framework that directly generates renderable 3D Gaussian representations from a single panoramic image. Unlike perspective-based methods, panoramic images inherently suffer from equirectangular projection distortions and spatially non-uniform feature distributions, making direct feed-forward Gaussian generation particularly challenging. In contrast to existing Gaussian Splatting based methods that rely on mu…",
@@ -3285,6 +3314,95 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.26821v1",
+      "title": "TemporalFlow-VLA: Learning Physically Grounded Execution History for Long-Horizon Robot Manipulation",
+      "abstract": "Vision-language-action (VLA) models leverage pretrained vision-language representations for robot control, yet simply adding historical frames does not reliably capture recent physical change. This is especially problematic in multi-stage manipulation, where visually similar states may require different actions depending on prior execution. To address this challenge, we present TemporalFlow-VLA, which learns compact execution history through physically grounded temporal supervision. Using recorded robot states, robot geometry, and calibrated cameras, we construct robot-surface temporal flow as a training-only target and supervise two execution-aligned temporal queries that provide structured…",
+      "authors": [
+        "Jiarui Yang",
+        "Yehao Lu",
+        "Yuning Su",
+        "Yu Zhong",
+        "Yufeng Xie",
+        "Yazhou Zhang"
+      ],
+      "published": "2026-08-27T09:00:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26821v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26673v1",
+      "title": "PredVLA: A Sub-Million-Parameter Predictive-Coding Policy for Robot Manipulation",
+      "abstract": "Large pretrained vision-language-action models dominate modern robot-manipulation benchmarks, but it remains unclear how much model scale is necessary for strong language-conditioned control, or whether fundamentally different control architectures can remain competitive at much smaller parameter budgets. We present PredVLA, a language-conditioned predictive-coding policy with only 0.68 million trainable network parameters and no robot-data pretraining, whose hierarchical generative recurrent dynamics predict visual features and proprioception while observations influence latent state only through online inference from the resulting sensory prediction errors. On LIBERO, PredVLA achieves an 8…",
+      "authors": [
+        "Hiroki Sawada",
+        "Shunichi Kasahara"
+      ],
+      "published": "2026-08-27T06:27:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26673v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26383v1",
+      "title": "Cross-Platform Benchmark of Neural 3D Reconstruction for Autonomous Laboratory Robots",
+      "abstract": "Autonomous robots performing laboratory tasks depend on 3D reconstruction pipelines that can turn raw camera streams into actionable object representations within the latency budget of a physical control loop. Neural 3D reconstruction methods have demonstrated high-quality view synthesis, but their real-time viability across the compute platforms on which laboratory robots actually run remains poorly characterized. In this work, we present a systematic compute-platform benchmark of neural 3D reconstruction methods, evaluating NeRF and 3D Gaussian Splatting training and rendering on GPU-enabled computing devices ranging from single-board computers to server-class nodes, and place Meta's SAM3D…",
+      "authors": [
+        "Yongho Kim",
+        "Mengjiao Han",
+        "Victor Mateevitsi",
+        "Silvio Rizzi",
+        "Michael E. Papka",
+        "Nicola Ferrier"
+      ],
+      "published": "2026-08-26T20:16:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26383v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -4947,6 +5065,101 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.27301v1",
+      "title": "Comparative Evaluation of 3D Reconstruction Methods for Immersive Visualization of Laboratory Objects",
+      "abstract": "In this study, we examined whether current 3D reconstruction methods can support the creation of realistic holographic representations of laboratory objects for educational use. In this regard, we compared four approaches: photogrammetry, a neural radiance field (NeRF)-based method, Gaussian splatting, and LiDAR. These methods were used to generate holographic models of common laboratory items and their fidelity was evaluated by graduate students. Participants assessed the models for shape, color, texture, and visual defects using a repeated-measures design. Across objects, the NeRF-based method produced the most consistently high-fidelity representations, particularly for transparent, refle…",
+      "authors": [
+        "Brian De La Cruz",
+        "Aaron Y. Zhao",
+        "Maitrey Gramopadhye",
+        "Sawyer J. Lazar",
+        "Xianming Tan",
+        "Daniel Szafir"
+      ],
+      "published": "2026-08-27T16:05:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.27301v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV",
+        "cs.HC"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26800v1",
+      "title": "Rapid On-Robot Learning for Dynamic Manipulation Skills: Robot Juggling",
+      "abstract": "We present an online learning framework that enables a bimanual robot to acquire diverse juggling patterns directly on physical hardware within minutes, even with a significant sim2real gap. One of the most important lessons from this work is that a model, even when far from reality, can be extremely useful for learning. This motivates a central philosophy of our approach: learning should build upon the robot's current knowledge rather than replace it. Our regularized memory-based learning puts this principle into practice by learning a local model from accumulated experience while retaining the global prior model to extrapolate where experience is sparse. This enables efficient and stable o…",
+      "authors": [
+        "Taeyoon Lee",
+        "Chunpeng Wang",
+        "Christopher G. Atkeson",
+        "Alfred A. Rizzi",
+        "Nicolas Rojas"
+      ],
+      "published": "2026-08-27T08:39:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26800v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.25757v2",
+      "title": "LM-X: Explainable Action Modeling with Progress, Event, and Uncertainty Prediction for Generalist Robot Manipulation",
+      "abstract": "Generalist vision--language--action (VLA) policies learn long-horizon behavior mainly through short-horizon action prediction and reveal little beyond sampled commands. This creates two coupled bottlenecks: a single action target must implicitly absorb task progress, intermediate intent, and local reliability, while these control states remain hidden during execution. Inspired by functional principles of biological sensorimotor control, we introduce LM-X , which organizes prediction across task, event, and motor scales without claiming anatomical correspondence. Three explicitly supervised signals are emitted online and directly condition action generation: return-to-go (RTG) measures visibl…",
+      "authors": [
+        "Jin Lou",
+        "Zhiyuan Jing",
+        "Andong Chen",
+        "Xupeng Wang",
+        "Yuan Xu",
+        "Yuexuan Li"
+      ],
+      "published": "2026-08-26T13:05:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.25757v2",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -11746,6 +11959,151 @@
       "first_seen": "2026-08-27T18:10:28.444038+00:00"
     },
     {
+      "id": "2608.26948v1",
+      "title": "KISS-GS: 3D Gaussian Splatting Compression Kept Simple",
+      "abstract": "Scene reconstruction with 3D Gaussian Splatting (3DGS) has become common, however deployment remains painful as the uncompressed file sizes can be massive. Current 3DGS compression systems combine multiple strategies for file size reduction, which can obscure where gains come from and limit component reuse across training pipelines. To make the gains more transparent, we propose KISS-GS, a modular compression pipeline named after the principle of keeping things simple, designed to decouple compression entirely from training. Given a 3DGS scene reconstructed with vanilla 3DGS, we are able to reduce it through compaction by 15.7x using a combination of state-of-the-art pruning schemes. Then we…",
+      "authors": [
+        "Wieland Morgenstern",
+        "Friedrich Elias Branschke",
+        "Florian Fleischmann",
+        "Adrian Szatmari",
+        "Paul Schlack",
+        "Florian Barthel"
+      ],
+      "published": "2026-08-27T10:49:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26948v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26947v1",
+      "title": "4DSynth: Controllable Procedural World Synthesis for Dynamic Embodied Simulation",
+      "abstract": "Embodied agents need environments that are visually diverse, physically interactive, and changing over time. Procedural simulators can generate large interactive scene collections, and recent 4D generators produce compelling visual dynamics. Combining these properties in one environment, however, still demands extensive manual effort, and the result is rarely editable or controllable enough to reuse at scale. We present 4DSynth, a controllable procedural system that turns a natural-language description, a blueprint mask, or a single photograph into an editable 4D environment with explicit geometry, animated actors, collision-free trajectories, and physics-ready simulation state. Multiple sce…",
+      "authors": [
+        "Zehao Qi",
+        "Haochen Luo",
+        "Jia-Wang Bian",
+        "Zeyu Ma",
+        "Shuyang Sun"
+      ],
+      "published": "2026-08-27T10:49:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26947v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26888v1",
+      "title": "Beyond Shallow-Water Photorealism: Physically and Sensor-Grounded Simulation for Deep-Sea Robotics",
+      "abstract": "Many recent underwater simulators emphasize visual realism at the expense of physical fidelity, focusing on shallow-water effects with limited relevance in deep-water environments and high computational cost. In this work, we shift the focus toward deep-sea physical and sensor realism. We present a physics- and sensor-grounded extension of the Stonefish simulator that augments its hydrodynamic models with stochastic IMU and DVL drift, magnetometer disturbances, higher-order hydrodynamics, terramechanics, pressure-driven environmental variability, and physically based underwater optics. These additions are designed to better capture the forces and measurements shaping the behavior of deep-oce…",
+      "authors": [
+        "Michele Grimaldi",
+        "Enrico Di Maria",
+        "Ignacio Carlucho",
+        "Yvan R. Petillot"
+      ],
+      "published": "2026-08-27T09:45:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26888v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26594v1",
+      "title": "SimCast-S2S: An Efficient Generative Model for Subseasonal Precipitation Forecasting via Transfer Learning from Climate Simulations",
+      "abstract": "Subseasonal-to-seasonal (S2S) precipitation forecasting has substantial financial and societal impact, yet remains challenging because of weak predictive signals, high associated uncertainty, and the computational cost of operational systems, which constrains simulation fidelity. We introduce SimCast-S2S, a generative latent-diffusion framework for probabilistic S2S precipitation forecasting that addresses three major bottlenecks in data-driven prediction. First, because S2S prediction requires uncertainty quantification rather than only deterministic point forecasts, SimCast-S2S is the first data-driven system that uses a diffusion-based generative pipeline for S2S prediction, enabling effe…",
+      "authors": [
+        "Hiep V. Dang",
+        "Antonios Mamalakis"
+      ],
+      "published": "2026-08-27T04:20:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26594v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26545v1",
+      "title": "Memory Anchors for Continual Robot Learning",
+      "abstract": "Robot policies deployed in the wild should have the capability to continually learn new tasks without forgetting existing behaviors. A common approach to combat such catastrophic forgetting is to train on new task data with a replay buffer of previously learned task data. Although this buffer is commonly sampled randomly from all prior experiences, we show that a small set of these experiences contributes greatly in anchoring past performance. We call these experiences Memory Anchors. We identify Memory Anchors in regions where representations of new-task observations collapse onto those of old-task observations even though the tasks require conflicting actions, like when a familiar object m…",
+      "authors": [
+        "Maximilian Du",
+        "Zhanyi Sun",
+        "Chen Xu",
+        "Paarth Shah",
+        "Masha Itkina",
+        "Shuran Song"
+      ],
+      "published": "2026-08-27T02:36:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26545v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -12829,6 +13187,40 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-26T07:50:55.438956+00:00"
+    },
+    {
+      "id": "2608.26868v1",
+      "title": "CGS-SLAM: Collaborative Gaussian Splatting based SLAM for Multi-Agent Reconstruction",
+      "abstract": "Recent advances in SLAM have leveraged 3DGS for photorealistic reconstruction and novel view synthesis. However, most methods rely on RGB-D input, which is unavailable on consumer-grade smartphones, and few integrate 3DGS within a collaborative framework. Therefore, we present CGS-SLAM, a hybrid decentralized/centralized system enabling multi-agent 3DGS SLAM using only RGB and inertial data. Each agent performs local tracking with inertial data as a motion prior and reconstructs a scaled map using a metric monocular depth estimator (Depth Pro). Keyframe encodings are shared among agents, enabling dynamic keyframing in regions of spatial overlaps with other agents, enhancing submap alignment.…",
+      "authors": [
+        "Jean-Daniel de Ambrogi",
+        "Aladine Chetouani",
+        "Vincent Nguyen",
+        "Aurélien Chateigner"
+      ],
+      "published": "2026-08-27T09:31:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26868v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -15174,6 +15566,62 @@
       "first_seen": "2026-08-27T18:10:28.444038+00:00"
     },
     {
+      "id": "2608.26961v1",
+      "title": "Gromov-Monge Flow Matching for Equivariant Graph Generation",
+      "abstract": "Graphs are invariant under node permutations, motivating the use of permutation-equivariant architectures in generative models. In flow matching, however, symmetry may also enter the source--target coupling: once graph pairs are compared up to node relabeling, the natural Wasserstein geometry is that of the graph quotient space. The Euclidean quotient metric of this space coincides with the Gromov--Monge distance, obtained by optimally relabeling the nodes. We develop this perspective theoretically, showing that quotient couplings can be lifted to aligned representatives without additional cost and that symmetrization yields equivariant flow-matching minimizers, including for categorical end…",
+      "authors": [
+        "Moritz Piening",
+        "Christian Wald"
+      ],
+      "published": "2026-08-27T11:01:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26961v1",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.26872v1",
+      "title": "Self-OPD: On-Policy Distillation for Flow Matching Models without Teacher",
+      "abstract": "On-policy distillation (OPD), which leverages a pre-trained, specialized teacher model to provide dense supervisory signals, has achieved significant success in Large Language Models (LLMs) and has recently been adapted to flow matching models. However, this paradigm suffers from two major issues: First, training a separate, task-specific teacher for every new objective incurs high computational costs. Second, the discrepancy between teacher and student distributions often leads to compounding errors along the generation trajectory. In this paper, we introduce \\textbf{Self-OPD}, a teacher-free OPD framework for flow matching models that turns the student's own self-exploration into step-wise…",
+      "authors": [
+        "Shiyi Zhang",
+        "Mushui Liu",
+        "Yunze Tong",
+        "Wanggui He",
+        "Siyu Zou",
+        "Jinlong Liu"
+      ],
+      "published": "2026-08-27T09:34:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26872v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -16431,6 +16879,38 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.26951v1",
+      "title": "Per-View Gaussian Predictions Enable Training-Free Distractor Filtering in Feed-Forward 3DGS",
+      "abstract": "Feed-forward 3D Gaussian Splatting reconstructs an explicit Gaussian representation from multiple input images in one network execution, making 3D reconstruction increasingly accessible for casual captures. However, such captures frequently contain transient objects that appear in only a subset of the views. Such content can be encoded into the per-view Gaussians associated with the inputs that observe it and remain in the combined representation despite being observed by no other input. As a result, it may produce blurred, duplicated, or floating artifacts in novel views. We introduce a training-free filtering procedure that exploits this per-view prediction structure. For each input, we ex…",
+      "authors": [
+        "Kangmin Seo",
+        "Jae-Pil Heo"
+      ],
+      "published": "2026-08-27T10:52:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.26951v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-28T19:20:37.004532+00:00"
     }
   ]
 }
