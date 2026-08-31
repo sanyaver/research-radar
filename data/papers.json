@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-30T12:41:51.753201+00:00",
-  "total": 553,
-  "new_this_run": 0,
+  "last_updated": "2026-08-31T14:57:38.406620+00:00",
+  "total": 564,
+  "new_this_run": 11,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1420,6 +1420,30 @@
       "first_seen": "2026-08-18T07:42:43.442926+00:00"
     },
     {
+      "id": "2608.28080v1",
+      "title": "Cyc3D: Evaluating Cyclic Structural Stability and Asset Usability in Image-to-3D Generation",
+      "abstract": "Image-conditioned 3D generation has advanced rapidly, yet existing evaluation protocols largely judge rendered-view plausibility and semantic alignment, overlooking whether a generator forms a stable 3D interpretation and produces assets usable in graphics pipelines. We introduce Cyc3D, a multidimensional benchmark that evaluates image-to-3D generation along two complementary axes: Cross-View Object Consistency and Representation Quality. At the asset level, Cyc3D measures whether object identity remains semantically coherent across rendered viewpoints. At the model level, we propose View-Cycle Structural Consistency, a closed-loop render-regenerate-align protocol that repeatedly re-observes…",
+      "authors": [
+        "Liwen Zhang"
+      ],
+      "published": "2026-08-28T08:50:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28080v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 84
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
       "id": "2607.05252v1",
       "title": "FUSE: FK-Steered Multi-Modal Flow Matching for Efficient Simulation-Based Posterior Estimation",
       "abstract": "Simulation-Based Inference (SBI) is critical for scientific discovery, with generative models offering a promising path toward efficient inference. However, existing methods struggle with effective multimodal modeling. They often rely on brute-force fusion strategies that ignore the structural disparities between parameters and observations, thus limiting estimation fidelity. In this work, we introduce FUSE (Feynman-Kac steered mUlti-modal flow matching for efficient Simulation-based posterior Estimation). Unlike prior work, FUSE employs a dual-track architecture that preserves the distinct features of multimodal inputs while facilitating dynamic interaction. Additionally, we propose an FK-s…",
@@ -1945,6 +1969,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.27079v2",
+      "title": "GRAFT: Grounded and Efficient Online Reinforcement Adaptation for Fine-Grained Robot Manipulation",
+      "abstract": "Pretrained vision-language-action (VLA) policies provide strong priors for robot manipulation, yet adapting them online to fine-grained biomedical tasks remains challenging. Task success often hinges on subtle, view-dependent visual cues, while task-level rewards provide little guidance about which regions matter, making it difficult to learn task-relevant visual grounding from limited real-robot interaction. Online adaptation is further constrained by the computational cost of VLA inference and replay-based updates. We introduce GRAFT (Grounded Reinforcement Adaptation for Fast Task Learning), a framework for efficient online VLA adaptation through grounded perception. GRAFT uses region-lev…",
+      "authors": [
+        "Yibo Qiu",
+        "Haoliang Ye",
+        "Shu'ang Sun",
+        "Zan Huang",
+        "Ronald X Xu",
+        "Mingzhai Sun"
+      ],
+      "published": "2026-08-27T13:04:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.27079v2",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 72
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -6794,6 +6847,32 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2608.28288v1",
+      "title": "GeoFF3D: Coordinate-Anchored Feed-Forward Reconstruction for Large-Scale UAV Mapping",
+      "abstract": "Existing feed-forward 3D reconstruction methods typically process a bounded number of images and recover cameras and geometry in local or internally normalized frames. Extending them to large-scale UAV mapping requires scalable multi-chunk processing and reliable aggregation, while full Sim(3) alignment can become unstable for near collinear trajectories. We present GeoFF3D, which combines a coordinate-anchored model with a spatial large-scale reconstruction framework (SLRF). The model uses georeferenced camera translations and optional geometric priors to predict camera poses and dense point maps directly in a gravity-aligned Z-up metric frame. SLRF partitions images into spatially overlapp…",
+      "authors": [
+        "Xiang Yang",
+        "Yongli Wang",
+        "Yunsheng Zhang"
+      ],
+      "published": "2026-08-28T12:51:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28288v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -12104,6 +12183,181 @@
       "first_seen": "2026-08-28T19:20:37.004532+00:00"
     },
     {
+      "id": "2608.28578v1",
+      "title": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
+      "abstract": "Tendon-driven hands are anthropomorphic, and moving the actuators off the joints is what makes a hand of this capability affordable to build. Two effects produce that saving. Routing force through a cable removes the requirement that a motor fit inside the joint it drives, so smaller and cheaper motors suffice, and one motor can drive several joints through a single cable, so fewer motors are needed. They are also harder to learn on than a direct-drive hand. The underactuated transmission that produces the saving is itself difficult to represent in a simulator, and the joints one cable drives are not independently commandable. We present Aero Hand Open, a tendon-driven anthropomorphic hand t…",
+      "authors": [
+        "Nan Wang",
+        "Mohit Yadav",
+        "Jonathan Wulff",
+        "Aidan Rosenbaum",
+        "Kezhou Chen",
+        "Yuvan Sharma"
+      ],
+      "published": "2026-08-28T17:53:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28578v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2608.28518v1",
+      "title": "When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI",
+      "abstract": "We investigate whether automatic speech recognition (ASR) errors in user input can lead to unsafe outputs from Embodied AI (EAI) models. We find that ASR errors can lead to harmful instructions being accepted and executed by EAI models, thereby reducing safety. We simulate ASR errors and combine them with existing safety benchmarks (SafeAgentBench and POEX) to evaluate how different errors affect embodied AI safety. We find that some of them preserve semantic structure but increase harmful ambiguity, while others weaken the model refusal behaviour and allow unsafe plans to be generated and executed. We show that in some cases automatic correction of ASR errors can reduce the risk, but this i…",
+      "authors": [
+        "Sihan Jia",
+        "Oliver Lemon"
+      ],
+      "published": "2026-08-28T16:55:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28518v1",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2608.28240v1",
+      "title": "WilLaGS: Latent-Conditional 3D Appearance Fields for Robust Gaussian Splatting In-the-Wild",
+      "abstract": "3D Gaussian Splatting (3DGS) delivers real-time and high-fidelity rendering but remains challenged by unconstrained in-the-wild scenes, where drastic appearance variations and transient objects violate multi-view consistency. Existing methods are fundamentally limited by independent and discrete embeddings that struggle to capture continuous environmental changes or model spatially-varying local illumination. To address these limitations, we propose \\textbf{WilLaGS}, a unified framework for robust 3D scene reconstruction and generative appearance synthesis under unconstrained settings. Specifically, we introduce a generative appearance model where a $β$-VAE learns a structured and continuous…",
+      "authors": [
+        "Yuhao Bai",
+        "Qianqiu Tan",
+        "Lilong Chen",
+        "Huanhuan Lv",
+        "Lijun Chen"
+      ],
+      "published": "2026-08-28T11:55:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28240v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2608.28102v1",
+      "title": "What Will This Copper Look Like Later? Forecasting Surface Appearance and Rendering It as a PBR Material",
+      "abstract": "Digital design requires predicting how a metal surface will look later in its oxidation; this paper presents such a pipeline for copper. Given a fixed-camera observation, the system forecasts appearance 10 accelerated units ahead and converts it into the albedo, normal, roughness and metallic maps a renderer consumes. Forecasting is evaluated as an authoring tool would use it, on a copper specimen the system has not observed: an entire recording is held out, so training and checkpoint selection use one specimen and the test set is the whole of a second, recorded on a different day and condition. Under this protocol a learned spatio-temporal model with a monotone oxidation state, the most acc…",
+      "authors": [
+        "Teejuta Sriwaranon",
+        "Borworntat Dendumrongkul",
+        "Tanapat Chamted",
+        "Pizzanu Kanongchaiyos"
+      ],
+      "published": "2026-08-28T09:09:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28102v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2608.27529v1",
+      "title": "Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction",
+      "abstract": "Streaming 3D reconstruction from extremely long videos requires estimating camera motion and scene geometry online under bounded memory and computation. Early streaming models achieve causal, bounded-cost inference using finite context buffers or compact recurrent states, yet their estimates often deteriorate as sequences grow. Recent methods improve long-horizon stability by coupling short-range context with persistent or multi-level long-range memory. We pursue a different route: we keep the learned temporal state strictly local and formulate predictions whose targets remain independent of sequence length. We present ABot-Recon, a simple streaming model that caches KV features from only th…",
+      "authors": [
+        "Jiarong Han",
+        "Jincheng Xiong",
+        "Yuzhou Liu",
+        "Linzhe Shi",
+        "Changjie Wu",
+        "Ning Guo"
+      ],
+      "published": "2026-08-27T15:07:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.27529v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2608.27521v1",
+      "title": "Dandelion: A Spherical Flower for Neural Simulation of Planetary Dynamics",
+      "abstract": "Many dynamical processes unfold on the sphere but the default scientific machine learning architectures are Euclidean. Applying these architectures on a regular lat-lon grid causes problems: Cartesian convolutions become distorted at high latitude; 2D FFTs in Fourier neural operators incorrectly assume double periodicity; Cartesian positional encodings in ViTs distort spherical geodesic distances. Recent work moves towards natively spherical primitives, including spherical convolutions (e.g., DeepSphere or DISCO), Spherical Fourier Neural Operators (SFNOs), and geodesic attention. Here we propose Dandelion, a spherical version of Flower, a warp-based neural PDE solver. Layers of Dandelion pr…",
+      "authors": [
+        "Till Muser",
+        "Giovanni Abati",
+        "Ivan Dokmanić"
+      ],
+      "published": "2026-08-27T12:43:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.27521v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -15620,6 +15874,58 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.28256v1",
+      "title": "Physics-Guided Flow Matching for CT Image Reconstruction",
+      "abstract": "Deep generative models have recently emerged as powerful priors for solving ill-posed inverse problems in CT, with diffusion-based approaches achieving state-of-the-art reconstruction performance. However, diffusion models typically rely on stochastic sampling procedures, long inference trajectories, and carefully tuned noise schedules, which can limit computational efficiency and numerical stability, especially at high spatial resolutions. In this work, we investigate Flow Matching as an alternative generative prior for CT reconstruction. We train a high-resolution Rectified Flow Matching model on 256x256 chest images from the Mayo Clinic Low-Dose CT dataset. To mitigate overfitting and lim…",
+      "authors": [
+        "Davide Evangelista"
+      ],
+      "published": "2026-08-28T12:17:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28256v1",
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2608.28010v1",
+      "title": "When Can Conditional Flow Matching Replace Pointwise Negative Log-Likelihood?",
+      "abstract": "Flow matching enables likelihood-free training, yet alignment methods increasingly reuse conditional flow matching (CFM) losses as endpoint negative log-likelihoods (NLLs) and their old/new differences as log-likelihood ratios. We characterize when these substitutions are valid. For linear Gaussian paths, we exactly decompose endpoint NLL into entropy, a weighted CFM objective, an interior velocity--score residual, and a boundary residual. Thus CFM-only estimates and differences are exact only when the corresponding residuals cancel. At the off-policy population optimum, ordinary CFM is not generally a pointwise NLL estimator, whereas \\(w_{\\mathrm{sc}}(t)=(1-t)/t\\) removes the interior resid…",
+      "authors": [
+        "Yansen Han",
+        "Hongxin Sun",
+        "Tao Lin"
+      ],
+      "published": "2026-08-28T07:24:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.28010v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-08-31T14:57:38.406620+00:00"
     },
     {
       "id": "2606.31680v1",
