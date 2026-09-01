@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-31T14:57:38.406620+00:00",
-  "total": 564,
-  "new_this_run": 11,
+  "last_updated": "2026-09-01T12:28:30.774183+00:00",
+  "total": 580,
+  "new_this_run": 16,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -285,6 +285,62 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-24T08:00:03.611837+00:00"
+    },
+    {
+      "id": "2608.30307v1",
+      "title": "ScenePilot: Grow-and-Repair Policy for Text-Driven 3D Indoor Scene Generation",
+      "abstract": "Text-driven 3D indoor scene generation has advanced from dataset-bound layout modeling to open-vocabulary synthesis with large language and vision-language models. Yet existing methods remain limited: one-pass generators often yield geometrically invalid layouts, heavy post-hoc optimization is costly and unstable, and prompt-only planners lack reusable layout priors for functional grouping and object relations. We propose \\textbf{ScenePilot}, a retrieval-augmented \\textbf{Grow-and-Repair} framework that formulates scene generation as prior-guided incremental growth with learned rectification. Given a prompt, the Hierarchical Retrieval-Augmented Planning (HRAP) module retrieves room-, group-,…",
+      "authors": [
+        "Jiawei Zhang",
+        "Hongsong Wang",
+        "Pan Zhou"
+      ],
+      "published": "2026-08-31T06:22:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.30307v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 22,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 120
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.29519v1",
+      "title": "FuncRoom-Agent: Sequential Feed-Forward 3D Functional Indoor Scene Generation",
+      "abstract": "We introduce Function-Room Generation, a new indoor 3D scene generation setting that creates rooms supporting explicit functional goals rather than merely visually plausible layouts. Existing agentic and executable methods improve controllability, but often depend on costly test-time generate--evaluate--revise loops, making functional room generation slow and computationally expensive. We address this challenge with three technical contributions. First, we design a recursive domain-specific language to effectively organize the hierarchical object compositions required by functional rooms, from room structure and major furniture to dense support-surface and nested small objects. It represents…",
+      "authors": [
+        "Hao Feng",
+        "Zhi Zuo",
+        "MingJian Liang",
+        "Jingyu Hu",
+        "Xiaowei Hu",
+        "Liupengfei Wu"
+      ],
+      "published": "2026-08-30T02:48:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29519v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 22,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 120
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
     },
     {
       "id": "2606.30608v2",
@@ -6875,6 +6931,108 @@
       "first_seen": "2026-08-31T14:57:38.406620+00:00"
     },
     {
+      "id": "2608.31159v1",
+      "title": "BRF-GS: Hyperspectral Bidirectional Reflectance Factor Modeling and Image Generation Based on 3D Gaussian Splatting",
+      "abstract": "The bidirectional reflectance factor (BRF) characterizes the directional radiative properties of terrestrial surfaces. However, existing three-dimensional (3D) radiative transfer models require complex scene construction and computationally intensive radiative transfer solvers, limiting efficient generation of multi-angle hyperspectral reflectance imagery. 3D Gaussian Splatting (3DGS) offers an efficient framework for neural scene representation and novel view synthesis, but its low-order spherical harmonics representation is insufficient for complex directional reflectance, while the high dimensionality and inter-band quality differences of hyperspectral data introduce additional challenges…",
+      "authors": [
+        "Yiling Yao",
+        "Wenjuan Zhang",
+        "Bowen Wang",
+        "Bocheng Li",
+        "Wentao Song",
+        "Bing Zhang"
+      ],
+      "published": "2026-08-31T17:56:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.31159v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 6
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.29705v1",
+      "title": "A Calibration Audit of Confidence in Feed-Forward 3D Reconstruction",
+      "abstract": "Feed-forward 3D reconstruction models emit a per-pixel confidence that downstream systems read as a reliability signal. It is trained as a loss weight, not as an uncertainty magnitude, and whether it can be used as an error prediction has not been measured. We audit seven released backbones on thirteen datasets and score the confidence on four properties, how well it ranks error, whether its level is right on average, whether it holds across the confidence range, and whether its intervals cover the truth. The confidence ranks error well, but the predicted uncertainty is too low when it is read under conditions that are not exactly those of training. The median case is off by 2.4x across all …",
+      "authors": [
+        "Nanxing Nick Deng",
+        "Qing Cheng",
+        "Niclas Zeller",
+        "Daniel Cremers"
+      ],
+      "published": "2026-08-30T10:21:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29705v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.29208v1",
+      "title": "AdaVLA: Adaptive Step Flow Matching for Training-free Acceleration of Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) models, built upon Vision-Language Models (VLMs), have significantly enhanced robotic capabilities by leveraging internet-scale knowledge and multimodal reasoning. However, the intensive computational overhead of VLAs constrains on-device deployment, hindering real-time responses to environmental changes. While various acceleration techniques have been proposed, they often rely on fine-tuning or access to training datasets, which are frequently unavailable due to privacy and proprietary concerns. Moreover, although flow-matching-based VLAs have emerged as efficient alternatives to standard diffusion models, current acceleration efforts largely target VLM inferenc…",
+      "authors": [
+        "Sunghwan Han",
+        "Youngtae Han",
+        "Youngmin Yi"
+      ],
+      "published": "2026-08-29T11:44:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29208v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
       "id": "2606.31921v1",
       "title": "Interface-Aware Neural Newton Preconditioning for Robust Cohesive Zone Model Simulations",
       "abstract": "Cohesive Zone Models (CZMs) are widely used to simulate interface fracture, delamination, adhesive failure, and fiber--matrix debonding in aerospace composite structures. In implicit quasi-static finite element analyses, cohesive softening may introduce negative interface tangents, solution jumps, and Newton-basin mismatch, so the previous converged state can become a poor initial guess for the next increment. This may lead to stagnation, wrong-branch convergence, or repeated step cuts. Existing remedies, including viscous regularization, path following, dynamic relaxation, and manual Newton--Raphson (NR) modification, either alter the effective response, increase cost, or rely on hand-craft…",
@@ -12358,6 +12516,193 @@
       "first_seen": "2026-08-31T14:57:38.406620+00:00"
     },
     {
+      "id": "2608.30983v1",
+      "title": "Autonomously Acquiring Robot Manipulation Skills with Language-Driven Quality-Diversity",
+      "abstract": "Quality-diversity (QD) algorithms have been gaining traction in robot learning, where diverse motion primitive libraries allow robots to adapt zero-shot to constraints at deployment time. However, such methods typically require expert designers to write the success condition, fitness and diversity metrics, and this strongly limits the robot's autonomy. On the other hand, existing LLM-based reward-shaping techniques allow robots to learn autonomously but only output single high-performing solutions, limiting the robot's adaptability. In this paper, we propose an approach designed to output diverse motion primitive archives by autonomously leveraging quality-diversity algorithms, only requirin…",
+      "authors": [
+        "Émiland Garrabé",
+        "Mahdi Khoramshahi",
+        "Stéphane Doncieux"
+      ],
+      "published": "2026-08-31T15:42:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.30983v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.30054v1",
+      "title": "When 3D Gaussian Splatting Recovers Real Surfaces",
+      "abstract": "When does 3D Gaussian Splatting (3DGS) recover the true scene surface rather than just overfitting view-dependent appearance? We answer this by developing a mathematical framework based on a first-hit rendering abstraction that cleanly isolates geometry from appearance. We prove that geometric misalignment forcefully converts spatial textures into high-frequency angular signals via parallax. This establishes a strict identifiability window: if angular capacity is bounded, surface-consistent solutions are mathematically preferred; if unrestricted, the same images can be perfectly explained by an incorrect, opaque billboard geometry. Experiments on synthetic stress tests confirm this predictio…",
+      "authors": [
+        "Songhe Wang",
+        "David Johnathan Miller"
+      ],
+      "published": "2026-08-30T21:30:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.30054v1",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.29971v1",
+      "title": "EDGE: Engine for Deterministic Graph Evaluation through Conversation Simulation from Graph Structured DSL Configuration",
+      "abstract": "As agentic systems evolve into complex multi agent orchestration workflows, there is a growing and critical need for systematic frameworks that measures an agent's behavioral consistency and determinism. In this paper, we introduce a formal evaluation methodology that is grounded in AgentGraph, a planner powered by a domain specific language that represents agent reasoning through a dynamically adjustable directed graph. We leverage this structural formalism and utilize graph traversal algorithms that exhaustively enumerate conversational paths, forming a comprehensive evaluation set that captures the agent's complete behavioral space. We then systematically replay these reproducible traject…",
+      "authors": [
+        "Ram Kulathumani",
+        "Regunathan Radhakrishnan",
+        "Anupam Tripathi",
+        "Xiangbo Mao",
+        "Roshanak Omrani",
+        "Keshav Somani"
+      ],
+      "published": "2026-08-30T18:56:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29971v1",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.29680v1",
+      "title": "GeoRay: Gauge-Aware Feed-Forward Satellite 3D Reconstruction in the Geodetic Frame",
+      "abstract": "Feed-forward 3D foundation models reconstruct perspective scenes in one pass. Satellite photogrammetry needs a different product, one that domain adaptation alone does not deliver: dense surface height in an absolute geodetic frame under non-central rational polynomial cameras (RPCs). Perspective-pretrained features are not reliably observable along RPC height rays, absolute elevation carries a low-order height--datum gauge exchangeable with sensor bias to first order, and monocular and multi-view cues fail in different regions. \\method{} treats all three. Lightweight ray-consistent adapters make a frozen backbone matchable along native RPC rays. An explicit datum mechanism separates relief …",
+      "authors": [
+        "Zhe Dong",
+        "Wanqing Wu",
+        "Yuzhe Sun",
+        "Haochen Jiang",
+        "Yuchen Ma",
+        "Lecheng Ren"
+      ],
+      "published": "2026-08-30T09:27:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29680v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.29516v1",
+      "title": "Task-Relevant Feature-Dynamics Fidelity Enables Zero-Shot Sim-to-Real Transfer for Robotic Ultrasound Scanning",
+      "abstract": "Robotic ultrasound policies operating directly on B-mode images require extensive interaction data, whereas real-robot data collection is costly and safety-constrained. Simulation provides a scalable alternative, but zero-shot transfer depends not only on single-frame realism but also on whether simulated observations reproduce task-relevant feature changes induced by probe motion. We term this cross-domain consistency task-relevant feature-dynamics fidelity (TR-FDF). Under local regularity assumptions, our contraction analysis shows that greater sensitivity of TR-FDF mismatch to probe motion reduces the effective closed-loop contraction margin, whereas motion-independent errors primarily en…",
+      "authors": [
+        "Yizhao Qian",
+        "Jiayuan Luo",
+        "Wanyi Zhu",
+        "Yameng Zhang",
+        "Max Q. -H. Meng",
+        "Yixuan Yuan"
+      ],
+      "published": "2026-08-30T02:37:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29516v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.29269v1",
+      "title": "LightFuse: Relightable Interactive Gaussian Scene Reconstruction via Multi-Scan Fusion and 2D Gaussian Ray Tracing",
+      "abstract": "Relightable interactive scene reconstruction aims to build an editable 3D model from scans of different object arrangements and render new layouts under novel illumination. Existing methods either bake lighting into appearance or recover material and illumination only for fixed scenes, leaving edited layouts with inconsistent shadows and indirect lighting. We present LightFuse, a 2D Gaussian framework that extends interactive scene reconstruction with explicit material-illumination decomposition and physically based relighting. LightFuse first fuses observations across states to reconstruct a shared background and movable objects. It then conducts ray-tracing-oriented geometry refinement to …",
+      "authors": [
+        "Haonan Zhou",
+        "Gaoxiang Linghu",
+        "Youlin Jia",
+        "Hongyu Cui",
+        "Kewei Wei",
+        "Kaiyue Zhou"
+      ],
+      "published": "2026-08-29T13:49:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29269v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        },
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 6
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -13475,6 +13820,40 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2608.29346v1",
+      "title": "GSPotential: Camera Potential Field for Sparse-View 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting has achieved remarkable success in photorealistic rendering, yet it suffers from severe overfitting and geometric artifacts in sparse-view scenarios due to the inherent deficiency of photometric supervision. Recent advances have attempted to regularize optimization by incorporating external priors, such as depth, point clouds, or diffusion models. However, these methods typically overlook the non-uniform distribution of supervision across the viewing space, resulting in limited specificity in prior use and primitive control. In this paper, we propose GSPotential, a framework that quantifies view-space supervision imbalance using a Camera Potential Field. Our key insight…",
+      "authors": [
+        "Zeyuan An",
+        "Yanghang Xiao",
+        "Zhiying Leng",
+        "Yijun Feng",
+        "Xiaohui Liang"
+      ],
+      "published": "2026-08-29T16:03:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.29346v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -15926,6 +16305,132 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2608.31023v1",
+      "title": "SMG: Semantic Motion Graph for Monocular Dynamic Gaussian Splatting",
+      "abstract": "We study dynamic Gaussian Splatting from monocular videos. While recent advancements in dynamic Gaussian splatting offer a promising foundation for modeling dynamic scenes, they often overfit to the training views and fail under occlusion or complex scene motion due to the lack of reliable regularization signals in under-constrained regions. We propose Semantic Motion Graph (SMG), a novel approach models the Gaussian motion as the low-rank semantic motion. Our key insight is that the real-world scene motion is often structured by semantic coherence: regions that are spatially close and semantically related tend to exhibit consistent dynamics. To leverage this prior, we construct SMG to model…",
+      "authors": [
+        "Haozheng Yu",
+        "Xinyu Yang",
+        "Rundong Luo",
+        "Jennifer J. Sun",
+        "Bharath Hariharan"
+      ],
+      "published": "2026-08-31T16:06:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.31023v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.31009v1",
+      "title": "Language-Informed Flow Matching for Trend-Guided Structure-Based 3D Molecular Generation",
+      "abstract": "Structure-based drug design (SBDD) requires ligands that satisfy both 3D target affinity and 1D chemical validity. Existing controllable generation methods often rely on task-specific fine-tuning or externally imposed sampling-time guidance, adding cost and potentially conflicting with evolving 3D geometric constraints. We propose LiFT, a language-informed cross-modal framework built on Flow Matching for trend-guided 3D molecular generation across both de novo design and scaffold hopping. LiFT uses a \"Sense-Evolve-Assemble\" agent to generate target-aware SMILES as intermediate chemical conditions, from which a pre-trained chemical foundation model extracts continuous semantic priors. These p…",
+      "authors": [
+        "Tianyu Gao",
+        "Zhikai Su",
+        "Jiashu Li",
+        "Wenjun Gao",
+        "Zichuan Ying",
+        "Zhe Zhao"
+      ],
+      "published": "2026-08-31T15:57:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.31009v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.30782v1",
+      "title": "PixelIR: Fidelity-Perception Decoupling via Pixel-Space Image-Residual Flow Matching for Efficient One-Step Real-World Super-Resolution",
+      "abstract": "Real-world image super-resolution (Real-ISR) aims to preserve structures supported by the degraded observation while reconstructing perceptually realistic details. However, existing Real-ISR methods largely optimize fidelity and perceptual quality within a shared network, causing the two objectives to interfere throughout training and making their balance difficult to control. Recent one-step methods reduce sampling steps, yet often inherit both this coupled optimization behavior and the expensive high-resolution backbone of their multi-step predecessors. We argue that efficient Real-ISR requires not only a shorter sampling trajectory, but also specialized modeling of faithful reconstruction…",
+      "authors": [
+        "Bingtian Qiao",
+        "Yue Shi",
+        "Yong Guo",
+        "Wenjun Zhang",
+        "Jiezhang Cao"
+      ],
+      "published": "2026-08-31T13:39:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.30782v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2608.30184v1",
+      "title": "ATGS: Anchored Temporal Gaussian Splatting for Long Volumetric Video Representation",
+      "abstract": "Volumetric video enables immersive free viewpoint rendering of dynamic real world scenes, yet existing methods struggle with long sequences and complex motions, often leading to temporal instability and visual artifacts. To address these challenges, we propose \\ourname, a Gaussian splatting based framework for volumetric video reconstruction. Our key insight is that explicitly tracking long term complex motion with individual Gaussian primitives is inherently unstable. Instead, we organize Gaussians around time conditioned anchors that localize their spatial and temporal support, thereby reducing long range motion complexity. We further introduce a temporal windowing strategy to activate onl…",
+      "authors": [
+        "Jiahao Wu",
+        "Jie Liang",
+        "Die Hu",
+        "Jiayu Yang",
+        "Kaiqiang Xiong",
+        "Xiang Li"
+      ],
+      "published": "2026-08-31T03:09:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2608.30184v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-01T12:28:30.774183+00:00"
     },
     {
       "id": "2606.31680v1",
