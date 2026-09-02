@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-01T12:28:30.774183+00:00",
-  "total": 580,
-  "new_this_run": 16,
+  "last_updated": "2026-09-02T12:01:53.246306+00:00",
+  "total": 592,
+  "new_this_run": 12,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -5271,6 +5271,61 @@
       "first_seen": "2026-08-28T19:20:37.004532+00:00"
     },
     {
+      "id": "2609.01418v1",
+      "title": "Provably Safe Sim-to-Real Transfer",
+      "abstract": "To mitigate the sample complexity of real-world reinforcement learning (RL), a common practice is to first train a policy in a simulator, where samples are cheap, and then deploy the learned policy in the real world with the hope that it generalizes effectively. Such direct sim-to-real transfer is not guaranteed to succeed: simulator-trained policies can be suboptimal in the real world due to sim-to-real mismatch. Correcting this mismatch requires collecting data from the real system, but in many applications, such as robotics and healthcare, this data-collection process is itself subject to safety constraints. This gives rise to the problem of safe sim-to-real transfer: how can an agent exp…",
+      "authors": [
+        "Tingting Ni",
+        "Maryam Kamgarpour"
+      ],
+      "published": "2026-09-01T15:34:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.01418v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.00641v1",
+      "title": "AM-Bench: A Modular Simulation Suite and Benchmark for Aerial Manipulation Policy Learning",
+      "abstract": "Standardized benchmarks have played a central role in advancing robot manipulation learning, yet most focus on ground-supported manipulation systems, which limits their applicability to dynamics-critical domains such as aerial manipulation (AM). AM presents distinct system-level challenges, including environmental disturbances, coupled dynamics between the manipulator and floating base, and constrained degrees of freedom. Consequently, task performance depends jointly on robot embodiment, low-level control, and high-level policy design. We introduce AM-Bench, a modular simulation suite and benchmark for multirotor-based AM policy learning. AM-Bench includes representative embodiments spannin…",
+      "authors": [
+        "Yutong Wang",
+        "Dongjae Lee",
+        "Xiaofeng Guo",
+        "Yuanzhu Zhan",
+        "Yufei Jiang",
+        "Bavin Saravanan"
+      ],
+      "published": "2026-09-01T03:20:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00641v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -7031,6 +7086,95 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2609.01516v1",
+      "title": "DualDiff3D: Dual Structure-Appearance Diffusion Priors for Reliability-Enhanced 3D Gaussian Splatting",
+      "abstract": "While 3D Gaussian Splatting (3DGS) has revolutionized 3D reconstruction and novel-view synthesis, scenarios with limited input views often lead to poor reconstruction quality and artifacts in rendered novel views. Recent efforts attempt to utilize powerful diffusion priors, yet they typically process rendered and reference views concatenated along an additional dimension in a single network. These methods overlook an inherent nature that different views should maintain appearance similarity but differ in structure due to view shifts, leading to blur caused by conflicts between the two properties. In this paper, we propose DualDiff, a novel pipeline that leverages dual diffusion priors with a…",
+      "authors": [
+        "Qian Wang",
+        "Yu Wang",
+        "Weiqi Li",
+        "Xinhua Cheng",
+        "Xiandong Meng",
+        "Ronggang Wang"
+      ],
+      "published": "2026-09-01T16:45:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.01516v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.00923v1",
+      "title": "On-the-Fly3R: Towards Robust Online 3D Reconstruction with Feed-Forward 3R Models for Large-Scale UAV Scenarios",
+      "abstract": "While feed-forward 3D reconstruction (3R) offers efficient end-to-end modeling, its application in large-scale UAV mapping is hindered by the prohibitive memory cost of Transformer attention. Current scalable streaming 3R methods assume temporally and spatially continuous inputs, rendering them ineffective for the weakly ordered or unordered image streams common in cross-strip UAV operations. To address this, we propose On-the-Fly3R, a training-free, progressive online 3D reconstruction framework for large-scale UAV images that upgrades various 3R backbones for large-scale UAV scenarios. Our method enables reconstruction from unordered inputs via retrieval-guided dynamic subset construction,…",
+      "authors": [
+        "Zhe Shen",
+        "Liyuan Lou",
+        "Yifei Yu",
+        "Guanbo Wang",
+        "Quanjian Ji",
+        "Xin Wang"
+      ],
+      "published": "2026-09-01T08:47:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00923v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.00311v1",
+      "title": "Inverse kinematic solution for generic 3R positional robots using Conformal Geometric Algebra",
+      "abstract": "The inverse kinematics of generic 3R robots has been investigated through multiple approaches, mainly algebraic methods involving the solution of certain equation sets. Previous geometric interpretations of the solution, characterized as the intersection of a pair of conics have been confined to the joint-space domain. In this article, we study the Inverse Kinematic Model (IKM) of 3R robots, using the advantages of Conformal Geometric Algebra (CGA) to provide further insights on its kinematic properties. Our approach directly yields a univariate polynomial in terms of theta_2 without the need to eliminate theta_1 and theta_3 by reframing the problem as the intersection of two circles, which …",
+      "authors": [
+        "Abhilash Nayak",
+        "Durgesh Haribhau Salunkhe"
+      ],
+      "published": "2026-08-31T20:01:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00311v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -12703,6 +12847,68 @@
       "first_seen": "2026-09-01T12:28:30.774183+00:00"
     },
     {
+      "id": "2609.00994v1",
+      "title": "EvoGS: Modeling Deformation Evolution for Dynamic Gaussian Splatting",
+      "abstract": "Recent extensions of 3D Gaussian Splatting (3DGS) enable real-time novel view synthesis in dynamic scenes by learning time-conditioned Gaussian deformations. However, existing MLP-based methods typically estimate deformations independently at each timestamp, making them less robust to large or abrupt motions. To address this issue, we propose \\textbf{EvoGS}, a 3DGS-based dynamic reconstruction framework that models Gaussian deformation as a temporal evolution process. EvoGS maintains persistent deformation states for each Gaussian, extrapolates future states from historical deformation states, and corrects the predictions with MLP-derived observations. The correction is adaptively weighted u…",
+      "authors": [
+        "Wei Dong",
+        "Shahram Shirani",
+        "Jun Chen",
+        "Han Zhou"
+      ],
+      "published": "2026-09-01T09:45:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00994v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.00901v1",
+      "title": "HELIOS: From midnight to noon, continuous outdoor urban scene relighting",
+      "abstract": "Modifying the illumination of driving images is a fundamental challenge, as most datasets are captured at specific times of day. Existing methods rely on synthetic data or paired multi-illumination supervision, which limits their generalization to the diverse and challenging conditions of real-world scenarios. To address this, we propose HELIOS, a novel image relighting approach that relies on unlabeled real-world datasets without requiring any paired images for training. Our approach integrates albedo-based conditioning into a cycle-consistent diffusion pipeline to prevent identity collapse and ensure accurate domain translation. To handle low-visibility nighttime conditions, we introduce a…",
+      "authors": [
+        "Hala Djeghim",
+        "Nathan Piasco",
+        "Luis Roldão",
+        "Moussab Bennehar",
+        "Dzmitry Tsishkou",
+        "Céline Loscos"
+      ],
+      "published": "2026-09-01T08:27:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00901v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -16433,6 +16639,116 @@
       "first_seen": "2026-09-01T12:28:30.774183+00:00"
     },
     {
+      "id": "2609.00960v1",
+      "title": "Conditional Flow Matching for Cross-Field MRI Harmonisation",
+      "abstract": "Magnetic resonance images of the same subject look markedly different across field strengths, which complicates the comparison and pooling of data across sites. We address cross-field brain-MRI translation for the MRIxFields2026 challenge, and in particular its Task~3: a single model that translates between any directed pair of the five field strengths and across three contrasts. We phrase the problem as a conditional flow matching path: because the source and target volumes are spatially registered, we learn a velocity field that carries the source slice directly to the target slice, rather than starting from noise. To learn this mapping from only three paired subjects, the unified model is…",
+      "authors": [
+        "Baris Imre",
+        "Aram Salehi",
+        "Levente Baljer",
+        "Andrew Webb",
+        "Marius Staring",
+        "Efe Ilicak"
+      ],
+      "published": "2026-09-01T09:18:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00960v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.00863v1",
+      "title": "Conditional Flow Matching for ML-Based Inverse Design Problems",
+      "abstract": "Engineering inverse design is often limited by the high computational cost of iterative solvers for optimization problems constrained by partial differential equations (PDEs) and by their sensitivity to initialization. Deep generative models can produce candidate designs without rerunning the simulator at inference time. Generative adversarial networks (GANs) sample in one forward pass, whereas diffusion models require iterative reverse-time integration. In this work, we add conditional flow matching (CFM) to EngiOpt and compare it with a conditional diffusion model and a conditional generative adversarial network (cGAN) on structural (beams2d) and thermal (heatconduction2d) benchmarks from …",
+      "authors": [
+        "Juliana Felder",
+        "Milad Habibi",
+        "Soheyl Massoudi",
+        "Mark Fuge"
+      ],
+      "published": "2026-09-01T08:00:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00863v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.00811v1",
+      "title": "ReBridge-Flow: Re-Coupling Posterior Bridges in Flow Matching for Image Restoration",
+      "abstract": "Flow Matching provides an efficient generative prior for image restoration by learning continuous transport between source and data distributions. However, existing methods typically incorporate measurement constraints through local corrections. Such corrections may disrupt the source-clean endpoint coupling implicitly encoded by the pretrained flow, making the corrected endpoint pair incompatible with the current state. To address this issue, we propose ReBridge-Flow, a posterior bridge re-coupling method. Specifically, given the current state, ReBridge-Flow first decodes the corresponding local source and clean endpoints. It then incorporates measurement information through clean-side anch…",
+      "authors": [
+        "Jiaqi Zhang",
+        "Yiqi Wang",
+        "Hongjie Wu",
+        "Bohan Guo",
+        "Xinan Wang",
+        "Zichen Luo"
+      ],
+      "published": "2026-09-01T07:08:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00811v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.00198v1",
+      "title": "A Lagrangian View of Flow Matching",
+      "abstract": "Modern explicit-time generative models, such as Flow Matching [Lipman et al., 2023] and Rectified Flow [Liu et al., 2023], are typically derived top-down via Optimal Transport and the continuity equation. This standard Eulerian approach focuses on the macroscopic transport of probability mass. In this paper, we present an alternative, bottom-up mechanical derivation grounded in a Lagrangian (particle-centric) perspective. By analyzing the local Taylor expansion of a continuous denoiser, we motivate a strict invariance condition required for optimal, singlestep generation: the conservation of target identity. Enforcing this condition yields a governing quasi-linear advection Partial Different…",
+      "authors": [
+        "Peyman Milanfar"
+      ],
+      "published": "2026-08-31T18:13:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00198v1",
+      "categories": [
+        "cs.CV",
+        "physics.flu-dyn"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -17722,6 +18038,32 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-28T19:20:37.004532+00:00"
+    },
+    {
+      "id": "2609.00968v1",
+      "title": "ReFlowSET: Representation-Aligned Latent Flow Matching for SAR-to-EO Image Translation",
+      "abstract": "SAR-to-EO image translation aims to generate electro-optical (EO) imagery from synthetic aperture radar (SAR) observations. Existing latent diffusion approaches typically inherit a predetermined autoencoder, although reconstruction fidelity can vary substantially across codecs and modalities. Because the latent codec affects the round-trip preservation of both SAR conditions and EO targets, codec selection constitutes a fundamental design choice; nevertheless, existing methods largely rely on codecs pretrained on natural images. To remedy this, we introduce ReFlowSET, a conditional latent flow-matching framework that selects its codec through a joint SAR--EO reconstruction audit. Rather than…",
+      "authors": [
+        "Jeonghyeok Do",
+        "Seungchul Lee",
+        "Munchurl Kim"
+      ],
+      "published": "2026-09-01T09:25:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00968v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-02T12:01:53.246306+00:00"
     }
   ]
 }
