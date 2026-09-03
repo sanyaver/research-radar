@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-02T12:01:53.246306+00:00",
-  "total": 592,
-  "new_this_run": 12,
+  "last_updated": "2026-09-03T12:00:57.656915+00:00",
+  "total": 605,
+  "new_this_run": 13,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1500,6 +1500,48 @@
       "first_seen": "2026-08-31T14:57:38.406620+00:00"
     },
     {
+      "id": "2609.02543v1",
+      "title": "LightBridge: Feed-Forward Generative Relighting for 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) achieves high-quality, real-time novel view synthesis, but the resulting assets have baked-in illumination and cannot be easily relit. Inverse rendering methods optimize simplified reflectance and illumination models for each scene, limiting efficiency and relighting quality. Recent generative approaches leverage large diffusion models for realistic lighting edits, but applying them to 3DGS typically requires an additional per-scene optimization stage to bake the edited appearance into the representation. We present LightBridge, a feed-forward generative framework for controllable relighting of complete 3DGS assets in a single pass. To enable feed-forward trainin…",
+      "authors": [
+        "Hezhi Cao",
+        "Panhao Cheng",
+        "huangsheng du",
+        "Qibiao Li",
+        "Youcheng Cai",
+        "Ligang Liu"
+      ],
+      "published": "2026-09-02T12:58:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.02543v1",
+      "categories": [
+        "cs.GR",
+        "eess.IV"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
       "id": "2607.05252v1",
       "title": "FUSE: FK-Steered Multi-Modal Flow Matching for Efficient Simulation-Based Posterior Estimation",
       "abstract": "Simulation-Based Inference (SBI) is critical for scientific discovery, with generative models offering a promising path toward efficient inference. However, existing methods struggle with effective multimodal modeling. They often rely on brute-force fusion strategies that ignore the structural disparities between parameters and observations, thus limiting estimation fidelity. In this work, we introduce FUSE (Feynman-Kac steered mUlti-modal flow matching for efficient Simulation-based posterior Estimation). Unlike prior work, FUSE employs a dual-track architecture that preserves the distinct features of multimodal inputs while facilitating dynamic interaction. Additionally, we propose an FK-s…",
@@ -2054,6 +2096,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-31T14:57:38.406620+00:00"
+    },
+    {
+      "id": "2609.01676v1",
+      "title": "Sim2Signal: Sim-to-Real Benchmarks for Traffic Signal Control",
+      "abstract": "Reinforcement learning achieves strong traffic signal control performance in simulation, yet policies trained in simulators often fail once deployed in the real world, a failure known as the Sim-to-Real gap. When RL is applied to traffic signal control, this gap arises from several sources: sensing, action execution, traffic dynamics, and the control objective. Their relative impact and the reliability of existing Sim-to-Real mitigation methods remain insufficiently understood, and the field lacks a standard benchmark for systematically measuring the gap and evaluating mitigation methods. We present Sim2Signal, a benchmark that decomposes the Sim-to-Real gap into observation, action, transit…",
+      "authors": [
+        "Ferdous Al Rafi",
+        "Susrik Mukherjee",
+        "Latika Liladhar Dekate",
+        "Jennifer Yawa Lavoe",
+        "Huaiyuan Yao",
+        "Shlok Mohanty"
+      ],
+      "published": "2026-09-01T08:15:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.01676v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 72
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -5324,6 +5395,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.02653v1",
+      "title": "HINT: Human-Intent Inception for Long-Horizon Robot Manipulation",
+      "abstract": "Humans can perform complex manipulations given a simple intent through an overall instruction, while continuously adapting to evolving visual observations. However, current vision-language action (VLA) models and other action policies struggle to realize this high-level intelligent behavior under dense, evolving visual inputs and sparse language guidance. Visual correlations can then dominate semantic intent, leading actions to follow visual shortcuts rather than human goals. We present HINT (Human-INTent INcepTion), an agentic framework inspired by the human manipulation principles: semantic intent changes sparsely at manipulation-pattern transitions, whereas continuous control primarily de…",
+      "authors": [
+        "Mingyu Mei",
+        "Haojie Xu",
+        "Shihao Jin",
+        "Zibo Dai",
+        "Qihao Cheng",
+        "Zhengrui Lv"
+      ],
+      "published": "2026-09-02T14:26:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.02653v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -12909,6 +13009,118 @@
       "first_seen": "2026-09-02T12:01:53.246306+00:00"
     },
     {
+      "id": "2609.02462v1",
+      "title": "VIPS: Vehicle-Infrastructure Cooperative Planning Benchmark via Pseudo-Simulation",
+      "abstract": "End-to-end autonomous driving in urban environments requires robust decision-making under partial observability and complex multi-agent interactions. Severe occlusions and dense traffic at intersections limit the perception capability of single-agent systems, motivating recent efforts on Vehicle-to-Infrastructure (V2I) cooperation for perception and planning. However, existing evaluation protocols face a fundamental trade-off: open-loop evaluation fails to capture error accumulation and recovery from deviations, while closed-loop evaluation is costly, difficult to scale, and often relies on simulated environments that may suffer from domain gaps. To bridge this gap, we propose VIPS, a benchm…",
+      "authors": [
+        "Hoonhee Cho",
+        "Jae-Young Kang",
+        "Giwon Lee",
+        "Hyemin Yang",
+        "Heejun Park",
+        "Kuk-Jin Yoon"
+      ],
+      "published": "2026-09-02T11:32:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.02462v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.01967v1",
+      "title": "A Unified Particle Filter LSTM for Data-Driven Process Simulation",
+      "abstract": "Data-driven process simulation aims to generate realistic case trajectories from historical event logs without requiring an explicitly specified model of the underlying dynamics. Deep sequence models can capture complex temporal dependencies through next-activity probabilities and conditional time distributions. However, event logs provide only a partial view of the underlying process state, often recording activity completions without the corresponding service-start times. Consequently, the same observed process history may be consistent with multiple plausible latent process conditions, whereas standard recurrent models compress each process prefix into a single deterministic recurrent sta…",
+      "authors": [
+        "Parvin Malekzadeh",
+        "Opher Baron",
+        "Dmitry Krass"
+      ],
+      "published": "2026-09-02T00:53:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.01967v1",
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.01896v1",
+      "title": "OutageDiT: A Generative Foundation Model for Power Outage Forecasting and Scenario Simulation",
+      "abstract": "Power-outage planning requires scenarios before an event occurs. These scenarios must represent uncertainty in magnitude, timing, and duration while preserving temporal dependence. However, severe events are rare, and data from any single region contain few examples of extreme outage and restoration patterns. To address this challenge, we introduce OutageDiT, a foundation model for generating seven-day outage trajectories at quarter-hour resolution, trained on outage and weather records across the United States. Specifically, a condition encoder processes the historical context and known future covariates once per forecast, and a shallow flow decoder reuses the resulting horizon-aligned stat…",
+      "authors": [
+        "Yunqin Zhu",
+        "Feng Qiu",
+        "Yao Xie"
+      ],
+      "published": "2026-09-01T21:54:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.01896v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.00901v2",
+      "title": "HELIOS: From midnight to noon, continuous outdoor urban scene relighting",
+      "abstract": "Modifying the illumination of driving images is a fundamental challenge, as most datasets are captured at specific times of day. Existing methods rely on synthetic data or paired multi-illumination supervision, which limits their generalization to the diverse and challenging conditions of real-world scenarios. To address this, we propose HELIOS, a novel image relighting approach that relies on unlabeled real-world datasets without requiring any paired images for training. Our approach integrates albedo-based conditioning into a cycle-consistent diffusion pipeline to prevent identity collapse and ensure accurate domain translation. To handle low-visibility nighttime conditions, we introduce a…",
+      "authors": [
+        "Hala Djeghim",
+        "Nathan Piasco",
+        "Luis Roldão",
+        "Moussab Bennehar",
+        "Dzmitry Tsishkou",
+        "Céline Loscos"
+      ],
+      "published": "2026-09-01T08:27:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.00901v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -14060,6 +14272,68 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-01T12:28:30.774183+00:00"
+    },
+    {
+      "id": "2609.02847v1",
+      "title": "RoGe: Novel View Synthesis via End-to-End Implicit Reconstruction and Generation",
+      "abstract": "Novel view synthesis from sparse inputs requires both geometric grounding from the observed views and generative priors of unobserved regions, motivating recent hybrid methods that combine reconstruction and generation. However, existing methods bridge the two with rendered images or explicit 3D representations such as point maps or 3D Gaussians. Generation is thus conditioned on a lossy and imperfect projection of the scene, inheriting its errors, and reconstruction receives no signal from generation to correct them. We present RoGe, an end-to-end unified reconstruction and generation framework that removes this explicit bridge. It targets roaming within a scene anchored by sparse views: gi…",
+      "authors": [
+        "Xiaolei Lang",
+        "Ze Kang",
+        "Zehao Huang",
+        "Naiyan Wang"
+      ],
+      "published": "2026-09-02T17:32:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.02847v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.01921v1",
+      "title": "Automated Maize Ear Phenotyping Using 3D Reconstructions",
+      "abstract": "Maize kernel traits such as row number, kernels per row, and kernel size vary largely for genetic reasons and are consistently associated with regions of the genome that influence yield. Manual measurement of these traits, however, cannot keep pace with the volume of maize generated in a breeding program. To address this, we developed and validated a fully automated pipeline for extracting these traits from 3D point clouds of corn ears, built on a recently developed video-to-point-cloud platform. Raw video frames are processed through COLMAP and NeRF, the ear is isolated via density-based separation, and the point cloud is distance-calibrated to physical units. The calibrated ear point cloud…",
+      "authors": [
+        "Ritwesh A. Kumar",
+        "Som Tripathi",
+        "Peja Matthews",
+        "Srikar Reddy",
+        "Talukder Zaki Jubery",
+        "Patrick Schnable"
+      ],
+      "published": "2026-09-01T22:44:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.01921v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -16747,6 +17021,128 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.02748v1",
+      "title": "Balancing Frequencies and Pixels in Flow Matching",
+      "abstract": "Natural images follow a $1/f^2$ spectral distribution: most signal energy lies in the low spatial frequencies, while the perceptually important structures such as textures and edges occupy sparse high-frequency bands. Pixel-space reconstruction objectives, however, treat all spatial errors uniformly, causing low frequencies to dominate the optimization signal and delaying the learning of fine-scale details. In this work, we identify this objective-level spectral imbalance as a key inefficiency in training pixel-space flow models. To address it, we propose a Focal Log-Frequency Loss (f-loss), a spectrally balanced objective that equalizes the learning signal across frequencies, emphasizing hi…",
+      "authors": [
+        "Lucas Degeorge",
+        "Paul Couairon",
+        "Arijit Ghosh",
+        "Alexei A. Efros",
+        "David Picard",
+        "Vicky Kalogeiton"
+      ],
+      "published": "2026-09-02T15:49:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.02748v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.02747v1",
+      "title": "InceptionGS: Generative Bootstrapping for Large-Scale Gaussian Splatting under Unstructured View Sampling",
+      "abstract": "Achieving truly immersive large-scale scene digitization necessitates consistent and visually pleasing rendering across all possible viewing perspectives. However, collecting multi-view images covering every fine detail of a large-scale scene is prohibitive due to scene complexity, capture cost, negligence, or accessibility constraints. As a result, the sampled views tend to be highly unstructured -- the majority of the scene is well covered yet certain regions inevitably lack sufficient observations. Existing reconstruction based methods are vulnerable to view scarcity while generation based approaches suffer from generalization, controllability, and 3D consistency issues. To address this c…",
+      "authors": [
+        "Tianheng Lu",
+        "Guangyu Wang",
+        "Ruqi Huang",
+        "Lu Fang"
+      ],
+      "published": "2026-09-02T15:48:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.02747v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.02184v1",
+      "title": "CC-4DGS: Computational Deformation and Point-Cloud Compression for Storage-Efficient Dynamic Gaussian Splatting",
+      "abstract": "Dynamic four-dimensional (4D) Gaussian Splatting has emerged as a powerful explicit representation for high-quality view synthesis, yet existing methods still require tens to hundreds of megabytes per scene due to their heavy reliance on large multi-resolution hash tables and high-dimensional Gaussian attributes. This paper presents CC-4DGS, a storage-efficient and scalable framework that rethinks both deformation modeling and canonical attribute storage. First, we introduce a computational deformation field (CDF) that replaces large multi-resolution learnable hash tables with deterministic dense hash encoding and compact neural decoders, enabling on-the-fly synthesis of deformation features…",
+      "authors": [
+        "Kyungdae Park",
+        "Chae Eun Rhee"
+      ],
+      "published": "2026-09-02T06:47:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.02184v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.01746v1",
+      "title": "CAT-Flow: Curvature-Adaptive sTeps for Flow Matching",
+      "abstract": "Flow Matching has emerged as a leading framework for generative modeling, powering state-of-the-art systems such as FLUX and Stable Diffusion 3.5. However, the iterative nature of its ODE-based sampling process creates a fundamental efficiency bottleneck: the quality of generated samples is highly sensitive to the choice of step-sizes, and current models typically require 20 to 30 steps for good quality. In this work, we propose two lightweight, training-free algorithms, CAT-OV and CAT-OT that adapt step-sizes at inference time based on a novel connection between Flow Matching sampling and gradient flow. Our algorithms are computed efficiently by not requiring additional neural function eval…",
+      "authors": [
+        "Qinchan Li",
+        "Pedro Cisneros-Velarde",
+        "Keru Fu",
+        "Samuel Antunes Miranda",
+        "Sharan Vaswani",
+        "Hao Zhang"
+      ],
+      "published": "2026-09-01T18:14:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.01746v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
       "id": "2606.31680v1",
