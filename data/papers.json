@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-03T12:00:57.656915+00:00",
-  "total": 605,
-  "new_this_run": 13,
+  "last_updated": "2026-09-04T12:03:00.757932+00:00",
+  "total": 620,
+  "new_this_run": 15,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1322,6 +1322,48 @@
       ],
       "has_code": false,
       "first_seen": "2026-08-27T18:10:28.444038+00:00"
+    },
+    {
+      "id": "2609.03931v1",
+      "title": "Sparse auto-regressive modeling for scene generation from multi-view images",
+      "abstract": "Generating complete 3D scenes from sparse, unconstrained views is a fundamental challenge in 3D vision which requires reasoning beyond observed content while remaining computationally tractable. Existing feed-forward reconstruction methods are inherently limited to content visible in the input images, while 3D generative modeling is hindered by the high computational cost of dense volumetric representations and the scarcity of large-scale 3D supervision. We introduce SPAR3S, a sparse voxel-aligned 3D latent generative model for conditional scene completion without requiring ground-truth 3D data for supervision. Our key insight is to formulate 3D scene generation in a structured, compact, vox…",
+      "authors": [
+        "Thomas Lucas",
+        "Maxime Pietrantoni",
+        "Philippe Weinzaepfel",
+        "Wonjune Cho",
+        "Bardienus Pieter Duisterhof",
+        "Vincent Leroy"
+      ],
+      "published": "2026-09-03T14:41:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03931v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 70
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 10
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
     },
     {
       "id": "2607.00417v1",
@@ -5426,6 +5468,35 @@
       "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
+      "id": "2609.03927v1",
+      "title": "Toward Unified Robot Learning: Bridging Representation, Vision-Language-Action, and World Models",
+      "abstract": "For robots to operate reliably in real-world environments, they need to perceive their surroundings, act, and reason about the consequences of those actions. Rapid progress in the domains of representation learning, VLA models, and world models has significantly enhanced the capabilities of robot learning systems, enabling robots to work in increasingly complex environments. However, these paradigms are typically developed in isolation, resulting in fragmented systems that struggle with generalization, long-horizon temporal reasoning and planning, and deployment in unstructured environments. In this survey, we present a unified perspective on robot learning by organizing the existing methods…",
+      "authors": [
+        "Shaunak A. Mehta",
+        "Ananya Hazarika",
+        "Haochen Zhang",
+        "Fan Yang",
+        "Ryo Moriyama",
+        "Wenkai Li"
+      ],
+      "published": "2026-09-03T14:40:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03927v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -7275,6 +7346,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.03813v1",
+      "title": "SPARK: Input-Conditioned Sparse Activation Modulation for Frozen DiT-based Super-Resolution",
+      "abstract": "Real-world image super-resolution (SR) increasingly relies on Diffusion Transformer (DiT) backbones, whose internal activations can be dominated by a small number of massive channels. Yet improving perceptual quality in these models still typically requires fine-tuning the network or attaching additional adapters, leaving this structured activation space largely unexplored for adaptation. We investigate whether dominant channels can instead serve as a compact adaptation interface for frozen DiT-based SR models. We first characterize their behavior in pretrained SR backbones and show through controlled interventions that they strongly affect reconstruction quality. Building on this observatio…",
+      "authors": [
+        "Federico Putamorsi",
+        "Leonardo Zini",
+        "Marcella Cornia",
+        "Lorenzo Baraldi"
+      ],
+      "published": "2026-09-03T13:17:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03813v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -13121,6 +13219,251 @@
       "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
+      "id": "2609.04201v1",
+      "title": "Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction",
+      "abstract": "Online 3D reconstruction models perform poorly on long videos. This happens because regressing poses relative to a fixed first-frame anchor forces extrapolation far beyond the training distribution. Small drifts accumulate and amplify into significant geometric collapse. However, we observe that per-frame depth remains stable throughout this failure. The backbone's local geometry remains intact; only the global pose head breaks down. Motivated by this decoupling, we introduce Scal3R. This approach reformulates online reconstruction as multi-reference relative pose querying. We use lightweight learnable tokens, which make up about ~1% of the parameters, and inject them into a completely froze…",
+      "authors": [
+        "Chin-Yang Lin",
+        "Yang-Che Sun",
+        "Cheng Sun",
+        "Fu-En Yang",
+        "Min-Hung Chen",
+        "Yen-Yu Lin"
+      ],
+      "published": "2026-09-03T17:59:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04201v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03897v1",
+      "title": "Reparametrizing 3D Gaussian Splatting for Real-Time Palette-based Color and Luminance Editing",
+      "abstract": "Professional color editing requires precise control over both color (hue and saturation) and lightness, ideally through separate, independent controls. We present a real-time interactive color editing framework for 3D Gaussian Splatting that supports palette-based recoloring, per-palette tone curves for color-aware luminance adjustment, and pixel-level color constraints. Rather than training a new representation from scratch, we reparameterize the spherical harmonics of a pretrained vanilla 3DGS to encode view-dependent palette weights. We simultaneously solve for weights and palette colors via a loss based on image-space sparsity. Luminance editing is realized as a per-pixel weight shift al…",
+      "authors": [
+        "Cheng-Kang Ted Chao",
+        "Yotam Gingold"
+      ],
+      "published": "2026-09-03T14:17:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03897v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03760v1",
+      "title": "Virtual Testing of Automated Driving Systems through Credible Simulations",
+      "abstract": "Simulation is increasingly used to support safety-related decision-making in road transport, particularly for the assessment and approval of automated driving systems (ADS). The complexity of ADS behavior and size of their operational design domains make exclusive reliance on physical testing impractical, leading to extensive use of virtual testing (VT) during the approval phase. This shift raises critical questions regarding the credibility of modelling and simulation (M&S) results used to support road safety decisions. Current VT accreditation approaches in the ADS domain typically rely on validation-only practices, which have been shown to scale poorly when applied to complex, multi-tool …",
+      "authors": [
+        "Riccardo Dona",
+        "Espedito Rusciano",
+        "Biagio Ciuffo"
+      ],
+      "published": "2026-09-03T12:28:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03760v1",
+      "categories": [
+        "cs.RO",
+        "cs.SE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03639v1",
+      "title": "Stabilizing Camera-Controlled Novel View Synthesis at Inference Time",
+      "abstract": "Training-free, camera-controlled novel view synthesis from a single image using pre-trained video diffusion models often becomes unstable under large camera motion and long generation horizons. Existing approaches commonly combine several inference-time components, making it unclear which design choices are most important for stability. We show that the main source of stability is simple. Decomposing camera motion into small autoregressive steps limits per-step geometric distortion and reduces error accumulation. A controlled camera-step study shows that performance remains stable for small motions and degrades more strongly as the per-step motion approaches $18$-$20^\\circ$. We further evalu…",
+      "authors": [
+        "Prajwal Singh",
+        "Arjun Badola",
+        "Seema Kumari",
+        "Hajime Nagahara",
+        "Shanmuganathan Raman"
+      ],
+      "published": "2026-09-03T10:39:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03639v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03613v1",
+      "title": "TileGS: Tile-Local Depth Binning for Gaussian Splatting Rasterization",
+      "abstract": "Real-time 3D Gaussian Splatting (3DGS) achieves high rendering quality, but standard rasterization still traverses a globally sorted tile stream that creates long per-tile ranges and heavy geometry-attribute traffic. We present TileGS, a tile-local reorganization of Gaussian splatting. TileGS turns each long tile range into a sequence of shorter depth-local ranges, rasterizes those ranges in front-to-back order, and applies selective repair where coarse ordering is insufficient to match baseline compositing. Across a 9-scene benchmark on desktop and laptop Ada GPUs, our default No-GW (No Geometry-Write) variant delivers a mean 1.44x raster-kernel speedup on RTX 4090 and mean end-to-end frame…",
+      "authors": [
+        "Wei Tan",
+        "Matias Turkulainen",
+        "Lauri Ilola",
+        "Hamed Rezazadegan Tavakoli",
+        "Juho Kannala"
+      ],
+      "published": "2026-09-03T09:59:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03613v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03447v1",
+      "title": "STARS-GS: Structure-Aware Regularized Gaussian Splatting for Large-Scale Aerial Surface Reconstruction",
+      "abstract": "Large-scale 3D surface reconstruction from aerial imagery is fundamental to geospatial mapping and urban modeling. Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated considerable potential for this task. However, existing methods still face three major challenges in large and complex scenes: scene partitioning may split continuous scene elements across independently optimized sub-regions; geometric constraints mainly focus on the attributes of individual Gaussians while overlooking their local organization; and uniform regularization struggles to accommodate heterogeneous geometric structures. To address these issues, we propose STARS-GS, a structure-aware 3DGS framework for l…",
+      "authors": [
+        "Bocheng Li",
+        "Wenjuan Zhang",
+        "Jie Pan. Dongxu Han",
+        "Xuesong Ma",
+        "Yiling Yao",
+        "Yaning Wang"
+      ],
+      "published": "2026-09-03T07:03:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03447v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03334v1",
+      "title": "Laplacian Frequency Hierarchies for Efficient 3D Gaussian Splatting Training",
+      "abstract": "A key bottleneck in 3D Gaussian Splatting training is the continual growth of Gaussian primitives, which increases optimization cost and slows convergence, especially at high resolutions. We propose Laplacian Frequency Hierarchies, a simple yet efficient 3DGS scheme that combines Laplacian image decomposition with coarse-to-fine, frequency-staged training. After fitting lower-frequency structure, we archive the corresponding Gaussian field so that subsequent fields can optimize higher-frequency residuals without carrying the full primitive burden, and we compose the rendered components in the image domain via a Laplacian-style reconstruction at inference time. This design reduces the number …",
+      "authors": [
+        "Yixiong Yang",
+        "Sisheng Zhang",
+        "Qingsong Yan",
+        "Shaohuai Shi",
+        "Qiang Wang"
+      ],
+      "published": "2026-09-03T03:46:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03334v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03215v1",
+      "title": "SWIM: Student Writing Simulation via Proficiency-Conditioned Generation",
+      "abstract": "Writing proficiency manifests in how students develop content, organize ideas, choose words, and use language. Despite growing interest in LLM-based student simulation, whether LLMs can reproduce such multidimensional variation in extended writing remains largely unexplored. In this work, we explore if language models can realistically simulate student writing, and introduce SWIM, a task that formulates Student Writing sIMulation as proficiency-conditioned essay generation. We evaluate prompting, supervised fine-tuning (SFT), and reinforcement learning (RL) methods for writing simulation using automated essay scoring as a measure of profile alignment. Extensive experiments reveal that prompt…",
+      "authors": [
+        "Heejin Do",
+        "Jakub Kontak",
+        "Mrinmaya Sachan"
+      ],
+      "published": "2026-09-02T23:10:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03215v1",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -14334,6 +14677,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.03534v1",
+      "title": "TruncGradGS: Improved 3D Gaussian Splatting via Truncated Gradient Updates",
+      "abstract": "3D Gaussian Splatting has become a de facto scene representation for novel view synthesis, yet robustly learning 3D Gaussian primitives from visual input remains challenging. Standard optimization relies on gradient-based updates, but a common issue is the gradient vanishing phenomenon: a pixel far from a Gaussian primitive often has diminishing gradient magnitudes to influence primitive attributes, resulting in suboptimal scene reconstruction. In this paper, we propose a method to address gradient vanishing with a piecewise truncated gradient formulation that improves the optimization stability and robustness to initializations. We show that our method consistently improves 3D Gaussian Spla…",
+      "authors": [
+        "Theo Morales",
+        "Nhat-Quynh Le-Pham",
+        "Robin Atkins",
+        "Binh-Son Hua"
+      ],
+      "published": "2026-09-03T08:34:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03534v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -17145,6 +17523,34 @@
       "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
+      "id": "2609.03443v1",
+      "title": "Beyond Straightness: Non-Crossing Flow Matching via Quantile AlignTree Coupling",
+      "abstract": "The performance of Flow Matching largely depends on the quality of the coupling between the source and target distributions. However, independent coupling often leads to path crossings and local velocity ambiguity, while OT-based couplings typically incur high construction costs. To address this challenge, we propose Quantile AlignTree Flow Matching (QAT-FM), an efficient structured coupling strategy that constructs a hierarchical coupling between a Gaussian prior and the target data distribution via a quantile-aligned tree structure. QAT-FM constructs the coupling in $\\mathcal{O}(Nd\\log N)$ time and supports per-pair source sampling with $\\mathcal{O}(d)$ complexity, enabling scalable traini…",
+      "authors": [
+        "Junyi Lin",
+        "Mengyu Li",
+        "Jingxuan Hu",
+        "Kejun He",
+        "Cheng Meng"
+      ],
+      "published": "2026-09-03T07:00:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03443v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -18460,6 +18866,64 @@
       ],
       "has_code": true,
       "first_seen": "2026-09-02T12:01:53.246306+00:00"
+    },
+    {
+      "id": "2609.03591v1",
+      "title": "Scaling Bimanual Household Manipulation from 1,500 hours of Demonstrations to On-Policy Corrections",
+      "abstract": "Learning generalist policies for robust bimanual manipulation is bottlenecked by the scarcity of high quality large scale human demonstration data. In this work, we release 1,500 hours of diverse bimanual manipulation demonstrations covering everyday household tasks, and use this comprehensive corpus to train XR-2, a powerful vision-language-action (VLA) model. Enabled by a purpose built high throughput data pipeline and a carefully designed multi stage training paradigm, XR-2 attains strong manipulation performance in our systematic experiments while retaining favorable training efficiency and high data utilization. We further study two critical scaling axes: varying the amount of expert de…",
+      "authors": [
+        "Jiafeng Xu",
+        "Qi Li",
+        "Yan Shen",
+        "Yiyu Ren",
+        "Travis Davies",
+        "Shaowen He"
+      ],
+      "published": "2026-09-03T09:37:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03591v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.03276v1",
+      "title": "R2S-Eval: Robot Evaluation with Real-to-Sim Calibration via Vision-Language Models",
+      "abstract": "Evaluating robot manipulation policies is becoming increasingly important as generalist models, particularly vision-language-action (VLA) models, are deployed on physical robots. However, conventional real-world evaluation remains labor-intensive, unstable, and insufficiently informative. It requires repeated hardware trials, manual scene resets, and continuous operator monitoring, may produce different policy rankings across repeated evaluations, and primarily relies on success-rate metrics that provide limited information about execution quality. In contrast, humans assess robot performance by observing and comparing complete behaviors rather than relying solely on binary success outcomes.…",
+      "authors": [
+        "Yidi Wang",
+        "Feixiang Ruan",
+        "Ruoqu Chen",
+        "Jie Yin",
+        "Yang Yu",
+        "Mengdi Xu"
+      ],
+      "published": "2026-09-03T02:08:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.03276v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-04T12:03:00.757932+00:00"
     }
   ]
 }
