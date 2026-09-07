@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-06T11:35:10.940621+00:00",
-  "total": 620,
-  "new_this_run": 0,
+  "last_updated": "2026-09-07T13:24:09.488334+00:00",
+  "total": 629,
+  "new_this_run": 9,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -3627,6 +3627,47 @@
       "first_seen": "2026-08-28T19:20:37.004532+00:00"
     },
     {
+      "id": "2609.04751v1",
+      "title": "SeamFlow: Structure-Aware Flow Matching on Edge Probabilities for Artist-Like UV Unwrapping",
+      "abstract": "3D surface cutting and UV unwrapping are fundamental problems in computer graphics. Traditional geometric optimization methods mainly focus on reducing parameterization distortion, but they often overlook visual semantic coherence in seam layouts. Recent autoregressive generative methods improve semantic coherence, yet limited perception of mesh topology often causes inaccurate local cuts. To address these limitations, we introduce SeamFlow, a novel generative framework for 3D surface cutting. We reformulate the discrete mesh-cutting problem as continuous flow matching in a high-dimensional edge-probability space. Through continuous relaxation, SeamFlow learns a deterministic mapping from a …",
+      "authors": [
+        "Yuming Zhao",
+        "Zangyueyang Xian",
+        "Qijian Zhang",
+        "Rendong Liang",
+        "Qin Jia",
+        "Ying He"
+      ],
+      "published": "2026-09-04T05:31:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04751v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "4C_uv",
+          "label": "4C · UV Unwrapping",
+          "color": "#EC4899",
+          "score": 24
+        },
+        {
+          "id": "4A_topology",
+          "label": "4A · Clean Topology",
+          "color": "#F97316",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -5495,6 +5536,47 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.04602v1",
+      "title": "NavArena: Automated Construction of Goal-Oriented Navigation Benchmarks from 3D Gaussian Splatting Reconstructions",
+      "abstract": "Fixed 3D Gaussian Splatting (3DGS) reconstructions provide realistic novel views but lack the traversability constraints, valid goals, and closed-loop protocols required for navigation evaluation. We introduce NavArena, an automated framework that transforms fixed 3DGS reconstructions into benchmarks for goal-oriented visual navigation. NavArena integrates a frozen 3DGS model for egocentric RGB-D rendering, an occupancy costmap derived from Gaussian density and height statistics for reachability and collision queries, and semantic goal candidates lifted from multi-view open-vocabulary masks. These components support the automatic generation and unified closed-loop evaluation of goal-oriented…",
+      "authors": [
+        "Junhui Wang",
+        "Wei Yang",
+        "Xinyao Li",
+        "Ningjing Fan",
+        "Yuehao Yin",
+        "Xuecheng Chen"
+      ],
+      "published": "2026-09-04T01:02:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04602v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -7373,6 +7455,42 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.04710v1",
+      "title": "Simulation-free Unbalanced Dynamic Optimal Transport with General Growth Penalty",
+      "abstract": "Inferring cellular dynamics from unpaired single-cell snapshots requires modeling both state transitions and population growth or death. Unbalanced dynamic optimal transport (UDOT) addresses this by penalizing growth along transport paths, making the choice of growth penalty a key way to encode biological priors on proliferation and apoptosis. However, existing UDOT solvers either rely on computationally expensive NeuralODE simulations or depend on analytical solutions of conditional paths, restricting their efficiency solely to quadratic penalties, i.e. Wasserstein-Fisher-Rao (WFR) geodesics. To enable an efficient UDOT solver for general growth penalties, we first show that concave growth …",
+      "authors": [
+        "Junda Ying",
+        "Yuxuan Wang",
+        "Bowen Yang",
+        "Peijie Zhou",
+        "Lei Zhang"
+      ],
+      "published": "2026-09-04T04:30:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04710v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -13464,6 +13582,128 @@
       "first_seen": "2026-09-04T12:03:00.757932+00:00"
     },
     {
+      "id": "2609.05382v1",
+      "title": "Reflection-aware Generative Novel View Synthesis",
+      "abstract": "We propose Ref-GeNVS, a training-free, reflection-aware method for generative novel view synthesis (NVS) in mirror scenes. Existing multi-view diffusion models often fail to recognize the mirror in the scene and cannot exploit reflected content for scene generation. To fix this issue without additional training, our key idea is to treat a mirror image as two complementary views. From input images, we estimate the mirror plane and reflect camera poses to form virtual views. Based on this virtual view setup, we propose a two-stage generation method consisting of Mirror-gated attention and Reflection injection, which enables reflection-consistent NVS by explicitly leveraging reflection relation…",
+      "authors": [
+        "GeonU Kim",
+        "Shin Dong-Yeon",
+        "Tae-Hyun Oh"
+      ],
+      "published": "2026-09-04T17:33:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.05382v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
+    },
+    {
+      "id": "2609.04921v1",
+      "title": "One Diffusion Model, Two Roles: Guided Trajectory Planning and Safety-Critical Scenario Generation in Closed-Loop Simulation",
+      "abstract": "Diffusion probabilistic models can capture the multi-modal, interaction-rich distribution of joint future trajectories in driving scenes. We show that a single pretrained diffusion traffic model can serve two complementary roles in the autonomous driving development loop: as an ego motion planner, and as a controllable generator of safety-critical scenarios for stress-testing the planners. On the planning side, we introduce a Single-Stream Dual-Stream (SSDS) diffusion-transformer decoder that fuses scene context via joint attention rather than late cross-attention, improving closed-loop performance on nuPlan. We further propose Decoupled Annealing Posterior Sampling with Energy (DAPSE), a tr…",
+      "authors": [
+        "Arka Pal",
+        "Rajesh Kumar",
+        "Hannes Eriksson",
+        "Rémi Lacombe",
+        "Arvid Laveno Ling",
+        "Ankit Gupta"
+      ],
+      "published": "2026-09-04T09:22:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04921v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
+    },
+    {
+      "id": "2609.04886v1",
+      "title": "SimFuse3D: Source-Guided Target Simulation and Confidence-Guided Multi-Stage Localization Reweighting for Cross-Platform 3D Object Detection",
+      "abstract": "Changes in sensor height and viewpoint alter object-level point distributions, making cross-platform LiDAR unsupervised domain adaptation (UDA) difficult. Self-training uses labeled source scans and unlabeled target scans, yet a retained prediction may provide a useful target location while enclosing sparse foreground returns, background clutter, or points inconsistent with the predicted box. We refer to this mismatch as box-point inconsistency. We introduce SimFuse3D, which preserves the target placement and repairs the associated pseudo-object using measured geometry from labeled source scans. Object Memory retrieves a compatible labeled source instance. Target Simulation places its ground…",
+      "authors": [
+        "Yongchun Lin",
+        "Xinliang Zhang",
+        "Yun Zou",
+        "Zhixuan Xiao",
+        "Liang Lei",
+        "Jianya Guo"
+      ],
+      "published": "2026-09-04T08:41:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04886v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
+    },
+    {
+      "id": "2609.04557v1",
+      "title": "A Sim-to-Real Study of Surface-Code Decoder Benchmarking",
+      "abstract": "Quantum error-correction decoders are typically benchmarked against synthetic circuit-level noise, under the assumption that a decoder's ranking under such noise transfers to hardware and improves as the noise model becomes more realistic. The Willow processor, the first to operate below the surface-code threshold, allows us to test this assumption. We rank a panel of six decoders using a four-rung ladder of noise models with increasing fidelity, evaluated against real data across three code distances, two bases, and fifteen round counts. Rank agreement with hardware appears once the noise model gives each operation type its own error rate. Calibrating the model to the device improves absolu…",
+      "authors": [
+        "Shay J. Manor",
+        "Leila S. Erhili",
+        "Yassine Jebbouri"
+      ],
+      "published": "2026-09-03T23:24:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04557v1",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -14712,6 +14952,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.05255v1",
+      "title": "Compact Neural Appearance Models for Efficient Gaussian Splatting",
+      "abstract": "Explicit primitive-based radiance fields such as 3D Gaussian Splatting typically model view-dependent appearance using low-order spherical harmonics (SH). Although efficient to evaluate, SH coefficients dominate per-primitive storage and memory traffic, while their band-limited basis restricts angular detail. We present a thorough, end-to-end comparison of SH and recent spherical appearance models and introduce an implicit alternative that decodes compact per-primitive latent codes using a tiny shared MLP. We integrate all models into the same optimized pipeline, fusing their forward and backward passes into a differentiable CUDA rasterizer and provide a portable WebGL viewer for laptop and …",
+      "authors": [
+        "Florian Hahlbohm",
+        "Jorge Condor",
+        "Linus Franke",
+        "Martin Eisemann",
+        "Marcus Magnor"
+      ],
+      "published": "2026-09-04T15:18:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.05255v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -17549,6 +17824,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-04T12:03:00.757932+00:00"
+    },
+    {
+      "id": "2609.04984v1",
+      "title": "Temporal Residual Neural Radiance Fields for Monocular Video Dynamic Human Body Reconstruction",
+      "abstract": "In the field of computer vision and graphics, high-quality reconstruction of the human body in static scenes has been achieved in recent years by a single multilayer perceptron (MLP) in a number of approaches. However, MLPs have capacity limitations, requiring substantial training time and computational resources for dynamic scene reconstruction. And the quality of reconstruction is significantly constrained. This paper proposes a method for effectively processing complex spatiotemporal signals in dynamic scene human 3D modeling. The proposed method uses Temporal Residual Neural Radiance Fields to achieve novel view rendering and new pose synthesis of human bodies.To address the problem of r…",
+      "authors": [
+        "Tianle Du",
+        "Jie Wang",
+        "Xiaolong Xie",
+        "Wei Li",
+        "Pengxiang Su",
+        "Jie Liu"
+      ],
+      "published": "2026-09-04T10:40:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.04984v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-07T13:24:09.488334+00:00"
     },
     {
       "id": "2606.31680v1",
