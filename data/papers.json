@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-09T12:14:09.815144+00:00",
-  "total": 652,
-  "new_this_run": 23,
+  "last_updated": "2026-09-10T12:08:33.295325+00:00",
+  "total": 667,
+  "new_this_run": 15,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1615,6 +1615,40 @@
       "first_seen": "2026-09-03T12:00:57.656915+00:00"
     },
     {
+      "id": "2609.10376v1",
+      "title": "Shape-guided Gaussian Splatting for Sparse-View X-ray 3D Reconstruction",
+      "abstract": "Sparse-view X-ray 3D reconstruction is essential for reducing radiation exposure, but recovering a density field from a handful of X-ray projections is severely ill-posed. Recently, 3D Gaussian Splatting has achieved state-of-the-art performance in sparse-view reconstruction by representing the volume using explicit, optimized primitives, but it requires dozens of projected views. With fewer views, reconstruction quality degrades severely since the explicit primitives are optimized freely without any anatomical information. Anatomical structures, in contrast, share similar geometry and density across a population. Their variations are bounded within a limited range that statistical shape mod…",
+      "authors": [
+        "Pranav Poudel",
+        "Florence Dell'Aniello Picard",
+        "Nairouz Shehata",
+        "Frédéric Lavoie",
+        "Herve Lombaert"
+      ],
+      "published": "2026-09-09T16:05:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10376v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
       "id": "2607.05252v1",
       "title": "FUSE: FK-Steered Multi-Modal Flow Matching for Efficient Simulation-Based Posterior Estimation",
       "abstract": "Simulation-Based Inference (SBI) is critical for scientific discovery, with generative models offering a promising path toward efficient inference. However, existing methods struggle with effective multimodal modeling. They often rely on brute-force fusion strategies that ignore the structural disparities between parameters and observations, thus limiting estimation fidelity. In this work, we introduce FUSE (Feynman-Kac steered mUlti-modal flow matching for efficient Simulation-based posterior Estimation). Unlike prior work, FUSE employs a dual-track architecture that preserves the distinct features of multimodal inputs while facilitating dynamic interaction. Additionally, we propose an FK-s…",
@@ -2198,6 +2232,64 @@
       ],
       "has_code": true,
       "first_seen": "2026-09-03T12:00:57.656915+00:00"
+    },
+    {
+      "id": "2609.10531v1",
+      "title": "Guiding Image-to-3D Generation with Test-Time Partial Observations",
+      "abstract": "Image-to-3D models can generate visually compelling 3D assets from a single RGB image, but their geometry is often only loosely constrained by the available observations, limiting their use in applications that require geometric fidelity. In many real-world settings, however, partial geometric observations of the object may be available at test time. We introduce a training-free framework for incorporating such evidence into pretrained image-to-3D generative models without retraining or finetuning. To do this, we guide generation using a ray-consistent observation likelihood defined over the model's occupancy representation, combining surface occupancy and free-space evidence. Applied to SAM…",
+      "authors": [
+        "Jerred Chen",
+        "Simon Weber",
+        "Ronald Clark"
+      ],
+      "published": "2026-09-09T17:58:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10531v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 77
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.09606v1",
+      "title": "RouteBridge: Reliability-Routed Bidirectional Distillation Between Neural Radiance Fields and 3D Gaussian Splatting",
+      "abstract": "Neural radiance fields (NeRFs) and 3D Gaussian Splatting (3DGS) encode a scene with complementary inductive biases, but existing cross-representation distillation typically fixes one representation as teacher for the entire scene. A globally fixed teacher can propagate local reconstruction errors. We present RouteBridge, a bidirectional framework that selects the teaching direction for each ray. Its reliability estimator combines photometric residuals with representation-specific geometric evidence and routes supervision from NeRF to 3DGS, from 3DGS to NeRF, or abstains. A renderer-independent interface transfers color, opacity, and normalized depth without shared features or point correspon…",
+      "authors": [
+        "YuanHang Wang",
+        "Xin Cao"
+      ],
+      "published": "2026-09-09T02:00:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.09606v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 60
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -3756,6 +3848,34 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-09T12:14:09.815144+00:00"
+    },
+    {
+      "id": "2609.09808v1",
+      "title": "GTA-2: A Multi-VLM Framework for Synthesizing Robot Manipulation Skills via Grounded Task Axes",
+      "abstract": "Robotic manipulation tasks are often decomposed into behaviors or skills. However, one often needs to predefine these behaviors for specific tasks or try to cover a wide range of tasks using generic skills. As a result, these behaviors can remain too coarse to expose the geometric, control, and scene-dependent decisions required for execution. We introduce Grounded Task Axes v2 (GTA-2), a modular multi-VLM framework that constructs executable, task-bespoke manipulation skills from reusable object-centric task-axis components. Rather than predicting actions end-to-end or composing fixed task-level primitives, GTA-2 represents each skill as semantic subtasks comprising task-relevant keypoints …",
+      "authors": [
+        "M. Yunus Seker",
+        "Shobhit Aggarwal",
+        "Ruwan Wickramarachchi",
+        "Jonathan Francis",
+        "Oliver Kroemer"
+      ],
+      "published": "2026-09-09T07:04:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.09808v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -7697,6 +7817,40 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-09T12:14:09.815144+00:00"
+    },
+    {
+      "id": "2609.10405v1",
+      "title": "Frequency-Conditioned Flow Matching for Vision-Language-Action Models",
+      "abstract": "Robot actions are temporally correlated trajectories whose frequency components encode motion at different scales with highly non-uniform energy distributions. Yet Flow Matching--based vision-language-action (VLA) models typically generate actions in temporal coordinates, without explicitly modeling or systematically leveraging this frequency heterogeneity. We introduce \\emph{FreqFM}, a frequency-conditioned Flow Matching framework for VLA models. It raises action frequency from an implicit trajectory property to an explicit conditioning dimension that spans the entire generation pipeline. Concretely, in DCT frequency coordinates, FreqFM constructs a spectrum-matched source distribution, ada…",
+      "authors": [
+        "Haochen Niu",
+        "Shengye Dong",
+        "Hao Liu",
+        "Peiwen Lin",
+        "Wang Chuang"
+      ],
+      "published": "2026-09-09T16:24:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10405v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -14119,6 +14273,246 @@
       "first_seen": "2026-09-09T12:14:09.815144+00:00"
     },
     {
+      "id": "2609.10506v1",
+      "title": "DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation",
+      "abstract": "Action-conditioned latent world models predict future visual representations, enabling zero-shot goal-conditioned robot planning and control. However, their predictions for fine-grained spatial and rotational actions are unreliable for full 7-DoF end-effector control. To address this gap, we introduce DUET-DINO, a simultaneous cross-view latent world model that jointly learns action-conditioned predictions from static side- and wrist-camera observations through cross-view conditioning. By exploiting complementary global scene and gripper-centric information, DUET-DINO enables latent planning over the full 7-DoF action space. Across spatially diverse reach, orientation-intensive angled-reach,…",
+      "authors": [
+        "Nisarga Nilavadi",
+        "Ralf Römer",
+        "Moritz Reuss",
+        "Michael Krawez",
+        "Tobias Jülg",
+        "Angela P. Schoellig"
+      ],
+      "published": "2026-09-09T17:41:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10506v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.10307v1",
+      "title": "View-Structured Conformal Prediction for 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) renders novel views in real time, but an uncertainty heatmap does not certify that a rendered view meets a certain prediction coverage. We treat novel-view synthesis as structured regression and ask that, with probability at least $1-α$, RGB prediction boxes cover at least a $1-β$ fraction of pixels in a new view. We propose View-Structured Conformal Prediction (VSCP). It splits the pre-calibration scale into a spatial shape from the renderer and a transferable view-difficulty factor, which predicts the smallest view-wise multiplier that shape needs. A held-out quantile over views (View-CP) then gives finite-sample validity even when transferring to new scenes. T…",
+      "authors": [
+        "Junzheng Chu",
+        "Bin Pan",
+        "Zhenwei Shi"
+      ],
+      "published": "2026-09-09T15:16:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10307v1",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.10095v1",
+      "title": "LinearMask-GS: Stable-Mask Importance Pruning for Compact 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) enables real-time novel view synthesis but produces millions of primitives through adaptive densification, leading to significant storage overhead. Learned-mask pruning methods such as LP-3DGS address this by assigning each Gaussian a learnable mask to identify and prune redundant primitives. However, we identify a limitation of this paradigm: the steep slope of the Gumbel-Sigmoid activation drives mask values to the extremes within the short mask-training window, before the importance ranking has stabilized, producing a sharply bimodal distribution from which that ranking can no longer be reliably recovered. We propose LinearMask-GS, which replaces Gumbel-Sigmoi…",
+      "authors": [
+        "Donghun Ryu",
+        "Minhyeok Lee"
+      ],
+      "published": "2026-09-09T12:19:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10095v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.10058v1",
+      "title": "NOPE-HYPE: A Structured Simulation Workflow for Robust Speech-to-Text Across Diverse Acoustic Environments",
+      "abstract": "Robust speech-to-text translation systems should perform reliably across diverse acoustic conditions, yet practical pipelines lack controllable tools for systematic environment exploration. Large speech models remain sensitive to unseen acoustic conditions, as training data rarely cover the full range of real environments.We present NOPEHYPE, a structured training workflow that combines a controllable environment simulator, coverage-optimal environment reduction on Power Spectral Density (PSD) templates, and a small, interpretable hyperparameter search over simulator knobs. We show that simulator-generated noise achieves performance comparable to balanced realnoise training across Whisper an…",
+      "authors": [
+        "Niramay M. Patel",
+        "Bibek Behera",
+        "Raksha Sharma"
+      ],
+      "published": "2026-09-09T11:32:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10058v1",
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.10050v1",
+      "title": "Grounding Generated Video Plans in Simulation Towards Versatile Dexterous Controllers",
+      "abstract": "Generated hand-object interaction (HOI) videos provide a controllable way to propose manipulation motions. Simulation-based HOI tracking can translate such kinematic references into feasible low-level control, but its scalability is limited by the lack of reliable reference motions. We therefore combine generated videos with simulation-based HOI grounding: during training, generated videos provide diverse motion references for learning a multi-object, multi-trajectory HOI tracker, and at deployment, the video model produces motion plans that are executed by the learned tracker. In particular, we propose a method that enables scalable reference generation by HOI reconstruction with minimal ma…",
+      "authors": [
+        "Tianyue Wu",
+        "Boyuan An",
+        "Shuqi Zhao",
+        "Heyu Guo",
+        "Wanli Xing",
+        "Yi Ma"
+      ],
+      "published": "2026-09-09T11:26:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10050v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.09828v1",
+      "title": "RealSimLoop: Online Real-to-Sim Adaptation via Differentiable Reduced-Order Simulation with Vision Feedback",
+      "abstract": "Real-world observations of deformable objects are often sparse or surface-level, while downstream tasks require hidden physical quantities such as internal deformation, stress fields, and interaction forces. Physics-based simulation can recover these quantities, but online real-to-sim adaptation remains challenging due to costly full-space optimization, limited feedback, and time-varying material properties. To address these challenges, we propose RealSimLoop, a differentiable framework for online real-to-sim adaptation using vision data as physical feedback. Our approach achieves quasi-real-time performance by executing differentiable simulation within a reduced-order neural subspace, drast…",
+      "authors": [
+        "Zhihao Cen",
+        "Chuhua Xian",
+        "Hailin Sun",
+        "Yuliang Liufu",
+        "Zhen Zhang",
+        "Xiangyu Chu"
+      ],
+      "published": "2026-09-09T07:33:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.09828v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.09492v1",
+      "title": "Actuator Dynamics Curricula for Narrow-Viability Tasks in Legged Robot Learning",
+      "abstract": "Reinforcement learning has produced capable controllers across a broad range of legged-robot tasks, but a subset of these tasks fail to converge under standard training: those for which most exploration trajectories terminate before producing useful gradient signal. To address such tasks we introduce the \\emph{Actuator Dynamics Curriculum}, a procedure that initializes joint stiffness at a high value and anneals it toward the system-identified value as completed episode lengths grow. Using a cart-pole system as a representative example, we show that higher closed-loop joint natural frequency under critical damping enlarges the viability kernel of the underlying Markov Decision Process, incre…",
+      "authors": [
+        "Kousheek Chakraborty",
+        "Chandan K. Rajendra",
+        "Ayham Alharbat",
+        "Abeje Y. Mersha"
+      ],
+      "published": "2026-09-08T22:14:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.09492v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.09403v1",
+      "title": "A Decade of Bayesian Optimization for Controller Tuning and Robot Learning: Tutorial, Review, and Future Prospects",
+      "abstract": "In the past decade, Bayesian optimization (BO) has emerged as a powerful and adaptable framework for automatic controller tuning and robot learning. This article offers a comprehensive overview of the state-of-the-art in BO, designed to support both researchers and practitioners in understanding recent advancements, practical applications, and future research directions. We begin by adopting a practitioner's perspective, illustrating how to effectively set up BO through a representative controller tuning example. We position BO within the broader context of learning paradigms, ranging from deep reinforcement learning to data-driven control, and highlight scenarios where BO is most advantageo…",
+      "authors": [
+        "David Stenger",
+        "Paul Brunzema",
+        "Johanna Menn",
+        "Alexander von Rohr",
+        "Angela P. Schoellig",
+        "Sebastian Trimpe"
+      ],
+      "published": "2026-09-08T19:59:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.09403v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -15434,6 +15828,36 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-09T12:14:09.815144+00:00"
+    },
+    {
+      "id": "2609.10363v1",
+      "title": "SceneHI: High-Resolution 3D-Consistent Scene Texturing with Controllable Illumination",
+      "abstract": "SceneHI is a framework that lifts high-resolution, illumination-aware priors from 2D diffusion models to perform 3D texture synthesis. It is the first to demonstrate that high-resolution textures, previously limited to 2D synthesis, can be generated directly on 3D objects without model fine-tuning or optimization. Designed for complex, multi-object environments, SceneHI uniquely combines 3D-consistency, high-resolution fidelity, and physically plausible baked shadows within a single generative pipeline. To enforce strict geometric coherence, we introduce an exact analytical pixel-to-texel mapping that aligns diffusion trajectories across multiple viewpoints. We utilize High-Resolution Latent…",
+      "authors": [
+        "Athanasios Tragakis",
+        "Marco Aversa",
+        "Daniela Ivanova",
+        "Chaitanya Kaul",
+        "Roderick Murray-Smith",
+        "Daniele Faccio"
+      ],
+      "published": "2026-09-09T15:56:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10363v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -19919,6 +20343,36 @@
       ],
       "has_code": true,
       "first_seen": "2026-09-09T12:14:09.815144+00:00"
+    },
+    {
+      "id": "2609.09925v1",
+      "title": "Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Models",
+      "abstract": "Modern vision-language-action (VLA) policies predict a whole chunk of actions: one to two seconds of coordinated motion emitted in a single forward pass. Yet an action chunk is essentially a short multivariate trajectory, but inside these models it is a sequence of generic per-timestep hidden tokens decoded by a linear head. This under-serves two motion structures. First, frequency: a chunk superimposes a smooth global trend and fine corrective motion across time scales, and a single token entangles them. Second, cross-phase geometry: motions of different phases (reach, contact, grasp adjustment, settling) unfold along very different, near-orthogonal directions in representation space, yet a…",
+      "authors": [
+        "Shengye Dong",
+        "Haochen Niu",
+        "Hao Liu",
+        "Peiwen Lin",
+        "Chuang Wang",
+        "Shanmin Pang"
+      ],
+      "published": "2026-09-09T09:16:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.09925v1",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-10T12:08:33.295325+00:00"
     }
   ]
 }
