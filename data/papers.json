@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-10T12:08:33.295325+00:00",
-  "total": 667,
-  "new_this_run": 15,
+  "last_updated": "2026-09-11T12:06:39.320874+00:00",
+  "total": 677,
+  "new_this_run": 10,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -3876,6 +3876,31 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.11338v1",
+      "title": "Modular Kinematic Reduction of Closed-Chain Mechanisms Using Path Assembly and Defect Homotopy",
+      "abstract": "Closed kinematic chains complicate modular modeling by coupling active and passive coordinates through nonlinear closure constraints. This paper presents a Path-Assembled Closure Differential Mapping (PACDM) framework for modular closure resolution and kinematic reduction. Each closure element compares two ordered transformation paths with common endpoints, with their mismatch expressed through the logarithm on SE(3) and the corresponding Jacobian assembled from local transformation derivatives. Multi-path modules are constructed from a minimal set of pairwise closure elements, while rank-revealing analysis selects locally independent scalar constraints. A defect homotopy recovers closure-co…",
+      "authors": [
+        "Mohammad Dastranj",
+        "Jouni Mattila"
+      ],
+      "published": "2026-09-10T10:14:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11338v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -14513,6 +14538,96 @@
       "first_seen": "2026-09-10T12:08:33.295325+00:00"
     },
     {
+      "id": "2609.11737v1",
+      "title": "ORCH: Organizational Principles Enable Collective Intelligence in Embodied AI",
+      "abstract": "Collective intelligence depends not only on the capabilities of individual members, but also on how those members are organized. Yet artificial multi-agent systems are typically assembled using fixed organizational structures, even when the physical tasks they perform impose fundamentally different coordination requirements. Here we show that principles from human organization theory can be operationalized to organize large, heterogeneous collectives of embodied artificial agents. We introduce ORCH (Organizing Roles and Coordination Hierarchies), which constructs task-specific hierarchical organizations by combining pooled interdependence for work that can proceed concurrently with sequentia…",
+      "authors": [
+        "Zhengran Ji",
+        "Jonathan Hyun",
+        "Boyuan Chen"
+      ],
+      "published": "2026-09-10T15:52:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11737v1",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.11478v1",
+      "title": "CARLAverse: A Highly Modular, Distributed, and Multimodal Framework for Human-in-the-Loop Simulation",
+      "abstract": "The development of autonomous driving demands comprehensive testing in mixed-traffic scenarios involving vulnerable road users (VRUs), where purely artificial agents often fail to capture authentic human social negotiations. While human-in-the-loop (HITL) simulators enable safe investigation of these interactions, existing multi-agent platforms struggle with the network latency and synchronization constraints required for high-fidelity haptic feedback. To resolve this, we present CARLAverse, an open-source, multimodal simulation ecosystem. Extending modular hardware abstraction, CARLAverse integrates driving (DrivoCARLA), cycling (CycloCARLA), and pedestrian (WalkoCARLA) simulators into a sh…",
+      "authors": [
+        "Patrick Rebling",
+        "Philipp Nenninger",
+        "Reiner Kriesten"
+      ],
+      "published": "2026-09-10T12:44:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11478v1",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.11079v1",
+      "title": "RIDE: Relocalization-Informed Depth Estimation with 3D Gaussian Splatting",
+      "abstract": "Render--match--PnP relocalization establishes correspondences between query image pixels and 3D map points for camera pose recovery, but their potential to support dense depth estimation is often overlooked. To exploit this geometric information, we present RIDE, which estimates dense metric depth from a robot's RGB stream. Given a metrically scaled 3D Gaussian Splatting (3DGS) model, RIDE combines sparse metric depth observations derived from PnP-RANSAC inlier correspondences with the geometric prior of a pretrained video-depth model. To handle uneven and intermittent observations, it integrates global and local depth correction with temporal memory, supporting depth estimation through shor…",
+      "authors": [
+        "Jiarong Lian",
+        "Zhe Xiao",
+        "Zhaoyang Zhang",
+        "Wei Li",
+        "Ruizhi Chen"
+      ],
+      "published": "2026-09-10T04:36:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11079v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -15858,6 +15973,64 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.11894v1",
+      "title": "3D Point Splatting for mmWave Radar Novel View Synthesis",
+      "abstract": "Solving novel view synthesis (NVS) for millimeter-wave (mmWave) radar requires a renderer that is physically faithful, complex-valued, and multi-viewpoint-tractable. No prior method achieves these three properties simultaneously. Differentiable Monte Carlo (MC) ray tracers implement the radar forward model directly with explicit material modeling and complex outputs, but do not scale to the multi-view optimization NVS demands. Optical-NVS ports of NeRF, hash grids, and 3D Gaussians train fast but discard phase and replace explicit material modeling with opaque learned features, restricting them to power-only range-azimuth (RA) magnitudes. We propose 3D Point Splatting (3DPS), the first diffe…",
+      "authors": [
+        "Adnan Armouti",
+        "Yixuan Gao",
+        "Rajalakshmi Nandakumar"
+      ],
+      "published": "2026-09-10T17:52:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11894v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG",
+        "eess.SP"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.11129v1",
+      "title": "ReconPlusGen: Injecting Reconstruction Prior into Multi-view 3D Generation through Noise Inversion and Modulation",
+      "abstract": "Qualitative results and an illustration of our core idea. Top left: reconstruction results on benchmark images. Top right: reconstruction results on real-world images. Bottom: illustration of reconstruction-guided noise initialization and modulation. Given multiple input images, we predict a point cloud in canonical space, deterministically inject the predicted geometry into the diffusion process through noise inversion, and modulate the resulting noise to preserve the generative flexibility required to complete unobserved regions and refine visible geometry.",
+      "authors": [
+        "Jiarui Liu",
+        "Heng Li",
+        "Weiyu Li",
+        "Keng Deng",
+        "Junyuan Deng",
+        "Zheng Zhongxing"
+      ],
+      "published": "2026-09-10T06:19:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11129v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -18937,6 +19110,130 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-09T12:14:09.815144+00:00"
+    },
+    {
+      "id": "2609.11506v1",
+      "title": "UBone3D: Physics-Rectified Conditional Flow Matching for Anatomical 3D Shape Completion from Ultrasound",
+      "abstract": "Three-dimensional ultrasound (US) is a safe, radiation-free complementary modality to CT and X-rays for longitudinal monitoring, yet its segmentation-derived partial point clouds are extremely artifact-laden. Consequently, it is challenging to recover a clean and complete anatomical structure from such US point clouds. In this paper, we present UBone3D, a novel framework based on physics-rectified conditional flow matching (CFM) that performs point cloud completion directly from partial US observations. UBone3D models deterministic physics artifacts (e.g., surface thickening, streaking, dropouts) via a simulated physics proxy, and introduces test-time physics rectification to steer the shape…",
+      "authors": [
+        "Weiying Chen",
+        "Yuchong Gao",
+        "Siyuan Li",
+        "Marek Reformat",
+        "Rui Zheng",
+        "Edmond Lou"
+      ],
+      "published": "2026-09-10T13:13:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11506v1",
+      "categories": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.11434v1",
+      "title": "Hologram Representation via Quadratic Phase Gaussian Splatting",
+      "abstract": "We introduce Complex-Valued Quadratic Phase Gaussian (CVQPG), a novel hologram representation method that replaces standard 2D Gaussian representations used in 2D Gaussian Splatting with 2D quadratic phase functions. CVQPG incorporates additional learnable parameters to control the curvature of these bases. We evaluate our approach against state-of-the-art methods, exceeding the visual quality by +0.19 dB (RGB) and +0.33 dB (grayscale) on average in holographic reconstructions. Specifically, our equal parameter count evaluations show that modulating the primitive's wavefront is an effective and lightweight enhancement for hologram representations. In addition, our frequency domain analysis i…",
+      "authors": [
+        "Haolong Wang",
+        "Yicheng Zhan",
+        "Kaan Akşit",
+        "Simeng Qiu"
+      ],
+      "published": "2026-09-10T12:06:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11434v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.11223v1",
+      "title": "Tri-DehazeGS: Scene--Medium Decoupled Gaussian Splatting with Transmittance-Aware Optimization",
+      "abstract": "Recovering clean 3D scenes from hazy multi-view images is challenging because haze attenuates scene radiance and introduces atmospheric scattering. Recent scattering-aware Gaussian Splatting methods introduce physical haze models into reconstruction, but they often apply degradation in image space or bind medium-related variables to Gaussian primitives, which can entangle clean scene radiance with atmospheric effects. Moreover, low-transmittance regions provide weakened supervision for Gaussian optimization, causing distant or dense-haze areas to be under-reconstructed. We argue that clean reconstruction under haze requires both scene--medium disentanglement and transmittance-aware optimizat…",
+      "authors": [
+        "Kui Jiang",
+        "Yang Gu",
+        "Jiacheng Liu",
+        "Shiyu Liu",
+        "Youyu Chen",
+        "Hui Liu"
+      ],
+      "published": "2026-09-10T08:24:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.11223v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.10748v1",
+      "title": "Lie-Algebraic Bell Recurrences for Arbitrary-Order Twist Jets and Parallel-Mechanism Closure",
+      "abstract": "This paper develops an arbitrary-order kinematic construction that links serial propagation, parallel-mechanism closure, and rigid-platform point fields within one dual screw framework. A cylindrical joint is retained as one native physical block, with revolute and prismatic joints obtained as special cases. For each fixed joint axis, ordinary Bell polynomials organize the derivatives of the exponential factor; across a chain, the noncommuting factors remain in their physical order. Initial-frame prefix and terminal-resolved covariant formulas then produce equivalent representations of the serial twist jet. For a parallel mechanism, repeated Leibniz differentiation, with joint-level derivati…",
+      "authors": [
+        "Daniel Condurache"
+      ],
+      "published": "2026-09-09T18:45:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.10748v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-11T12:06:39.320874+00:00"
     },
     {
       "id": "2606.31680v1",
