@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-15T12:33:34.046365+00:00",
-  "total": 677,
-  "new_this_run": 0,
+  "last_updated": "2026-09-16T12:30:37.199441+00:00",
+  "total": 696,
+  "new_this_run": 19,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -3901,6 +3901,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.16864v1",
+      "title": "TEMPO: Learning Temporal Context for Dynamic Robot Manipulation",
+      "abstract": "Vision-language-action (VLA) models have achieved impressive performance in quasi-static manipulation, but struggle in dynamic manipulation tasks because they operate on a single observation at inference time. We identify two representational failures that underlie this limitation. The first is motion ambiguity, where a single observation does not include scene dynamics and therefore cannot anticipate the future state of moving objects. The second is state aliasing, where visually similar observations from different points in a task require different actions. We argue that these failures persist regardless of model scale and inference latency, showing that the bottleneck is missing temporal …",
+      "authors": [
+        "Zhenyang Feng",
+        "Jimin Heo",
+        "Erik B. Sudderth",
+        "Unnat Jain"
+      ],
+      "published": "2026-09-15T08:56:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16864v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -7876,6 +7905,64 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.15870v1",
+      "title": "WLA$^3$: World Latent Action Modeling for Semantics, Dynamics, and Kinematics",
+      "abstract": "Scaling generalist policy models with heterogeneous data is limited by the lack of unified, low-noise action supervision. Human egocentric videos are abundant, but only a small fraction comes with high-quality hand-action labels. Observed world transitions offer a common source of action-related supervision across data sources. We introduce WLA$^3$ (World Latent Action Modeling for Semantics, Dynamics, and Kinematics), a unified generalist policy model framework built around representations learned by a World Latent Action Model (WLAM). WLAM first learns how multimodal world states change over a local interval, encoding synchronized camera views and available embodiment-state changes into a …",
+      "authors": [
+        "Peidong Liu",
+        "Zhiyuan Xiang",
+        "Mingyang Li",
+        "Wenhao Li",
+        "Jiale Zhang",
+        "Jiahao Sun"
+      ],
+      "published": "2026-09-14T16:59:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.15870v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16089v1",
+      "title": "Structure-Preserving Quantum Circuit Architectures for Robot Kinematics",
+      "abstract": "Structured spatial data require quantum encodings that preserve geometric relations, expose measurable observables, and remain implementable on finite-depth hardware. This work introduces a quantum representation and circuit architecture for rigid-body transformations and specializes it to Denavit--Hartenberg kinematics of serial open-chain manipulators. Each translational contribution is factorized into a classical metric magnitude and a signed unit direction encoded by a single-qubit Bloch vector, while parameterized rotations reproduce the ordered propagation of frame directions. A selector register prepares probabilities proportional to the contribution magnitudes, and the reduced state …",
+      "authors": [
+        "Andrea Morghen",
+        "Pierluigi Arpenti",
+        "Roberto Schiattarella",
+        "Giovanni Acampora",
+        "Bruno Siciliano"
+      ],
+      "published": "2026-09-14T11:20:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16089v1",
+      "categories": [
+        "cs.RO",
+        "quant-ph"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -14628,6 +14715,268 @@
       "first_seen": "2026-09-11T12:06:39.320874+00:00"
     },
     {
+      "id": "2609.17440v1",
+      "title": "Reduced-Space Multi-Fidelity Bayesian Optimization of Process Simulation Models",
+      "abstract": "Optimizing industrial process flowsheets is often computationally prohibitive due to the high cost of rigorous simulations and the curse of dimensionality inherent in complex design spaces. To address these challenges, we present a reduced-space multi-fidelity Bayesian optimization (RS-MFBO) framework designed for high-dimensional, expensive black-box functions. The approach integrates Global Sensitivity Analysis (GSA) for dimensionality reduction with a fidelity-augmented Gaussian process that captures correlations between low-cost approximations and expensive high-fidelity evaluations. A cost-aware acquisition strategy, augmented with cooldown and promotion mechanisms, adaptively guides th…",
+      "authors": [
+        "Niki Triantafyllou",
+        "Andrea Bernardi",
+        "Maria M. Papathanasiou"
+      ],
+      "published": "2026-09-15T16:46:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.17440v1",
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.17387v1",
+      "title": "PanoGS-SLAM: Panoramic 3D Gaussian Splatting SLAM",
+      "abstract": "Real-time dense SLAM is a core capability for robotics applications that require robust localization and high- quality mapping in dynamic or fast-changing environments. Recent 3D Gaussian Splatting (3DGS)-based SLAM methods have shown promising performance, but most are designed for narrow-FoV pinhole cameras, where limited angular coverage weakens pose observability and often leads to unstable photo- metric optimization under rapid motion and large viewpoint changes. We present PanoGS-SLAM, the first panoramic dense SLAM system built on 3D Gaussian Splatting. Our method per- forms differentiable rendering and pose optimization directly in the spherical domain, enabling omnidirectional photo…",
+      "authors": [
+        "Yongqi Mao",
+        "Hao Shi",
+        "Yufan Zhang",
+        "Zhonghua Yi",
+        "Xiangfei Guo",
+        "Kaiwei Wang"
+      ],
+      "published": "2026-09-15T16:26:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.17387v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16772v1",
+      "title": "HLC-GS: Risk-Map-Guided Height-Layer Consistency Gaussian Splatting for DSM Reconstruction from Optical Satellite Imagery",
+      "abstract": "A Digital Surface Model (DSM) is a fundamental geospatial data product for representing the elevation of the Earth's surface. Recently, 3D Gaussian Splatting (3DGS) has shown considerable potential for DSM reconstruction from multi-view optical satellite imagery due to its explicit scene representation and efficient optimization. However, in 3DGS-based DSM generation, alpha-weighted aggregation of Gaussian altitudes may blend splats from different height layers at the same rendered pixel or DSM sampling location, producing non-physical intermediate elevations and height-layer mixing errors. To address this problem, we propose HLC-GS, a risk-map-guided height-layer consistency Gaussian Splatt…",
+      "authors": [
+        "Jie Yang",
+        "Yingdong Pi",
+        "Qiyan Luo",
+        "Xiaoyu Wang",
+        "Lekang Wen",
+        "Mi Wang"
+      ],
+      "published": "2026-09-15T07:42:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16772v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16436v1",
+      "title": "Interpreting and Steering LLM Agents for Social Simulations",
+      "abstract": "Simulations based on large language models (LLMs) have proven to be powerful for understanding human behavior, making them valuable additions to the social scientific toolkit. However, LLMs are ultimately black boxes based on deep neural networks which limits their value for social science. This is because of a lack of (i) interpretability: i.e. the ability to assign clear mechanisms driving observed behavior; and a lack of (ii) steerability: i.e. the ability to mute or amplify specific theoretically meaningful mechanisms of action to drive specific model behavior. Here, we demonstrate how the black box could be opened up to further enrich LLM-based simulations. Specifically, we compare thre…",
+      "authors": [
+        "Jiayue Gaveal Fan",
+        "Arul Murugan",
+        "Shreyas Krishnan",
+        "Abhishek Nagaraj"
+      ],
+      "published": "2026-09-14T23:23:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16436v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16378v1",
+      "title": "Geometry vs Structure: Graph-Based Diagnostics for LiDAR Point-Cloud Simulation Fidelity",
+      "abstract": "Digital twins provide a scalable and cost-effective complement to real-world testing for validating autonomous-driving and advanced driver-assistance system (ADAS) sensor pipelines. However, quantifying their fidelity remains challenging, particularly for 3D LiDAR point clouds, where conventional geometric metrics may overlook important structural discrepancies. We present a graph-based framework for evaluating the structural fidelity of simulated LiDAR point clouds against real-world scans. While scan-level metrics such as Chamfer distance capture point-wise geometric similarity, they do not explicitly represent connectivity, topology, or object-level organization. Our framework constructs …",
+      "authors": [
+        "Ghazal Farhani",
+        "Taufiq Rahman"
+      ],
+      "published": "2026-09-14T21:41:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16378v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16317v1",
+      "title": "Generative models for simulation based filtering: Formulations and Empirical Comparisons",
+      "abstract": "This letter presents a unified formulation and a controlled numerical comparison of generative-model approaches to the nonlinear filtering problem. Under this formulation the analysis step is realized by a transport of the forecast distribution to the posterior, the approaches differing only in how that transport is selected and learned. We derive three new filters, based on stochastic interpolants, their deterministic flow-matching limit, and Schrödinger bridges realized through forward--backward SDEs. We develop a two-stage tuning procedure that separates the training of the generative model from its online refinement. The resulting methods are compared against the optimal transport filter…",
+      "authors": [
+        "Mohammad Al-Jarrah",
+        "Wei Deng",
+        "Bamdad Hosseini",
+        "Amirhossein Taghvaei"
+      ],
+      "published": "2026-09-14T20:31:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16317v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.15509v1",
+      "title": "StereoPatch: Patch-Aligned RGB-Depth Fusion for Spatial Perception in Robot Manipulation",
+      "abstract": "Recent advances in robot imitation learning have produced visuomotor policies that predict actions directly from visual observations. Yet visually similar scenes can require different actions as target position, object height, or contact geometry changes. Pretrained RGB features may map these geometrically distinct states to similar policy inputs, while simply adding depth requires the policy to learn RGB-depth correspondence from the same limited demonstrations used to learn control. We introduce StereoPatch, a patch-aligned RGB-depth representation that binds registered metric geometry directly to the RGB patches used for action prediction. On a shared 2-D patch grid, asymmetric cross-atte…",
+      "authors": [
+        "Yanan Zhou",
+        "Zhaoyan Qian",
+        "James Zhao",
+        "Weiming Zhi"
+      ],
+      "published": "2026-09-14T13:01:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.15509v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.15485v1",
+      "title": "Data-driven Prediction of Satellite-observed Avalanche Activity from Snowpack Simulations",
+      "abstract": "Avalanche forecasting requires knowledge of snowpack conditions and recent avalanche activity, but field observations are sparse across large mountain regions. We explore whether SNOWPACK simulations can predict avalanche activity mapped by synthetic aperture radar (SAR). We compiled five winters of Sentinel-1 avalanche detections across Norway and parts of Sweden, alongside SNOWPACK simulations forced by numerical weather predictions on a 20 x 20 km grid at different elevations and predefined slope angles. A transformer used five days of SNOWPACK outputs to predict the following day's SAR-detected Avalanche Activity Index (SAR-AAI). This index weights larger debris more heavily, spreads det…",
+      "authors": [
+        "Jakob Grahn",
+        "Filippo Maria Bianchi",
+        "Bert Kruyt",
+        "Karsten Müller"
+      ],
+      "published": "2026-09-14T12:40:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.15485v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.15162v1",
+      "title": "LieSpline-DP: Lie-Group B-Spline Diffusion Policy for Smooth Robot Manipulation",
+      "abstract": "Diffusion Policy (DP) is a powerful Learning from Demonstration (LfD) method for robotic manipulation, yet it suffers from discontinuous and non-smooth trajectories. Spline-based action representations promote smooth motion within individual action chunks, but existing spline-based methods neither guarantee cross-chunk $C^2$ continuity nor account for the group structure of $\\mathrm{SE}(3)$. We therefore propose LieSpline-DP, a Lie-group B-spline diffusion policy that generates end-effector trajectories directly on $\\mathrm{SE}(3)$ and couples consecutive plans by sharing their boundary control poses, ensuring $C^2$ continuity throughout the entire planned trajectory. Across three real-robot…",
+      "authors": [
+        "Erxuan Xie",
+        "Bang Liu",
+        "Pingyun Nie",
+        "Xingkai Liu",
+        "Zhuang Fu",
+        "Bo Zhang"
+      ],
+      "published": "2026-09-14T07:45:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.15162v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -16031,6 +16380,66 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-11T12:06:39.320874+00:00"
+    },
+    {
+      "id": "2609.17450v1",
+      "title": "ORCA: Occlusion-Aware Refinement and Completion for Novel View Synthesis",
+      "abstract": "Novel-view synthesis from a single image is a fundamentally ambiguous problem. As the camera moves away from the input viewpoint, previously hidden regions become visible, exposing missing geometry and holes in the reconstructed scene. Existing methods often rely on generative models to complete such regions. However, many of these artifacts are small gaps near depth boundaries and do not require generating new scene content. In order to eliminate expensive process of generating image we introduce ORCA, an occlusion-aware method for reconstructing and completing explorable 3D scenes from a single image. ORCA first introduces 3D structure into a Gaussian-anchor representation using monocular …",
+      "authors": [
+        "Weronika Jakubowska",
+        "Maciej Zięba",
+        "Przemysław Spurek"
+      ],
+      "published": "2026-09-15T16:53:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.17450v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.15550v1",
+      "title": "Multi-Stage NeRF for Efficient 3D Coronary Artery Reconstruction from Two Narrow-Angle Angiographic Projections",
+      "abstract": "X-ray coronary angiography is the clinical gold standard for coronary artery disease during real-time cardiac interventions, but provides only 2D projections of inherently 3D vessels. Existing learning-based 2D-to-3D reconstruction methods typically require wide angular coverage or multiple views, assumptions that are rarely satisfied in routine practice where only two projections with narrow angular separation are available. To address these challenges, we propose NeCA++, a multi-stage self-supervised neural radiance field (NeRF) framework tailored to clinically realistic acquisition constraints. The framework decomposes reconstruction into two stages that progressively refine spatial suppo…",
+      "authors": [
+        "Deyu Meng",
+        "Mojtaba Lashgari",
+        "Yiying Wang",
+        "Abhirup Banerjee"
+      ],
+      "published": "2026-09-14T13:34:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.15550v1",
+      "categories": [
+        "cs.CG",
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -19236,6 +19645,85 @@
       "first_seen": "2026-09-11T12:06:39.320874+00:00"
     },
     {
+      "id": "2609.17287v1",
+      "title": "Same Flow, Different Paths: Variance Reduction in Flow Matching",
+      "abstract": "In flow matching (FM), a velocity model $v_θ$ is trained using a predefined path $g_t$ that connects data and noise samples (e.g., $g_t(x_0, x_1) = (1 - t) x_0 + t x_1$). In this work, we study the choice of this path from an optimization perspective by analyzing the variance of stochastic gradients. We consider the class $G(p_t,v^\\star_t)$ of paths that induce the same marginal distributions $p_t$ and marginal velocity field $v^\\star_t$, and therefore the same FM objective. Our main finding is that the choice of path $g_t$ can fundamentally change the convergence rate of SGD, even when the FM objective remains exactly the same. (i) For a linear velocity model and one-dimensional Gaussian da…",
+      "authors": [
+        "Alexander Tyurin"
+      ],
+      "published": "2026-09-15T15:01:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.17287v1",
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16934v1",
+      "title": "MedPCFM-TED: One-Step Point Cloud Flow Matching for Implant Generation via Teacher-Guided Endpoint Distillation",
+      "abstract": "Cranial implant generation is an important task in medical imaging. Recent point cloud based generative methods, particularly flow matching, offer strong reconstruction quality and efficient sampling, but still require multiple neural function evaluations during inference. This limits rapid generation of multiple plausible implant candidates. We propose Teacher-guided Endpoint Distillation (TED), a simple one-step distillation framework for conditional cranial implant generation on point clouds. TED trains a one-step student using teacher-guided endpoint supervision and geometric matching losses, while avoiding explicit path straightening. We evaluate TED on the SkullFix and SkullBreak bench…",
+      "authors": [
+        "Kamil Kwarciak",
+        "Marek Wodzinski"
+      ],
+      "published": "2026-09-15T10:10:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16934v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16528v1",
+      "title": "FlowATC: Aircraft Trajectory Prediction via Flow Matching",
+      "abstract": "Building accurate decision-support tools for next-generation air traffic control requires robust trajectory prediction models. We present a flow-matching architecture trained exclusively on historical aircraft trajectories, with no route labels or chart supervision. Trained on 1.15 million Automatic Dependent Surveillance-Broadcast trajectory windows collected over the San Francisco Bay Area, the model generates aircraft trajectory distributions that closely match historical traffic, reproducing known airspace structure around San Francisco Airport such as the shape of SFO's published NIITE FOUR departure procedure. Our model is trained directly on the native, irregular ADS-B sampling interv…",
+      "authors": [
+        "Mathurin Petit",
+        "Emir Torun",
+        "Louis Brusset",
+        "Jordan Kam",
+        "Alexandre M. Bayen"
+      ],
+      "published": "2026-09-15T02:21:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16528v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -20670,6 +21158,63 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-10T12:08:33.295325+00:00"
+    },
+    {
+      "id": "2609.16641v1",
+      "title": "SAVLA: Symmetry-Aware Vision-Language-Action Models for Robotic Manipulation",
+      "abstract": "Vision-language-action (VLA) models have become the dominant paradigm for language-conditioned robot manipulation. However, although images and language instructions inherently encode geometric information, VLAs acquire their spatial competence purely from demonstrations. As a result, they are reliable only within the range of scene poses that the demonstrations cover. We propose SAVLA, an end-to-end symmetry-aware VLA model for robust and data-efficient policy learning. Our approach keeps the pretrained vision-language backbone entirely frozen while combining it with an equivariant flow-matching action head and a learned canonicalizer. The head decomposes its state, action, and conditioning…",
+      "authors": [
+        "Junle Li",
+        "Weixian Waylon Li",
+        "Fuxiang Wu",
+        "Fusheng Hao",
+        "Fengxiang He"
+      ],
+      "published": "2026-09-15T05:02:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16641v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
+    },
+    {
+      "id": "2609.16573v1",
+      "title": "AsyncCouple-Flow: Asynchronous Cross-Modal Coupling and Flow Matching for Spatio-Temporal Forecasting",
+      "abstract": "Multi-modal spatio-temporal forecasting (MM-STF) supports weather nowcasting, traffic prediction, and earth-system modeling by combining heterogeneous sources such as physical fields, satellite imagery, and in-situ sensors. Three obstacles persist: (i) modalities have different spatio-temporal sampling rates, forcing lossy interpolation onto a unified grid; (ii) modalities are frequently missing at deployment due to sensor outages or revisit gaps, while most methods train with full availability; and (iii) autoregressive decoders accumulate errors over long horizons, amplified by multi-modal conditioning. We propose AsyncCouple-Flow to address these issues jointly. A Modality-Aware Token Spar…",
+      "authors": [
+        "Zhixiang Wu",
+        "Yining Liu",
+        "Bo Zhao",
+        "Szu-Yu Chen",
+        "Huiran Duan",
+        "Chu Lin"
+      ],
+      "published": "2026-09-15T03:15:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.16573v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-16T12:30:37.199441+00:00"
     }
   ]
 }
