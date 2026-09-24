@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-23T12:40:07.694066+00:00",
-  "total": 819,
-  "new_this_run": 19,
+  "last_updated": "2026-09-24T12:38:20.944515+00:00",
+  "total": 832,
+  "new_this_run": 13,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -162,6 +162,33 @@
       "first_seen": "2026-07-01T10:45:15.447871+00:00"
     },
     {
+      "id": "2609.27227v1",
+      "title": "Surgical Kinematics from Monocular Video with Learned Articulated Motion Constraints",
+      "abstract": "Objective assessment of robotic surgery uses instrument kinematics, which must be reconstructed when only video is available. We introduce a kinematic reconstruction network for estimating instrument position, orientation and jaw angle from monocular video. Our visual representation combines global attention pooling of frozen DINOv3 features with local pooling at instrument landmarks from fine-tuned SAM 3.1 masks. Our shared Transformer encoder and temporal convolutional heads integrate this representation with mask geometry, monocular depth and visual state estimates from arm-specific multilayer regression networks. Our position branch predicts displacement magnitude and direction separatel…",
+      "authors": [
+        "Mehmet Kerem Turkcan",
+        "Soham Samal",
+        "Zoran Kostic"
+      ],
+      "published": "2026-09-23T01:49:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.27227v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 25,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 150
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
       "id": "2607.03990v1",
       "title": "InSpace: Structure-Aware 3D Indoor Scene Generation from a Single 360° Image",
       "abstract": "Recent advances in single image-to-3D generation have enabled high-quality asset synthesis, yet extending these capabilities to indoor scene generation remains challenging. Existing methods focus on asset-level generation while neglecting the structural layout, which is essential for downstream applications and serves as the spatial anchor for grounding assets. However, a single image with a limited field of view lacks the spatial coverage to recover a coherent global layout. To this end, we use a 360° image represented in equirectangular projection (ERP) and propose InSpace, a structure-aware framework for 3D indoor scene generation. InSpace comprises three stages: (1) estimating partial sc…",
@@ -267,6 +294,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-07-31T09:48:52.781582+00:00"
+    },
+    {
+      "id": "2609.27675v1",
+      "title": "Track2Art: Motion-Centric Articulated Object Model Recovery from 2D Point Trackers",
+      "abstract": "Understanding articulated objects is fundamental for robotic interaction, requiring accurate rigid-part discovery and the recovery of their kinematic relations. Existing approaches often treat articulation as a by-product of reconstructed geometry or recover it through per-instance optimization. We instead build on the hypothesis that articulation is directly observable from persistent motion: points on the same rigid part move coherently, while relative motion between parts reveals their kinematic constraints. We present Track2Art, a motion-centric framework for recovering structured articulated objects from RGB-D interaction videos. Track2Art lifts tracked image points into persistent 3D t…",
+      "authors": [
+        "Xiaotong Li",
+        "Yixiong Jing",
+        "Junsheng Ding",
+        "Weihang Li",
+        "Benjamin Busam",
+        "Guangming Wang"
+      ],
+      "published": "2026-09-23T10:47:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.27675v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 23,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 130
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
       "id": "2607.18135v1",
@@ -1336,6 +1392,63 @@
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
     },
     {
+      "id": "2609.28393v1",
+      "title": "PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation",
+      "abstract": "World models are useful for robotic manipulation because robots can predict how actions change the states of objects before executing them. We present PointCast, a point-set world model that spans rigid, articulated, and deformable object manipulation. Its state is a set of 3D points on the object and the end-effector, mesh-free and topology-agnostic. Each point keeps its identity and is supervised on its own trajectory, which teaches the model where every point goes rather than only the shape the points form. Its backbone is a diffusion transformer that denoises a short window of future point positions, conditioned on the points' recent history and the commanded end-effector motion. The bac…",
+      "authors": [
+        "Hantao Ye",
+        "Ross Worobel",
+        "Zhuoli Xie",
+        "Mingen Li",
+        "Houjian Yu",
+        "Youngjin Hong"
+      ],
+      "published": "2026-09-23T17:02:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28393v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.27597v1",
+      "title": "Gray-Box Model Predictive Control for Articulated Dump Trucks via Gaussian Process Learning of Sideslip",
+      "abstract": "The growing demand for automation in the mining industry, particularly for the autonomous operation of articulated dump trucks (ADTs), has drawn increased attention to accurate vehicle modeling. The importance of such models lies in their use in model predictive control (MPC), model-based estimation methods, and vehicle simulation. While dynamic modeling offers a viable solution for these purposes, it is associated with complex setup and parametrization and may require recalibration in changing operating environments. As a result, kinematic models have dominated ADT modeling, especially in MPCs, at the expense of reduced prediction accuracy. In this work, we propose an approach using Gaussia…",
+      "authors": [
+        "Arash Shahirpour",
+        "Jens Ahlers",
+        "Christopher Schulte",
+        "Tim Reuscher"
+      ],
+      "published": "2026-09-23T09:11:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.27597v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
       "id": "2607.03819v1",
       "title": "CGGS: Consistency-Augmented Geometric Gaussian Splatting for Ego-centric 3D Scene Generation",
       "abstract": "Challenges remain in ego-centric 3D scene generation due to limited view overlap and the dominant influence of individual perspectives on scene interpretation. These factors hinder the creation of viewpoint-consistent and semantically aligned visual content, as well as the construction of accurate geometric structures. In this paper, we propose CGGS, a text-to-3D framework aiming to enhance 3D-content-awareness and address geometric distortions in ego-centric scene generation. Firstly, the Ego-centric Generator is proposed by fine-tuning a Multi-View Latent Diffusion Model with consistency-augmented loss to generate consistent, high-fidelity 2D content aligned with textual descriptions. Then…",
@@ -2040,6 +2153,35 @@
       ],
       "has_code": true,
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
+    },
+    {
+      "id": "2609.27449v1",
+      "title": "X2Real: an eXtensive simulation benchmark for real-world generalist policies",
+      "abstract": "Generalist robot manipulation policies have developed rapidly, yet their reliable evaluation remains challenging due to fundamental flaws in existing simulation benchmarks: prominent sim-to-real gaps, narrow task coverage, and unfair evaluation caused by ambiguous training-test pipelines. Prior works only partially resolve these issues and lack simultaneous faithfulness, diversity, and fairness, while static benchmark designs fail to sustain long-term policy development. We present X2Real, an evolvable simulation benchmark for faithfully evaluating the real-world performance of robotic manipulation policies based on Nvidia Isaac Lab-Arena. Following three core principles (faithfulness, diver…",
+      "authors": [
+        "Lian Ruan",
+        "Jade Yang",
+        "Sherphylan Gao",
+        "Felix Gao",
+        "Kyson Liang",
+        "Galen Liu"
+      ],
+      "published": "2026-09-23T07:13:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.27449v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 81
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
       "id": "2607.05252v1",
@@ -4785,6 +4927,36 @@
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
     },
     {
+      "id": "2609.26854v1",
+      "title": "SsgCaps: A controlled dataset for the evaluation of sound scene generation algorithms",
+      "abstract": "Sound Scene Generation is about the automatic synthesis of artificial sound scenes. We introduce SsgCaps, a publicly available dataset of human-engineered sound scenes wherein each scene matches a precisely structured prompt that guides the sampling process. The corresponding prompts are sampled from a predefined action-based typology that allows extensive sampling while retaining plausibility. SsgCaps is a sound scene dataset derived from the unpublished reference dataset for Task 7 of the 2024 DCASE Challenge edition, which contained private-and public-domain audio samples. In contrast, SsgCaps contains only public-domain audio samples, allowing us to open this dataset to the community. To…",
+      "authors": [
+        "Modan Tailleur",
+        "Junwon Lee",
+        "Laurie M Heller",
+        "Mathieu Lagrange",
+        "Keunwoo Choi",
+        "Brian McFee"
+      ],
+      "published": "2026-09-22T14:26:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.26854v1",
+      "categories": [
+        "cs.GR",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -7455,6 +7627,35 @@
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
     },
     {
+      "id": "2609.28027v1",
+      "title": "Learning a Speed-adaptive Hip Exoskeleton Control Policy Via Sim-to-real Reinforcement Learning",
+      "abstract": "Providing personalized exoskeleton assistance across varying walking speeds remains challenging. Existing online optimization methods are sample-inefficient, requiring extensive human-in-the-loop (HIL) evaluations to optimize the entire assistive torque profile. Sim-to-real reinforcement learning (RL) offers a promising alternative but cannot directly account for individual user preferences. We propose a framework integrating sim-to-real RL with online preference learning for personalized exoskeleton assistance. Specifically, assistance timing is learned in simulation by training RL policies with human musculoskeletal models across varying walking speeds. The learned policies are then distil…",
+      "authors": [
+        "Bin Li",
+        "Zhimin Hou",
+        "Jiacheng Hou",
+        "Zenian Liang",
+        "Tong Wu",
+        "Teng Ma"
+      ],
+      "published": "2026-09-23T12:53:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28027v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -9895,6 +10096,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
+    },
+    {
+      "id": "2609.28116v1",
+      "title": "Probabilistic and Geometry Aware Neural Surrogate of Scrape Off Layer Plasma Simulations",
+      "abstract": "Fast surrogates for tokamak boundary-plasma simulation are typically deterministic regressors mapping a global operating point to a flattened vector of cell values. Near the divertor detachment transition the steady state is not reliably single-valued. A point estimate must average over qualitatively different plasma states, and it arrives with no statement of confidence. Moreover, the flattened vector representation discards the geometric structure of the SOLPS-ITER mesh. This work addresses both problems. We unroll the curvilinear mesh into three fixed-size image tensors whose layout preserves cell adjacency and inverts exactly, letting a convolutional network act on the geometry without l…",
+      "authors": [
+        "Gabriele Gianuzzo",
+        "Stefan Dasbach",
+        "Fleur Hendriks",
+        "Sven Wiesen",
+        "Vlado Menkovski"
+      ],
+      "published": "2026-09-23T13:45:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28116v1",
+      "categories": [
+        "cs.LG",
+        "physics.plasm-ph"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -17742,6 +17978,67 @@
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
     },
     {
+      "id": "2609.27342v1",
+      "title": "BladeMaster: Real-Time Robotic Cutting Simulation with Online-Generated Persistent Discontinuities",
+      "abstract": "Cutting changes both the shape and topology of deformable objects, making accurate simulation challenging for robotic manipulation. A simulator must track the cutting tool as a cut develops, preserve the resulting discontinuities after tool withdrawal, and enable newly exposed surfaces to interact with the tool and with each other. Existing formulations often prescribe cut surfaces in advance or couple material separation to auxiliary geometric fields. We introduce BladeMaster, a GPU-accelerated cutting framework based on the total Lagrangian material point method (TLMPM). Our key idea is to encode the cutting history directly on material points through persistent side labels generated onlin…",
+      "authors": [
+        "Zhanyu Yang",
+        "Yunuo Chen",
+        "Yanjia Huang",
+        "Joseph Masterjohn",
+        "Yin Yang",
+        "Chenfanfu Jiang"
+      ],
+      "published": "2026-09-23T04:29:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.27342v1",
+      "categories": [
+        "cs.RO",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.27033v1",
+      "title": "WTF?! Simulation-Free Reinforcement Learning with Wasserstein-Tilted Flow Maps",
+      "abstract": "Reward fine-tuning aims to update a pre-trained flow-based generative model to improve the downstream reward of its generated samples. Existing methods typically formulate this problem as sampling from a reward-tilted distribution, the solution to a KL-regularized reward-maximization problem. Here, we introduce an optimal transport regularizer built directly from the pre-trained drift. Unlike KL reward tilting, the resulting objective transports individual samples toward higher reward rather than reweighting the base distribution. We show that the resulting problem is equivalent to a deterministic optimal control problem on the flow. Given a pre-trained flow map, this equivalence yields a si…",
+      "authors": [
+        "Abbas Mammadov",
+        "Jerry Y. Huang",
+        "Justin Lin",
+        "Partha Kaushik",
+        "Sheel Shah",
+        "Kartik Nair"
+      ],
+      "published": "2026-09-22T20:27:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.27033v1",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -19477,6 +19774,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
+    },
+    {
+      "id": "2609.28107v1",
+      "title": "Distillation for Efficient Multitask Manipulation Policies via Conditional Flow Matching",
+      "abstract": "Advances in generative modeling have recently been extensively employed in robotics for policy learning. In particular, Conditional Flow Matching (CFM) trained with expert demonstrations has been shown to outperform existing methods on robot manipulation benchmarks. While prior work has mainly focused on single-task settings, we study the problem from a multi-task perspective, as training independent models for each task is computationally expensive. Multi-Task policy learning comes with its own set of challenges, as naively training on a concatenated dataset of demonstrations would either require increased model capacity to accommodate the added complexity or result in drops in performance.…",
+      "authors": [
+        "Shreya Deshmukh",
+        "Imen Mahdi",
+        "Nick Heppert",
+        "Abhinav Valada"
+      ],
+      "published": "2026-09-23T13:38:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28107v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -23142,6 +23474,66 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
+    },
+    {
+      "id": "2609.28015v1",
+      "title": "Improving Ensemble Filters with Flow Matching",
+      "abstract": "Data assimilation estimates a dynamical state from partial and noisy observations. Classical ensemble filters are efficient but restrict analysis updates through finite sample covariance and affine Gaussian distribution. We introduce the Flow Ensemble Filter (FlowEF), which uses conditional flow matching to transport the forecast ensemble from a classical baseline filter to an analysis ensemble. FlowEF uses a localized Gaussian source during training, transports forecast ensemble members from a baseline filter at deployment, and conditions its velocity field on ensembles from that baseline filter and the observation. The proposed model therefore learns a nonlinear update while mapping each b…",
+      "authors": [
+        "Haoyuan Chen",
+        "Alexandre Thiéry"
+      ],
+      "published": "2026-09-23T12:37:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28015v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.DS",
+        "stat.ME"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.27264v1",
+      "title": "GaussPDE: Graph-Based Partial Differential Equation-Driven Rendering for 3D Gaussian Splatting",
+      "abstract": "We present GaussPDE, a framework that injects physically structured partial differential equation (PDE) dynamics into pretrained 3D Gaussian scenes without mesh extraction, voxelization, or retraining. Our key observation is that PDE rendering requires not only accurate appearance, but also a reliable discrete computational domain. We therefore first introduce camera-aware regularization during 3DGS reconstruction to suppress camera-near floaters and oversized primitives that would create unstable graph topology. We then construct an active Gaussian graph using covariance-aware distances and opacity, appearance, and boundary-aware conductance, enabling mass-weighted graph Laplacian PDE evolu…",
+      "authors": [
+        "Haoyuan Yue",
+        "Fengyuan Ye",
+        "Ziyin Li"
+      ],
+      "published": "2026-09-23T02:48:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.27264v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
       "id": "2606.31680v1",
