@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-24T12:38:20.944515+00:00",
-  "total": 832,
-  "new_this_run": 13,
+  "last_updated": "2026-09-25T12:39:56.125425+00:00",
+  "total": 856,
+  "new_this_run": 24,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1447,6 +1447,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.29176v1",
+      "title": "Anthropomimetic Soft Robotic Forearm with Independently Articulated Carpal Bones Enabling Human-Like Adaptive Stiffness Modulability",
+      "abstract": "The human wrist exhibits adaptive stiffness modulability: joint stiffness anisotropy can be actively regulated through muscle co-contraction. This functionality is essential for stable manipulation, yet the underlying morphological factors remain unclear. To identify these factors, we developed an anatomically accurate anthropomimetic soft robotic forearm comprising eight independently movable carpal bones interconnected by ligaments, 22 actuated muscles, and compliant fingertips. We measured wrist joint stiffness under four muscle activation patterns across three skeletal configurations: anatomically normal carpal bones, a fused proximal carpal row, and a geometric ellipsoidal skeleton. The…",
+      "authors": [
+        "Yoshinobu Obata",
+        "Yinlai Jiang",
+        "Hiroshi Yokoi",
+        "Shunta Togo"
+      ],
+      "published": "2026-09-24T07:49:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29176v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
     },
     {
       "id": "2607.03819v1",
@@ -3294,6 +3321,40 @@
       "first_seen": "2026-09-22T12:29:39.243249+00:00"
     },
     {
+      "id": "2609.29908v1",
+      "title": "MorphIK: Morphology-Conditioned Neural Inverse Kinematics for Unknown Robots",
+      "abstract": "Neural models can learn to generate various solutions to the inverse kinematics problem from data, but are usually limited to a single robot. We present MorphIK, a flow-matching model that solves inverse kinematics for revolute-joint-based kinematic chains it has never seen during training. The model uses a transformer architecture to encode the robot's morphology along with the target pose. This encoding then conditions a flow-matching head that generates poses from noise. Trained on purely synthetic data from procedurally generated robots, the model reaches a precision of about 5 cm on unseen real-world robots with 6 to 9 Degrees of Freedom. For higher precision, the model serves as an exc…",
+      "authors": [
+        "Lennart Clasmeier",
+        "Jan Gerrit Habekost",
+        "Cornelius Weber",
+        "Stefan Wermter"
+      ],
+      "published": "2026-09-24T14:48:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29908v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
       "id": "2606.31101v1",
       "title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
       "abstract": "Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. Sim-to-real learning is attractive because it can replace expensive real robot demonstrations with scalable synthetic data, yet world-action models have not previously been shown to transfer from simulation to real robotic manipulation. We study whether a world-action model can be trained from synthetic priors and deployed zero-shot in the real world. To this end, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization and generate demonstrations using the AnyTask motion planning pipeline. We evaluat…",
@@ -4955,6 +5016,36 @@
       ],
       "has_code": true,
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.29964v1",
+      "title": "World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal",
+      "abstract": "General-purpose vision-language models (VLMs) bring broad knowledge and spatial reasoning to robot manipulation, yet existing systems either use them indirectly, to predict constraints or write programs, or give them a view of the scene rather than a world in which to act. We present World Action Agent (WAA), a multi-agent harness through which VLMs pilot robots with basic tools, making every decision within a visual action workspace. The workspace has three properties. Contact views, selected automatically from the scene geometry, present the scene around the current interaction. Action rehearsal turns each action into an editable proposal that the agent, alone or through an Imagination Age…",
+      "authors": [
+        "Yehang Zhang",
+        "Haojian Huang",
+        "Yifan Chang",
+        "Jianchong Su",
+        "Bohan Zhou",
+        "Yingjie Xu"
+      ],
+      "published": "2026-09-24T15:19:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29964v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -7656,6 +7747,115 @@
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
+      "id": "2609.29000v1",
+      "title": "Learning from Mixed-Quality Deployment Experience for Robot Manipulation",
+      "abstract": "Robot policies deployed in real environments naturally accumulate mixed-quality experience, including successful executions, partial progress, and failures. Although these rollouts provide valuable information for further learning, directly incorporating them into imitation learning may reinforce undesirable behaviors, while offline reinforcement learning often suffers from unreliable value estimation under sparse rewards and limited data coverage. We consider a practical post-deployment setting where learning relies only on naturally accumulated autonomous rollouts, without additional human corrections or exploratory interaction. To effectively exploit such experience, we propose Predictive…",
+      "authors": [
+        "Yangang Ren",
+        "Yujie Yan",
+        "Zirui Li",
+        "Jiaming Guo",
+        "Di Zeng",
+        "Ji Tao"
+      ],
+      "published": "2026-09-24T04:08:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29000v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28969v1",
+      "title": "Sim-to-Real Aware End-to-End Learning Environment for Micromobility",
+      "abstract": "While end-to-end autonomous driving systems show promise, their application to micromobility vehicles is hindered by simulators failing to capture specific kinematics, such as differential drives and omni-wheels. This paper pro- poses a sim-to-real-aware, vehicle-specific end-to-end learning environment for the WHILL Model CR on AWSIM and ROS 2. To minimize the sim-to-real gap, physical parameters are optimized via Bayesian optimization using real-world data, reducing trajectory errors across various driving scenarios. Additionally, this study introduces a synchronized architecture tailored for the stable training of world model-based agents. An end-to-end policy trained with DreamerV3 exhib…",
+      "authors": [
+        "Shouma Amano",
+        "Takuya Azumi"
+      ],
+      "published": "2026-09-24T03:35:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28969v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28878v1",
+      "title": "Online Sim-to-Real Adaptation via Closed-Loop System Modeling",
+      "abstract": "Sim-to-real transfer has made substantial progress, but can still produce controllers that remain stable and functional on hardware while suffering from degraded tracking accuracy due to residual dynamics mismatch. Correcting these errors typically requires identifying the underlying system dynamics, adapting the control policy, or returning to simulation for additional training and finetuning, all of which can require substantial data and computation. We propose OSRAM (Online Sim-to-Real Adaptation via Closed-Loop System Modeling), a framework that instead adapts the reference commands provided to an existing controller. OSRAM treats the deployed robot and its policy as a unified closed-loo…",
+      "authors": [
+        "Yuhao Huang",
+        "Samuel A. Moore",
+        "Boyuan Chen"
+      ],
+      "published": "2026-09-24T00:54:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28878v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28660v1",
+      "title": "Morphometric Imitation: From Morphology and Contact Aware Hand Retargeting to Sim-to-Real Visuomotor Policy",
+      "abstract": "Human hand-object interactions (HOIs) provide a rich source of demonstrations for dexterous manipulation, but learning directly from them presents challenges in bridging morphology gaps, ensuring dynamical feasibility, and sim-to-real deployment. We present Morphometric Imitation, a three-stage framework that transforms reconstructed HOIs into zero-shot sim-to-real visuomotor policies. First, morphometric optimization (MMO) kinematically retargets human motion across hand morphologies while preserving demonstrated contacts. Second, residual reinforcement learning (RL) refines the kinematic reference using object pose and contact information from the human motion to produce dynamically feasib…",
+      "authors": [
+        "Tara Sadjadpour",
+        "Siming He",
+        "C. K. Wolfe",
+        "Haozhi Qi",
+        "Lea Wilken",
+        "S. Shankar Sastry"
+      ],
+      "published": "2026-09-23T18:05:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28660v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -10131,6 +10331,67 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.30213v1",
+      "title": "ReVAMP: Vector-Accelerated Motion Planning for Kinematically-Constrained Systems via Reparameterization",
+      "abstract": "Robots often must satisfy one or more constraints during motion planning for real-world tasks. When such constraints reduce the valid configuration space to a measure-zero subset, sampling based planning algorithms require modifications to draw feasible samples. For many common end-effector constraints, parameterizations built on inverse kinematics (IK) provide an alternate formulation where the constraints are satisfied by construction, allowing directly sampling the feasible set. Despite their elegant approach, parameterized planners have remained slower than vector-accelerated implementations of projection-based approaches, leaving their performance ceiling an open question. We explore a …",
+      "authors": [
+        "Shrutheesh R. Iyer",
+        "Thomas Cohn",
+        "Zachary Kingston"
+      ],
+      "published": "2026-09-24T17:45:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30213v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.29985v1",
+      "title": "OceanXL: Large-scale Underwater 3D Gaussian Splatting via Block Partitioning and Adaptive Pruning",
+      "abstract": "Underwater 3D reconstruction is critical for marine exploration, ecological monitoring, and subsea infrastructure inspection, yet remains challenging at large scale due to light attenuation, scattering, and limited capture coverage. While 3D Gaussian Splatting (3DGS) enables high-quality real-time rendering, its application to large underwater scenes is constrained by high memory consumption and inefficient optimization over extensive areas. We propose OceanXL, a fast and scalable 3DGS-based framework for large-scale underwater reconstruction. OceanXL adopts a divide-and-conquer strategy, partitioning scenes into spatially coherent blocks to enable efficient optimization while preserving glo…",
+      "authors": [
+        "Haoran Wang",
+        "Shaoyu Cai",
+        "Adrian Azzarelli",
+        "Zhuodong Jiang",
+        "Guoxi Huang",
+        "Eng Tat Khoo"
+      ],
+      "published": "2026-09-24T15:35:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29985v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -18039,6 +18300,249 @@
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
+      "id": "2609.30245v1",
+      "title": "Towards Practical Compression of 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) enables high-quality novel-view synthesis but requires substantial storage. Existing compression methods often rely on spatial context modeling over irregular 3D representations, increasing the complexity of training and coding. Meanwhile, floating-point context inference can introduce numerical inconsistencies across platforms, causing entropy-decoding failures. To address these practical challenges, we propose COSA-GS, which constructs context without spatial aggregation through anchor-wise causal factorization. Specifically, we use geometry context derived from each anchor's coordinates to model a compact learnable anchor latent. The anchor latent is then fuse…",
+      "authors": [
+        "Pengpeng Yu",
+        "Yueru Chen",
+        "Fei Song",
+        "Tai Qin",
+        "Qi Zhang",
+        "Jing Wang"
+      ],
+      "published": "2026-09-24T17:57:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30245v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.29788v1",
+      "title": "OREO: Fidelity Alignment in 3D Generation via On-the-fly Rendering-Editing Optimization",
+      "abstract": "Despite recent advancements in 3D generation, models often struggle to produce assets with high visual fidelity. To bridge this gap, we propose OREO, an alignment framework that enhances the realism of 3D generators by leveraging rich 2D diffusion priors. Instead of relying on static datasets, OREO establishes a dynamic optimization loop that produces on-the-fly edited renderings as 2D pseudo-targets. At its core, we introduce Reinforced Editing, which utilizes a 2D model to refine rendered views of the 3D output, enhancing their overall visual fidelity while preserving the underlying geometry, viewpoint, and content. These refined views serve as high-quality supervision targets, enabling th…",
+      "authors": [
+        "Zhiyuan Ma",
+        "Wenbo Hu",
+        "Wang Zhao",
+        "Pengfei Wang",
+        "Ying Shan",
+        "Lei Zhang"
+      ],
+      "published": "2026-09-24T13:28:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29788v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.29394v1",
+      "title": "RACaP: Agentic Reasoning, Acting, and Coding as Policies for Evolvable Robot Learning",
+      "abstract": "General-purpose robot agents must learn from experience, transfer to new tasks, and act efficiently. Code as Policies (CaP) methods generate and repair programs at runtime, incurring latency and entangling reusable mechanisms with task-specific decisions. We introduce RACaP, an agentic framework that moves coding to evolution and uses a Reasoning-and-Acting (ReAct) loop to call frozen, typed Policy APIs at deployment. A two-phase strategy combines capability curriculum learning with autonomous self-evolution to improve the APIs, the ReAct harness, and experience memory. The APIs encode reusable physical mechanisms while exposing arguments for runtime adaptation. ReAct combines task-specific …",
+      "authors": [
+        "Zexi Li",
+        "Yehang Zhang",
+        "Haojian Huang",
+        "Bohan Zhou",
+        "Wenqian Li",
+        "Chenxu Wang"
+      ],
+      "published": "2026-09-24T11:22:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29394v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.29373v1",
+      "title": "Shadow Reduction in Ultrasound Imaging Using Differentiable Simulation and Radiance Field Decomposition",
+      "abstract": "Acoustic shadows from bone and other highly attenuating tissues obscure clinically important structures in ultrasound. In fetal brain imaging, skull-induced artefacts disproportionately degrade the hemisphere closer to the transducer (proximal), limiting symmetric assessment of the two hemispheres. Existing correction methods require raw scanner data, impose restrictive assumptions on tissue properties, or rely on generative models that may hallucinate anatomy. We present RFlash, a physics-informed post-processing method that decomposes beamformed ultrasound images into explicit attenuation and scatter-intensity maps using a differentiable radiance-field formulation of image formation. Atten…",
+      "authors": [
+        "Valentin Bacher",
+        "Pak Hei Yeung",
+        "Bernhard Kainz",
+        "Madeleine K. Wyburd",
+        "Nicola K. Dinsdale",
+        "Michael Gray"
+      ],
+      "published": "2026-09-24T10:55:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29373v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.29031v1",
+      "title": "Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping with a Direct-Drive Gripper",
+      "abstract": "Torque observations in reinforcement learning remain challenging because simulated and measured torque differ in scale, offset, and noise. In this paper, we propose a simple torque observation alignment method for robots with direct-drive (DD) actuators, in which motor current maps linearly to joint torque through a motor-type-specific torque constant K_tau. First, dynamometer calibration identifies K_tau* and corrects the scale mismatch between simulated and real torque. Second, the method uses delta_tau(t) = tau(t) - tau(t-1) as the observation in both domains to eliminate the constant offset instead of using the direct torque tau(t), which carries a domain-dependent bias. Third, Gaussian …",
+      "authors": [
+        "Doyoung Kim",
+        "Edgar Lee",
+        "Hyeonsun Park",
+        "Chunghyeon Lee",
+        "Chihyun Han",
+        "Uisu Hwang"
+      ],
+      "published": "2026-09-24T05:03:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29031v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28927v1",
+      "title": "Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation",
+      "abstract": "World action models (WAMs) that use future visual prediction at inference time incur substantial generation costs. Asynchronous execution reduces waiting by overlapping inference with robot motion, but visual predictions used for subsequent action generation must anticipate the effects of actions already scheduled for execution during inference. We introduce Streaming-WAM, which couples action-conditioned world modeling with asynchronous robot control to account for committed actions in future visual prediction. At each streaming update, the model conditions future visual prediction on the latest observation and the committed actions, which form the fixed prefix of the next action chunk. The…",
+      "authors": [
+        "Xuyao Huang",
+        "Yixuan Wang",
+        "Zengyao Ye",
+        "Boyuan Zhao",
+        "Chenyang Yu",
+        "Haoran Wen"
+      ],
+      "published": "2026-09-24T02:19:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28927v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28766v1",
+      "title": "TAPESIM: Efficient Simulation of Adhesive Tape Dispensing for Robotic Manipulation",
+      "abstract": "Applying adhesive tape to secure wire harnesses or seal packages requires robots to coordinate a flexible strip, a moving roll, and surfaces that attach and detach. Simulation could make these interactions repeatable for robot development and evaluation, but resolving every adhesive layer is expensive and can suppress roll motion at practical solver tolerances, while a permanently rigid roll cannot release material. We present TapeSim, a tape simulator that concentrates deformation near the unwinding region and along the released strip. We will release the source code. A rigid cluster represents most wound material, while an advancing deformable collar enables payout and leaves released tape…",
+      "authors": [
+        "Zhaofeng Luo",
+        "Xinyu Lu",
+        "jaehoon Choi",
+        "Zhehuan Chen",
+        "Trinity Chung",
+        "Xiaowen Qiu"
+      ],
+      "published": "2026-09-23T20:25:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28766v1",
+      "categories": [
+        "cs.RO",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28645v1",
+      "title": "PePESeg3D: Perception Prior Enhances Multi-Scale Segmentation for 3D Gaussian Splatting",
+      "abstract": "Recent advancements in 3D Gaussian Splatting (3DGS) have extended its capabilities to multi-scale segmentation. Existing methods reconstruct a scene with Gaussian primitives and learn multi-scale segmentation features separately, which leaves the geometry unaware of semantic structure and the feature learning dependent on incomplete mask supervision. To address these limitations, we present PePESeg3D, a novel framework that injects perception priors into a multi-scale 3D Gaussian segmentation pipeline. To fully exploit perception priors, we integrate them not only into contrastive feature learning but also into the upstream geometry reconstruction. Specifically, PePE Reconstruction incorpora…",
+      "authors": [
+        "Sungjae Choi",
+        "Seunghee Koh",
+        "Junmo Kim"
+      ],
+      "published": "2026-09-23T18:00:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28645v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -19809,6 +20313,130 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.30234v1",
+      "title": "OmniFabric: Coherent UV Space Texture Synthesis for 3D Garment Reconstruction",
+      "abstract": "Automated generation of production-ready 3D garment assets from a single image is a central challenge in digital content creation. While recent generative models have significantly advanced 3D geometry reconstruction, synthesizing high-quality textures remains a bottleneck. Existing methods often bake environmental illumination and shadows directly into the texture map, or they fail to maintain global structural coherence, making the resulting assets unusable for physical simulation and relighting. In this work, we introduce OmniFabric, a novel approach that synthesizes globally coherent texture maps directly within the 2D sewing pattern space. Given a single reference image, our pipeline ut…",
+      "authors": [
+        "Ding-Jiun Huang",
+        "Yuanhao Wang",
+        "Cheng Zhang",
+        "Hugo Bertiche",
+        "Alexandru-Eugen Ichim",
+        "Thabo Beeler"
+      ],
+      "published": "2026-09-24T17:53:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30234v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.30056v1",
+      "title": "M3GD: Multi-Modal Multi-View Geometric Diffusion for Camera--LiDAR Novel View Synthesis",
+      "abstract": "Robotic novel view synthesis (NVS) must recover both visual appearance and metric 3D structure, yet most generative NVS methods rely only on images, overlooking LiDAR, a complementary sensor common on robotic platforms. We present M3GD, a Camera--LiDAR multimodal representation for generative NVS that composes independently pretrained 2D image and 3D point-cloud foundation models without separately pretraining a cross-modal translator. We show that, after camera projection, frozen LiDAR and image features exhibit substantial shared spatial structure, providing a natural cross-modal representation. M3GD conditions generation on LiDAR through this structure: it combines explicit geometry stati…",
+      "authors": [
+        "Yang Zhou",
+        "Jiuhong Xiao",
+        "Shizhao Ye",
+        "Long Quang",
+        "Carlos Nieto-Granda",
+        "Giuseppe Loianno"
+      ],
+      "published": "2026-09-24T16:14:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30056v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28997v1",
+      "title": "Only What Was Seen: Observation-Gram Compaction of View-Dependent Appearance in 3D Gaussian Splatting",
+      "abstract": "Most of the memory of a 3D Gaussian Splatting model holds spherical-harmonic colour coefficients, yet each Gaussian is seen only from the narrow cone of directions of the training cameras. We turn this into a distortion metric that other compressors can adopt: a per-Gaussian observation Gram matrix, accumulated from viewing directions and blending weights, is the exact first-order map from coefficient changes to squared image error and needs only the model and the camera poses. Under it, degree reduction becomes a closed-form projection that generalises truncation, degree allocation a Lagrangian rate-distortion problem, and vector quantisation the matrix-weighted Lloyd algorithm, of which Co…",
+      "authors": [
+        "Krzysztof Pietroszek"
+      ],
+      "published": "2026-09-24T04:06:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28997v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28107v2",
+      "title": "Distillation for Efficient Multitask Manipulation Policies via Conditional Flow Matching",
+      "abstract": "Advances in generative modeling have recently been extensively employed in robotics for policy learning. In particular, Conditional Flow Matching (CFM) trained with expert demonstrations has been shown to outperform existing methods on robot manipulation benchmarks. While prior work has mainly focused on single-task settings, we study the problem from a multi-task perspective, as training independent models for each task is computationally expensive. Multi-Task policy learning comes with its own set of challenges, as naively training on a concatenated dataset of demonstrations would either require increased model capacity to accommodate the added complexity or result in drops in performance.…",
+      "authors": [
+        "Shreya Deshmukh",
+        "Imen Mahdi",
+        "Nick Heppert",
+        "Abhinav Valada"
+      ],
+      "published": "2026-09-23T13:38:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28107v2",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -23536,6 +24164,40 @@
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
     },
     {
+      "id": "2609.29963v1",
+      "title": "ADATEX4D: adaptive texture capacity allocation for 4D gaussian splatting",
+      "abstract": "Textured Gaussians improve local appearance capacity, but assigning the same texture resolution to every primitive wastes storage on low-detail or weakly visible regions. We introduce AdaTex4D, an adaptive texture-capacity module for deformation-based 4D Gaussian Splatting. Each Gaussian carries packed RGBA triplanes whose two axes grow independently according to visibility normalized screen-space gradients and deformed local scales. Experiments on N3DV and PanopticSports show that AdaTex4D reduces texture storage by more than half while preserving reconstruction quality. Under fixed memory budgets, adaptive allocation also improves quality over uniform texture assignment and reduces overall…",
+      "authors": [
+        "De Jiang",
+        "Peiqiang Wang",
+        "Kehong Yuan",
+        "Shaohua Ma"
+      ],
+      "published": "2026-09-24T15:19:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29963v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -25319,6 +25981,68 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-23T12:40:07.694066+00:00"
+    },
+    {
+      "id": "2609.29836v1",
+      "title": "SplatLabel: Pseudo-Labelling through 4D Gaussian Splatting",
+      "abstract": "While 2D Vision Foundation Models offer a pathway to automate 3D semantic pseudo-labelling, translating these priors into robust 3D representations typically requires complex heuristics or multi-model ensembles. We introduce SplatLabel, an automated pipeline that leverages a 4D Gaussian representation to extract LiDAR segmentation with predictive confidence, as well as semantic occupancy grids at arbitrary voxel resolutions. At its core, SplatLabel handles dynamic environments through an explicit temporal manifold that models the trajectories and lifespans of individual 3D primitives. This allows the system to accurately track moving actors and strictly define when objects appear and disappe…",
+      "authors": [
+        "Nitya Nanvani",
+        "Andras Palffy",
+        "Holger Caesar"
+      ],
+      "published": "2026-09-24T14:05:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.29836v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.28984v1",
+      "title": "CrossSafe: Towards Cross-Embodiment Latent Safety Filters",
+      "abstract": "Cross-embodiment learning has shown that a single model, such as a vision-language-action (VLA) model, can learn state representations and manipulation skills that can be applied across heterogeneous robots to accomplish various tasks. We hypothesize that the same holds for safety enforcement. The reasoning required to satisfy a safety constraint, such as detecting an obstacle, recognizing that it should be avoided, and selecting a safe abstract action, is largely shared across robots. What differs across embodiments is how the abstract safe action is realized: morphology, kinematics, and dynamics determine which actions are safe and feasible. Consequently, the same action can be safe for on…",
+      "authors": [
+        "Ihab Tabbara",
+        "Yuxuan Yang",
+        "Hussein Sibai"
+      ],
+      "published": "2026-09-24T03:55:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.28984v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-25T12:39:56.125425+00:00"
     }
   ]
 }
