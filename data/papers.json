@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-27T12:53:15.598573+00:00",
-  "total": 856,
-  "new_this_run": 0,
+  "last_updated": "2026-09-28T15:11:17.918935+00:00",
+  "total": 875,
+  "new_this_run": 19,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -2914,6 +2914,34 @@
       "first_seen": "2026-09-21T13:47:52.659478+00:00"
     },
     {
+      "id": "2609.30868v1",
+      "title": "VLaRL: Augmenting Vision-Language-Action Models with Simulation-Trained Latent-Conditioned Residual RL",
+      "abstract": "Vision-language-action (VLA) models provide broad, instruction-conditioned manipulation behaviors, but their physical execution can remain imprecise during contact-rich interaction. Residual reinforcement learning (RL) can correct such errors while keeping the VLA frozen, but real-robot RL is costly and safety-critical. We propose VLA Latent-Conditioned RL (VLaRL), which enables residual RL for frozen VLAs to be trained in simulation and deployed on real robots without real-world RL or online adaptation. The key challenge is transferring the learned residual policy despite the visual gap between simulation and reality. Rather than requiring pixel-level visual correspondence, VLaRL uses the V…",
+      "authors": [
+        "Namiko Saito",
+        "Kinam Kim",
+        "Heecheol Kim",
+        "Katsushi Ikeuchi",
+        "Yasuyuki Matsushita"
+      ],
+      "published": "2026-09-25T06:18:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30868v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 72
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
       "id": "2606.30352v1",
       "title": "FastPano3D: Feed-Forward Indoor Panoramic 3D Reconstruction from a Single Image",
       "abstract": "Recent advances in 3D scene reconstruction have highlighted the intricate trade-offs among rendering quality, inference efficiency, and data dependency. To address the challenge of rapidly reconstructing detailed 3D indoor scenes from minimal input, we introduce FastPano3D, an end-to-end framework that directly generates renderable 3D Gaussian representations from a single panoramic image. Unlike perspective-based methods, panoramic images inherently suffer from equirectangular projection distortions and spatially non-uniform feature distributions, making direct feed-forward Gaussian generation particularly challenging. In contrast to existing Gaussian Splatting based methods that rely on mu…",
@@ -3353,6 +3381,47 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.31374v1",
+      "title": "RECAST: From Log Replay to Closed-Loop Driving Simulation with View-Complete Actors",
+      "abstract": "Closed-loop driving simulation requires rendered observations to remain reliable as the ego vehicle and surrounding actors move beyond their recorded trajectories, exposing views absent from the source log. Existing data-driven simulators reconstruct dynamic actors from sparse observations, which can result in rendering artifacts under these viewpoint changes. We introduce RECAST (REconstructing Controllable Actors for Simulation and Testing), a 3D Gaussian Splatting framework that generates a view-complete actor from a single segmented vehicle observation in a driving log and registers the generated actor in the reconstructed scene. RECAST supports planner-in-the-loop rendering under contro…",
+      "authors": [
+        "Zijun Zhao",
+        "Liewen Liao",
+        "Kang Shen",
+        "Songan Zhang",
+        "Ming Yang"
+      ],
+      "published": "2026-09-25T15:12:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31374v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
     },
     {
       "id": "2606.31101v1",
@@ -5046,6 +5115,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.30965v1",
+      "title": "FRAM: Trajectory-Guided Visual Feature Selection for Compact Language-Conditioned Robot Manipulation",
+      "abstract": "Vision-Language-Action models achieve strong performance in robot manipulation, but often require large numbers of parameters. In this work, we propose the Future Representation Action Model (FRAM), a small policy that explicitly links the future end-effector trajectory to the current visual input. FRAM uses the image coordinates of the predicted trajectory as spatial pointers and reads local visual features related to the motion from the current image. This organizes the information for action generation into the reference position (Where), the visual state (What), and the future motion (Future). Trajectory labels are generated automatically from demonstrations and camera geometry, so no ma…",
+      "authors": [
+        "Hiroshi Ito",
+        "Hyogo Hiruma",
+        "Yoshiki Kanai",
+        "Takahiro Yoshida",
+        "Akira Kanazawa",
+        "Hiroki Yamada"
+      ],
+      "published": "2026-09-25T08:16:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30965v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -18543,6 +18641,242 @@
       "first_seen": "2026-09-25T12:39:56.125425+00:00"
     },
     {
+      "id": "2609.31509v1",
+      "title": "ClearGS: Reliability-Aware Gaussian Splatting from Handheld Videos",
+      "abstract": "We present ClearGS for 3D Gaussian Splatting (3DGS) from handheld videos with uneven viewpoint coverage and mixed frame quality. Rather than selecting frames with binary decisions, ClearGS uses Reliability-aware View Allocation (RVA) to assign graded raw-supervision weights based on appearance reliability, degradation risk, and geometric utility, while weakly reactivating useful suppressed frames to maintain trajectory coverage. Since weighting cannot restore details lost to blur or distortion, ClearGS further introduces Render-Guided In-Video Restoration (RIVR). The current 3DGS render provides a pose-aligned structural candidate, a frozen no-reference restoration expert restores the corres…",
+      "authors": [
+        "Xuanzhi Liu",
+        "Xinyi Wu",
+        "Hang Pan",
+        "Wensi Huang",
+        "Zhenyao Wu",
+        "Ruize Han"
+      ],
+      "published": "2026-09-25T16:50:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31509v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.31337v1",
+      "title": "Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation",
+      "abstract": "Building a robotic manipulation system requires connecting perception, planning, and control through carefully designed representations and interfaces. VLM code generation offers a way to automate this construction, but independently generated components may operate on incompatible geometric and task-level information. We present Representation-guided Integration of VLM-generated Executable Task programs (RIVET), a framework for generating complete manipulation systems around a shared object-centric representation. The representation combines per-object 6D poses, which preserve the metric information required for action grounding, with a relation graph that exposes the task-level structure r…",
+      "authors": [
+        "Ruixiao Yang",
+        "Mingxin Yu",
+        "Chuchu Fan"
+      ],
+      "published": "2026-09-25T14:41:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31337v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30969v1",
+      "title": "TACTIC: Understanding Tactile Encoders and Conditioning for Contact-rich Robot Manipulation Policies",
+      "abstract": "Tactile information is essential for contact-rich manipulation tasks in robotics. Vision-based tactile sensors make it particularly easy to design end-to-end manipulation policies with tactile sensing, as they enable the use of existing encoders from computer vision. However, this has led to a huge variety of architectures, training datasets, and evaluation protocols, making it difficult to determine which design choices best encode touch. In this work, we address this gap and present a comprehensive study of tactile encoders and fusion strategies across various contact-rich manipulation tasks in real-world experiments. To enable a controlled comparison, we train and evaluate all models unde…",
+      "authors": [
+        "Seongjin Bien",
+        "Débora Oliveira Makowski",
+        "Carlo Kneissl",
+        "Reihaneh Mirjalili",
+        "Pankhuri Vanjani",
+        "Rudolf Lioutikov"
+      ],
+      "published": "2026-09-25T08:17:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30969v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30951v1",
+      "title": "Bundled Contact Gradients: Stabilizing Differentiable Simulation for Deployable Dynamic Tasks",
+      "abstract": "Differentiable simulation provides analytic gradients of robot dynamics, enabling fast and sample-efficient first-order policy optimization. However, obtaining smooth and informative gradients through rigid-body contact typically requires softened contact models, often at the expense of physical fidelity and thereby limiting learned policies largely to simulation. This trade-off becomes particularly consequential for dynamic humanoid motions, where accurate contact dynamics are critical for transferring policies to the real world. Increasing contact stiffness in rigid-body simulation improves the fidelity of interactions, but also makes the dynamics increasingly sensitive to small state pert…",
+      "authors": [
+        "Dyuman Aditya",
+        "Jin Cheng",
+        "Clemens Schwarke",
+        "Quan Nguyen",
+        "Gaurav Sukhatme",
+        "Stelian Coros"
+      ],
+      "published": "2026-09-25T08:02:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30951v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30865v1",
+      "title": "Reliability-Regulated Trajectory Optimization for Progressive COLMAP-Free 3D Gaussian Splatting",
+      "abstract": "COLMAP-free 3D Gaussian Splatting (3DGS) bypasses computationally expensive structure-from-motion (SfM) pipelines, yet progressive camera pose tracking remains fundamentally vulnerable to error compounding---early pairwise tracking inaccuracies both corrupt subsequent frame initializations and remain permanently frozen in the scene representation. Rather than relying on heavyweight external neural priors or treating progressive tracking through isolated heuristic fixes, we propose a unified reliability-regulated trajectory optimization framework for progressive COLMAP-free 3DGS. At its core, our framework establishes an intrinsic, self-supervised bidirectional cycle-consistency mechanism tha…",
+      "authors": [
+        "Zijian Wu",
+        "Jinliang Wang",
+        "Zidian Lin",
+        "Ying Song",
+        "Ziqian Lu",
+        "Hanjie Ma"
+      ],
+      "published": "2026-09-25T06:16:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30865v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30822v1",
+      "title": "Adaptive Interaction Graphs for Particle Simulation",
+      "abstract": "Learned particle simulators based on graph neural networks achieve strong one-step accuracy, but errors compound over long horizons. An underexplored variable is the interaction graph: existing methods fix its topology via k-nearest neighbors or a static radius rule, regardless of local model confidence. We propose making this graph adaptive: a per-particle variance head, trained jointly with the acceleration head under a heteroscedastic Gaussian NLL loss, drives a trajectory in which high-uncertainty particles receive an expanded neighborhood. This is done at little extra inference cost by using the previous step's uncertainty estimate. A key discovery is that the variance head learns a mea…",
+      "authors": [
+        "Aiden Zhou"
+      ],
+      "published": "2026-09-25T05:02:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30822v1",
+      "categories": [
+        "cs.LG",
+        "cs.CE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30696v1",
+      "title": "Learning Vision-Based Agile Gap Traversal: Differentiable Simulation with a Warm-Started Critic",
+      "abstract": "Traversing narrow gaps is challenging for autonomous quadrotors, especially when control commands come directly from high-dimensional visual observations. Existing end-to-end methods often rely on behavior cloning or full-rollout backpropagation through time (BPTT) via differentiable simulation, which can limit policy performance or incur high training costs. We propose a two-stage reinforcement learning framework for more efficient ego-centric visuomotor gap-traversal policy training, leveraging quasi-analytical policy gradients (QPG) via differentiable simulation and critic warm-starting. The framework utilizes QPG to avoid backpropagation through visual rendering, reducing computation and…",
+      "authors": [
+        "Nuthasith Gerdpratoom",
+        "Tianchen Sun",
+        "Yichao Gao",
+        "Lin Zhao"
+      ],
+      "published": "2026-09-25T02:07:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30696v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30445v1",
+      "title": "Bayesian Uncertainty Quantification for fMRI Functional Connectivity via Simulation-Based Inference",
+      "abstract": "Optimizing fMRI scan duration and spatial resolution is critical for experimental design, yet traditional correlation-based approaches cannot quantify uncertainty or disentangle scanner measurement noise from true neural variability across subjects. Without principled uncertainty bounds, researchers cannot know whether a protocol is long enough to reliably estimate connectivity, or whether between-subject differences reflect biological variation or noise. We present a Bayesian framework modeling BOLD dynamics as coupled Ornstein-Uhlenbeck processes, using Sequential Neural Posterior Estimation to obtain connectivity posteriors while accounting for frequency-independent measurement noise acro…",
+      "authors": [
+        "Simon Carter",
+        "Zeming Kuang",
+        "Lilianne R. Mujica-Parodi",
+        "Helmut H. Strey"
+      ],
+      "published": "2026-09-24T18:37:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30445v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -20437,6 +20771,170 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.31483v1",
+      "title": "Scaling Density Functional Theory with Gaussian Splatting",
+      "abstract": "Density functional theory (DFT) strikes a practical balance between accuracy and computational cost in many problems of computational chemistry and materials science. However, many DFT calculations are limited by fixed atom-centered basis sets, which dictate how accuracy and cost scale with system size. We propose Gaussian Splatting for Density Functional Theory (GS-DFT), which represents molecular orbitals as a cloud of Gaussians whose positions, shapes, and mixing coefficients are optimized jointly by gradient descent to minimize the energy without training data. Conceptually, GS-DFT is 3D Gaussian splatting with the renderer replaced by quantum mechanics. We introduce two key solver compo…",
+      "authors": [
+        "Andrés Guzmán-Cordero",
+        "Cindy Zhang",
+        "Majdi Hassan",
+        "Marta Skreta",
+        "Kirill Neklyudov",
+        "Matija Medvidović"
+      ],
+      "published": "2026-09-25T16:26:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31483v1",
+      "categories": [
+        "physics.chem-ph",
+        "cond-mat.mtrl-sci",
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.31248v1",
+      "title": "Gauss What You Need: Compact Gaussian Splatting Across Scene Scales",
+      "abstract": "3D Gaussian Splatting reconstructs a scene as a collection of Gaussian primitives from a set of posed photographs called the capture. The number of primitives used to represent the scene affects reconstruction quality, storage, and rendering cost. How to select this number automatically across capture scales remains unresolved: configurations effective on standard benchmarks can leave larger captures with too few Gaussians to reconstruct fine details. We observe that the surface to represent, given by the capture's extent and resolution, is known before training, whereas its content complexity becomes apparent during training, through the reconstruction quality on the training views. We intr…",
+      "authors": [
+        "Afif Boudaoud",
+        "Jiayi Liu",
+        "Alexandru Calotoiu",
+        "Torsten Hoefler"
+      ],
+      "published": "2026-09-25T13:25:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31248v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.31198v1",
+      "title": "Light Field Primitive for Novel View Synthesis",
+      "abstract": "We present Light Field Primitives (LFP), a formulation for novel view synthesis that replaces the dense ray database with a compact set of differentiable primitives in the classical two-plane parameterization. Each primitive condenses a group of rays into one learned record, and its response to a query is governed by how closely that query belongs to the group. Rendering a camera ray then reduces to compositing all responses it elicits, and a scene can be optimized directly from posed images and rendered in real time with rays. Beyond its competitive performance on standard benchmarks, the main advantage of LFP is structural: its primitives reside directly in the 4D ray space, so optical and…",
+      "authors": [
+        "Liang Chen",
+        "Jiahui Ning",
+        "Xun Jiang",
+        "Xing Xu",
+        "Jimmy Ren",
+        "Fenglei Fan"
+      ],
+      "published": "2026-09-25T12:35:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31198v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30741v1",
+      "title": "From Mono to Stereo: Accelerating Binocular Gaussian Splatting via Reprojection and Selective Patching",
+      "abstract": "Binocular rendering requires two nearby views of the same scene and therefore repeats substantial visibility and shading work. We present a 2D Gaussian Splatting (2DGS) pipeline that fully renders a dominant-eye RGB image and an alpha-weighted depth proxy, reprojects that image to the affiliated eye, and repairs uncovered pixels. Small interior gaps are interpolated, whereas larger disoccluded regions are identified as regions of interest (ROIs) and selectively re-rendered. The depth proxy reuses the alpha-blending weights computed during dominant-eye rasterization, avoiding a separate depth-rendering pass. An adaptive ROI generator localizes the required updates using reprojected image boun…",
+      "authors": [
+        "Hongfei Zhu",
+        "Ling Zhou"
+      ],
+      "published": "2026-09-25T03:11:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30741v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.30393v1",
+      "title": "LiTe-GS: Oracle-Efficient Next Best View Selection for 3D Gaussian Splatting",
+      "abstract": "Selecting informative camera views is critical for efficient training and adaptive refinement in 3D Gaussian Splatting, where each observation significantly influences model parameters. However, information-driven view-selection strategies can require repeated evaluations of expensive information-gain oracles as the number of candidate views increases. We propose LiTe-GS, an oracle-efficient method for next best view selection in 3D Gaussian Splatting. LiTe-GS reduces the number of information-oracle evaluations by performing randomized subset evaluation of candidate views rather than exhaustively scoring the full candidate pool. The resulting approach achieves expected $O(M\\log(1/ε))$ oracl…",
+      "authors": [
+        "Vivek Pandey",
+        "Amirhossein Mollaei Khass",
+        "Nader Motee"
+      ],
+      "published": "2026-09-24T18:01:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.30393v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -24196,6 +24694,92 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-25T12:39:56.125425+00:00"
+    },
+    {
+      "id": "2609.31572v1",
+      "title": "OC-GS: Gaussian Splatting for Irregular Turntable Capture",
+      "abstract": "Uneven rotation and dropped frames make equal-angle assumptions unreliable for turntable reconstruction. We present OC-GS, an object-centric Gaussian splatting that refines each image's angle while maintaining a shared camera, rotation axis, and pivot. This orbit-consistent refinement jointly optimizes image-derived geometry and angles to reconstruct objects from sparse, irregular captures. On rendered objects with 12, 8, and 6 irregularly spaced views, OC-GS achieves mean foreground PSNR scores of 21.26, 19.36, and 15.83dB, respectively, exceeding all four evaluated pose-free Gaussian splatting baselines in each condition. Under a shared trainer, refining image-estimated angles improves mea…",
+      "authors": [
+        "Jae Joong Lee",
+        "Bedrich Benes"
+      ],
+      "published": "2026-09-25T17:35:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31572v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.31544v1",
+      "title": "A Flow Matching Framework for Neural Representational Dissimilarity",
+      "abstract": "Neural representational dissimilarity quantifies differences between neural response distributions, and is essential for comparing neural codes across stimuli, brain areas, tasks, and models. Commonly used distance metrics involve different assumptions and are estimated with separate methods. Here, we show that a variety of distance metrics can be unified under a flow matching framework developed in deep generative models. That is, these distances arise as Jeffreys divergences under different velocity constraints. We find that flow matching has advantages for estimating distances involving complicated distributions and continuous variables. Furthermore, this framework enables the design of n…",
+      "authors": [
+        "Zeyuan Ye",
+        "Xue-Xin Wei"
+      ],
+      "published": "2026-09-25T17:15:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31544v1",
+      "categories": [
+        "cs.AI",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
+    },
+    {
+      "id": "2609.31378v1",
+      "title": "ContraFM-S2O: Flow Matching-Based One-step SAR-to-Optical Image Translation Model with Contrastive Learning",
+      "abstract": "In recent years, diffusion models and GAN-based models have become the mainstream approaches for SAR-to-optical image translation, owing to their advantages, such as high-quality generation and stable training. However, they have shortcomings such as high inference latency and the generated optical images suffer from low detail fidelity, often resulting in blurred edges and loss of fine textures. Thus, we propose ContraFM-S2O, which is a flow matching-based model for SAR-to-optical image translation. Unlike conventional diffusion models, ContraFM-S2O learns to predict the velocity field in training and solves ODE instead of SDE during inference to improve the sampling efficiency. In addition…",
+      "authors": [
+        "Mingqian Yu",
+        "Wei-kuan Chiang",
+        "Qiurui Wang",
+        "Peilin Zhao"
+      ],
+      "published": "2026-09-25T15:15:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.31378v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-09-28T15:11:17.918935+00:00"
     },
     {
       "id": "2606.31680v1",
