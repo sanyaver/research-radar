@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-30T13:29:48.576551+00:00",
-  "total": 933,
-  "new_this_run": 36,
+  "last_updated": "2026-10-01T14:20:43.220874+00:00",
+  "total": 950,
+  "new_this_run": 17,
   "papers": [
     {
       "id": "2607.24493v1",
@@ -1568,6 +1568,41 @@
       "first_seen": "2026-09-30T13:29:48.576551+00:00"
     },
     {
+      "id": "2609.39590v1",
+      "title": "SPOON: Towards Coherent Compositional 3D Scene Generation from Uncalibrated Multi-view Images",
+      "abstract": "Compositional 3D scene generation aims to recover complete 3D object shapes and their spatial arrangement from visual observations. Recent image-conditioned 3D generators provide strong priors for producing high-quality object geometry, making the generation of complex scenes increasingly practical. A central challenge is therefore to spatially organize these generated assets into a globally coherent scene while remaining consistent with multi-view observations. Existing approaches either entangle scene layout with object generation or separately estimate spatial placement from view-specific observations, where pose hypotheses may remain ambiguous and inconsistent across views, often resulti…",
+      "authors": [
+        "Guibiao Liao",
+        "Mochu Xiang",
+        "Heng Li",
+        "Ken Deng",
+        "Zijie Wang",
+        "Guanbin Li"
+      ],
+      "published": "2026-09-30T12:16:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39590v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 90
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
       "id": "2607.03819v1",
       "title": "CGGS: Consistency-Augmented Geometric Gaussian Splatting for Ego-centric 3D Scene Generation",
       "abstract": "Challenges remain in ego-centric 3D scene generation due to limited view overlap and the dominant influence of individual perspectives on scene interpretation. These factors hinder the creation of viewpoint-consistent and semantically aligned visual content, as well as the construction of accurate geometric structures. In this paper, we propose CGGS, a text-to-3D framework aiming to enhance 3D-content-awareness and address geometric distortions in ego-centric scene generation. Firstly, the Ego-centric Generator is proposed by fine-tuning a Multi-View Latent Diffusion Model with consistency-augmented loss to generate consistent, high-fidelity 2D content aligned with textual descriptions. Then…",
@@ -2326,6 +2361,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2609.39709v1",
+      "title": "BTC3D: Blended Tile Conditioning for Detail-Enhancing Image-to-3D Generation",
+      "abstract": "Recent diffusion-based pipelines have achieved promising progress in image-to-3D synthesis. However, generating high-fidelity details remains challenging, especially when the input image contains rich details. Existing approaches often rely on globally encoded conditioning features, which compress spatial information and limit the model to reproduce fine-grained details. This common design often leads to a phenomenon we term detail attenuation. Moreover, improving image-to-3D synthesis quality typically requires retraining or fine-tuning large diffusion models, which can be computationally expensive and impractical for complex 3D pipelines. In this work, we present Blended Tile Conditioning …",
+      "authors": [
+        "Junyu Li",
+        "Qiuyu Chen",
+        "Pengcheng Wang",
+        "Shiqi Yang",
+        "Alexandra Gomez-Villa",
+        "Joost van de Weijer"
+      ],
+      "published": "2026-09-30T13:24:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39709v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 84
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
     },
     {
       "id": "2607.05252v1",
@@ -20095,6 +20159,185 @@
       "first_seen": "2026-09-30T13:29:48.576551+00:00"
     },
     {
+      "id": "2609.40341v1",
+      "title": "Ego4WAM: What Matters When Scaling Egocentric Human Data for Robot Learning?",
+      "abstract": "Egocentric human data provides a scalable source of experience for robot learning, but varies substantially in human-robot alignment, behavioral coverage, and available supervision. Existing work shows favorable scaling with increasing human data, but it remains unclear which data properties drive downstream robot gains and how to use such data throughout the training pipeline. We present a systematic study of egocentric human data with different alignment and supervision under a unified world-action model framework. With the model backbone fixed, we disentangle the effects of human-robot alignment, data duration and task diversity, action supervision, and data usage strategies. We find that…",
+      "authors": [
+        "Zhihao Sun",
+        "Liu Liu",
+        "Xinjiang Wang",
+        "Haoyi Jiang",
+        "Wei Feng",
+        "Huiqiang Zhang"
+      ],
+      "published": "2026-09-30T17:58:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.40341v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39599v1",
+      "title": "Text-to-3D Policy: Fine-Grained Language-Behavior Alignment for Unseen Specification Generalization",
+      "abstract": "3D visuomotor policies provide a strong foundation for spatially precise manipulation, yet current text-to-3D policies struggle to follow unseen fine-grained behavioral specifications beyond those covered by demonstrations. We study this challenge as unseen specification generalization, where language specifies behaviorally significant variations, such as target position, displacement, or articulated state, that are absent from policy training. We find that pretrained language representations and conventional global behavior-language alignment capture coarse task semantics but often blur nearby specifications that require distinct behaviors. We introduce T3DP, a Text-to-3D Policy framework f…",
+      "authors": [
+        "Xinhao Yang",
+        "Wenhao Wu",
+        "Ning Lv",
+        "Yanshen Ding",
+        "Zhenhong Sun",
+        "Daoyi Dong"
+      ],
+      "published": "2026-09-30T12:19:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39599v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39553v1",
+      "title": "EffGS: Efficient and High-Fidelity Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) enables real-time novel view synthesis, but existing general-purpose acceleration methods suffer severe rendering quality degradation when extended to more complex, large-scale scenes. To address this issue, we propose EffGS, a more general acceleration framework that improves training and rendering efficiency while maintaining reconstruction quality comparable to or better than vanilla 3DGS across bounded and large-scale scenes. EffGS combines frequency-aware guidance, localized density control, and adaptive primitive scale modulation. First, an importance scoring mechanism combines pixel-wise reconstruction errors with a difference-of-Gaussians mask scheduled o…",
+      "authors": [
+        "Changbai Li",
+        "Shuo Yang",
+        "Yichen Yang",
+        "Shuwei Shao",
+        "Huobin Tan"
+      ],
+      "published": "2026-09-30T11:52:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39553v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39387v1",
+      "title": "Beyond Simulation: Retain-and-Repair Neural Operators for Real-World Adaptation",
+      "abstract": "Neural operators increasingly benefit from pretraining on numerical simulations, yet adapting them for real-world prediction remains challenging. We introduce the Retain-and-Repair Neural Operator (R$^2$NO), a framework for adapting simulation-pretrained operators to real-world data while retaining useful pretrained structure. The pretrained operator is first finetuned on real data and then frozen to provide a source prediction, and a shared repair module learns a sequence of refinements from the same observations. Using orthogonal Fourier projections, a spectral ensemble fits a small ridge regression within each cell of the Fourier domain and combines the refinements by weights fitted on a …",
+      "authors": [
+        "Woojin Cho",
+        "Junghwan Park"
+      ],
+      "published": "2026-09-30T09:35:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39387v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39322v1",
+      "title": "A Biophysically Detailed C. elegans Circuit as a Task-Agnostic Dynamical Core for Visually Robust Robot Manipulation",
+      "abstract": "Robot policies are usually trained for one task, one body and one visual environment, and generalize poorly beyond these conditions. Whether a nervous system can instead supply the sensorimotor computation through its evolved wiring and biophysics remains unresolved. Here we embed a biophysically detailed Caenorhabditis elegans sensorimotor circuit - 136 multicompartment neurons with realistic morphologies and electrophysiological characteristics - as the dynamical core of a visuomotor policy. Only thin task-specific adapters are trained; the core's synaptic weights stay fixed while its membrane voltages evolve freely. Across different MetaWorld tasks the core matches or exceeds diffusion-po…",
+      "authors": [
+        "Linrui Qian",
+        "Jiajia Zhang",
+        "Gan He",
+        "Bohan Sun",
+        "Zhiwei Lin",
+        "Qianhao Wang"
+      ],
+      "published": "2026-09-30T09:00:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39322v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.38982v1",
+      "title": "SimEX: Simulation-Integrated Robotics AutoResearch",
+      "abstract": "Coding agents powered by large language models (LLMs) have shown remarkable abilities to autonomously reason about and achieve goals in the digital world. However, bringing this success to the physical world remains challenging. On the one hand, direct generation methods (e.g., Code as Policies) often suffer from the LLMs' insufficient understanding of robots and physical environments. On the other hand, iterative trial-and-error tuning in the physical world (e.g., physical autoresearch) induces significant experimental cost and safety concerns. We introduce SimEX: Simulation-Integrated Robotics AutoResearch, an autoresearch framework that tightly integrates simulated experimentation, enabli…",
+      "authors": [
+        "Jiaheng Hu",
+        "Roberto Martin-Martin",
+        "Peter Stone",
+        "Rocky Duan",
+        "Zhenyu Jiang",
+        "Guanya Shi"
+      ],
+      "published": "2026-09-30T04:58:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.38982v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -22285,6 +22528,94 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-30T13:29:48.576551+00:00"
+    },
+    {
+      "id": "2609.40208v1",
+      "title": "Centralized Multi-UAV Exploration and 3D Reconstruction Using Single-UAV Planners",
+      "abstract": "Extending single Unmanned Aerial Vehicles (UAVs) exploration methods to multi-UAV teams can improve coverage speed and robustness, but introduces challenges such as consistent mapping, safe navigation, and deployment strategy. In this work, we present a centralized multi-UAV exploration framework that enables the use of existing single-UAV sampling-based planners in a multi-UAV setting. The proposed architecture allows multiple UAVs to collaboratively explore unknown environments using a shared global Truncated Signed Distance Field (TSDF) map and centralized planning. Building on the voxblox library, we adapt its mapping pipeline to support real-time fusion of depth measurements from multip…",
+      "authors": [
+        "João Félix Mendes",
+        "Meysam Basiri",
+        "Rodrigo Ventura"
+      ],
+      "published": "2026-09-30T17:19:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.40208v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39841v1",
+      "title": "DyRAD: Radar Novel View Synthesis for Dynamic Driving Scenes",
+      "abstract": "Reconstructing dynamic driving scenes from recorded sensor data supports closed-loop evaluation of autonomous driving systems by synthesizing observations beyond the original trajectory. Unlike cameras and LiDAR, radar measures radial velocity directly through Doppler. Yet existing radar novel-view synthesis fails to exploit this capability: methods addressing dynamic scenes reconstruct only range-azimuth tensors, while methods that render Doppler assume static scenes. Moreover, because radar processing spreads each reflection across multiple bins, existing representations absorb this spread into scene geometry, causing it to render incorrectly when the viewpoint moves. We present DyRAD, whi…",
+      "authors": [
+        "Merav Keidar",
+        "Tomer Borreda",
+        "Rajalakshmi Nandakumar",
+        "Or Litany"
+      ],
+      "published": "2026-09-30T14:35:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39841v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39089v1",
+      "title": "UGOD: Uncertainty-Guided Opacity and Dropout for Sparse-View 3D Gaussian Splatting",
+      "abstract": "Sparse-view 3D Gaussian Splatting is prone to overfitting because limited observations leave many Gaussian primitives weakly constrained, yet their contributions are still accumulated through alpha blending. Without uncertainty estimation, the renderer cannot distinguish unreliable primitives from well-constrained ones, allowing their erroneous contributions to corrupt novel-view synthesis. We introduce UGOD, an uncertainty-guided framework that estimates a view-dependent uncertainty score for each Gaussian and uses it to regulate its rendering contribution. A lightweight uncertainty head conditioned on Gaussian attributes and viewing direction predicts this score, which then drives a differ…",
+      "authors": [
+        "Zhihao Guo",
+        "Peng Wang",
+        "Zidong Chen",
+        "Xiangyu Kong",
+        "Yan Lyu",
+        "Guanyu Gao"
+      ],
+      "published": "2026-09-30T06:27:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39089v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -26402,6 +26733,112 @@
       "first_seen": "2026-09-30T13:29:48.576551+00:00"
     },
     {
+      "id": "2609.39488v1",
+      "title": "Correcting CondOT: Exact Finite-Step Sampling in Gaussian Flow Matching",
+      "abstract": "Flow matching generates samples by gradually transforming noise into data. In practice, using a finite number of sampling steps introduces a numerical error that depends on the chosen schedule. We study this dependence for Gaussian targets and the explicit midpoint sampling method, using the exact flow field. We measure sampling error by the squared Wasserstein distance between the target distribution and the final distribution produced by the midpoint sampler. We show that the standard conditional optimal transport (CondOT) schedule cancels the leading midpoint error and improves the general convergence bound, even when the sampling steps are unequally spaced. On a uniform grid of $S$ sampl…",
+      "authors": [
+        "Ron Levy",
+        "Michael Elad"
+      ],
+      "published": "2026-09-30T10:50:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39488v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39374v1",
+      "title": "Wavelet Flow Matching for Time Series",
+      "abstract": "Synthetic time series are increasingly used for data augmentation, privacy-preserving data sharing, and downstream model development, yet faithfully reproducing both multi-scale temporal structure and cross-channel dependencies remains challenging. We study multivariate time-series generation through flow matching in the wavelet domain. By operating on multilevel discrete wavelet coefficients rather than directly in the time domain, the model represents coarse structure and progressively finer details at separate scales. Their naturally different variances further induce an implicit coarse-to-fine generative process without requiring an explicit multi-scale schedule. Since the transform acts…",
+      "authors": [
+        "Lucas Poinsignon",
+        "Jorge da Silva Gonçalves",
+        "Samuel Ruipérez-Campillo",
+        "Julia E. Vogt"
+      ],
+      "published": "2026-09-30T09:25:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39374v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39098v1",
+      "title": "DiFF: Doppler-informed Flow Matching for Human Motion Flow",
+      "abstract": "Perceiving human motion via privacy-preserving 4D millimeter-wave (mmWave) radar is critical for next-generation human-robot interaction (HRI), where point cloud scene flow serves as a foundational motion representation. Yet the extreme sparsity and noise of 4D radar point clouds make non-rigid motion flow estimation severely ill-posed--a challenge that existing rigid-centric methods and prior works fail to adequately address, largely because they neglect the rich Doppler velocity cues inherent in 4D radar. We propose DiFF, a generative framework that marries Doppler-informed motion priors with a Kolmogorov-Arnold Network (KAN)-based conditional flow matching model. At its core, a KAN-attent…",
+      "authors": [
+        "Kai Wang",
+        "Mingle Zhao"
+      ],
+      "published": "2026-09-30T06:36:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39098v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.HC"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.38918v1",
+      "title": "Flow Matching under Noisy Latent Structure: Beyond Exact Low-Dimensional Support",
+      "abstract": "Flow Matching (FM) learns a velocity field whose ODE transports a simple source distribution to a target law. Existing finite-sample theory largely treats ambient-space regularity or data supported exactly on low-dimensional sets. We study linear FM under a noisy latent-generator model, where a low-dimensional Hölder map is perturbed by nondegenerate ambient Gaussian noise, so the target law is full-dimensional despite its latent structure. We construct a spatially regular ReLU velocity class and establish non-asymptotic high-probability approximation and estimation bounds whose leading sample-size exponent is governed by the latent dimension rather than the ambient dimension, with ambient a…",
+      "authors": [
+        "Lifeng Hao",
+        "Shaolin Ji"
+      ],
+      "published": "2026-09-30T04:03:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.38918v1",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -28333,6 +28770,65 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-30T13:29:48.576551+00:00"
+    },
+    {
+      "id": "2609.40134v1",
+      "title": "Tactile Curiosity Drives Robot Interaction",
+      "abstract": "Mastering robot manipulation skills via reinforcement learning (RL) remains largely sample-inefficient. The most common RL algorithms rely on random action sampling to discover new strategies, resulting in agents that allocate most of their training budget to motions in free space, away from the contacts from which manipulation skills emerge. Existing intrinsic motivation methods based on model disagreement or epistemic uncertainty improve on isotropic noise, but they can also reward uncertainty in functionally irrelevant transitions, such as erratic motions in free space. In this work, we argue that tactile feedback provides a natural signal for exploration, and introduce TacEx, a framework…",
+      "authors": [
+        "Klemens Iten",
+        "Alexander Proshkin",
+        "Bhavya Sukhija",
+        "Stelian Coros",
+        "Andreas Krause",
+        "Pieter Abbeel"
+      ],
+      "published": "2026-09-30T16:49:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.40134v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
+    },
+    {
+      "id": "2609.39403v1",
+      "title": "IronMind: Scaling Humanoid Dexterous Manipulation via Camera-Space Ego-Centric Pretraining",
+      "abstract": "Egocentric human video offers a scalable data source for dexterous manipulation, yet using it to train humanoid robots presents two challenges: (1) an embodiment gap, as human hands differ structurally from robot end-effectors and low-cost egocentric recordings lack the torso kinematics required by conventional retargeting; and (2) heterogeneous data quality, including noisy hand-pose tracking and weakly aligned text annotations. We introduce IronMind, a vision-language-action (VLA) model that uses egocentric human video and heterogeneous robot data to pretrain policies for humanoid dexterous manipulation. To bridge the embodiment gap, IronMind bypasses explicit body-retargeting by using a c…",
+      "authors": [
+        "Huimin Pan",
+        "Yufan Ren",
+        "Kunpeng Song",
+        "Siyang Wang",
+        "Xiwen Zhang",
+        "Xiaoyun Hu"
+      ],
+      "published": "2026-09-30T09:45:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2609.39403v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-01T14:20:43.220874+00:00"
     }
   ]
 }
