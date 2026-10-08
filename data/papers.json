@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-07T14:20:49.454948+00:00",
-  "total": 1047,
-  "new_this_run": 26,
+  "last_updated": "2026-10-08T14:28:41.564817+00:00",
+  "total": 1074,
+  "new_this_run": 27,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -3371,6 +3371,39 @@
       "first_seen": "2026-10-05T15:45:16.692501+00:00"
     },
     {
+      "id": "2610.09715v1",
+      "title": "EC-EarthFlow: Probabilistic emulation of daily transient global climate model simulations with flow matching",
+      "abstract": "We introduce EC-EarthFlow, a generative flow matching model that emulates simulations from the physical climate model EC-Earth3. The model is trained on transient simulations from EC-Earth3 (1950-2166, SSP2-4.5) to predict the day ahead temperature field from the previous days temperature as well as annual mean temperature. Predictions are made auto-regressively with rollout periods of between a month and an extended season. Using only this variable of interest, we are able to reproduce the daily variability, spatial patterns, annual cycle and long-term trend from EC-Earth3 at a substantially lower computational cost than the physical model. We demonstrate that EC-EarthFlow is stable for lon…",
+      "authors": [
+        "Kirien Whan",
+        "Nikolaj T. Mücke",
+        "Karin van der Wiel"
+      ],
+      "published": "2026-10-07T09:10:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09715v1",
+      "categories": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
       "id": "2606.30352v1",
       "title": "FastPano3D: Feed-Forward Indoor Panoramic 3D Reconstruction from a Single Image",
       "abstract": "Recent advances in 3D scene reconstruction have highlighted the intricate trade-offs among rendering quality, inference efficiency, and data dependency. To address the challenge of rapidly reconstructing detailed 3D indoor scenes from minimal input, we introduce FastPano3D, an end-to-end framework that directly generates renderable 3D Gaussian representations from a single panoramic image. Unlike perspective-based methods, panoramic images inherently suffer from equirectangular projection distortions and spatially non-uniform feature distributions, making direct feed-forward Gaussian generation particularly challenging. In contrast to existing Gaussian Splatting based methods that rely on mu…",
@@ -3926,6 +3959,46 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-05T15:45:16.692501+00:00"
+    },
+    {
+      "id": "2610.10539v1",
+      "title": "Tetris3D: 3D Scene Generation With Objects That Fit Together",
+      "abstract": "We propose Tetris3D, a generative framework for single-image 3D scene reconstruction that recovers objects which are physically and geometrically coherent as a scene. Existing methods often generate objects independently or couple them implicitly, providing limited guidance for ensuring fine-grained spatial compatibility between neighboring objects that interact with one another. To address this, we explicitly condition the generation of each object on the geometry of surrounding objects and their physical relationships, guiding its shape and pose to remain geometrically and physically plausible within the scene. Moreover, we introduce ComOb, a physics simulation-based dataset of 1.2M scenes…",
+      "authors": [
+        "Jaeyeong Kim",
+        "Jinhyuk Jang",
+        "Jongmin Lee",
+        "Kyehong Park",
+        "Seungryong Kim"
+      ],
+      "published": "2026-10-07T17:59:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10539v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
     },
     {
       "id": "2606.31101v1",
@@ -5850,6 +5923,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-06T14:02:45.141438+00:00"
+    },
+    {
+      "id": "2610.09254v1",
+      "title": "RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer",
+      "abstract": "Simulation enables large-scale, low-cost robot data generation, but policies trained in simulation often fail to transfer to the real world due to the sim-to-real visual discrepancies. Existing approaches often rely on intermediate representations, which can discard rich semantic information or require additional perception modules at deployment. We address this visual sim-to-real gap with RoboRender, a framework that converts simulated trajectories into photorealistic RGB videos for policy learning. RoboRender trains a robot-oriented video generation model conditioned on simulated depth videos, language instructions, and robot RGB mask videos, preserving simulator geometry, robot motion, an…",
+      "authors": [
+        "Huang Huang",
+        "Wensi Ai",
+        "Ziyu Chen",
+        "Youhui Wang",
+        "Zijian Du",
+        "Yang Liu"
+      ],
+      "published": "2026-10-07T00:39:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09254v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -9107,6 +9209,152 @@
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
     },
     {
+      "id": "2610.10510v1",
+      "title": "Factorized Tactile Representation and Control for Sim-to-Real Manipulation",
+      "abstract": "Tactile sim-to-real learning must bridge simulated contact and device-specific sensor responses while preserving information needed for control. We propose a factorized tactile representation and control framework that maps normal force and contact patch to an effective contact response recoverable from sensor readings. The response is separated into contact geometry, force distribution, and temporal contact change, with representation-specific encoding and randomization. A Tactile Gated Policy preserves these representations separately through control and operates over all mask configurations without retraining. We evaluate the approach through response reconstruction, spatial alignment, fo…",
+      "authors": [
+        "Siqi Shang",
+        "Bianca Aumann",
+        "Tye Brady",
+        "Joshua Migdal",
+        "Taskin Padir"
+      ],
+      "published": "2026-10-07T17:51:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10510v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.10479v1",
+      "title": "Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies",
+      "abstract": "A simulation of a real robot workspace must preserve task-relevant interactions, while policies developed in it must operate on observations available to the real robot. Yet scene reconstruction and policy development are often treated separately. We present Agentic Real-to-Sim-to-Real (Agentic RSR), a framework that links scene reconstruction, policy development, and real-robot execution through the same manipulation task. Given a workspace video, a task description, and a known robot model, an agent recovers metric scale, iteratively refines the scene using visual feedback, and checks task-relevant interactions in MuJoCo. A coding agent then develops an executable policy, progressing from …",
+      "authors": [
+        "Yihan Li",
+        "Yating Feng",
+        "Shengjiu Sun",
+        "Jianing Chen",
+        "Hao Ren",
+        "Bowen Yang"
+      ],
+      "published": "2026-10-07T17:37:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10479v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.10387v1",
+      "title": "NeRFifyMesh: Optimizing Neural Radiance Fields from Textured Meshes for Robotics Scene Building",
+      "abstract": "In robotics, scene representation plays a pivotal role in understanding and interacting with the environment. The advent of Neural Radiance Fields (NeRF) and its variants, as a novel representation, has opened a new frontier of research. In applications such as semantic mapping and simulation, roboticists aim to build scenes using multiple NeRF models, each representing an object. While extensive datasets of 3D mesh models already exist, there is an urgent need to develop tools to convert these assets to NeRF models for rapid algorithm development and testing. This paper presents a new pipeline for converting existing mesh models to NeRF representations by artificially generating a ground tr…",
+      "authors": [
+        "Nillan Nimal",
+        "Mahboubeh Asadi",
+        "Sajad Saeedi"
+      ],
+      "published": "2026-10-07T16:45:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10387v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 55
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09822v1",
+      "title": "Simulation Methods for Multiphysics Phenomena in Visual Computing",
+      "abstract": "Physics simulation is a cornerstone of many computer graphics applications, ranging from video games and virtual reality to visual effects and computational design. The number of techniques for physically-based modeling and animation has thus skyrocketed over the past few decades, facilitating the simulation of a wide variety of materials and physical phenomena. These course notes provide an in-depth introduction to multiphysics simulation methods for computer graphics, covering the mathematical foundations, key algorithms, and practical considerations behind the most widely used approaches. We focus on methods developed by the computer graphics community for simulating various physical phen…",
+      "authors": [
+        "Fabian Löschner",
+        "Stefan Rhys Jeske",
+        "José Antonio Fernández-Fernández",
+        "Jan Bender"
+      ],
+      "published": "2026-10-07T10:44:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09822v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09723v1",
+      "title": "MeshCarve: Artisan Mesh Generation with Flow Matching in Compact Latent Spaces",
+      "abstract": "Prior artisan mesh generation works largely predict face tokens autoregressively, which makes inference slow. Recent methods instead flow match continuous latents built by Variational AutoEncoders (VAEs), but reconstruction quality drops significantly when geometry and topology are jointly encoded, and further when the latent space is compressed. We present MeshCarve, a flow matching method that generates entirely in compact latent spaces, generating vertex positions and edge connections separately and sidestepping the difficulty of a joint compact latent. To shorten the token sequence, we propose a hierarchical sparse transformer backbone, instantiated as VertexVAE and EdgeVAE. Instead of e…",
+      "authors": [
+        "Xiyu Wang",
+        "Ruocheng Wu",
+        "Yufei Wang",
+        "Zhihao Li",
+        "Lanqing Guo",
+        "Bihan Wen"
+      ],
+      "published": "2026-10-07T09:20:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09723v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "4A_topology",
+          "label": "4A · Clean Topology",
+          "color": "#F97316",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -12108,6 +12356,125 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
+    },
+    {
+      "id": "2610.10047v1",
+      "title": "AdSpark: A Large-Scale Dataset and Benchmark for Product-Centric Advertisement Video Generation",
+      "abstract": "Product-centric advertisement video generation aims to create promotional videos that preserve fine-grained product identity while presenting selling points through coherent multi-shot narratives. However, this emerging task remains underexplored due to the lack of large-scale advertisement-specific datasets and comprehensive evaluation frameworks. To address this gap, we introduce \\textbf{AdSpark}, a large-scale dataset and benchmark for product-centric advertisement video generation, based on data from a major e-commerce platform. \\textit{AdSpark-300K} contains approximately 300K reference image--prompt--video triplets, comprising a real-world subset and a synthetic subset. Each sample pro…",
+      "authors": [
+        "Zhifei Yang",
+        "Zhao Jiang",
+        "Keyang Lu",
+        "Honghe Zhu",
+        "Zheng Zhang",
+        "Jingjing Lv"
+      ],
+      "published": "2026-10-07T13:23:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10047v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09853v1",
+      "title": "DeltaSplat: Iterative Gaussian Refinement for Pose-Free Feed-Forward 3D Gaussian Splatting",
+      "abstract": "Pose-free feed-forward 3D Gaussian Splatting (3DGS) reconstructs a scene from sparse, unposed images in a single network pass, removing the need for camera calibration and per-scene optimization. However, camera estimation errors propagate into the predicted Gaussians and compound the geometric and photometric inaccuracies of single-pass prediction. To correct these errors, we introduce DeltaSplat, a lightweight Gaussian refinement module for pose-free feed-forward 3DGS. It iteratively renders the current Gaussians at the input context views and predicts per-Gaussian updates from the resulting residuals. A 2D residual alone, however, underdetermines the 3D correction. DeltaSplat therefore co…",
+      "authors": [
+        "Chanung Park",
+        "Seunghyeon Song",
+        "Joo Chan Lee",
+        "Eunbyung Park",
+        "Jong Hwan Ko"
+      ],
+      "published": "2026-10-07T11:11:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09853v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09223v1",
+      "title": "PVSync: A Unified Lip-Sync Expert for Timing and Articulation",
+      "abstract": "Lip movements can match the timing of speech without matching the spoken sounds. We introduce PVSync, a unified model for audio-visual offset estimation and phoneme-level articulation scoring. PVSync combines window-level contrastive learning for synchronisation with a phoneme-level articulation objective that aligns audio and video embeddings of the same viseme class across clips. Visemes group phonemes with similar visible articulation. Viseme labels are derived automatically from forced-aligned transcripts, without manual annotations. On offset-corrected videos from 13 talking-head video generation models, PVSync matches human rankings of lip-sync quality more closely than LSE-C, achievin…",
+      "authors": [
+        "Kevin Stephen",
+        "Varun Menon",
+        "Timo Mertens",
+        "Nikita Drobyshev"
+      ],
+      "published": "2026-10-06T23:36:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09223v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09150v1",
+      "title": "A Unified Kinematic Representation Enables Reusable Biological Joint Moment Estimation",
+      "abstract": "Objective: Data-driven models that estimate physiological states, particularly biological joint moments, are widely used in exoskeleton control. However, these estimators are often coupled to device-specific sensor configurations, limiting controller transfer and the use of open-source biomechanics datasets. Methods: We proposed joint kinematics as an intermediate representation that decouples hardware-specific sensing from downstream biological joint moment estimation. A joint-moment estimator using joint angles and angular velocities was trained exclusively on open-source biomechanics data and evaluated using kinematics from a hip exoskeleton, knee exoskeleton, and inertial measurement uni…",
+      "authors": [
+        "Jinwoo Hwang",
+        "Ilseung Park",
+        "Changseob Song",
+        "Vu Phan",
+        "Eni Halilaj",
+        "Inseung Kang"
+      ],
+      "published": "2026-10-06T21:48:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09150v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -22270,6 +22637,235 @@
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
     },
     {
+      "id": "2610.10465v1",
+      "title": "LLA-MPPI: Rapidly Adaptive Whole-body Control of Legged Robots with GPU-Accelerated Parallel Simulations",
+      "abstract": "Real-time whole-body controllers for legged robots typically plan through a fixed nominal model and degrade when the deployed dynamics change. Adaptive methods typically require a model structure that contact dynamics do not provide, or they need offline training for each anticipated condition. We present Look-back and Look-ahead Adaptive Model Predictive Path Integral control (LLA-MPPI). The method converts whole-body adaptation into selection over a bank of GPU-batched contact simulators with different physical or structural parameters. Windowed prediction errors select the simulator that best explains recent motion. A whole-body MPPI planner optimizes controls through the selected model. …",
+      "authors": [
+        "Sebin Jung",
+        "Maitham F. AL-Sunni",
+        "Juan Alvarez-Padilla",
+        "Zachary Manchester",
+        "Changliu Liu",
+        "John M. Dolan"
+      ],
+      "published": "2026-10-07T17:30:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10465v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.10342v1",
+      "title": "Position Forcing: Self-Conditioning 3D Generation",
+      "abstract": "Recent single-stage 3D generative models commonly adopt VecSet representations, encoding 3D shapes as unordered sets of latent tokens. However, compared with two-stage methods that provide explicit positional guidance, these models must implicitly infer token positions throughout denoising, limiting their generation quality. We observe that, despite the absence of explicit positional conditioning, VecSet tokens retain recoverable spatial correspondences. Building on this observation, we propose Position Forcing, a position-based self-conditioning framework. During denoising, Position Forcing recovers token positions from the current clean latent estimate, quantizes them at progressively fine…",
+      "authors": [
+        "Ziheng Ouyang",
+        "Zeqiang Lai",
+        "Jiarui Chen",
+        "Jiangshan Wang",
+        "Yuhao Wan",
+        "Jingbo Gong"
+      ],
+      "published": "2026-10-07T16:23:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10342v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09566v1",
+      "title": "Targeted Modality Dropout for Real-Robot Manipulation Robust to Intermittent Vision Loss",
+      "abstract": "Imitation learning policies that integrate multiple sensory modalities are prone to overreliance on a dominant modality, such as vision, during training, which can disrupt policy execution when that modality is lost at inference time. In this paper, we introduce Targeted Modality Dropout (TMD), in which the dependence on each modality is estimated using attention and the most dominant modality is selectively dropped. This is combined with entropy regularization over the dependence distribution. Through real-robot evaluation using a bimanual manipulator, we show that under vision loss the success rate of the baseline policy drops substantially, whereas TMD sustains task execution. In contrast…",
+      "authors": [
+        "Genki Shikada",
+        "Kazuki Osamura",
+        "Masaru Ide",
+        "Tetsuya Ogata",
+        "Kanata Suzuki"
+      ],
+      "published": "2026-10-07T07:07:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09566v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09520v1",
+      "title": "Not All Uncertainty Matters: Simulation-in-the-Loop Fast-Slow Reasoning for Decision-Critical Autonomous Driving System",
+      "abstract": "Large vision-language models (VLMs) provide powerful open-world perception and reasoning for autonomous driving, but their high computational cost and inference latency make continuous cloud-side use impractical. This motivates fast--slow collaboration, where efficient onboard modules handle real-time perception and control while cloud models provide high-level reasoning only when needed. The key challenge is deciding when cloud reasoning should influence time-critical driving decisions. Existing methods often rely on perception uncertainty, heuristic triggers, or resource-driven policies, without assessing whether resolving an uncertainty will improve planning. We propose \\textbf{SIGMA}, a …",
+      "authors": [
+        "Jiayi Chen",
+        "Shuai Wang",
+        "Guangxu Zhu",
+        "Derrick Wing Kwan Ng",
+        "Chengzhong Xu",
+        "Kaibin Huang"
+      ],
+      "published": "2026-10-07T06:15:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09520v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09455v1",
+      "title": "RLHND: Video Foundation Models as Physically Grounded Hand Trackers for Robot Learning",
+      "abstract": "Recently, approaches that leverage human video datasets for robot policy training have become increasingly prevalent. However, most existing hand trackers regress pose from cropped frames with limited priors on hand motion and object interaction, resulting in inaccurate and physically inconsistent estimates. Moreover, the lack of physical cues, e.g., contact and force, limits the use of human videos for robot policy training. To this end, we propose RLHND, a video foundation model-based hand tracking model that jointly estimates hand pose and realistic tactile information from monocular egocentric videos. RLHND turns the pre-trained Cosmos 3 video diffusion backbone into a deterministic clip…",
+      "authors": [
+        "Seungjun Moon",
+        "Subin Jeon",
+        "Sangwoo Kim",
+        "Hanbyul Joo",
+        "Jinwoo Shin"
+      ],
+      "published": "2026-10-07T05:11:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09455v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09315v1",
+      "title": "ClimbLab: MATLAB Simulation Platform for Legged Climbing Robotics",
+      "abstract": "This paper presents an open-sourced MATLAB simulation and analysis platform dedicated to legged climbing robots. This simulator enables the design of any limbed robotic system as an articulated multi-body with a floating base and simulates it walking and climbing in an arbitrary environment. The main variable environmental parameters are inclination, gravity, and ground stiffness, and any point cloud can be installed as the terrain map. Furthermore, the simulator employs a rigid body dynamics engine. This paper first describes the simulator structure, and the computational flow and next presents the representative simulation examples where quadrupedal robots assumed gripping on the wall or c…",
+      "authors": [
+        "Kentaro Uno",
+        "Warley F. R. Ribeiro",
+        "Yusuke Koizumi",
+        "Keigo Haji",
+        "Koki Kurihara",
+        "William Jones"
+      ],
+      "published": "2026-10-07T02:15:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09315v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09309v1",
+      "title": "Predicted Futures Are Not Enough: Learning Executable Goals for Robot Manipulation",
+      "abstract": "Generative world models provide rich predictions of how manipulation scenes may evolve toward task objectives, yet those futures do not directly expose the compact task variables required by control. When training supervises future prediction alone, terminal goal accuracy is not an explicit learning objective, even when geometric recovery is available. We present Entity-Level Goal Readout, a learned prediction-to-execution interface that makes the executable terminal goal an explicit output of a 3D trace world model. It combines object-centric pose prediction with translation grounded in observed depth to produce a compact goal in SE(3). A shared Pose-Native Executor consumes this fixed goal…",
+      "authors": [
+        "Tzu-Yu Chuang",
+        "Ching-Hsiang Chang",
+        "Yi-Hsiu Lee",
+        "Yi-Ting Chen",
+        "Min Sun",
+        "YuanFu Yang"
+      ],
+      "published": "2026-10-07T02:07:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09309v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09280v1",
+      "title": "Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation",
+      "abstract": "This work examines the transfer of a co-evolved communication mechanism between two robotic agents from a discrete two-dimensional (2D) simulator to a three-dimensional simulator with real physics (3D). The study focuses on whether a communication mechanism co-evolved in a 2D environment retains its functional role after transfer to a 3D physics-based simulator. To support this analysis, the effects of the episode time budget, the social cue, and the asymmetry between the two co-evolved roles were examined. The results indicate that the success rate increased approximately linearly with the evaluated time budgets, with no evidence of a plateau between 2,000 and 6,000 physics steps, suggestin…",
+      "authors": [
+        "Fernando Montes-Gonzalez"
+      ],
+      "published": "2026-10-07T01:28:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09280v1",
+      "categories": [
+        "cs.RO",
+        "cs.NE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -24774,6 +25370,105 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
+    },
+    {
+      "id": "2610.10430v1",
+      "title": "Conditional Flow Matching for Generation of 3D Multi-variable Instantaneous Urban Microclimate Fields",
+      "abstract": "Rapid and accurate prediction of urban wind and temperature fields is important for urban microclimate design and climate adaptation. Large-eddy simulation (LES) effectively resolves these instantaneous fields, but its application is limited in iterative design of urban microclimate applications due to high computational cost. Existing regressive data-driven models offers quick outputs, but they produce only deterministic point predictions that inherently fail to represent turbulent stochasticity. This paper adopts a novel generative framework of Conditional Flow Matching (CFM) that uses building geometry and mean flow as guidance to generate plausible three-dimensional instantaneous velocit…",
+      "authors": [
+        "Peng Liu",
+        "Shaoxiang Qin",
+        "Theodore Potsis",
+        "Lili Ji",
+        "Dingyang Geng",
+        "Liangzhu Leon Wang"
+      ],
+      "published": "2026-10-07T17:09:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.10430v1",
+      "categories": [
+        "physics.flu-dyn",
+        "cs.CE",
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09343v1",
+      "title": "TileSkipper: Region-Adaptive Tile Pruning for 3D Gaussian Splatting",
+      "abstract": "Tiled 3D Gaussian Splatting rasterizers often use one scene-wide contribution cutoff for tile enumeration, although content differs in its sensitivity to support truncation. TileSkipper selects a static per-Gaussian cutoff policy for a frozen checkpoint. Calibration renders measure candidate pair savings and an isolated-removal distortion proxy that accounts for front transmittance and background color. The method allocates cutoffs across 64 Gaussian groups and accepts policies only after complete renders on disjoint selection views. The exported policy uses one byte per Gaussian, with no parameter updates, additional kernel, or per-frame policy inference. Across 13 scenes from Mip-NeRF 360,…",
+      "authors": [
+        "Jingxing Li",
+        "Yongjae Lee",
+        "Deliang Fan",
+        "Abhay Kumar Yadav",
+        "Cheng Peng",
+        "Rama Chellappa"
+      ],
+      "published": "2026-10-07T03:01:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09343v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09173v1",
+      "title": "RDGSplat: Render-Dedicated Geometry for Novel View Synthesis",
+      "abstract": "3D foundation models enable efficient novel view synthesis by carrying a Gaussian head on the representation they already use for reconstruction. However, the views they render fall short of the geometry they recover, because that geometry is estimated under a metric objective and never scored on how it renders. Recent methods alleviate this by updating the backbone weights, but they thereby discard the metric predictions the model was built for and must be repeated for every new backbone. To this end, we propose RDGSplat, a framework that decodes a second geometry dedicated to rendering from a frozen 3D foundation model, leaving its metric predictions intact. In particular, we devise Render…",
+      "authors": [
+        "Zhijie Zheng",
+        "Xinhao Xiang",
+        "Jiawei Zhang"
+      ],
+      "published": "2026-10-06T22:18:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09173v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -29543,6 +30238,31 @@
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
     },
     {
+      "id": "2610.09126v1",
+      "title": "Domain-informed Adaptive Sampling for Generalizable PINNs in Metal Additive Manufacturing via Conditional Flow Matching",
+      "abstract": "Accurate thermal modeling is essential in metal additive manufacturing (AM) for understanding the process-structure-property chain. Physics-informed neural networks (PINNs) offer effective surrogate thermal modeling by minimizing physics-based residual losses at collocation points. However, prior works typically rely on manually-crafted, static collocation sampling strategies, which are neither principled nor scalable across process conditions, hindering their generalization capability. In this work, we provide theoretical analysis through empirical risk minimization, showing that process condition-aware adaptive sampling is strictly more favorable than conventional static sampling for gener…",
+      "authors": [
+        "Hyeonsu Lee",
+        "Jihoon Jeong"
+      ],
+      "published": "2026-10-06T21:19:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09126v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -31747,6 +32467,91 @@
       ],
       "has_code": true,
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
+    },
+    {
+      "id": "2610.09696v1",
+      "title": "RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies",
+      "abstract": "Robot manipulation data collection has been shifting from teleoperation toward robot-free demonstrations, through interfaces such as the Universal Manipulation Interface (UMI) or directly from human hands. Vision-Language-Action (VLA) policies trained on such data inherit the demonstrator's timing. Yet human timing does not directly transfer to robots: compliant hands tolerate fast contact, whereas robots may overshoot due to actuator and tracking limitations; conversely, robots can move faster in free space. This motivates a unified approach that reconciles execution speed with contact safety. We present RoboPace, an online retiming layer that preserves the policy's geometric path while ada…",
+      "authors": [
+        "Mimo Shirasaka",
+        "Takehiko Ohkawa",
+        "Takuya Okubo",
+        "Nicola Scianca",
+        "Tatsuya Matsushima",
+        "Kei Ota"
+      ],
+      "published": "2026-10-07T08:55:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09696v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09397v1",
+      "title": "One Frame, Full Heartbeat: ECG-Free Cardiac Cine MRI Synthesis via Phase-Conditioned Flow Matching",
+      "abstract": "Cine cardiovascular magnetic resonance (CMR) analysis relies on multi-frame sequences capturing the full cardiac cycle. However, standard multi-frame acquisition depends heavily on electrocardiogram (ECG) gating and repeated breath-holds, posing challenges in uncooperative populations, resource-limited settings, and temporally corrupted datasets. Existing methods that synthesize full cardiac sequences either rely on explicit ECG signals to parameterize myocardium function, or employ deformable registration without physiological constraints, failing to faithfully reproduce clinically relevant dynamic metrics such as ejection fraction (EF) and ventricular contraction magnitude. We present Phas…",
+      "authors": [
+        "Shiyi Wang",
+        "Ruochen Sun",
+        "Peirong Liu",
+        "Xiang Li",
+        "Fangxu Xing"
+      ],
+      "published": "2026-10-07T03:56:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09397v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
+    },
+    {
+      "id": "2610.09185v1",
+      "title": "One Frame, Full Heartbeat: ECG-Free 4D Cardiac Cine MRI Synthesis via Radial-Decomposed Flow Matching",
+      "abstract": "Cine cardiovascular magnetic resonance (CMR) captures the cardiac cycle as a four-dimensional (4D) sequence, but standard acquisition requires electrocardiogram (ECG) gating and repeated breath holds. Visual realism alone does not establish accurate patient-specific ejection fraction (EF) or ventricular volumes. We present PhaseFlow3D, a generative framework that synthesizes a complete 4D cine sequence from a single end-diastolic (ED) three-dimensional (3D) volume without ECG. To capture asymmetric systolic and diastolic dynamics, it represents the cardiac cycle as a piecewise linear phase anchored at ED and end-systolic (ES) time points. At inference, a population-level canonical template s…",
+      "authors": [
+        "Shiyi Wang",
+        "Ruochen Sun",
+        "Xiang Li",
+        "Peirong Liu",
+        "Fangxu Xing"
+      ],
+      "published": "2026-10-06T22:36:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.09185v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-08T14:28:41.564817+00:00"
     }
   ]
 }
