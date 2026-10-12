@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-11T13:52:47.083214+00:00",
-  "total": 1097,
-  "new_this_run": 0,
+  "last_updated": "2026-10-12T16:37:19.686827+00:00",
+  "total": 1120,
+  "new_this_run": 23,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -1069,6 +1069,41 @@
       "first_seen": "2026-10-05T15:45:16.692501+00:00"
     },
     {
+      "id": "2610.13947v1",
+      "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
+      "abstract": "In this paper, we study physically grounded articulated 3D asset generation---moving the goal from reproducing how objects look to capturing how they move and function. Inspired by the literature on procedural and agentic generation, we present Artisan, a system that extends the latest method Articraft by introducing a multi-agent pipeline with physical simulation feedback, enabling comprehensive attributes beyond geometry, appearance, and physically plausible articulation, such as collision-free motion, stability under gravity, and accurate mass and material properties. Furthermore, we construct a unified benchmark spanning four key aspects: spatial fidelity, physical plausibility, downstre…",
+      "authors": [
+        "Xudong Cai",
+        "Ruijie Zhu",
+        "Haoliang Shang",
+        "Ruining Li",
+        "Marc Pollefeys",
+        "Shangzhe Wu"
+      ],
+      "published": "2026-10-09T17:59:41Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13947v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 20,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
       "id": "2607.02156v1",
       "title": "Patient-Specific Articulated Digital Twins from a Single Full-Body CT Scan",
       "abstract": "Patient-specific anatomical models provide individualized context for surgical planning, image-guided intervention, and algorithm development. However, most CT-derived models are static: they preserve the body configuration captured at scan time, but cannot represent how the same anatomy would appear after patient repositioning. This limitation is especially important for radiographic imaging, where appearance depends jointly on imaging geometry and patient pose. We present a proof-of-concept for constructing a patient-specific articulated digital twin from a single full-body CT scan. The method fits a parametric human body model (SMPL) to obtain a patient-aligned kinematic scaffold, binds s…",
@@ -1799,6 +1834,34 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
+    },
+    {
+      "id": "2610.13838v1",
+      "title": "Mapless, Stabilizing, and Anti-Stuck Flipper Control for Articulated Tracked Robots",
+      "abstract": "Nearly every autonomous or semi-autonomous flipper controller assumes access to an elevation map of the terrain under and in front of the robot. The terrain beneath the chassis is occluded in the sensors, so the map is remembered through odometry integration, whose drift corrupts it. We present Stabilizing Anti-Stuck (SAS), a mapless controller that combines a stabilization term for body roll and pitch with an anti-stuck term that frees the robot when it gets stuck. As input, SAS uses the IMU, the flipper joint angles, and a motion cue that only tells whether the robot is moving. The cue is computed over a short window and never accumulated, so SAS does not inherit the odometry-integration d…",
+      "authors": [
+        "Valentýn Číhala",
+        "Pavel Sarga",
+        "Martin Pecka",
+        "Tomáš Svoboda",
+        "Karel Zimmermann"
+      ],
+      "published": "2026-10-09T16:48:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13838v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
     },
     {
       "id": "2607.03819v1",
@@ -6081,6 +6144,102 @@
       "first_seen": "2026-10-09T14:15:41.569281+00:00"
     },
     {
+      "id": "2610.13781v1",
+      "title": "SimVTA: Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models",
+      "abstract": "Driving world action models (WAMs) learn from paired trajectories and future observations. Post-training with reinforcement learning allows the policy to explore alternative trajectories and improve planning using driving rewards. However, driving logs contain future videos only for the recorded trajectories, leaving these alternatives without corresponding visual supervision. Thus, we introduce SimVTA, a simulation-grounded post-training framework that combines trajectory optimization with video supervision. First, we sample candidate trajectories for each observation and use a real-world simulator (e.g., World Engine) to render future videos for high-reward candidates in real-world scenes …",
+      "authors": [
+        "Changhui Jing",
+        "Haochen Tian",
+        "Hongchen Li",
+        "Tianyu Li",
+        "Caojun Wang",
+        "Zihao Zhang"
+      ],
+      "published": "2026-10-09T16:01:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13781v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13628v1",
+      "title": "JitterVLA: A Replay Benchmark for Motion Quality in VLA-Driven Human-Robot Manipulation",
+      "abstract": "Vision-language-action (VLA) policies issue sparse targets whose arrival at the robot controller is delayed and irregular, so a reasonable predicted action can still produce abrupt motion near people. Remedies are evaluated on different streams, delays and metrics. JitterVLA replays identical commands and arrival traces through alternative controllers, isolating the controller's effect. We apply it to synthetic reaches, hand trajectories from 20 people, three open VLA pipelines (838 episodes) and a physical UR3. Interpolation lowered modeled p99 jerk for every source, by 83% (615 to 106 m/s^3) on human motion with 200 ms delay, at a 2.0 cm tracking cost, and the effect replicated on 598 new …",
+      "authors": [
+        "Faith Ogunwoye",
+        "Didar Seyidov",
+        "Konstantin Gubernatorov",
+        "Dzmitry Tsetserukou"
+      ],
+      "published": "2026-10-09T14:09:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13628v1",
+      "categories": [
+        "cs.RO",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13553v1",
+      "title": "Learning Holistic Scene Layout against View Shifts in Cross-View Geo-Localization",
+      "abstract": "Cross-view geo-localization remains challenging due to drastic appearance variations and geometric distortions caused by viewpoint changes. Existing methods primarily rely on discriminative feature learning or explicit geometric alignment, yet often overlook an important observation: humans tend to match scenes by integrating the spatial context of multiple landmarks rather than relying solely on isolated local visual cues. Inspired by this, we propose a Spatial Context Modeling (SCM) module, which traverses feature maps along four orthogonal directions and models interactions among the resulting directional representations at each spatial position. By aggregating complementary directional o…",
+      "authors": [
+        "Chao Yang",
+        "Songlian Li",
+        "Zhigang Tu"
+      ],
+      "published": "2026-10-09T13:09:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13553v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -9568,6 +9727,67 @@
       "first_seen": "2026-10-09T14:15:41.569281+00:00"
     },
     {
+      "id": "2610.13757v1",
+      "title": "Gaussian Splatting with Reflections Guided by What is Seen",
+      "abstract": "While novel view synthesis methods like Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have shown impressive performance on common scenes, they often struggle with capturing view-dependent specular effects, particularly near-field reflections. Existing methods utilize environment maps, which only represent lights from infinity, or environment Gaussians, which rely solely on indirect supervision from reflections, are insufficient for accurately modeling such effects. Here, we propose a framework based on 2D Gaussian Splatting (2DGS) that leverages directly observable environment information in input images. Our approach also integrates a hybrid reflection appearance representa…",
+      "authors": [
+        "Yiming Liang",
+        "Tianyu Xiao",
+        "Hiroshi Ishikawa"
+      ],
+      "published": "2026-10-09T15:42:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13757v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 40
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13164v1",
+      "title": "Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding",
+      "abstract": "Scaling robot manipulation policies requires large amounts of diverse, action-labeled data, yet collecting such data in the real world remains expensive and difficult to scale. Existing methods either depend on human teleoperation, rely on simulation with limited visual realism, or use human videos that lack embodiment-specific annotations. In this paper, we introduce Grounded-Dreamer, a framework for synthesizing physically grounded robot manipulation data with video world models while avoiding human teleoperation demonstrations. Grounded-Dreamer combines the visual realism of generative video models with simulator physics engines. Starting from a small set of real images depicting robot ta…",
+      "authors": [
+        "Feng Jiang",
+        "Shu Chen",
+        "Yuanfei Wang",
+        "Yuan Li",
+        "Zhenhao Shen",
+        "Jiaqi Liang"
+      ],
+      "published": "2026-10-09T07:53:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13164v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -12792,6 +13012,162 @@
       ],
       "has_code": true,
       "first_seen": "2026-10-09T14:15:41.569281+00:00"
+    },
+    {
+      "id": "2610.13143v1",
+      "title": "Measurable Semantic 3D Gaussian Splatting with Joint Region and Depth Supervision for Interactive Building Inspection",
+      "abstract": "Image-based 3D reconstruction provides a scalable representation for building inspection and maintenance. However, photorealistic reconstruction alone does not fully provide the geometric measurability, semantic structure, and interactive information access required for engineering applications. This study proposes a measurable semantic 3D Gaussian Splatting (3DGS) framework with region and depth supervision for interactive building inspection from multi-view imagery. Mask-based region supervision suppresses irrelevant backgrounds and focuses optimization on target regions. Point-wise depth supervision guides Gaussian centers toward physical surfaces using reference geometry derived from mul…",
+      "authors": [
+        "Yi Zhang",
+        "Tian Tan",
+        "Ray Kai Leung Su"
+      ],
+      "published": "2026-10-09T07:33:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13143v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13050v1",
+      "title": "NOFACE3D: NOise-scheduled Focused Anchoring and Controlled Enhancement for 3D Generation",
+      "abstract": "Recent image-to-3D models generate complete, high-quality assets from a single image, with global shape and appearance that are already convincing; what remains is the fine scale, where small, thin, elongated, or detail-rich regions are reconstructed softly and under-resolved. This gap can arise in generators with fixed-resolution spatial grids: the same spatial sampling density is used for a large, smooth, low-curvature surface and for a thin, high-curvature structure that carries most of the perceived detail. To this end, we introduce NOFACE3D, a training-free framework that refines these detail-critical regions while preserving the rest of the asset. Given a generated mesh, its input imag…",
+      "authors": [
+        "James Rose",
+        "Jingwen Liang",
+        "Wenchao Ma",
+        "Oren Jacob",
+        "Haomiao Jiang"
+      ],
+      "published": "2026-10-09T06:05:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13050v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.12786v1",
+      "title": "Domain Adaptation of SAM 2.1 for Building-Component Segmentation in Image-Based 3D Reconstruction",
+      "abstract": "3D reconstruction of building components using image-based scanning requires appropriate segmentation of the objects in the 2D building images. In order to benefit from consistent grouping of the 2D masks in 3D environments, vision foundation models such as the Segment Anything Model have been utilized by Group Anything with Radiance Fields (GARField) to perform 3D segmentation. This study fine-tuned SAM 2.1 on the HBD dataset, consisting of 2,679 annotated images from 42 buildings, to enhance multi-class segmentation of 2D building images, covering 11 classes (Wall, Window, Ceiling, Door, Column, Beam, Floor, Opening, Curtain Wall, Roof, and Lift). The model was evaluated using per-class Io…",
+      "authors": [
+        "Ehsan Agha Ebrahimi",
+        "Yong-Cheol Lee",
+        "Keith G. Mills"
+      ],
+      "published": "2026-10-08T22:43:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12786v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.12727v1",
+      "title": "Zebra3D: Efficient Hybrid Foundation Models For Scalable 3D Reconstruction",
+      "abstract": "Feed-forward 3D foundation models reconstruct scenes from unposed images, but the quadratic cost of global attention limits their scalability to large view sets. We present Zebra3D, a layerwise sparse-linear hybrid attention framework that improves the efficiency of pretrained 3D foundation models without training from scratch. Across VGGT, HunyuanWorld-Mirror, and $π^3$, we observe a broadly consistent depth-wise pattern: early stages are relatively tolerant to linear replacement, while sensitive middle-to-late stages tend to exhibit more concentrated attention. Zebra3D exploits this structure by assigning linear-centered attention to tolerant stages and tile-sparse attention to sensitive s…",
+      "authors": [
+        "Utkarsh Saxena",
+        "Ruijing Yang",
+        "Mehdi Rezagholizadeh",
+        "Akash Haridas",
+        "Vikram Appia",
+        "Emad Barsoum"
+      ],
+      "published": "2026-10-08T21:09:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12727v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.12684v1",
+      "title": "Non-Prehensile Multi-Object Placement with Mobile Robots via Diffusion-Based Trajectory Planning",
+      "abstract": "Non-prehensile manipulation with mobile robots has primarily targeted placement in coarse goal regions. Precision placement has been studied with manipulators on benchmarks such as Push-T, where an omnidirectional end effector can readily re-approach an object from any side. For a mobile robot, correcting the same placement errors may require wide repositioning maneuvers around the object. We formalize multi-object pushing with a mobile robot as a multi-target assignment problem at tight tolerances. We propose a diffusion planner with a causal factorization: each robot denoising step is followed by an object step conditioned on the current clean robot estimate. This factorization allows us t…",
+      "authors": [
+        "Lance Pharand",
+        "Megnath Ramesh",
+        "Mark Chiu",
+        "Yash Vardhan Pant",
+        "Stephen L. Smith"
+      ],
+      "published": "2026-10-08T20:09:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12684v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -23424,6 +23800,167 @@
       "first_seen": "2026-10-09T14:15:41.569281+00:00"
     },
     {
+      "id": "2610.13860v1",
+      "title": "Make It Flow: Animating Water in 3D Gaussian Splatting Scenes",
+      "abstract": "Explicit 3D scene representations such as 3D Gaussian Splatting (3DGS) have recently enabled high-quality, real-time novel view synthesis. However, these methods assume static scenes, limiting realism in the presence of dynamic phenomena ubiquitous in real-world environments. While coherent motion (e.g., humans or vehicles) can be captured and reconstructed, high-frequency effects such as flowing water remain intractable under casual capture conditions, where dense multi-view, high-speed acquisition is not feasible. We present a method to animate water in static 3DGS scenes, enabling visually plausible motion without requiring dynamic capture or physical simulation. Our approach estimates 2D…",
+      "authors": [
+        "Kjell Keune",
+        "Florian Hahlbohm",
+        "Jannis Möller",
+        "Susana Castillo",
+        "Martin Eisemann",
+        "Marcus Magnor"
+      ],
+      "published": "2026-10-09T17:08:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13860v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13681v1",
+      "title": "PhysForge: Material-Controllable 3D Reconstruction with Separable Components",
+      "abstract": "Recent advances in physical 3D generation have enabled visually faithful assets with simulatable mechanical behavior. However, existing methods provide limited control over material behavior beyond appearance-based inference and struggle to estimate physical properties from complex interactions between objects and semantic parts. Therefore, we present PhysForge, a Video Diffusion Model (VDM)-based framework for addressing these challenges, comprising two complementary modules for material-controllable physical fitting and componentlevel interaction modeling. The first, PhysFit, leverages material-conditioned VDM dynamics as references for physical-property fitting, introducing windowed fitti…",
+      "authors": [
+        "Yuchen Wang",
+        "Yanqi Bao",
+        "Zheng Gu",
+        "Zhengqing Chen",
+        "Jieqi Shi",
+        "Jing Huo"
+      ],
+      "published": "2026-10-09T14:47:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13681v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13503v1",
+      "title": "SplatQ: Interaction-Aware Pruning of 3D Gaussian Splatting via Quadratic Selection",
+      "abstract": "Existing 3D Gaussian Splatting (3DGS) pruning methods primarily rely on global Top-K selection based on independent importance scores, lacking regional budget control and ignoring joint deletion effects. Consequently, they cannot ensure balanced reconstruction quality across a scene. We propose SplatQ, a combinatorial pruning algorithm that coordinates regional budget allocation and joint Gaussian selection under a fixed budget. SplatQ partitions Gaussians by spatial proximity and appearance similarity into size-limited blocks, decomposing global selection into subproblems of a specific size. It then smooths importance-based block retention quotas to prevent excessive budget concentration. F…",
+      "authors": [
+        "Hongbin Ye",
+        "Haixu Liu",
+        "Shenwei Kang",
+        "Wenxiu Wei",
+        "Tinglan Wang",
+        "Hongdong Zhu"
+      ],
+      "published": "2026-10-09T12:30:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13503v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13309v1",
+      "title": "NovaSplat: Model-Free 6D Object Pose Estimation via 3D Gaussian Splatting Onboarding and Refinement",
+      "abstract": "6D pose estimation of novel objects without CAD models remains an open challenge: model-free methods must build the object representation from scratch during onboarding and have long trailed their model-based counterparts. We present NovaSplat, a model-free pipeline that closes this gap. From a short smartphone video captured at onboarding, we train a 3D Gaussian Splatting (3DGS) model that serves both as a template source for detection and coarse pose estimation and as a differentiable backbone for pose refinement. Our refiner optimizes the object-to-camera pose with combined photometric and geometric losses under a continuous rotation parametrization free of gradient singularities. On a ho…",
+      "authors": [
+        "Georgios Floros",
+        "Evangelos Sartinas",
+        "Orestis Vangelis",
+        "Maria Pateraki"
+      ],
+      "published": "2026-10-09T09:54:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13309v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13119v1",
+      "title": "Human2Dex: Dexterous Robot Learning from Wrist-Centric Human Demonstrations",
+      "abstract": "Collecting dexterous manipulation demonstrations for each robot hand requires repeated task-specific data acquisition. We ask whether one shared corpus of natural human demonstrations can instead serve as a reusable data interface for different dexterous hands, without collecting task demonstrations on each target robot. We present Human2Dex, a wrist-centric human demonstration interface that separates shared human observation and motion semantics from embodiment-specific execution. It aligns observations through local hand-appearance adaptation and a shared 21-point hand representation with consistent structural semantics across human and robot observations. It constructs executable supervi…",
+      "authors": [
+        "Jiachen Zhang",
+        "Yuanyuan Li",
+        "Shaqi Luo"
+      ],
+      "published": "2026-10-09T07:14:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13119v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -26129,6 +26666,48 @@
       ],
       "has_code": true,
       "first_seen": "2026-10-09T14:15:41.569281+00:00"
+    },
+    {
+      "id": "2610.13945v1",
+      "title": "Splat2Act: From Captured Scenes to Personalized VLA Manipulation",
+      "abstract": "A user who brings a generalist manipulation policy into their home or office wants it to pick up their objects from their shelves, counters, and tables. Yet even a strong generalist like $π_{0.5}$ achieves 0% pickup success in our captured deployment scenes without adaptation, and collecting real demonstrations in every user's environment is prohibitively expensive. We present Splat2Act, an automated real-to-sim-to-real pipeline that personalizes a pretrained vision-language-action (VLA) policy to a specific scene and object set using only a handheld phone scan and images of the user's objects. Unlike prior real-to-sim work that reconstructs individual tabletops, Splat2Act operates on buildi…",
+      "authors": [
+        "Xiaomeng Ye",
+        "Krishna Jaganathan",
+        "Gyubeum Lim",
+        "Gunjan Chhablani",
+        "Muhammad Zubair Irshad",
+        "Zsolt Kira"
+      ],
+      "published": "2026-10-09T17:59:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13945v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -30949,6 +31528,59 @@
       "first_seen": "2026-10-09T14:15:41.569281+00:00"
     },
     {
+      "id": "2610.12848v1",
+      "title": "Reinforcement Learning via Fixed-point Flow Matching",
+      "abstract": "In maximum entropy and behavior-constrained reinforcement learning (RL), the optimal policy is given by a Boltzmann distribution. Generating samples from this distribution can be challenging, as it is often complex and multimodal. While flow policies trained with flow matching provide a powerful framework for representing such distributions, they traditionally rely on access to training data, which is generally unavailable in online RL. To address this limitation, we propose fixed-point flow matching (FFM), a data-free procedure for training and fine-tuning flow policies in RL. FFM leverages the target flow identity to formulate the actor update as a fixed-point iteration, utilizing a flow-m…",
+      "authors": [
+        "Denis Blessing",
+        "Onur Celik",
+        "Gerhard Neumann"
+      ],
+      "published": "2026-10-09T01:15:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12848v1",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.12699v1",
+      "title": "Primal-Dual Flow Matching for Sample-Wise Constrained Generation",
+      "abstract": "We consider the problem of learning to generate data while satisfying a prescribed \\emph{sample-wise} constraint with a user-specified probability of constraint satisfaction. Starting with a population-level constrained negative log-likelihood minimization and using a flow-matching (FM) parameterization, under regularity assumptions and sufficient expressivity of the velocity field family, we derive guarantees on the probability of constraint satisfaction for the corresponding primal-dual optimization algorithm. We provide a practical implementation of this approach, called Primal-Dual Flow Matching (PDFM), which has direct control over constraint satisfaction rate and requires only binary m…",
+      "authors": [
+        "Zhengyan Huan",
+        "Peter Y. Lu",
+        "Shuchin Aeron"
+      ],
+      "published": "2026-10-08T20:29:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.12699v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -33273,6 +33905,102 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-09T14:15:41.569281+00:00"
+    },
+    {
+      "id": "2610.13943v1",
+      "title": "Noise Space Learning for VLA Adaptation",
+      "abstract": "Pretrained vision-language-action (VLA) models encode broad manipulation priors, yet adapting them to specific tasks requires balancing limited robot interaction, computational resources, and safety constraints. Noise space learning (NSL) adapts flow-matching-based VLAs by learning a context-conditioned distribution over noise while keeping the pretrained VLA fixed. Building on prior noise-steering methods, we formulate NSL as an interface for VLA adaptation that accommodates different learning algorithms and instantiate it with PPO, SAC, and AWR. Theoretically, we provide an information-theoretic analysis of how NSL enables efficient adaptation. Empirically, we study these NSL algorithms on…",
+      "authors": [
+        "Junjie Lu",
+        "Chuheng Zhang",
+        "Yucen Wang",
+        "Yuhua Jiang",
+        "Xinyao Qin",
+        "Min Xu"
+      ],
+      "published": "2026-10-09T17:58:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13943v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13606v1",
+      "title": "CorrFlow: Exact and Permutation-Equivariant Flow Matching on the Correlation Elliptope",
+      "abstract": "Correlation matrices combine nonlinear positive-definiteness constraints with a simultaneous row-column permutation symmetry. Their generation therefore involves two distinct problems. First, every output must remain on the correlation elliptope, irrespective of how its variables are ordered. Second, the generator must learn the domain-specific distribution occupied by empirical data inside that valid space. Existing financial image generators mix these problems: they learn ordered matrix entries and repair invalid draws afterward. We introduce CorrFlow, which separates them. A generalized Fisher transform maps full-rank correlation matrices bijectively to unconstrained coordinates, guarante…",
+      "authors": [
+        "Gautier Marti"
+      ],
+      "published": "2026-10-09T13:53:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13606v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "q-fin.RM"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
+    },
+    {
+      "id": "2610.13177v1",
+      "title": "CompactSplat: Spatially Adaptive Gaussian Distribution for Feedforward Scene Reconstruction",
+      "abstract": "Reconstructing 3D scenes from sparse views without per-scene optimization remains highly challenging, especially for recovering accurate geometry and fine textures. While recent feedforward approaches leverage generalizable 3D Gaussian Splatting (3DGS) for scene generation, they typically assign one or multiple Gaussians to each pixel. Such uniform allocation not only produces highly redundant representations by wasting primitives in homogeneous areas, but also fails to exploit the inherent geometric priors of planar surfaces, often resulting in sub-optimal structural modeling. To address these limitations, we present CompactSplat, a novel feedforward framework that enables a content-aware a…",
+      "authors": [
+        "Bing He",
+        "Jingnan Gao",
+        "Yunuo Chen",
+        "Zhengxue Cheng",
+        "Rong Xie",
+        "Li Song"
+      ],
+      "published": "2026-10-09T08:04:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.13177v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-12T16:37:19.686827+00:00"
     }
   ]
 }
