@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-20T12:37:28.916767+00:00",
-  "total": 1226,
-  "new_this_run": 19,
+  "last_updated": "2026-10-21T12:49:08.139756+00:00",
+  "total": 1242,
+  "new_this_run": 16,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -6789,6 +6789,35 @@
       "first_seen": "2026-10-20T12:37:28.916767+00:00"
     },
     {
+      "id": "2610.28432v1",
+      "title": "Physical AI for Intralogistics: Benchmarking the NVIDIA Sim-to-Real Ecosystem for Cosmos-Enhanced COMPASS Navigation on Industrial Mobile Robots",
+      "abstract": "Classical robot navigation stacks are reliable but often require re-engineering for each new robot type and site. Learning-based navigation shifts this effort from hand-tuned parameters to data generation and training, where a policy adapts to each new embodiment or facility by fine-tuning in simulation. Whether policies adapted this way stay reliable on real industrial robots has seen little systematic testing. We study this for NVIDIA's X-Mobility and COMPASS workflow for training learned navigation policies on Idealworks robots. In simulation, we extend the COMPASS benchmark with two embodiments, the differential-drive iw.hub and an omnidirectional Humanoid Mobile Platform (HMP), and with…",
+      "authors": [
+        "Charbel Abi Hana",
+        "Rayan Zaitouni",
+        "Kameel Amareen",
+        "Mohamad Mostafa",
+        "Hasan Sayour",
+        "Wei Liu"
+      ],
+      "published": "2026-10-20T15:59:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28432v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -10679,6 +10708,33 @@
       "first_seen": "2026-10-20T12:37:28.916767+00:00"
     },
     {
+      "id": "2610.28470v1",
+      "title": "Fast Motion Retargeting Pipeline for Scalable Humanoid Robot Learning",
+      "abstract": "While large-scale human motion capture datasets provide a rich source of demonstrations for humanoid robot learning, retargeting the diverse motions to different humanoid robots remains a nontrivial challenge. Existing kinodynamic trajectory optimization pipelines are computationally expensive and often require manual adjustments per motion. We present FRDV (Fast Retargeting with Dynamics Validation), a scalable framework consisting of rapid constrained kinematic retargeting and an additional dynamics validation pipeline. Its kinematic stage integrates a custom Sequential Quadratic Programming solver, Real-Time Iteration, and parallel chunk-based processing, achieving up to 9,156 frames per …",
+      "authors": [
+        "Daniel Marew",
+        "Sangjun Park",
+        "Nisal Perera",
+        "Donghyun Kim"
+      ],
+      "published": "2026-10-20T16:22:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28470v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -14519,6 +14575,77 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-20T12:37:28.916767+00:00"
+    },
+    {
+      "id": "2610.27794v1",
+      "title": "Multi-View Latent Action Pretraining for Cross-Embodiment Robot Learning from Videos",
+      "abstract": "Action-free videos are an appealing substitute for costly teleoperated data. Latent action models (LAMs) turn videos into a supervision signal by inferring abstract actions between frames. Existing LAMs observe a single camera view, which resolves 6D robot actions only ambiguously missing out-of-plane movements and potential occlusions. We propose a LAM that ingests synchronized multi-camera views using cross-attention to resolve depth and occlusions before compressing them into latent actions. The latent actions are fed into a policy in which a latent expert and an action expert are coupled by sequential flow matching around a frozen VLM backbone. We further evaluate in strict cross-embodim…",
+      "authors": [
+        "Oliver Hausdörfer",
+        "Felix Minzenmay",
+        "Mani Majd",
+        "Maximilian P. Christof",
+        "Shiyuan Zhang",
+        "Angela P. Schoellig"
+      ],
+      "published": "2026-10-20T07:55:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27794v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.27712v1",
+      "title": "RLSplat: Resource-Linear Budget Control for Feed-forward 3D Gaussian Splatting",
+      "abstract": "Feed-forward 3D Gaussian Splatting (FF3DGS) reconstructs 3D scenes from images in a single forward pass, making it well-suited to applications that must operate within limited resource budgets. To further improve its practicality, recent budget-controllable FF3DGS methods allow the number of Gaussians to be adjusted at inference, so that the output meets a given storage limit or rendering-latency constraint. However, these methods overlook the cost of inference itself: to produce a representation with the target number of Gaussians, they first predict a dense set of Gaussians and then prune or select from it, requiring nearly constant latency and peak memory regardless of the budget. We ther…",
+      "authors": [
+        "Injae Kim",
+        "Minseok Joo",
+        "Jihwan Park",
+        "Sehyung Kim",
+        "Minseong Bae",
+        "Hyunwoo J. Kim"
+      ],
+      "published": "2026-10-20T06:30:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27712v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -26029,6 +26156,193 @@
       "first_seen": "2026-10-20T12:37:28.916767+00:00"
     },
     {
+      "id": "2610.28615v1",
+      "title": "KoalaGS: Complexity-Aware Continuous Level of Detail for Gaussian Splatting",
+      "abstract": "Deploying a trained 3D Gaussian Splatting scene under shrinking compute budgets requires one primitive set to remain effective when rendered at smaller prefixes. In this continuous level of detail (LoD) setting, the challenge is to decide which Gaussians should retain capacity as the budget decreases. A pilot study on 3DGS-MCMC reconstructions shows that image complexity, computed from the input views before optimization, predicts where reconstruction error concentrates in image and 3D space. It also reveals that simple regions contain too many Gaussians and degrade as much as complex ones at lower budgets, despite being inherently cheaper to represent. Subsequently, in KoalaGS, during train…",
+      "authors": [
+        "Radu Beche",
+        "Raoul de Charette"
+      ],
+      "published": "2026-10-20T17:55:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28615v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.28585v1",
+      "title": "SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images",
+      "abstract": "Simulation is a powerful tool for robotics, but building diverse, simulation-ready scenes at scale remains difficult. Reconstructing scenes from single images is a promising alternative, but visual similarity alone is insufficient: objects must also be recovered, accurately placed, and physically grounded. Existing methods that rely on post-hoc physics settling often misplace objects, producing scenes that look correct but behave poorly under manipulation. We present SceneRig, an agentic system that turns a single image into an editable, simulation-ready scene. SceneRig combines geometric, visual, and physical tools to reconstruct a faithful 3D scene. An agent then performs edit-and-validate…",
+      "authors": [
+        "Rundong Luo",
+        "Yunong Liu",
+        "Di Cao",
+        "Matthew Tancik",
+        "Shyamal Buch",
+        "Colton Stearns"
+      ],
+      "published": "2026-10-20T17:39:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28585v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.28490v1",
+      "title": "Learning from Automatic 3D Gaussian Splatting Edits for Online Bayesian Scene Change Detection",
+      "abstract": "Online scene change detection requires integrating incoming observations to determine which regions have changed relative to a reference scene. We update change beliefs as new images arrive using generalised Bayesian evidence fusion. However, the prior probability of change and evidence models are unknown beforehand, and numerical Bayesian inference can be costly. We address these challenges by learning offline from automatic edits to a reference 3D Gaussian Splatting (3DGS) model. These edits generate labelled training views without manual annotations. Together with unchanged reference observations, they provide supervision for learning scene-specific evidence models and estimating the effe…",
+      "authors": [
+        "Changrui Zhu",
+        "Simon Julier"
+      ],
+      "published": "2026-10-20T16:36:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28490v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.28190v1",
+      "title": "CrossFit-GS: Out-of-Fold Pose Estimation for COLMAP-Free 3D Gaussian Splatting",
+      "abstract": "Pose-free 3D Gaussian Splatting (3DGS) aims to bypass cumbersome Structure-from-Motion (SfM) by directly reconstructing scenes from unposed image sequences. In this work, we present CrossFit-GS, a deferred-commitment progressive framework that mitigates cumulative trajectory drift and breaks the self-reinforcing loop of distorted-map error propagation. Specifically, we partition the input sequence into interleaved subsets and maintain two complementary submaps. Each candidate pose is cross-refined against a frozen opposite submap that has never been optimized using the target frame, thereby providing an independent geometric reference for pose estimation. Checkerboard validation and spatial …",
+      "authors": [
+        "Zijian Wu",
+        "Jinliang Wang",
+        "Mingfeng Jiang",
+        "Zidian Lin",
+        "Ying Song",
+        "Ziqian Lu"
+      ],
+      "published": "2026-10-20T13:29:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28190v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.27946v1",
+      "title": "Decoupling Action from Egocentric Observation for World Simulation",
+      "abstract": "Egocentric action transfer aims to decouple the semantic action from egocentric observations and reproduce them in new visual contexts, enabling scalable world simulation, embodied policy learning, and robotic data generation. Existing approaches to transferring actions rely on condition-guided video generation, which converts the observation video into explicit geometric controls (e.g., hand poses or meshes) to drive synthesis. However, these methods introduce geometric estimation errors, making it difficult to preserve physically plausible interactions when transferred to new scenes. Alternatively, motion transfer methods directly extract motion patterns from the observation video, yet mot…",
+      "authors": [
+        "Yue Ma",
+        "Pengjie Song",
+        "Xinyu Wang",
+        "Yi He",
+        "Zeqian Long",
+        "Fangneng Zhan"
+      ],
+      "published": "2026-10-20T09:52:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27946v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.26854v2",
+      "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation",
+      "abstract": "Multimodal reasoning provides robotic foundation models with predictive context needed for reliable action generation. However, language-based reasoning captures task semantics but struggles to express fine-grained physical dynamics, while latent reasoning models future state evolution but offers limited structure for organizing these dynamics into reusable reasoning primitives. To bridge this gap, we introduce PhysWord, a reasoning-before-acting foundation model built on Physical Words, which use atomic action verbs as shared semantic anchors for continuous representations of physical dynamics. Specifically, PhysWord predicts upcoming atomic action words and directly aligns their contextual…",
+      "authors": [
+        "Jiaming Liu",
+        "Xinghao Zhu",
+        "Yiming Zhang",
+        "Shanghang Zhang",
+        "Yinxi Wang",
+        "Yichu Yang"
+      ],
+      "published": "2026-10-19T17:59:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.26854v2",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -28925,6 +29239,39 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-20T12:37:28.916767+00:00"
+    },
+    {
+      "id": "2610.27108v1",
+      "title": "Counting Contributions, Not Views: Occlusion-Aware Densification for 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting grows a dense scene from a sparse initialization through adaptive density control (ADC), driven by per-Gaussian statistics gathered during rendering. These statistics pass a frustum-based visibility filter blind to occlusion: fully occluded Gaussians still count as observed, diluting the averaged gradient signal and suppressing densification precisely where geometry is occluded. We correct this with an occlusion-aware filter that restricts densification statistics to views in which a Gaussian actually contributes, and replace the criterion's raw view-count normalizer with an average-contribution one. Integrated into a StopThePop-based framework, the two together improve…",
+      "authors": [
+        "Marcel Rogge",
+        "René Schuster",
+        "Didier Stricker"
+      ],
+      "published": "2026-10-19T18:09:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27108v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -34419,6 +34766,119 @@
       "first_seen": "2026-10-20T12:37:28.916767+00:00"
     },
     {
+      "id": "2610.27776v1",
+      "title": "Geometry Regularization for Vanilla NeRF via Self-Supervised Cross-Ray Consistency",
+      "abstract": "Neural Radiance Fields (NeRF) achieve high-quality novel-view synthesis by representing a scene as a continuous volumetric radiance field. However, the geometry encoded by the density field of vanilla NeRF can be noisy and inaccurate, since different combinations of shape and radiance may explain the same input images. To reduce this ambiguity, we augment vanilla NeRF with a geometry-optimization branch based on self-supervised cross-ray consistency. Specifically, this branch samples candidate surface points from the density field, generates virtual rays that intersect at each point from different directions, and renders their appearance using the NeRF network. Based on the visibility-weight…",
+      "authors": [
+        "Zongji Wang"
+      ],
+      "published": "2026-10-20T07:40:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27776v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.27696v1",
+      "title": "PanoGraphGS: Unifying Panoptic Segmentation and Hierarchical 3D Scene Graphs with Gaussian Splatting",
+      "abstract": "3D scene graphs support language-guided navigation by organizing physical entities and their containment and spatial relations into hierarchical maps. Building such structured maps requires a scene representation that consistently distinguishes semantic regions and object instances across viewpoints. To this end, we present PanoGraphGS, a unified framework that integrates panoptic 3D Gaussian representation learning with hierarchical 3D scene graph construction. The framework learns semantic and instance features on shared Gaussian geometry. Prototype-based semantic learning and association-based instance learning produce consistent panoptic predictions across viewpoints. The learned represe…",
+      "authors": [
+        "Jinghan Gao",
+        "Siyu Wang",
+        "Dongyu Feng",
+        "Yiyuan Pan",
+        "Rong Xiong"
+      ],
+      "published": "2026-10-20T06:15:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27696v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.27564v1",
+      "title": "CityPaint: A Free Lunch from 2D Diffusion for City-Scale 3D Texturing",
+      "abstract": "Generating high-fidelity, city-scale 3D environments plays a crucial role in applications such as virtual reality, gaming, and urban digital twins. However, the scarcity of real-world city-scale 3D training data forces existing methods to either stitch independently generated assets or learn from synthetic urban corpora, often sacrificing realism and global consistency. In contrast, 2D image data and their corresponding generative models are abundant and encode rich visual priors. To bridge this gap, we propose CityPaint, a novel framework that leverages 2D diffusion models to generate globally consistent city-scale 3D textures without relying on city-scale 3D training data. Specifically, Ci…",
+      "authors": [
+        "Yuchen Zou",
+        "Lihuang Fang",
+        "Siyu Zhu",
+        "Xiao Hu"
+      ],
+      "published": "2026-10-20T03:25:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27564v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.27418v1",
+      "title": "TokenFlow: Latent Token Rectified Flow Matching for 3D Point Cloud Generation",
+      "abstract": "3D point clouds generation requires capturing both part-level layout and surface detail while preserving permutation equivariance. Existing latent generative models often encode an entire shape into a single vector, which limits their ability to retain part-level structure. We propose TokenFlow, a hierarchical flow matching framework that represents each shape as a set of latent tokens and couples a rectified flow over these tokens with a conditional flow over points. A bottleneck of $M \\ll N$ learnable tokens aggregates global context through cross-attention at $O(NM)$ cost. On ShapeNet, TokenFlow achieves the best MMD and coverage across airplane, car, and chair, while obtaining 1-NNA comp…",
+      "authors": [
+        "Linhao Wang",
+        "Dongjin Huang"
+      ],
+      "published": "2026-10-20T00:14:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27418v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -37227,6 +37687,48 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-20T12:37:28.916767+00:00"
+    },
+    {
+      "id": "2610.27725v1",
+      "title": "World2HOSI: A Multi-Expert Harness for Long-Horizon Human-Object-Scene Interaction Generation",
+      "abstract": "Long-horizon human-object-scene interaction (HOSI) is central to embodied AI, animation, and game development. Existing human-object interaction (HOI) and human-scene interaction (HSI) models excel in their respective domains, but none alone covers tasks requiring multiple interaction skills. Training unified HOSI models is hindered by scarce and costly data. We introduce World2HOSI, a multi-expert orchestration harness that generates continuous HOSI data from 3D Gaussian Splatting (3DGS) scenes and natural language instructions. Our key insight is that long-horizon HOSI hinges not on a stronger single model but on orchestration. Given a shared, structured scene state and an orchestration ha…",
+      "authors": [
+        "Jiushu Li",
+        "Haoran Wang",
+        "Yumeng Liu",
+        "Zhiyang Dou",
+        "Yuan Liu",
+        "Yuexin Ma"
+      ],
+      "published": "2026-10-20T06:43:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.27725v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-21T12:49:08.139756+00:00"
     }
   ]
 }
