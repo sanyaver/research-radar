@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-21T12:49:08.139756+00:00",
-  "total": 1242,
-  "new_this_run": 16,
+  "last_updated": "2026-10-22T12:52:04.702690+00:00",
+  "total": 1262,
+  "new_this_run": 20,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -6818,6 +6818,132 @@
       "first_seen": "2026-10-21T12:49:08.139756+00:00"
     },
     {
+      "id": "2610.30051v1",
+      "title": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
+      "abstract": "Recent advances in frontier AI models have demonstrated remarkable capabilities in visual understanding, reasoning, planning, and tool use, raising the possibility of using general-purpose AI models for robot manipulation without task-specific training. However, their manipulation capabilities have not been systematically evaluated on standardized robotics benchmarks. In this report, we present a unified closed-loop manipulation framework for evaluating frontier AI models on the LIBERO-10 benchmark. Our framework enables models to control a robot directly through visual observations, robot proprioception, and structured tool calls, primarily by specifying target end-effector poses and grippe…",
+      "authors": [
+        "May Espinola",
+        "Qifan Zhang",
+        "Yu Xiang"
+      ],
+      "published": "2026-10-21T17:11:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30051v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29161v1",
+      "title": "SimPT: An Automated Simulation Framework for Intervention-Based VLA Post-Training",
+      "abstract": "Human-in-the-loop (HIL) post-training improves vision-language-action (VLA) policies through expert corrections, but costly human supervision and repeated real-robot evaluation limit algorithm exploration and development. We introduce SimPT (Simulation-based Post-Training), a simulation framework that automates intervention-based VLA post-training by integrating policy rollouts, corrective data collection, policy training, and standalone evaluation. To automatically determine intervention timing and recovery strategies, we develop an Agent-Compiled Progress Graph that tracks task progress using privileged simulator state and retains stable snapshots during policy execution. After a rollout f…",
+      "authors": [
+        "Caicheng Wang",
+        "Zipeng Ye",
+        "Zhexuan Zhou",
+        "Zilong Huang",
+        "Xi Zhang",
+        "Yuchen Xie"
+      ],
+      "published": "2026-10-21T03:53:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29161v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.28948v1",
+      "title": "COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation",
+      "abstract": "Mobile manipulators must adapt not only to objects, but also to the spatial context in which they appear: where to position the base, how to manipulate, and where to look while navigating surrounding scene geometry. To address this, we present COWBOY, a scalable sim-to-real framework for learning such contextual whole-body manipulation. On whole-body dexterous grasping, COWBOY transfers zero-shot to hundreds of objects and diverse in-the-wild scenes, spanning cluttered tabletops, shelves, drawers, and other unstructured settings. Rather than learning scene adaptation directly with RL in simulation, a vectorized environment-aware whole-body controller (WBC) handles reaching in thousands of sc…",
+      "authors": [
+        "Jiahui Yang",
+        "Jason Jingzhou Liu",
+        "Ray Muxin Liu",
+        "Andrew E. Wang",
+        "Kenneth Shaw",
+        "Deepak Pathak"
+      ],
+      "published": "2026-10-20T21:59:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28948v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.28432v2",
+      "title": "Physical AI for Intralogistics: Benchmarking the NVIDIA Sim-to-Real Ecosystem for Cosmos-Enhanced COMPASS Navigation on Industrial Mobile Robots",
+      "abstract": "Classical robot navigation stacks are reliable but often require re-engineering for each new robot type and site. Learning-based navigation shifts this effort from hand-tuned parameters to data generation and training, where a policy adapts to each new embodiment or facility by fine-tuning in simulation. Whether policies adapted this way stay reliable on real industrial robots has seen little systematic testing. We study this for NVIDIA's X-Mobility and COMPASS workflow for training learned navigation policies on Idealworks robots. In simulation, we extend the COMPASS benchmark with two embodiments, the differential-drive iw$\\mkern-1.5mu.\\mkern-1.5mu$hub and an omnidirectional Humanoid Mobil…",
+      "authors": [
+        "Charbel Abi Hana",
+        "Rayan Zaitouni",
+        "Kameel Amareen",
+        "Mohamad Mostafa",
+        "Hasan Sayour",
+        "Wei Liu"
+      ],
+      "published": "2026-10-20T15:59:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28432v2",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -10735,6 +10861,94 @@
       "first_seen": "2026-10-21T12:49:08.139756+00:00"
     },
     {
+      "id": "2610.29200v1",
+      "title": "NeuralSRender: G-Buffer Guided Video Diffusion for Sim-to-Real Rendering",
+      "abstract": "The scarcity of high-quality annotated visual data remains a critical bottleneck for autonomous-driving perception. Simulators provide training data at scale, but the limited realism of synthetic videos compromises perception performance in real-world applications. To address this limitation, we propose NeuralSRender, a sim-to-real video translation framework that enhances the photorealism of synthetic videos while maintaining geometric consistency with the source scenes. Built on a pretrained video diffusion transformer (DiT), NeuralSRender uses a lightweight projector to inject geometric and material priors from G-buffers, and LoRA enables parameter-efficient adaptation. The model is train…",
+      "authors": [
+        "Yipeng Lu",
+        "Youqi Liao",
+        "Zhenyu Wang",
+        "Yuning Peng",
+        "Zhen Dong"
+      ],
+      "published": "2026-10-21T04:45:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29200v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29106v1",
+      "title": "DriftNeRF: Cross-Ray Density Drifting for Sparse-View Neural Radiance Fields",
+      "abstract": "Neural Radiance Fields (NeRF) synthesize photorealistic novel views from dense image collections, but degrade sharply when few views are available. We attribute a specific, measurable defect to the objective itself: the rendering loss is a sum over independent rays and contains no term comparing densities that different rays assign to the same region of space, so nearby 3D points can settle on contradictory densities while every training pixel is reproduced correctly. We make this quantity explicit by measuring cross-ray density disagreement directly during training, and show that it stays high in vanilla NeRF, falls only incidentally under frequency-based regularization, and moves together …",
+      "authors": [
+        "Juntang Wang",
+        "Yihan Wang",
+        "Sheng'en Li",
+        "Hao Wu",
+        "Dongmian Zou",
+        "Shixin Xu"
+      ],
+      "published": "2026-10-21T02:49:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29106v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 55
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.28880v1",
+      "title": "Real2Sem2Real: 3D Semantic Augmentations for Robot Learning from a Single Human RGB Demonstration",
+      "abstract": "Human video scales easily and does not need robot hardware, but existing methods require depth sensing, overlay the robot onto 2D video, or generate data only for the demonstrated objects. We present Real2Sem2Real (R2Sem2R), a real-to-semantic-to-real pipeline that turns one monocular RGB video of a human demonstration into thousands of robot demonstrations across the semantic object instances of a category. R2Sem2R tracks the SE(3) pose of each object with DINOv3-distilled Gaussian splats, outperforming existing methods and FoundationPose with estimated metric depth. R2Sem2R then aligns digital cousins, each generated from one or a few photographs, to the demonstrated objects with a semanti…",
+      "authors": [
+        "Matthew Strong",
+        "Ankush K. Dhawan",
+        "Julien Poffet",
+        "Giuse Pham",
+        "Jinho So",
+        "Monroe Kennedy"
+      ],
+      "published": "2026-10-20T19:59:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28880v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -14646,6 +14860,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.29438v1",
+      "title": "A2I-Calib++: A Kinematics-Driven Anti-noise Active Calibration Framework for Whole-Body Multi-IMU Systems on Legged Robots",
+      "abstract": "Recently, multi-node inertial measurement unit (multi-IMU) systems have shown promise for robust odometry in legged robots. Multi-IMU fusion can improve legged robot odometry but requires accurate spatiotemporal calibration among the sensors. Existing multi-IMU calibration methods, designed for aerial or handheld platforms, face challenges on legged robots because routine locomotion may provide insufficient excitation, while foot slips, impacts, and vibrations introduce measurement disturbances. To address these challenges, we propose A2I-Calib++, a kinematics-driven anti-noise active calibration framework for body-mounted IMUs covered by the robot kinematic model. It estimates temporal offs…",
+      "authors": [
+        "Fangyu Jiang",
+        "Chaoran Xiong",
+        "Kehui Ma",
+        "Zhen Sun",
+        "Zeyu Zhang",
+        "Ling Pei"
+      ],
+      "published": "2026-10-21T08:59:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29438v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -26343,6 +26586,98 @@
       "first_seen": "2026-10-21T12:49:08.139756+00:00"
     },
     {
+      "id": "2610.30013v1",
+      "title": "ClunoGS: Compact Language 3D Gaussian Splatting via Unified Optimization",
+      "abstract": "Language 3D Gaussian Splatting enables open-vocabulary scene understanding by associating Gaussian primitives with language features. These semantic attributes increase model storage, while most existing 3DGS compression methods are designed mainly to preserve RGB rendering quality. One straightforward approach is to apply sparsification and quantization sequentially. However, pruning based only on rendering quality can remove Gaussians that have small RGB contributions but are important for semantic prediction. Once removed, their semantic information cannot be recovered by later quantization. We propose ClunoGS, a compact framework for Language 3DGS that combines semantics-aware Gaussian s…",
+      "authors": [
+        "Jian Xu",
+        "Yi Li",
+        "Ying Huang",
+        "Siyi Wu",
+        "Bingzhe Li",
+        "Yuede Ji"
+      ],
+      "published": "2026-10-21T16:43:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30013v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29264v1",
+      "title": "Training in Deployment: Human-in-the-loop Online Post-Training for Robot Manipulation",
+      "abstract": "Large pretrained robot foundation models provide strong priors for manipulation, yet adapting them to target tasks with offline teleoperated demonstrations often fails to cover the contact-rich, recovery, and precision-critical states encountered during deployment. Existing methods mitigate this issue by augmenting offline demonstrations with human-in-the-loop data or online reinforcement learning. Despite this, offline post-training adapts slowly because it cannot immediately absorb deployment experience, while online RL typically relies on value functions or auxiliary actor-critic models, increasing both training complexity and instability. We present TIDE (Training In DEployment), a human…",
+      "authors": [
+        "Chun Gu",
+        "Xiaofei Wei",
+        "Yiming Chen",
+        "Bozhou Zhang",
+        "Juntong Zhang",
+        "Xiatian Zhu"
+      ],
+      "published": "2026-10-21T06:15:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29264v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.28950v1",
+      "title": "HyperDrone: Simulation-to-Reality Transfer at Millions of Frames per Second",
+      "abstract": "We present HyperDrone, an extremely fast quadrotor simulator focused on high-performance batch rendering that is more than 20x faster than existing state-of-the-art batch quadrotor simulators. HyperDrone combines highly optimized multirotor dynamics with HyperLux, a new ray-tracing engine that supports Nvidia OptiX, Vulkan, Apple Metal and WebGPU backends that takes full advantage of modern ray-tracing hardware, capable of running both components entirely on the GPU. HyperLux renders RGB, depth, semantic/instance segmentation, surface normals and optical flow observations at configurable levels of fidelity, including reflections, realistic lighting, motion blur, anti-aliasing, and Physically…",
+      "authors": [
+        "Jonas Eschmann",
+        "Giuseppe Loianno"
+      ],
+      "published": "2026-10-20T22:03:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28950v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -29272,6 +29607,70 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.29780v1",
+      "title": "JointLight: Human-Centric Video Relighting with Asynchronous RGB-Irradiance Joint Modeling",
+      "abstract": "Understanding and modeling light transport in human-centric scenes is a longstanding challenge. While recent progress in diffusion models has boosted research in relighting, precise illumination control still lags, primarily due to the scarcity of diverse, high-quality, precisely labeled video relighting datasets. Existing end-to-end relighting approaches model light transport implicitly through neural networks, which substantially complicates controllability. In contrast, some works resort to path-traced irradiance cues as an explicit blueprint for light transport. However, such constructed irradiance cues are prone to artifacts and hinder generative quality when directly used as control si…",
+      "authors": [
+        "Henglei Lv",
+        "Bailin Deng",
+        "Xiaoqiang Liu",
+        "Yichen Wang",
+        "Haoxian Zhang",
+        "Pengfei Wan"
+      ],
+      "published": "2026-10-21T14:08:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29780v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29454v1",
+      "title": "BlazeVGGT: 13x Faster VGGT at 2,000 Frames via Camera Token without Training",
+      "abstract": "Feed-forward visual geometry models, exemplified by VGGT, have demonstrated strong multi-view reconstruction capabilities through dense global attention. However, the resulting all-to-all cross-view computation scales quadratically with the number of input views, making long-sequence inference particularly expensive due to substantial frame-level redundancy among highly overlapping observations. We uncover a topology-first, geometry-later evolution in VGGT camera tokens: shallow-layer tokens reliably capture local view neighborhoods, whereas deeper-layer tokens progressively encode globally organized inter-view geometry. Motivated by this observation, we introduce BlazeVGGT, a training-free …",
+      "authors": [
+        "Shujun Yao",
+        "Junhui Lin",
+        "Congying Han",
+        "Tiande Guo",
+        "Ziwen Liu",
+        "Bonan Li"
+      ],
+      "published": "2026-10-21T09:11:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29454v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -34879,6 +35278,115 @@
       "first_seen": "2026-10-21T12:49:08.139756+00:00"
     },
     {
+      "id": "2610.30107v1",
+      "title": "Velocity Ambiguity Profiles: Time-Resolved Bayes-Risk Diagnostics for Flow Matching",
+      "abstract": "Flow matching trains a continuum of velocity regression problems but usually reports a loss averaged over interpolation time, obscuring which regions are limited by intrinsic ambiguity and which remain data-limited. We introduce the Velocity Ambiguity Profile (VAP), $\\mathcal{A}_v(t)$, the time-local Bayes-risk floor of velocity prediction, and decompose time-resolved loss as $L_N(t)=\\mathcal{A}_v(t)+R(t;N)$, where only the excess term $R(t;N)$ is reducible by more data or a different estimator. For $N$ training samples and a $K$-component mixture in the structured example, we prove two statistical benchmarks. In an intrinsic local-regression benchmark, $\\mathcal{A}_v(t)$ enters the time-dep…",
+      "authors": [
+        "Yunpeng Mei",
+        "Xiaowen Zhu",
+        "Chenyu Wang",
+        "Chenbo Xin",
+        "Hongjie Cao",
+        "Jiamin Wang"
+      ],
+      "published": "2026-10-21T17:52:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30107v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29568v1",
+      "title": "Mixture of Flow Matching and Particle Filter for Proprioception-Based Online Contact Estimation",
+      "abstract": "In this article, we propose ContactFlowFilter, a novel approach for contact estimation that determines the number of active contacts, their locations, and the associated force vectors. We consider a robot manipulator equipped with joint torque sensors and a base force/torque sensor; such a proprioceptive-only setup presents a challenging inverse problem characterized by (i) multi-modality from non-unique solutions, (ii) temporal dependencies in state evolution, and (iii) discrete contact events involving contact addition/removal. Existing approaches, such as particle filters (PFs) and learning-based methods, often struggle to address these challenges simultaneously. To overcome this, Contact…",
+      "authors": [
+        "Seo Wook Han",
+        "Min Jun Kim"
+      ],
+      "published": "2026-10-21T11:00:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29568v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29377v1",
+      "title": "Integrating Flow Matching and Model Predictive Control for Safe Robot Navigation",
+      "abstract": "Learning-based path planners based on diffusion and flow matching can generate diverse trajectories from demonstrations but typically lack mechanisms for constraint satisfaction and collision avoidance during deployment. This work proposes a framework that combines flow-matching-based path planning with model predictive path-following control to integrate data-driven path generation with real-time, constraint-aware execution. The flow-matching model captures multimodal path distributions, while the predictive controller adapts motion online to satisfy state and input constraints and avoid obstacles using updated local sensor information. An event-triggered re-planning scheme incorporates pre…",
+      "authors": [
+        "Philipp Holzmann",
+        "Maik Pfefferkorn",
+        "Joao Carvalho",
+        "Ali Younes",
+        "An Thai Le",
+        "Georgia Chalvatzaki"
+      ],
+      "published": "2026-10-21T08:03:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29377v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.28898v1",
+      "title": "Minimax-Optimal Predictive Flow Matching under Distribution Drift",
+      "abstract": "Flow matching learns a generative velocity field by regression, but under distribution drift a field must be deployed before the current data arrive. We study this predictive problem for a fixed, possibly nonconvex, neural class, with dynamic regret against the best represented field of each round. We propose DyProd-FM, which refits flow matching on dyadic historical prefixes and selects among the fits with a sleeping Prod master. Without knowing any drift budget, it attains regret $\\widetilde{O}(\\min\\{N_ω+1,1+\\sqrt{TΩ}\\})$ in the relative velocity risk variation $Ω$ and $\\widetilde{O}(\\min\\{N_μ+1,1+T^{1/3}V_μ^{2/3}\\})$ in the target-law variation $V_μ=\\sum_t W_2(μ_{t+1},μ_t)$, up to approxi…",
+      "authors": [
+        "Aadithya Srikanth",
+        "Vaneet Aggarwal"
+      ],
+      "published": "2026-10-20T20:22:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.28898v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -37729,6 +38237,93 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-21T12:49:08.139756+00:00"
+    },
+    {
+      "id": "2610.30097v1",
+      "title": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+      "abstract": "Vision-language-action (VLA) models have shown promise in robotic manipulation, but imitation learning (IL) alone often struggles to master complex long-horizon skills. Reinforcement learning (RL) offers an effective avenue for further improving VLA policies. However, existing VLA-RL methods typically suffer from delayed and biased credit assignment due to trajectory-level sparse rewards, while imbalanced subtask mastery creates bottlenecks that limit overall performance. To address these challenges, we propose AtomicRL, an RL post-training framework that leverages atomic task structures for reliable credit assignment and adaptive exploration. AtomicRL introduces Semantic-Aware Policy Optimi…",
+      "authors": [
+        "Likui Zhang",
+        "Zhe Zhu",
+        "Zhihao Zhan",
+        "Yibo Bai",
+        "Hanlin Wang",
+        "Dongwei Li"
+      ],
+      "published": "2026-10-21T17:45:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30097v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29374v1",
+      "title": "AOV-GS: Active Open-Vocabulary Semantic Mapping with 3D Gaussian Splatting",
+      "abstract": "Robots deployed in human-centered environments need maps that support both geometric navigation and open-vocabulary semantic queries beyond a fixed label set. A key challenge is enriching such maps with semantic information without relying on manually annotated segmentation masks or closed-set semantic categories. Existing geometry-driven active mapping maximizes coverage but treats semantics as a passive by-product of the collected trajectory, whereas active semantic mapping typically depends on supervised semantic segmentation. We present AOV-GS, an active 3D Gaussian mapping system that guides exploration using frozen foundation models. During coarse exploration, AOV-GS re-ranks geometric…",
+      "authors": [
+        "Rodion Shkokov",
+        "Tatiana Zemskova",
+        "Dmitry Yudin"
+      ],
+      "published": "2026-10-21T08:02:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29374v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29329v1",
+      "title": "Plan First, Act Later: Streaming Reasoning for Executable Memory in Robot Control",
+      "abstract": "Long-horizon robot manipulation requires a robot to remember task-relevant information beyond its short observation window. Existing memory-augmented policies typically retrieve relevant information from history and reason over it at execution time, placing a heavy reasoning burden on the high-level model. To address this challenge, we propose PAL (\\textbf{P}lan first, \\textbf{A}ct \\textbf{L}ater), a hierarchical memory framework for vision-language robot manipulation. It maintains a short-term visual buffer, a semantic-event memory, and an executable \\texttt{subtask\\_list}. A high-level vision-language model (VLM) converts streaming visual observations into the \\texttt{subtask\\_list}. At ex…",
+      "authors": [
+        "Qinghang Liu",
+        "Conglin Wang",
+        "Zongsheng Li",
+        "Boyong He",
+        "Han Gao",
+        "Pengcheng Wang"
+      ],
+      "published": "2026-10-21T07:27:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29329v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-22T12:52:04.702690+00:00"
     }
   ]
 }
