@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-22T12:52:04.702690+00:00",
-  "total": 1262,
-  "new_this_run": 20,
+  "last_updated": "2026-10-23T12:30:37.683797+00:00",
+  "total": 1280,
+  "new_this_run": 18,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -38,6 +38,37 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-07T14:20:49.454948+00:00"
+    },
+    {
+      "id": "2610.30337v1",
+      "title": "MoRE: Motion-Regularized Encoding for Articulated 3D Generation",
+      "abstract": "Generating an articulated object from a single image requires recovering both its appearance and the mechanism governing its parts. A compact encoding of joint attributes does not by itself ensure that reconstruction preserves the resulting motion. We present MoRE, Motion-Regularized Encoding for articulated 3D generation. MoRE represents coordinate-aligned joint lines with axis classification and two axis-orthogonal Plücker moment coefficients, removing the arbitrary choice of an origin along the axis. During representation learning, decoded joint hypotheses are used to move corresponding three-dimensional anchors, and their motions are compared with those of annotated joints. A differentia…",
+      "authors": [
+        "Guantian Zheng",
+        "Shan Jin"
+      ],
+      "published": "2026-10-21T18:55:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30337v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 29,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 140
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
     },
     {
       "id": "2610.11322v1",
@@ -1930,6 +1961,33 @@
       "first_seen": "2026-10-15T12:33:02.031774+00:00"
     },
     {
+      "id": "2610.30437v1",
+      "title": "Integrated Longitudinal and Lateral Control for High-Speed Platooning of Articulated Vehicles",
+      "abstract": "This paper presents an integrated control framework for high-speed platooning of articulated vehicles, combining advanced longitudinal and lateral control strategies to address the challenges of safe and efficient autonomous driving. A novel proof of string stability for the proposed longitudinal control algorithm, based on a PID framework, ensures robust inter-vehicle distance regulation even under dynamic operating conditions. Additionally, an arc-length-based longitudinal error formulation enhances the applicability of the control system for curved roads, making it realistic for diverse driving scenarios. For lateral control, significant improvements to the clothoid-based path tracking al…",
+      "authors": [
+        "Aashish Shaju",
+        "Steve Southward",
+        "Mehdi Ahmadian"
+      ],
+      "published": "2026-10-21T20:47:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30437v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
       "id": "2607.03819v1",
       "title": "CGGS: Consistency-Augmented Geometric Gaussian Splatting for Ego-centric 3D Scene Generation",
       "abstract": "Challenges remain in ego-centric 3D scene generation due to limited view overlap and the dominant influence of individual perspectives on scene interpretation. These factors hinder the creation of viewpoint-consistent and semantically aligned visual content, as well as the construction of accurate geometric structures. In this paper, we propose CGGS, a text-to-3D framework aiming to enhance 3D-content-awareness and address geometric distortions in ego-centric scene generation. Firstly, the Ego-centric Generator is proposed by fine-tuning a Multi-View Latent Diffusion Model with consistency-augmented loss to generate consistent, high-fidelity 2D content aligned with textual descriptions. Then…",
@@ -2319,6 +2377,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-05T15:45:16.692501+00:00"
+    },
+    {
+      "id": "2610.30679v1",
+      "title": "AgentDreamer: Agentic 3D Motion Reasoning for Text-Controllable Physics Simulation",
+      "abstract": "We propose AgentDreamer, an agent-guided optimization framework that aligns text instructions with simulated motion through explicit 3D motion planning. Given a text instruction and scene geometry, an off-the-shelf agent translates the instruction into a structured semantic motion prior, specifying what should move, in which direction, and in what temporal order. The agent represents this prior using parametric functions over a series of temporal chunks, yielding dense 3D trajectories. We then optimize the parameters of a differentiable MPM simulator such that its rollout best matches the prior while remaining constrained by the scene dynamics. This allows the agent to provide semantic guida…",
+      "authors": [
+        "Mijeong Kim",
+        "Suho Park",
+        "Junha Park",
+        "Bohyung Han"
+      ],
+      "published": "2026-10-22T03:46:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30679v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 18,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 90
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
     },
     {
       "id": "2607.00417v1",
@@ -6944,6 +7029,35 @@
       "first_seen": "2026-10-22T12:52:04.702690+00:00"
     },
     {
+      "id": "2610.31108v1",
+      "title": "DRAFT: Decoding and Reconstructing 3D Room Layouts from fMRI and Camera Trajectories",
+      "abstract": "While functional magnetic resonance imaging (fMRI) decoders reconstruct images and 3D objects, recovering the metric geometry of rooms from a moving viewpoint remains an open challenge. We introduce, to our knowledge for the first time, the task of reconstructing 3D layouts of held-out scenes using only the known camera trajectories and the fMRI signals of participants watching indoor walkthroughs, without any visual frames. The task is hard because of the temporal mismatch between rapid visual changes and blurred fMRI signals. Our method, DRAFT (Decoding and Reconstructing 3D room lAyouts from fMRI and Trajectories), extracts a compact layout representation from the early visual cortex and …",
+      "authors": [
+        "Chi-Wei Lee",
+        "An-Kai Chen",
+        "Cheng-Han Chiang",
+        "Yi-Chun Chang",
+        "Po-Chih Kuo"
+      ],
+      "published": "2026-10-22T11:17:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31108v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -10949,6 +11063,35 @@
       "first_seen": "2026-10-22T12:52:04.702690+00:00"
     },
     {
+      "id": "2610.31649v1",
+      "title": "Gate3DGen: A Pre-processing Model that Selectively Purifies Real-World Images for 3D Generation",
+      "abstract": "Single-image 3D generation has achieved high fidelity on curated benchmarks, yet degrades sharply on real-world images with uneven illumination, blur, and occlusions. Purifying such inputs requires deciding when to intervene and preserving the visual cues needed for 3D generation, while leaving clean inputs unchanged. We introduce Gate3DGen, a selective pre-processing model that gates image inputs to existing 3D generators without retraining them. A degradation-aware router bypasses inputs classified as clean and extracts features to guide purification of the remaining inputs. Conditioned on these features, a 3D-oriented one-step purifier purifies degraded inputs with spatial losses that enc…",
+      "authors": [
+        "Xiaolin Li",
+        "Zihao Huang",
+        "Fanpeng Meng",
+        "Chen Yang",
+        "Guanjun Wu",
+        "Kai Zhang"
+      ],
+      "published": "2026-10-22T17:57:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31649v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 56
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -14889,6 +15032,72 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.31671v1",
+      "title": "A Unified Framework for Image-to-3D Part Generation via Variable Granularity",
+      "abstract": "Controllable 3D part generation is pivotal for digital asset creation, yet existing methods lack the flexibility to accommodate diverse user workflows requiring varying levels of control. In this paper, we introduce FlexPart, a unified image-to-3D part generation framework that supports variable-granularity geometric conditions within a single model. By seamlessly integrating heterogeneous inputs, ranging from sparse points to dense bounding boxes and masks, via gated adaptive modulation, FlexPart unlocks a powerful cross-modal synergy. We also propose an asymmetric geometric guidance mechanism that leverages strong spatial priors to align representations across granularities, improving geom…",
+      "authors": [
+        "Qiwen Gu",
+        "Xin Zhou",
+        "Xiwu Chen",
+        "Zhongyang Zhu",
+        "Zhuo Zhang",
+        "Junqiao Zhao"
+      ],
+      "published": "2026-10-22T17:59:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31671v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.30910v1",
+      "title": "H-2DGS: Height-Field Gaussian Splatting for Sharp and Deformable Neurosurgical Surface Reconstruction",
+      "abstract": "Neurosurgical navigation commonly presents magnetic resonance imaging (MRI) as 2D slices, making it difficult to relate the anatomy in those slices to the cortical surface observed through the surgical microscope. We seek a common 3D visualization that combines a photorealistic reconstruction of the exposed cortex during tumor surgery with whole-brain MRI context and diffusion tractography pathways. This requires the reconstructed cortex to form a clear boundary around the brain anatomy rather than a diffuse volume that obscures internal structures. Conventional 3D Gaussian Splatting (3DGS) can reproduce observed views but, under limited surgical view coverage, may distribute opacity through…",
+      "authors": [
+        "Zhang Zichuan",
+        "Bart Brouwers",
+        "Rembrandt Bakker",
+        "Maud Landers",
+        "Geert-Jan Rutten",
+        "Maxime Chamberland"
+      ],
+      "published": "2026-10-22T08:33:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30910v1",
+      "categories": [
+        "eess.IV",
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 35
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -26678,6 +26887,175 @@
       "first_seen": "2026-10-22T12:52:04.702690+00:00"
     },
     {
+      "id": "2610.31645v1",
+      "title": "OmniRay: Camera-Agnostic Monocular 3D Reconstruction with Composite Ray Fields",
+      "abstract": "Monocular models recover 3D geometry from a single image in one pass, but most assume a pinhole camera and produce distorted geometry on the wide-angle imagery produced by fisheye and panoramic lenses. Camera-aware models remove this assumption by predicting a per-pixel ray field. However, they represent different camera geometries using a single fixed basis to capture both the overall camera projection and its finer variations. We argue that camera geometry can be viewed as having a hierarchy of complexity for representing rays. We present OmniRay, a feed-forward model whose Ray Module is composed of three components: a monotone radial base that captures radially symmetric structure, a sphe…",
+      "authors": [
+        "Namitha Guruprasad",
+        "Abhay Yadav",
+        "Cheng Peng",
+        "Rama Chellappa",
+        "Anand Bhattad"
+      ],
+      "published": "2026-10-22T17:55:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31645v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.31635v1",
+      "title": "HiP3R: Hierarchical Pose Graphs for Long-Horizon 3D Reconstruction",
+      "abstract": "Feed-forward models accurately estimate camera motion and 3D geometry from short video windows. However, computational and memory costs prevent direct inference on sequences containing thousands of frames. Long videos must therefore be processed as overlapping chunks. This division produces independent local reconstructions with inconsistent coordinate frames and duplicate estimates of shared cameras. Achieving global consistency requires propagating constraints from adjacent overlaps and distant revisits across the sequence. This requirement naturally motivates pose graph optimization. However, the choice of graph level creates a trade-off. Chunk-level graphs efficiently resolve scale drift…",
+      "authors": [
+        "Zunnan Xu",
+        "Shangchen Zhou",
+        "Yihang Luo",
+        "Chen Change Loy"
+      ],
+      "published": "2026-10-22T17:51:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31635v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.31617v1",
+      "title": "DiffDreamer: Coupling World Models with Differentiable Simulation for Agile Quadrotor Control",
+      "abstract": "Tasks such as quadrotor dynamic-gate racing require agents to anticipate external motion while maintaining precise high-frequency control. World-model-based reinforcement learning provides a natural solution by learning latent dynamics for future imagination, yet it often entangles environmental evolution and the robot's own dynamics in a single learned rollout, where model bias can affect policy optimization efficiency. We propose DiffDreamer, a differentiable reinforcement learning framework that tightly couples a learned world model with differentiable simulation for actor optimization. In one optimization step, the learned world model propagates latent states that capture external dynami…",
+      "authors": [
+        "Fanxing Li",
+        "Yuxiang Huang",
+        "Shengyang Wang",
+        "Fangyu Sun",
+        "Shuyu Wu",
+        "Tianbao Zhang"
+      ],
+      "published": "2026-10-22T17:41:13Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31617v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.31585v1",
+      "title": "Action Learning for Scientific Simulations",
+      "abstract": "Understanding and controlling how systems evolve is central to science and engineering, where many problems require reasoning about complete trajectories. Existing approaches typically learn local dynamics or generate trajectories, but objectives constructed from individual transitions can miss dependencies across time, while generative models do not necessarily provide a tractable objective for evaluating and optimizing arbitrary paths. We study $\\textit{action learning}$, the problem of recovering a stochastic action from trajectory observations, yielding a common objective for reasoning about dynamical systems. We introduce $\\textbf{LEAP}$ ($\\textbf{L}$earned $\\textbf{E}$nergy on $\\textbf…",
+      "authors": [
+        "Sarah Liaw",
+        "Yuanqi Du",
+        "Yilun Du"
+      ],
+      "published": "2026-10-22T17:22:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31585v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.31293v1",
+      "title": "RecallGS: Geometry-Grounded Recall for Online Semantic Gaussian Splatting",
+      "abstract": "Online semantic 3D Gaussian Splatting (3DGS) enables open-vocabulary scene understanding from streaming observations. However, existing methods recover geometric context missing from image-derived semantic features using an additionally learned 3D network, incurring extra training and runtime overhead. We observe that such geometric-semantic evidence may already exist in the agent's observation history and can be retrieved rather than learned. Based on this insight, we introduce RecallGS (Geometry-Grounded Recall for Online Semantic Gaussian Splatting), a lightweight, training-free mechanism that treats past observations as a non-parametric geometric-semantic prior. RecallGS follows a recall…",
+      "authors": [
+        "Thanh-Khoi Nguyen",
+        "Thien-Phuc Tran",
+        "Minh-Triet Tran"
+      ],
+      "published": "2026-10-22T13:55:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31293v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.31024v1",
+      "title": "NN-Based Transistor Modeling for Ultra-Fast SPICE Simulation and Standard Cell Library Characterization",
+      "abstract": "Neural network (NN)-based transistor models have proven to be a promising solution to accelerate device modeling. Although these models demonstrated remarkable speedup in circuit simulations, they were not rigorously tested in complex tasks within standard EDA tool flows for chip design, which require very high transistor model precision to provide accurate results and converge properly. To investigate their full potential and promise, we develop NN-based transistor models that accurately predict the drain current and various charges for a 3nm nanosheet, and employ the models for a standard cell library characterization. This enables us to evaluate the accuracy and speedup under a very wide …",
+      "authors": [
+        "Rodion Novkin",
+        "Hussam Amrouch"
+      ],
+      "published": "2026-10-22T09:59:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31024v1",
+      "categories": [
+        "cs.ET",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -29671,6 +30049,35 @@
       ],
       "has_code": true,
       "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.29780v2",
+      "title": "JointLight: Human-Centric Video Relighting with Asynchronous RGB-Irradiance Joint Modeling",
+      "abstract": "Understanding and modeling light transport in human-centric scenes is a longstanding challenge. While recent progress in diffusion models has boosted research in relighting, precise illumination control still lags, primarily due to the scarcity of diverse, high-quality, precisely labeled video relighting datasets. Existing end-to-end relighting approaches model light transport implicitly through neural networks, which substantially complicates controllability. In contrast, some works resort to path-traced irradiance cues as an explicit blueprint for light transport. However, such constructed irradiance cues are prone to artifacts and hinder generative quality when directly used as control si…",
+      "authors": [
+        "Henglei Lv",
+        "Bailin Deng",
+        "Xiaoqiang Liu",
+        "Yichen Wang",
+        "Haoxian Zhang",
+        "Pengfei Wan"
+      ],
+      "published": "2026-10-21T14:08:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.29780v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 36
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -35387,6 +35794,96 @@
       "first_seen": "2026-10-22T12:52:04.702690+00:00"
     },
     {
+      "id": "2610.30685v1",
+      "title": "Learning Domain Trajectories with Flow Matching for Gradual Domain Adaptation",
+      "abstract": "Large distribution shifts remain a primary obstacle for domain generalization and unsupervised adaptation. Although gradual domain adaptation alleviates this difficulty by introducing ordered intermediate domains, most existing approaches still operate in a discrete, step-wise manner, which can accumulate errors and often relies on unstable Min--Max optimization. We propose \\textbf{FlowGDA}, a flow-matching framework that models gradual adaptation as \\emph{continuous} transport on a statistical manifold in a representation space. FlowGDA learns time-dependent velocity fields that induce smooth domain trajectories, using a simulation-free regression objective rather than adversarial training.…",
+      "authors": [
+        "Yubo Huang",
+        "Yushe Cao",
+        "Zixi Wang",
+        "Jingzehua Xu",
+        "Xin Lai",
+        "Xiongyu Hu"
+      ],
+      "published": "2026-10-22T03:56:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30685v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.30334v1",
+      "title": "MPBRS: Multi-Potential-Based Reward Shaping for Unified Reward Configuration in Humanoid Locomotion",
+      "abstract": "Designing and tuning reward functions remains one of the main challenges in building effective reinforcement learning (RL) pipelines for humanoid locomotion. While shaping rewards can accelerate learning, naively formulated terms often conflict with the desired behavior, overfit to a specific robot, or become unstable under small weight changes. Potential-Based Reward Shaping (PBRS) offers an alternative solution: shaping the reward via differences of a potential function to guide exploration without changing the optimal policy. In this paper, we study Multi-PBRS for humanoid locomotion and propose a unified reward configuration. We then evaluate the same reward structure and weights across …",
+      "authors": [
+        "Van Chung Nguyen",
+        "Hung Manh La"
+      ],
+      "published": "2026-10-21T18:52:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30334v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
+      "id": "2610.30326v1",
+      "title": "R4DGS: Referring Segmentation in 4D Gaussian Splatting",
+      "abstract": "Dynamic representations based on 4D Gaussian Splatting (4DGS) have shown strong capabilities in reconstruction and rendering, yet current methods remain limited in supporting complex natural-language referring in dynamic scenes. Existing 4D Gaussian methods are primarily designed for rendering-oriented dynamic modeling, while current semantic extensions often rely on scene-specific semantic optimization or are evaluated on relatively simple query settings. In this paper, we study Referring 4D Gaussian Splatting (R4DGS), a task for grounding temporally varying, multi-target or reasoning-intensive, and zero-target or distractor expressions in dynamic 4D scenes. To support this task, we introdu…",
+      "authors": [
+        "Bangpu Chen",
+        "Yaxuan Li",
+        "Shirui Peng",
+        "Xiangtian Si",
+        "Liuxin Chu",
+        "Xitong Cao"
+      ],
+      "published": "2026-10-21T18:42:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.30326v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -38324,6 +38821,34 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-22T12:52:04.702690+00:00"
+    },
+    {
+      "id": "2610.31222v1",
+      "title": "GLOW-FM: Efficient Generative Low-Light Image Enhancement with One-Step Latent Flow Matching",
+      "abstract": "Low-light image enhancement (LLIE) aims to recover well-exposed and perceptually faithful images from severely degraded observations. Recent diffusion-based generative methods achieve strong perceptual quality by leveraging powerful image priors, but their iterative sampling incurs substantial computational cost, limiting practical deployment. Despite recent efficiency gains in generative LLIE, high-quality enhancement with a single function evaluation and low overall computation remains challenging, particularly under diverse real-world low-light conditions. We introduce GLOW-FM, a one-step latent flow-matching framework for efficient generative LLIE. GLOW-FM performs conditional transport …",
+      "authors": [
+        "Ariel Lapid",
+        "Yuval Haitman",
+        "Reuven Peretz",
+        "Arnon Netzer",
+        "Idit Diamant"
+      ],
+      "published": "2026-10-22T13:08:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.31222v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-10-23T12:30:37.683797+00:00"
     }
   ]
 }
