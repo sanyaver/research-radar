@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-01T14:09:55.017400+00:00",
-  "total": 1370,
-  "new_this_run": 0,
+  "last_updated": "2026-11-02T16:55:54.387465+00:00",
+  "total": 1393,
+  "new_this_run": 23,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -316,6 +316,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-09-24T12:38:20.944515+00:00"
+    },
+    {
+      "id": "2610.40976v1",
+      "title": "Dynamic Skinning: Kinematics-Driven Cartoon Effects for Articulated Characters",
+      "abstract": "We present an extension to traditional rig skinning, like Linear Blend Skinning (LBS), to produce secondary motions that exhibit the appearance of physical phenomena without need for simulation. At the core of the technique, we call dynamic skinning, is a set of deformers which offset position of individual vertices as a function of position derivatives and time. Examples of such deformers create effects such as oscillation in response to movement and the appearance of wave propagation, among others. Because the technique computes offsets directly and does not solve physics equations, it is extremely fast to compute. It also boasts a high degree of customizability which supports a desirable …",
+      "authors": [
+        "Damien Rohmer",
+        "Karim Salem",
+        "Niranjan Kalyanasundaram",
+        "Victor Zordan"
+      ],
+      "published": "2026-10-29T21:01:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.40976v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 25,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 150
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
     },
     {
       "id": "2607.03990v1",
@@ -2975,6 +3002,40 @@
       "first_seen": "2026-10-28T13:54:48.020284+00:00"
     },
     {
+      "id": "2610.41190v1",
+      "title": "FlowMoDE: Coarse-to-fine Flow Matching for Detail-aware Sim-to-Real Monocular Depth Estimation",
+      "abstract": "Monocular depth estimation is a fundamental capability for 3D spatial perception in robotic and intelligent systems. While data-driven discriminative methods have achieved compelling performance for monocular depth estimation, generative approaches can reconstruct fine structural details with stronger generalization. However, most existing generative diffusion models suffer from low inference efficiency caused by multi-step sampling, whereas single-step diffusion models struggle to recover high-fidelity depth maps. To mitigate these drawbacks, this paper presents FlowMoDE, a coarse-to-fine flow-matching-based framework for efficient, structure-aware monocular depth estimation supporting sim-…",
+      "authors": [
+        "Liangjing Shao",
+        "Wanhao Liu",
+        "Jinsong Lin",
+        "Zhiwei Fang",
+        "Hongliang Ren"
+      ],
+      "published": "2026-10-30T03:13:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41190v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
       "id": "2607.05252v1",
       "title": "FUSE: FK-Steered Multi-Modal Flow Matching for Efficient Simulation-Based Posterior Estimation",
       "abstract": "Simulation-Based Inference (SBI) is critical for scientific discovery, with generative models offering a promising path toward efficient inference. However, existing methods struggle with effective multimodal modeling. They often rely on brute-force fusion strategies that ignore the structural disparities between parameters and observations, thus limiting estimation fidelity. In this work, we introduce FUSE (Feynman-Kac steered mUlti-modal flow matching for efficient Simulation-based posterior Estimation). Unlike prior work, FUSE employs a dual-track architecture that preserves the distinct features of multimodal inputs while facilitating dynamic interaction. Additionally, we propose an FK-s…",
@@ -4567,6 +4628,34 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-19T14:29:52.880488+00:00"
+    },
+    {
+      "id": "2610.41501v1",
+      "title": "VoxLution: Evolving Voxels for High-Fidelity 3D Scene Generation",
+      "abstract": "High-resolution 3D indoor scene generation is crucial for immersive applications such as virtual reality, spatial computing, and robotics simulation. We introduce VoxLution, a coarse-to-fine transformer-based approach that generates high-fidelity indoor scenes with rich details, overcoming the overly smooth geometry typical of existing generative models. First, we generate a low-resolution spatial layout; then, based on this structural information, we progressively refine the scene geometry locally in chunks. Key to our approach is formulating 3D super-resolution as a sequence modeling problem over multi-resolution sparse voxel grids. To achieve this, we introduce a training-free, resolution…",
+      "authors": [
+        "Daoyi Gao",
+        "Xinyi Zhang",
+        "Alexey Bokhovkin",
+        "Lei Li",
+        "Angela Dai"
+      ],
+      "published": "2026-10-30T09:55:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41501v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 70
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
     },
     {
       "id": "2606.31101v1",
@@ -7375,6 +7464,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
+    },
+    {
+      "id": "2610.40754v1",
+      "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation",
+      "abstract": "While frontier coding agents can generate high-quality 3D scenes and articulated assets, they struggle to create coherent long-horizon animations. When equipped with general-purpose harnesses, they frequently produce physically implausible outputs, generating objects that interpenetrate, lack physical support, or move unnaturally. Such bare agents struggle to repair these errors because they default to scripting the full animation in one pass, making it difficult to verify their work and disentangle complex spatiotemporal constraints. Drawing on the practice of human animators, we introduce DyCraft, a system for animated 3D scene generation that breaks animation into steps that coding agents…",
+      "authors": [
+        "Jeff Tan",
+        "Hang Dai",
+        "Zeqian Long",
+        "Yanzhe Lyu",
+        "R. Kenny Jones",
+        "Shangzhe Wu"
+      ],
+      "published": "2026-10-29T16:42:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.40754v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -11715,6 +11833,34 @@
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
     },
     {
+      "id": "2610.40857v1",
+      "title": "Frozen in Time: How a Physics Foundation Model Forgets Under Sim-to-Real Adaptation",
+      "abstract": "Scientific foundation models (SciFMs) have achieved remarkable performance on a wide range of PDEs, including the ability to efficiently adapt to unseen data distributions with additional finetuning. As with all neural architectures, finetuning such models comes with the risk of catastrophic forgetting, whereby adapting to new tasks degrades prior knowledge of the model. We study catastrophic forgetting in Walrus-1.3B, a SciFM for continuum dynamics, over the course of a two-stage sim-to-real adaptation: first finetuning on simulated flow around a cylinder and then adapting to experimental data of the same system. We find that finetuning on the simulations rapidly degrades rollout performanc…",
+      "authors": [
+        "Haaris Mian",
+        "Miles Cranmer",
+        "Alessandro Favero",
+        "Payel Mukhopadhyay"
+      ],
+      "published": "2026-10-29T18:36:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.40857v1",
+      "categories": [
+        "cs.LG",
+        "physics.flu-dyn"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -16001,6 +16147,183 @@
       ],
       "has_code": true,
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
+    },
+    {
+      "id": "2610.41752v1",
+      "title": "Higher-Order Kinematic Derivatives for Aspect-Preserving Real-Time Numerical Inverse Kinematics",
+      "abstract": "This paper leverages the higher-order kinematic derivatives of serial robots to achieve efficient, aspect-preserving real-time inverse kinematics. First, a family of higher-order solvers is derived, with a necessary orientation-error correction map, yielding the QuIK4 and QuIK5 methods with fourth- and fifth-order convergence. Second, an aspect-preserving step limiter extrapolates the Jacobian determinant along the step to predict and avoid singularities, shortening steps only when they head toward a singularity rather than when the current iterate is ill-conditioned. Third, a Hermite-interpolation certifier verifies the aspect of each answer, and a certified restart algorithm recovers failu…",
+      "authors": [
+        "Steffan Lloyd"
+      ],
+      "published": "2026-10-30T13:55:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41752v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41702v1",
+      "title": "Flexibility-Aware Robotic Manipulation: Deformation Estimation, Kinematics, and Control via Distributed Inertial Measurement",
+      "abstract": "Flexible robot links challenge the rigid-body assumption, making joint measurements alone insufficient for accurate manipulation. This paper introduces a flexibility-aware manipulation framework that connects structural dynamics directly to sensing, kinematics, and control. Instead of prescribing a dense inertial measurement unit (IMU) network, the dominant vibration modes of each flexible link are first identified from response-convergence and excitation-bandwidth criteria. Under a full-rank modal observability condition, $m$ retained modes require only $m$ independent slope measurements and one reference IMU, defining the minimum observable IMU configuration. The resulting measurements are…",
+      "authors": [
+        "Amir Hossein Barjini",
+        "Sadeq Yaqubi",
+        "Pauli Mustalahti",
+        "Jouni Mattila"
+      ],
+      "published": "2026-10-30T13:06:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41702v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41429v1",
+      "title": "Physically Constrained Kinematic Calibration for High-Precision Robotic Needle Guidance",
+      "abstract": "Percutaneous needle insertion is a common practice in minimally invasive procedures whose clinical success depends on accurate needle placement. However, achieving the necessary precision is a challenge for manual operators. Robotic assistance can improve targeting accuracy and reduce operator dependence, but residual millimeter-scale errors persist because nominal kinematic models do not fully represent the physical manipulator. This paper presents a robust bound-constrained kinematic calibration method designed to improve positional accuracy for a 6-Degree-of-Freedom (6-DoF) robotic needle-guidance manipulator. The approach uses physically plausible parameter ranges to regularize a compact…",
+      "authors": [
+        "Prabhu Nithin Gollapudi",
+        "Andreas Maier",
+        "Franziska Mathis-Ullrich",
+        "Water Zhao",
+        "Jia Wang",
+        "Siming Bayer"
+      ],
+      "published": "2026-10-30T08:35:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41429v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY",
+        "math.OC"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41231v1",
+      "title": "Coarse3D: Controllable and Faithful Sparse Structure Generation for Image-to-3D",
+      "abstract": "Coarse-to-fine 3D-native generation relies heavily on the first-stage sparse structure, which determines the global orientation and overall geometry for subsequent refinement. However, existing coarse generators suffer from two key limitations: their orientation is difficult to control due to ambiguous semantic canonicalization, and their structures are often inconsistent with input images due to weak 2D-3D grounding. We propose Coarse3D, a sparse-structure generation model that produces orientation-controllable and structurally faithful voxel geometry from arbitrary unposed images. Coarse3D introduces three designs: a first-frame anchored canonical space that aligns generation with the firs…",
+      "authors": [
+        "Gaige Wang",
+        "Bowen Pan",
+        "Hao Ren",
+        "Jiangjing Lyu",
+        "Chengfei Lyu"
+      ],
+      "published": "2026-10-30T04:09:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41231v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41011v1",
+      "title": "Prior-Guided Single-Exposure HDR Novel View Synthesis via Base-Gain Representation",
+      "abstract": "Single-exposure high dynamic range (HDR) novel view synthesis (NVS) recovers HDR scenes from low dynamic range (LDR) views captured at a single exposure and estimates camera response function (CRF) for LDR re-exposure. Without HDR ground-truth, using single-exposure LDR views as the sole source of direct supervision underconstrains HDR reconstruction and cannot ensure its faithful recovery, motivating the need for learned LDR-to-HDR reconstruction priors. Moreover, single-exposure LDR views supervise CRF only over a limited range, necessitating a learnable prior for reliable re-exposure beyond it. We propose PriorGS, a 3D Gaussian Splatting framework that addresses both challenges by (1) gui…",
+      "authors": [
+        "Armin Shafiee Sarvestani",
+        "Sheyang Tang",
+        "Jialu Xu",
+        "Zhou Wang"
+      ],
+      "published": "2026-10-29T21:44:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41011v1",
+      "categories": [
+        "cs.CV",
+        "cs.MM"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.40947v1",
+      "title": "UFMF: Radar-Guided Kinematic Priors for Real-Time 4D Occupancy Forecasting",
+      "abstract": "Real-time 4D occupancy forecasting requires reliably extrapolating both ego motion and surrounding actor motion under strict latency budgets. Recent occupancy world models improve long-horizon fidelity through generative decoders and 3D volumetric modeling, yet their computational cost makes real-time deployment challenging. Light-weight BEV forecasters meet latency requirements but often blur or suppress fast-moving actors at longer horizons. We present UFMF (Ultra-Fast Multi-modal Forecaster), a real-time forecaster that keeps an attention-free diagonal state-space temporal core while injecting targeted kinematic and geometric structure where lightweight models typically fail. A radar-guid…",
+      "authors": [
+        "Zeping Zhang",
+        "Zhuoya Zhao",
+        "Robert Laganière"
+      ],
+      "published": "2026-10-29T20:24:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.40947v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -28939,6 +29262,113 @@
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
     },
     {
+      "id": "2610.41981v1",
+      "title": "Design and Validation of a Robotic Knee Exoskeleton with Musculoskeletal Simulation-Derived Biological Torque Control",
+      "abstract": "Data-driven controllers have enabled lower-limb robotic exoskeletons to adapt assistance to the user across many tasks. A leading example is biological torque control, which estimates the user's own joint moment from onboard sensors and assists in proportion to that estimate. However, its estimators are trained on data recorded with the target device, so deploying the controller on new hardware requires collecting new data. Existing open-source efforts release hardware, software, or controllers separately, so this data collection must still be repeated on the assembled device. Here, we present an open-source knee exoskeleton, built from off-the-shelf components and widely available fabricati…",
+      "authors": [
+        "Rajiv V. Joshi",
+        "Jimin An",
+        "Ilseung Park",
+        "Dawit Lee",
+        "Inseung Kang"
+      ],
+      "published": "2026-10-30T16:29:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41981v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41654v1",
+      "title": "$\\nabla$Mimic: Ultra-Efficient Humanoid Control with Differentiable Simulation",
+      "abstract": "Robot policy learning is dominated by zeroth-order methods such as PPO, which treat the simulator as a black box and pay for it with enormous sample counts. First-order policy learning differentiates through the dynamics, but on contact-rich whole-body control it has rarely worked: its gradients explode. A recent world-model method showed that derivative information can make humanoid motion tracking far more efficient, using surrogate gradients of a learned model. We show that exact gradients of the simulator itself do better, once two obstacles are removed. Exact gradients contain rare unbounded samples, because contact dynamics is not differentiable everywhere and its derivative diverges n…",
+      "authors": [
+        "Weyl Lu",
+        "Yubei Chen"
+      ],
+      "published": "2026-10-30T12:27:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41654v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41021v1",
+      "title": "CuPIQP: A Batched and Differentiable QP Solver on GPUs for Robot Learning and Control",
+      "abstract": "Quadratic programs (QPs) are fundamental building blocks of many robotic tasks such as inverse kinematics, whole-body control, and model predictive control. Extending these methods to large-scale robot learning and control requires solving many QPs concurrently and, for end-to-end learning, differentiating through their solutions. Efficient batched optimization is therefore essential to bringing established model-based methods into GPU-based robotics pipelines. We present \\textsc{cuPIQP}, a batched and differentiable QP solver on GPUs based on a proximal interior-point method, with unified support for dense, sparse, and multistage problems. The solver exploits parallelism across independent …",
+      "authors": [
+        "Fenglong Song",
+        "Roland Schwan",
+        "Yuwen Chen",
+        "Yuning Jiang",
+        "Colin N. Jones"
+      ],
+      "published": "2026-10-29T22:04:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41021v1",
+      "categories": [
+        "math.OC",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.40902v1",
+      "title": "FlapSim: A Composable MuJoCo Simulation Platform and Reduced-Order Aerodynamic Model Hierarchy for Flapping-Wing Robotics",
+      "abstract": "Flapping-wing simulation must reconcile high-frequency wingbeat aerodynamics with the slower dynamics relevant to flight control and reinforcement learning. We present FlapSim, a modular open-source MuJoCo simulation platform that combines robot descriptions, wing geometry, and composable aerodynamic models in a deterministic simulation pipeline. Across $48$ held-out scenarios spanning frequency, gimbal, wind, frequency-step, gust, and cross-robot flat-plate regimes, we compare five reduced-order configurations operating at $1\\,\\text{ms}$ with a $50\\,μ\\text{s}$ quasi-steady blade-element reference. The built-in hover cycle-averaged baseline achieves a $67.51\\times$ CPU speedup but only $0.65…",
+      "authors": [
+        "Mingshan He"
+      ],
+      "published": "2026-10-29T19:25:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.40902v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -32202,6 +32632,32 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
+    },
+    {
+      "id": "2610.41258v1",
+      "title": "PBSR: Pseudo-Burst Super-Resolution via Zero-Shot Novel View Synthesis",
+      "abstract": "Burst super-resolution (BSR) achieves higher reconstruction fidelity than single-image super-resolution (SISR) by aggregating sub-pixel information from multiple frames. However, it requires a burst of frames captured under near-static conditions, and such frames are unavailable for single photographs or archival images. We propose Pseudo-Burst Super-Resolution (PBSR), which brings BSR-style reconstruction to the single-image input setting by synthesizing pseudo-burst frames via zero-shot novel view synthesis (NVS). PBSR first generates pseudo-burst frames with realistic parallax using a viewpoint sampling strategy calibrated to the pixel-shift distribution of real burst datasets. The frames…",
+      "authors": [
+        "Yuki Kondo",
+        "Norimichi Ukita"
+      ],
+      "published": "2026-10-30T05:04:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41258v1",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -38381,6 +38837,117 @@
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
     },
     {
+      "id": "2610.41494v1",
+      "title": "VariaFlow: Uncertainty-Aware Flow Matching for Unsupervised Anomaly Detection",
+      "abstract": "Reconstruction-based anomaly detection no longer fails at reconstruction. Generative models produce high-quality pseudo-healthy reconstructions, and the remaining difficulty is the step of scoring residuals. The residual between a scan and its reconstruction has two indistinguishable sources, genuine pathology and the anatomical variation that separates one healthy brain from another. Scoring against a single reconstruction treats both as anomalous, inflating false positives where healthy anatomy varies most while small or subtle lesions are lost in the surrounding reconstruction error. We identify the missing quantity as the predictive variance, how much a healthy reconstruction can vary at…",
+      "authors": [
+        "Arnela Hadzic",
+        "Martin Urschler",
+        "Cosmin I. Bercea"
+      ],
+      "published": "2026-10-30T09:48:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41494v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41322v1",
+      "title": "Transferring Peptide-Target Interaction Patterns to Small Molecules by Joint Guidance for Diffusion and Flow Matching",
+      "abstract": "Generating small molecules to target protein-protein interactions (PPIs) remains one of the most challenging yet high-reward frontiers in drug discovery. Unlike traditional small-molecule drugs that bind to deep, well-defined pockets, PPI interfaces often comprise broad, shallow binding surfaces. A natural strategy is to leverage known peptide-target interactions, as peptide ligands provide rich interface-level constraints. However, a major algorithmic challenge is that rigid atom-level conditioning on peptide structures can over-constrain the generative space and exclude valid small-molecule solutions. To address this challenge, we present PIFT (Peptide InterFace Transfer), a novel framewor…",
+      "authors": [
+        "Jian Lee",
+        "Changyun Cho",
+        "Sun Kim"
+      ],
+      "published": "2026-10-30T06:33:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41322v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41269v1",
+      "title": "Coarse-Graining Optimal Transport for Rollout-Free Post-Training of Flow Matching",
+      "abstract": "Flow matching depends critically on the coupling used to pair source and target samples. Optimal transport (OT) couplings can reduce velocity conflict and straighten trajectories; but, in practice, challenges remain: the source comes from a continuous distribution, only a finite number of target samples data are accessible, and the neural network has finite capacity. For these reasons, making the coupling more OT-like may not consistently improve sampling quality, in particular in the low number-of-function-evaluation (NFE) regime. Motivated by this, we introduce ReCouple, a controllable framework that constructs coarse-grained OT couplings, to better understand rollout-free OT-based post-tr…",
+      "authors": [
+        "Soon Hoe Lim",
+        "Aditi Gupta",
+        "Michael W. Mahoney",
+        "N. Benjamin Erichson"
+      ],
+      "published": "2026-10-30T05:24:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41269v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.40972v1",
+      "title": "TalkFlow: Structured Latent Flow Matching for Speech Driven Holistic Motion Generation",
+      "abstract": "Holistic co-speech motion generation aims to synthesize coordinated facial expressions, hand gestures, and body movements from speech, which is challenging due to heterogeneous part-specific dynamics, long-range temporal coherence, and cross-part coordination. Directly modeling high-dimensional motion can be unstable, while overly compact or unstructured latent spaces may lose fine-grained motion details. We present \\textbf{TalkFlow}, a structured latent flow framework for speech-driven holistic motion generation. TalkFlow learns a continuous three-stream latent representation for upper-body motion, lower-body motion, and facial expressions, preserving part-specific dynamics without forcing …",
+      "authors": [
+        "Xinmu Wang",
+        "Fumi Honda",
+        "Xiang Gao",
+        "Xianfeng Gu",
+        "Xiyun Song",
+        "Heather Yu"
+      ],
+      "published": "2026-10-29T20:59:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.40972v1",
+      "categories": [
+        "cs.GR",
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -41558,6 +42125,92 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
+    },
+    {
+      "id": "2610.41337v1",
+      "title": "Bayesian PET Reconstruction with Learned Flow Matching Priors via Langevin Sampling",
+      "abstract": "Image reconstruction for positron emission tomography (PET) is a challenging inverse problem due to its inherent ill-posedness and Poisson counting noise, particularly in low-dose acquisitions. In this work, we introduce a novel Bayesian PET reconstruction framework that leverages a flow-matching generative prior learned from high-quality PET images. By incorporating this prior, we formulate PET reconstruction as a Bayesian inference problem and solve it via latent-space posterior sampling using the unadjusted Langevin algorithm. We evaluate the proposed method through numerical experiments and benchmark it against classical reconstruction methods and state-of-the-art deep learning-based bas…",
+      "authors": [
+        "Hengjia Ran",
+        "Huafeng Liu",
+        "Bo Zhao"
+      ],
+      "published": "2026-10-30T06:51:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41337v1",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.41009v1",
+      "title": "STAR: Steering Action Representations during Inference",
+      "abstract": "Vision-language-action models (VLAs) map language instructions and visual observations to robot actions, showing strong capabilities across robotic manipulation tasks. However, in our probing experiment, we find that action representations near the action output do not fully preserve task-relevant visual grounding. Motivated by this late-layer grounding gap, we introduce STAR, for STeering Action Representations, a training-free inference method for pre-trained VLAs. STAR applies an exponential moving average over late-layer residual updates, allowing later action representations to inherit object-aware update directions from earlier layers without model updates or architectural changes. It …",
+      "authors": [
+        "Guangyu Zhao",
+        "Yongchang Zhang",
+        "Haoxuan Ru",
+        "Kaichen He",
+        "Haoran Wen",
+        "Kun Zhan"
+      ],
+      "published": "2026-10-29T21:42:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.41009v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2610.40799v1",
+      "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+      "abstract": "Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns …",
+      "authors": [
+        "Yijia Fan",
+        "Xilin He",
+        "Yilei Jiang",
+        "Dongming Wu",
+        "Jiaxu Wang",
+        "Xiangyu Yue"
+      ],
+      "published": "2026-10-29T18:01:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2610.40799v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-02T16:55:54.387465+00:00"
     }
   ]
 }
