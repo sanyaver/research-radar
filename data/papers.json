@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-04T15:16:06.960059+00:00",
-  "total": 1424,
-  "new_this_run": 17,
+  "last_updated": "2026-11-05T15:16:50.214434+00:00",
+  "total": 1438,
+  "new_this_run": 14,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -3994,6 +3994,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-27T13:04:32.993101+00:00"
+    },
+    {
+      "id": "2611.06447v1",
+      "title": "$A^3$-VLA: Automatic Perception-Guided Attention Alignment for Robot Manipulation",
+      "abstract": "Vision-Language-Action Models (VLAs) enable robots to perform manipulation tasks by leveraging Vision-Language Models (VLMs) to process visual observations and language instructions. However, the action prediction objective itself lacks fine-grained task-specific perceptual supervision, making it prone to relying on task-irrelevant visual shortcuts, leading attention away from target objects and key interaction areas, thereby limiting its operational performance and generalization ability. To address this, we propose Automatic Perception-Guided Attention Alignment for Robot Manipulation ($A^3$-VLA), a framework that derives task-specific visual guidance from the manipulation process itself. …",
+      "authors": [
+        "Shengzhe Zhang",
+        "Qi Zhang",
+        "Dazhong Shen",
+        "Chao Wang",
+        "Shaopeng Zhai",
+        "Hui Xiong"
+      ],
+      "published": "2026-11-04T12:50:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06447v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 72
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -12015,6 +12044,75 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-04T15:16:06.960059+00:00"
+    },
+    {
+      "id": "2611.06627v1",
+      "title": "Interactive World Simulation with Cosmos for Physical AI",
+      "abstract": "We present a shared framework that adapts Cosmos world foundation models for real-time interactive world simulation in Physical AI. By streaming visual observations in response to actions and scene controls, the framework enables users and embodied agents to interact with evolving virtual environments. It supports both predicting the visual consequences of actions and generating observations from physical state maintained by an external simulator. We demonstrate this approach across camera navigation and robot manipulation, controllable video transfer, and multi-view autonomous vehicle (AV) simulation. These examples provide a shared foundation for developing interactive virtual environments…",
+      "authors": [
+        "NVIDIA",
+        ":",
+        "Anis Ahmad",
+        "Jon Allen",
+        "Malik Aqeel Anwar",
+        "Jesse Archer"
+      ],
+      "published": "2026-11-04T15:11:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06627v1",
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06020v1",
+      "title": "METRIC-GS: Selective Metric-Scale Estimation for 3D Gaussian Splatting",
+      "abstract": "A 3D Gaussian Splatting (3DGS) reconstruction inherits arbitrary units from structure-from-motion, so it cannot be measured or used to place AR content until someone supplies a scale. Both standard recipes are fragile on real captures: on five indoor scenes with tape-measured ceilings, a quantile floor-to-ceiling heuristic errs by 27% and metric-depth alignment by 35-71% across three networks. We present METRIC-GS, a selective scale estimator for real indoor photographs: it reads the scale off the reconstruction's own semantic content and, just as importantly, refuses when the evidence is thin. A frozen 2D teacher labels Gaussians by visibility-aware voting; instance-level size priors for ar…",
+      "authors": [
+        "Sooyeun Yang",
+        "Jongseong Brad Choi"
+      ],
+      "published": "2026-11-04T06:17:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06020v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -30011,6 +30109,188 @@
       "first_seen": "2026-11-04T15:16:06.960059+00:00"
     },
     {
+      "id": "2611.06908v1",
+      "title": "Perceptive Humanoid Motion from Simulation",
+      "abstract": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-form language to low-level joint commands requires paired supervision, and no corpus of such data exists at sufficiently large scale. Some approaches rely on human teleoperation and wearable capture devices, which require at least an hour of human time to produce an hour of data. We present HALO, a humanoid autonomy system powered by a pipeline that synthesizes vision-language-motion data across a thousand procedurally generated homes. The corpus scales with compute rather than human labor. HALO…",
+      "authors": [
+        "Siyuan Hu",
+        "Abulikemu Abuduweili",
+        "Yue Meng",
+        "Shipeng Liu",
+        "Quentin Leboutet",
+        "Chen Chen"
+      ],
+      "published": "2026-11-04T18:55:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06908v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06731v1",
+      "title": "Template Gap Reconstruction for Shell Output Simulation with Small Language Models",
+      "abstract": "Small language models offer a compact basis for shell simulation without executing submitted commands, but full-output decoding requires them to predict recurring utility structure alongside content that varies across executions. We introduce template gap reconstruction (TGR), which supplies reusable output literals interspersed with sentinels to be interleaved with autoregressively generated gaps. A template selector chooses which template to be reconstructed, with the empty template retaining full-output decoding. We construct a template bank from 18.7 million outputs collected across heterogeneous execution environments and train a template selector and five reconstruction models initiali…",
+      "authors": [
+        "Jarrod Ragsdale",
+        "Rajendra Boppana"
+      ],
+      "published": "2026-11-04T16:17:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06731v1",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06593v1",
+      "title": "BudgetSplat: Budget-Controllable Generalizable Gaussian Splatting",
+      "abstract": "Feed-forward 3D Gaussian Splatting enables efficient generalizable novel view synthesis, but existing pixel-aligned methods often generate highly redundant Gaussian primitives, causing the final representation size and rendering cost to grow rapidly with image resolution and the number of input views. We propose BudgetSplat, a budget-controllable feed-forward framework that adapts the final Gaussian representation to a user-specified preservation ratio. Rather than treating compaction as simple importance ranking, we formulate it as a joint problem of importance estimation, spatial coverage, and cross-view redundancy. A single trained model supports varying numbers of context views and multi…",
+      "authors": [
+        "Yuxi Hu",
+        "Jun Zhang",
+        "Wei Mao",
+        "Yuchen Rao",
+        "Friedrich Fraundorfer"
+      ],
+      "published": "2026-11-04T14:46:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06593v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06355v1",
+      "title": "FlashRelight: Portrait Video Relighting with Dynamic Lighting",
+      "abstract": "Portrait video relighting aims to modify the illumination of a portrait video while preserving photorealism and temporal stability. The task becomes particularly challenging under dynamic lighting, where illumination direction, intensity, and color vary over time. To tackle this problem, we introduce FlashRelight, a novel two-stage framework for dynamic portrait video relighting. FlashRelight first suppresses the source illumination through delighting, and then synthesizes the target dynamic lighting on an illumination-neutral portrait video. FlashRelight supports three complementary control modalities: envmap sequences for explicit frame-level lighting control, dynamic lighting text for sem…",
+      "authors": [
+        "Jiahui Sheng",
+        "Le Li",
+        "Limin Lin",
+        "Jiahao Li",
+        "Wansen Feng",
+        "Hong Gu"
+      ],
+      "published": "2026-11-04T11:16:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06355v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06258v1",
+      "title": "CrossPressor: Scalable Cross-View Fusion for Feed-Forward 3D Gaussian Splatting",
+      "abstract": "Feed-forward 3D Gaussian Splatting (3D-GS) becomes increasingly difficult to scale to long multi-view sequences. Anchor-based compression methods such as ZPressor alleviate representation growth by decoding Gaussians only from a compact set of anchor feature maps, but keeping these anchors fixed forces each one to aggregate an increasing number of support views. We identify this representation--fusion mismatch and introduce \\textbf{CrossPressor}, a training-free method for scalable anchor-based fusion. CrossPressor preserves all decoder-facing anchor queries while constraining the view-growing support sequence through coverage-cycled evidence routing, distributing retained spatial evidence a…",
+      "authors": [
+        "Yuxi Hu",
+        "Wenhao Dong",
+        "Jun Zhang",
+        "Friedrich Fraundorfer"
+      ],
+      "published": "2026-11-04T10:07:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06258v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06157v1",
+      "title": "Neural Stochastic Forecasting for Lateral Molecular Diffusion Simulations",
+      "abstract": "Predicting the long-time diffusion of membrane proteins is challenging because molecular dynamics (MD) simulations are computationally expensive, while experimental single-particle tracking is often limited by finite observation times. Here, we introduce a neural stochastic (NS) model for forecasting the collective diffusion of membrane proteins from coarse-grained MD trajectories. The model combines a transformer-based representation of protein configurations, recurrent networks operating at multiple temporal scales, and a stochastic latent process with learned memory. A cross-attention decoder then generates correlated protein displacements while accounting for the instantaneous system geo…",
+      "authors": [
+        "Jacob Ede Levine",
+        "Mario Hidalgo-Soria",
+        "Chen Yun Wen",
+        "Yun Lyna Luo",
+        "Sai Chandra Kosaraju"
+      ],
+      "published": "2026-11-04T08:38:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06157v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -33300,6 +33580,37 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2611.06849v1",
+      "title": "Trainspotting: Learning Object-Centric 3D Reconstruction from Found Photos",
+      "abstract": "State-of-the-art feedforward reconstruction models perform poorly on in-the-wild object-centric photo collections. They are trained largely on single-session object captures whose images vary in viewpoint while the object and its environment remain nearly fixed. Public photo archives contain a different form of multi-view data. They hold found photos of the same object or design: photos taken independently by many people across years, environments, cameras, and sometimes physical units. In this work, we introduce Trainspotting, a dataset of 12,068 objects and 311,886 photos from Wikimedia Commons. We reconstruct each object to recover camera poses, multi-view stereo depth, and object masks. …",
+      "authors": [
+        "Hanyu Chen",
+        "Noah Snavely"
+      ],
+      "published": "2026-11-04T18:05:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06849v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -39776,6 +40087,91 @@
       "first_seen": "2026-11-04T15:16:06.960059+00:00"
     },
     {
+      "id": "2611.06711v1",
+      "title": "Energy-Guided Transport for Projection-Free Physics-Informed Flow Matching",
+      "abstract": "Deep generative models, particularly Flow Matching frameworks, have emerged as powerful tools for synthesizing complex physical systems. However, standard architectures remain purely statistically driven and agnostic to the underlying governing equations, often violating fundamental physical constraints during inference. Existing zero-shot approaches designed to enforce these constraints typically rely on rigid algebraic projections. While effective for sparse boundary conditions, applying such discrete geometric corrections to dense, full-domain PDEs may disrupt the probability path, \\rev{potentially deviating from the learned manifold and introducing substantial computational overhead}. To…",
+      "authors": [
+        "Giuliano Galadini",
+        "Aurelio Uncini",
+        "Danilo Comminiello"
+      ],
+      "published": "2026-11-04T16:09:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06711v1",
+      "categories": [
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06422v1",
+      "title": "Unaligned Image Guided Denoising via Cross-modal Conditional Flow Matching",
+      "abstract": "This work presents UGD-FM, a novel unaligned image guided denoising framework based on cross-modal conditional flow matching. Unlike previous approaches that assume spatially aligned inputs or only handle small-baseline rectified pairs, we address a more challenging setting where severe target noise and large-range two-dimensional cross-modal misalignment coexist. Specifically, we formulate guided denoising as a progressive flow matching process, allowing image restoration and aligned guidance aggregation to mutually reinforce each other. To support efficient few-step inference, we introduce a stage-focused and inference-consistent training strategy that focuses on task-critical denoising st…",
+      "authors": [
+        "Runmin Zhang",
+        "Linshan Li",
+        "Si-Yuan Cao",
+        "Zhu Yu",
+        "Lingyu Zhu",
+        "Huaqi Zhang"
+      ],
+      "published": "2026-11-04T12:24:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06422v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.06308v1",
+      "title": "Scale Anchoring via Implicit Semantics and Sequence-Consistent Loop Closure for VGGT-Based SLAM",
+      "abstract": "Feed-forward geometric foundation models enable dense monocular reconstruction without requiring camera calibration, but independently reconstructed submaps can accumulate scale drift, and even a valid revisit can yield an inconsistent cross-submap measurement. We extend VGGT-SLAM 2.0 with fixed-root scale anchoring and short-sequence-assisted direct loop connections. SALAD selects an image pair between the initial submap and each eligible new submap; joint VGGT inference then uses learned implicit semantic-geometric cues to supply a scale-only anchor while preserving the original overlap chain. For loop closure, neighboring image pairs support a consistency check and translation-scale align…",
+      "authors": [
+        "Ziyi Jin",
+        "Kangjin Yu",
+        "Beichen Wang",
+        "Can Jiang",
+        "Zhongpu Xia",
+        "Jie Xu"
+      ],
+      "published": "2026-11-04T10:42:52Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.06308v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -43151,6 +43547,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-04T15:16:06.960059+00:00"
+    },
+    {
+      "id": "2611.05359v2",
+      "title": "GSCV++: Lightweight 3D Gaussian Splatting Sequence Compression via Standard Video Codecs",
+      "abstract": "This paper presents GSCV++, a lightweight pipeline for 3D {G}aussian {S}platting (GS) sequences {C}ompression with standard {V}ideo codecs. To meet the requirements of low-complexity and hardware compatibility from the industry, GSCV++ jointly improves preprocessing, 3D-to-2D mapping, and practical video compression configuration of GS compression. First, for preprocessing, energy-adaptive inter-frame spherical harmonic (SH) alternative current (AC) dimensionality reduction (EA-SHDR) is proposed to produces a compact and stable temporal SH AC feature space. It can reduce the data volume of following mapping and practical compression, as well as less complexity while eliminating redundant inf…",
+      "authors": [
+        "Qi Yang",
+        "Yingzhan Xu",
+        "Kai Zhang",
+        "Li Zhang"
+      ],
+      "published": "2026-11-03T18:54:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.05359v2",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-05T15:16:50.214434+00:00"
     }
   ]
 }
