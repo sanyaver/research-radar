@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-10T15:28:56.592795+00:00",
-  "total": 1491,
-  "new_this_run": 23,
+  "last_updated": "2026-11-11T14:59:36.570651+00:00",
+  "total": 1510,
+  "new_this_run": 19,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -7966,6 +7966,33 @@
       "first_seen": "2026-11-10T15:28:56.592795+00:00"
     },
     {
+      "id": "2611.13850v1",
+      "title": "Taxonomy-Agnostic Neurosymbolic Grounding of Robot Kinematics",
+      "abstract": "While symbolic reasoning for task allocation requires grounding a robot's physical capabilities, standard Unified Robot Description Format (URDF) files provide only low-level kinematics without the formal semantic context needed for reasoning. We present URDF2Ontology, an automated, taxonomy-agnostic neurosymbolic framework that transforms raw URDF files into populated, grounded OWL ontologies. It leverages a Large Language Model (LLM) for targeted semantic reasoning, coupled with an iterative sequential graph-purging mechanism to prevent context window saturation. To process complex kinematic structures, it employs a morphology-aware dual-track architecture featuring a bottom-up Tree Track …",
+      "authors": [
+        "Bastien Dussard",
+        "Aur{é}lie Clodic",
+        "Guillaume Sarthou"
+      ],
+      "published": "2026-11-10T10:11:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13850v1",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -12536,6 +12563,35 @@
       ],
       "has_code": true,
       "first_seen": "2026-11-09T17:18:46.830506+00:00"
+    },
+    {
+      "id": "2611.13610v1",
+      "title": "From Egocentric Human Video to Robot Manipulation in the Era of Embodied Intelligence",
+      "abstract": "Egocentric human video (EHV) records close-range hand-object interaction (HOI) and the temporal structure of everyday activities, offering a potentially scalable source of experience for robot manipulation. Using this experience for robot control requires recovering useful supervision without recorded robot actions and accounting for differences in morphology, viewpoint, and action space. We define Ego2Robot learning as the process of learning or adapting robot manipulation policies from EHV, organized into four learning paradigms: explicit embodiment transfer, explicit action and task supervision, egocentric video representation pretraining, and latent action and dynamics modeling. The four…",
+      "authors": [
+        "Yi Wang",
+        "Jingqiu Wu",
+        "Lei Yao",
+        "Zhaoshuo Li",
+        "Haoyu Zhu",
+        "Yirui Zhou"
+      ],
+      "published": "2026-11-10T05:36:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13610v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -17329,6 +17385,66 @@
       ],
       "has_code": true,
       "first_seen": "2026-11-10T15:28:56.592795+00:00"
+    },
+    {
+      "id": "2611.13453v1",
+      "title": "Camera3R: Feed-Forward 3D Reconstruction from Heterogeneous Camera Models",
+      "abstract": "Feed-forward 3D reconstruction (3R) from unconstrained multi-view images has recently emerged as a prominent research direction in 3D computer vision. Various foundational reconstruction models have been proposed with different architectures and reconstruction paradigms. Despite being trained on large-scale perspective datasets with substantial computational resources, these models generally struggle to generalize to non-perspective images. This limitation hinders their deployment in applications involving arbitrary, unknown, and potentially heterogeneous camera models. To build on the capabilities of existing reconstruction models with minimal retraining, we propose Camera3R, a low-rank ada…",
+      "authors": [
+        "Ruxiao Duan",
+        "Yunwen Zhou",
+        "Erin Hong",
+        "Dongxu Zhao",
+        "Eric Turner",
+        "Federico Tombari"
+      ],
+      "published": "2026-11-10T01:56:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13453v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13442v1",
+      "title": "ForeSpark: Joint Draft and Verification Budget Scheduling for Parallel Speculative Decoding",
+      "abstract": "Parallel drafters accelerate LLM decoding by proposing a whole block of draft tokens in a single forward pass, making them attractive for LLM serving. Recent systems optimize goodput (i.e., accepted tokens per second) because rejected drafts steal compute from other requests. However, these systems control only how many tokens are verified, so every request still drafts a full block. At high serving load, we find that drafting consumes up to 40% of step time, of which a majority is discarded because it is never verified. Yet, draft-length control from autoregressive drafters does not carry over, because a parallel drafter commits to its length before its single pass. Moreover, draft and veri…",
+      "authors": [
+        "Jaeyong Song",
+        "Daniel Wang",
+        "Pratyush Patel",
+        "Jonny Kong",
+        "Preyas Shah",
+        "Shobhit Kanaujia"
+      ],
+      "published": "2026-11-10T01:37:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13442v1",
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -31365,6 +31481,245 @@
       "first_seen": "2026-11-10T15:28:56.592795+00:00"
     },
     {
+      "id": "2611.14211v1",
+      "title": "Verifiable Agentic Traffic Class: A Policed Quality-of-Service Mechanism for Agentic AI Traffic, Evaluated from Simulation to Real-Kernel Adversarial Testing",
+      "abstract": "Software agents built on large language models generate traffic unlike human web traffic, yet routers have no class for it and cannot verify a sender's claim to be an agent. This paper proposes the Verifiable Agentic Traffic Class (VATC), which combines a reserved Differentiated Services Code Point (DSCP) value declaring agent traffic, a router-side classifier that demotes flows contradicting the declaration to a class served after best-effort traffic, and a rate-limited priority queue. VATC was compared with static Differentiated Services (DiffServ), a dedicated class that trusts the marking, and fq_codel, a per-flow fair-queuing scheduler, in two simulators and on a real Linux kernel. VATC…",
+      "authors": [
+        "Naveen Babu Narayanan Nair",
+        "Sajay Kurup"
+      ],
+      "published": "2026-11-10T15:33:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.14211v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.14006v1",
+      "title": "Normalizing Flows for Classical Simulation of Quantum Circuits in Phase Space",
+      "abstract": "We present a novel framework to learn a representation of quantum circuits based on the phase space formulation of many-body systems. Given that $N$-qubit states can be represented as probability distributions on a smooth $2N$-dimensional manifold, we show how unitary gates can be parameterized as normalizing flows between these distributions, opening a new avenue for quantum circuit simulation using generative models. We evaluate our method on three common families of quantum circuits, and show that its accuracy exceeds that of current state-of-the-art neural network methods for large system sizes.",
+      "authors": [
+        "Edward Jiang",
+        "Timothy Heightman",
+        "Marcin Płodzień"
+      ],
+      "published": "2026-11-10T12:45:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.14006v1",
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13772v1",
+      "title": "RF3DGS: Reflection-Free 3D Gaussian Splatting with Self-Priors",
+      "abstract": "3D reflection removal is crucial in applications demanding high-fidelity visualization, such as museum exhibitions. In this work, we propose Reflection-Free 3D Gaussian Splatting (RF3DGS), a novel method for superior reflection removal. RF3DGS exclusively leverages a widely-adopted photometric prior for reflection removal: that the minimum pixel intensity across multi-view images corresponding to the same 3D point strongly correlates with reflection-free information. However, generalizing this principle to a 3D Gaussian Splatting within a multi-view context is non-trivial. To address this, RF3DGS first optimizes a vanilla 3DGS model using a geometric prior to estimate a coarse, reflection-fr…",
+      "authors": [
+        "Qiang Wen",
+        "Guotao Meng",
+        "Junhong Ruan",
+        "Hongyu Liu",
+        "Chenyang Lei",
+        "Qifeng Chen"
+      ],
+      "published": "2026-11-10T09:11:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13772v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13628v1",
+      "title": "DepthGS: Depth-Guided Gaussian Splatting with Adaptive Regularization for High-Quality Surface Reconstruction",
+      "abstract": "Recently, 3D Gaussian Splatting (3DGS) has emerged as an efficient representation for novel view synthesis, offering fast differentiable rendering and high visual fidelity, and has increasingly been extended to surface reconstruction. However, the relationship between depth information and reconstruction error remains insufficiently explored, limiting the principled design of geometric optimization strategies. To fill the above gap, we propose DepthGS, a depth-guided Gaussian splatting framework. We derive theoretical relations between depth discrepancies and reconstruction error under single-view and multi-view settings, and rigorously establish corresponding upper bounds on reconstruction …",
+      "authors": [
+        "Xiao Ren",
+        "Yu Liu",
+        "Ning An",
+        "Jian Cheng",
+        "Xin Qiao",
+        "You-Fu Li"
+      ],
+      "published": "2026-11-10T06:16:16Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13628v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13581v1",
+      "title": "Lightweight Deep Learning Framework for Astrocyte-Centric 3D Reconstruction across Normal and Stress-associated Ultrastructural States",
+      "abstract": "The morphology of astrocytes is closely associated with their ability to support and modulate neural circuit functions; however, its reconstruction from volume electron microscopy (vEM) data remains labor-intensive and computationally resource-intensive, placing substantial barriers on its broader adoption and scalability despite the high spatial resolution of vEM. We present AstroSeg-vEM, a lightweight, astrocyte-centric framework for morphology-preserving astrocyte segmentation, 3D reconstruction, and quantitative morphological analysis in vEM images. AstroSeg-vEM combines transformer-based 2D segmentation with dedicated post-processing methods and operates directly on high-resolution EM s…",
+      "authors": [
+        "Bowen Deng",
+        "Gwang-Jin Jeong",
+        "Seulgi Noh",
+        "Ji Young Mun",
+        "Na Young Kim"
+      ],
+      "published": "2026-11-10T04:54:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13581v1",
+      "categories": [
+        "cs.CV",
+        "q-bio.NC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13489v1",
+      "title": "Simultaneous Near-Optimal Region Identification in Continuous Simulation Optimization: Minimax Complexity and Adaptive Sampling",
+      "abstract": "Simulation optimization typically returns a single estimated optimal point. When decisions also depend on criteria evaluated independently of simulation, such as resource cost, the decision maker instead needs the set of designs whose expected performance lies within a tolerance of the optimum, often choosing the tolerance only after seeing the tradeoffs. We study how to identify these near-optimal regions on a continuous design space, simultaneously for all tolerances up to a prescribed maximum $T$, with region estimation error at most $η$. We show that region identification is not a by-product of optimization. Specifically, when $α>ν$, any procedure, even one given the optimal design in ad…",
+      "authors": [
+        "Yilin Zheng",
+        "Haowei Wang",
+        "Wenjia Wang",
+        "Szu Hui Ng"
+      ],
+      "published": "2026-11-10T03:03:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13489v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13296v1",
+      "title": "A Unified Interactive Framework for Real-Time Three-Dimensional Cellular Automata Simulation in XR",
+      "abstract": "Integrating three-dimensional cellular automata (3D CA) into extended reality (XR) requires coordinated simulation, volumetric data management, rendering, and interaction under variable hardware constraints. This paper presents a hybrid study combining a critical review of existing approaches with a unified architecture for real-time 3D CA in XR. The proposed five-layer architecture integrates voxel and rule management, parallel computation, interoperability middleware, visualization, and XR interaction. Its key principles include hardware-aware execution, asynchronous simulation-rendering, adaptive fidelity, and cross-engine interoperability. An analytical evaluation framework is defined to…",
+      "authors": [
+        "Ashkan Rezaei",
+        "Azam Bastanfard",
+        "Mohammad Erfan Safabakhsh"
+      ],
+      "published": "2026-11-09T22:03:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13296v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13280v1",
+      "title": "RetinexGS: Retinex-Inspired Gaussian Splatting for Low-Light RAW Reconstruction",
+      "abstract": "Standard 3D Gaussian Splatting (3DGS) pipelines struggle with severely underexposed images, producing unstable colors, floating artifacts, and incomplete reconstructions in dark regions. To better account for noise in these low-light observations, RAW images offer a natural basis for noise-aware reconstruction by preserving linear sensor measurements and providing access to noise metadata. We present RetinexGS, a RAW-domain 3DGS framework that combines Retinex-inspired appearance modeling with sensor-informed optimization for low-light novel-view synthesis. We factorize each Gaussian's color into a view-independent base color and a shared, position- and view-dependent modulation field, regul…",
+      "authors": [
+        "Yulang Fei",
+        "Huaiyuan Weng",
+        "Chul Min Yeum"
+      ],
+      "published": "2026-11-09T21:44:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13280v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -41449,6 +41804,177 @@
       "first_seen": "2026-11-10T15:28:56.592795+00:00"
     },
     {
+      "id": "2611.13995v1",
+      "title": "Lipschitz-Controlled Flow Matching for Robust Image Restoration",
+      "abstract": "Flow-matching models can produce high-quality image restorations, but their learned dynamics may amplify small input perturbations and make reconstructions unstable. We introduce LipsFlower to reduce this amplification. We derive stability bounds for Flow-from-$Y$, which initializes the ordinary differential equation from a noise-perturbed observation, as well as for observation-conditioned posterior sampling, which conditions the velocity field on the observation throughout integration. Based on this analysis, we develop LipHDiT, a Lipschitz-aware hourglass diffusion transformer that serves as the vector-field architecture of LipsFlower. LipHDiT incorporates stabilized approximate spectral …",
+      "authors": [
+        "Sedjro Salomon Hotegni",
+        "Konstantin Sonntag",
+        "Paul-Christian Bürkner",
+        "Sebastian Peitz"
+      ],
+      "published": "2026-11-10T12:40:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13995v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13808v1",
+      "title": "FastWild-GS: Minutes-Scale In-the-Wild Gaussian Splatting via Compact Per-Image Appearance Adaptation",
+      "abstract": "Internet photos of a scene differ in exposure, illumination and transient objects such as passers-by, so one set of Gaussian colours cannot explain all photos (the in-the-wild setting). Recent in-the-wild Gaussian Splatting methods mostly report hours of per-scene optimization. We present FastWild-GS, which describes each photo by a 128-dimensional Photo Appearance Token and a per-channel transform, a scale and an offset applied to the rendered image (six parameters); a small MLP predicts the colour of each Gaussian from this token and a per-Gaussian feature, replacing the spherical-harmonics colour. The same transform is applied to the renders that score Gaussians for densification and prun…",
+      "authors": [
+        "Donghun Ryu",
+        "Seokhyun Kim",
+        "Minhyeok Lee"
+      ],
+      "published": "2026-11-10T09:39:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13808v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13784v1",
+      "title": "Marrying Capacity and Precision for Efficient 2D Gaussian Image Representation",
+      "abstract": "2D Gaussian representations provide an explicit and efficient way to represent images, but their rate-distortion performance under limited budgets depends critically on how Gaussian capacity and parameter precision are allocated. Existing methods typically optimize these two resources separately, overlooking content-dependent capacity demands and heterogeneous quantization sensitivity. We present CP-GS, a capacity-precision coupled Gaussian splatting framework for budget-aware 2D Gaussian image representation that jointly optimizes capacity allocation and attribute precision under a shared rate constraint. CP-GS first constructs a content-adaptive Gaussian representation by dynamically reall…",
+      "authors": [
+        "Lin Dong",
+        "Qi Ming",
+        "Liuqian Wang",
+        "Wentao Chao",
+        "Yufei Gao",
+        "Chengming Liu"
+      ],
+      "published": "2026-11-10T09:21:35Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13784v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13742v1",
+      "title": "Plug-and-Play ADMM for Inverse Problems with Flow Matching Denoiser",
+      "abstract": "Plug-and-Play (PnP) methods with generative priors have achieved strong performance in inverse problems, with recent flow matching models enabling fast and scalable reconstruction. However, a key challenge in PnP methods is maintaining consistency between data fidelity updates and the learned generative prior, as data-consistency steps can move iterates away from the flow trajectory. We propose an ADMM-based PnP framework for flow matching priors that enforces stronger consistency between the measurement model and the prior through auxiliary variables and dual updates. In addition, we introduce a trajectory correction mechanism that restores consistency with the flow via a combination of det…",
+      "authors": [
+        "Dibyanshu Kumar",
+        "Magda Gregorova"
+      ],
+      "published": "2026-11-10T08:42:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13742v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13324v1",
+      "title": "Robust Flow Matching under Target Corruption and Label Noise",
+      "abstract": "Flow Matching (FM) is a strong framework for generative modeling due to its stable training and efficient sampling. However, FM assumes clean target data and labels, an assumption often violated in practice. We formulate FM training as a time-dependent regression problem over conditional vector fields and analyze how the two corruption types affect the objective: i) target corruption adds a time-dependent residual term that grows with time, ii) label noise causes updates to the wrong class-conditional vector field. Based on this analysis, we propose to improve FM robustness by mapping corruption-specific residual scores to sample weights. For target corruption, we propose the Temporal Residu…",
+      "authors": [
+        "Mert Can Kurucu",
+        "Erik Englesson",
+        "Hossein Azizpour"
+      ],
+      "published": "2026-11-09T22:47:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13324v1",
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.13311v1",
+      "title": "One Trajectory, Two Requirements: Accuracy and Local Stability in Euler Sampling for Flow Matching Policies",
+      "abstract": "Flow matching robot policies commonly use a fixed Euler step count selected from offline accuracy sweeps. At inference time, however, each policy input (visual observation, robot state, and language instruction) together with a source-noise draw defines a different ODE trajectory and sequence of local Jacobians. We ask whether a step count that accurately follows the nominal noise-to-action trajectory can still be too coarse for strongly contracting directions around it. An exact two-coordinate system and a controlled augmentation of six trained flow models show that trajectory accuracy and local Euler stability can impose different step requirements even when the original learned transport …",
+      "authors": [
+        "Mahindra Rautela"
+      ],
+      "published": "2026-11-09T22:24:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.13311v1",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -45156,6 +45682,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-10T15:28:56.592795+00:00"
+    },
+    {
+      "id": "2611.14092v1",
+      "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
+      "abstract": "We study how to generate diverse, physically executable robot demonstrations for dexterous vision-language-action (VLA) learning. Existing demonstration-generation methods typically rely on costly teleoperated examples. Meanwhile, human hand--object datasets provide a reusable source, but existing transfer methods mainly reproduce given interactions. Turning these interactions into VLA training data further requires coverage of different objects and manipulation locations, together with executable arm and finger actions, and visual observations. To achieve this, we present DexSeed, a framework for low-cost generation of dexterous robot data from human hand--object interactions. Our key idea …",
+      "authors": [
+        "Huaijin Pi",
+        "Zehong Shen",
+        "Yong Wang",
+        "Kechun Xu",
+        "Changpeng Wang",
+        "Dingkun Wei"
+      ],
+      "published": "2026-11-10T13:52:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.14092v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-11T14:59:36.570651+00:00"
     }
   ]
 }
