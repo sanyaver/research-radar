@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-12T15:52:50.021541+00:00",
-  "total": 1510,
-  "new_this_run": 0,
+  "last_updated": "2026-11-13T15:13:37.061790+00:00",
+  "total": 1534,
+  "new_this_run": 24,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -5026,6 +5026,39 @@
       "first_seen": "2026-11-06T14:53:16.623423+00:00"
     },
     {
+      "id": "2611.15435v1",
+      "title": "ThermalSplat: Generalizable Pose-Free Gaussian Splatting for Sparse-View Thermal 3D Reconstruction",
+      "abstract": "Thermal infrared imaging is vital for applications like search-and-rescue and autonomous navigation, yet trans- lating it into 3D scene representations remains a critical bottleneck. The low-texture nature and view-dependent emissivity of thermal images cause standard pose estima- tors to fail catastrophically, collapsing standard 3D Gaus- sian Splatting pipelines under sparse-view constraints. Fur- thermore, existing thermal reconstruction methods rely heavily on dense capture and computationally expensive per-scene optimization. Critically, many of these ap- proaches depend on aligned RGB-thermal datasets to ob- tain reliable camera poses and initial point clouds, ren- dering them unusable…",
+      "authors": [
+        "Prasanna S",
+        "Gopi Raju Matta",
+        "Divya Madhuri Vemunuri",
+        "Kaushik Mitra"
+      ],
+      "published": "2026-11-11T13:09:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15435v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
       "id": "2606.31101v1",
       "title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
       "abstract": "Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. Sim-to-real learning is attractive because it can replace expensive real robot demonstrations with scalable synthetic data, yet world-action models have not previously been shown to transfer from simulation to real robotic manipulation. We study whether a world-action model can be trained from synthetic priors and deployed zero-shot in the real world. To this end, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization and generate demonstrations using the AnyTask motion planning pipeline. We evaluat…",
@@ -7991,6 +8024,68 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.15565v1",
+      "title": "Generalized Inverse Kinematics via Conditional Flow",
+      "abstract": "Inverse kinematics (IK) is a foundational primitive in robotics, mapping the task-space objectives expressed by higher-level planners to robot configurations that realize them. Traditional IK methods generally treat each query as an isolated pose-to-configuration problem, but planners often need a distribution over valid realizations that accounts for future reachability and preferences such as collision avoidance and stability. We introduce GenGenIK, a generative modeling approach that supports mobile bases, multiple end-effectors and targets, scene awareness, and preferences over robot behavior within a common interface. Experiments show that GenGenIK outperforms existing methods in both s…",
+      "authors": [
+        "Kaitlyn Zhang",
+        "Tomás Lozano-Pérez",
+        "Leslie Pack Kaelbling"
+      ],
+      "published": "2026-11-11T14:48:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15565v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15524v1",
+      "title": "Reading the Table: Sim-to-Real Game State Detection for the Chef's Hat Card Game",
+      "abstract": "Tabletop games offer a compelling scenario to study the interaction between artificial and human agents, combining social interaction with game state tracking and physical manipulation. To assess the game state, a robot needs to precisely detect closely related game objects, such as different card designs, requiring dedicated training data that is costly to annotate in the real world. Instead, we develop a fully automated synthetic data collection pipeline, using re-projection of known 3D coordinates to generate labels automatically and domain randomization to bridge the reality gap. This approach is used to collect a dataset of 25413 samples to finetune an object detection and a segmentatio…",
+      "authors": [
+        "Connor Gäde",
+        "Matthias Kerzel",
+        "Hauke Bünning",
+        "Jan-Gerrit Habekost",
+        "Mariana Barros",
+        "Stefan Wermter"
+      ],
+      "published": "2026-11-11T14:14:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15524v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -12592,6 +12687,41 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.16517v1",
+      "title": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
+      "abstract": "We present UniSpark-9B, a unified multimodal model that investigates hybrid attention for visual understanding and generation. Built on a Mixture-of-Transformer-Experts backbone with approximately 9B parameters in each branch, UniSpark combines full attention for explicit token interactions with GatedDeltaNet linear attention for compact context propagation. Autoregressive text prediction and visual flow matching jointly support visual question answering, text-to-image generation, instruction-guided editing, and interleaved text-image prediction. In interleaved generation, noisy visual targets are isolated from subsequent predictions, while clean visual representations provide context for la…",
+      "authors": [
+        "Jiancheng Pan",
+        "Yuzheng Liu",
+        "Hengyuan Cao",
+        "Qiyuan Zhang",
+        "Yangyan Li",
+        "Biao Gong"
+      ],
+      "published": "2026-11-12T09:16:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16517v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -17445,6 +17575,123 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.16423v1",
+      "title": "VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation",
+      "abstract": "Vision-based dexterous in-hand manipulation requires knowing not only where an object is, but also how it moves. However, most robotic manipulation systems rely on off-the-shelf visual perception models whose outputs are limited to static object masks, geometry, or 6D poses, leaving downstream controllers to infer object dynamics implicitly from noisy visual observations. We present VOKE, a kinematics-aware perception framework that augments existing object and hand-object pose estimators to recover a complete object kinematic state comprising pose, linear and angular velocity, and linear and angular acceleration. VOKE contains two core perception modules and a downstream application study. …",
+      "authors": [
+        "Shengjia Zhu",
+        "Wenqiang Xu",
+        "Lin Shao"
+      ],
+      "published": "2026-11-12T07:33:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16423v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15789v1",
+      "title": "VibePrevisBench: Evaluating Agentic Coding for 4D Scene Generation in Blender",
+      "abstract": "Controllable real-world video generation models can condition on a rendered graybox proxy video, which fixes layout, motion and camera. Coding agents can build such videos by reconstructing a 4D scene in Blender, yet no benchmark checks both these videos and the long, multi-shot scenes behind them. We introduce VibePrevisBench, a benchmark for 4D scene reconstruction: an agent turns a brief into an executable 4D scene and renders its proxy video. Its 242 tasks span four input kinds, including scripts, photos, continuations, and reference videos. Each delivery is scored along two evaluation dimensions. Rule-based Scene Check re-runs the code and compares the exported 4D scene with hidden grou…",
+      "authors": [
+        "Yuzhe Chen",
+        "Muxi Diao",
+        "Lele Yang",
+        "Wenbin Xu",
+        "Xuyang Liu",
+        "Qile Su"
+      ],
+      "published": "2026-11-11T18:02:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15789v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15153v1",
+      "title": "MatrixSplat: Matrix-Parallel and Feature-Scalable 3D Gaussian Splatting Rendering on GPUs",
+      "abstract": "3D Gaussian Splatting (3DGS) has emerged as a mainstream representation for real-time novel view synthesis and 3D reconstruction. However, existing 3DGS rendering pipelines are poorly aligned with modern GPU architectures: depth-sorted alpha compositing introduces strong per-pixel sequential dependencies, limiting parallelism and resulting in scalar FMA-dominated execution that underutilizes high-throughput matrix units such as Tensor Cores. This mismatch becomes more severe for multimodal and semantically enriched 3DGS, where high-dimensional features must be accumulated from millions of Gaussians, leading to rapidly increasing computation and memory costs. We propose MatrixSplat, a matrix-…",
+      "authors": [
+        "Yangming Zhang",
+        "Siyi Wu",
+        "Jian Wang",
+        "Bingzhe Li",
+        "Wei Niu",
+        "Sheng Di"
+      ],
+      "published": "2026-11-11T07:49:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15153v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15143v1",
+      "title": "Multi-View 3D Reconstruction Using V-JEPA Features",
+      "abstract": "Predictive video encoders provide dense visual representations, but adapting them to 3D reconstruction requires accurate depth, camera poses, and cross-view geometry. We study supervised RGB-only multi-view reconstruction using an architecture that combines video-pretrained features, camera estimation, scene aggregation, epipolar transport, and residual pointmaps. Experiments compare global and spatial camera regression with joint relative objectives on CO3D, alongside an independently trained TUM RGB-D model. On 168 CO3D five-view windows, the spatial-camera configuration achieves 29.3% lower absolute trajectory error than the global-camera configuration, but performs worse than identity po…",
+      "authors": [
+        "Anwar Shamim",
+        "Jeffrin Sam"
+      ],
+      "published": "2026-11-11T07:33:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15143v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -31720,6 +31967,229 @@
       "first_seen": "2026-11-11T14:59:36.570651+00:00"
     },
     {
+      "id": "2611.16374v1",
+      "title": "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder",
+      "abstract": "Recent advances in robotic manipulation have enabled increasingly complex and dexterous behaviors, yet existing benchmarks still focus on simple pick-and-place tasks and lack a systematic framework for measuring progress in robot learning along the axis of task difficulty. We present ManiLadder, a large-scale and organized simulation benchmark for robotic manipulation. ManiLadder contains 112 carefully designed tasks stratified into 4 difficulty levels, with 8 categories in each level, spanning rigid-body and deformable-object manipulation, single-arm and dual-arm settings, and gripper and dexterous-hand end-effectors. To calibrate difficulty, we fix the data amount the same for every task a…",
+      "authors": [
+        "Chongkai Gao",
+        "Jieao Shi",
+        "Zhaoyu Mu",
+        "Yudi Lin",
+        "Xuanwei Liu",
+        "Wei Ken Ng"
+      ],
+      "published": "2026-11-12T06:42:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16374v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.16312v1",
+      "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
+      "abstract": "Robots handle much more than rigid objects: towels, cables, water, sand. The simulators used to train robots at scale are strongest on rigid bodies, and adding another material usually means a second engine and hand-written glue between the two. We present Alloy, an open-source physics engine for robot learning in which rigid robots, cloth, cables, liquids, granular material and soft bodies share one scene. Each object is described once; Alloy assigns it to a solver suited to its material, couples the solvers inside every control step, and runs the scene in many parallel worlds on one GPU, or on a CPU. Every world carries a health grade, to help tell a failure of the physics from a failure o…",
+      "authors": [
+        "Pranay Gupta",
+        "Deepanshu Rohilla"
+      ],
+      "published": "2026-11-12T05:14:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16312v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15802v1",
+      "title": "RUMI: A Robotiq-Matched Universal Manipulation Interface for Robot Learning with Augmented Reality and Haptic Feedback",
+      "abstract": "Many manipulation tasks require carefully controlled contact forces for successful execution, yet large-scale, force-aware datasets remain scarce. Handheld interfaces can help by transmitting interaction forces directly through the operator's arm, but most existing designs are tailored to simple linear grippers and do not match the nonlinear mechanics of widely used robotic grippers. We present RUMI, a handheld universal manipulation interface matched to the Robotiq 2F-85 with exchangeable fingertip sensors that preserves the target gripper geometry while enabling natural input before contact and force measurement after contact. By integrating the tracking system into a virtual reality heads…",
+      "authors": [
+        "Kevin Avdiu",
+        "Seongjin Bien",
+        "Yannik Blei",
+        "Philine Meister",
+        "Johannes Hechtl",
+        "Philipp Schmitt"
+      ],
+      "published": "2026-11-11T18:17:42Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15802v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15758v1",
+      "title": "Physics-based simulation unlocks scaling laws for generalizable MRI reconstruction",
+      "abstract": "Deep-learning-based magnetic resonance imaging (MRI) reconstruction holds great promise for accelerating acquisitions, yet its clinical translation remains bottlenecked by poor generalizability across unseen scanners, populations, anatomies, and protocols. Gathering sufficiently diverse clinical datasets to overcome this bottleneck is hindered by high acquisition costs, privacy restrictions, and institutional biases. Here, we introduce Scalable Inverse Model (SIM), a framework that systematically co-designs physics-simulated training data, model architecture, and learning paradigms around scalability--leveraging compute scaling to overcome historical data bottlenecks and achieve robust zero-…",
+      "authors": [
+        "Hong Shang",
+        "Zijian Zhan",
+        "Sen Jia",
+        "Xiang Fan",
+        "Jintao Meng",
+        "Yang Zhou"
+      ],
+      "published": "2026-11-11T17:36:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15758v1",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15743v1",
+      "title": "Robot-Induced Bias in Movement Smoothness Metrics for Rehabilitation: Quantification and Correction in Simulation",
+      "abstract": "Robot mechanics can bias kinematic measures of recovery and limit comparisons across rehabilitation devices. We developed a closed-loop human-robot simulation calibrated to published healthy and stroke group kinematics. Paired runs held motor-control parameters and movement plans fixed to quantify bias in seven metrics relative to a low-impedance reference, normalized using external repeatability benchmarks. Within a subset informed by published device specifications, median log dimensionless jerk (LDLJ) bias was 0.93 and 1.79 benchmark units for stroke and healthy profiles, respectively. Sobol analysis identified Coulomb friction and apparent mass as leading contributors; LDLJ bias persiste…",
+      "authors": [
+        "David Regev",
+        "Alex Scherbakov",
+        "Eran Beeri Bamani"
+      ],
+      "published": "2026-11-11T17:24:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15743v1",
+      "categories": [
+        "cs.RO",
+        "q-bio.QM"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15658v1",
+      "title": "Embedded Sim-to-Real Visual Servoing: Learned Reaching and Force-Guided Placement",
+      "abstract": "Embedded perception-to-control systems must combine visual targeting with reliable contact handling under tight computational constraints. We present a shared architecture on an NVIDIA Jetson AGX Orin controlling a Franka Research 3 through Cartesian impedance control. RealSense D435i observations, YOLO11-seg segmentation, depth back-projection, and hand--eye calibration provide metric robot-frame targets. We compare two strategies: compact proximal policy optimization (PPO) policies transferred from simulation for object- and hole-region reaching, and force-guided Cartesian placement using approximately 2 N normal contact and spiral search. The PPO policies achieved 87.2% and 83.1% success …",
+      "authors": [
+        "Dezhi Sun",
+        "Duy Khang Banh",
+        "Kenan Niu"
+      ],
+      "published": "2026-11-11T16:07:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15658v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15443v1",
+      "title": "SPARC: RoboCup Standard Platform for Autonomous Rescue Competition with Initial Datasets, Software, and Simulation Environments",
+      "abstract": "The RoboCup Standard Platform for Autonomous Rescue Competition (SPARC) is a new competition under development of the RoboCup Rescue Robot League that uses the Unitree A2-W as a common robot platform. SPARC aims to make research on artificial intelligence for autonomous rescue robots accessible to a broader research community, including groups without expertise in developing and maintaining custom robot hardware. By providing a capable standard platform and established benchmark environments, researchers can focus on autonomous navigation, perception, manipulation, and embodied AI for challenging disaster-response scenarios. This paper introduces the SPARC competition, its benchmark environm…",
+      "authors": [
+        "Yuezhong Wang",
+        "Bichi Zhang",
+        "Zhongli Yin",
+        "Pingcong Li",
+        "Raimund Edlinger",
+        "Sören Schwertfeger"
+      ],
+      "published": "2026-11-11T13:15:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15443v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15112v1",
+      "title": "Elastra: A Simulation Framework for Elastic Bodies",
+      "abstract": "When robots interact with elastic surfaces such as mattresses and trampolines, changes in loading cause the surfaces to deform and rebound, altering subsequent contact locations and forces. We present Elastra, a simulation framework for modeling this interaction and supporting the training and evaluation of robot control policies. Elastra represents each surface using elements that move only vertically, with elastic connections and damping to model deformation and recovery. Contact forces drive surface motion, and the updated surface geometry is used to compute subsequent contact forces. We systematically validate our simulations against an independent implementation and a real mattress load…",
+      "authors": [
+        "Youran Sun",
+        "Chugang Yi",
+        "Xingyu Ren",
+        "Haizhao Yang"
+      ],
+      "published": "2026-11-11T06:42:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15112v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -41975,6 +42445,187 @@
       "first_seen": "2026-11-11T14:59:36.570651+00:00"
     },
     {
+      "id": "2611.16677v1",
+      "title": "Manifold Attracting Flow Matching: Physics-Constrained Sampling via Continuous Geometric Dynamics",
+      "abstract": "Generating scientific data under previously unseen equality constraints requires satisfying the prescribed constraints without destroying the physical structure learned from data. Existing inference-time approaches often enforce physical constraints by repeatedly correcting predicted endpoints, but such discrete corrections can distort learned generative structure and introduce unstable feedback. In this work, we propose Manifold Attracting Flow Matching (MAFM), which continuously evolves a persistent anchor through an ODE whose dynamics drive it analytically toward the constraint manifold. Specifically, its geometric correction preserves model-guided tangent motion while prescribing the nor…",
+      "authors": [
+        "Guanyu Chen",
+        "Jinchen Wang",
+        "Shengze Xu",
+        "Xingyu Ren",
+        "Tieyong Zeng",
+        "Antonios Armaou"
+      ],
+      "published": "2026-11-12T11:53:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16677v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.16259v1",
+      "title": "Reconstruct What You Can: Distractor-free 4D Gaussian Splatting",
+      "abstract": "Dynamic reconstruction from casual video must preserve valid subject motion while suppressing transient occluders, shadows, and volumetric effects. Existing methods either suppress valid motion through static-scene assumptions or model all observations jointly, producing ghosting and unstable geometry. We introduce ReCan-GS, a 4D Gaussian Splatting framework that separates coherent scene content from inconsistent observations. It derives a Jacobian-based deformation-sensitivity score from the learned deformation field, using it as an empirical proxy for reconstruction ambiguity. The score guides separation into dynamic Core Gaussians and per-view Distractor Gaussians, or post-hoc pruning of …",
+      "authors": [
+        "Joel Julin",
+        "Liuyue Xie",
+        "Ananya Bal",
+        "Mose Sakashita",
+        "Koichiro Niinuma",
+        "Laszlo A. Jeni"
+      ],
+      "published": "2026-11-12T03:59:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16259v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.16184v1",
+      "title": "Flow-CAD: Flow Matching for Contextual Anomaly Detection and Explanation in Tabular Data",
+      "abstract": "Contextual anomaly detection in tabular data aims to identify objects whose behavior is unexpected under their contextual conditions. In data-engineering pipelines, this task screens table rows whose measurements violate context-dependent integrity relationships. Most existing approaches rely on either shallow conditional models with limited distributional expressiveness or localized estimators that require per-context modeling, making it difficult to capture complex conditional relationships and scale to high-dimensional settings. We propose Flow-CAD, a new framework for contextual anomaly detection based on Flow Matching. Flow-CAD learns a single global and amortized conditional generative…",
+      "authors": [
+        "Zhong Li",
+        "Qi Huang",
+        "Yuhang Wang",
+        "Yang Cao",
+        "Thomas Bäck",
+        "Niki van Stein"
+      ],
+      "published": "2026-11-12T02:18:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16184v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.16012v1",
+      "title": "Topology-Aware 4D Gaussian Splatting for Egocentric Videos",
+      "abstract": "Reconstructing dynamic scenes and objects from monocular egocentric video is crucial for embodied AI, yet existing 4D Gaussian Splatting (4DGS) approaches struggle with everyday interactions involving topological changes, such as cutting, assembly, opening, or closing. Since 4DGS methods rely on deforming a fixed representation, events that split, merge, or reveal surfaces cause severe visual artifacts. To address this challenge, we introduce TopoEgo, the first benchmark dedicated to topological changes in egocentric video (covering fission, fusion, open, and close), alongside Topo-4DGS, a topology-aware reconstruction method. Topo4DGS jointly models part-level motion and time-varying surfac…",
+      "authors": [
+        "Leonardo Vanni",
+        "Stefano Gasperini",
+        "Federico Tombari",
+        "Chiara Plizzari"
+      ],
+      "published": "2026-11-11T21:13:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16012v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15488v1",
+      "title": "FloCOS: Predicting Compact Forward Occupancy Sets of Surrounding Vehicles via Conditional Flow Matching",
+      "abstract": "Existing methods for predicting surrounding vehicles' forward occupancy may under-approximate the ground-truth occupancy, exposing the ego vehicle to collision risk, or produce overly conservative regions that unnecessarily restrict feasible space and cause planning failures. To address these issues, we propose FloCOS, a conditional flow-matching framework that predicts compact forward occupancy sets with high occupancy coverage. FloCOS represents the forward occupancy set as a time-varying union of half-space convex polygons parameterized by temporal basis coefficients. Conditional flow matching captures the conditional distribution of these coefficients to govern the temporal evolution of …",
+      "authors": [
+        "Chuansheng Dong",
+        "Yinxiao Zhan",
+        "Zongdian Li",
+        "Peng Hou",
+        "Jin Wang",
+        "Jiayu Fan"
+      ],
+      "published": "2026-11-11T13:50:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15488v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15150v1",
+      "title": "Knowledge Transfer for Conditional Flow Matching: Frozen Estimation and Adaptation",
+      "abstract": "Conditional generative modeling with limited target data can benefit from representations learned in a related source population. We develop a transfer learning framework for conditional flow matching that accommodates distinct source and target response distributions and dimensions. Two procedures exploit a representation learned from source data: TFM-Freeze estimates a target velocity head with the representation fixed, whereas TFM-Adapt jointly learns the head and a representation adaptation under a functional anchoring penalty. For explicit neural network classes, we establish bounds on conditional squared Wasserstein risk that account for source estimation, target fitting, representatio…",
+      "authors": [
+        "Yian Huang",
+        "Jian Huang"
+      ],
+      "published": "2026-11-11T07:43:31Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15150v1",
+      "categories": [
+        "cs.LG",
+        "stat.ME"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -45711,6 +46362,70 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-11T14:59:36.570651+00:00"
+    },
+    {
+      "id": "2611.15381v1",
+      "title": "Low-Cost Mobile Bimanual Manipulation for Long-Horizon Toilet Cleaning",
+      "abstract": "Vision-Language-Action (VLA) models have shown promising capabilities for robot manipulation, but their performance on accessible mobile bimanual platforms remains underexplored. We present a low-cost and reproducible mobile bimanual platform integrating two LeRobot SO-101 manipulators with a TurtleBot 4 and a LeRobot-ROS 2 software stack. Using long-horizon toilet cleaning as a case study, we collect 250 real-world demonstrations and evaluate $π_0$, $π_{0.5}$, SmolVLA, and GR00T under the same embodiment and task conditions. We further evaluate variants using SARM-derived task-progress signals and short-term MEM observation history. Among the evaluated models, $π_0$ performs best, achieving…",
+      "authors": [
+        "Sven Schreiber",
+        "Bernard Burdiek",
+        "Lasse Huber-Saffer",
+        "Yung-Hui Li",
+        "Donglin Chen",
+        "Shang-Ching Liu"
+      ],
+      "published": "2026-11-11T11:59:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15381v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.15117v1",
+      "title": "PolyMorphWBC: Whole-Body Control from End-Effector Trajectories for Quadrupedal Mobile Manipulation across Arm Morphologies with Extended Reach",
+      "abstract": "Quadrupedal mobile manipulators can extend their manipulation workspace by coordinating the mounted arm with the mobile base. At the task level, short-horizon end-effector (EE) trajectories provide an interface for specifying the desired manipulation motion without prescribing how it should be realized by the arm and base. However, executing such trajectories remains challenging because the controller must determine when and how the base should move, and this decision depends on the mounted-arm morphology. We therefore present PolyMorphWBC, a hierarchical controller that takes an EE trajectory as the sole task-level motion command and generates coordinated arm--base motions across four famil…",
+      "authors": [
+        "Heng Li",
+        "Yang Li",
+        "Yifan Duan",
+        "Ren Fang",
+        "Matao Duan",
+        "Wenhao Yu"
+      ],
+      "published": "2026-11-11T06:51:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.15117v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-13T15:13:37.061790+00:00"
     }
   ]
 }
