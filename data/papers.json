@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-15T14:37:19.020892+00:00",
-  "total": 1534,
-  "new_this_run": 0,
+  "last_updated": "2026-11-16T16:53:00.938683+00:00",
+  "total": 1547,
+  "new_this_run": 13,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -5057,6 +5057,40 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.18099v1",
+      "title": "EcoVGGT: Pinned-Key Inference for Efficient and Streamable Feed-Forward 3D Reconstruction from Long Videos",
+      "abstract": "Feed-forward multi-view transformers such as VGGT recover the cameras and geometry of a video in one pass, but the cost of their cross-frame attention grows quadratically with the frame count, and their accuracy drops on long videos. Most remedies approximate attention over all frames within a budget or select a few keys by their content. We hypothesize that the keys of a long video can be chosen without looking at its content, and our experiments on VGGT and $π^3$ support it: a few dozen evenly spread frames can serve as the keys of every frame. We present EcoVGGT, a training-free inference framework whose keys form a Pinned Key Set of 31 such frames. A pin pass stores their tokens in a Sce…",
+      "authors": [
+        "Hongsen Cao",
+        "Shanxin Yuan",
+        "Mona Jaber",
+        "Ahmed Sayed"
+      ],
+      "published": "2026-11-13T12:26:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.18099v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
     },
     {
       "id": "2606.31101v1",
@@ -12724,6 +12758,65 @@
       "first_seen": "2026-11-13T15:13:37.061790+00:00"
     },
     {
+      "id": "2611.18562v1",
+      "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+      "abstract": "Robot-use agents (RUAs) have emerged as a promising approach to general-purpose robot control. However, strong performance has so far been achieved only by frontier proprietary models such as GPT-6 Astra and Claude Fable 5.2, whereas open-weight models remain substantially less capable. We show that an open-weight 27B reasoning model can be trained to use real robots natively through reinforcement learning, entirely in simulation and without demonstrations. Like a computer-use agent (CUA), the model observes the environment, reasons in a chain of thought, and generates the next end-effector pose, without any harness. We build a Post-training Engine for Agentic Robotics (PEAR) and use it to t…",
+      "authors": [
+        "Jiaming Tang",
+        "Zhuoyang Zhang",
+        "Junxian Guo",
+        "Fangzhou Zhao",
+        "Yilong Zhao",
+        "Zekai Li"
+      ],
+      "published": "2026-11-13T18:59:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.18562v1",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.17619v1",
+      "title": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+      "abstract": "Human demonstrations are becoming the main source of data for dexterous manipulation, and real-to-sim-to-real pipelines multiply each demonstration in simulation. These pipelines rebuild the interaction from vision, which recovers how the hand moves. Which fingers touch, when, and how hard remain unobserved, because a hand pose shows where each finger stops on the surface rather than how far it is driven to close. This gap is a force gap: on held-out recordings, a hand policy that imitates the observed pose grips with 0.31x the recorded force, and a policy trained on physics replays of vision-tracked poses grips with 1.55x. TouchTwin closes the gap with measured human touch. Each selected To…",
+      "authors": [
+        "Huiwen Han",
+        "Nuo Chen",
+        "Ziyao Zeng",
+        "Dayou Li",
+        "Hao Wang",
+        "Amir Hossein Rahmati"
+      ],
+      "published": "2026-11-13T00:42:29Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.17619v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -17692,6 +17785,62 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.17821v1",
+      "title": "SceneAgent: A Multi-Agent Framework for Portable Game Scene Generation",
+      "abstract": "Moving a scene generator to a new game engine requires more than exporting its final output: planning, construction tools, and stored experience may also depend on the original backend. We present SceneAgent, a multi-agent framework for reusing the construction process and its experience across backends. A canonical SceneContext maintains the evolving world, while backend adapters isolate coordinate conventions, asset bindings, and export. Structured handoffs let fresh Builder sessions query this persistent state without inheriting the full construction transcript. Across generations, human-approved traces are distilled into asset-ID-free Layout skills and semantic Content skills that can be…",
+      "authors": [
+        "Xingyi Li",
+        "Jiahao Yang",
+        "Yiqin Zhu",
+        "Jingwen Ye",
+        "Yang Sun",
+        "Weidong Zhang"
+      ],
+      "published": "2026-11-13T06:57:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.17821v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.16423v2",
+      "title": "VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation",
+      "abstract": "Vision-based dexterous in-hand manipulation requires knowing not only where an object is, but also how it moves. However, most robotic manipulation systems rely on off-the-shelf visual perception models whose outputs are limited to static object masks, geometry, or 6D poses, leaving downstream controllers to infer object dynamics implicitly from noisy visual observations. We present VOKE, a kinematics-aware perception framework that augments existing object and hand-object pose estimators to recover a complete object kinematic state comprising pose, linear and angular velocity, and linear and angular acceleration. VOKE contains two core perception modules and a downstream application study. …",
+      "authors": [
+        "Shengjia Zhu",
+        "Wenqiang Xu",
+        "Lin Shao"
+      ],
+      "published": "2026-11-12T07:33:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.16423v2",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -32190,6 +32339,185 @@
       "first_seen": "2026-11-13T15:13:37.061790+00:00"
     },
     {
+      "id": "2611.18477v1",
+      "title": "Evaluating Feedback-Driven Black-Box Processes via Stochastic Modeling and Simulation",
+      "abstract": "We study feedback-driven black-box processes across software engineering and machine learning. These processes are inherently sequential: policies generate inputs, observe outputs/feedback from systems, and use the feedback to guide the design of subsequent inputs. While many policies are developed under structural assumptions on the underlying systems, many real-world systems operate without such knowledge, necessitating black-box policies that lack a unified evaluation framework. We introduce a stochastic framework that models and evaluates such policies using Markov chains and simulation, thereby connecting empirical practice with theory. We instantiate the framework in mutation-based fuz…",
+      "authors": [
+        "Mengfan Xu",
+        "Zirui Liu",
+        "Juan Zhai",
+        "Shiqing Ma",
+        "Barry Nelson"
+      ],
+      "published": "2026-11-13T17:49:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.18477v1",
+      "categories": [
+        "cs.SE",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.18409v1",
+      "title": "Fuse-PINN: Combining Finite Element Methods and Physics-Informed Neural Networks to enable massively parallel simulations of non-linear PDEs",
+      "abstract": "Research in the domain of Physics-Informed Neural Networks applied to PDE modelling has advanced significantly in recent years, providing a wide ecosystem of novel methods. However, one frequent limitation is the inability of PINNs to scale out on High-Performance Computing architectures to address more ambitious challenges, particularly non-linear physics models with turbulent dynamics in large spatial domains. Typical studies restrain demonstrations to toy models with simple physics equations, few variables, and rarely any complex non-linear dynamics evolved over long timescales. Part of the AI community has even adopted the idea that \"PINNs don't scale\". This work proves otherwise. We pre…",
+      "authors": [
+        "Stanislas Pamela",
+        "Nicolas Pailliez",
+        "Emmanuel Franck",
+        "Victor Michel-Dansac",
+        "Laurent Navoret",
+        "Vignesh Gopakumar"
+      ],
+      "published": "2026-11-13T16:55:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.18409v1",
+      "categories": [
+        "cs.LG",
+        "physics.plasm-ph"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.18008v1",
+      "title": "Sample-Efficient Control of Magnetoconvective Flows via Differentiable Simulation",
+      "abstract": "Magnetohydrodynamic (MHD) fluid flows are central to demanding engineering applications, most prominently fusion blanket cooling, where flow control is a promising tool to optimize key properties such as heat transfer. While active flow control (AFC) has recently advanced through machine learning, its application to MHD flows remains largely unexplored. In this work, we present $φ$-PICT, a novel differentiable GPU-accelerated MHD solver targeted at AFC. We validate $φ$-PICT against MHD benchmarks and demonstrate its high computational efficiency. Integrated into FluidGym, $φ$-PICT enables sample-efficient gradient-based algorithms to improve heat transfer by $>25$% and allows optimizers to a…",
+      "authors": [
+        "Jannis Becktepe",
+        "Dmitry Krasnov",
+        "Nils Thuerey",
+        "Jörg Schumacher",
+        "Sebastian Peitz"
+      ],
+      "published": "2026-11-13T10:35:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.18008v1",
+      "categories": [
+        "cs.LG",
+        "physics.flu-dyn"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.17752v1",
+      "title": "Stage-wise Lineage-aware Dropout for Sparse-View 3D Gaussian Splatting",
+      "abstract": "Sparse-view 3D Gaussian Splatting (3DGS) is prone to overfitting because only a limited number of images are available to constrain scene geometry. Dropout is one regularization strategy for alleviating this problem. We introduce the concept of a lineage family to describe a set of Gaussian primitives derived from the same founder through cloning or splitting operations. The founder Gaussians refer to all Gaussian primitives generated during initialization. Descendants within the same family often jointly contribute to the refinement of adjacent local regions. However, dropping individual Gaussians can be less effective due to the compensation effect from neighboring Gaussians for the droppe…",
+      "authors": [
+        "Yan Xing",
+        "Zhi Chen",
+        "Fanglue Zhang",
+        "Junhong Zhao",
+        "Bing Xue",
+        "Mengjie Zhang"
+      ],
+      "published": "2026-11-13T05:10:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.17752v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.17660v1",
+      "title": "EViDS: An Environment--Vehicle Dynamics Integrated Simulation Platform for Intelligent Chassis Development",
+      "abstract": "The development of intelligent chassis increasingly requires the integration of environmental and perception information with high-fidelity vehicle dynamics to support environment-aware intelligent chassis control. However, existing autonomous-driving simulators and professional vehicle-dynamics tools are generally developed for different purposes, making it difficult to integrate environmental information, vehicle dynamics, and chassis algorithms. This paper proposes EViDS, an Environment-Vehicle Dynamics Integrated Simulation Platform for Intelligent Chassis Development. EViDS integrates CARLA-based environment and sensor simulation with CarSim-based high-fidelity vehicle dynamics. Referen…",
+      "authors": [
+        "Lu Xiong",
+        "Yiming Zhou",
+        "Xuge Hu",
+        "Yi Zhang",
+        "Haoran Lv",
+        "Chen Tang"
+      ],
+      "published": "2026-11-13T02:12:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.17660v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.17608v1",
+      "title": "Neural Simulation-Based Inference for Computational Cognitive Models: A Tutorial",
+      "abstract": "Computational cognitive modeling is an increasingly essential methodology to elucidate the mechanisms underlying human and animal cognition. By fitting models to empirical data, researchers can perform parameter estimation, model comparison, and model-based neural analyses to assess competing theories, quantify individual differences, and investigate neural representations. Typically, fitting these models relies on likelihood-dependent methods (e.g., Maximum likelihood estimation or hierarchical Bayesian methods). However, for many reasonable cognitive models, computing the likelihood is computationally intractable, in which case these methods become inadequate. This substantially limits the…",
+      "authors": [
+        "Ti-Fen Pan",
+        "Yi Cheng",
+        "Anne GE Collins"
+      ],
+      "published": "2026-11-13T00:09:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.17608v1",
+      "categories": [
+        "cs.LG",
+        "q-bio.NC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -42624,6 +42952,62 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-13T15:13:37.061790+00:00"
+    },
+    {
+      "id": "2611.17919v1",
+      "title": "Vessel2Brain: Edge-Aware Multi-Scale Flow Matching for 3D Brain Image Generation from Vessel Masks",
+      "abstract": "Generating realistic 3D brain MRI volumes from sparse anatomical priors is a highly ill-posed yet clinically valuable problem, with important applications in data augmentation, simulation, and downstream neuroimaging analysis. In this work, we investigate the challenging task of synthesising full 3D brain MRI volumes conditioned solely on vascular label maps. While vascular structures provide strong anatomical and topological cues, they occupy only a small fraction of the brain volume and offer no direct information about surrounding tissue appearance. To address this challenge, we propose Vessel2Brain, an edge-aware multi-scale conditional flow matching framework that explicitly incorporate…",
+      "authors": [
+        "Zhi Chen",
+        "Tianyang Zhang",
+        "Theodoros N. Arvanitis",
+        "Le Zhang"
+      ],
+      "published": "2026-11-13T08:58:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.17919v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.17438v1",
+      "title": "Real-Time Diffusion Relighting as a Neural Sensor: Closing the Low-Light Domain Gap for Robotic Perception",
+      "abstract": "Low-light conditions severely degrade robotic perception: object detectors trained on daylight imagery are prone to failure under dark and adverse weather conditions that fall outside of their training distribution. Furthermore, from an efficiency standpoint, existing Low-Light Image Enhancement (LLIE) methods are designed for offline processing and are therefore impractical to integrate into live control loops. To address these issues, we propose to embed a Generative Neural Sensor within the control loop that treats illumination as a generative prior rather than a signal processing problem, enabling task-relevant semantic recovery. We further propose an Real-Time Perceptual Architecture th…",
+      "authors": [
+        "Shengjie Xu",
+        "Alexander Gao",
+        "Anshul Rai",
+        "Dae Yeol Lee",
+        "Guan-Ming Su",
+        "Ming C. Lin"
+      ],
+      "published": "2026-11-12T19:10:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.17438v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-16T16:53:00.938683+00:00"
     },
     {
       "id": "2606.31680v1",
