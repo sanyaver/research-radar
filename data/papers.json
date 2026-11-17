@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-16T16:53:00.938683+00:00",
-  "total": 1547,
-  "new_this_run": 13,
+  "last_updated": "2026-11-17T16:46:56.643690+00:00",
+  "total": 1568,
+  "new_this_run": 21,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -3231,6 +3231,40 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-02T16:55:54.387465+00:00"
+    },
+    {
+      "id": "2611.21253v1",
+      "title": "QuantileGS: Quantile-Based Conformal Bounds on RGB Rendering Errors for Novel View Synthesis with 3D Gaussian Splatting",
+      "abstract": "Uncertainty quantification for novel view synthesis with 3D Gaussian Splatting (3DGS) assesses rendering reliability at unseen viewpoints. This reliability depends on the discrepancy between rendered and true colors, which cannot be measured without ground-truth images. We therefore quantify uncertainty in this unknown discrepancy through upper bounds on per-pixel RGB mean absolute error. However, learned bounds may underestimate these errors and overstate rendering reliability, motivating calibration to a prescribed coverage level. In this paper, we propose QuantileGS, a post-hoc framework that combines learned rendering-error quantiles with scale-normalized conformal calibration to produce…",
+      "authors": [
+        "Haiyang Xu",
+        "Ziye Zhang",
+        "Bin Pan",
+        "Xia Xu",
+        "Zhenwei Shi"
+      ],
+      "published": "2026-11-16T15:28:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.21253v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 17,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
     },
     {
       "id": "2607.05252v1",
@@ -8122,6 +8156,37 @@
       "first_seen": "2026-11-13T15:13:37.061790+00:00"
     },
     {
+      "id": "2611.20196v1",
+      "title": "DoF-Query Transformer for Adaptive Fusion of Egocentric Vision and Forearm HD-sEMG in Continuous Hand Kinematics",
+      "abstract": "Continuous and accurate estimation of human hand kinematics is important not only for intuitive human-machine interaction, but also for capturing fine-grained human manipulation demonstrations that can provide action supervision for embodied-intelligence datasets and dexterous robot learning. However, individual sensing modalities may be insufficient for reliable estimation under varying operating conditions. We present a finger-unencumbered multimodal framework for continuous regression of 20 hand joint angles from egocentric RGB images and 128-channel forearm high-density surface electromyography (HD-sEMG). The framework combines a Vision Transformer-based visual encoder, a Transformer-bas…",
+      "authors": [
+        "Jiahang Liu",
+        "Wenbo Zhang",
+        "Junsong Wang",
+        "Zhenzhi Ying",
+        "Siqi Hou",
+        "Naohiko Sugita"
+      ],
+      "published": "2026-11-15T18:48:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20196v1",
+      "categories": [
+        "cs.CV",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -12815,6 +12880,88 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.21365v1",
+      "title": "Exploring the link between predictive uncertainty and the sim-to-real gap in deep learning models utilizing synthetic data",
+      "abstract": "Today, state-of-the-art methods for quality control (QC) are based on Machine Vision, combining deep learning (DL) models with camera-based inspection. Yet, the integration of such solutions in industrial applications is often impeded by data sparsity and trust in model reliability. While synthetic data offers a promising approach to generate the necessary data with perfect annotations, it poses risks related to performance degradation due to the possible occurrence of the sim-to-real gap. This study conducts experiments using the ensemble method to estimate the predictive uncertainty of DL models trained on synthetic data. The results show that predictive uncertainty increases under the sim…",
+      "authors": [
+        "Alexander Moriz",
+        "Lukas Krebs",
+        "Amon Göppert",
+        "Robert H. Schmitt"
+      ],
+      "published": "2026-11-16T16:34:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.21365v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20792v1",
+      "title": "TRR: A Thermal Interaction Engine for Robot Simulation and RGBT Data Generation",
+      "abstract": "A robot's actions change the thermal conditions of its next interaction: heat retained after release, carried with objects or stored beneath the surface can change a later contact's outcome despite similar current temperatures. Training trajectories must capture how these effects connect earlier actions to later observations and task outcomes. We present TRR, a \\emph{Thermal Robot Renderer} that attaches spatial and depth-resolved thermal state to both contact partners, updates local heat exchange through contact, transport and separation, and generates synchronized RGB--thermal (RGBT) observations and event-local task checks on one execution clock. Controlled interventions show why retained…",
+      "authors": [
+        "Biwen Yang",
+        "Zhe Cao",
+        "Jin Zhang",
+        "Haoyang Sun",
+        "Zonglu Hu",
+        "Jintao Zhao"
+      ],
+      "published": "2026-11-16T09:40:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20792v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20202v1",
+      "title": "DAPPT: Domain-Aware Policies from Procedural Trajectories for Sim-to-Real Dexterous Tool Use",
+      "abstract": "Sim-to-real RL has achieved impressive results in dexterous manipulation but remains limited to tasks with accurate rigid-body simulation. However, these methods cannot be applied to skills that involve deformable and particles, with which the simulation speed will become too slow for large-scale RL learning. We present DAPPT, a sim-to-real framework for end-to-end dexterous tool-use manipulation skills, e.g., sand scooping, play-dough rod-rolling, without simulating non-rigid materials. Our method learns a domain-aware RL policy by tracking procedural trajectories parameterized by domain parameters, and distills it into an end-to-end domain-aware sensorimotor policy. Furthermore, explicit d…",
+      "authors": [
+        "Beining Han",
+        "Jia Deng"
+      ],
+      "published": "2026-11-15T18:58:02Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20202v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -17841,6 +17988,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.20978v1",
+      "title": "Inverse Kinematics in Endoscopic Scenarios using MoveIt",
+      "abstract": "Inverse kinematics are critical in many robotic applications, yet standard MoveIt-based solvers struggle in confined scenarios. This paper provides a benchmark of the available solvers and compares multiple practical modifications for improving the performance of the solvers. Splitting the IK problem into two parts results in the best performance, leading to a 100% success rate under 100 ms in an endoscopic tank scenario.",
+      "authors": [
+        "Marc Bestmann",
+        "Timon Engelke",
+        "Rebecca Rodeck",
+        "Gerko Wende"
+      ],
+      "published": "2026-11-16T12:14:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20978v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -32518,6 +32692,203 @@
       "first_seen": "2026-11-16T16:53:00.938683+00:00"
     },
     {
+      "id": "2611.21286v1",
+      "title": "Compressed Simulation-Based Inference: Neural Posterior Estimation for Massive Data via Low-Dimensional Sketches",
+      "abstract": "Neural posterior estimation (NPE) is a popular Bayesian simulation-based inference (SBI) approach that uses neural networks trained on simulated data--parameter pairs to approximate the posterior given a user-chosen prior. For high-dimensional observations, NPE methods typically approximate the conditional density of the parameter given a user-chosen or learned summary statistic, rather than the entire dataset, due to the curse of dimensionality. However, both approaches face challenges: hand-crafting good summaries for complex models requires considerable effort from scientists, while learning them from massive datasets can be prohibitively computationally expensive. To address these challe…",
+      "authors": [
+        "Michael Wieck-Sosa",
+        "Cosma Rohilla Shalizi"
+      ],
+      "published": "2026-11-16T15:54:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.21286v1",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.CO",
+        "stat.ME"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.21115v1",
+      "title": "ReuseMem: One Memory, Multiple Goals in Robot Manipulation",
+      "abstract": "Robots that work alongside people should be able to use what they have seen when new requests arise. The same experience may later support identifying an object or returning it to its original location, although these uses were unknown during observation. ReuseMem learns to use one visual memory for multiple later manipulation goals. It records visual features independently of future goals, retrieves complementary evidence for each request, and combines it with the current scene through a lightweight action interface. Retrieval is supervised by how well candidate evidence supports expert-action prediction across different current states, linking memory selection to its use in manipulation. R…",
+      "authors": [
+        "Yoonseok Kang",
+        "Dayeon Jung",
+        "Seunghoon Jeon",
+        "Wonjib Kim",
+        "Dongchul Park"
+      ],
+      "published": "2026-11-16T13:59:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.21115v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20493v1",
+      "title": "A Temporal Convolutional Network with Multi-Head Attention Model: A Surrogate for Parallel DEVS Semiconductor Fab Simulation",
+      "abstract": "Semiconductor factories process many kinds of wafers organized into lots of various sizes and configurations. Different kinds of machines, each with its own operations, process wafers for hours to days, and the wafers undergo many incremental fabrication steps (with re-entry) and flows spanning days to weeks across connected machines. Fast and accurate predictions of throughput ($TH$) and turnaround time ($TA$) dynamics for individual machines and their combinations are essential for factory operations. To use machine learning methods for this purpose, this paper presents a Temporal Convolutional Network with Multi-head Attention (TCNA) architecture. It uses simulated datasets from a benchma…",
+      "authors": [
+        "Vamsi Krishna Pendyala",
+        "Hessam S. Sarjoughian",
+        "Edward J. Yellig",
+        "Bharadhwaj Balasubramaniam"
+      ],
+      "published": "2026-11-16T04:04:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20493v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20321v1",
+      "title": "Unreasonable Confidence from Simulator Misspecification: Directional Robustness on the SPEED+ Sim-to-Real Benchmark",
+      "abstract": "Vision-based navigation systems for orbit must be trained almost entirely on synthetic imagery, because real labelled images of a given spacecraft in flight rarely exist. Benchmarks like SPEED+ are built for that situation: the training set comes from a simulator, and the test sets are real images of a satellite mockup under two kinds of lighting. That simulator approximates how light reflects off mylar and aluminium, and like every scientific simulator it is misspecified. Its error is radiometric, since it misses the specular highlights, hard shadows and sensor saturation common in real images. We probe the resulting synthetic-to-real gap, the central risk for such systems, with a deliberat…",
+      "authors": [
+        "Nikolay Dolgov"
+      ],
+      "published": "2026-11-15T23:32:25Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20321v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20185v1",
+      "title": "RoboKit: Accelerating Parallel Differentiable Optimization for Robot Learning",
+      "abstract": "We present RoboKit, a high-performance, general-purpose toolkit for parallel differentiable optimization in robotics, built on three principles: (i) Performance and flexibility: GPU-parallel multi-seed solvers pair sampling with versatile optimizers, running 2-60$\\times$ faster than task-specific baselines across seven tasks; (ii) Geometry, rendering and physics: hybrid and coarse-to-fine representations accelerate collision, differentiable rendering and simulation, optimizing 4096 grasps in 2.97 s; (iii) Integration with learning: costs are differentiable and simulation is parallel, so RoboKit both distills optimization into policies and trains RL; distilled policies run 9-240$\\times$ faste…",
+      "authors": [
+        "Jianglong Ye",
+        "Xuanbin Peng",
+        "Conor Mc Gartoll",
+        "Changwei Jing",
+        "Lai Wei",
+        "Jiali Chen"
+      ],
+      "published": "2026-11-15T18:40:19Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20185v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.19975v1",
+      "title": "Federated Dataset Simulation: Inducing Label-Free Heterogeneity Across Tasks",
+      "abstract": "Federated Learning enables collaborative model training across decentralized clients without sharing raw data. While the field has seen rapid growth, the datasets underpinning FL evaluation have not kept pace: real federated datasets remain scarce, and most studies rely on small-scale centralized classification datasets partitioned via Dirichlet label skew, a one-dimensional proxy for the multi-dimensional heterogeneity present in real federations. Moreover, label-based partitioning is by construction inapplicable to non-classification tasks such as segmentation and detection, for which no principled simulation method exists. We cast the conversion of centralized datasets into federated benc…",
+      "authors": [
+        "Vasilis Siomos",
+        "Lam Ngo",
+        "Jonathan Passerat-Palmbach",
+        "Giacomo Tarroni"
+      ],
+      "published": "2026-11-15T12:38:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.19975v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.19785v1",
+      "title": "DynLimit: A Simulation Benchmark for Dynamics-Critical Planning and Control",
+      "abstract": "Experiments near vehicle handling limits must keep three questions apart: what a maneuver requests, what the closed-loop system executes, and whether the task is completed. We present DynLimit, a simulation platform that organizes this process end to end. Scenarios are composed from road, friction, obstacle, and reference objects; planners and controllers attach through a shared observation and control interface; a vehicle adapter runs either a license-free four-wheel model or an external dynamics solver; and synchronized records feed task evaluation, replay, and response inspection. The platform carries a task-oriented evaluation method that pairs a prescribed reference demand with a sample…",
+      "authors": [
+        "Yang Xiao",
+        "Yongzhi Liu",
+        "Sunan Zhang",
+        "Kang Wang",
+        "Guodong Yin",
+        "Weichao Zhuang"
+      ],
+      "published": "2026-11-15T04:23:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.19785v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -35927,6 +36298,95 @@
       ],
       "has_code": true,
       "first_seen": "2026-11-10T15:28:56.592795+00:00"
+    },
+    {
+      "id": "2611.21126v1",
+      "title": "IGRecon4D: Dynamic-Object-Aware Feed-Forward Reconstruction of Driving Scenes",
+      "abstract": "Feed-forward 4D driving-scene reconstruction enables efficient modeling of dynamic autonomous-driving scenes, but current methods suffer from two complementary failure modes: semantic leakage of traffic participants into the static representation and geometric drift of Gaussian locations across viewpoints. We propose \\textbf{IGRecon4D}, a feed-forward dynamic scene reconstruction framework that addresses these failures with training-time instance-prior distillation and LiDAR-anchored Gaussian positioning. Specifically, an instance-level semantic branch provides a potentially dynamic participant prior, which is distilled into dynamic-mask learning through the Instance-Dynamic Consistency Cons…",
+      "authors": [
+        "Yifei Tong",
+        "Ziyang Huang",
+        "Yizhao Han",
+        "Xiaoxiao Long",
+        "Hao Zhu"
+      ],
+      "published": "2026-11-16T14:05:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.21126v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.21060v1",
+      "title": "MetricHand: Geometry-Aware Flow Matching for 4D Hand Reconstruction in Metric World Space",
+      "abstract": "Egocentric hand motion provides physical motion supervision for dexterous manipulation and vision-language-action pretraining. Reliable use of this supervision requires accurate and temporally coherent 4D hand reconstruction in metric world space. Existing methods typically lift framewise estimates produced under weak perspective into world coordinates. By ignoring joint-dependent depth variation at close range, this approximation couples errors in translation, orientation, and articulation that persist after world lifting and worsen under occlusion. We present MetricHand, a geometry-aware flow matching framework for 4D hand reconstruction in metric world space. MetricHand encodes depth prio…",
+      "authors": [
+        "Yibo Bai",
+        "Likui Zhang",
+        "Jinglei Zhang",
+        "Zhengbin Pang",
+        "Xingshen Song",
+        "Xiaoqing Yin"
+      ],
+      "published": "2026-11-16T13:11:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.21060v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20502v1",
+      "title": "Pointillist Maize: 3D Reconstruction of Field-Grown Maize Using RGB UAV Imagery",
+      "abstract": "Three-dimensional reconstruction can extend field phenotyping to individual maize organs, but thin, flexible, occluding structures and plant movement complicate reconstruction. We evaluated whether consumer-grade UAV RGB video processed with Structure from Motion and multi-view stereo could recover recognizable field-grown maize structures, and examined the effects of acquisition trajectories and frame sampling. COLMAP reconstructions preserved recognizable leaves, stems, tassel branches, ears, silks, and brace roots. For an equal-frame comparison, we reconstructed one plant from two sets of 295 frames from the same video: a single orbit sampled at 5 frames/second and three orbits at differe…",
+      "authors": [
+        "Dewi Endah Kharismawati",
+        "Toni Kazic"
+      ],
+      "published": "2026-11-16T04:13:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20502v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -43008,6 +43468,143 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-16T16:53:00.938683+00:00"
+    },
+    {
+      "id": "2611.21035v1",
+      "title": "FlowRow: Learning Navigation Behaviors in Agricultural Environments with Long-Horizon Goal-Conditioned Flow Matching Policies",
+      "abstract": "Autonomous monitoring and intervention in semi-structured agricultural environments, such as orchards and vineyards, require mobile robots to navigate to locations across diverse field configurations. This entails performing navigation behaviors including in-row driving, row turning and skipping, and inter-row traversal. Recent learning-based approaches have enabled robust in-row navigation from onboard perception, but navigation across rows typically requires a priori knowledge of field geometry to specify and tune row-transition maneuvers, preventing arbitrary transitions between rows. We address this challenge by framing navigation in these environments as a goal-directed navigation task,…",
+      "authors": [
+        "Utkarsh Bajpai",
+        "Cédric Pradalier",
+        "Stéphanie Aravecchia"
+      ],
+      "published": "2026-11-16T12:54:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.21035v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20879v1",
+      "title": "Multi-Rate Flow Matching for Point Cloud Upsampling",
+      "abstract": "Flow-matching point-cloud upsamplers refine sparse inputs into dense point clouds by integrating a learned velocity field with a fixed temporal discretization. However, local reconstruction requirements vary substantially across a shape, while a shared solver budget applies the same temporal resolution everywhere. We propose Multi-Rate Flow Matching (MRFM), a patch-adaptive framework that selects an integration budget for each local patch at inference time while keeping the learned velocity field frozen. MRFM relaxes the discrete budget into a continuous variable, optimizes it online through differentiable soft rollouts using an input-derived geometric fidelity objective, and projects the re…",
+      "authors": [
+        "Jingkai Shang",
+        "Edgar Torres",
+        "Duy Nguyen"
+      ],
+      "published": "2026-11-16T10:51:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20879v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20533v1",
+      "title": "RemeshingAgent: An Iterative Agent for Repair-Based Decimation of Generated Building Meshes",
+      "abstract": "Aggressively simplifying a generated high-poly building mesh to 0.5-1% of its faces confronts a hard limit. The surface looks complete, yet the mesh is topologically shattered: 10^3-10^4 connected components and non-manifold thin walls. Below a certain budget, every practical decimator \"melts\": it deletes parts, welds thin walls, or breaks the error tolerance. We attribute this to instance-specific pathology: which components are significant and where the cliff sits vary from mesh to mesh, so no single fixed algorithm suffices, and decimation becomes an iterative loop of cleaning, simplifying, and verifying. We present RemeshingAgent, an agent that turns this loop into a validated process. T…",
+      "authors": [
+        "Haipeng Wang"
+      ],
+      "published": "2026-11-16T05:08:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20533v1",
+      "categories": [
+        "cs.GR"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "4A_topology",
+          "label": "4A · Clean Topology",
+          "color": "#F97316",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20360v1",
+      "title": "Flow Matching for Sampled-Data Control of Angular Distributions",
+      "abstract": "Synchronization and clustering in oscillator networks depend on the joint distribution of the phases. Flow Matching can steer this distribution by learning an angular velocity field from shortest arcs between paired configurations. Each arc is traversed at constant speed, yet the resulting field can vary along its own trajectories. In this article, we study how to control angular transport on the circle and product torus when each controller evaluation selects a rate to hold until the next update. Using the same local velocity samples, Flow Matching learns the instantaneous angular rate and MeanFlow learns its average along the reference trajectory over the control interval. Under direct ang…",
+      "authors": [
+        "Xin Mao",
+        "Anqi Dong",
+        "Hongteng Xu",
+        "Kenan Zhang"
+      ],
+      "published": "2026-11-16T00:41:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20360v1",
+      "categories": [
+        "cs.LG",
+        "eess.SY"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.20334v1",
+      "title": "Residual-Tail-Informed Flow Matching for Time Series Anomaly Detection",
+      "abstract": "Time series anomaly detection (TSAD) models are often trained on nominal data using average-risk objectives, which emphasize dominant normal patterns. However, real time series can contain rare but valid nominal regimes that are underrepresented in the training distribution. We show that data-space flow matching can over-penalize such rare-normal windows and assign them anomaly scores comparable to those of true anomalies. To address this, we propose Residual-Tail-Informed Flow Matching (RT-FM), an unsupervised framework that uses a temporal variational autoencoder to estimate residual latent tailness and converts it into bounded, warmup-annealed weights for training a data-space flow matchi…",
+      "authors": [
+        "Shyam Sundar Saravanan",
+        "Tie Luo",
+        "Sanjay Madria"
+      ],
+      "published": "2026-11-15T23:57:22Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.20334v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-17T16:46:56.643690+00:00"
     },
     {
       "id": "2606.31680v1",
