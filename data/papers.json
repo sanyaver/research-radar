@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-18T16:18:14.152386+00:00",
-  "total": 1593,
-  "new_this_run": 25,
+  "last_updated": "2026-11-19T16:27:13.330249+00:00",
+  "total": 1610,
+  "new_this_run": 17,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -850,6 +850,36 @@
       ],
       "has_code": true,
       "first_seen": "2026-11-10T15:28:56.592795+00:00"
+    },
+    {
+      "id": "2611.23845v1",
+      "title": "ReflectScene:MLLM-Guided Closed-Loop Diffusion for 3D Indoor Scene Generation",
+      "abstract": "Text-conditioned 3D indoor scene generation requires layouts satisfying geometric, functional, and semantic constraints. However, existing diffusion methods rely primarily on static textual conditions, limiting their ability to assess evolving scenes and translate semantic discrepancies into executable object-level corrections. MLLM-based post-hoc refinement provides semantic feedback but remains decoupled from denoising, potentially disrupting scene coherence.We propose ReflectScene, an MLLM-guided closed-loop diffusion framework. First, we introduce Hierarchical Prior-Grounded Scene Understanding that aligns structured layouts with multi-view visual evidence, to interpret object-specific c…",
+      "authors": [
+        "Jiawei Shen",
+        "Jie Feng",
+        "Junpeng Zhang",
+        "Guanbin Li",
+        "Wanyi Chen",
+        "Weisheng Dong"
+      ],
+      "published": "2026-11-18T04:50:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23845v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 22,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 120
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
     },
     {
       "id": "2606.30608v2",
@@ -13211,6 +13241,70 @@
       "first_seen": "2026-11-18T16:18:14.152386+00:00"
     },
     {
+      "id": "2611.24404v1",
+      "title": "RAPID: Reconstruction Accelerated by Polarization-Informed Depth for 2D Gaussian Splatting",
+      "abstract": "Efficient and accurate 3D surface reconstruction from multi-view images remains a fundamental challenge in Gaussian splatting. Many existing methods rely on sparse geometric initialization and iterative densification, resulting in substantial optimization overhead and difficulties in balancing rendering quality and geometric accuracy, particularly in reflective and weakly textured regions. To address these limitations, we propose RAPID, a geometry-first framework that uses multiview polarization cues to recover dense surface priors. We integrate surface normals into depth maps using sparse geometric anchors. These depth maps are then fused across views. Curvature-adaptive sampling and orient…",
+      "authors": [
+        "Daisong Ouyang",
+        "Linlin Xia",
+        "Liangkun Yan",
+        "Song Gu",
+        "Shedong Zhao",
+        "Xin Dai"
+      ],
+      "published": "2026-11-18T13:35:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24404v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 50
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.23670v1",
+      "title": "EyeDiT: Anatomy-Grounded Multi-Modal Eye Generation and Simulation",
+      "abstract": "Synthetic eye data are critical for rapid development of eye tracking (ET) in AR/VR applications. However, existing synthetic eye generators are largely image-centric and lack a high-quality underlying 3D anatomy of the eye, which limits their control mainly to the gaze and provides no anatomical labels. To address this problem, we propose EyeDiT, an anatomy-grounded, multi-modal 3D eye generation and simulation model trained with optical coherence tomography (OCT), labeled anatomy point clouds and near-eye images. Our pipeline first trains a Multi-Modal Anatomy Variational Autoencoder (VAE), which encodes an anatomy-aware latent representation from all input modalities. Then, our Eye Latent…",
+      "authors": [
+        "Yonghan Lee",
+        "Zachary Willms",
+        "Kun Liu",
+        "Pushkar Anand",
+        "Ali Behrooz",
+        "Dmitri Model"
+      ],
+      "published": "2026-11-18T00:51:40Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23670v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -18314,6 +18408,117 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-18T16:18:14.152386+00:00"
+    },
+    {
+      "id": "2611.24256v1",
+      "title": "Spark-H3: Adaptive Block Sparse Attention for Video Diffusion Models",
+      "abstract": "Long video sequences make attention a substantial cost in video diffusion models. Block sparse attention (BSA) reduces this cost by computing selected blocks exactly while compressing the remaining blocks. However, fixed token grouping can place tokens with dissimilar attention preferences in the same group, while uniform key averaging can underestimate the attention mass of compressed blocks. We introduce Spark-Attn, a training-free BSA method comprising Spark-Reblock and Spark-Reweight. Spark-Reblock recursively groups tokens by attention preference while preserving regular block shapes for efficient GPU execution. Spark-Reweight uses the global mean query as an anchor to construct attenti…",
+      "authors": [
+        "Zecheng Tang",
+        "Jiaye Fu",
+        "Youtian Lin",
+        "Xinyao Rao",
+        "Liuxuan Sun",
+        "Jian Zhang"
+      ],
+      "published": "2026-11-18T11:32:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24256v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.23856v1",
+      "title": "Beyond Cross-Modal Reconstruction: Participant-Level Evaluation of sEMG-Kinematic Coupling in Post-Stroke Gait",
+      "abstract": "Accurate cross-modal reconstruction is often treated as evidence of physiological coupling, although it may simply reflect temporal patterns shared across participants. We tested whether frozen bidirectional models captured subject-specific neuromuscular coupling between electromyographic activity and gait kinematics in 82 held-out able-bodied and 43 post-stroke participants. Complete source-modality removal and cross-participant source substitution, along with a cycle-position-age-sex template baseline, were applied. Learned bilateral asymmetry was also compared with transparent waveform and derivative asymmetry for predicting Performance-Oriented Mobility Assessment (POMA) scores in the ca…",
+      "authors": [
+        "Rafsan Jany",
+        "Md Rafid Islam",
+        "Mohammad Fahim Islam",
+        "Hafiz Abdur Rahman"
+      ],
+      "published": "2026-11-18T05:02:17Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23856v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.23727v1",
+      "title": "GTA: Generative Tower of Agents for Scalable Holonic Scene Generation",
+      "abstract": "Scalable world modeling requires coordinating scene-wide goals with fine-grained objects and dynamic characters under limited time and context budgets. We introduce GTA (Generative Tower of Agents), which represents every unit at every level of an adaptive scene hierarchy as a holon, both a self-contained construction task and a composable scene unit. Parallel agents recursively plan the hierarchy top-down, generate assets, and assemble and refine them bottom-up. Uniform interfaces carry scene-wide requirements down the hierarchy, guiding local construction so that each holon fits into the larger one. GTA accelerates scalable world modeling through high-throughput parallel execution while pr…",
+      "authors": [
+        "Zeng Tao",
+        "Yunuo Chen",
+        "Xiang Feng",
+        "Yumeng He",
+        "Peihao Li",
+        "Nanxiang Jiang"
+      ],
+      "published": "2026-11-18T02:39:21Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23727v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.23578v1",
+      "title": "DOCK: Dual-Stream-Inspired Self-Supervised Object-Centric Representations Grounded in Robot Kinematics",
+      "abstract": "Latent-space planners select actions by comparing the embedding of a predicted future image with that of a goal image. This assumes that distance in the embedding reflects how far the scene is from the goal. We profile this assumption with simulator-executed futures, which removes prediction error. For six frozen DINO and V-JEPA encoders, feature distance barely tracks the object's distance to its goal: the rank correlation is at most 0.11, against 0.87 for object-mask centroids. It is dominated by background and robot patches, and frozen-feature readouts capture the arm far better than the object. Inspired by the ventral (what) and dorsal (where/how) visual streams, we propose DOCK, which l…",
+      "authors": [
+        "Pengju Liu",
+        "Caiwen Ding"
+      ],
+      "published": "2026-11-17T22:27:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23578v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -33432,6 +33637,148 @@
       "first_seen": "2026-11-18T16:18:14.152386+00:00"
     },
     {
+      "id": "2611.24941v1",
+      "title": "UltraTex: Aligning Physical Knowledge for High-Fidelity PBR Texture Generation",
+      "abstract": "Generating physically based rendering (PBR) texture maps for a 3D mesh from a single reference image is highly ambiguous, as the observed appearance entangles material identity, surface reflectance, and illumination. While current generative methods produce realistic albedo maps, they still struggle to infer accurate metallic and roughness attributes for relighting. We present UltraTex, a cascaded multi-view framework that moves beyond appearance matching by integrating physical knowledge into multi-view diffusion-based PBR generation. UltraTex first jointly predicts albedo and world-space shading normals to generate more detailed albedo maps, and then predicts metallic-roughness (MR) maps c…",
+      "authors": [
+        "Jingzhi Bao",
+        "Xiaohe Ma",
+        "Hong Li",
+        "Yuanming Hu",
+        "Xiaoguang Han"
+      ],
+      "published": "2026-11-18T18:59:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24941v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 42
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.24926v1",
+      "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation",
+      "abstract": "Robot reward modeling faces two challenges: generalizing across tasks and accurately tracking progress in long-horizon manipulation. General-purpose reward models demonstrate broad task transfer, but transfer from short-task pretraining to long-horizon tasks remains underexplored. Long-horizon progress models often rely on task-specific subtask classifiers or fixed action vocabularies, limiting the reuse of learned progress knowledge when adapting to new tasks. To address these challenges, we introduce Grana, a vision-language robot reward model that learns to identify unfinished subtasks and estimate their continuous progress using open-vocabulary subtask descriptions. We train a language-c…",
+      "authors": [
+        "Zi-ang Cao",
+        "Kaiyuan Zheng",
+        "Yinzhen Xu",
+        "Haonan Duan",
+        "Jiasheng Gu",
+        "Fengyuan Hu"
+      ],
+      "published": "2026-11-18T18:53:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24926v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.24800v1",
+      "title": "Planner-Controller Interaction for Ackermann Navigation: A Matched Simulation and Hardware Benchmark",
+      "abstract": "Global planners and path-tracking controllers are often evaluated independently, although their interaction determines how a vehicle follows a planned path. Whether simulation accurately predicts the performance of specific planner-controller combinations on Ackermann-steered hardware remains uncertain. This study evaluated three geometric controllers (Regulated Pure Pursuit, Stanley, and Vector Pursuit) paired with two global planners (Hybrid A* and NavFn) on a 1/10-scale Quanser QCar and in a matched Gazebo simulation. Both environments used shared custom planning and control algorithms, matched route geometry and goals, ground-truth pose references, and a common evaluation pipeline. Five …",
+      "authors": [
+        "Moaiz Saeed",
+        "Marah Saleh",
+        "Mounis Shawgi",
+        "Mohamed Al Musleh"
+      ],
+      "published": "2026-11-18T17:42:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24800v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.24763v1",
+      "title": "Elysium: Simulation-Free Unbalanced Schrödinger Bridges",
+      "abstract": "Reconstructing cellular dynamics from snapshots is challenging because the destructive nature of single-cell measurements makes tracking the same cells over time impossible. Cellular dynamics are inherently stochastic and involve changes in population size through proliferation and apoptosis. Growth-based methods represent population change as a rate on the density, which does not assign exits and entries to individual cells. Unbalanced Schrödinger bridges model individual events, but neural solvers for killed diffusion bridges simulate trajectories during training. We introduce Elysium, a simulation-free solver that jointly learns state transition and mass change. Using a killed Brownian re…",
+      "authors": [
+        "Zihan Wang",
+        "Jianzhe Li",
+        "Zhenyi Zhang",
+        "Peijie Zhou"
+      ],
+      "published": "2026-11-18T17:16:41Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24763v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.23575v1",
+      "title": "LuxTac: A Flexible, Scalable, and Open-Source Optical Taxel Array with Distributed Three-Axis Force Sensing for Tactile Robot Learning",
+      "abstract": "Low-cost tactile arrays have made touch a practical input for robot learning, but piezoresistive designs sense only pressure, while camera-based sensors that also resolve shear are too bulky to tile over a gripper. To solve this problem, we present LuxTac, a flexible, scalable optical taxel array, about 3.5 mm thick and built from off-the-shelf parts. Each taxel is a digital RGBC light-to-digital converter under a translucent white silicone layer capped by an opaque black film, so the back-scattered LED light falls monotonically with local indentation depth. The same board accepts two interchangeable gel cartridges: a plain one for normal sensing, and one with colored walls that encodes the …",
+      "authors": [
+        "Md Rakibul Islam Prince",
+        "John Pelan",
+        "Zhiyuan Zhang",
+        "Adyaa Khera",
+        "Katherine Pesetski",
+        "Adeesh Desai"
+      ],
+      "published": "2026-11-17T22:21:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23575v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -36930,6 +37277,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-17T16:46:56.643690+00:00"
+    },
+    {
+      "id": "2611.23554v1",
+      "title": "Layer-Matched Sparse Attention for Low-Redundancy 3D Reconstruction",
+      "abstract": "VGGT reconstructs cameras and geometry from unposed images in one pass, but its global attention grows quadratically with the number of views. Training-free accelerators thin this attention and work well on redundant video, but lose pose accuracy when views share little geometry. This paper traces these losses to two kinds of cross-view information that a uniform sparse approximation can fail to preserve together: diffuse layers aggregate distributed context, whereas matching layers depend on query-specific interactions that carry little attention mass. A per-layer statistic measures the log-mass missed by a mean token. Its row-free proxy is the logit variance, and it selects the estimator f…",
+      "authors": [
+        "Sammam Mahdi",
+        "Fariha Binta Salim",
+        "K. M. Jubair Sami",
+        "Rakin Bin Rabbani"
+      ],
+      "published": "2026-11-17T22:01:43Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23554v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.23450v1",
+      "title": "NIRJALA: Draining the Sea out of Gaussian Splatting with Three-Path Optics and Reversible Physics",
+      "abstract": "Water does not just tint an underwater photograph; it rewrites it. Each pixel mixes attenuated scene radiance, backscattered light, and scene light scattered forward on its way to the camera, and many combinations of scene and water explain the same pixels. Most Gaussian-splatting methods for underwater scenes model only the first two effects and remove the water by dividing by a transmission that decays exponentially with range, so their inversion gain grows without bound. We present NIRJALA (Sanskrit for \"without water\"), a 3D Gaussian Splatting framework that recovers water-free appearance and geometry together. TRIVENI, a three-path image formation model, adds a range-saturating forward-…",
+      "authors": [
+        "Latchan Chhetri",
+        "Aman Kumar"
+      ],
+      "published": "2026-11-17T19:53:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23450v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -44335,6 +44747,35 @@
       "first_seen": "2026-11-18T16:18:14.152386+00:00"
     },
     {
+      "id": "2611.24764v1",
+      "title": "Horizontal Flow Matching for Single-Cell Spatiotemporal Dynamics",
+      "abstract": "Learning the spatiotemporal dynamics of cells from spatial transcriptomics requires connecting snapshots of different cells acquired in different coordinate frames. A rotation or translation of a section can appear as cell movement and distort the inferred correspondence. We introduce horizontal flow matching, which learns changes in tissue organization, molecular state, and cell abundance up to shared rigid motion. The dynamics follow a continuity--reaction equation whose action assigns no cost to shared rigid motion, and the resulting horizontal projector removes this component from spatial prediction errors during learning and from predicted velocities during generation. An equivalent end…",
+      "authors": [
+        "Zihan Wang",
+        "Jianzhe Li",
+        "Zhenyi Zhang",
+        "Peijie Zhou"
+      ],
+      "published": "2026-11-18T17:16:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24764v1",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "q-bio.QM"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -48187,6 +48628,68 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-18T16:18:14.152386+00:00"
+    },
+    {
+      "id": "2611.24455v1",
+      "title": "Homeward: No Place Like the Training View",
+      "abstract": "Vision-language-action (VLA) policies implicitly assume that third-person cameras remain fixed at their data-collection poses; once a camera is bumped, remounted, or swapped at deployment, task success degrades precipitously even though the underlying task and robot remain unchanged. We present Homeward, a training-free, plug-and-play observation adapter that canonicalizes observations from an uncalibrated deployment camera back into the training view for frozen VLA policies. Our design stems from a closed-loop diagnostic paradox in simulation: while re-rendering perturbed views into the training camera with oracle geometry recovers much of the lost performance, substituting an off-the-shelf…",
+      "authors": [
+        "Mingyang Lyu",
+        "Yinqian Sun",
+        "Gongce Cao",
+        "Guobin Shen",
+        "Yuhao Zhang",
+        "Lu Jia"
+      ],
+      "published": "2026-11-18T14:01:38Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.24455v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.23788v1",
+      "title": "Geometry-bridge flow matching for blind rigid-motion correction in head cone-beam CT",
+      "abstract": "Rigid motion of a patient head during head cone-beam CT (CBCT) scan can degrade image quality and complicate recovery of accurate anatomical structures from the measured projections. We present a 3D flow-matching prior approach that learns the image changes induced by motion. Its geometry-bridge connects motion-corrupted and motion-free Feldkamp-Davis-Kress (FDK) reconstructed images of the same source volume through progressively reduced simulated motion. The forward projector's geometry derivative supplies analytic velocity targets along this path. A plug-and-play loop encompasses the learned image updates together with spline-based pose estimation, conjugate-gradient data consistency, and…",
+      "authors": [
+        "Sungho Yun",
+        "Seungryong Cho"
+      ],
+      "published": "2026-11-18T03:51:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.23788v1",
+      "categories": [
+        "physics.med-ph",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-19T16:27:13.330249+00:00"
     }
   ]
 }
