@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-19T16:27:13.330249+00:00",
-  "total": 1610,
-  "new_this_run": 17,
+  "last_updated": "2026-11-20T15:58:46.430941+00:00",
+  "total": 1632,
+  "new_this_run": 22,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -5240,6 +5240,79 @@
       "first_seen": "2026-11-18T16:18:14.152386+00:00"
     },
     {
+      "id": "2611.25802v1",
+      "title": "World-delta: Continually Integrating Observations for Incremental 3D Scene Generation",
+      "abstract": "Existing 3D generation methods synthesize visually compelling scenes from fixed inputs, yet struggle to continually expand and revise a 3D world as new observations arrive. Iterative approaches often fuse real observations and generated content into a single representation, treating generated content as established structure rather than revisable predictions. Consequently, early generation errors can persist and accumulate despite new evidence. We propose World-delta, an incremental 3D scene generation framework combining uncertainty-aware persistent world modeling with delta-guided diffusion for continual scene expansion and correction. Our framework comprises three components: 1) Visual Ev…",
+      "authors": [
+        "Haonan Wang",
+        "Hanyu Zhou",
+        "Xiaobin Hu",
+        "Luxin Yan"
+      ],
+      "published": "2026-11-19T09:25:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25802v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.25523v1",
+      "title": "Multi-View Relighting with Mergeable Radiance Fields",
+      "abstract": "We propose MergeableRF, a method for radiance field relighting through model parameter merging. Given multi-view images of a scene under known basis lights, our goal is to relight the scene by directly combining the parameters of radiance fields trained under these lights. This is motivated by the linearity of light transport: the image under a mixture of lights is the same weighted combination of the images under each light. However, combining the parameters of independently trained radiance fields does not produce the corresponding combination of images. To address this, we represent a scene with shared geometry and a separate appearance network for each basis light. We start these network…",
+      "authors": [
+        "Yinan Wang",
+        "Rohan Kadkol",
+        "Hyunjin Yoo",
+        "Jean-François Lalonde",
+        "James J. Clark"
+      ],
+      "published": "2026-11-19T05:25:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25523v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 15,
+      "sections": [
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 42
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
       "id": "2606.31101v1",
       "title": "Efficient Sim-to-Real Transfer of World-Action Models from Synthetic Priors",
       "abstract": "Bridging the sim-to-real gap is a core challenge in deploying learned manipulation policies. Sim-to-real learning is attractive because it can replace expensive real robot demonstrations with scalable synthetic data, yet world-action models have not previously been shown to transfer from simulation to real robotic manipulation. We study whether a world-action model can be trained from synthetic priors and deployed zero-shot in the real world. To this end, we build upon Cosmos Policy, a video diffusion model adapted for visuomotor control. We construct simulation environments with extensive domain randomization and generate demonstrations using the AnyTask motion planning pipeline. We evaluat…",
@@ -8361,6 +8434,62 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-18T16:18:14.152386+00:00"
+    },
+    {
+      "id": "2611.26035v1",
+      "title": "Fixing the Twin, Not the Detector: Sim-to-Real Roadside LiDAR Detection from Digital-Twin Data",
+      "abstract": "Roadside LiDAR detectors are expensive to train on real labels, and digital twins promise to replace these labels, but a detector trained on a twin meets a different sensor, different objects and different annotation conventions on the real site. We describe the pipeline that placed first in the LUMPI track of the UrbanTwin Sim2Real LiDAR Challenge (IEEE BigData 2026 Cup, 0.5541 combined score) and fifth on its V2X-Real track (0.8102). Every detector is a CenterPoint model trained only on synthetic data, on a single 8 GB laptop GPU. Most of the gain came from correcting differences between the twin and the real site rather than from the detector. We align the twin's coordinates, point densit…",
+      "authors": [
+        "KuanLin Chen",
+        "Feng-jui Kuo"
+      ],
+      "published": "2026-11-19T12:45:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26035v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.25503v1",
+      "title": "Joint Language Modeling for In-the-Wild Speech-Scene Generation with Distinct Token Representations",
+      "abstract": "Speech-scene generation aims to synthesize intelligible target speech together with diverse environmental sounds as a coherent acoustic scene. The task is considered challenging in two respects. Speech and environmental audio differ substantially in their semantic and acoustic characteristics, yet existing approaches typically model the complete scene using a single mixed acoustic representation. At the same time, the two sounds are closely related in real-world speech scenes, whereas conventional approaches usually rely on simulated scenes mixed from independently recorded sources. We propose a large language model (LLM)-based framework for joint modeling of distinct speech and environment …",
+      "authors": [
+        "Semin Kim",
+        "Ju Yeon Kang",
+        "Sunghwan Ahn",
+        "Seonuk Kim",
+        "Nam Soo Kim"
+      ],
+      "published": "2026-11-19T04:48:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25503v1",
+      "categories": [
+        "eess.AS",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 60
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -13303,6 +13432,65 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.26341v1",
+      "title": "Reasoning on Call: Efficient Agentic Robot Control for Long-Horizon Robot Manipulation",
+      "abstract": "Large multimodal models can support long-horizon robot manipulation, but frequent model calls incur substantial latency and token costs. The central challenge is determining when agent assistance or intervention is needed and whether errors require correcting robot execution, subtask planning, or both. To address this problem, we propose RoC (Reasoning on Call), an efficient framework that coordinates a low-level policy and a high-level reasoning agent through an online task-state monitor. The monitor combines temporal visual observations with ordered interaction memory to jointly estimate progress within the active subtask and predict its successor. These predictions guide event-triggered a…",
+      "authors": [
+        "Zilang Cen",
+        "Chao Tang",
+        "Fangcheng Liu",
+        "Weishi Mi",
+        "Wei Hao",
+        "JiaYu Xu"
+      ],
+      "published": "2026-11-19T16:18:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26341v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26103v1",
+      "title": "UniVEP: Unifying Velocity and Endpoint Prediction for Robot Manipulation",
+      "abstract": "Flow-matching robot policies usually use one prediction target throughout action generation, even though recovering actions from noise and polishing nearly clean actions bring different challenges. We systematically compare velocity prediction (V), endpoint prediction (X), and velocity-weighted endpoint prediction (X--V) across multiple robot policies, benchmarks, and inference budgets. On StarVLA and LiLa-WAM, X--V works best for few-step generation, while V gains more from iterative refinement. We further uncover their complementary strengths across noise levels: clean actions have concentrated covariance spectra, endpoint predictions stay more stable under high noise, and velocity predict…",
+      "authors": [
+        "Zhengtu Liang",
+        "Qiwei Liang",
+        "Tao Lin",
+        "Shihang Weng",
+        "Boyang Cai",
+        "Xiangyu Chen"
+      ],
+      "published": "2026-11-19T13:36:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26103v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -18519,6 +18707,40 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.26493v1",
+      "title": "SGAR: Feed-Forward 3D Reconstruction via Sparse Geometry-Guided Attention",
+      "abstract": "Feed-forward models have been very successful in 3D reconstruction with ad hoc attention designs that relate all view patches densely. However, the cost of this dense global attention grows quadratically with the number of views, preventing the model from applying to larger-scale reconstruction settings. In this paper, we argue that most dense attention computations are unnecessary from a classical structure-from-motion perspective: 3D structures stem from geometrically matching regions in 2D. We bring this principle to learning-based feed-forward reconstruction with our Sparse Geometric Attention Reconstruction (SGAR) method. In SGAR, each patch token attends to only a small set of patch to…",
+      "authors": [
+        "Aoxiang Fan",
+        "Maria Pilligua",
+        "Corentin Dumery",
+        "Oliver Heinimann",
+        "Pascal Fua"
+      ],
+      "published": "2026-11-19T17:46:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26493v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -33779,6 +34001,237 @@
       "first_seen": "2026-11-19T16:27:13.330249+00:00"
     },
     {
+      "id": "2611.26391v1",
+      "title": "Simulation-pretrained autoencoders versus PCA for compressing multimode fibre transmission matrices",
+      "abstract": "Multimode optical fibres can image through a thin, flexible probe once their transmission matrix (TM) has been measured, but a TM is large and must be re-measured whenever the fibre moves. A compact model of feasible TMs would make storing and re-estimating them cheaper, so we ask how compactly TMs can be represented, and from how few measured TMs. Here we benchmark a permutation-equivariant autoencoder, pretrained on simulated fibres and adapted to measured TMs, against principal component analysis (PCA). At 62x compression, adapting the pretrained autoencoder with just two measured TMs reconstructs the TM of a 50um fibre well enough to focus light at 98% of the ideal enhancement, and it st…",
+      "authors": [
+        "Callum J. Wilson",
+        "Terry Wright",
+        "Qing Yang",
+        "Zhong Wen",
+        "Michael P. Pound",
+        "George S. D. Gordon"
+      ],
+      "published": "2026-11-19T16:45:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26391v1",
+      "categories": [
+        "physics.optics",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26333v1",
+      "title": "OceanCoder: A Verification-Guided Large Language Model for Automated Simulation Modelling in Ocean Engineering",
+      "abstract": "Numerical simulation is important in ocean engineering, but model construction requires expert knowledge. Large language models support automated modelling, but code syntax and successful execution alone do not establish whether generated models and results meet engineering requirements. We present OceanCoder, a Qwen3-8B-based large language model for automated simulation modelling in ocean engineering. To address specialised programming requirements and scarce training data, we develop an extensible data construction pipeline producing 12,000 verified supervised fine-tuning (SFT) examples across 12 engineering task categories. A three-layer verification framework checks model inputs against…",
+      "authors": [
+        "Can Xue",
+        "Changhong He",
+        "Ziyi Sun",
+        "Anliang Ge",
+        "Shimin Yu",
+        "Bingchen Liang"
+      ],
+      "published": "2026-11-19T16:13:20Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26333v1",
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26321v1",
+      "title": "FirstCross: Convex Single-Photon 3D Reconstruction from Sparse Views",
+      "abstract": "Single-photon lidar records the arrival time of each returning photon, enabling 3D reconstruction from few views and scarce photons. However, leading neural methods such as Transientangelo require over an hour of non-convex per-scene optimization, and their accuracy degrades as photon flux decreases. We propose FirstCross, a network-free approach that instead solves a short sequence of convex problems on a voxel grid. For a solid object, the Poisson likelihood of a ray with given signal and background rates depends on the scene solely through its first crossing, the point where the ray first enters the object. Decomposing this likelihood yields two tractable terms. The first penalizes surfac…",
+      "authors": [
+        "Chi-Wei Lee",
+        "Cheng-Han Chiang",
+        "Yi-Chun Chang",
+        "An-Kai Chen",
+        "Po-Chih Kuo"
+      ],
+      "published": "2026-11-19T16:05:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26321v1",
+      "categories": [
+        "cs.CV",
+        "eess.IV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26065v1",
+      "title": "Domain-Aware Conformal Prediction for Trustworthy Spacecraft Pose Estimation under Sim-to-Real Shift",
+      "abstract": "Autonomous rendezvous and proximity operations require not only an accurate estimate of the pose of the target spacecraft, but also a reliable indication of when this estimate can be trusted. Conformal prediction provides such an indication with a formal guarantee, by producing pose uncertainty sets that contain the true pose with a specified probability. Such a guarantee, however, assumes that calibration and test data follow the same distribution, an assumption that is violated in orbital perception, where labelled calibration images are available only from synthetic renderings while operational images are real. In this work, we show on the SPEED+ dataset that conformal pose estimation cal…",
+      "authors": [
+        "Nidhal Eddine Chenni",
+        "Arunkumar Rathinam",
+        "Djamila Aouada"
+      ],
+      "published": "2026-11-19T13:08:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26065v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26046v1",
+      "title": "Agentic Scaling of Embodied Tasks in Simulation for Synthetic Data Collection and Policy Evaluation",
+      "abstract": "Scaling embodied interaction data requires a broad collection of usable tasks, yet specifying and validating each task instance remains costly. We present AgenticTask, an agent-based framework that expands existing task collections under human intent. Its central representation links interaction requirements to object and part bindings, scene and robot configurations, initial conditions, and completion criteria. A task-generation agent reuses interaction structure to construct supported variations and revises incompatible configurations using validation feedback. A task-execution agent uses the same bindings and geometric records to select robot-supported skills and check completion against …",
+      "authors": [
+        "Kang Wang",
+        "Xiaolei Zhou",
+        "Xiaoyu Wu",
+        "Zhendong Wang"
+      ],
+      "published": "2026-11-19T12:55:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26046v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.25934v1",
+      "title": "AGSR: Aperture-Guided Super-Resolution for Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) enables real-time novel view synthesis, but Gaussian rasterization attenuates fine-scale scene structure through the projected covariance of each primitive. We show that contracting these projected covariances at inference time can mitigate the effective bandwidth limitation induced by finite Gaussian footprints, motivating a multi-aperture rendering framework for super-resolution. Based on this insight, we propose AGSR (Aperture-Guided Super-Resolution), a lightweight inference-time framework that progressively fuses multi-aperture renderings using uncertainty-guided feature aggregation and geometric conditioning from transmittance and depth cues. AGSR operates …",
+      "authors": [
+        "Ayman Alkhateeb",
+        "Hadi Amirpour",
+        "Christian Timmerer"
+      ],
+      "published": "2026-11-19T11:20:23Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25934v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.25480v1",
+      "title": "Learning Ankle Exoskeleton Control for Reactive Standing Balance Through Neuromusculoskeletal Simulation",
+      "abstract": "Deficits in reactive balance can increase fall risk among older adults and individuals with neuromuscular impairments, motivating the need for interventions that improve balance recovery. Wearable robotic exoskeletons offer a promising approach to addressing this need by augmenting balance control. However, developing controllers that deliver appropriately timed and scaled assistance remains challenging, as evaluating each candidate strategy requires repeated exposure to destabilizing perturbations. We propose a simulation-to-real framework that combines motion imitation and reinforcement learning to develop balance-assistive ankle exoskeleton control. A muscle-driven neuromusculoskeletal mo…",
+      "authors": [
+        "Maria T. Tagliaferri",
+        "Inseung Kang"
+      ],
+      "published": "2026-11-19T04:10:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25480v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.25061v1",
+      "title": "Infer3D: Inverse Generative Modeling Enables Robust 3D Reconstruction",
+      "abstract": "Humans can understand the 3D structure of scenes even from highly unfamiliar or extreme viewpoints. Cognitive science suggests this generalization stems from a top-down generative inference strategy. In contrast, state-of-the-art 3D reconstruction neural networks typically rely on amortized, feedforward inference. While fast, this pattern-matching approach degrades when faced with out-of-distribution (OOD) scene conditions unseen during training. Inspired by the generative nature of human vision, we propose Infer3D, an inverse generative modeling framework that recovers the latent variables of a generative model to best match the monocular input. To prevent degenerate flat outputs, we couple…",
+      "authors": [
+        "Amani Kiruga",
+        "Mark Hamilton",
+        "Joshua B. Tenenbaum",
+        "William T. Freeman",
+        "Vincent Sitzmann",
+        "Yilun Du"
+      ],
+      "published": "2026-11-18T19:07:33Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25061v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -37342,6 +37795,40 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.26355v1",
+      "title": "Mamba Flow Matching Neural Processes: Linear-Time Inference for Irregularly Observed Spatial Fields",
+      "abstract": "Interpolating a spatial field, such as daily maximum temperature, from sparse, irregularly located observations recurs across the environmental and health sciences. Standard Gaussian-process kriging refits hyperparameters and solves an $O(N^3)$ system for every new field. When many related fields are observed, such as daily maps from one sensor network, neural processes (NPs) instead learn the interpolation map from past fields and predict a new field in one forward pass. Joint-predictive variants, which sample whole fields rather than independent per-location values, typically use self-attention over context and query points, costing $O(K^2)$ in the combined point count $K$ and limiting pra…",
+      "authors": [
+        "Cosmo Santoni",
+        "Giovanni Charles",
+        "Timothy James Hitge",
+        "Oliver Watson",
+        "Elizaveta Semenova"
+      ],
+      "published": "2026-11-19T16:25:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26355v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -44776,6 +45263,131 @@
       "first_seen": "2026-11-19T16:27:13.330249+00:00"
     },
     {
+      "id": "2611.26407v1",
+      "title": "Flow Matching from Non-Gaussian Sources: A Theory of Efficient Sampling",
+      "abstract": "Flow matching is a versatile framework for generative modeling that transports a source distribution to a target data distribution. A key advantage is its flexibility in the choice of source distribution, such as heavy-tailed and multimodal sources. Yet finite-step sampling guarantees for non-Gaussian sources remain limited. We establish a nonasymptotic convergence theory for Euler discretization of flow matching with linear interpolation. Suppose the source distribution on $\\mathbb{R}^d$ has an everywhere positive, continuously differentiable density, finite total variance $\\mathsf{TotVar}_{\\mathsf{base}}$, and an $L$-Lipschitz score. Using the population velocity field and a suitable time …",
+      "authors": [
+        "Yuchen Zhou",
+        "Lili Zheng",
+        "Yuxin Chen",
+        "Gen Li"
+      ],
+      "published": "2026-11-19T16:54:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26407v1",
+      "categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26390v1",
+      "title": "SpecFlow: Flow Matching in the Acceleration Spectrum for Multi-Agent Trajectory Forecasting",
+      "abstract": "Multimodal trajectory forecasting must cover diverse future behaviors without sacrificing dynamical coherence. Most generative forecasters evolve frame-wise positions directly, leaving the relationships among position, velocity, and acceleration implicit. We present SpecFlow, a conditional flow-matching framework that treats the Discrete Cosine Transform (DCT) coefficients of future accelerations as its generative state. SpecFlow learns a transport from Gaussian noise to acceleration spectra and reconstructs velocity and position through fixed analytical integration initialized by the last observed state. A joint phase-space objective supervises all three kinematic levels. To represent desti…",
+      "authors": [
+        "Ziyang Xu",
+        "Peng Han",
+        "Hai Zhou"
+      ],
+      "published": "2026-11-19T16:44:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26390v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26128v1",
+      "title": "CryoGaussian: Heterogeneous Cryo-EM Reconstruction Made Explicit with Gaussian Splatting",
+      "abstract": "Single-particle cryo-electron microscopy (cryo-EM) determines macromolecular structures from noisy particle images. However, rare, transient compositional states and subtle, continuous conformational variation are difficult to resolve. We present CryoGaussian, a Gaussian splatting method for heterogeneous cryo-EM reconstruction that fits an explicit Gaussian density representation directly to the particle images through a differentiable rasterizer rendering orthographic line integrals modulated by the contrast transfer function. The Gaussians are initialized randomly, with their number derived from the estimated spatial support of the molecular density and their minimum size bounded by the N…",
+      "authors": [
+        "Ziwen Wang",
+        "Jiajun Fan",
+        "Chaoran Cheng",
+        "Ruihan Guo",
+        "Yanru Qu",
+        "Juexiao Zhou"
+      ],
+      "published": "2026-11-19T13:51:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26128v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.26045v1",
+      "title": "PaveSplat: Resolution-Robust Feed-Forward Gaussian Splatting with Residually Corrected Surface-Aligned Covariances",
+      "abstract": "We present PaveSplat, a feed-forward Gaussian splatting method that adds a learned residual to the analytic surface-aligned covariance, keeping surfels paving the visible surface across rendering resolutions. Pixel-aligned feed-forward Gaussian splatting predicts one primitive per pixel from a few images in a single pass, and its rendering quality depends on how well these primitives cover the surface. Recent surfel-based methods compute the surface-aligned covariance analytically from predicted depth. However, this covariance has no way to correct the surfel orientation where the depth-derived frame is ill-posed. The surfels then cover the surface loosely; at the training resolution each su…",
+      "authors": [
+        "Janghun Kim",
+        "Hyun-Cheol Kim",
+        "Eunbin An",
+        "Myeonghun Oh",
+        "Hyon-Gon Choo"
+      ],
+      "published": "2026-11-19T12:55:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26045v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -48690,6 +49302,63 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-19T16:27:13.330249+00:00"
+    },
+    {
+      "id": "2611.25917v1",
+      "title": "LIFT: Latent Flow Matching for Probabilistic Cell Fate Dynamics with Single Cell Snapshots",
+      "abstract": "Lineage tracing links cell states through clonal ancestry, but does not generally identify unique source-descendant pairings. Learning from such data therefore requires a model of conditional outcomes, rather than only the terminal population distribution. We introduce LIFT, a latent flow framework for probabilistic cell-state generation from lineage-informed couplings. Variational inference encodes alternative outcomes in a latent space, while a conditional prior enables sampling from the initial state alone. A Mean Flow decoder predicts future cell state directly, requiring one decoder evaluation per sampling, which makes it convenient to predict cell fate through large scale Monte-Carlo s…",
+      "authors": [
+        "Bowen Yang",
+        "Junda Ying",
+        "Yuxuan Wang",
+        "Peijie Zhou",
+        "Lei Zhang"
+      ],
+      "published": "2026-11-19T11:04:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25917v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.25251v1",
+      "title": "WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation",
+      "abstract": "Reinforcement learning (RL) can improve vision-language-action (VLA) policies beyond imitation, but humanoid exploration is unsafe and simulator RL can exploit residual sim-to-real gaps. We present WEVO, a teleoperation-free framework for post-training a whole-body humanoid VLA in an action-conditioned video world model (WM). Simulated manipulation and locomotion play data improve contact-dynamics and viewpoint-change prediction. A VLA trained on synthetic demonstrations collects 20 autonomous real robot rollouts per task to align the WM with deployment observations. The VLA, whole-body controller (WBC), and video WM then form a closed-loop RL environment with dense progress rewards. Across …",
+      "authors": [
+        "Qianzhong Chen",
+        "Muyuan Lin",
+        "Yuyin Sun",
+        "Mac Schwager",
+        "Cheng-Hao Kuo",
+        "Roberto Martín-Martín"
+      ],
+      "published": "2026-11-18T22:36:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.25251v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 27
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-20T15:58:46.430941+00:00"
     }
   ]
 }
