@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-22T15:09:27.706150+00:00",
-  "total": 1632,
-  "new_this_run": 0,
+  "last_updated": "2026-11-23T19:06:45.102185+00:00",
+  "total": 1643,
+  "new_this_run": 11,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -13493,6 +13493,65 @@
       "first_seen": "2026-11-20T15:58:46.430941+00:00"
     },
     {
+      "id": "2611.27042v1",
+      "title": "RoboColiseum: Co-evolution of Simulation, Evaluation, and Models",
+      "abstract": "Simulation-based evaluation of embodied models requires calibrated interactions, diverse tasks, and explicit execution constraints. We present RoboColiseum, a platform combining system identification, composable physics and rendering, and multidimensional benchmarking. Recorded-command replay characterizes robot dynamics and object interactions, while a shared interface connects rigid and deformable simulation to rendering. Across 22 paired real--simulation robot--task configurations, task scores have a reported Pearson correlation of 0.9686. Eight evaluation tracks span instruction following, spatial reasoning, general manipulation, robustness, dexterous manipulation, precision manipulation…",
+      "authors": [
+        "Chenghao Yin",
+        "Da Huang",
+        "Di Yang",
+        "Jichao Wang",
+        "Junhui Wu",
+        "Nanshu Zhao"
+      ],
+      "published": "2026-11-20T03:14:26Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27042v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.26745v1",
+      "title": "MomentMem: Memorizing Key Moments for Robot Manipulation",
+      "abstract": "Robotic manipulation often requires remembering visual information that is no longer observable, such as the original location of an object. Existing approaches typically rely on full observation histories, which become redundant over long horizons, or text summaries, which may omit precise visual details. We study visual moment memory, the ability to retain such details from key moments for subsequent manipulation. To support this study, we introduce VMBench, a suite of long-horizon manipulation tasks requiring memory of spatial locations, visual appearances, and their associations. We further propose MomentMem, a hierarchical architecture in which a VLM-based memorizer selects keyframes an…",
+      "authors": [
+        "Guangyu Zhao",
+        "Yongchang Zhang",
+        "Ruizhang Jiang",
+        "Zhihong Yu",
+        "Yuhao Zhang",
+        "Tao Wu"
+      ],
+      "published": "2026-11-19T19:42:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26745v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
       "id": "2606.31109v1",
       "title": "InfiniVerse: Occupancy Guided Unbounded Scene Generation for Autonomous Driving",
       "abstract": "Generating realistic, controllable, and temporally coherent urban environments is a critical yet unresolved challenge in the autonomous driving community. In this paper, we introduce InfiniVerse, a unified pipeline for long-range, 2D-3D-aligned, and controllable synthesis of dynamic urban scenes from a single frame. In practice, our approach first reconstructs a 3D occupancy representation from the input multi-view frame. This representation serves as a foundation for autoregressive scene extension along arbitrary trajectories. Subsequently, a video diffusion model translates the coarse occupancy grid into realistic, spatiotemporally consistent video sequences. Moreover, we propose a hierarc…",
@@ -18741,6 +18800,33 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.27407v1",
+      "title": "BladeR: Scalable, Shape-Guided 3D Reconstruction of Wind Turbine Blades from UAV Imagery",
+      "abstract": "The structural integrity of wind turbine blades is critical for safe, efficient energy production. Accurate 3D reconstruction allows precise localization and quantification of wear and early damage detection. While drone-based inspections are standard, their high-resolution imagery poses challenges such as weak texture, lighting variability, and high computational cost. We present BladeR, a scalable pipeline for high-quality 3D reconstruction from inspection imagery. A hierarchical sparse reconstruction strategy leverages GPS/IMU data and blade shape priors to guide advanced keypoint matchers on full-resolution images. For dense reconstruction, a tiled Gaussian Splatting framework processes …",
+      "authors": [
+        "Jonathan Sterckx",
+        "Michiel Vlaminck",
+        "Hiep Luong"
+      ],
+      "published": "2026-11-20T10:14:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27407v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 49
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -34232,6 +34318,124 @@
       "first_seen": "2026-11-20T15:58:46.430941+00:00"
     },
     {
+      "id": "2611.27447v1",
+      "title": "Mechanism Parity for Simulation-Based Validation of Autonomous-Driving Perception",
+      "abstract": "Simulation is central to intelligent-vehicle validation, but visual realism or output agreement between a real scene and its synthetic counterpart does not prove that a perception system used the same evidence in both domains. This paper addresses that mechanism-parity gap for paired real-synthetic autonomous-driving perception. It unifies Decisive-Feature Fidelity, which compares decisive evidence maps in a frozen system under test (SUT), with Concept-Decisive Feature Fidelity, which projects decisive evidence into semantic scene concepts for diagnosis. The framework is a validation diagnostic rather than a standalone safety certificate: it asks whether output-consistent simulation also pre…",
+      "authors": [
+        "Danial Safaei",
+        "Siddartha Khastgir",
+        "Matthew D. Higgins",
+        "Jeroen Ploeg",
+        "Mohsen Alirezaei",
+        "Son Tong"
+      ],
+      "published": "2026-11-20T10:43:41Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27447v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.27144v1",
+      "title": "Simulation-Based Testing of RCM-Constrained Robotic Software via Task Manifolds",
+      "abstract": "System-level testing of surgical robots requires generating executable test scenarios that exercise diverse, safety-critical behaviors. However, remote-center-of-motion (RCM) surgical manipulators operate within tightly constrained workspaces governed by coupled task geometry, inverse kinematics, and motor limits. Direct sampling in motor-command or Cartesian spaces frequently wastes testing budgets on physically unfeasible configurations. To address this limitation, we present a manifold-centered testing framework that decouples feasible test-domain construction from downstream test-generation strategies. Candidate inputs are generated directly within this constructed feasible domain and ma…",
+      "authors": [
+        "Zhenyu Jiang",
+        "Yanlin Li",
+        "Rongjie Yan",
+        "Rihui Song",
+        "Kai Huang"
+      ],
+      "published": "2026-11-20T05:24:11Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27144v1",
+      "categories": [
+        "cs.SE",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.26916v1",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "abstract": "Egocentric video is the most scalable source of manipulation data for robot learning, but its difficulty lies in producing high-quality supervision. Existing large corpora lack metric 3D labels or rely on heterogeneous devices, motion-capture labs, or a headset's built-in real-time tracker, whose accuracy is not reported for the released data. We introduce RoboCap-10k: 10,000 curated hours of unscripted manipulation recorded during workers' paid shifts in 11 countries, spanning 18 task families, 200 task types, and 2,000 tasks. Every hour is captured on one device, the RoboCap, a 250 g hat with six synchronized global-shutter cameras and dual IMUs. Online calibration brings every device belo…",
+      "authors": [
+        "Kheri Hughes",
+        "Qasim Ali",
+        "Nikash Bhardwaj",
+        "Owen Akhibi",
+        "Niresh Dravin",
+        "Vivek Sharma"
+      ],
+      "published": "2026-11-20T00:04:54Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26916v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.26676v1",
+      "title": "One Behavior, Out of Order: Deterministic Execution and Parallel Simulation of ROS 2 Applications",
+      "abstract": "System-level simulation is widely used to validate robotic applications before hardware deployment. However, Robot Operating System 2 (ROS 2), a popular middleware for such applications, uses asynchronous publish-subscribe communication, which can make application behavior depend on scheduling and the platform. The behavior can then vary across runs and machines even with the same inputs. This nondeterminism makes faults hard to reproduce and tests unreliable. In this paper, we first give ROS 2 applications a lightweight coordination scheme in which every component, including event-driven ones, reads its inputs and writes its outputs at predefined time instants. By decoupling computation and…",
+      "authors": [
+        "Chengzi Huang",
+        "Behnam Khodabandeloo",
+        "Duc Anh Nguyen",
+        "Chuanchao Gao",
+        "Wang Yi"
+      ],
+      "published": "2026-11-19T18:45:08Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.26676v1",
+      "categories": [
+        "cs.RO",
+        "cs.DC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -45388,6 +45592,62 @@
       "first_seen": "2026-11-20T15:58:46.430941+00:00"
     },
     {
+      "id": "2611.27653v1",
+      "title": "Late-Time Dynamics of Flow Matching: Distance Geometry and Learning",
+      "abstract": "Generative models transform simple random inputs into samples that resemble observed data. For a finite training set, a central question is how its geometry shapes the terminal dynamics and the probabilities assigned to individual samples. We address this question for flow matching with linear interpolation between independent Gaussian and empirical samples. The squared distance to the training set generates explicit paths contracting exponentially toward the nearest sample. We prove that exact trajectories restarted at prescribed late-time states approximate these paths uniformly over all elapsed times and compact sets of starting states away from Voronoi interfaces, with an error exponenti…",
+      "authors": [
+        "Umberto Biccari",
+        "Junqing Huang",
+        "Kang Liu",
+        "Enrique Zuazua"
+      ],
+      "published": "2026-11-20T14:18:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27653v1",
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.27501v1",
+      "title": "Solar-Conditioned Flow Matching for Multitemporal Aerial Visible-to-Infrared Image Translation",
+      "abstract": "Aerial visible-to-infrared (V2IR) image translation provides scalable thermal data across the full diurnal cycle. However, existing methods predominantly learn a static mapping within narrow acquisition windows. As the thermal state evolves throughout the day, a single visible image may correspond to multiple plausible IR appearances, making V2IR translation an inherently multitemporal task. This letter proposes solar-conditioned latent flow matching (Solar-Flow), which upgrades aerial V2IR translation from static mapping to multitemporal generation. First, we design three computable physical factors, namely the solar elevation, the thermal phase clock (TPC), and the flight altitude. The TPC…",
+      "authors": [
+        "Wenwen Fang",
+        "Bingwei Hui",
+        "Xin Chen",
+        "Zhongzhen Sun",
+        "Zhenfeng Shao"
+      ],
+      "published": "2026-11-20T11:49:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27501v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -49359,6 +49619,76 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.27719v1",
+      "title": "VeilGS: Solving Darkness as a Veil of 2D Basis Maps over Retinex 3DGS",
+      "abstract": "In a dark capture, the darkness is not uniform. How much light reaches a surface depends on where it lies relative to the few light sources, and the camera compresses what remains with a tone curve. Most low-light 3D reconstruction methods either apply one curve to every pixel of a view, so a dark object beside a lamp and a bright one in an unlit corner receive the same correction, or store the darkness in the 3D representation, where it can absorb scene detail. We present VeilGS, a 3D Gaussian Splatting method for low-light novel view synthesis that treats the degradation as a veil drawn over a clear scene. Each Gaussian carries an albedo and a shading latent instead of spherical harmonics,…",
+      "authors": [
+        "Mohab Kishawy",
+        "Chengzhou Tang",
+        "Shahram Shirani",
+        "Jun Chen"
+      ],
+      "published": "2026-11-20T15:23:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27719v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        },
+        {
+          "id": "4B_texturing",
+          "label": "4B · Texturing & Materials",
+          "color": "#F59E0B",
+          "score": 6
+        },
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 5
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.27162v1",
+      "title": "Hierarchical Hybrid-Coordinate Flow Matching for Accurate and Physically Plausible Apo-to-Holo Protein Generation",
+      "abstract": "Predicting holo-like protein conformations from apo structures is essential in structure-based drug design. Most existing apo-to-holo models operate in Cartesian space and achieve strong global accuracy. However, high global accuracy does not ensure physically valid local backbone geometry. Internal-coordinate models offer local control and validity, but regressive generation can amplify angular errors, known as the lever-arm effect. We introduce CrypticFlow, a hierarchical flow-matching model that combines these two complementary representations. An ESM-3-conditioned E(3)-equivariant graph network first generates sparse C$α$ anchors in Cartesian space. A conditional midpoint Transformer the…",
+      "authors": [
+        "Minjong Kim",
+        "Jaemin Sim",
+        "Dongwoo Kim",
+        "Myunghyun Jang",
+        "Eun-Sol Kim",
+        "Juyong Lee"
+      ],
+      "published": "2026-11-20T05:47:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.27162v1",
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-23T19:06:45.102185+00:00"
     }
   ]
 }
