@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-23T19:06:45.102185+00:00",
-  "total": 1643,
-  "new_this_run": 11,
+  "last_updated": "2026-11-24T18:45:08.228894+00:00",
+  "total": 1661,
+  "new_this_run": 18,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -882,6 +882,41 @@
       "first_seen": "2026-11-19T16:27:13.330249+00:00"
     },
     {
+      "id": "2611.30646v1",
+      "title": "Part-wise Certified State Estimation of Articulated Objects from Passive Stereo",
+      "abstract": "Robots in manufacturing often handle thin, hinged objects known from CAD models that change shape during the task, like folding cartons. Monitoring such tasks requires estimating the object's articulation state, its pose and the shape of any semi-deformable part. Learning-based estimators generalise across objects but lose precision while handling thin parts. Model-based fitting is precise but often needs accurate depth, a close initial estimate and a clean object mask. We present part-wise certification of an articulated object's state, estimated from passive stereo. Our estimator rivals the precision of the best model-based fitting method without using depth, a close initial estimate or a …",
+      "authors": [
+        "Orion Desbonnet",
+        "Kei Higuchi",
+        "Alex Sykes",
+        "Ayush Deshmukh",
+        "Victor Leve",
+        "Joao Moura"
+      ],
+      "published": "2026-11-23T13:10:10Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30646v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 22,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 110
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
       "id": "2606.30608v2",
       "title": "UnfoldArt: Zero-Shot Recovery of Full Articulated 3D Objects from Text or Image",
       "abstract": "Articulated 3D objects are essential for interactive environments in embodied AI, robotics, and virtual reality, but reconstructing their structure and motion from sparse observations remains challenging. Existing approaches remain largely constrained by lack of supervised data or lack the priors needed to reliably recover articulation, hidden geometry, and internal object structure. We present the first debate-driven agentic approach to articulated 3D object reconstruction from text or image inputs that both grounds articulation reasoning in concrete motion and exposes the occluded geometry revealed under articulation. High-level agents reason about object semantics and motion using knowled…",
@@ -1252,6 +1287,59 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-30T13:55:56.745365+00:00"
+    },
+    {
+      "id": "2611.30345v1",
+      "title": "SceneCast: Learning Indoor Scene Synthesis from Curated Synthetic Videos with LLM Reward",
+      "abstract": "3D indoor scene synthesis requires generating objects to form a complete and coherent scene. Existing approaches rely heavily on manually annotated datasets, leading to high costs and limited generalization. We present SceneCast, an annotation-free framework that trains on large-scale, unlabeled videos, addressing two key challenges: (1) Videos provide only partial views of a scene, requiring the model to extrapolate unseen 3D regions, which is inherently error-prone; (2) Raw videos available online are uncurated, suffering from uncontrolled conditions and variable data quality. First, we design a Transformer-based model that predicts objects sequentially and is fine-tuned with reinforcement…",
+      "authors": [
+        "Ziyang Zong",
+        "Canming Xia",
+        "Haoran Xu",
+        "Guang Tan"
+      ],
+      "published": "2026-11-23T09:18:04Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30345v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.30219v1",
+      "title": "RoomTokens: Masked Diffusion over Structured Tokens for Indoor Scene Synthesis",
+      "abstract": "Generating 3D indoor scenes requires a representation that captures object semantics, instance identity, height structure, and orientation while respecting room geometry. Methods that model scenes as sequences of object vectors learn spatial constraints implicitly, leaving collisions and boundary violations to losses or post-processing; semantic-map methods make occupancy explicit, but collapse instance and directional structure. We introduce RoomTokens, a sliced structured-token representation in which each token stores semantic class, instance-color identity, and facing field. This representation allows a scene to be generated as a discrete grid while preserving cues for instance grouping,…",
+      "authors": [
+        "Xiaohao Sun",
+        "Angel X. Chang"
+      ],
+      "published": "2026-11-23T07:51:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30219v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
       "id": "2606.31993v1",
@@ -4304,6 +4392,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-05T15:16:50.214434+00:00"
+    },
+    {
+      "id": "2611.31098v1",
+      "title": "Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation",
+      "abstract": "Scaling robot manipulation learning remains challenging due to the high cost of collecting real-world interaction data. Real-to-Sim-to-Real (Real2Sim2Real) offers a promising route by enabling policy learning in simulation grounded in real-world observations, yet scaling this paradigm across diverse tasks and physical interactions remains difficult. We introduce Real2Worlds2Real, a self-improving agentic framework that integrates scalable simulation-world construction with policy development. Given limited visual observations and task descriptions, its tool-orchestration harness constructs faithful digital twins and expands them into diverse, physically executable digital cousins. The agent …",
+      "authors": [
+        "Jinzhong Gu",
+        "Jiakai Chen",
+        "Xinyi Cao",
+        "Yan Shen",
+        "Hangke Sui",
+        "Shutian Zheng"
+      ],
+      "published": "2026-11-23T17:39:59Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.31098v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 16,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 72
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
       "id": "2606.30352v1",
@@ -8490,6 +8607,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.30283v1",
+      "title": "AdvMTO: Multimodal and Temporal Adversarial Object Attacks via 2D Gaussian Splatting for BEV-Based 3D Object Detection",
+      "abstract": "Adversarial object attacks pose a threat to BEV-based 3D object detectors in autonomous driving. Existing attacks typically target a single modality, coordinate camera and LiDAR observations at the current timestamp, or model temporal persistence mainly in camera streams. Without a unified construction of current and historical observations, attacks can leave part of the detector's accumulated evidence unsuppressed, limiting their effectiveness. In this paper, we propose AdvMTO, a 2D Gaussian Splatting (2DGS) framework for suppressing detection of persistent adversarial objects. Its oriented surfels encode appearance, geometry, and opacity in one object state, from which camera images and sc…",
+      "authors": [
+        "Zhiyang Cui",
+        "Hao Tan",
+        "Ruonan Li",
+        "Shibin Wu",
+        "Junjian Zhang",
+        "Hong'an Lin"
+      ],
+      "published": "2026-11-23T08:40:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30283v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 55
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.29501v1",
+      "title": "MAWAM: Joint Imagination for Collaborative Robot Manipulation with a Multi-Agent World Action Model",
+      "abstract": "World action models (WAMs) excel at robot manipulation by imagining future observations and decoding actions from them, yet remain confined to a single embodied agent. In practice, manipulation often requires multiple robots to collaborate across disjoint workspaces, coupled timing, and heterogeneous embodiments. Such coordination demands both spatiotemporal alignment of future interactions and awareness of individual embodiment and role identities, whereas existing decentralized per-robot policies, flat centralized models, and multi-robot VLAs fail to unite both. To bridge this gap, we present MAWAM, a multi-agent world action model that jointly predicts the future observations of multiple …",
+      "authors": [
+        "Rongze Tang",
+        "Chenyu Zhou",
+        "Jianjie Fang",
+        "Ziming Liu",
+        "Zhaolu Wang",
+        "Ziyou Wang"
+      ],
+      "published": "2026-11-22T14:16:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.29501v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
       "id": "2607.01367v1",
@@ -13550,6 +13732,67 @@
       ],
       "has_code": true,
       "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.30667v1",
+      "title": "LLM-Guided Compositional Continual Learning for Robot Manipulation with Gated Low-Rank Experts",
+      "abstract": "General-purpose manipulation robots must acquire new skills over time without forgetting prior ones or retraining from scratch. We present a continual learning framework that represents each skill as a dedicated expert sub- network in a Progressive Neural Network (PNN). New tasks reuse prior knowledge through low-rank adaptation (LoRA) modules on lateral connections controlled by learnable per-parent gates, enabling explicit attenuation of individual transfer paths while reducing the parameter cost of dense PNN laterals. For long-horizon deployment, a frozen local large language model decomposes natural-language instructions into sub-tasks, routes them to suitable experts, and requests a new…",
+      "authors": [
+        "Nilay Kushawaha",
+        "Abdalla Swikir",
+        "Fares Abu-Dakka"
+      ],
+      "published": "2026-11-23T13:25:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30667v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.30472v1",
+      "title": "Target-Part Preference Optimization for Part-Aware 3D Generation",
+      "abstract": "Part-aware 3D generation requires not only globally plausible objects but also complete, well-separated semantic parts, yet high-quality part decompositions remain too scarce to support large-scale supervised fine-tuning. We study whether preference fine-tuning based on Direct Preference Optimization (DPO) can adapt a pretrained part-aware generator from limited part-annotated data without architectural changes. We rank candidates generated with different random seeds against ground-truth (GT) geometric metrics, and select the (object, target-part) examples with the largest across-seed quality gap. Each selected example stores a seed pair whose two flow trajectories share one clean GT compos…",
+      "authors": [
+        "Zishan Qin",
+        "Rui Li",
+        "Zeyu Zhang",
+        "Sevvandi Kandanaarachchi",
+        "Lina Yao",
+        "Dong Gong"
+      ],
+      "published": "2026-11-23T11:00:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30472v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        },
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -18827,6 +19070,41 @@
       ],
       "has_code": true,
       "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.31023v1",
+      "title": "WildAnySplat: Feed-Forward 3D Gaussian Splatting in the Wild",
+      "abstract": "We present WildAnySplat, a feed-forward 3D Gaussian Splatting framework that enables robust novel-view synthesis from in-the-wild multi-view images. Unlike controlled captures, real-world images often contain multi-view inconsistencies caused by transient occluders, illumination changes, and camera ISP, which degrade the quality of existing feed-forward reconstruction methods. To address this challenge, we introduce a student-teacher framework that learns transient-robust and appearance-consistent 3D representations. A teacher network operates on clean images, while a student processes the corresponding in-the-wild inputs. The teacher provides clean supervision to guide the student toward a …",
+      "authors": [
+        "Richard Shaw",
+        "Arthur Moreau",
+        "Athanasios Papaioannou",
+        "Thomas Tanay",
+        "Zhensong Zhang",
+        "Eduardo Pérez-Pellitero"
+      ],
+      "published": "2026-11-23T17:05:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.31023v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 35
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -34436,6 +34714,66 @@
       "first_seen": "2026-11-23T19:06:45.102185+00:00"
     },
     {
+      "id": "2611.30813v1",
+      "title": "HIVE-Bench: Evaluating Patch-Level Visual Representations for Egocentric Robot Manipulation",
+      "abstract": "Pretrained vision is a common start for robot learning, but most comparisons still score one pooled vector from a third-person image. Bimanual policies instead read dense patch tokens from cameras on the robot. We introduce HIVE-Bench: one shared flow-matching policy reads 20 encoders from seven families on 24 egocentric bimanual tasks, across adaptation, task sharing, and sweeps of data, model size, and layer. Keeping the patches matters. Averaging each view to one token removes most of the success, adaptation helps every pair we test, and one shared policy keeps most of the success of separate policies at a fraction of the updates. The same tokens are then scored with statistics, state and…",
+      "authors": [
+        "Qiwei Liang",
+        "Zhengtu Liang",
+        "Minghao Lai",
+        "Yikeng Chen",
+        "Yiming Wang",
+        "Boyang Cai"
+      ],
+      "published": "2026-11-23T15:06:14Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30813v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.30004v1",
+      "title": "EnvTrap: Revealing the Environment-Only Attack Surface in Embodied AI via Consequence-Blind Action Execution",
+      "abstract": "As AI models evolve from text and vision to physical agents, embodied AI faces a fundamentally different attack surface. Prior attacks on embodied systems have used crafted instructions, adversarial visual inputs, and training-time policy modifications; we study environment-only object rearrangements with unchanged models and instructions. We reveal an attack surface in safety-critical spatial relations among existing objects. An adversary who rearranges objects, without modifying instructions or accessing models, can cause hazardous consequences. In this work, we propose EnvTrap, a diagnostic pipeline that constructs paired safe, trap, and null-trap (benign but misleading) embodied scenario…",
+      "authors": [
+        "Zehao Liu",
+        "Huashuo Lei",
+        "Xi Lin",
+        "Haoang Li",
+        "Yuliang Chen",
+        "Huarui Zhang"
+      ],
+      "published": "2026-11-23T04:08:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30004v1",
+      "categories": [
+        "cs.CR",
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -38033,6 +38371,64 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-20T15:58:46.430941+00:00"
+    },
+    {
+      "id": "2611.31156v1",
+      "title": "Tokens as Locality-Preserving Anchors: Scalable Novel View Synthesis with Target-Adaptive Token Routing",
+      "abstract": "Transformer-based view synthesis models render each target viewpoint from the source images, without an explicit 3D representation, which lets them reproduce fine detail and view-dependent effects. However, their decoder attends to every source token for every frame, so rendering slows with each source image. Rasterization avoids this by culling primitives that the viewpoint does not see, but source tokens cannot be culled this way, as they have no explicit position or extent. Our key insight is that source tokens are nonetheless spatial anchors: each encodes a local region of the scene, so the decoder's attention for any viewpoint concentrates on a few of them. A lightweight router predicts…",
+      "authors": [
+        "Sagnik Ghosh",
+        "Aswin C. Sankaranarayanan"
+      ],
+      "published": "2026-11-23T18:21:37Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.31156v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 35
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.30102v1",
+      "title": "LMnOP: Pruning 3D Gaussian Splatting via Leave-Many-Out Importance",
+      "abstract": "3D Gaussian Splatting renders photorealistic views in real time. However, a single scene often needs millions of Gaussians, so these models are costly to store and render. Pruning reduces this cost by keeping a subset of the Gaussians. A common score is the leave-one-out importance, which is the loss increase when a Gaussian alone is removed. At high pruning ratios, many Gaussians are removed together, so Gaussians that are redundant alone but essential together are lost. We present LMnOP (Leave-Many-Out Pruning), which estimates the importance of each Gaussian under the removal of the other Gaussians. This leave-many-out importance is the average loss increase when a Gaussian is removed whi…",
+      "authors": [
+        "Sunjae Jeong",
+        "Jaeseung Kim",
+        "Hyoseok Hwang"
+      ],
+      "published": "2026-11-23T05:59:03Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30102v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 10,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
       "id": "2606.32036v1",
@@ -45648,6 +46044,101 @@
       "first_seen": "2026-11-23T19:06:45.102185+00:00"
     },
     {
+      "id": "2611.30602v1",
+      "title": "GSDet: Gaussian Splatting for Oriented Object Detection",
+      "abstract": "Oriented object detection has advanced with the development of convolutional neural networks (CNNs) and transformers. However, modern detectors still rely on predefined object candidates, such as anchors in CNN-based methods or queries in transformer-based methods, which struggle to capture spatial information effectively. To address the limitations, we propose GSDet, a novel framework that formulates oriented object detection as Gaussian splatting. Specifically, our approach performs detection within a 3D feature space constructed from image features, where 3D Gaussians are employed to represent oriented objects. These 3D Gaussians are projected onto the image plane to form 2D Gaussians, wh…",
+      "authors": [
+        "Zeyu Ding",
+        "Jiaqi Zhao",
+        "Yong Zhou",
+        "Wen-liang Du",
+        "Hancheng Zhu",
+        "Rui Yao"
+      ],
+      "published": "2026-11-23T12:39:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30602v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.30351v1",
+      "title": "NNS-GS: Non-Local Neural Scattering for Relightable Gaussian Splatting",
+      "abstract": "Creating relightable 3D assets of translucent objects is challenging because changing the illumination at one surface location can affect the appearance elsewhere through subsurface scattering. Existing Gaussian-based scattering models typically predict scattering from local features, making this dependence difficult to capture. We present Non-Local Neural Scattering for Gaussian Splatting (NNS-GS), which learns non-local scattering together with geometry-guided local reflection. The scattering module learns how illumination from light-visible surface regions in light space contributes to the shading point in view space, conditioned on regional diffuse responses and spatial relationships. Th…",
+      "authors": [
+        "Shiyu Liang",
+        "Yang Gao",
+        "Lili Wang",
+        "Aimin Hao",
+        "Beibei Wang"
+      ],
+      "published": "2026-11-23T09:23:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30351v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.30341v1",
+      "title": "FMSNO: Scaling Surface Neural Operators by Learned Flow Matching Reparametrisation",
+      "abstract": "We propose the Flow Matching Surface Neural Operator (FMSNO), which combines learning a shared map from irregular surface meshes to a regular two-dimensional grid on the sphere and training a neural operator on the regular grid. Constructing a separate map for each new geometry can dominate inference time on large meshes. We initially pretrain the mapping by flow matching using precomputed optimal transport maps as targets and then continue its training using combined geometry and CFD objectives. We apply it to unseen geometries in a single forward pass. The learned flow deforms the surface points, and we project its endpoints onto the sphere. We then splat geometric features onto the spheri…",
+      "authors": [
+        "Vasilii Liamin",
+        "Oleg Bakhteev",
+        "Vladimir Vanovskiy"
+      ],
+      "published": "2026-11-23T09:15:45Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30341v1",
+      "categories": [
+        "cs.LG"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
       "id": "2606.31680v1",
       "title": "ShellMaker: Language-Guided Exterior Completion under Structural Constraints",
       "abstract": "Despite advances in indoor scene generation, synthesizing coherent building exteriors consistent with generated interiors remains largely unexplored. Existing methods can generate floor plans and wall layouts but typically stop at a structural shell, lacking stylistically consistent facades and roofs. Completing these exteriors is challenging because the footprint, wall geometry, and opening semantics must remain fixed-constraints that unconstrained generative models often violate. We introduce ShellMaker, a language-guided exterior completion framework that operates under these structural constraints. Given a building scaffold and a text style prompt, ShellMaker generates a complete exterio…",
@@ -49689,6 +50180,71 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-23T19:06:45.102185+00:00"
+    },
+    {
+      "id": "2611.30178v1",
+      "title": "Quantizing in the Loop: Drift-Aware Ultra-Low-Bit Vision-Language-Action Models",
+      "abstract": "Deploying large vision-language-action (VLA) models on resource-constrained robots demands extreme compression, yet existing post-training quantization (PTQ) methods frequently collapse at ultra-low bit-widths ($\\le$ 2 bits). We trace this failure to two mismatches in standard pipelines. First, calibrating on static offline demonstrations induces distribution shift: minor quantization perturbations drive the policy into unseen states where uncalibrated errors compound. Second, minimizing the layer-wise weight reconstruction error is a flawed proxy, as action generation depends only on the representations consumed by the action head. We present LoopQ, an on-policy ultra-low-bit quantization f…",
+      "authors": [
+        "Yanlong Chen",
+        "Thongthornpatch Chamadol",
+        "Yichen Guo",
+        "Yunfei Gao",
+        "Mohan Liu",
+        "Addison Lin Wang"
+      ],
+      "published": "2026-11-23T07:23:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30178v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 18
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.30073v1",
+      "title": "SF-Flow: Spectral Flow Matching with High Structural Fidelity for Hallucination-Suppressed Scientific Image Generation",
+      "abstract": "Scientific image generation focuses on reproducing experimental appearance while following a prescribed spatial layout. A key challenge is acute data sparsity, which requires operating with unpaired collections of materials (real images and prescribed layouts), where no direct supervision is feasible. Work on unpaired translation has shown that it is possible to reproduce the texture and intensity variations of real images, but it is extremely hard to retain the intended phase boundaries in the prescribed locations. This paper tackles this challenge and introduces SF-Flow, a flow-matching model trained only on real material images that imposes spectral constraints during generation, producin…",
+      "authors": [
+        "Zehua Wang",
+        "Patxi Fernandez-Zelaia",
+        "Mohamed Wahib",
+        "Xiao Wang",
+        "Isaac Lyngaas",
+        "Amir Koushyar Ziabari"
+      ],
+      "published": "2026-11-23T05:30:48Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.30073v1",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 8,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-24T18:45:08.228894+00:00"
     }
   ]
 }
