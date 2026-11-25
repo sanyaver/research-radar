@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-24T18:45:08.228894+00:00",
-  "total": 1661,
-  "new_this_run": 18,
+  "last_updated": "2026-11-25T17:52:40.279724+00:00",
+  "total": 1692,
+  "new_this_run": 31,
   "papers": [
     {
       "id": "2610.07652v1",
@@ -1342,6 +1342,34 @@
       "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
+      "id": "2611.32099v1",
+      "title": "PreferenceScene: Personalized Indoor Scene Synthesis from Feedback",
+      "abstract": "Text-to-scene methods turn a short instruction into a furnished 3D room, but the room that a particular person wants rarely comes across fully in words: many preferences surface only when the person sees a concrete room and can point to what they like and dislike in it. We therefore study personalized indoor scene synthesis under hidden user preferences: over several turns, a system shows a 3D scene, and the user, who sees only rendered images of the scene, replies with brief free-form feedback and a satisfaction score. The system must therefore bring the whole room toward the user's preferences from feedback that comments on only part of it at a time. It must also be able to change every pa…",
+      "authors": [
+        "Seongrae Noh",
+        "RyunHa Lee",
+        "HyeongYeop Kang"
+      ],
+      "published": "2026-11-24T07:19:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32099v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "relevance_score": 21,
+      "sections": [
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 110
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
       "id": "2606.31993v1",
       "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
       "abstract": "While robotic manipulation capabilities have advanced rapidly, physical safety remains a major barrier to deploying household robots: task success is insufficient if the robot damages itself or its surroundings. Simulation offers a harm-free alternative to costly and dangerous real-world training and evaluation, yet existing simulators lack general mechanisms to detect, quantify, and represent damage. To address this gap, we introduce OOPSIEVERSE, a unified simulation framework and benchmark for damage-aware household manipulation. OOPSIEVERSE provides damage as an explicit, physically-grounded, and taskagnostic signal by converting sources such as contact forces, temperature changes, and li…",
@@ -2425,6 +2453,35 @@
       ],
       "has_code": false,
       "first_seen": "2026-10-28T13:54:48.020284+00:00"
+    },
+    {
+      "id": "2611.32185v1",
+      "title": "OVOK: A Recursive Self-Improving Agentic Framework for Video-Based Articulated Robot State Estimation",
+      "abstract": "Recovering articulated robot state from video supports metric spatial sensing for manipulation, scene reconstruction, and action planning. Yet the problem is ill-posed: different intrinsics, camera-to-robot poses, and joint angles can explain similar observations. Prior task-specific regressors typically assume known intrinsics, fit one robot through laborious data collection and robot-specific training, and still transfer poorly across scenes. Foundation models apply to any robot zero-shot, but their estimates have large errors. We present OVOK (One Video to Kinetics), a recursive self-improving agentic framework for this task. Under a human-authored protocol, an agentic initializer constru…",
+      "authors": [
+        "Cheng Dai",
+        "Renkai Luo",
+        "Guanfeng Tang",
+        "Siming Li",
+        "Hao Zhao"
+      ],
+      "published": "2026-11-24T08:35:58Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32185v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 19,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 100
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
     },
     {
       "id": "2607.03819v1",
@@ -8674,6 +8731,127 @@
       "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
+      "id": "2611.32654v1",
+      "title": "DexWAC: A Unified World-Actor-Critic Model for Dexterous Robot Manipulation",
+      "abstract": "Robot demonstrations provide more than actions to imitate: they reveal how actions change the world and how those changes contribute to task success. Recent world-action models (WAMs) extend vision-language-action (VLA) models with the first signal by jointly predicting actions and future observations, yet this predictive ability serves only as an auxiliary loss for policy learning. Meanwhile, most policy improvement methods learn dynamics and values in separate models, increasing training overhead and limiting representation sharing between these complementary objectives. We introduce DexWAC, a unified world-actor-critic model that jointly learns an actor, an action-conditioned world model,…",
+      "authors": [
+        "Hongjia Liu",
+        "Dacheng Zhou",
+        "Minghao Fu",
+        "Chuanjun Guo",
+        "Tianze Wang",
+        "Qingtao Liu"
+      ],
+      "published": "2026-11-24T14:09:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32654v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32564v1",
+      "title": "MXI-MemICL: Towards In-Context Robot Manipulation through Self-Retrieved Interaction Memory",
+      "abstract": "In-context learning (ICL) offers robots a way to acquire new skills from a single demonstration without parameter updates. However, existing robotic ICL methods either rely on large-scale pretraining constrained by scarce, costly robot interaction data or require additional annotations yet struggle to generalize across tasks. To bridge this gap, we propose MXI-MemICL, a framework for memory-guided ICL in vision-language-action (VLA) models. By treating demonstrations as retrievable memory, MXI-MemICL enables in-context manipulation without additional large-scale pretraining or specialized annotations. Specifically, a visual-action causal encoder turns actions and their observed effects in de…",
+      "authors": [
+        "Jialong Peng",
+        "Shihao Zhou",
+        "Feng Yan",
+        "Wen Xiao",
+        "Haozheng Wang",
+        "Wenqi Ren"
+      ],
+      "published": "2026-11-24T13:12:01Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32564v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32016v1",
+      "title": "RoboHarness-RL: Agentic Reinforcement Learning for VLM-Based Robot Manipulation",
+      "abstract": "Agentic harnesses enable frontier vision-language models (VLMs) to manipulate robots through perception, planning, and control tools, yet achieving comparable performance with compact open-weight VLMs remains challenging. We present RoboHarness-RL, an agentic reinforcement learning framework for improving VLM-based robot manipulation through tool calls. Starting from supervised fine-tuning on successful teacher demonstrations, the VLM further improves through multi-turn reinforcement learning with task-outcome rewards, without relying on vision-language-action models or world action models. To support efficient multi-turn training, we develop LiteHarness, which uses hierarchical memory to ke…",
+      "authors": [
+        "Liyang Li",
+        "Mingyu Liu",
+        "Xiaoman Li",
+        "Zhiyue Zhao",
+        "Jin-Chuan Shi",
+        "Canyu Zhao"
+      ],
+      "published": "2026-11-24T05:59:50Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32016v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 63
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.31715v1",
+      "title": "Sparks of Weight-Space Programming for Robot Foundation Models",
+      "abstract": "This paper demonstrates an approach for correcting failures of robot foundation models (RFMs) without additional data collection, demonstrations, or training. We apply weight-space programming (WSP), in which a language-model agent directly reads and writes a neural network's parameters, to a large, pre-trained vision-language-action policy. The idea is simple: many policy failures are not random but repeatedly land in the same recognizable stuck state, so if that state is visible in the model's internal activations, a small edit could trigger a corrective movement while leaving the rest of the model's parameters unchanged. A core design choice is where to write the edit: repurposing a few n…",
+      "authors": [
+        "Kyle Coelho",
+        "Eugen Solowjow"
+      ],
+      "published": "2026-11-24T00:11:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.31715v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 14,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        },
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 9
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
       "id": "2607.01367v1",
       "title": "Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection",
       "abstract": "A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather in…",
@@ -13793,6 +13971,249 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.33013v1",
+      "title": "RFW-W: Scaling Physical Asset Universes for Generative Embodied Simulation",
+      "abstract": "Scaling embodied simulation requires diverse objects with executable physical representations. We present RFW-W, a physical asset universe connecting rigid, articulated, and deformable asset sources to task-conditioned scene composition. Its reported inventories comprise 1,010,386 asset records: 524,611 rigid assets in 1,212 categories (RFW-R), 402,410 articulated assets in 531 categories (RFW-A), and 83,365 jointly verified deformables in 485 categories (RFW-S). These taxonomies contribute 2,228 dataset--category entries. RFW-R couples category-guided generation with collision geometry, composed physical properties, and interaction annotations; RFW-A uses reusable agent-authored procedural …",
+      "authors": [
+        "Jiawei Weng",
+        "Rui Zhang",
+        "Saining Zhang",
+        "Changjian Pan",
+        "Yuanbo Lyu",
+        "Jiarui Guo"
+      ],
+      "published": "2026-11-24T17:32:51Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.33013v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.33010v1",
+      "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+      "abstract": "Can a simple mirror expose the limitations of today's robotic manipulation policies? Inspired by the mirror self-recognition test in animal cognition, we investigate whether robot policies can reliably manipulate physical objects in scenes containing their reflections. We introduce RoboDojo-Mirror, a benchmark built on RoboDojo that preserves task objectives, success criteria, and policy checkpoints while comparing a mirror-free baseline with single-mirror, dual-mirror, and mirrored-tabletop conditions. Across five policies spanning Vision-Language-Action models, World Action Models, and agentic policies, every mirror condition reduces aggregate success rates: averaged over the three conditi…",
+      "authors": [
+        "Xuanchen Liu",
+        "Hejun Zhang",
+        "Boxuan Dong",
+        "Ying Wu",
+        "Heshuai Li",
+        "Wen Gao"
+      ],
+      "published": "2026-11-24T17:32:00Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.33010v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32803v1",
+      "title": "MRBench: Benchmarking Physical Necessity Reasoning in Heterogeneous Multi-Robot Manipulation",
+      "abstract": "Recent advances in multi-robot manipulation have shown how robots can collaborate to accomplish complex tasks. However, successful coordination does not reveal which robots are actually needed. The same task may require different teams as robot capabilities change, resources become unavailable, or objects replace robotic support. We argue that reliable multi-robot manipulation requires physical necessity reasoning: understanding what a task demands, which resources can fulfill those demands, and which are truly necessary. We introduce MRBench, a benchmark for physical necessity reasoning in heterogeneous multi-robot manipulation. It comprises eight tasks with distinct concurrency and reach c…",
+      "authors": [
+        "Yanzhe Chen",
+        "Zhijun Cao",
+        "Ruihe An",
+        "Chang Gong",
+        "Mike Zheng Shou"
+      ],
+      "published": "2026-11-24T15:25:53Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32803v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32797v1",
+      "title": "Supply Geometry, Learn Execution: Screw Attention for Zero-Shot Policy Transfer in Robot Manipulation",
+      "abstract": "We present the Screw Attention Policy, a geometry-centric manipulation framework that supplies task geometry explicitly and learns only execution. The policy operates on object poses, relative SE(3) transforms, and joint screw axes provided by perception and robot models. The policy requires only 30K learned parameters. Trained entirely in simulation on a single robot arm, the policy generalises to new scene layouts, transfers zero-shot across robot embodiments, and deploys directly on a real robot, without adaptation or fine-tuning. It achieves 96% success on LIBERO, 85.8% under layout changes, 80.2% across five unseen robot arms, and 21 of 24 trials on a real robot. These results suggest t…",
+      "authors": [
+        "Aly Magassouba"
+      ],
+      "published": "2026-11-24T15:21:57Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32797v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32534v1",
+      "title": "EmbodiedStudio: A Task-Driven Simulation Generation Platform for Embodied Learning and Evaluation",
+      "abstract": "Training and evaluating robots across diverse tasks requires a supply of simulation environments suited to those tasks. While recent scene and task generators offer a promising way to expand this supply, delivering a usable task environment still faces two practical gaps: generated scenes that look plausible in appearance often fail to support the intended task interactions or remain physically stable in simulation, and generated scoring programs frequently attempt task conditions without implementing them faithfully. We present EmbodiedStudio, a task-driven simulation generation platform that bridges these gaps by jointly authoring scene, task, robot-behavior, and rubric programs under clos…",
+      "authors": [
+        "Yang Zhao",
+        "Xubo Yang"
+      ],
+      "published": "2026-11-24T12:58:24Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32534v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        },
+        {
+          "id": "3A_scene_layout",
+          "label": "3A · Scene Layout",
+          "color": "#3B82F6",
+          "score": 10
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32381v1",
+      "title": "Does Research-Paper Context Improve LLM-Generated Quadruped Navigation? An Exploratory Simulation Study",
+      "abstract": "Large language models can write competent robot navigation code, but not only does the research on the topic advance, a model may also, due to the volume of findings, fail to recall relevant findings and apply them to the task at hand. In this work, we test whether providing particular research papers as context improves the LLM-written navigation code for the Go2 quadruped, with the LLM (Claude Opus 5) and locomotion policy frozen. Specifically, we compare the navigation controllers the LLM writes when provided with and without particular papers across three settings: behavior trees, navigators edited from a shared base, and controllers written from scratch. When a maze's shortest route is …",
+      "authors": [
+        "Barnabas Juhasz",
+        "Rolf Pfister"
+      ],
+      "published": "2026-11-24T10:46:28Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32381v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32353v1",
+      "title": "Any2Act: Scaling In-Context Robot Learning from Heterogeneous Demonstrations",
+      "abstract": "Robot in-context learning (ICL) enables a policy to perform unseen tasks by following contextual demonstrations, without task-specific fine-tuning. This is increasingly valuable as large language models reasoning at low frequency can specify tasks through demonstrations and delegate high-frequency execution to such a policy. However, methods conditioned on human videos are bounded by scarce human-robot pairs, while those conditioned on robot demonstrations accept only one or two source types at limited scale. We present Any2Act, a foundation model for robot ICL. Our key insight is that a demonstration should be expressed in the camera layout and action space of the robot that performs it (th…",
+      "authors": [
+        "Ziang Ren",
+        "Zifan Wang",
+        "Zhuoyang Li",
+        "Benhao Qin",
+        "Haoyang Li",
+        "Qingtao Liu"
+      ],
+      "published": "2026-11-24T10:28:46Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32353v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.31588v1",
+      "title": "One Phase Is Enough: Sim-to-Real Transfer with Direct Visual Reinforcement Learning",
+      "abstract": "Sim-to-real reinforcement learning (RL) has enabled impressive robotic behaviors, yet deploying policies directly from vision remains challenging. A common approach first trains a teacher policy with RL using privileged state observations, then distills its behavior into a vision-based student via imitation. However, the resulting student can substantially underperform its teacher. Directly training visual policies with RL offers a promising alternative, but learning task-relevant visual representations from scratch can be sample-inefficient, making one-phase visual RL intractable. We propose DRIFT, a simple recipe for efficient one-phase visual RL using image observations available at test …",
+      "authors": [
+        "John Marangola",
+        "Antonia Bronars",
+        "Younghyo Park",
+        "Stephen Andrews",
+        "Kushal Kedia",
+        "Pulkit Agrawal"
+      ],
+      "published": "2026-11-23T21:32:12Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.31588v1",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "relevance_score": 13,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 54
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
     },
     {
       "id": "2606.31109v1",
@@ -19105,6 +19526,94 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.32967v1",
+      "title": "VidForce: Predicting Force-Aware Articulation by Observing Humans",
+      "abstract": "People can anticipate how an object moves and the effort an interaction may require by watching others. How can embodied agents acquire this understanding from video? Force measurements provide direct sensory supervision, but require specialized equipment and remain limited in quantity. We introduce VidForce, which estimates an interaction trajectory together with a force profile from a third-person RGB video; 2D contact clicks and textual object-action prompts are optional. Our approach makes limited instrumented measurements useful for interpreting human interactions through learned physical prototypes as a prior. The prototypes share learned force levels and temporal profiles across inter…",
+      "authors": [
+        "Rafay Mohiuddin",
+        "Jiaqi Chen",
+        "Marc Pollefeys",
+        "Hermann Blum"
+      ],
+      "published": "2026-11-24T17:03:47Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32967v1",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32932v1",
+      "title": "HARI4D: Hand-Articulation Aware 4D Reconstruction of Human-Object Interaction",
+      "abstract": "Reasoning about human-object interaction from RGB cameras is important for gaming, VR environments, and robot learning. Yet 4D reconstruction from a monocular RGB camera is challenging, especially when articulated hands are involved. Prior full-body works neglect hands during reconstruction, causing them to penetrate into, or float from the object. We present HARI4D, a hand-articulation-aware method for reconstructing spatially and temporally consistent 4D human-object interaction from monocular RGB video. We introduce a history-aware object tracker that provides robust and stable tracking. Based on these tracks, we improve the interaction configuration through coarse-to-fine reasoning that …",
+      "authors": [
+        "Semin Kim",
+        "Xianghui Xie",
+        "Chuqiao Li",
+        "Jongyoo Kim",
+        "Gerard Pons-Moll"
+      ],
+      "published": "2026-11-24T16:39:09Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32932v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "3B_articulation",
+          "label": "3B · Articulation & Joints",
+          "color": "#EF4444",
+          "score": 50
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32628v1",
+      "title": "Completion-Aware Compression for Progressive 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) enables high-quality novel-view rendering, but its large scene representations are costly to transmit. Pruning and compression reduce file sizes, yet progressive delivery also requires usable reconstructions before the full scene arrives. Existing progressive representations provide partial scenes, but level-based updates are limited by predefined coding boundaries. This paper presents a progressive 3DGS codec that balances attribute fidelity with the image benefit of making Gaussians available earlier. Its single compact stream supports partial 3D reconstruction and adds newly decoded Gaussians as more bytes arrive. The stream supports fine-grained updates at ar…",
+      "authors": [
+        "Reagan Koo",
+        "Yeong-Gyu Kim",
+        "Eun-Seok Ryu"
+      ],
+      "published": "2026-11-24T13:51:18Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32628v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 12,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 21
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
     },
     {
       "id": "2606.31921v1",
@@ -34774,6 +35283,308 @@
       "first_seen": "2026-11-24T18:45:08.228894+00:00"
     },
     {
+      "id": "2611.33054v1",
+      "title": "EmbodiSafety: Benchmarking Risk Understanding and Response in Embodied AI",
+      "abstract": "Progress in embodied foundation models is largely measured by task success, while the physical safety of their decisions remains underexamined. Safety evaluations centered on rule following and binary judgments do not adequately assess whether embodied models understand environmental hazards and make safe decisions. We introduce EmbodiSafety, comprising 1,092 snapshot tasks and 540 trajectory tasks across 844 visual scenarios to assess safety over short and long horizons. Six response modes cover direct execution, refusal, clarification, constrained execution, autonomous recovery, and human escalation. Distinguishing recovery from human intervention makes the boundary of safe autonomy an exp…",
+      "authors": [
+        "Erfei Cui",
+        "Shengjia Zhao",
+        "Yan Qin",
+        "Kaixuan Wang",
+        "Junming Chen",
+        "Ping Luo"
+      ],
+      "published": "2026-11-24T17:59:05Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.33054v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32863v1",
+      "title": "CityRecast: Suppressing Persistent Artifacts in Generative Satellite 3D Reconstruction",
+      "abstract": "Satellite-based 3D reconstruction is limited by sparse observations and changes across acquisition dates. Existing methods use generative priors to recover missing visual detail, but ghosting, streaking, and blur persist in their Gaussian scenes. These artifacts become particularly apparent in low-elevation renderings. We introduce CityRecast to suppress these artifacts through Gaussian scene repair and supervision calibration. To correct the Gaussian distributions that produce these artifacts, we first use multi-angle warm-up to constrain their spatial extent. This reduces the initial ghosting carried into progressive refinement. Surface-guided replacement then continues to repair the Gauss…",
+      "authors": [
+        "Shuo Cui",
+        "Yingyan Hou",
+        "Wanxuan Lu",
+        "Hongfeng Yu",
+        "Daobing Zhang",
+        "Xian Sun"
+      ],
+      "published": "2026-11-24T16:01:55Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32863v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 42
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32786v1",
+      "title": "Simulator-as-Proxy World Model for Robot Manipulation",
+      "abstract": "Video world models for robots are increasingly conditioned on a simulated or rendered proxy of the scene, on the assumption that the video will show what the proxy shows. Testing this assumption requires a proxy whose state is explicit and can be perturbed. We present SimPWM (Simulator-as-Proxy World Model): given a calibrated camera, it represents, from the first frame alone, the robot by its 3D model and the objects the gripper may touch as 3D points; a rule-based simulator with no trained parameters moves them under the actions, and a video model renders the result. SimPWM returns the realistic video together with the simulated state. We then freeze the simulated objects while the arm mov…",
+      "authors": [
+        "Tingting Liao",
+        "Mingjia Huo",
+        "Hao Li",
+        "Zhengzhong Liu",
+        "Eric P. Xing",
+        "Guangyi Liu"
+      ],
+      "published": "2026-11-24T15:14:07Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32786v1",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32735v1",
+      "title": "AnyPrune: Optimization-Free Pruning for Any Feedforward 3D Gaussian Splatting Pipeline",
+      "abstract": "Feedforward 3D Gaussian Splatting (3DGS) pipelines reconstruct a scene from images in a single forward pass, representing it as real-time-renderable 3D Gaussians. However, the resulting representations contain far more Gaussians than are needed to render the scene faithfully, especially when there are many input views. This drastically increases memory and storage requirements. Existing pruning methods either require costly re-optimization, which defeats the purpose of a single forward pass, or rely on simple strategies that do not exploit all the available information. We present AnyPrune, a transformer-based, optimization-free pruning module designed to work on top of any feedforward 3DGS …",
+      "authors": [
+        "Nicola Leonetti",
+        "Federico Stella",
+        "Aoxiang Fan",
+        "Saqib Javed",
+        "Pascal Fua",
+        "Luigi Di Stefano"
+      ],
+      "published": "2026-11-24T14:50:30Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32735v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32722v1",
+      "title": "AG-WAM: Attention-Guided World Action Model for Accurate and Efficient Robot Manipulation",
+      "abstract": "Recently developed World Action Models (WAMs) jointly predict future observations and robot actions, providing predictive context for control. However, existing WAMs typically learn implicit attention allocation with limited explicit action-relevant attention guidance, leading to limited performance. To unleash strong capabilities of WAMs, we introduce explicit attention guidance as a unifying principle and propose our Attention-Guided WAM (AG-WAM), an end-to-end framework with three plug-and-play attention guidance modules that directly reformulate internal attention paradigm in WAMs: the Content-Adaptive Predictive Attention module, the Guidance-Point Visual Attention module, and the State…",
+      "authors": [
+        "Hongcheng Zhang",
+        "Lei Sun",
+        "Songxuan Liu",
+        "Tengteng Pan",
+        "Yuqiang Zhai",
+        "Xianglong Xu"
+      ],
+      "published": "2026-11-24T14:41:27Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32722v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32476v1",
+      "title": "ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic Manipulation",
+      "abstract": "Tactile sensing is essential for contact-rich robotic manipulation, but existing visuo-tactile simulators trade physical fidelity for scalability, and benchmarks largely focus on two-finger grippers. We present ViTacLab, a framework comprising ViTacSim, ViTacBench, and ViTacPolicy. ViTacSim uses a tri-modal tactile primitive: a global sparse contact-force lattice, a local dense force array, and tactile images. Anchored to PhysX contact-solver outputs, it corrects normal inconsistency through local stiffness alignment and reconstructs tangential forces under decoupled slip-stick regimes while preserving GPU parallelism. A joint projection preserves the sparse wrench and enforces local frictio…",
+      "authors": [
+        "Linjing You",
+        "Zeming Yang",
+        "Zhenhao Shen",
+        "Shengqiang Xu",
+        "Guanda Li",
+        "Wenxuan Li"
+      ],
+      "published": "2026-11-24T12:06:34Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32476v1",
+      "categories": [
+        "cs.RO"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32238v1",
+      "title": "Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation",
+      "abstract": "Agent-orchestrated robot systems combine the general reasoning capability of multimodal agents with the precise physical control of learned visuomotor policies. Yet such systems often fail at the moment of handoff: a policy is reliable only from a limited set of start states, while the agent may invoke it outside this region. We call this region the policy's handoff boundary. Existing whole-task policies typically have handoff boundaries that are narrow and difficult for an agent to characterize, making reliable coordination challenging. We propose Boundary-Aware Policy Learning, which explicitly shapes and then expands the handoff boundary of a visuomotor policy. First, Boundary-Explicit Tr…",
+      "authors": [
+        "Kaipeng Fang",
+        "Yuhao Wang",
+        "Ji Zhang",
+        "Yunsong Zhou",
+        "Jingkuan Song",
+        "Lianli Gao"
+      ],
+      "published": "2026-11-24T09:15:56Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32238v1",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32042v1",
+      "title": "Instant LiDAR: Feed-Forward Gaussian Reconstruction for LiDAR Simulation",
+      "abstract": "LiDAR reconstruction supports closed-loop autonomous driving simulation, but hours of per-scene optimization make large asset libraries costly to build and maintain. We present Instant LiDAR, a feed-forward pipeline that reconstructs multiple LiDAR scans as reusable Gaussian assets in minutes without per-scene optimization. LiDAR measurements provide strong geometric priors, but directly initializing Gaussians from them yields poor reconstruction due to nonuniform sampling and a limited field of view. Sparse returns leave surface gaps, while combining scans expands coverage but introduces redundant primitives. To address these challenges, Instant LiDAR combines measurement-anchored Gaussian …",
+      "authors": [
+        "Xin Kang",
+        "Jiahui Huang",
+        "Jiawei Ren",
+        "Sipeng Zhang",
+        "Yu Chen",
+        "Weihua Zhang"
+      ],
+      "published": "2026-11-24T06:27:32Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32042v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.31918v1",
+      "title": "HiGS: A Hierarchical Architecture for Fast Differentiable 3D Gaussian Splatting",
+      "abstract": "3D Gaussian Splatting (3DGS) makes one screen tile the cell of partitioning, the cell of rasterization, and the unit of parallel work. Partitioning favors large tiles and rasterization small ones, and with one unit per tile the densest tiles set the frame time. We present Hierarchically Tiled Gaussian Splatting (HiGS), a unified architecture for rendering and reconstruction that gives each role its own granularity: Gaussians are partitioned over coarse macro-tiles, rasterized over the fine render tiles within them, and processed in bounded depth-sorted batches. A dense region issues more batches instead of one longer unit, so frame time follows the work in a view rather than its densest tile…",
+      "authors": [
+        "Dawid Pająk",
+        "Martin Bisson",
+        "Rodolfo Lima",
+        "François Trudel"
+      ],
+      "published": "2026-11-24T04:23:36Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.31918v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 14
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.31676v1",
+      "title": "Exact Collision Gradients for Ellipsoids in Differentiable Simulation",
+      "abstract": "Differentiable simulation enables gradient-based optimization in learning and control problems involving collisions, but its gradients are least reliable at the moment of impact, when the velocities jump. A fixed-step simulator detects a collision only after the bodies overlap, and some differentiable simulators correct for this with a linear estimate of the time of impact. In this paper, we study impacts between ellipsoids. We show that the gradient error of this estimate grows with the obliqueness of the collision, the curvature at contact, and the time step, and that ignoring spin adds a further error. Subsequently, we find the time of impact with continuous collision detection on the Per…",
+      "authors": [
+        "Shamak Dutta",
+        "Biswadip Dey"
+      ],
+      "published": "2026-11-23T23:07:15Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.31676v1",
+      "categories": [
+        "cs.RO",
+        "eess.SY",
+        "math.OC"
+      ],
+      "relevance_score": 11,
+      "sections": [
+        {
+          "id": "sim_ready",
+          "label": "Sim-Ready / Robotics",
+          "color": "#06B6D4",
+          "score": 45
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
       "id": "2606.31556v1",
       "title": "AugSplat: Radiance Field-Informed Gaussian Splatting for Sparse-View Settings",
       "abstract": "Generating high-quality novel views at real-time frame rates remains a central challenge in 3D vision, particularly in sparse-view scenarios. Neural radiance fields have demonstrated robust reconstruction from limited observations, but their reliance on volumetric rendering leads to high computational cost and slow inference. In contrast, Gaussian Splatting methods achieve real-time rendering through rasterization, but their optimization is highly sensitive to the quality of the initial geometry. This sensitivity becomes especially problematic in sparse-view settings, where limited observations often lead to incomplete or noisy point-cloud reconstructions. In this work, we present AugSplat, …",
@@ -46137,6 +46948,117 @@
       ],
       "has_code": false,
       "first_seen": "2026-11-24T18:45:08.228894+00:00"
+    },
+    {
+      "id": "2611.32406v1",
+      "title": "BEACON: Learning Observation-Conditioned Starting Points for Guided Conditional Flow Matching in Microscopy",
+      "abstract": "Fluorescence microscopy drives much of modern life science, but accessible imaging setups often yield images degraded by out-of-focus light, limited resolution, and strong signal-dependent noise. Computational restoration can recover high-quality images from such data, enabling cheaper and faster imaging at lower light dose, provided biologically meaningful structures are preserved. Guided conditional flow matching has recently shown strong results for microscopy dehazing and computational super-resolution by learning distributions of plausible restorations. However, it pairs each clean target with an independent standard Gaussian sample, so the starting point of every training path does not…",
+      "authors": [
+        "Anirban Ray",
+        "Florian Jug"
+      ],
+      "published": "2026-11-24T11:08:44Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32406v1",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": true,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32327v1",
+      "title": "FlowVecFont: Scalable Vector Font Generation via Latent Flow Matching",
+      "abstract": "Fonts are natively represented as vector outlines. Many existing studies on vector font generation have relied on specialized generation or refinement mechanisms, bitmap representations, or externally pretrained models to address the challenges of learning vector representations. These approaches often increase system complexity, incur additional computational and implementation costs, and introduce dependencies on external resources. We show that scaling a simple model enables high-quality pure vector font generation without external pretraining. We propose FlowVecFont, a scalable model for vector font generation based on latent flow matching and trained solely on vector outlines. A Transfo…",
+      "authors": [
+        "Takumu Fujioka",
+        "Gouhei Tanaka"
+      ],
+      "published": "2026-11-24T10:17:39Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32327v1",
+      "categories": [
+        "cs.CV",
+        "cs.GR"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32297v1",
+      "title": "MaskedVGGT: Masked Multi-View Transformers Are Scalable 3D Learners",
+      "abstract": "Multi-view feed-forward models show strong scalability, but their reliance on costly geometric annotations limits data scaling. Existing 3D self-supervised approaches reduce this reliance through cross-view completion (e.g., CroCo, MuM, Muskie) or novel-view synthesis (e.g., RayZer, E-RayZer), typically learning image representations and cross-view interactions jointly. We argue that learning single image representations from scratch is unnecessary for 3D pretraining methods, as doing so fails to benefit from the continuing advances in 2D foundation models (e.g., DINO, CLIP, frontier VLMs). We introduce MaskedVGGT, which freezes a strong pretrained 2D encoder and pretrains only an added, ran…",
+      "authors": [
+        "Zichen Zou",
+        "Xiaosong Jia",
+        "Wen-Ming Chen",
+        "Zuxuan Wu",
+        "Yu-Gang Jiang"
+      ],
+      "published": "2026-11-24T09:55:49Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32297v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 30
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
+    },
+    {
+      "id": "2611.32231v1",
+      "title": "ST-SfM: Spatio-Temporal Structure-from-Motion for Initialising 4D Gaussian Splatting",
+      "abstract": "Dynamic Gaussian splatting is usually initialised either with random points or with a structure-from-motion (SfM) cloud of the first frame. Neither says anything about what moves, where and when. We introduce ST-SfM, a sparse spatio-temporal SfM for synchronised, calibrated multi-camera video that splits the scene into two branches. Static structure is detected once per camera on a temporal-median image, gated for temporal stability and matched along epi-polar lines. Motion is detected as space-time interest points (STIPs) in the video volume, described with HOG3D and matched only between candidates that agree both epipolarly and in time. Union-find tracks that refuse inconsistent merges are…",
+      "authors": [
+        "Harshit",
+        "Sami Brandt"
+      ],
+      "published": "2026-11-24T09:13:06Z",
+      "arxiv_url": "https://arxiv.org/abs/2611.32231v1",
+      "categories": [
+        "cs.CV"
+      ],
+      "relevance_score": 9,
+      "sections": [
+        {
+          "id": "1_foundations",
+          "label": "1 · Foundations",
+          "color": "#8B5CF6",
+          "score": 25
+        },
+        {
+          "id": "2_3d_gen",
+          "label": "2 · 3D Generators",
+          "color": "#10B981",
+          "score": 7
+        }
+      ],
+      "has_code": false,
+      "first_seen": "2026-11-25T17:52:40.279724+00:00"
     },
     {
       "id": "2606.31680v1",
